@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <title>FIUBA Plan</title>
+    <meta charset="utf-8">
+    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://github.com/FdelMazo/" rel="author"/>
+    <link href="https://fdelmazo.github.io/FIUBA-Plan/" rel="canonical"/>
+
+    <meta content="https://fdelmazo.github.io/FIUBA-Plan/" property="og:url">
+    <meta content="" property="og:description">
+    <meta content="FIUBA-Plan" property="og:title">
+    <meta content="" property="og:image">
+     
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/arrobefr-jquery-calendar-bs4@1.0.3/dist/js/jquery-calendar.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/arrobefr-jquery-calendar-bs4@1.0.3/dist/css/jquery-calendar.min.css">
+
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <div id="header" class="menu">
+        <div id="header-navbar" class="navbar">
+            <div id="carreras" class="dropdown">
+                <a class='dropbtn'>
+                    <i class="fas fa-fw fa-bars"></i>
+                    <span id="carrera-actual-long">Ingeniería en Informática</span>
+                    <span id="carrera-actual-short"></span>
+                </a>
+                <div class="dropdown-content">
+                    <a class='carrera' id='sistemas'>Licenciatura en Análisis de Sistemas</a>
+                    <a class='carrera' id='informatica'>Ingeniería en Informática</a>
+                    <a class='carrera' id='electronica'>Ingeniería Electrónica</a>
+                    <a class='carrera' id='quimica'>Ingeniería Química</a>
+                    <a class='carrera' id='civil'>Ingeniería Civil</a>
+                    <a class='carrera' id='mecanica'>Ingeniería Mecánica</a>
+                    <a class='carrera' id='alimentos'>Ingeniería de Alimentos</a>
+                    <a class='carrera' id='electricista'>Ingeniería Electricista</a>
+                    <a class='carrera' id='agrimensura'>Ingeniería en Agrimensura</a>
+                    <a class='carrera' id='naval'>Ingeniería Naval y Mecánica</a>
+                    <a class='carrera' id='petroleo'>Ingeniería en Petróleo</a>
+                    <a class='carrera' id='industrial'>Ingeniería Industrial</a>
+                </div>
+            </div>
+            
+            <div id="materias" class="dropdown right"><a class='toggle' id='toggle-Materias Electivas'>Materias</a></div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-4">
+        <div class="row">
+          <div class="col-xs-12">
+            <div id="calendar"></div>
+          </div>
+        </div>
+      </div>
+    <div id="footer" class="menu">
+        <div id="footer-snackbar" class="snackbar">
+            <div id="footer-snackbar-left">
+                <div>
+                    <a target="_blank" href="https://github.com/fdelmazo/FIUBA-Plan"><i class="fab fa-fw fa-github"></i></a> 
+                    <a><i onclick="$('#mail-content').toggle()" class="fas fa-fw fa-envelope"></i><span id="mail-content"> fdelmazo at fi.uba.ar ; javidisanto at gmail.com </span></a> 
+                </div>
+            </div>
+            <div id="footer-snackbar-right">
+                <a id="fullscreen-mode" ><i class="fas fa-fw fa-expand"></i></a> 
+                <a id="dark-mode"><i class="fas fa-fw fa-moon"></i></a> 
+            </div>
+        </div>
+        
+        <div id="footer-navbar" class="navbar">
+            <div id="clave">
+                <input placeholder="Clave/Padrón" type="text">
+                <div id="clave-buttons">
+                    <a id="clave-load"><i class="fas fa-fw fa-sync"></i></a> 
+                    <a id="clave-save"><i class="fas fa-fw fa-save"></i></a> 
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="fplan.js"></script>
+</body>
+</html>

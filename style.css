@@ -21,7 +21,7 @@ html, body {
   margin: 0;
   height: 100%;
   width: 100%;
-  background-color: var(--white);
+  /*background-color: var(--white);*/
 }
 
 .calendar-month {
@@ -29,6 +29,7 @@ html, body {
 }
 
 #header { 
+  z-index: 1;
   top: 0; 
 }
 #header-navbar {
@@ -37,10 +38,25 @@ html, body {
 #header-snackbar div {
   z-index: 2;
 }
+#calendar-container {
+  padding-top: 5em;
+  padding-bottom: 63em;
+  margin: 1em
+}
 #calendar { 
-  z-index: 1;
+  z-index: 0;
   position: relative; 
   height: 100%; 
+}
+.calendar-timeline {
+  padding-top: 9px !important;
+}
+.btn-move-calendar {
+  display: none;
+}
+.event-content.invisible {
+  /* TODO: Evaluar que informacion se deberia mostrar */
+  visibility: visible !important;
 }
 #footer-snackbar div {
   z-index: 2;
@@ -57,7 +73,7 @@ html, body {
 
 .menu {
   width: 100%;
-  position: absolute;
+  position: fixed;
 } 
 
 .navbar {

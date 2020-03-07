@@ -50,14 +50,23 @@ $(document).ready(function(){
       locale: 'es',
       weekday: {
         timeline: {
-          fromHour: 4
+          fromHour: 6,
+          toHour: 23,
         },
         dayline: {
-          format: "dddd"
-        }
+          format: "dddd",
+          weekdays: [0, 1, 2, 3, 4, 5]
+        },
+      },
+      defaultView: {
+        smallScreenThreshold: 1
       },
       events: events,
       daynotes: daynotes
-    }).init();
+    })
+    calendar.init();
+
+    // TODO: Evaluar que hacer con el modal (desactivarlo o mostrarlo con mas info)
+    $('#calendar').unbind('Calendar.event-click')
 
   });

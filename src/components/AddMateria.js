@@ -17,7 +17,7 @@ import { data } from "../data/horarios";
 const AddMateria = (props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [carrerasSeleccionadas, setCarrerasSeleccionadas] = React.useState([]);
-  const [materiasSeleccionadas, setMateriasSeleccionadas] = React.useState([]);
+  const [cursosSeleccionados, setCursosSeleccionados] = React.useState([]);
   const [materiasVisibles, setMateriasVisibles] = React.useState([]);
 
   React.useEffect(() => {
@@ -34,36 +34,26 @@ const AddMateria = (props) => {
   }, [carrerasSeleccionadas]);
 
   React.useEffect(() => {
-    const events = materiasSeleccionadas.map((m) => {
+    const events = cursosSeleccionados.map((c) => {
       return {
-        start: new Date(
-          2018,
-          0,
-          m.cursos[0].clases[0].dia,
-          m.cursos[0].clases[0].inicio
-        ),
-        end: new Date(
-          2018,
-          0,
-          m.cursos[0].clases[0].dia,
-          m.cursos[0].clases[0].fin
-        ),
-        title: m.cursos[0].docentes,
+        // start: new Date(2018, 0, c.clases[0].dia, c.clases[0].inicio),
+        // end: new Date(2018, 0, c.clases[0].dia, c.clases[0].fin),
+        // title: c.docentes,
       };
     });
 
     props.setEvents(events);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [materiasSeleccionadas]);
+  }, [cursosSeleccionados]);
 
-  const seleccionarMateria = (materia) => {
-    if (materiasSeleccionadas.includes(materia)) {
-      const materiasSeleccionadasWithoutMateria = materiasSeleccionadas.filter(
-        (el) => el.nombre !== materia.nombre
+  const seleccionarCurso = (curso) => {
+    if (cursosSeleccionados.includes(curso)) {
+      const cursoWithoutMateria = cursosSeleccionados.filter(
+        (el) => el.docentes !== curso.docentes
       );
-      setMateriasSeleccionadas([...materiasSeleccionadasWithoutMateria]);
+      setCursosSeleccionados([...cursoWithoutMateria]);
     } else {
-      setMateriasSeleccionadas([...materiasSeleccionadas, materia]);
+      setCursosSeleccionados([...cursosSeleccionados, curso]);
     }
   };
 
@@ -89,22 +79,14 @@ const AddMateria = (props) => {
               setCarrerasSeleccionadas={setCarrerasSeleccionadas}
             />
 
-            {materiasSeleccionadas.map((m) => {
+            {new Array(cursosSeleccionados.length + 1).fill().map(() => {
               return (
                 <SelectMateria
                   materiasVisibles={materiasVisibles}
-                  materiasSeleccionadas={materiasSeleccionadas}
-                  seleccionarMateria={seleccionarMateria}
-                  materia={m}
+                  seleccionarCurso={seleccionarCurso}
                 />
               );
             })}
-
-            <SelectMateria
-              materiasVisibles={materiasVisibles}
-              materiasSeleccionadas={materiasSeleccionadas}
-              seleccionarMateria={seleccionarMateria}
-            />
           </DrawerBody>
           <DrawerFooter>
             <Link

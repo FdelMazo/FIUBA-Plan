@@ -26,7 +26,13 @@ const SelectCarreras = (props) => {
 
   return (
     <Menu closeOnSelect={false}>
-      <MenuButton as={Button} variantColor="primary" variant="outline">
+      <MenuButton
+        my={2}
+        w={"100%"}
+        as={Button}
+        variantColor="primary"
+        variant="outline"
+      >
         Carreras <Icon name="chevron-down" />
       </MenuButton>
       <MenuList>

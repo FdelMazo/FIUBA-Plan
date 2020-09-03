@@ -5,35 +5,46 @@ import {
   MenuList,
   Button,
   Icon,
-  Tag,
-  MenuOptionGroup,
-  MenuItemOption,
+  MenuItem,
 } from "@chakra-ui/core";
+import SelectCurso from "./SelectCurso";
 
 const SelectMateria = (props) => {
-  const { materia, materiasVisibles, seleccionarMateria } = props;
+  const { materiasVisibles } = props;
+  const [materia, setMateria] = React.useState();
 
   return (
-    <Menu closeOnSelect={false}>
-      <MenuButton as={Button} variantColor="primary" variant="outline">
-        {materia ? materia.nombre : "Agregar Materia"}
-        {!materia && <Icon name="search" />}
+    <Menu>
+      <MenuButton
+        m={4}
+        as={Button}
+        variantColor="primary"
+        variant="outline"
+        rightIcon={!materia && "search"}
+      >
+        {materia?.nombre || "Buscar Materia..."}
       </MenuButton>
       <MenuList>
-        <MenuOptionGroup defaultValue={materia?.nombre} type="checkbox">
-          {materiasVisibles?.map((m) => {
+        {materia && (
+          <MenuItem onClick={() => setMateria()}>
+            <Icon name="check" />
+            {materia.nombre}
+          </MenuItem>
+        )}
+        {materiasVisibles
+          .filter((m) => m !== materia)
+          ?.map((m) => {
             return (
-              <MenuItemOption
-                type="checkbox"
-                as={Tag}
-                value={m.nombre}
-                onClick={() => seleccionarMateria(m)}
+              <MenuItem
+                onClick={() => {
+                  setMateria(m);
+                }}
               >
                 {m.nombre}
-              </MenuItemOption>
+              </MenuItem>
             );
           })}
-        </MenuOptionGroup>
+        {materia && <SelectCurso materia={materia} />}
       </MenuList>
     </Menu>
   );

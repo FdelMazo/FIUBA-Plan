@@ -10,6 +10,7 @@ import {
   Button,
   Collapse,
   Link,
+  Box,
   Tag,
   TagIcon,
   TagLabel,
@@ -18,74 +19,74 @@ import {
   InputGroup,
   InputRightElement,
 } from "@chakra-ui/core";
+import SelectCarreras from "./SelectCarreras";
+import SelectMateria from "./SelectMateria";
 import { data } from "../data/horarios";
 
 const AddMateria = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [hideButton, setHideButton] = React.useState(false);
-  const btnRef = React.useRef();
-  const [show, setShow] = React.useState(false);
-  const handleToggle = () => setShow(!show);
+  const [carrerasSeleccionadas, setCarrerasSeleccionadas] = React.useState([]);
+  const [materiasSeleccionadas, setMateriasSeleccionadas] = React.useState([]);
+  const [materiasVisibles, setMateriasVisibles] = React.useState([]);
+
+  React.useEffect(() => {
+    const materiasAMostrarConDups = carrerasSeleccionadas?.reduce(
+      (arr, c) => arr.concat(...c.materias),
+      []
+    );
+    const materiasAMostrar = new Set(materiasAMostrarConDups);
+
+    const materias = materiasAMostrar.size
+      ? data.materias.filter((m) => materiasAMostrar.has(m.index))
+      : data.materias;
+    const nombresMaterias = materias.map((m) => m.nombre);
+    setMateriasVisibles([...nombresMaterias]);
+  }, [carrerasSeleccionadas]);
 
   return (
     <>
-      {!hideButton && (
+      {!isOpen && (
         <IconButton
           m={5}
-          ref={btnRef}
-          onClick={() => {
-            onOpen();
-            setHideButton(true);
-          }}
+          onClick={onOpen}
           variantColor="primary"
           aria-label="Agregar Materia"
           icon="add"
         />
       )}
 
-      <Drawer
-        isOpen={isOpen}
-        placement="right"
-        onClose={() => {
-          onClose();
-          setHideButton(false);
-        }}
-        finalFocusRef={btnRef}
-      >
+      <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
         <DrawerOverlay />
-        <DrawerContent textAlign={["right"]}>
+        <DrawerContent>
           <DrawerBody>
-            <Button
-              rightIcon="chevron-down"
-              variantColor="primary"
-              variant="outline"
-              onClick={handleToggle}
-            >
-              Carreras
-            </Button>
-            <Collapse my={2} isOpen={show}>
-              {data.carreras.map((c) => (
-                <Tag m={1}>
-                  <TagLabel>{c.nombre}</TagLabel>
-                  <TagIcon icon="view" />
-                </Tag>
-              ))}
-            </Collapse>
-            <InputGroup my={2} size="md">
-              <Input
-                borderColor="primary.400"
-                focusBorderColor="primary.400"
-                placeholder="Buscar Materia..."
-              />
-              <InputRightElement
-                children={<Icon name="search" color="primary.400" />}
-              />
-            </InputGroup>
+            <Box>{carrerasSeleccionadas[0]?.nombre}</Box>
+
+            <SelectCarreras
+              carreras={data.carreras}
+              carrerasSeleccionadas={carrerasSeleccionadas}
+              setCarrerasSeleccionadas={setCarrerasSeleccionadas}
+            />
+
+            {/* {materiasSeleccionadas.map((m) => {
+              return (
+                <SelectMateria
+                  materiasSeleccionadas={materiasSeleccionadas}
+                  setMateriasSeleccionadas={setMateriasSeleccionadas}
+                  materia={m}
+                />
+              );
+            })} */}
+
+            <SelectMateria
+              materiasVisibles={materiasVisibles}
+              materiasSeleccionadas={materiasSeleccionadas}
+              setMateriasSeleccionadas={setMateriasSeleccionadas}
+            />
           </DrawerBody>
           <DrawerFooter>
             <Link
               isExternal
-              color="primary.600"
+              color="primary.500"
               href="https://github.com/fdelmazo/FIUBA-Plan"
             >
               <Icon color="primary" name="github" />

@@ -11,23 +11,18 @@ import { data } from "../data/horarios";
 const Body = () => {
   const toast = useToast();
 
-  const showAddButton = () => {
-    toast({
-      position: "bottom-right",
-      render: () => <AddMateria />,
-      duration: null,
-    });
-  };
-
   React.useEffect(() => {
     toast({
       description: `Actualizado al ${data.anio}C${data.cuatrimestre}`,
       status: "success",
       position: "bottom-right",
-      duration: 2000,
-      onClose: showAddButton,
+      duration: 1000,
     });
-    setTimeout(showAddButton, 2500);
+    toast({
+      position: "bottom-right",
+      render: () => <AddMateria />,
+      duration: null,
+    });
   }, [toast]);
 
   const localizer = momentLocalizer(moment);
@@ -50,18 +45,16 @@ const Body = () => {
   max.setHours(22, 0, 0);
 
   return (
-    <Box>
-      <Calendar
-        formats={formats}
-        toolbar={false}
-        view={"week"}
-        localizer={localizer}
-        min={min}
-        max={max}
-        defaultDate={new Date(2018, 0, 1)} // Monday
-        events={events}
-      />
-    </Box>
+    <Calendar
+      formats={formats}
+      toolbar={false}
+      view={"week"}
+      localizer={localizer}
+      min={min}
+      max={max}
+      defaultDate={new Date(2018, 0, 1)} // Monday
+      events={events}
+    />
   );
 };
 

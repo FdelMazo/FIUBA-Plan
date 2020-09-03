@@ -7,23 +7,14 @@ import {
   DrawerContent,
   useDisclosure,
   IconButton,
-  Button,
-  Collapse,
   Link,
-  Box,
-  Tag,
-  TagIcon,
-  TagLabel,
   Icon,
-  Input,
-  InputGroup,
-  InputRightElement,
 } from "@chakra-ui/core";
 import SelectCarreras from "./SelectCarreras";
 import SelectMateria from "./SelectMateria";
 import { data } from "../data/horarios";
 
-const AddMateria = () => {
+const AddMateria = (props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [carrerasSeleccionadas, setCarrerasSeleccionadas] = React.useState([]);
   const [materiasSeleccionadas, setMateriasSeleccionadas] = React.useState([]);
@@ -39,9 +30,42 @@ const AddMateria = () => {
     const materias = materiasAMostrar.size
       ? data.materias.filter((m) => materiasAMostrar.has(m.index))
       : data.materias;
-    const nombresMaterias = materias.map((m) => m.nombre);
-    setMateriasVisibles([...nombresMaterias]);
+    setMateriasVisibles([...materias]);
   }, [carrerasSeleccionadas]);
+
+  React.useEffect(() => {
+    const events = materiasSeleccionadas.map((m) => {
+      return {
+        start: new Date(
+          2018,
+          0,
+          m.cursos[0].clases[0].dia,
+          m.cursos[0].clases[0].inicio
+        ),
+        end: new Date(
+          2018,
+          0,
+          m.cursos[0].clases[0].dia,
+          m.cursos[0].clases[0].fin
+        ),
+        title: m.cursos[0].docentes,
+      };
+    });
+
+    props.setEvents(events);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [materiasSeleccionadas]);
+
+  const seleccionarMateria = (materia) => {
+    if (materiasSeleccionadas.includes(materia)) {
+      const materiasSeleccionadasWithoutMateria = materiasSeleccionadas.filter(
+        (el) => el.nombre !== materia.nombre
+      );
+      setMateriasSeleccionadas([...materiasSeleccionadasWithoutMateria]);
+    } else {
+      setMateriasSeleccionadas([...materiasSeleccionadas, materia]);
+    }
+  };
 
   return (
     <>
@@ -59,28 +83,27 @@ const AddMateria = () => {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerBody>
-            <Box>{carrerasSeleccionadas[0]?.nombre}</Box>
-
             <SelectCarreras
               carreras={data.carreras}
               carrerasSeleccionadas={carrerasSeleccionadas}
               setCarrerasSeleccionadas={setCarrerasSeleccionadas}
             />
 
-            {/* {materiasSeleccionadas.map((m) => {
+            {materiasSeleccionadas.map((m) => {
               return (
                 <SelectMateria
+                  materiasVisibles={materiasVisibles}
                   materiasSeleccionadas={materiasSeleccionadas}
-                  setMateriasSeleccionadas={setMateriasSeleccionadas}
+                  seleccionarMateria={seleccionarMateria}
                   materia={m}
                 />
               );
-            })} */}
+            })}
 
             <SelectMateria
               materiasVisibles={materiasVisibles}
               materiasSeleccionadas={materiasSeleccionadas}
-              setMateriasSeleccionadas={setMateriasSeleccionadas}
+              seleccionarMateria={seleccionarMateria}
             />
           </DrawerBody>
           <DrawerFooter>

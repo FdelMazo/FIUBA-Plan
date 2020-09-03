@@ -3,11 +3,7 @@ import {
   Menu,
   MenuButton,
   MenuList,
-  MenuItem,
   Button,
-  Box,
-  MenuGroup,
-  Input,
   Icon,
   Tag,
   MenuOptionGroup,
@@ -15,24 +11,25 @@ import {
 } from "@chakra-ui/core";
 
 const SelectMateria = (props) => {
-  const {
-    materia,
-    materiasVisibles,
-    materiasSeleccionadas,
-    setMateriasSeleccionadas,
-  } = props;
+  const { materia, materiasVisibles, seleccionarMateria } = props;
 
   return (
     <Menu closeOnSelect={false}>
       <MenuButton as={Button} variantColor="primary" variant="outline">
-        Agregar Materia <Icon name="search" />
+        {materia ? materia.nombre : "Agregar Materia"}
+        {!materia && <Icon name="search" />}
       </MenuButton>
       <MenuList>
         <MenuOptionGroup defaultValue={materia?.nombre} type="checkbox">
           {materiasVisibles?.map((m) => {
             return (
-              <MenuItemOption type="checkbox" as={Tag} value={m}>
-                {m}
+              <MenuItemOption
+                type="checkbox"
+                as={Tag}
+                value={m.nombre}
+                onClick={() => seleccionarMateria(m)}
+              >
+                {m.nombre}
               </MenuItemOption>
             );
           })}

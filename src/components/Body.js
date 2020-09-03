@@ -1,6 +1,6 @@
 import React from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
-import { Box, useToast } from "@chakra-ui/core";
+import { useToast } from "@chakra-ui/core";
 import moment from "moment";
 import "moment/locale/es";
 import "react-big-calendar/lib/css/react-big-calendar.css";
@@ -10,6 +10,7 @@ import { data } from "../data/horarios";
 
 const Body = () => {
   const toast = useToast();
+  const [events, setEvents] = React.useState([]);
 
   React.useEffect(() => {
     toast({
@@ -20,20 +21,12 @@ const Body = () => {
     });
     toast({
       position: "bottom-right",
-      render: () => <AddMateria />,
+      render: () => <AddMateria setEvents={setEvents} />,
       duration: null,
     });
   }, [toast]);
 
   const localizer = momentLocalizer(moment);
-
-  const events = [
-    {
-      title: "Some title",
-      start: moment().toDate(),
-      end: moment().add(1, "days").toDate(),
-    },
-  ];
 
   const formats = {
     dayFormat: "dddd",

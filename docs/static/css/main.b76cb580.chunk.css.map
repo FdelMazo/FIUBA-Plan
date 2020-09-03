@@ -1,0 +1,1 @@
+{"version":3,"sources":["CalendarStyle.css"],"names":[],"mappings":"AAAA,iBACE,YACF,CACA,2BACE,kBACF","file":"main.b76cb580.chunk.css","sourcesContent":[".rbc-allday-cell {\n  display: none;\n}\n.rbc-time-view .rbc-header {\n  border-bottom: none;\n}\n"]}

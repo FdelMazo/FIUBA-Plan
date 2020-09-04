@@ -14,10 +14,10 @@ const Body = () => {
 
   React.useEffect(() => {
     toast({
-      description: `Actualizado al ${data.anio}C${data.cuatrimestre}`,
+      description: `Actualizado al ${data.cuatrimestre}`,
       status: "success",
       position: "bottom-right",
-      duration: 1000,
+      duration: 2000,
     });
     toast({
       position: "bottom-right",

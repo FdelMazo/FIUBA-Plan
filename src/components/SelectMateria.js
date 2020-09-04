@@ -5,6 +5,7 @@ import {
   MenuList,
   Button,
   Box,
+  Tag,
   Icon,
   MenuItem,
 } from "@chakra-ui/core";
@@ -45,6 +46,7 @@ const SelectMateria = (props) => {
                   onClick={() => {
                     setMateria(m);
                   }}
+                  as={Tag}
                 >
                   {m.nombre}
                 </MenuItem>

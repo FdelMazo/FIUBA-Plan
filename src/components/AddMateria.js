@@ -36,15 +36,17 @@ const AddMateria = (props) => {
   }, [carrerasSeleccionadas]);
 
   React.useEffect(() => {
-    const events = cursosSeleccionados.map((c) => {
-      return {
-        start: new Date(2018, 0, c.clases[0].dia, c.clases[0].inicio),
-        end: new Date(2018, 0, c.clases[0].dia, c.clases[0].fin),
-        title: c.docentes,
-      };
+    const events = cursosSeleccionados.map((curso) => {
+      return curso.clases.map((c) => {
+        return {
+          start: new Date(2018, 0, c.dia, c.inicio),
+          end: new Date(2018, 0, c.dia, c.fin),
+          title: curso.docentes,
+        };
+      });
     });
 
-    props.setEvents(events);
+    props.setEvents(events.flat());
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cursosSeleccionados]);
 

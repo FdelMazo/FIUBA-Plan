@@ -4,6 +4,7 @@ import {
   MenuButton,
   Button,
   MenuList,
+  Tag,
   MenuItem,
   MenuOptionGroup,
   Icon,
@@ -36,6 +37,7 @@ const SelectCurso = (props) => {
             return (
               <MenuItem
                 value={c}
+                as={Tag}
                 onClick={() => {
                   seleccionarCurso(c);
                 }}

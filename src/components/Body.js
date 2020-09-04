@@ -43,8 +43,8 @@ const Body = () => {
       toolbar={false}
       view={"week"}
       localizer={localizer}
-      min={min}
-      max={max}
+      // min={min}
+      // max={max}
       defaultDate={new Date(2018, 0, 1)} // Monday
       events={events}
     />

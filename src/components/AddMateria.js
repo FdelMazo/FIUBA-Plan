@@ -75,7 +75,7 @@ const AddMateria = (props) => {
 
       <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
         <DrawerOverlay />
-        <DrawerContent>
+        <DrawerContent bg="#2d3436">
           <DrawerBody>
             <SelectCarreras
               carreras={data.carreras}

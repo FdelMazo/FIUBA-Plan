@@ -4,49 +4,62 @@ import {
   MenuButton,
   MenuList,
   Button,
+  Box,
   Icon,
   MenuItem,
 } from "@chakra-ui/core";
 import SelectCurso from "./SelectCurso";
 
 const SelectMateria = (props) => {
-  const { materiasVisibles } = props;
+  const { materiasVisibles, cursosSeleccionados, seleccionarCurso } = props;
   const [materia, setMateria] = React.useState();
 
   return (
-    <Menu>
-      <MenuButton
-        m={4}
-        as={Button}
-        variantColor="primary"
-        variant="outline"
-        rightIcon={!materia && "search"}
-      >
-        {materia?.nombre || "Buscar Materia..."}
-      </MenuButton>
-      <MenuList>
-        {materia && (
-          <MenuItem onClick={() => setMateria()}>
-            <Icon name="check" />
-            {materia.nombre}
-          </MenuItem>
-        )}
-        {materiasVisibles
-          .filter((m) => m !== materia)
-          ?.map((m) => {
-            return (
-              <MenuItem
-                onClick={() => {
-                  setMateria(m);
-                }}
-              >
-                {m.nombre}
-              </MenuItem>
-            );
-          })}
-        {materia && <SelectCurso materia={materia} />}
-      </MenuList>
-    </Menu>
+    <Box>
+      <Menu>
+        <MenuButton
+          mt={2}
+          as={Button}
+          variantColor="primary"
+          variant="outline"
+          rightIcon={!materia && "search"}
+        >
+          {materia?.codigo || "Buscar Materia "}
+        </MenuButton>
+        <MenuList>
+          {materia && (
+            <MenuItem
+              onClick={() => {
+                setMateria();
+              }}
+            >
+              <Icon name="check" />
+              {materia.nombre}
+            </MenuItem>
+          )}
+          {materiasVisibles
+            .filter((m) => m !== materia)
+            ?.map((m) => {
+              return (
+                <MenuItem
+                  onClick={() => {
+                    setMateria(m);
+                  }}
+                >
+                  {m.nombre}
+                </MenuItem>
+              );
+            })}
+        </MenuList>
+      </Menu>
+      {materia && (
+        <SelectCurso
+          materia={materia}
+          cursosSeleccionados={cursosSeleccionados}
+          seleccionarCurso={seleccionarCurso}
+        />
+      )}
+    </Box>
   );
 };
 

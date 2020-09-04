@@ -25,10 +25,10 @@ const SelectCarreras = (props) => {
   };
 
   return (
-    <Menu closeOnSelect={false}>
+    <Menu>
       <MenuButton
         my={2}
-        w={"100%"}
+        w="100%"
         as={Button}
         variantColor="primary"
         variant="outline"

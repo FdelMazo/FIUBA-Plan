@@ -1,6 +1,6 @@
 export const data = {
   "anio": "2019",
-  "cuatrimestre": "1 (test de dev)",
+  "cuatrimestre": "1 (dev test)",
   "carreras": [
     {
       "nombre": "Civil",

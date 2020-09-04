@@ -9,6 +9,7 @@ import {
   IconButton,
   Link,
   Icon,
+  Flex,
 } from "@chakra-ui/core";
 import SelectCarreras from "./SelectCarreras";
 import SelectMateria from "./SelectMateria";
@@ -18,6 +19,7 @@ const AddMateria = (props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [carrerasSeleccionadas, setCarrerasSeleccionadas] = React.useState([]);
   const [cursosSeleccionados, setCursosSeleccionados] = React.useState([]);
+  const [materiasCount, setMateriasCount] = React.useState(1);
   const [materiasVisibles, setMateriasVisibles] = React.useState([]);
 
   React.useEffect(() => {
@@ -36,9 +38,9 @@ const AddMateria = (props) => {
   React.useEffect(() => {
     const events = cursosSeleccionados.map((c) => {
       return {
-        // start: new Date(2018, 0, c.clases[0].dia, c.clases[0].inicio),
-        // end: new Date(2018, 0, c.clases[0].dia, c.clases[0].fin),
-        // title: c.docentes,
+        start: new Date(2018, 0, c.clases[0].dia, c.clases[0].inicio),
+        end: new Date(2018, 0, c.clases[0].dia, c.clases[0].fin),
+        title: c.docentes,
       };
     });
 
@@ -79,12 +81,29 @@ const AddMateria = (props) => {
               setCarrerasSeleccionadas={setCarrerasSeleccionadas}
             />
 
-            {new Array(cursosSeleccionados.length + 1).fill().map(() => {
+            {new Array(materiasCount).fill().map((c) => {
               return (
-                <SelectMateria
-                  materiasVisibles={materiasVisibles}
-                  seleccionarCurso={seleccionarCurso}
-                />
+                <Flex
+                  flexDirection="row"
+                  justify="space-between"
+                  alignItems="center"
+                >
+                  <IconButton
+                    icon="add"
+                    onClick={() => {
+                      setMateriasCount(materiasCount + 1);
+                    }}
+                    mt={2}
+                    variantColor="primary"
+                    variant="ghost"
+                    size="sm"
+                  />
+                  <SelectMateria
+                    materiasVisibles={materiasVisibles}
+                    cursosSeleccionados={cursosSeleccionados}
+                    seleccionarCurso={seleccionarCurso}
+                  />
+                </Flex>
               );
             })}
           </DrawerBody>

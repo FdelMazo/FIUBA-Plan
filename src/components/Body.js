@@ -5,6 +5,7 @@ import moment from "moment";
 import "moment/locale/es";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import "../CalendarStyle.css";
+import CalendarWeek from './CalendarWeek';
 import AddMateria from "./AddMateria";
 import { data } from "../data/horarios";
 
@@ -41,7 +42,8 @@ const Body = () => {
     <Calendar
       formats={formats}
       toolbar={false}
-      view={"week"}
+      view={'calendarWeek'}
+      views={{calendarWeek: CalendarWeek}}
       localizer={localizer}
       // min={min}
       // max={max}

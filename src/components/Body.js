@@ -5,7 +5,7 @@ import moment from "moment";
 import "moment/locale/es";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import "../CalendarStyle.css";
-import CalendarWeek from './CalendarWeek';
+import CalendarWeek from "./CalendarWeek";
 import AddMateria from "./AddMateria";
 import { data } from "../data/horarios";
 
@@ -36,17 +36,17 @@ const Body = () => {
   const min = new Date();
   min.setHours(7, 0, 0);
   const max = new Date();
-  max.setHours(22, 0, 0);
+  max.setHours(23, 0, 0);
 
   return (
     <Calendar
       formats={formats}
       toolbar={false}
-      view={'calendarWeek'}
-      views={{calendarWeek: CalendarWeek}}
+      view={"calendarWeek"}
+      views={{ calendarWeek: CalendarWeek }}
       localizer={localizer}
-      // min={min}
-      // max={max}
+      min={min}
+      max={max}
       defaultDate={new Date(2018, 0, 1)} // Monday
       events={events}
     />

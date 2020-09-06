@@ -28,6 +28,7 @@ const SelectCurso = (props) => {
         as={Button}
         variantColor="primary"
         variant="outline"
+        fontFamily="general"
       >
         Cursos
       </MenuButton>
@@ -36,6 +37,7 @@ const SelectCurso = (props) => {
           {materia.cursos?.map((c) => {
             return (
               <MenuItem
+                fontFamily="general"
                 value={c}
                 as={Tag}
                 onClick={() => {

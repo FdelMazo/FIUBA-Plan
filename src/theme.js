@@ -26,4 +26,7 @@ export const customTheme = {
     ...theme.icons,
     ...customIcons,
   },
+  fonts: {
+    general: "Open Sans, sans-serif",
+  },
 };

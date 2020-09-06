@@ -1,5 +1,6 @@
 import React from "react";
 import { theme } from "@chakra-ui/core";
+import "./Style.css";
 
 const customIcons = {
   github: {
@@ -21,12 +22,13 @@ export const customTheme = {
       ...theme.colors.purple,
       500: "#b794f4",
     },
+    background: "#2d3436",
   },
   icons: {
     ...theme.icons,
     ...customIcons,
   },
   fonts: {
-    general: "Open Sans, sans-serif",
+    body: "Roboto",
   },
 };

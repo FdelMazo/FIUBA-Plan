@@ -70,12 +70,15 @@ const AddMateria = (props) => {
           variantColor="primary"
           aria-label="Agregar Materia"
           icon="add"
+          color="background"
+          borderColor="background"
+          fontFamily="general"
         />
       )}
 
       <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
         <DrawerOverlay />
-        <DrawerContent bg="#2d3436">
+        <DrawerContent bg="background">
           <DrawerBody>
             <SelectCarreras
               carreras={data.carreras}

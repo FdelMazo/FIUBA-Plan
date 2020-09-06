@@ -4,7 +4,6 @@ import { useToast } from "@chakra-ui/core";
 import moment from "moment";
 import "moment/locale/es";
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import "../CalendarStyle.css";
 import CalendarWeek from "./CalendarWeek";
 import AddMateria from "./AddMateria";
 import { data } from "../data/horarios";
@@ -30,7 +29,12 @@ const Body = () => {
   const localizer = momentLocalizer(moment);
 
   const formats = {
-    dayFormat: "dddd",
+    dayFormat: (d) => {
+      const options = {
+        weekday: "short",
+      };
+      return d.toLocaleString("es-AR", options)[0].toUpperCase();
+    },
   };
 
   const min = new Date();
@@ -40,6 +44,7 @@ const Body = () => {
 
   return (
     <Calendar
+      fontFamily="general"
       formats={formats}
       toolbar={false}
       view={"calendarWeek"}

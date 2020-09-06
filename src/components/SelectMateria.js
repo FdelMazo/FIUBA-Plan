@@ -24,12 +24,14 @@ const SelectMateria = (props) => {
           variantColor="primary"
           variant="outline"
           rightIcon={!materia && "search"}
+          fontFamily="general"
         >
           {materia?.codigo || "Buscar Materia "}
         </MenuButton>
         <MenuList>
           {materia && (
             <MenuItem
+              fontFamily="general"
               onClick={() => {
                 setMateria();
               }}
@@ -47,6 +49,7 @@ const SelectMateria = (props) => {
                     setMateria(m);
                   }}
                   as={Tag}
+                  fontFamily="general"
                 >
                   {m.nombre}
                 </MenuItem>

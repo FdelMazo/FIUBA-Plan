@@ -32,6 +32,7 @@ const SelectCarreras = (props) => {
         as={Button}
         variantColor="primary"
         variant="outline"
+        fontFamily="general"
       >
         Carreras <Icon name="chevron-down" />
       </MenuButton>
@@ -43,6 +44,7 @@ const SelectCarreras = (props) => {
                 type="checkbox"
                 as={Tag}
                 value={e}
+                fontFamily="general"
                 onClick={() => {
                   seleccionarCarrera(e);
                 }}

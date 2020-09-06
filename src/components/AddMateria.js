@@ -14,6 +14,8 @@ import {
 import SelectCarreras from "./SelectCarreras";
 import SelectMateria from "./SelectMateria";
 import { data } from "../data/horarios";
+import { randomColor } from "../utils/colorHelper";
+
 
 const AddMateria = (props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -37,11 +39,13 @@ const AddMateria = (props) => {
 
   React.useEffect(() => {
     const events = cursosSeleccionados.map((curso) => {
+      curso.color = curso.color || randomColor(10);
       return curso.clases.map((c) => {
         return {
           start: new Date(2018, 0, c.dia, c.inicio),
           end: new Date(2018, 0, c.dia, c.fin),
           title: curso.docentes,
+          color: curso.color,
         };
       });
     });

@@ -1,6 +1,6 @@
 
 /**
- * Generates random human-distinguishable colours(hex string)
+ * Generates random human-distinguishable colours(as hex string)
  * @param {float} brightness - Value between 0(dark) and 255(bright)
  */
 export function randomColor(brightness) {

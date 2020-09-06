@@ -49,8 +49,18 @@ const Body = () => {
       // max={max}
       defaultDate={new Date(2018, 0, 1)} // Monday
       events={events}
+      eventPropGetter={eventPropsGetter}
     />
   );
 };
+
+function eventPropsGetter(event, start, end, isSelected) {
+  var style = {
+      backgroundColor: event.color,
+  };
+  return {
+      style: style
+  };
+}
 
 export default Body;

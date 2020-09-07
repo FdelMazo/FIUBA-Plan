@@ -37,6 +37,7 @@ const SelectCurso = (props) => {
   return (
     <Box>
       <Tooltip 
+        hasArrow
         label={materia.nombre} 
         zIndex={10000} 
         fontFamily="general"

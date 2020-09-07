@@ -13,13 +13,21 @@
 }
 
 .rbc-time-gutter {
-  padding-right: 1em;
+  padding: 0 0.5em;
   border-right: 2px solid #2d3436;
   font-weight: bold;
   color: #2d3436;
 }
 
 .rbc-time-header.rbc-overflowing {
+  border: none;
+}
+
+.rbc-day-slot .rbc-events-container {
+  margin: 0;
+}
+
+.rbc-time-content > * + * > * {
   border: none;
 }
 

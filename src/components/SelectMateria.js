@@ -18,7 +18,7 @@ const SelectMateria = (props) => {
     cursosSeleccionados,
     seleccionarCurso,
     agregarSelectMateria,
-    removerMateriaDeCalendario
+    removerMateriaDeCalendario,
   } = props;
   const [materia, setMateria] = React.useState(null);
   const [inputItems, setInputItems] = React.useState(materiasVisibles);
@@ -65,7 +65,7 @@ const SelectMateria = (props) => {
         />
       ) : (
         <>
-          <InputGroup w="60%" fontFamily="general" mt={2}>
+          <InputGroup w="60%" fontFamily="general" mt={4}>
             <Input
               {...getToggleButtonProps()}
               backgroundColor="background"
@@ -86,6 +86,7 @@ const SelectMateria = (props) => {
           {isOpen &&
             (inputItems.length ? (
               <List
+                textAlign={["left"]}
                 fontFamily="general"
                 {...getMenuProps()}
                 p={1}

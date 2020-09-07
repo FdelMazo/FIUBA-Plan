@@ -8,6 +8,7 @@ import {
   useDisclosure,
   IconButton,
   Link,
+  Box,
   Icon,
 } from "@chakra-ui/core";
 import SelectCarreras from "./SelectCarreras";
@@ -77,7 +78,7 @@ const MateriasDrawer = (props) => {
     <>
       {!isOpen && (
         <IconButton
-          m={5}
+          m={10}
           onClick={onOpen}
           variantColor="primary"
           aria-label="Agregar Materia"
@@ -92,23 +93,25 @@ const MateriasDrawer = (props) => {
         <DrawerOverlay />
         <DrawerContent bg="background">
           <DrawerBody>
-            <SelectCarreras
-              carreras={data.carreras}
-              carrerasSeleccionadas={carrerasSeleccionadas}
-              setCarrerasSeleccionadas={setCarrerasSeleccionadas}
-            />
+            <Box textAlign={["right"]}>
+              <SelectCarreras
+                carreras={data.carreras}
+                carrerasSeleccionadas={carrerasSeleccionadas}
+                setCarrerasSeleccionadas={setCarrerasSeleccionadas}
+              />
 
-            {new Array(materiasCount).fill().map(() => {
-              return (
-                <SelectMateria
-                  removerMateriaDeCalendario={removerMateriaDeCalendario}
-                  materiasVisibles={materiasVisibles}
-                  cursosSeleccionados={cursosSeleccionados}
-                  agregarSelectMateria={agregarSelectMateria}
-                  seleccionarCurso={seleccionarCurso}
-                />
-              );
-            })}
+              {new Array(materiasCount).fill().map(() => {
+                return (
+                  <SelectMateria
+                    removerMateriaDeCalendario={removerMateriaDeCalendario}
+                    materiasVisibles={materiasVisibles}
+                    cursosSeleccionados={cursosSeleccionados}
+                    agregarSelectMateria={agregarSelectMateria}
+                    seleccionarCurso={seleccionarCurso}
+                  />
+                );
+              })}
+            </Box>
           </DrawerBody>
           <DrawerFooter>
             <Link

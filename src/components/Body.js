@@ -12,24 +12,24 @@ const Body = () => {
 
   React.useEffect(() => {
     toast({
-      position: "top",
+      position: "bottom-right",
       duration: 2000,
       render: () => (
-        <Alert borderRadius={5} m={5} status="success">
+        <Alert borderRadius={5} mx={10} status="success">
           <AlertIcon />
           Actualizado al {data.cuatrimestre}
         </Alert>
       ),
     });
     toast({
-      position: "top-right",
+      position: "bottom-right",
       render: () => <MateriasDrawer setEvents={setEvents} />,
       duration: null,
     });
   }, [toast]);
 
   return (
-    <Box mx="3em" my="1em" flexGrow={1}>
+    <Box flexGrow={1}>
       <Calendar events={events} />
     </Box>
   );

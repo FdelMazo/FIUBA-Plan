@@ -55,7 +55,7 @@ const SelectCurso = (props) => {
         variant="outline"
         borderColor="primary"
         color="primary.500"
-        icon="view"
+        icon="minus"
         onClick={() => {
           removerMateria();
         }}

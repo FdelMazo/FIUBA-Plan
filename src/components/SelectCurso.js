@@ -83,10 +83,9 @@ const SelectCurso = (props) => {
                 color="primary.500"
               >
                 {item.docentes}
-                <ListIcon
-                  ml={2}
-                  icon={cursosSeleccionados.includes(item) && "check"}
-                />
+                {cursosSeleccionados.includes(item) && item?.color && (
+                  <ListIcon color={item?.color} ml={2} icon="view" />
+                )}
               </ListItem>
             </Box>
           ))}

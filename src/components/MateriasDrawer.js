@@ -19,6 +19,7 @@ const MateriasDrawer = (props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [carrerasSeleccionadas, setCarrerasSeleccionadas] = React.useState([]);
   const [cursosSeleccionados, setCursosSeleccionados] = React.useState([]);
+  const [materiasCount, setMateriasCount] = React.useState(1);
   const [materiasVisibles, setMateriasVisibles] = React.useState([]);
 
   React.useEffect(() => {
@@ -46,20 +47,30 @@ const MateriasDrawer = (props) => {
         };
       });
     });
-
     props.setEvents(events.flat());
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cursosSeleccionados]);
 
   const seleccionarCurso = (curso) => {
     if (cursosSeleccionados.includes(curso)) {
-      const cursoWithoutMateria = cursosSeleccionados.filter(
-        (el) => el.docentes !== curso.docentes
+      const cursosWithoutCurso = cursosSeleccionados.filter(
+        (el) => el !== curso
       );
-      setCursosSeleccionados([...cursoWithoutMateria]);
+      setCursosSeleccionados([...cursosWithoutCurso]);
     } else {
       setCursosSeleccionados([...cursosSeleccionados, curso]);
     }
+  };
+
+  const removerMateriaDeCalendario = (materia) => {
+    const cursos = cursosSeleccionados.filter(
+      (c) => !materia.cursos.includes(c)
+    );
+    setCursosSeleccionados([...cursos]);
+  };
+
+  const agregarSelectMateria = () => {
+    setMateriasCount(materiasCount + 1);
   };
 
   return (
@@ -87,11 +98,17 @@ const MateriasDrawer = (props) => {
               setCarrerasSeleccionadas={setCarrerasSeleccionadas}
             />
 
-            <SelectMateria
-              materiasVisibles={materiasVisibles}
-              cursosSeleccionados={cursosSeleccionados}
-              seleccionarCurso={seleccionarCurso}
-            />
+            {new Array(materiasCount).fill().map(() => {
+              return (
+                <SelectMateria
+                  removerMateriaDeCalendario={removerMateriaDeCalendario}
+                  materiasVisibles={materiasVisibles}
+                  cursosSeleccionados={cursosSeleccionados}
+                  agregarSelectMateria={agregarSelectMateria}
+                  seleccionarCurso={seleccionarCurso}
+                />
+              );
+            })}
           </DrawerBody>
           <DrawerFooter>
             <Link

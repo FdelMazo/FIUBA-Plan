@@ -1,57 +1,98 @@
 import React from "react";
 import {
-  Menu,
-  MenuButton,
   Button,
-  MenuList,
-  Tag,
-  MenuItem,
-  MenuOptionGroup,
-  Icon,
+  List,
+  ListItem,
+  ListIcon,
+  Box,
+  IconButton,
 } from "@chakra-ui/core";
+import { useSelect } from "downshift";
 
 const SelectCurso = (props) => {
-  const { materia, seleccionarCurso, cursosSeleccionados } = props;
+  const {
+    cursosSeleccionados,
+    seleccionarCurso,
+    materia,
+    setMateria,
+    removerMateriaDeCalendario,
+  } = props;
+
+  const removerMateria = () => {
+    removerMateriaDeCalendario(materia);
+    setMateria(null);
+  };
 
   React.useEffect(() => {
-    const primerCurso = materia.cursos[0];
-    if (!cursosSeleccionados.includes(primerCurso))
-      seleccionarCurso(primerCurso);
+    seleccionarCurso(materia.cursos[0]);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const { isOpen, getToggleButtonProps, getMenuProps } = useSelect({
+    items: materia.cursos,
+    selectedItem: null,
+  });
+
   return (
-    <Menu>
-      <MenuButton
+    <Box>
+      <Button
         mt={2}
-        ml={2}
-        as={Button}
+        fontFamily="general"
+        {...getToggleButtonProps()}
+        backgroundColor="background"
         variantColor="primary"
         variant="outline"
-        fontFamily="general"
+        borderColor="primary"
+        color="primary.500"
       >
-        Cursos
-      </MenuButton>
-      <MenuList>
-        <MenuOptionGroup>
-          {materia.cursos?.map((c) => {
-            return (
-              <MenuItem
-                fontFamily="general"
-                value={c}
-                as={Tag}
-                onClick={() => {
-                  seleccionarCurso(c);
-                }}
+        {materia.codigo}
+      </Button>
+      <IconButton
+        mt={2}
+        ml={2}
+        backgroundColor="background"
+        variantColor="primary"
+        variant="outline"
+        borderColor="primary"
+        color="primary.500"
+        icon="view"
+        onClick={() => {
+          removerMateria();
+        }}
+      />
+      {isOpen && (
+        <List
+          fontFamily="general"
+          {...getMenuProps()}
+          p={1}
+          mb={0}
+          border="1px"
+          borderRadius="md"
+          borderColor="primary.500"
+          style={{
+            maxHeight: "10em",
+            overflowY: "scroll",
+          }}
+        >
+          {materia.cursos.map((item, index) => (
+            <Box cursor="pointer" onClick={() => seleccionarCurso(item)}>
+              <ListItem
+                borderRadius="md"
+                fontSize="smaller"
+                _hover={{ bg: "gray.500" }}
+                color="primary.500"
               >
-                {cursosSeleccionados.includes(c) && <Icon name="check" />}
-                {c?.docentes}
-              </MenuItem>
-            );
-          })}
-        </MenuOptionGroup>
-      </MenuList>
-    </Menu>
+                {item.docentes}
+                <ListIcon
+                  ml={2}
+                  icon={cursosSeleccionados.includes(item) && "check"}
+                />
+              </ListItem>
+            </Box>
+          ))}
+        </List>
+      )}
+    </Box>
   );
 };
 

@@ -21,7 +21,7 @@ const SelectCarreras = (props) => {
   };
 
   return (
-    <>
+    <Box mb={4}>
       <Button
         {...getToggleButtonProps()}
         rightIcon={isOpen ? "chevron-up" : "chevron-down"}
@@ -41,6 +41,7 @@ const SelectCarreras = (props) => {
           border="1px"
           borderRadius="md"
           borderColor="primary.500"
+          fontFamily="general"
         >
           {carreras.map((item, index) => (
             <Box cursor="pointer" onClick={() => seleccionarCarrera(item)}>
@@ -52,7 +53,6 @@ const SelectCarreras = (props) => {
                 {item.nombre}
                 <ListIcon
                   ml={2}
-                  value={item.nombre}
                   icon={carrerasSeleccionadas.includes(item) && "check"}
                 />
               </ListItem>
@@ -60,7 +60,7 @@ const SelectCarreras = (props) => {
           ))}
         </List>
       )}
-    </>
+    </Box>
   );
 };
 

@@ -1,12 +1,75 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap");
 
 .rbc-allday-cell {
   display: none;
 }
-.rbc-time-view .rbc-header {
-  border-bottom: none;
-}
 
 .rbc-event {
-  font-family: "Roboto", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.rbc-time-view {
+  border: none;
+}
+
+.rbc-time-gutter {
+  padding-right: 1em;
+  border-right: 2px solid #2d3436;
+  font-weight: bold;
+  color: #2d3436;
+}
+
+.rbc-time-header.rbc-overflowing {
+  border: none;
+}
+
+.rbc-timeslot-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+}
+
+.rbc-row {
+  height: 3em;
+  line-height: 3em;
+  border: none;
+}
+
+.rbc-header * {
+  cursor: text;
+  color: #2d3436;
+  font-size: larger;
+}
+
+.rbc-day-slot .rbc-timeslot-group:nth-child(even) {
+  background: #f1f1f1;
+}
+
+.rbc-header {
+  border: none;
+}
+
+.rbc-day-slot {
+  border-right: 2px solid #2d3436;
+}
+
+.rbc-day-slot .rbc-time-slot {
+  border-top: none;
+}
+
+.rbc-time-content {
+  border-top: none;
+}
+
+.rbc-header {
+  border-left: none;
+}
+
+.rbc-header + .rbc-header {
+  border-left: none;
+}
+
+.rbc-time-header-content {
+  border: none;
 }

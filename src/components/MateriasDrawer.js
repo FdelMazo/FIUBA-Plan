@@ -9,19 +9,16 @@ import {
   IconButton,
   Link,
   Icon,
-  Flex,
 } from "@chakra-ui/core";
 import SelectCarreras from "./SelectCarreras";
 import SelectMateria from "./SelectMateria";
 import { data } from "../data/horarios";
 import { randomColor } from "../utils/colorHelper";
 
-
-const AddMateria = (props) => {
+const MateriasDrawer = (props) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [carrerasSeleccionadas, setCarrerasSeleccionadas] = React.useState([]);
   const [cursosSeleccionados, setCursosSeleccionados] = React.useState([]);
-  const [materiasCount, setMateriasCount] = React.useState(1);
   const [materiasVisibles, setMateriasVisibles] = React.useState([]);
 
   React.useEffect(() => {
@@ -90,31 +87,11 @@ const AddMateria = (props) => {
               setCarrerasSeleccionadas={setCarrerasSeleccionadas}
             />
 
-            {new Array(materiasCount).fill().map((c) => {
-              return (
-                <Flex
-                  flexDirection="row"
-                  justify="space-between"
-                  alignItems="center"
-                >
-                  <IconButton
-                    icon="add"
-                    onClick={() => {
-                      setMateriasCount(materiasCount + 1);
-                    }}
-                    mt={2}
-                    variantColor="primary"
-                    variant="ghost"
-                    size="sm"
-                  />
-                  <SelectMateria
-                    materiasVisibles={materiasVisibles}
-                    cursosSeleccionados={cursosSeleccionados}
-                    seleccionarCurso={seleccionarCurso}
-                  />
-                </Flex>
-              );
-            })}
+            <SelectMateria
+              materiasVisibles={materiasVisibles}
+              cursosSeleccionados={cursosSeleccionados}
+              seleccionarCurso={seleccionarCurso}
+            />
           </DrawerBody>
           <DrawerFooter>
             <Link
@@ -131,4 +108,4 @@ const AddMateria = (props) => {
   );
 };
 
-export default AddMateria;
+export default MateriasDrawer;

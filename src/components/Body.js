@@ -1,11 +1,9 @@
 import React from "react";
-import { Calendar, momentLocalizer } from "react-big-calendar";
-import { useToast } from "@chakra-ui/core";
-import moment from "moment";
+import Calendar from "./Calendar";
+import { useToast, Box, Alert, AlertIcon } from "@chakra-ui/core";
 import "moment/locale/es";
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import CalendarWeek from "./CalendarWeek";
-import AddMateria from "./AddMateria";
+import MateriasDrawer from "./MateriasDrawer";
 import { data } from "../data/horarios";
 
 const Body = () => {
@@ -14,58 +12,27 @@ const Body = () => {
 
   React.useEffect(() => {
     toast({
-      description: `Actualizado al ${data.cuatrimestre}`,
-      status: "success",
-      position: "bottom-right",
+      position: "top",
       duration: 2000,
+      render: () => (
+        <Alert borderRadius={5} m={5} status="success">
+          <AlertIcon />
+          Actualizado al {data.cuatrimestre}
+        </Alert>
+      ),
     });
     toast({
-      position: "bottom-right",
-      render: () => <AddMateria setEvents={setEvents} />,
+      position: "top-right",
+      render: () => <MateriasDrawer setEvents={setEvents} />,
       duration: null,
     });
   }, [toast]);
 
-  const localizer = momentLocalizer(moment);
-
-  const formats = {
-    dayFormat: (d) => {
-      const options = {
-        weekday: "short",
-      };
-      return d.toLocaleString("es-AR", options)[0].toUpperCase();
-    },
-  };
-
-  const min = new Date();
-  min.setHours(7, 0, 0);
-  const max = new Date();
-  max.setHours(23, 0, 0);
-
   return (
-    <Calendar
-      fontFamily="general"
-      formats={formats}
-      toolbar={false}
-      view={"calendarWeek"}
-      views={{ calendarWeek: CalendarWeek }}
-      localizer={localizer}
-      min={min}
-      max={max}
-      defaultDate={new Date(2018, 0, 1)} // Monday
-      events={events}
-      eventPropGetter={eventPropsGetter}
-    />
+    <Box mx="3em" my="1em" flexGrow={1}>
+      <Calendar events={events} />
+    </Box>
   );
 };
-
-function eventPropsGetter(event, start, end, isSelected) {
-  var style = {
-      backgroundColor: event.color,
-  };
-  return {
-      style: style
-  };
-}
 
 export default Body;

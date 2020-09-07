@@ -1,5 +1,6 @@
 import React from "react";
 import { theme } from "@chakra-ui/core";
+import "react-big-calendar/lib/css/react-big-calendar.css";
 import "./Style.css";
 
 const customIcons = {
@@ -29,6 +30,6 @@ export const customTheme = {
     ...customIcons,
   },
   fonts: {
-    body: "Roboto",
+    general: "Noto Sans JP, sans-serif",
   },
 };

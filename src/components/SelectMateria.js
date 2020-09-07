@@ -19,7 +19,7 @@ const SelectMateria = (props) => {
     <Box>
       <Menu>
         <MenuButton
-          mt={2}
+          mt={6}
           as={Button}
           variantColor="primary"
           variant="outline"

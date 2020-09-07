@@ -1,17 +1,13 @@
 import React from "react";
-import {
-  Menu,
-  MenuButton,
-  MenuList,
-  Button,
-  Icon,
-  Tag,
-  MenuOptionGroup,
-  MenuItemOption,
-} from "@chakra-ui/core";
+import { Button, List, ListItem, ListIcon, Box } from "@chakra-ui/core";
+import { useSelect } from "downshift";
 
 const SelectCarreras = (props) => {
   const { carreras, carrerasSeleccionadas, setCarrerasSeleccionadas } = props;
+  const { isOpen, getToggleButtonProps, getMenuProps } = useSelect({
+    items: carrerasSeleccionadas,
+    selectedItem: null,
+  });
 
   const seleccionarCarrera = (carrera) => {
     if (carrerasSeleccionadas.includes(carrera)) {
@@ -25,37 +21,46 @@ const SelectCarreras = (props) => {
   };
 
   return (
-    <Menu>
-      <MenuButton
-        my={2}
+    <>
+      <Button
+        {...getToggleButtonProps()}
+        rightIcon={isOpen ? "chevron-up" : "chevron-down"}
+        mt={8}
         w="100%"
-        as={Button}
         variantColor="primary"
         variant="outline"
         fontFamily="general"
       >
-        Carreras <Icon name="chevron-down" />
-      </MenuButton>
-      <MenuList>
-        <MenuOptionGroup defaultValue={carrerasSeleccionadas} type="checkbox">
-          {carreras.map((e) => {
-            return (
-              <MenuItemOption
-                type="checkbox"
-                as={Tag}
-                value={e}
-                fontFamily="general"
-                onClick={() => {
-                  seleccionarCarrera(e);
-                }}
+        Carreras
+      </Button>
+      {isOpen && (
+        <List
+          {...getMenuProps()}
+          p={1}
+          mb={0}
+          border="1px"
+          borderRadius="md"
+          borderColor="primary.500"
+        >
+          {carreras.map((item, index) => (
+            <Box cursor="pointer" onClick={() => seleccionarCarrera(item)}>
+              <ListItem
+                borderRadius="md"
+                _hover={{ bg: "gray.500" }}
+                color="primary.500"
               >
-                {e.nombre}
-              </MenuItemOption>
-            );
-          })}
-        </MenuOptionGroup>
-      </MenuList>
-    </Menu>
+                {item.nombre}
+                <ListIcon
+                  ml={2}
+                  value={item.nombre}
+                  icon={carrerasSeleccionadas.includes(item) && "check"}
+                />
+              </ListItem>
+            </Box>
+          ))}
+        </List>
+      )}
+    </>
   );
 };
 

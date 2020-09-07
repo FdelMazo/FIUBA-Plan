@@ -6,6 +6,7 @@ import {
   ListIcon,
   Box,
   IconButton,
+  Tooltip,
 } from "@chakra-ui/core";
 import { useSelect } from "downshift";
 
@@ -35,18 +36,26 @@ const SelectCurso = (props) => {
 
   return (
     <Box>
-      <Button
-        mt={2}
+      <Tooltip 
+        label={materia.nombre} 
+        zIndex={10000} 
         fontFamily="general"
-        {...getToggleButtonProps()}
-        backgroundColor="background"
-        variantColor="primary"
-        variant="outline"
-        borderColor="primary"
-        color="primary.500"
-      >
-        {materia.codigo}
-      </Button>
+        backgroundColor="tooltipBackground"
+        >
+        <Button
+          mt={2}
+          fontFamily="general"
+          {...getToggleButtonProps()}
+          backgroundColor="background"
+          variantColor="primary"
+          variant="outline"
+          borderColor="primary"
+          color="primary.500"
+        >
+          {materia.codigo}
+        </Button>
+      </Tooltip>
+
       <IconButton
         mt={2}
         ml={2}

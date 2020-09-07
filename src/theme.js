@@ -24,6 +24,7 @@ export const customTheme = {
       500: "#b794f4",
     },
     background: "#2d3436",
+    tooltipBackground: "#424c4f"
   },
   icons: {
     ...theme.icons,

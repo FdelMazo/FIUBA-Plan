@@ -47,7 +47,14 @@ const MyCalendar = (props) => {
 
 function eventPropsGetter(event, start, end, isSelected) {
   var style = {
-    backgroundColor: event.color,
+    backgroundColor: event.color + "55", // Transparency
+    borderLeftColor: event.color,
+    borderRightColor: '#0000',
+    borderBottomColor: '#0000',
+    borderTopColor: '#0000',
+    borderStyle: 'solid',
+    borderWidth: 'thick',
+    color: '#1f1f1f'
   };
   return {
     style: style,

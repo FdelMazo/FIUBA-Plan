@@ -23,6 +23,10 @@ const MateriasDrawer = (props) => {
   const [materiasCount, setMateriasCount] = React.useState(1);
   const [materiasVisibles, setMateriasVisibles] = React.useState([]);
 
+  const sortyByCodigo = (a, b) => {
+    return a.codigo > b.codigo;
+  };
+
   React.useEffect(() => {
     const materiasAMostrarConDups = carrerasSeleccionadas?.reduce(
       (arr, c) => arr.concat(...c.materias),
@@ -33,7 +37,7 @@ const MateriasDrawer = (props) => {
     const materias = materiasAMostrar.size
       ? data.materias.filter((m) => materiasAMostrar.has(m.index))
       : data.materias;
-    setMateriasVisibles([...materias]);
+    setMateriasVisibles([...materias].sort(sortyByCodigo));
   }, [carrerasSeleccionadas]);
 
   React.useEffect(() => {
@@ -41,8 +45,9 @@ const MateriasDrawer = (props) => {
       curso.color = curso.color || randomColor(10);
       return curso.clases.map((c) => {
         return {
-          start: new Date(2018, 0, c.dia, c.inicio),
-          end: new Date(2018, 0, c.dia, c.fin),
+          // +10 only for test data. Remove once it hits prod!!
+          start: new Date(2018, 0, c.dia, c.inicio + 10),
+          end: new Date(2018, 0, c.dia, c.fin + 10),
           title: curso.docentes,
           color: curso.color,
         };

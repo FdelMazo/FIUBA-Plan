@@ -1,6 +1,5 @@
 import React from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
-import { Alert, AlertIcon } from "@chakra-ui/core";
 import moment from "moment";
 import "moment/locale/es";
 import "react-big-calendar/lib/css/react-big-calendar.css";
@@ -44,25 +43,20 @@ const MyCalendar = (props) => {
   max.setHours(23, 0, 0);
 
   function eventPropsGetter(event, start, end, isSelected) {
-    var style = {
-      backgroundColor: "#9993",
+    const style = {
+      borderWidth: "thick",
+      color: "#1f1f1f",
       borderLeftColor: event.color,
-      borderRightColor: '#0000',
-      borderBottomColor: '#0000',
-      borderTopColor: '#0000',
-      borderWidth: 'thick',
-      color: '#1f1f1f',
-      textAlign: 'right'
     };
-    if (useAgenda) {
-      delete style['backgroundColor']
-      delete style['borderRightColor']
-      delete style['borderBottomColor']
-      delete style['borderTopColor']
-      delete style['textAlign']
-    }
+    const calendarWeekStyle = {
+      textAlign: "right",
+      backgroundColor: "#9993",
+      borderRightColor: "#0000",
+      borderBottomColor: "#0000",
+      borderTopColor: "#0000",
+    };
     return {
-      style: style
+      style: useAgenda ? style : { ...style, ...calendarWeekStyle },
     };
   }
 
@@ -78,13 +72,6 @@ const MyCalendar = (props) => {
       defaultDate={new Date(2018, 0, 1)} // Monday
       events={events}
       eventPropGetter={eventPropsGetter}
-      messages={{
-        noEventsInRange:
-          <Alert status="info" variant="left-accent">
-            <AlertIcon />
-              No hay materias seleccionadas
-          </Alert>
-      }}
       components={{
         event: MateriaEvent
       }}
@@ -92,6 +79,5 @@ const MyCalendar = (props) => {
     />
   );
 };
-
 
 export default MyCalendar;

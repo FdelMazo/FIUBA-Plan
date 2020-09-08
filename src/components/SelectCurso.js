@@ -15,11 +15,6 @@ const SelectCurso = (props) => {
   const { toggleCurso, removerMateria } = React.useContext(DataContext);
   const { materia } = props;
 
-  React.useEffect(() => {
-    toggleCurso(materia, materia.cursos[0]);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
   const {
     isOpen,
     getItemProps,

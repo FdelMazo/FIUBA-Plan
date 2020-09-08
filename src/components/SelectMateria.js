@@ -19,7 +19,7 @@ const SelectMateria = (props) => {
   React.useEffect(() => {
     const materiasVisibles = data.materias.filter((m) => m.show);
     const materias = materiasVisibles.length ? materiasVisibles : data.materias;
-    setInputItems(materias.sort((a, b) => a.codigo > b.codigo));
+    setInputItems(materias);
   }, [data]);
 
   const {

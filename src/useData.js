@@ -34,6 +34,19 @@ const useGraph = () => {
     const newData = JSON.parse(JSON.stringify(data));
     const materia = newData.materias.find((m) => m.nombre === item.nombre);
     materia.visible = true;
+    const curso = materia.cursos[0];
+    curso.show = true;
+    curso.color = randomColor(10);
+
+    // +10 only for test data. Remove once it hits prod!!
+    const addEvents = curso.clases.map((clase) => ({
+      start: new Date(2018, 0, clase.dia, clase.inicio + 10),
+      end: new Date(2018, 0, clase.dia, clase.fin + 10),
+      title: curso.docentes,
+      docentes: curso.docentes,
+      color: curso.color,
+    }));
+    setEvents([...events, ...addEvents]);
     setData(newData);
   };
 

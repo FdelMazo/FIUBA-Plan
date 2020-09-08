@@ -7,6 +7,8 @@ import {
   DrawerContent,
   useDisclosure,
   IconButton,
+  Alert,
+  AlertIcon,
   Link,
   useToast,
   Box,
@@ -19,13 +21,13 @@ import { DataContext } from "../Context";
 
 const MateriasDrawer = (props) => {
   const { data } = React.useContext(DataContext);
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { isOpen, onToggle, onClose } = useDisclosure();
   const toast = useToast();
 
   const AddButton = () => (
     <IconButton
       m={10}
-      onClick={onOpen}
+      onClick={onToggle}
       variantColor="primary"
       aria-label="Agregar Materia"
       icon="add"
@@ -41,6 +43,17 @@ const MateriasDrawer = (props) => {
       render: () => <AddButton />,
       duration: null,
     });
+    toast({
+      position: "bottom-right",
+      duration: 2000,
+      render: () => (
+        <Alert borderRadius={5} mx={10} mb={8} status="success">
+          <AlertIcon />
+          Actualizado al {data.cuatrimestre}
+        </Alert>
+      ),
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [toast]);
 
   return (

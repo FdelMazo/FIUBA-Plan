@@ -53,25 +53,16 @@ const useGraph = () => {
   const toggleCurso = (materia, item) => {
     const newData = JSON.parse(JSON.stringify(data));
 
-    const curso = data.materias
+    const curso = newData.materias
       .find((m) => m.nombre === materia.nombre)
       .cursos.find((c) => c.docentes === item.docentes);
     const v = !!curso.show;
     if (v) {
-      const curso = newData.materias
-        .find((m) => m.nombre === materia.nombre)
-        .cursos.find((c) => c.docentes === curso.docentes);
-
       curso.show = false;
-
       const addEvents = events.filter((e) => e.docentes !== curso.docentes);
 
       setEvents(addEvents);
     } else {
-      const curso = newData.materias
-        .find((m) => m.nombre === materia.nombre)
-        .cursos.find((c) => c.docentes === item.docentes);
-
       curso.show = true;
       curso.color = randomColor(10);
 

@@ -2,47 +2,44 @@ import React from "react";
 import {
   Button,
   List,
-  ListItem,
+  PseudoBox,
   ListIcon,
   Box,
   IconButton,
   Tooltip,
 } from "@chakra-ui/core";
 import { useSelect } from "downshift";
+import { DataContext } from "../Context";
 
 const SelectCurso = (props) => {
-  const {
-    cursosSeleccionados,
-    seleccionarCurso,
-    materia,
-    setMateria,
-    removerMateriaDeCalendario,
-  } = props;
-
-  const removerMateria = () => {
-    removerMateriaDeCalendario(materia);
-    setMateria(null);
-  };
+  const { toggleCurso, removerMateria } = React.useContext(DataContext);
+  const { materia } = props;
 
   React.useEffect(() => {
-    seleccionarCurso(materia.cursos[0]);
+    toggleCurso(materia, materia.cursos[0]);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const { isOpen, getToggleButtonProps, getMenuProps } = useSelect({
+  const {
+    isOpen,
+    getItemProps,
+    getToggleButtonProps,
+    getMenuProps,
+  } = useSelect({
+    stateReducer,
     items: materia.cursos,
     selectedItem: null,
   });
 
   return (
     <Box>
-      <Tooltip 
+      <Tooltip
         hasArrow
-        label={materia.nombre} 
-        zIndex={10000} 
+        label={materia.nombre}
+        zIndex={10000}
         fontFamily="general"
         backgroundColor="tooltipBackground"
-        >
+      >
         <Button
           mt={2}
           fontFamily="general"
@@ -67,7 +64,7 @@ const SelectCurso = (props) => {
         color="primary.500"
         icon="minus"
         onClick={() => {
-          removerMateria();
+          removerMateria(materia);
         }}
       />
       {isOpen && (
@@ -85,24 +82,46 @@ const SelectCurso = (props) => {
           }}
         >
           {materia.cursos.map((item, index) => (
-            <Box cursor="pointer" onClick={() => seleccionarCurso(item)}>
-              <ListItem
-                borderRadius="md"
-                fontSize="smaller"
-                _hover={{ bg: "gray.500" }}
-                color="primary.500"
+            <PseudoBox
+              borderRadius="md"
+              _hover={{ bg: "gray.500" }}
+              color="primary.500"
+              fontSize="smaller"
+              onClick={() => toggleCurso(materia, item)}
+            >
+              <li
+                {...getItemProps({
+                  item,
+                  index,
+                })}
               >
                 {item.docentes}
-                {cursosSeleccionados.includes(item) && item?.color && (
+                {item.show && (
                   <ListIcon color={item?.color} ml={2} icon="view" />
                 )}
-              </ListItem>
-            </Box>
+              </li>
+            </PseudoBox>
           ))}
         </List>
       )}
     </Box>
   );
 };
+
+function stateReducer(state, actionAndChanges) {
+  const { changes, type } = actionAndChanges;
+  switch (type) {
+    case useSelect.stateChangeTypes.MenuKeyDownEnter:
+    case useSelect.stateChangeTypes.MenuKeyDownSpaceButton:
+    case useSelect.stateChangeTypes.ItemClick:
+      return {
+        ...changes,
+        isOpen: true, // keep menu open after selection.
+        highlightedIndex: state.highlightedIndex,
+      };
+    default:
+      return changes;
+  }
+}
 
 export default SelectCurso;

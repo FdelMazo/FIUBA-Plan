@@ -44,7 +44,7 @@ const MateriasDrawer = (props) => {
       duration: null,
     });
     toast({
-      position: "bottom-right",
+      position: "bottom",
       duration: 2000,
       render: () => (
         <Alert borderRadius={5} mx={10} mb={8} status="success">
@@ -59,7 +59,7 @@ const MateriasDrawer = (props) => {
   return (
     <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
       <DrawerOverlay />
-      <DrawerContent bg="background">
+      <DrawerContent bg="background" zIndex={5501}>
         <DrawerBody>
           <Box textAlign={["right"]}>
             <SelectCarreras />

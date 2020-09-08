@@ -51,30 +51,37 @@ function Agenda({
       let dateLabel = idx === 0 && localizer.format(day, 'agendaDateFormat')
       let first =
         idx === 0 ? (
-          <tr>
-            <td colSpan="2" className="rbc-agenda-date-cell">
+          <tr key={dayKey + "+" + idx}>
+            <td
+              key={dayKey + "++" + idx}
+              colSpan="2"
+              className="rbc-agenda-date-cell"
+            >
               {AgendaDate ? (
                 <AgendaDate day={day} label={dateLabel} />
               ) : (
-                dateLabel
-              )}
+                  dateLabel
+                )}
             </td>
           </tr>
         ) : (
-          false
-        )
+            false
+          );
 
       return [
         first,
-        <tr
-          key={dayKey + '_' + idx}
-          className={userProps.className}
-        >
-          <td className="rbc-agenda-time-cell">{timeRangeLabel(day, event)}</td>
-          <td className="rbc-agenda-event-cell" style={userProps.style}>
+        <tr key={dayKey + "_" + idx} className={userProps.className}>
+          <td key={dayKey + "__" + idx} className="rbc-agenda-time-cell">
+            {timeRangeLabel(day, event)}
+          </td>
+          <td
+            key={dayKey + "___" + idx}
+            className="rbc-agenda-event-cell"
+            style={userProps.style}
+          >
             {Event ? <Event event={event} title={title} /> : title}
           </td>
-        </tr>
+        </tr>,
       ]
     }, [])
   }

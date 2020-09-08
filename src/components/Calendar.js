@@ -11,12 +11,12 @@ import useWindowSize from "../utils/useWindowSize";
 const MyCalendar = (props) => {
   const { events } = props;
   const { width } = useWindowSize();
-  const [ useAgenda, setUseAgenda ] = React.useState(false);
+  const [useAgenda, setUseAgenda] = React.useState(false);
   const localizer = momentLocalizer(moment);
 
   React.useEffect(() => {
-    setUseAgenda(width < 1000)
-  }, [width])
+    setUseAgenda(width < 1000);
+  }, [width]);
 
   const formats = {
     dayFormat: (d) => {
@@ -64,7 +64,8 @@ const MyCalendar = (props) => {
     <Calendar
       formats={formats}
       toolbar={false}
-      view={useAgenda ? 'calendarAgenda' : 'calendarWeek'}
+      view={useAgenda ? "calendarAgenda" : "calendarWeek"}
+      onView={() => {}}
       views={{ calendarAgenda: CalendarAgenda, calendarWeek: CalendarWeek }}
       localizer={localizer}
       min={min}
@@ -73,7 +74,7 @@ const MyCalendar = (props) => {
       events={events}
       eventPropGetter={eventPropsGetter}
       components={{
-        event: MateriaEvent
+        event: MateriaEvent,
       }}
       dayLayoutAlgorithm="no-overlap"
     />

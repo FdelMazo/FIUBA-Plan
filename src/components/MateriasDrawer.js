@@ -77,7 +77,7 @@ const MateriasDrawer = (props) => {
             color="primary.500"
             href="https://github.com/fdelmazo/FIUBA-Plan"
           >
-            <Icon color="primary" name="github" />
+            <Icon size="2em" color="primary" name="github" />
           </Link>
         </DrawerFooter>
       </DrawerContent>

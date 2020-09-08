@@ -81,3 +81,12 @@
 .rbc-time-header-content {
   border: none;
 }
+
+.rbc-agenda-event-cell, .rbc-agenda-time-cell, .rbc-agenda-date-cell {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: small;
+}
+
+.rbc-agenda-date-cell {
+  background-color: #f1f1f1;
+}

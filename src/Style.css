@@ -90,3 +90,8 @@
 .rbc-agenda-date-cell {
   background-color: #f1f1f1;
 }
+
+.rbc-agenda-event-cell-sub {
+  font-size: smaller;
+  color: #555
+}

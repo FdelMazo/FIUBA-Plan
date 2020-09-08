@@ -44,6 +44,7 @@ const useGraph = () => {
       end: new Date(2018, 0, clase.dia, clase.fin + 10),
       title: curso.docentes,
       docentes: curso.docentes,
+      materia: materia.nombre,
       color: curso.color,
     }));
     setEvents([...events, ...addEvents]);
@@ -85,6 +86,7 @@ const useGraph = () => {
         end: new Date(2018, 0, clase.dia, clase.fin + 10),
         title: curso.docentes,
         docentes: curso.docentes,
+        materia: materia.nombre,
         color: curso.color,
       }));
       setEvents([...events, ...addEvents]);

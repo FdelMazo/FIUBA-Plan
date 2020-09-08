@@ -6,6 +6,7 @@ import "moment/locale/es";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import CalendarWeek from "./CalendarWeek";
 import CalendarAgenda from "./CalendarAgenda";
+import MateriaEvent from "./MateriaEvent";
 import useWindowSize from "../utils/useWindowSize";
 
 const MyCalendar = (props) => {
@@ -44,19 +45,21 @@ const MyCalendar = (props) => {
 
   function eventPropsGetter(event, start, end, isSelected) {
     var style = {
-      backgroundColor: event.color + "55", // Transparency
+      backgroundColor: "#9993",
       borderLeftColor: event.color,
       borderRightColor: '#0000',
       borderBottomColor: '#0000',
       borderTopColor: '#0000',
       borderWidth: 'thick',
-      color: '#1f1f1f'
+      color: '#1f1f1f',
+      textAlign: 'right'
     };
     if (useAgenda) {
       delete style['backgroundColor']
       delete style['borderRightColor']
       delete style['borderBottomColor']
       delete style['borderTopColor']
+      delete style['textAlign']
     }
     return {
       style: style
@@ -82,6 +85,10 @@ const MyCalendar = (props) => {
               No hay materias seleccionadas
           </Alert>
       }}
+      components={{
+        event: MateriaEvent
+      }}
+      dayLayoutAlgorithm="no-overlap"
     />
   );
 };

@@ -15,10 +15,12 @@ import { DataContext } from "../Context";
 const SelectMateria = (props) => {
   const { data, agregarMateria } = React.useContext(DataContext);
   const [inputItems, setInputItems] = React.useState([]);
+  const [visibleSubjects, setVisibleSubjects] = React.useState([]);
 
   React.useEffect(() => {
     const materiasVisibles = data.materias.filter((m) => m.show);
     const materias = materiasVisibles.length ? materiasVisibles : data.materias;
+    setVisibleSubjects(materias);
     setInputItems(materias);
   }, [data]);
 
@@ -32,7 +34,7 @@ const SelectMateria = (props) => {
     items: inputItems,
     onInputValueChange: ({ inputValue }) => {
       setInputItems(
-        inputItems.filter(
+        visibleSubjects.filter(
           (item) =>
             item.nombre.toLowerCase().startsWith(inputValue.toLowerCase()) ||
             item.codigo.startsWith(inputValue)

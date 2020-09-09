@@ -13,6 +13,7 @@ import {
   useToast,
   Box,
   Icon,
+  Tooltip,
 } from "@chakra-ui/core";
 import SelectCarreras from "./SelectCarreras";
 import SelectMateria from "./SelectMateria";
@@ -20,6 +21,7 @@ import SelectCurso from "./SelectCurso";
 import { DataContext } from "../Context";
 
 const MateriasDrawer = (props) => {
+  const {useAgenda, setUseAgenda} = props;
   const { data } = React.useContext(DataContext);
   const { isOpen, onToggle, onClose } = useDisclosure();
   const toast = useToast();
@@ -79,6 +81,22 @@ const MateriasDrawer = (props) => {
           >
             <Icon size="2em" color="primary" name="github" />
           </Link>
+          <Tooltip 
+            zIndex={5502}
+            label="Cambiar vista"
+            fontFamily="general"
+            backgroundColor="tooltipBackground"
+          >
+            <IconButton
+              pos="absolute"
+              left="10%"
+              bottom="2%"
+              variant="outline"
+              variantColor="primary"
+              icon="calendar"
+              onClick={() => setUseAgenda(!useAgenda)}
+            />
+          </Tooltip>
         </DrawerFooter>
       </DrawerContent>
     </Drawer>

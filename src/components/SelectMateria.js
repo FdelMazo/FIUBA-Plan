@@ -36,8 +36,8 @@ const SelectMateria = (props) => {
       setInputItems(
         visibleSubjects.filter(
           (item) =>
-            item.nombre.toLowerCase().startsWith(inputValue.toLowerCase()) ||
-            item.codigo.startsWith(inputValue)
+            item.nombre.toLowerCase().includes(inputValue.toLowerCase()) ||
+            item.codigo.includes(inputValue)
         )
       );
     },

@@ -45,7 +45,7 @@ const SelectMateria = (props) => {
 
   return (
     <>
-      <InputGroup w="60%" fontFamily="general" mt={4}>
+      <InputGroup w="100%" fontFamily="general" mt={4}>
         <Input
           {...getToggleButtonProps()}
           backgroundColor="background"
@@ -56,10 +56,9 @@ const SelectMateria = (props) => {
           {...getInputProps()}
           {...getComboboxProps()}
           placeholder="Buscar Materia..."
-          pr={10}
         />
         <InputRightElement
-          children={<Icon ml={20} name="search" color="primary.500" />}
+          children={<Icon name="search" color="primary.500" />}
         />
       </InputGroup>
       {isOpen &&

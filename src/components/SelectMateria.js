@@ -85,7 +85,7 @@ const SelectMateria = (props) => {
                 color="primary.500"
                 fontSize="smaller"
                 onClick={() => {
-                  agregarMateria(item);
+                  !item.visible && agregarMateria(item);
                 }}
               >
                 <li>

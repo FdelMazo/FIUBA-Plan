@@ -65,9 +65,9 @@ const MateriasDrawer = (props) => {
             <SelectCarreras />
             {data.materias
               .filter((m) => m.visible)
-              .map((m) => {
-                return <SelectCurso materia={m} />;
-              })}
+              .map((m) => (
+                <SelectCurso materia={m} />
+              ))}
             <SelectMateria />
           </Box>
         </DrawerBody>

@@ -97,3 +97,42 @@
   font-size: smaller;
   color: #555;
 }
+
+/* 
+ * Currently Firefox-only 
+ */
+
+/* Scroll principal */
+.rbc-time-content {
+  scrollbar-width: thin;
+  scrollbar-color: #9f9f9f white;
+}
+/* Scroll busqueda de materias */
+.css-yks5vd {
+  scrollbar-width: thin;
+  scrollbar-color: #b794f4 #2d3436;
+}
+
+/*
+ * Works on Webkit based browsers(chrome, edge, safari, etc) 
+ */
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Scroll principal */
+.rbc-time-content::-webkit-scrollbar-track {
+  background: white;
+}
+.rbc-time-content::-webkit-scrollbar-thumb {
+  background-color: #9f9f9f;
+}
+
+/* Scroll busqueda de materias */
+.css-yks5vd::-webkit-scrollbar-track {
+  background: #2d3436;
+}
+.css-yks5vd::-webkit-scrollbar-thumb {
+  background-color: #b794f4;
+}

@@ -5,8 +5,17 @@ import "moment/locale/es";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import CalendarWeek from "./CalendarWeek";
 import CalendarAgenda from "./CalendarAgenda";
-import MateriaEvent from "./MateriaEvent";
 import useWindowSize from "../utils/useWindowSize";
+
+const MateriaEvent = (props) => {
+  return (
+    <div>
+      <span className="rbc-agenda-event-cell">{props.event.materia}</span>
+      <br />
+      <span className="rbc-agenda-event-cell-sub">{props.event.title}</span>
+    </div>
+  );
+};
 
 const MyCalendar = (props) => {
   const { events } = props;
@@ -40,7 +49,7 @@ const MyCalendar = (props) => {
   const min = new Date();
   min.setHours(7, 0, 0);
   const max = new Date();
-  max.setHours(23, 0, 0);
+  max.setHours(23, 30, 0);
 
   function eventPropsGetter(event, start, end, isSelected) {
     const style = {

@@ -17,13 +17,14 @@ const useGraph = () => {
         .filter((c) => c?.show)
         .reduce((arr, c) => arr.concat(...c.materias), [])
     );
-    const materiasShown = data.materias.filter((_, index) =>
-      materiasAMostrar.has(index)
+
+    const materiasShown = data.materias.filter((m) =>
+      materiasAMostrar.has(m.codigo)
+    );
+    const materiasNotShown = newData.materias.filter(
+      (m) => !materiasAMostrar.has(m.codigo)
     );
 
-    const materiasNotShown = newData.materias.filter(
-      (_, index) => !materiasAMostrar.has(index)
-    );
     materiasShown.forEach((m) => (m.show = true));
     materiasNotShown.forEach((m) => (m.show = false));
     newData.materias = [...materiasShown, ...materiasNotShown];
@@ -34,19 +35,27 @@ const useGraph = () => {
     const newData = JSON.parse(JSON.stringify(data));
     const materia = newData.materias.find((m) => m.nombre === item.nombre);
     materia.visible = true;
-    const curso = materia.cursos[0];
+    const idPrimerCurso = materia.cursos[0];
+    const curso = newData.cursos.find((c) => c.codigo === idPrimerCurso);
     curso.show = true;
     curso.color = randomColor(10);
 
-    // +10 only for test data. Remove once it hits prod!!
-    const addEvents = curso.clases.map((clase) => ({
-      start: new Date(2018, 0, clase.dia, clase.inicio + 10),
-      end: new Date(2018, 0, clase.dia, clase.fin + 10),
-      title: curso.docentes,
-      docentes: curso.docentes,
-      materia: materia.nombre,
-      color: curso.color,
-    }));
+    const addEvents = curso.clases.map((clase) => {
+      const inicio = new Date(2018, 0, clase.dia);
+      const [inicioHora, inicioMinutos] = clase.inicio.split(":");
+      inicio.setHours(inicioHora, inicioMinutos);
+      const fin = new Date(2018, 0, clase.dia);
+      const [finHora, finMinutos] = clase.fin.split(":");
+      fin.setHours(finHora, finMinutos);
+
+      return {
+        start: inicio,
+        end: fin,
+        codigo: curso.codigo,
+        title: curso.docentes,
+        color: curso.color,
+      };
+    });
     setEvents([...events, ...addEvents]);
     setData(newData);
   };
@@ -55,40 +64,40 @@ const useGraph = () => {
     const newData = JSON.parse(JSON.stringify(data));
     const materia = newData.materias.find((m) => m.nombre === item.nombre);
     materia.visible = false;
-    materia.cursos.forEach((c) => {
-      c.show = false;
-    });
-    const cursos = materia.cursos.map((c) => c.docentes);
-    setEvents(events.filter((e) => !cursos.includes(e.docentes)));
 
+    setEvents(events.filter((e) => !materia.cursos.includes(e.codigo)));
     setData(newData);
   };
 
-  const toggleCurso = (materia, item) => {
+  const toggleCurso = (item) => {
     const newData = JSON.parse(JSON.stringify(data));
 
-    const curso = newData.materias
-      .find((m) => m.nombre === materia.nombre)
-      .cursos.find((c) => c.docentes === item.docentes);
+    const curso = newData.cursos.find((c) => c.codigo === item.codigo);
     const v = !!curso.show;
     if (v) {
       curso.show = false;
-      const addEvents = events.filter((e) => e.docentes !== curso.docentes);
-
+      const addEvents = events.filter((e) => e.codigo !== curso.codigo);
       setEvents(addEvents);
     } else {
       curso.show = true;
       curso.color = randomColor(10);
 
-      // +10 only for test data. Remove once it hits prod!!
-      const addEvents = curso.clases.map((clase) => ({
-        start: new Date(2018, 0, clase.dia, clase.inicio + 10),
-        end: new Date(2018, 0, clase.dia, clase.fin + 10),
-        title: curso.docentes,
-        docentes: curso.docentes,
-        materia: materia.nombre,
-        color: curso.color,
-      }));
+      const addEvents = curso.clases.map((clase) => {
+        const inicio = new Date(2018, 0, clase.dia);
+        const [inicioHora, inicioMinutos] = clase.inicio.split(":");
+        inicio.setHours(inicioHora, inicioMinutos);
+        const fin = new Date(2018, 0, clase.dia);
+        const [finHora, finMinutos] = clase.fin.split(":");
+        fin.setHours(finHora, finMinutos);
+
+        return {
+          start: inicio,
+          end: fin,
+          codigo: curso.codigo,
+          title: curso.docentes,
+          color: curso.color,
+        };
+      });
       setEvents([...events, ...addEvents]);
     }
 

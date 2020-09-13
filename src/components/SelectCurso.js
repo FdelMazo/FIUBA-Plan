@@ -12,9 +12,9 @@ import { useSelect } from "downshift";
 import { DataContext } from "../Context";
 
 const SelectCurso = (props) => {
-  const { toggleCurso, removerMateria } = React.useContext(DataContext);
+  const { data, toggleCurso, removerMateria } = React.useContext(DataContext);
   const { materia } = props;
-
+  const items = data.cursos.filter((c) => materia.cursos.includes(c.codigo));
   const {
     isOpen,
     getItemProps,
@@ -22,7 +22,7 @@ const SelectCurso = (props) => {
     getMenuProps,
   } = useSelect({
     stateReducer,
-    items: materia.cursos,
+    items,
     selectedItem: null,
   });
 
@@ -76,13 +76,13 @@ const SelectCurso = (props) => {
             overflowY: "scroll",
           }}
         >
-          {materia.cursos.map((item, index) => (
+          {items.map((item, index) => (
             <PseudoBox
               borderRadius="md"
               _hover={{ bg: "gray.500" }}
               color="primary.500"
-              fontSize="smaller"
-              onClick={() => toggleCurso(materia, item)}
+              fontSize="small"
+              onClick={() => toggleCurso(item)}
             >
               <li
                 {...getItemProps({

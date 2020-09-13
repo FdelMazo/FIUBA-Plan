@@ -78,22 +78,24 @@ const SelectMateria = (props) => {
               overflowY: "scroll",
             }}
           >
-            {inputItems.map((item) => (
-              <PseudoBox
-                borderRadius="md"
-                _hover={{ bg: "gray.500" }}
-                color="primary.500"
-                fontSize="smaller"
-                onClick={() => {
-                  !item.visible && agregarMateria(item);
-                }}
-              >
-                <li>
-                  <ListIcon icon={item.visible ? "check" : "chevron-right"} />(
-                  {item.codigo}) {item.nombre}
-                </li>
-              </PseudoBox>
-            ))}
+            {inputItems
+              .sort((a, b) => a.codigo > b.codigo)
+              .map((item) => (
+                <PseudoBox
+                  borderRadius="md"
+                  _hover={{ bg: "gray.500" }}
+                  color="primary.500"
+                  fontSize="small"
+                  onClick={() => {
+                    !item.visible && agregarMateria(item);
+                  }}
+                >
+                  <li>
+                    <ListIcon icon={item.visible ? "check" : "chevron-right"} />
+                    ({item.codigo}) {item.nombre}
+                  </li>
+                </PseudoBox>
+              ))}
           </List>
         ) : (
           <Box p={1} mt={3} mb={0} color="primary.500">

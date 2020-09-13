@@ -24,7 +24,7 @@ function Agenda({
   );
   const dummyEvents = notCoveredDays.map((i) => ({
     start: new Date(2018, 0, i, 7),
-    end: new Date(2018, 0, i, 23),
+    end: new Date(2018, 0, i, 23, 30),
     title: "",
   }));
   events = [...events, ...dummyEvents];

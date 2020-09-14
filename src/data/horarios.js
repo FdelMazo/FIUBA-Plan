@@ -247,88 +247,83 @@ export const data = {
     {
       "nombre": "Ingeniería Electrónica",
       "materias": [
-        "7544",
-        "7546",
-        "6108",
-        "7540",
-        "7541",
-        "7507",
-        "6606",
-        "7509",
-        "6103",
-        "6110",
-        "7512",
-        "7538",
-        "7141",
-        "7573",
-        "6626",
-        "7515",
-        "7548",
-        "6619",
-        "6669",
-        "6405",
-        "7112",
-        "6670",
-        "7118",
-        "7558",
-        "6201",
-        "6203",
-        "6215",
-        "7802",
-        "7803",
-        "7801",
-        "7804",
-        "7805",
-        "7113",
-        "7146",
-        "7543",
-        "7550",
-        "6602",
-        "6609",
-        "7140",
-        "7514",
-        "7566",
-        "6107",
-        "7201",
-        "6211",
-        "7114",
-        "7115",
-        "7120",
-        "6620",
-        "7506",
-        "7556",
-        "6109",
-        "6647",
-        "6646",
-        "6675",
-        "6301",
-        "7144",
-        "6663",
-        "6632",
-        "7571",
-        "7572",
-        "6674",
-        "7526",
-        "7568",
-        "6649",
-        "6617",
-        "7574",
-        "6671",
-        "7508",
-        "7545",
-        "7547",
-        "7555",
-        "7542",
-        "7552",
-        "7561",
-        "6635",
-        "7510",
-        "7551",
-        "7559",
-        "7529",
-        "6618",
-        "6624",
-        "7531"
+        "8657",
+        "8102",
+        "9511",
+        "9512",
+        "9502",
+        "8604",
+        "8107",
+        "8101",
+        "8105",
+        "8108",
+        "9504",
+        "8638",
+        "9505",
+        "8606",
+        "8664",
+        "8612",
+        "8625",
+        "8626",
+        "8667",
+        "8608",
+        "8616",
+        "8617",
+        "8619",
+        "8636",
+        "8610",
+        "8603",
+        "8658",
+        "8206",
+        "8624",
+        "8662",
+        "8201",
+        "8202",
+        "8203",
+        "8645",
+        "8627",
+        "8661",
+        "8669",
+        "9119",
+        "8602",
+        "8670",
+        "8614",
+        "8628",
+        "8607",
+        "8640",
+        "9111",
+        "8536",
+        "8204",
+        "8646",
+        "8637",
+        "8104",
+        "8656",
+        "8653",
+        "8663",
+        "8609",
+        "8301",
+        "8654",
+        "8615",
+        "9704",
+        "8648",
+        "8649",
+        "8605",
+        "8660",
+        "8641",
+        "8665",
+        "8643",
+        "8632",
+        "9503",
+        "9508",
+        "8601",
+        "8644",
+        "9509",
+        "8650",
+        "9506",
+        "8611",
+        "9507",
+        "8634",
+        "8635"
       ]
     },
     {
@@ -2297,6 +2292,952 @@ export const data = {
       ]
     },
     {
+      "codigo": "8657",
+      "nombre": "ACUSTICA",
+      "cursos": [
+        "29535"
+      ]
+    },
+    {
+      "codigo": "9511",
+      "nombre": "ALGORITMOS Y PROGRAMACION I",
+      "cursos": [
+        "29618",
+        "29619",
+        "31594"
+      ]
+    },
+    {
+      "codigo": "9512",
+      "nombre": "ALGORITMOS Y PROGRAMACION II",
+      "cursos": [
+        "29633"
+      ]
+    },
+    {
+      "codigo": "8604",
+      "nombre": "ANALISIS DE CIRCUITOS",
+      "cursos": [
+        "29646",
+        "29647",
+        "31569"
+      ]
+    },
+    {
+      "codigo": "8107",
+      "nombre": "ANALISIS FUNCIONAL",
+      "cursos": [
+        "29659"
+      ]
+    },
+    {
+      "codigo": "8105",
+      "nombre": "ANALISIS MATEMATICO III A",
+      "cursos": [
+        "29719",
+        "29720",
+        "29721",
+        "29722",
+        "29723"
+      ]
+    },
+    {
+      "codigo": "8108",
+      "nombre": "ANALISIS MATRICIAL Y METODOS NUMERICOS",
+      "cursos": [
+        "29739"
+      ]
+    },
+    {
+      "codigo": "8638",
+      "nombre": "ARQUITECTURAS PARALELAS",
+      "cursos": [
+        "29775"
+      ]
+    },
+    {
+      "codigo": "8606",
+      "nombre": "CIRCUITOS ELECTRONICOS",
+      "cursos": [
+        "29839",
+        "29840"
+      ]
+    },
+    {
+      "codigo": "8664",
+      "nombre": "COMPATIBILIDAD ELECTROMAGNETICA",
+      "cursos": [
+        "31579"
+      ]
+    },
+    {
+      "codigo": "8612",
+      "nombre": "COMUNICACION DE DATOS",
+      "cursos": [
+        "29880"
+      ]
+    },
+    {
+      "codigo": "8625",
+      "nombre": "COMUNICACIONES DIGITALES I",
+      "cursos": [
+        "29882"
+      ]
+    },
+    {
+      "codigo": "8626",
+      "nombre": "COMUNICACIONES DIGITALES II",
+      "cursos": [
+        "31573"
+      ]
+    },
+    {
+      "codigo": "8667",
+      "nombre": "COMUNICACIONES RADIOLELECTRICAS Y RADIOENLACES",
+      "cursos": [
+        "29886"
+      ]
+    },
+    {
+      "codigo": "8608",
+      "nombre": "CONTROL AUTOMATICO I",
+      "cursos": [
+        "29918",
+        "29919"
+      ]
+    },
+    {
+      "codigo": "8616",
+      "nombre": "CONTROL AUTOMATICO II",
+      "cursos": [
+        "29921"
+      ]
+    },
+    {
+      "codigo": "8617",
+      "nombre": "CONTROL AUTOMATICO III",
+      "cursos": [
+        "29923"
+      ]
+    },
+    {
+      "codigo": "8619",
+      "nombre": "CONTROL ROBUSTO",
+      "cursos": [
+        "31571"
+      ]
+    },
+    {
+      "codigo": "8610",
+      "nombre": "DISEÑO DE CIRCUITOS ELECTRONICOS",
+      "cursos": [
+        "31550"
+      ]
+    },
+    {
+      "codigo": "8603",
+      "nombre": "DISPOSITIVOS SEMICONDUCTORES",
+      "cursos": [
+        "29981",
+        "29982"
+      ]
+    },
+    {
+      "codigo": "8658",
+      "nombre": "ELECTROACUSTICA",
+      "cursos": [
+        "31670"
+      ]
+    },
+    {
+      "codigo": "8206",
+      "nombre": "ELECTROMAGNETISMO",
+      "cursos": [
+        "29998"
+      ]
+    },
+    {
+      "codigo": "8624",
+      "nombre": "ELECTRONICA DE POTENCIA",
+      "cursos": [
+        "30011"
+      ]
+    },
+    {
+      "codigo": "8662",
+      "nombre": "EQUIPAMIENTO PARA DIAGNOSTICO Y TRATAMIENTO BIOMEDICO",
+      "cursos": [
+        "30068"
+      ]
+    },
+    {
+      "codigo": "8203",
+      "nombre": "FISICA III",
+      "cursos": [
+        "30258",
+        "30259"
+      ]
+    },
+    {
+      "codigo": "8645",
+      "nombre": "INDUSTRIAS Y PRODUCTOS DE ELECTRONICA",
+      "cursos": [
+        "30425",
+        "30426"
+      ]
+    },
+    {
+      "codigo": "8627",
+      "nombre": "INFRAESTRUCTURA DE REDES FIJAS",
+      "cursos": [
+        "30438"
+      ]
+    },
+    {
+      "codigo": "8661",
+      "nombre": "INGENIERIA BIOMEDICA",
+      "cursos": [
+        "30442"
+      ]
+    },
+    {
+      "codigo": "8669",
+      "nombre": "INSTRUMENTOS Y MEDICIONES ELECTRONICAS",
+      "cursos": [
+        "30508",
+        "30509",
+        "30510",
+        "30511"
+      ]
+    },
+    {
+      "codigo": "9119",
+      "nombre": "INTRODUCCION A LA ECONOMIA Y LA ORGANIZACION DE LA EMPRESA",
+      "cursos": [
+        "30527"
+      ]
+    },
+    {
+      "codigo": "8602",
+      "nombre": "INTRODUCCION A LA INGENIERIA ELECTRONICA",
+      "cursos": [
+        "30539",
+        "30540"
+      ]
+    },
+    {
+      "codigo": "8670",
+      "nombre": "INTRODUCCION AL DISEÑO ASISTIDO POR COMPUTADORA",
+      "cursos": [
+        "30551",
+        "30552"
+      ]
+    },
+    {
+      "codigo": "8614",
+      "nombre": "INTRODUCCION A PROYECTOS",
+      "cursos": [
+        "30563",
+        "30564",
+        "31570"
+      ]
+    },
+    {
+      "codigo": "8628",
+      "nombre": "LABORATORIO DE COMUNICACIONES",
+      "cursos": [
+        "30585"
+      ]
+    },
+    {
+      "codigo": "8607",
+      "nombre": "LABORATORIO DE MICROPROCESADORES",
+      "cursos": [
+        "30602",
+        "30603",
+        "30604"
+      ]
+    },
+    {
+      "codigo": "8640",
+      "nombre": "LABORATORIO DE REDES DE COMPUTADORAS",
+      "cursos": [
+        "31673",
+        "31674"
+      ]
+    },
+    {
+      "codigo": "9111",
+      "nombre": "LEGISLACION Y EJERCICIO PROFESIONAL DE LA INGENIERIA ELECTRONICA",
+      "cursos": [
+        "30616"
+      ]
+    },
+    {
+      "codigo": "8536",
+      "nombre": "MAQUINAS ELECTRICAS",
+      "cursos": [
+        "30666",
+        "30667"
+      ]
+    },
+    {
+      "codigo": "8204",
+      "nombre": "MECANICA RACIONAL",
+      "cursos": [
+        "30757"
+      ]
+    },
+    {
+      "codigo": "8646",
+      "nombre": "MICROELECTRONICA",
+      "cursos": [
+        "31575"
+      ]
+    },
+    {
+      "codigo": "8637",
+      "nombre": "ORGANIZACION DE COMPUTADORAS",
+      "cursos": [
+        "30883",
+        "30884"
+      ]
+    },
+    {
+      "codigo": "8656",
+      "nombre": "PROCESAMIENTO DE IMAGENES",
+      "cursos": [
+        "31578"
+      ]
+    },
+    {
+      "codigo": "8653",
+      "nombre": "PROCESAMIENTO DEL HABLA",
+      "cursos": [
+        "30979"
+      ]
+    },
+    {
+      "codigo": "8663",
+      "nombre": "PROCESAMIENTO Y ANALISIS DE SEÑALES E IMAGENES EN BIOINGENIERIA",
+      "cursos": [
+        "30985"
+      ]
+    },
+    {
+      "codigo": "8609",
+      "nombre": "PROCESOS ESTOCASTICOS",
+      "cursos": [
+        "31541",
+        "31542"
+      ]
+    },
+    {
+      "codigo": "8654",
+      "nombre": "REDES NEURONALES",
+      "cursos": [
+        "31109"
+      ]
+    },
+    {
+      "codigo": "8615",
+      "nombre": "ROBOTICA",
+      "cursos": [
+        "31121"
+      ]
+    },
+    {
+      "codigo": "9704",
+      "nombre": "SEGURIDAD AMBIENTAL Y DEL TRABAJO",
+      "cursos": [
+        "31125"
+      ]
+    },
+    {
+      "codigo": "8648",
+      "nombre": "SEMINARIO DE ELECTRONICA",
+      "cursos": [
+        "31143",
+        "31144",
+        "31576"
+      ]
+    },
+    {
+      "codigo": "8649",
+      "nombre": "SEMINARIO DE ELECTRONICA II",
+      "cursos": [
+        "31153",
+        "31154",
+        "31577"
+      ]
+    },
+    {
+      "codigo": "8605",
+      "nombre": "SEÑALES Y SISTEMAS",
+      "cursos": [
+        "31175",
+        "31176",
+        "31177"
+      ]
+    },
+    {
+      "codigo": "8660",
+      "nombre": "SISTEMAS BIOLOGICOS",
+      "cursos": [
+        "31191"
+      ]
+    },
+    {
+      "codigo": "8641",
+      "nombre": "SISTEMAS DIGITALES",
+      "cursos": [
+        "31209"
+      ]
+    },
+    {
+      "codigo": "8665",
+      "nombre": "SISTEMAS EMBEBIDOS",
+      "cursos": [
+        "31213"
+      ]
+    },
+    {
+      "codigo": "8643",
+      "nombre": "SISTEMAS GRAFICOS",
+      "cursos": [
+        "31221"
+      ]
+    },
+    {
+      "codigo": "8632",
+      "nombre": "SISTEMAS INALAMBRICOS",
+      "cursos": [
+        "31227"
+      ]
+    },
+    {
+      "codigo": "8601",
+      "nombre": "TECNICA DIGITAL",
+      "cursos": [
+        "31278",
+        "31279",
+        "31280",
+        "31281",
+        "31282"
+      ]
+    },
+    {
+      "codigo": "8644",
+      "nombre": "TECNICA DIGITAL AVANZADA",
+      "cursos": [
+        "31286"
+      ]
+    },
+    {
+      "codigo": "8650",
+      "nombre": "TECNOLOGIA DE LOS COMPONENTES",
+      "cursos": [
+        "31309"
+      ]
+    },
+    {
+      "codigo": "8611",
+      "nombre": "TEORIA DE LA INFORMACION Y CODIFICACION",
+      "cursos": [
+        "31344"
+      ]
+    },
+    {
+      "codigo": "8634",
+      "nombre": "TRANSMISORES Y RECEPTORES DE COMUNICACIONES",
+      "cursos": [
+        "31457"
+      ]
+    },
+    {
+      "codigo": "8635",
+      "nombre": "VIDEO DIGITAL",
+      "cursos": [
+        "31473"
+      ]
+    },
+    {
+      "codigo": "8811",
+      "nombre": "AEROPUERTOS A",
+      "cursos": [
+        "29549"
+      ]
+    },
+    {
+      "codigo": "8805",
+      "nombre": "AEROPUERTOS B",
+      "cursos": [
+        "29551"
+      ]
+    },
+    {
+      "codigo": "8809",
+      "nombre": "ANALISIS DE SISTEMAS DE TRANSPORTE",
+      "cursos": [
+        "29652"
+      ]
+    },
+    {
+      "codigo": "8410",
+      "nombre": "ANALISIS EXPERIMENTAL DE TENSIONES",
+      "cursos": [
+        "29657"
+      ]
+    },
+    {
+      "codigo": "8106",
+      "nombre": "ANALISIS MATEMATICO III B",
+      "cursos": [
+        "29731",
+        "29732",
+        "29733",
+        "29734",
+        "29735"
+      ]
+    },
+    {
+      "codigo": "8910",
+      "nombre": "APROVECHAMIENTOS HIDRAULICOS",
+      "cursos": [
+        "29763"
+      ]
+    },
+    {
+      "codigo": "9402",
+      "nombre": "ARQUITECTURA Y PLANIFICACION URBANA",
+      "cursos": [
+        "29779",
+        "29780"
+      ]
+    },
+    {
+      "codigo": "8810",
+      "nombre": "CAMINOS",
+      "cursos": [
+        "29819"
+      ]
+    },
+    {
+      "codigo": "8903",
+      "nombre": "CENTRALES HIDRAULICAS",
+      "cursos": [
+        "29831"
+      ]
+    },
+    {
+      "codigo": "8404",
+      "nombre": "COMPORTAMIENTO DE MATERIALES",
+      "cursos": [
+        "29852"
+      ]
+    },
+    {
+      "codigo": "8801",
+      "nombre": "CONSTRUCCION DE CARRETERAS",
+      "cursos": [
+        "29901"
+      ]
+    },
+    {
+      "codigo": "9403",
+      "nombre": "CONSTRUCCIONES",
+      "cursos": [
+        "29903",
+        "29904"
+      ]
+    },
+    {
+      "codigo": "8412",
+      "nombre": "DINAMICA DE LAS ESTRUCTURAS",
+      "cursos": [
+        "29949"
+      ]
+    },
+    {
+      "codigo": "8413",
+      "nombre": "DINAMICA DE LAS ESTRUCTURAS II",
+      "cursos": [
+        "31527"
+      ]
+    },
+    {
+      "codigo": "9417",
+      "nombre": "DISEÑO ESTRUCTURAL",
+      "cursos": [
+        "31601"
+      ]
+    },
+    {
+      "codigo": "8802",
+      "nombre": "DISEÑO Y OPERACION DE CAMINOS",
+      "cursos": [
+        "29976"
+      ]
+    },
+    {
+      "codigo": "9109",
+      "nombre": "ECONOMIA",
+      "cursos": [
+        "29986"
+      ]
+    },
+    {
+      "codigo": "8535",
+      "nombre": "ELECTROTECNIA GENERAL C",
+      "cursos": [
+        "30049"
+      ]
+    },
+    {
+      "codigo": "8402",
+      "nombre": "ESTABILIDAD I",
+      "cursos": [
+        "30070",
+        "30071",
+        "30072",
+        "30073",
+        "30074",
+        "30075"
+      ]
+    },
+    {
+      "codigo": "8403",
+      "nombre": "ESTABILIDAD II",
+      "cursos": [
+        "30084",
+        "30085"
+      ]
+    },
+    {
+      "codigo": "8406",
+      "nombre": "ESTABILIDAD III",
+      "cursos": [
+        "30090",
+        "30091"
+      ]
+    },
+    {
+      "codigo": "8408",
+      "nombre": "ESTABILIDAD IV",
+      "cursos": [
+        "30095"
+      ]
+    },
+    {
+      "codigo": "9410",
+      "nombre": "ESTRUCTURAS METALICAS I",
+      "cursos": [
+        "30152",
+        "30153"
+      ]
+    },
+    {
+      "codigo": "9411",
+      "nombre": "ESTRUCTURAS METALICAS II",
+      "cursos": [
+        "30157"
+      ]
+    },
+    {
+      "codigo": "8814",
+      "nombre": "EVALUACION DE PROYECTOS",
+      "cursos": [
+        "30165"
+      ]
+    },
+    {
+      "codigo": "8812",
+      "nombre": "FERROCARRILES A",
+      "cursos": [
+        "30174"
+      ]
+    },
+    {
+      "codigo": "8804",
+      "nombre": "FERROCARRILES B",
+      "cursos": [
+        "30176"
+      ]
+    },
+    {
+      "codigo": "9409",
+      "nombre": "GEOTECNICA APLICADA",
+      "cursos": [
+        "30291"
+      ]
+    },
+    {
+      "codigo": "9102",
+      "nombre": "GERENCIAMIENTO Y ORGANIZACION DE OBRAS CIVILES",
+      "cursos": [
+        "30293"
+      ]
+    },
+    {
+      "codigo": "8912",
+      "nombre": "GESTION AMBIENTAL EN INGENIERIA CIVIL",
+      "cursos": [
+        "30299"
+      ]
+    },
+    {
+      "codigo": "8909",
+      "nombre": "HIDRAULICA APLICADA",
+      "cursos": [
+        "30318"
+      ]
+    },
+    {
+      "codigo": "8913",
+      "nombre": "HIDRAULICA FLUVIAL",
+      "cursos": [
+        "30320"
+      ]
+    },
+    {
+      "codigo": "8901",
+      "nombre": "HIDRAULICA GENERAL",
+      "cursos": [
+        "30322",
+        "30323"
+      ]
+    },
+    {
+      "codigo": "8914",
+      "nombre": "HIDRAULICA MARITIMA",
+      "cursos": [
+        "31487"
+      ]
+    },
+    {
+      "codigo": "8905",
+      "nombre": "HIDROLOGIA",
+      "cursos": [
+        "30325"
+      ]
+    },
+    {
+      "codigo": "9703",
+      "nombre": "HIGIENE Y SEGURIDAD EN OBRAS CIVILES",
+      "cursos": [
+        "30332"
+      ]
+    },
+    {
+      "codigo": "9401",
+      "nombre": "HORMIGON I",
+      "cursos": [
+        "30339",
+        "30340"
+      ]
+    },
+    {
+      "codigo": "9404",
+      "nombre": "HORMIGON II",
+      "cursos": [
+        "30345",
+        "30346"
+      ]
+    },
+    {
+      "codigo": "8911",
+      "nombre": "INGENIERIA SANITARIA I",
+      "cursos": [
+        "30475"
+      ]
+    },
+    {
+      "codigo": "8916",
+      "nombre": "INGENIERIA SANITARIA II",
+      "cursos": [
+        "31488"
+      ]
+    },
+    {
+      "codigo": "8808",
+      "nombre": "INGENIERIA TERRITORIAL",
+      "cursos": [
+        "30479"
+      ]
+    },
+    {
+      "codigo": "9418",
+      "nombre": "INSPECCION Y EJECUCION DE ESTRUCTURAS DE HORMIGON",
+      "cursos": [
+        "31602"
+      ]
+    },
+    {
+      "codigo": "9405",
+      "nombre": "INSTALACIONES EN OBRAS CIVILES I",
+      "cursos": [
+        "30491",
+        "30492"
+      ]
+    },
+    {
+      "codigo": "8401",
+      "nombre": "INTRODUCCION A LA INGENIERIA CIVIL",
+      "cursos": [
+        "30535"
+      ]
+    },
+    {
+      "codigo": "9116",
+      "nombre": "LEGISLACION Y EJERCICIO PROFESIONAL DE LA INGENIERIA CIVIL",
+      "cursos": [
+        "30612"
+      ]
+    },
+    {
+      "codigo": "9419",
+      "nombre": "MATERIALES NO TRADICIONALES EN LA CONSTRUCCION",
+      "cursos": [
+        "31604"
+      ]
+    },
+    {
+      "codigo": "8407",
+      "nombre": "MECANICA DE SUELOS Y GEOLOGIA",
+      "cursos": [
+        "30749"
+      ]
+    },
+    {
+      "codigo": "8711",
+      "nombre": "MEDIOS DE REPRESENTACION A",
+      "cursos": [
+        "30796",
+        "30797",
+        "30798",
+        "30799"
+      ]
+    },
+    {
+      "codigo": "8409",
+      "nombre": "METODO DE LOS ELEMENTOS FINITOS",
+      "cursos": [
+        "30813"
+      ]
+    },
+    {
+      "codigo": "9510",
+      "nombre": "MODELACION NUMERICA",
+      "cursos": [
+        "30840",
+        "30841"
+      ]
+    },
+    {
+      "codigo": "9413",
+      "nombre": "PATOLOGIA DE LA CONSTRUCCION",
+      "cursos": [
+        "30922"
+      ]
+    },
+    {
+      "codigo": "8806",
+      "nombre": "PLANEAMIENTO DEL TRANSPORTE",
+      "cursos": [
+        "30930"
+      ]
+    },
+    {
+      "codigo": "8906",
+      "nombre": "PLANIFICACION DE RECURSOS HIDRAULICOS",
+      "cursos": [
+        "31483"
+      ]
+    },
+    {
+      "codigo": "8103",
+      "nombre": "PROBABILIDAD Y ESTADISTICA A",
+      "cursos": [
+        "30961",
+        "30962",
+        "30963",
+        "30964",
+        "30965"
+      ]
+    },
+    {
+      "codigo": "8813",
+      "nombre": "PUERTOS Y VIAS NAVEGABLES A",
+      "cursos": [
+        "31027"
+      ]
+    },
+    {
+      "codigo": "8803",
+      "nombre": "PUERTOS Y VIAS NAVEGABLES B",
+      "cursos": [
+        "31029"
+      ]
+    },
+    {
+      "codigo": "8411",
+      "nombre": "SEGURIDAD ESTRUCTURAL",
+      "cursos": [
+        "31135"
+      ]
+    },
+    {
+      "codigo": "9415",
+      "nombre": "SISTEMAS CONSTRUCTIVOS",
+      "cursos": [
+        "31197"
+      ]
+    },
+    {
+      "codigo": "9412",
+      "nombre": "TECNOLOGIA DEL HORMIGON",
+      "cursos": [
+        "31307"
+      ]
+    },
+    {
+      "codigo": "8702",
+      "nombre": "TERMODINAMICA I A",
+      "cursos": [
+        "31380",
+        "31381"
+      ]
+    },
+    {
+      "codigo": "9001",
+      "nombre": "TOPOGRAFIA Y GEODESIA",
+      "cursos": [
+        "31406",
+        "31407"
+      ]
+    },
+    {
+      "codigo": "8499",
+      "nombre": "TRABAJO PROFESIONAL DE INGENIERIA CIVIL",
+      "cursos": [
+        "31411"
+      ]
+    },
+    {
+      "codigo": "8807",
+      "nombre": "TRANSITO",
+      "cursos": [
+        "31451"
+      ]
+    },
+    {
+      "codigo": "9408",
+      "nombre": "URBANISMO",
+      "cursos": [
+        "31606"
+      ]
+    },
+    {
       "codigo": "7544",
       "nombre": "ADM. Y CONTROL DE PROY. INFORMATICOS I",
       "cursos": [
@@ -2833,482 +3774,6 @@ export const data = {
       "nombre": "TEORIA DE LENGUAJE",
       "cursos": [
         "31348"
-      ]
-    },
-    {
-      "codigo": "8811",
-      "nombre": "AEROPUERTOS A",
-      "cursos": [
-        "29549"
-      ]
-    },
-    {
-      "codigo": "8805",
-      "nombre": "AEROPUERTOS B",
-      "cursos": [
-        "29551"
-      ]
-    },
-    {
-      "codigo": "8809",
-      "nombre": "ANALISIS DE SISTEMAS DE TRANSPORTE",
-      "cursos": [
-        "29652"
-      ]
-    },
-    {
-      "codigo": "8410",
-      "nombre": "ANALISIS EXPERIMENTAL DE TENSIONES",
-      "cursos": [
-        "29657"
-      ]
-    },
-    {
-      "codigo": "8106",
-      "nombre": "ANALISIS MATEMATICO III B",
-      "cursos": [
-        "29731",
-        "29732",
-        "29733",
-        "29734",
-        "29735"
-      ]
-    },
-    {
-      "codigo": "8910",
-      "nombre": "APROVECHAMIENTOS HIDRAULICOS",
-      "cursos": [
-        "29763"
-      ]
-    },
-    {
-      "codigo": "9402",
-      "nombre": "ARQUITECTURA Y PLANIFICACION URBANA",
-      "cursos": [
-        "29779",
-        "29780"
-      ]
-    },
-    {
-      "codigo": "8810",
-      "nombre": "CAMINOS",
-      "cursos": [
-        "29819"
-      ]
-    },
-    {
-      "codigo": "8903",
-      "nombre": "CENTRALES HIDRAULICAS",
-      "cursos": [
-        "29831"
-      ]
-    },
-    {
-      "codigo": "8404",
-      "nombre": "COMPORTAMIENTO DE MATERIALES",
-      "cursos": [
-        "29852"
-      ]
-    },
-    {
-      "codigo": "8801",
-      "nombre": "CONSTRUCCION DE CARRETERAS",
-      "cursos": [
-        "29901"
-      ]
-    },
-    {
-      "codigo": "9403",
-      "nombre": "CONSTRUCCIONES",
-      "cursos": [
-        "29903",
-        "29904"
-      ]
-    },
-    {
-      "codigo": "8412",
-      "nombre": "DINAMICA DE LAS ESTRUCTURAS",
-      "cursos": [
-        "29949"
-      ]
-    },
-    {
-      "codigo": "8413",
-      "nombre": "DINAMICA DE LAS ESTRUCTURAS II",
-      "cursos": [
-        "31527"
-      ]
-    },
-    {
-      "codigo": "9417",
-      "nombre": "DISEÑO ESTRUCTURAL",
-      "cursos": [
-        "31601"
-      ]
-    },
-    {
-      "codigo": "8802",
-      "nombre": "DISEÑO Y OPERACION DE CAMINOS",
-      "cursos": [
-        "29976"
-      ]
-    },
-    {
-      "codigo": "9109",
-      "nombre": "ECONOMIA",
-      "cursos": [
-        "29986"
-      ]
-    },
-    {
-      "codigo": "8535",
-      "nombre": "ELECTROTECNIA GENERAL C",
-      "cursos": [
-        "30049"
-      ]
-    },
-    {
-      "codigo": "8402",
-      "nombre": "ESTABILIDAD I",
-      "cursos": [
-        "30070",
-        "30071",
-        "30072",
-        "30073",
-        "30074",
-        "30075"
-      ]
-    },
-    {
-      "codigo": "8403",
-      "nombre": "ESTABILIDAD II",
-      "cursos": [
-        "30084",
-        "30085"
-      ]
-    },
-    {
-      "codigo": "8406",
-      "nombre": "ESTABILIDAD III",
-      "cursos": [
-        "30090",
-        "30091"
-      ]
-    },
-    {
-      "codigo": "8408",
-      "nombre": "ESTABILIDAD IV",
-      "cursos": [
-        "30095"
-      ]
-    },
-    {
-      "codigo": "9410",
-      "nombre": "ESTRUCTURAS METALICAS I",
-      "cursos": [
-        "30152",
-        "30153"
-      ]
-    },
-    {
-      "codigo": "9411",
-      "nombre": "ESTRUCTURAS METALICAS II",
-      "cursos": [
-        "30157"
-      ]
-    },
-    {
-      "codigo": "8814",
-      "nombre": "EVALUACION DE PROYECTOS",
-      "cursos": [
-        "30165"
-      ]
-    },
-    {
-      "codigo": "8812",
-      "nombre": "FERROCARRILES A",
-      "cursos": [
-        "30174"
-      ]
-    },
-    {
-      "codigo": "8804",
-      "nombre": "FERROCARRILES B",
-      "cursos": [
-        "30176"
-      ]
-    },
-    {
-      "codigo": "9409",
-      "nombre": "GEOTECNICA APLICADA",
-      "cursos": [
-        "30291"
-      ]
-    },
-    {
-      "codigo": "9102",
-      "nombre": "GERENCIAMIENTO Y ORGANIZACION DE OBRAS CIVILES",
-      "cursos": [
-        "30293"
-      ]
-    },
-    {
-      "codigo": "8912",
-      "nombre": "GESTION AMBIENTAL EN INGENIERIA CIVIL",
-      "cursos": [
-        "30299"
-      ]
-    },
-    {
-      "codigo": "8909",
-      "nombre": "HIDRAULICA APLICADA",
-      "cursos": [
-        "30318"
-      ]
-    },
-    {
-      "codigo": "8913",
-      "nombre": "HIDRAULICA FLUVIAL",
-      "cursos": [
-        "30320"
-      ]
-    },
-    {
-      "codigo": "8901",
-      "nombre": "HIDRAULICA GENERAL",
-      "cursos": [
-        "30322",
-        "30323"
-      ]
-    },
-    {
-      "codigo": "8914",
-      "nombre": "HIDRAULICA MARITIMA",
-      "cursos": [
-        "31487"
-      ]
-    },
-    {
-      "codigo": "8905",
-      "nombre": "HIDROLOGIA",
-      "cursos": [
-        "30325"
-      ]
-    },
-    {
-      "codigo": "9703",
-      "nombre": "HIGIENE Y SEGURIDAD EN OBRAS CIVILES",
-      "cursos": [
-        "30332"
-      ]
-    },
-    {
-      "codigo": "9401",
-      "nombre": "HORMIGON I",
-      "cursos": [
-        "30339",
-        "30340"
-      ]
-    },
-    {
-      "codigo": "9404",
-      "nombre": "HORMIGON II",
-      "cursos": [
-        "30345",
-        "30346"
-      ]
-    },
-    {
-      "codigo": "8911",
-      "nombre": "INGENIERIA SANITARIA I",
-      "cursos": [
-        "30475"
-      ]
-    },
-    {
-      "codigo": "8916",
-      "nombre": "INGENIERIA SANITARIA II",
-      "cursos": [
-        "31488"
-      ]
-    },
-    {
-      "codigo": "8808",
-      "nombre": "INGENIERIA TERRITORIAL",
-      "cursos": [
-        "30479"
-      ]
-    },
-    {
-      "codigo": "9418",
-      "nombre": "INSPECCION Y EJECUCION DE ESTRUCTURAS DE HORMIGON",
-      "cursos": [
-        "31602"
-      ]
-    },
-    {
-      "codigo": "9405",
-      "nombre": "INSTALACIONES EN OBRAS CIVILES I",
-      "cursos": [
-        "30491",
-        "30492"
-      ]
-    },
-    {
-      "codigo": "8401",
-      "nombre": "INTRODUCCION A LA INGENIERIA CIVIL",
-      "cursos": [
-        "30535"
-      ]
-    },
-    {
-      "codigo": "9116",
-      "nombre": "LEGISLACION Y EJERCICIO PROFESIONAL DE LA INGENIERIA CIVIL",
-      "cursos": [
-        "30612"
-      ]
-    },
-    {
-      "codigo": "9419",
-      "nombre": "MATERIALES NO TRADICIONALES EN LA CONSTRUCCION",
-      "cursos": [
-        "31604"
-      ]
-    },
-    {
-      "codigo": "8407",
-      "nombre": "MECANICA DE SUELOS Y GEOLOGIA",
-      "cursos": [
-        "30749"
-      ]
-    },
-    {
-      "codigo": "8711",
-      "nombre": "MEDIOS DE REPRESENTACION A",
-      "cursos": [
-        "30796",
-        "30797",
-        "30798",
-        "30799"
-      ]
-    },
-    {
-      "codigo": "8409",
-      "nombre": "METODO DE LOS ELEMENTOS FINITOS",
-      "cursos": [
-        "30813"
-      ]
-    },
-    {
-      "codigo": "9510",
-      "nombre": "MODELACION NUMERICA",
-      "cursos": [
-        "30840",
-        "30841"
-      ]
-    },
-    {
-      "codigo": "9413",
-      "nombre": "PATOLOGIA DE LA CONSTRUCCION",
-      "cursos": [
-        "30922"
-      ]
-    },
-    {
-      "codigo": "8806",
-      "nombre": "PLANEAMIENTO DEL TRANSPORTE",
-      "cursos": [
-        "30930"
-      ]
-    },
-    {
-      "codigo": "8906",
-      "nombre": "PLANIFICACION DE RECURSOS HIDRAULICOS",
-      "cursos": [
-        "31483"
-      ]
-    },
-    {
-      "codigo": "8103",
-      "nombre": "PROBABILIDAD Y ESTADISTICA A",
-      "cursos": [
-        "30961",
-        "30962",
-        "30963",
-        "30964",
-        "30965"
-      ]
-    },
-    {
-      "codigo": "8813",
-      "nombre": "PUERTOS Y VIAS NAVEGABLES A",
-      "cursos": [
-        "31027"
-      ]
-    },
-    {
-      "codigo": "8803",
-      "nombre": "PUERTOS Y VIAS NAVEGABLES B",
-      "cursos": [
-        "31029"
-      ]
-    },
-    {
-      "codigo": "8411",
-      "nombre": "SEGURIDAD ESTRUCTURAL",
-      "cursos": [
-        "31135"
-      ]
-    },
-    {
-      "codigo": "9415",
-      "nombre": "SISTEMAS CONSTRUCTIVOS",
-      "cursos": [
-        "31197"
-      ]
-    },
-    {
-      "codigo": "9412",
-      "nombre": "TECNOLOGIA DEL HORMIGON",
-      "cursos": [
-        "31307"
-      ]
-    },
-    {
-      "codigo": "8702",
-      "nombre": "TERMODINAMICA I A",
-      "cursos": [
-        "31380",
-        "31381"
-      ]
-    },
-    {
-      "codigo": "9001",
-      "nombre": "TOPOGRAFIA Y GEODESIA",
-      "cursos": [
-        "31406",
-        "31407"
-      ]
-    },
-    {
-      "codigo": "8499",
-      "nombre": "TRABAJO PROFESIONAL DE INGENIERIA CIVIL",
-      "cursos": [
-        "31411"
-      ]
-    },
-    {
-      "codigo": "8807",
-      "nombre": "TRANSITO",
-      "cursos": [
-        "31451"
-      ]
-    },
-    {
-      "codigo": "9408",
-      "nombre": "URBANISMO",
-      "cursos": [
-        "31606"
       ]
     }
   ],
@@ -13360,241 +13825,93 @@ export const data = {
       ]
     },
     {
-      "docentes": "SANTOS GONZALO DAMIAN, FONTELA MOISES CARLOS, CHELALA JUAN CRUZ, KODELIA AGOSTINA NADIA, SASIN ALEJANDRO ENRIQUE, SMOCOVICH ELIZABETH KARIN",
-      "codigo": "29543",
+      "docentes": "GOMEZ PABLO MARTIN, VECHIATTI NILDA SUSANA",
+      "codigo": "29535",
       "clases": [
         {
-          "dia": 2,
+          "dia": 5,
           "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
-          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+          "fin": "18:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         },
         {
-          "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "dia": 5,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
           "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
       ]
     },
     {
-      "docentes": "ALVARO FERNANDO, ZAPATA LAURA",
-      "codigo": "29545",
+      "docentes": "ROASIO FEDERICO MARTIN, CARDOZO MARTIN MIGUEL, SANZ FERNANDO HORACIO",
+      "codigo": "29618",
       "clases": [
         {
-          "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17:00",
-          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 2,
+          "dia": 4,
           "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
           "fin": "23:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "BIANCHI GUSTAVO OSCAR, GUARNA PABLO FRANCISCO, GONZALEZ BUSQUIN EZEQUIEL MARTIN, JUAREZ ANDRES ALBERTO, KELMAN URIEL",
-      "codigo": "29606",
-      "clases": [
-        {
-          "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         },
         {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+          "dia": 6,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09:00",
+          "fin": "13:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
       ]
     },
     {
-      "docentes": "MENDEZ MARIANO, CAMEJO MANUEL, TALAVERA CARLOS DAMIAN",
-      "codigo": "29608",
-      "clases": [
-        {
-          "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t08:00",
-          "fin": "11:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t08:00",
-          "fin": "11:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "ESSAYA DIEGO NICOLAS, ESTEBAN FEDERICO MARTIN, KRISTAL JUAN IGNACIO, RIESGO DANIELA PAULA",
-      "codigo": "29609",
+      "docentes": "ESSAYA DIEGO NICOLAS, MAZZER LUCA ANDREA, SANTISI SEBASTIAN",
+      "codigo": "29619",
       "clases": [
         {
           "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17:30",
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14:00",
+          "fin": "18:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 5,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t15:00",
           "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "20:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 5,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17:30",
-          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 5,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "20:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
       ]
     },
     {
-      "docentes": "COSTA GUIDO, LANZILLOTTA BRUNO, SOSA CRISTIAN MARTIN",
-      "codigo": "29610",
+      "docentes": "SALVIA MARTIN MIGUEL, AZCURRA DIEGO ANDRES, BIANCHI GUSTAVO OSCAR, OTERO MARCOS JULIAN",
+      "codigo": "31594",
       "clases": [
         {
-          "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "CALVO PATRICIA MABEL, SCHMIDT GUSTAVO ADOLFO, TUGNARELLI MARIANO PATRICIO",
-      "codigo": "29623",
-      "clases": [
-        {
-          "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
-          "fin": "21:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 5,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "BUCHWALD MARTIN EZEQUIEL, GENENDER PEÑA EZEQUIEL DAVID, GONZALEZ LISELLA FIONA CARLA, SELLA FAENA JASMINA, SIMO PIQUERES ADEODATO",
-      "codigo": "29624",
-      "clases": [
-        {
-          "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17:30",
-          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "20:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 5,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17:30",
-          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 5,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "20:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "JUAREZ ANDRES ALBERTO, CIARALLO CRISTIAN ADRIAN, MARIANETTI NICOLAS GABRIEL, PISTILLO CAROLINA ROCIO",
-      "codigo": "29625",
-      "clases": [
-        {
-          "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t13:00",
-          "fin": "16:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t13:00",
-          "fin": "16:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "MENDEZ MARIANO, CAMEJO MANUEL, PANDOLFO LUCAS HERNAN, TOSCANO GONNELLA MAURO FABRICIO",
-      "codigo": "29626",
-      "clases": [
-        {
-          "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
-          "fin": "21:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 5,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
-          "fin": "21:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "YOLIS EUGENIO, SUAREZ JOSE PABLO, BLAZQUEZ OLIVERA SEBASTIAN ALEJANDRO, PICCO MARTIN ALEJANDRO",
-      "codigo": "29635",
-      "clases": [
-        {
-          "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 4,
+          "dia": 3,
           "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
           "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "SANCHEZ DIEGO, SUAREZ JOSE PABLO, BUSTAMANTE JORGE TOMAS, JUSTO NARCIZO EDSON EDER, RODRIGUEZ MASSUH PABLO MATIAS",
-      "codigo": "29636",
-      "clases": [
-        {
-          "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         },
         {
-          "dia": 4,
+          "dia": 3,
           "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
           "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
       ]
     },
     {
-      "docentes": "MENDEZ MARIANO",
-      "codigo": "31646",
+      "docentes": "CALVO PATRICIA MABEL, SANTI LEANDRO EMILIO, SANTI LUCIO EMILIO",
+      "codigo": "29633",
       "clases": [
         {
-          "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "dia": 3,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
           "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         },
         {
           "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
           "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
       ]
     },
     {
       "docentes": "VENTURINO GABRIEL FRANCISCO, ECHARRI MARTIN, CONTIGIANI BRUNO",
-      "codigo": "31551",
+      "codigo": "29646",
       "clases": [
         {
           "dia": 2,
           "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t08:00",
-          "fin": "11:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+          "fin": "11:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         },
         {
           "dia": 3,
@@ -13604,13 +13921,34 @@ export const data = {
         {
           "dia": 4,
           "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t08:00",
-          "fin": "11:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+          "fin": "11:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
       ]
     },
     {
       "docentes": "VENTURINO GABRIEL FRANCISCO, CEA SASTRE DIEGO HERNAN, LUPI CLAUDIO ALBERTO, ROSSI PABLO DANIEL",
-      "codigo": "31556",
+      "codigo": "29647",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 3,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 4,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "VENTURINO GABRIEL FRANCISCO, ZACCHIGNA FEDERICO GIORDANO, POLINOTTO JORGE RAUL",
+      "codigo": "31569",
       "clases": [
         {
           "dia": 2,
@@ -13630,61 +13968,24 @@ export const data = {
       ]
     },
     {
-      "docentes": "VENTURINO GABRIEL FRANCISCO, CEA SASTRE DIEGO HERNAN, LUPI CLAUDIO ALBERTO, ROSSI PABLO DANIEL",
-      "codigo": "31564",
+      "docentes": "CORACH GUSTAVO",
+      "codigo": "29659",
       "clases": [
         {
           "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
-          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "VILLAGRA SERGIO GUSTAVO, BRUNO TOMAS, DE BENEDETTI GUIDO RUBEN, FERNANDEZ LEONARDO DANIEL",
-      "codigo": "29649",
-      "clases": [
-        {
-          "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:30",
-          "fin": "21:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:30",
-          "fin": "21:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "TURRI ALEJANDRO, GONZALEZ NORBERTO DANIEL",
-      "codigo": "29650",
-      "clases": [
-        {
-          "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
           "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         },
         {
           "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
+          "fin": "20:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
       ]
     },
     {
       "docentes": "CALZON MIGUEL ANGEL, ACERO FERNANDO RODOLFO, SMILOVICH DAMIAN NICOLAS",
-      "codigo": "29713",
+      "codigo": "29719",
       "clases": [
         {
           "dia": 2,
@@ -13710,7 +14011,7 @@ export const data = {
     },
     {
       "docentes": "ROSITO CLAUS MARTIN, PRELAT DANIEL",
-      "codigo": "29714",
+      "codigo": "29720",
       "clases": [
         {
           "dia": 2,
@@ -13736,7 +14037,7 @@ export const data = {
     },
     {
       "docentes": "MURMIS GUSTAVO MARCELO, DEL RIO GARCIA FEDERICO MANUEL, SCARAMAL MARIANO DANIEL",
-      "codigo": "29715",
+      "codigo": "29721",
       "clases": [
         {
           "dia": 1,
@@ -13762,7 +14063,7 @@ export const data = {
     },
     {
       "docentes": "BERGAMINI MARIA LORENA, GONZALEZ GRACIELA ADRIANA, MONZON NELSON",
-      "codigo": "29716",
+      "codigo": "29722",
       "clases": [
         {
           "dia": 2,
@@ -13788,7 +14089,7 @@ export const data = {
     },
     {
       "docentes": "CALZON MIGUEL ANGEL, PEÑA NELLY HAYDEE, CACHILE MARIO ANDRES, RIZZO ELISABETH AMALIA",
-      "codigo": "29717",
+      "codigo": "29723",
       "clases": [
         {
           "dia": 2,
@@ -13813,40 +14114,24 @@ export const data = {
       ]
     },
     {
-      "docentes": "RAMOS SILVIA ADRIANA, PEREYRA GUSTAVO MARTIN",
-      "codigo": "29757",
+      "docentes": "CORACH GUSTAVO",
+      "codigo": "29739",
       "clases": [
         {
-          "dia": 2,
+          "dia": 1,
           "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
-          "fin": "23:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+          "fin": "21:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         },
         {
-          "dia": 4,
+          "dia": 3,
           "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
-          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "CALONICO CHRISTIAN MARIO, RUGILO GUILLERMO HERNAN",
-      "codigo": "29765",
-      "clases": [
-        {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
-          "fin": "20:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+          "fin": "21:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
       ]
     },
     {
       "docentes": "PANTAZIS RICARDO DEMETRIO",
-      "codigo": "29773",
+      "codigo": "29775",
       "clases": [
         {
           "dia": 2,
@@ -13861,109 +14146,151 @@ export const data = {
       ]
     },
     {
-      "docentes": "DEJEAN GUSTAVO ADOLFO, BEIRO MARIANO GASTON, FASCE ALBERTO ARMANDO, ROMAN LUCAS ALEJANDRO",
-      "codigo": "29798",
-      "clases": [
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
-          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "SERVETTO ARTURO CARLOS, GARCIA JAIME DIEGO, NAON MARCELO CARLOS",
-      "codigo": "29799",
+      "docentes": "KELLY JUAN MIGUEL, ZOLA JULIO GUILLERMO, FERRO OSCAR RICARDO, SCHIFFMACHER CHRISTIAN",
+      "codigo": "29839",
       "clases": [
         {
           "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "PANTALEO GUILLERMO GUSTAVO, RODRIGUEZ LAURA GUILLERMINA, TAPIA JIMENA SOLEDAD",
-      "codigo": "29815",
-      "clases": [
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17:30",
-          "fin": "19:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t13:00",
+          "fin": "15:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         },
         {
           "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:30",
-          "fin": "21:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "HENTSCHEL RICARDO GABRIE, FUCHS JORGE HECTOR ANTONIO",
-      "codigo": "29837",
-      "clases": [
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
-          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "WALD GUILLERMO DIEGO, PAGOLA HUGO ALBERTO, ALABART LEONARDO DANIEL",
-      "codigo": "29933",
-      "clases": [
-        {
-          "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:30",
-          "fin": "22:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t13:00",
+          "fin": "16:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         },
         {
           "dia": 5,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:30",
-          "fin": "22:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t13:00",
+          "fin": "16:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
       ]
     },
     {
-      "docentes": "CASTAGNINO JUAN ESTEBAN, GIACOIA CARLOS ALBERTO",
-      "codigo": "30125",
+      "docentes": "ZOLA JULIO GUILLERMO, VEIGA DANIEL ARTURO, BONGIOVANNI GUSTAVO EFRAIN, PACHECO GONZALO ANDRES",
+      "codigo": "29840",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t13:00",
+          "fin": "15:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 3,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 5,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "DALMATI DANIEL EDUARDO, FANO WALTER GUSTAVO, LANNES PABLO LUCIANO",
+      "codigo": "31579",
       "clases": [
         {
           "dia": 2,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 3,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "MARRONE LUIS ARMANDO, LOVATO SILVIA BEATRIZ, CATTANEO JUAN MATIAS, GARCIA FEDERICO EZEQUIEL",
+      "codigo": "29880",
+      "clases": [
+        {
+          "dia": 1,
           "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
           "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         },
         {
           "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:30",
-          "fin": "21:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
       ]
     },
     {
-      "docentes": "LADAGA GRACIELA, GIACOIA CARLOS ALBERTO",
-      "codigo": "30126",
+      "docentes": "HOCHMAN LEONEL ENRIQUE, MAYA JUAN AUGUSTO",
+      "codigo": "29882",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 3,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "DANERI CLAUDIO ESTEBAN MA, FORTUNATO NICOLAS, HIRCHOREN GUSTAVO ABRAHAM",
+      "codigo": "31573",
       "clases": [
         {
           "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:30",
-          "fin": "21:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 4,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "BONELLI FERNANDO OSCAR, TOLON ESTARELLES PEDRO",
+      "codigo": "29886",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 2,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "STEG ENRIQUE, SELLERIO GUILLERMO CARLO, CASTILLO GONZALO",
+      "codigo": "29918",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 2,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "ANGELOPULO ANDRES MARIO, SELLERIO GUILLERMO CARLO",
+      "codigo": "29919",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         },
         {
           "dia": 4,
@@ -13973,56 +14300,8 @@ export const data = {
       ]
     },
     {
-      "docentes": "ENRIQUEZ RIVERA JUAN ARMANDO, CORRAL ALFREDO ALBERTO",
-      "codigo": "30127",
-      "clases": [
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t08:30",
-          "fin": "11:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09:00",
-          "fin": "12:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "PUJOL GABRIEL ALBERTO, CORRAL ALFREDO ALBERTO",
-      "codigo": "30128",
-      "clases": [
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t08:30",
-          "fin": "11:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 5,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09:00",
-          "fin": "12:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "SOSTI LUIS NELSON, PETRELLI SILVA ADRIANA",
-      "codigo": "30129",
-      "clases": [
-        {
-          "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09:00",
-          "fin": "12:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09:00",
-          "fin": "12:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "RUIZ RE MARIA SANDRA, SOSTI LUIS NELSON, TASLAKTZIAN ADRIANA ESTE",
-      "codigo": "30130",
+      "docentes": "SACO ROBERTO, GONZALEZ TOMAS ANDRES",
+      "codigo": "29921",
       "clases": [
         {
           "dia": 1,
@@ -14031,54 +14310,33 @@ export const data = {
         },
         {
           "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t08:30",
-          "fin": "11:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09:00",
+          "fin": "12:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
       ]
     },
     {
-      "docentes": "BARMACK NORBERTO BENJAMIN, FRUTOS JUAN DIEGO, ZAMMARANO JOSE SALVADOR, VASSALLO JUAN RAMON, VEVER MARIA ELENA",
-      "codigo": "30134",
-      "clases": [
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17:00",
-          "fin": "19:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:30",
-          "fin": "20:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20:30",
-          "fin": "23:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "CABIBBO DANIEL HORACIO, MAZZEO JORGE RAUL, TRINCHERO DANIEL ADRIAN",
-      "codigo": "30136",
+      "docentes": "ZANINI ANIBAL JOSE ANTONIO, BERRA SEBASTIAN",
+      "codigo": "29923",
       "clases": [
         {
           "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
-          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t15:00",
+          "fin": "18:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         },
         {
-          "dia": 3,
+          "dia": 2,
           "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
           "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
       ]
     },
     {
-      "docentes": "STOLA GERARDO LUIS, MAZZEO JORGE RAUL",
-      "codigo": "30137",
+      "docentes": "GHERSIN ALEJANDRO SIMON",
+      "codigo": "31571",
       "clases": [
         {
-          "dia": 2,
+          "dia": 4,
           "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
           "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         },
@@ -14090,8 +14348,24 @@ export const data = {
       ]
     },
     {
-      "docentes": "BURIN ABRAHAM ALBERTO DA, MAZZEO JORGE RAUL, GUTIERREZ NESTOR SERGIO, NOVODVORETZ OSCAR DARIO",
-      "codigo": "30138",
+      "docentes": "BERTUCCIO JOSE ALBERTO, BULACIO MATIAS FERNANDO, MARCHI EDGARDO JOSE",
+      "codigo": "31550",
+      "clases": [
+        {
+          "dia": 3,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 5,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "CARBONETTO SEBASTIAN HORACIO, GONZALEZ MARTIN GERMAN, FANEGO DIEGO ALBERTO, HIRSCH LUCAS",
+      "codigo": "29981",
       "clases": [
         {
           "dia": 1,
@@ -14106,112 +14380,59 @@ export const data = {
       ]
     },
     {
-      "docentes": "BERISSO OSVALDO JORGE, BERTOIA DEL VALLE EZEQUIEL",
-      "codigo": "30143",
+      "docentes": "ZACCHIGNA FEDERICO GIORDANO, GONZALEZ MARTIN GERMAN, de PEDRO MERMIER IGNACIO TOMAS",
+      "codigo": "29982",
       "clases": [
         {
-          "dia": 5,
+          "dia": 1,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 2,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "SINNEWALD DANIEL NESTOR, RUBINSTEIN LUCAS TOMAS",
+      "codigo": "31670",
+      "clases": [
+        {
+          "dia": 4,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 4,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "REY VEGA LEONARDO JAVIER, CORIZZO SEBASTIAN JAVIER, GRANELL PABLO NICOLAS, SEVILLA MARTIN",
+      "codigo": "29998",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 4,
           "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "VILLAGRA SERGIO GUSTAVO",
-      "codigo": "31597",
-      "clases": [
-        {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:30",
-          "fin": "22:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "ROCCA JAVIER ALEJANDRO, AGUIRRE MARIA ALEJANDRA, A DESIGNAR A DESIGNAR, MALMORIA MARIANO ESTEBAN NOE",
-      "codigo": "30264",
-      "clases": [
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t11:00",
-          "fin": "13:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t11:00",
-          "fin": "13:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "MINGOLO NELIDA, ZALDIVAR ESCOLA FACUNDO, A DESIGNAR A DESIGNAR",
-      "codigo": "30265",
-      "clases": [
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t15:00",
-          "fin": "16:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:30",
-          "fin": "17:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 5,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t15:00",
-          "fin": "16:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 5,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:30",
-          "fin": "17:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "GALLI ADRIANA SILVIA, PAEZ VIVIANA CAROLINA, VEVER MARIA ELENA",
-      "codigo": "30428",
-      "clases": [
-        {
-          "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17:00",
-          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
           "fin": "21:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t21:00",
-          "fin": "23:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
       ]
     },
     {
-      "docentes": "YOMHA LUIS ALBERTO, DI FIORE ALEJANDRO JAVIER, HRYNKIEWICZ OMAR DAVID",
-      "codigo": "30463",
+      "docentes": "TACCA HERNAN EMILIO, BERTOLOTTI FERNANDO NESTOR, NACHAJON SCHWARTZ YAKI",
+      "codigo": "30011",
       "clases": [
         {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17:00",
-          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "23:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "CARISIMO ESTEBAN, LOPEZ DESTAIN FRANCISCO, SIMONELLI LUCAS PABLO",
-      "codigo": "30556",
-      "clases": [
-        {
-          "dia": 2,
+          "dia": 3,
           "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
           "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         },
@@ -14223,45 +14444,29 @@ export const data = {
       ]
     },
     {
-      "docentes": "OCHOA MARIA ALEJANDRA, CONCILiO GERMAN MARTIN",
-      "codigo": "30558",
+      "docentes": "VALVERDE ESTEBAN RAUL",
+      "codigo": "30068",
       "clases": [
         {
-          "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:30",
-          "fin": "21:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:30",
-          "fin": "21:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "ROSA ADRIAN DARIO, CERVETTO MARCOS ADRIAN",
-      "codigo": "30576",
-      "clases": [
-        {
-          "dia": 1,
+          "dia": 2,
           "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
           "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         },
         {
-          "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+          "dia": 3,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
       ]
     },
     {
-      "docentes": "ROSA ADRIAN DARIO, FLORENTIN RAUL FELIX",
-      "codigo": "30577",
+      "docentes": "OZOLS ANDRES, A DESIGNAR A DESIGNAR, PUCEIRO ALEJANDRO JOSE LUIS",
+      "codigo": "30258",
       "clases": [
         {
-          "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+          "dia": 2,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14:00",
+          "fin": "17:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         },
         {
           "dia": 4,
@@ -14271,8 +14476,258 @@ export const data = {
       ]
     },
     {
-      "docentes": "ROSA ADRIAN DARIO, BARBAGRIGIA HUGO CESAR, NICORA LAURA IRENE",
-      "codigo": "30578",
+      "docentes": "MARTINEZ OSCAR EDUARDO, LACAPMESURE AXEL, SANCHEZ Gustavo Alberto",
+      "codigo": "30259",
+      "clases": [
+        {
+          "dia": 3,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
+          "fin": "21:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 5,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
+          "fin": "21:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "ZANABRIA JORGE NESTOR, CASTELLI ENRIQUE JORGE, DALMATI DANIEL EDUARDO",
+      "codigo": "30425",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 4,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "CASTELLI ENRIQUE JORGE, ZANABRIA JORGE NESTOR, DALMATI DANIEL EDUARDO",
+      "codigo": "30426",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 4,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "LOMBARDO PABLO ANDRES",
+      "codigo": "30438",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 5,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "ZANUTTO BONIFACIO SILVANO, LIBERCZUK SERGIO JAVIER",
+      "codigo": "30442",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 3,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "BERTETTA ADOLFO ANTONIO, CATTONAR ALEJANDRO",
+      "codigo": "30508",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 3,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 5,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "BERTETTA ADOLFO ANTONIO",
+      "codigo": "30509",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 3,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 5,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "DALMATI DANIEL EDUARDO, BERTETTA ADOLFO ANTONIO",
+      "codigo": "30510",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 3,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 5,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "BERTETTA ADOLFO ANTONIO, ZOTHNER ENRIQUE FELIX EDU, CABIBBO DANIEL HORACIO",
+      "codigo": "30511",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 4,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "PALAVECINO FEDERICO SERGIO, BOTTA JORGE BENJAMIN, CARRIZO GUSTAVO ALEJANDRO, MONTALBANO SILVIA RITA",
+      "codigo": "30527",
+      "clases": [
+        {
+          "dia": 4,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "BONELLI FERNANDO OSCAR, CARDUCCI LEONARDO MARTIN",
+      "codigo": "30539",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 4,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "AP IWAN EDUARDO FABIAN, GARCIA MARRA SEBASTIAN, VEIGA RICARDO ALFREDO, CORBELLINI ERNESTO MAURICIO",
+      "codigo": "30540",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 4,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "PEDERSEN EDUARDO CRISTIAN",
+      "codigo": "30551",
+      "clases": [
+        {
+          "dia": 5,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14:00",
+          "fin": "16:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 5,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "18:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "PEDERSEN EDUARDO CRISTIAN, TOLON ESTARELLES PEDRO",
+      "codigo": "30552",
+      "clases": [
+        {
+          "dia": 5,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "18:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 5,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
+          "fin": "20:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "MUSSO RODRIGUEZ GUILLERMO ANDRES, AMDEN ANGEL HORACIO",
+      "codigo": "30563",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 2,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "AMDEN ANGEL HORACIO, MARTELETTI GUSTAVO ALEJO",
+      "codigo": "30564",
       "clases": [
         {
           "dia": 1,
@@ -14287,8 +14742,8 @@ export const data = {
       ]
     },
     {
-      "docentes": "IUZZOLINO RICARDO JAVIER, ROSA ADRIAN DARIO, FANEGO DIEGO ALBERTO",
-      "codigo": "30579",
+      "docentes": "AMDEN ANGEL HORACIO, GALLI DARIO EDUARDO",
+      "codigo": "31570",
       "clases": [
         {
           "dia": 1,
@@ -14296,7 +14751,23 @@ export const data = {
           "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         },
         {
-          "dia": 5,
+          "dia": 6,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09:00",
+          "fin": "12:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "BONELLI FERNANDO OSCAR, MARTINEZ ALEJANDRO MANUEL, CALERO RODRIGO ADRIAN",
+      "codigo": "30585",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 4,
           "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
           "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
@@ -14304,7 +14775,7 @@ export const data = {
     },
     {
       "docentes": "STOLA GERARDO LUIS, CAMPIGLIO GUILLERMO CARLOS, COFMAN FERNANDO, SALAYA VELAZQUEZ JUAN GUIDO",
-      "codigo": "30598",
+      "codigo": "30602",
       "clases": [
         {
           "dia": 2,
@@ -14320,7 +14791,7 @@ export const data = {
     },
     {
       "docentes": "MARTOS PEDRO IGNACIO DOMINGO, CAMPIGLIO GUILLERMO CARLOS, BAGLIVO FABRICIO HUGO, PUCCI FERNANDO OSCAR",
-      "codigo": "30599",
+      "codigo": "30603",
       "clases": [
         {
           "dia": 3,
@@ -14336,7 +14807,7 @@ export const data = {
     },
     {
       "docentes": "CAMPIGLIO GUILLERMO CARLOS, RATTO GRACIELA SUSANA, GAVINOWICH GABRIEL HUGO",
-      "codigo": "30600",
+      "codigo": "30604",
       "clases": [
         {
           "dia": 4,
@@ -14351,8 +14822,24 @@ export const data = {
       ]
     },
     {
+      "docentes": "UTARD MARCELO, MATSUNAGA NICOLAS",
+      "codigo": "31673",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 4,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
       "docentes": "D´ACCORSO JAVIER HERNAN, PAGANI NESTOR DARIO, NOREMBERG ADRIAN, IRANZI MARTIN",
-      "codigo": "30632",
+      "codigo": "30616",
       "clases": [
         {
           "dia": 4,
@@ -14362,56 +14849,24 @@ export const data = {
       ]
     },
     {
-      "docentes": "CORSI DIEGO PABLO",
-      "codigo": "31615",
+      "docentes": "ODENA STELLA MARIS, JURADO ALEJANDRO DIEGO, BIANCHI LUCAS",
+      "codigo": "30666",
       "clases": [
+        {
+          "dia": 1,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
+          "fin": "21:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
         {
           "dia": 2,
           "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "23:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17:00",
-          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "OCHOA MARIA ALEJANDRA, IERACHE JORGE SALVADOR",
-      "codigo": "31476",
-      "clases": [
-        {
-          "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17:00",
-          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
           "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
       ]
     },
     {
-      "docentes": "BOLIVAR MARIA JULIA, MAULHARDT MARTIN ENRIQUE, ACERO FERNANDO RODOLFO, HOLLISCH GISELE",
-      "codigo": "30689",
-      "clases": [
-        {
-          "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t08:00",
-          "fin": "11:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t08:00",
-          "fin": "11:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "MIGUEL AIDA CARMEN, CANGA SANDRA CARMEN",
-      "codigo": "30690",
+      "docentes": "JURADO ALEJANDRO DIEGO, BLANCO OMAR ANIBAL",
+      "codigo": "30667",
       "clases": [
         {
           "dia": 1,
@@ -14419,164 +14874,42 @@ export const data = {
           "fin": "21:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         },
         {
-          "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
-          "fin": "21:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "CANGA SANDRA CARMEN, MIGUEL AIDA CARMEN, ACERO FERNANDO RODOLFO",
-      "codigo": "30691",
-      "clases": [
-        {
-          "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14:00",
-          "fin": "17:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t15:00",
-          "fin": "18:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "SALGADO HORACIO, A DESIGNAR A DESIGNAR, PINCHETE LUIS ALBERTO, PITA MARIA MACARENA",
-      "codigo": "30711",
-      "clases": [
-        {
           "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14:00",
-          "fin": "17:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17:00",
-          "fin": "20:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "SALGADO HORACIO, DI LIBERO ERNESTO, PINCHETE LUIS ALBERTO, A DESIGNAR A DESIGNAR, CRAVINO CARLOS GUILLERMO MARTIN",
-      "codigo": "30712",
-      "clases": [
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17:00",
-          "fin": "20:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20:00",
-          "fin": "23:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "SAMBUCO SALOMONE LUCAS IGNACIO, FAIGON ADRIAN NESTOR",
-      "codigo": "30755",
-      "clases": [
-        {
-          "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17:00",
-          "fin": "21:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "ECHEVARRIA PABLO, RAMONET JUAN ANTONIO, RAMOS SILVIA ADRIANA, FERNANDEZ CAEIRO JUAN MANUEL, OITANA DIEGO MARTIN",
-      "codigo": "30845",
-      "clases": [
-        {
-          "dia": 1,
           "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
           "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:30",
-          "fin": "21:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09:00",
-          "fin": "11:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
       ]
     },
     {
-      "docentes": "COLOMBO PABLO MARTIN, RAMONET JUAN ANTONIO, RAMOS SILVIA ADRIANA, MARIN EMILIO GERMAN, TERZANO IVAN GUILLERMO",
-      "codigo": "30846",
+      "docentes": "FAIGON ADRIAN NESTOR, SAMBUCO SALOMONE LUCAS IGNACIO",
+      "codigo": "30757",
       "clases": [
         {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:30",
-          "fin": "21:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09:00",
-          "fin": "11:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 6,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10:00",
-          "fin": "13:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "NAVARRO CARLOS ALBERTO, RAMONET JUAN ANTONIO, RAMOS SILVIA ADRIANA, LEVY JONATHAN",
-      "codigo": "31651",
-      "clases": [
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:30",
-          "fin": "21:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09:00",
-          "fin": "11:30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
+          "dia": 2,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17:00",
           "fin": "21:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
       ]
     },
     {
-      "docentes": "GIOSCIO CLAUDIA ROXANA, GE LIXIN, RADICE LILIANA MARTA",
-      "codigo": "30853",
-      "clases": [
-        {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17:00",
-          "fin": "23:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "RAMOS SILVIA ADRIANA",
-      "codigo": "30857",
+      "docentes": "GARCIA INZA MARIANO ANDRES, CARRA MARTIN JAVIER",
+      "codigo": "31575",
       "clases": [
         {
           "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
-          "fin": "23:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         },
         {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
+          "dia": 2,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
           "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
       ]
     },
     {
       "docentes": "SANTI LEANDRO EMILIO, HAMKALO JOSE LUIS, NATALE LUCIANO CESAR, PEREZ MASCI HERNAN ANDRES",
-      "codigo": "30880",
+      "codigo": "30883",
       "clases": [
         {
           "dia": 1,
@@ -14592,7 +14925,7 @@ export const data = {
     },
     {
       "docentes": "HAMKALO JOSE LUIS, HEGUIABEHERE JUAN MARTIN, NIÑO KEHOE TOMAS, STAHL MATIAS SEBASTIAN",
-      "codigo": "30881",
+      "codigo": "30884",
       "clases": [
         {
           "dia": 1,
@@ -14607,120 +14940,8 @@ export const data = {
       ]
     },
     {
-      "docentes": "GOLMAR NATALIA, ARGERICH LUIS RICARDO, MARTINELLI DAMIAN ARIEL, RAMOS MEJIA MARTIN GABRIEL, TORRE ZAFFARONI JOAQUIN",
-      "codigo": "30886",
-      "clases": [
-        {
-          "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "COLLINET JORGE FRANCISCO",
-      "codigo": "31490",
-      "clases": [
-        {
-          "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
-          "fin": "21:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
-          "fin": "21:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "APUD HERNAN RAMIRO, BETTINI VILMA ROXANA, BROLLO MARIA LUCRECIA",
-      "codigo": "30918",
-      "clases": [
-        {
-          "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "BELLO IGNACIO ALBERTO, VERA MATIAS ALEJANDRO, PUEBLA MANUEL LEANDRO",
-      "codigo": "30967",
-      "clases": [
-        {
-          "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t15:00",
-          "fin": "17:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t15:00",
-          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "BELLO IGNACIO ALBERTO, BERTALOT FEDERICO MATIAS, LEVITAN DAVID ADRIAN",
-      "codigo": "30968",
-      "clases": [
-        {
-          "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "21:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "23:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "GONZALEZ ZERBO SANTIAGO, PEREZ SILVIA NOEMI, PUEBLA MANUEL LEANDRO",
-      "codigo": "30969",
-      "clases": [
-        {
-          "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09:00",
-          "fin": "11:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09:00",
-          "fin": "13:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "BOUZA MAGDALENA, GARCIA JEMINA MARIA, EDWARDS MOLINA DIEGO JULIO",
-      "codigo": "30970",
-      "clases": [
-        {
-          "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09:00",
-          "fin": "13:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09:00",
-          "fin": "11:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
       "docentes": "CERNUSCHI FRIAS BRUNO, PFEFFERMAN JONAS DAMIAN",
-      "codigo": "31559",
+      "codigo": "31578",
       "clases": [
         {
           "dia": 1,
@@ -14736,7 +14957,7 @@ export const data = {
     },
     {
       "docentes": "ESTIENNE CLAUDIO FRANCIS, PELLE PATRICIA ALEJANDRA",
-      "codigo": "30977",
+      "codigo": "30979",
       "clases": [
         {
           "dia": 1,
@@ -14751,8 +14972,24 @@ export const data = {
       ]
     },
     {
+      "docentes": "ARINI PEDRO DAVID, BONOMINI MARIA PAULA",
+      "codigo": "30985",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14:00",
+          "fin": "17:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 3,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14:00",
+          "fin": "17:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
       "docentes": "ALTIERI ANDRES OSCAR, JOURDAN IVAN, LUPI CLAUDIO ALBERTO",
-      "codigo": "30993",
+      "codigo": "31541",
       "clases": [
         {
           "dia": 1,
@@ -14767,8 +15004,8 @@ export const data = {
       ]
     },
     {
-      "docentes": "ALTIERI ANDRES OSCAR, PECKER MARCOSIG EZEQUIEL, ALBERT RAYMUNDO JOSE",
-      "codigo": "30994",
+      "docentes": "PECKER MARCOSIG EZEQUIEL, ALTIERI ANDRES OSCAR, ALBERT RAYMUNDO JOSE",
+      "codigo": "31542",
       "clases": [
         {
           "dia": 1,
@@ -14783,19 +15020,8 @@ export const data = {
       ]
     },
     {
-      "docentes": "DOMINGUEZ MARIA MERCEDES, RICKERT CARLOS, KLEIN MARIA CAROLINA, SABINO LEANDRO OSCAR, TURCO GRECO MARIA CLARA",
-      "codigo": "31099",
-      "clases": [
-        {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "23:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
       "docentes": "LEW SERGIO EDUARDO",
-      "codigo": "31107",
+      "codigo": "31109",
       "clases": [
         {
           "dia": 3,
@@ -14811,7 +15037,7 @@ export const data = {
     },
     {
       "docentes": "GONZALEZ PABLO SEBASTIAN, CARTELLI CARLOS JOSE, LISTE VICTOR MARIANO",
-      "codigo": "31119",
+      "codigo": "31121",
       "clases": [
         {
           "dia": 1,
@@ -14826,62 +15052,115 @@ export const data = {
       ]
     },
     {
-      "docentes": "COSSO PABLO GUSTAVO, SALADINO MARCOS ARTURO",
-      "codigo": "31161",
+      "docentes": "BIANUCCI MONICA ADRIANA, TAPPARELLI CONSTANZA MABEL",
+      "codigo": "31125",
       "clases": [
         {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+          "dia": 2,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t13:00",
+          "fin": "17:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
       ]
     },
     {
       "docentes": "SARRIS CLAUDIA MONICA, CARAM LEONIDAS FACUNDO",
-      "codigo": "31163",
+      "codigo": "31143",
       "clases": [
         {
           "dia": 1,
           "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "21:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         },
         {
           "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "21:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "COSSO PABLO GUSTAVO, SALADINO MARCOS ARTURO",
-      "codigo": "31165",
-      "clases": [
-        {
-          "dia": 4,
           "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
           "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
       ]
     },
     {
-      "docentes": "SARRIS CLAUDIA MONICA, CARAM LEONIDAS FACUNDO",
-      "codigo": "31167",
+      "docentes": "MAS IGNACIO AGUSTIN",
+      "codigo": "31144",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t13:00",
+          "fin": "16:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 1,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "GIRIBET JUAN IGNACIO",
+      "codigo": "31576",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 4,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "CARAM LEONIDAS FACUNDO",
+      "codigo": "31153",
       "clases": [
         {
           "dia": 1,
           "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "21:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         },
         {
           "dia": 3,
           "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "21:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "MAS IGNACIO AGUSTIN",
+      "codigo": "31154",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t13:00",
+          "fin": "16:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 1,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "GIRIBET JUAN IGNACIO",
+      "codigo": "31577",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 4,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
       ]
     },
     {
       "docentes": "REY VEGA LEONARDO JAVIER, MARQUES ROJO RUI ALEJANDRO, VERA MATIAS ALEJANDRO",
-      "codigo": "31171",
+      "codigo": "31175",
       "clases": [
         {
           "dia": 1,
@@ -14897,7 +15176,7 @@ export const data = {
     },
     {
       "docentes": "CALDENTEY MARTA BEATRIZ, CASAGLIA DANIEL CLAUDIO, REY VEGA LEONARDO JAVIER",
-      "codigo": "31172",
+      "codigo": "31176",
       "clases": [
         {
           "dia": 1,
@@ -14913,7 +15192,7 @@ export const data = {
     },
     {
       "docentes": "REY VEGA LEONARDO JAVIER, TORRES HUMBERTO MAXIMILIANO, PEREZ SEBASTIAN GABRIEL, SAR JUAN FEDERICO",
-      "codigo": "31173",
+      "codigo": "31177",
       "clases": [
         {
           "dia": 1,
@@ -14928,40 +15207,8 @@ export const data = {
       ]
     },
     {
-      "docentes": "CAIAFA CESAR FEDERICO, BENITEZ CARLOS MARCELO, VILLANUEVA CECILIA AZUL",
-      "codigo": "31181",
-      "clases": [
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 5,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "MERLINO HERNAN DANIEL, RODRIGUEZ JUAN MANUEL",
-      "codigo": "31500",
-      "clases": [
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17:00",
-          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "23:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
       "docentes": "ACQUATICCI FABIAN, CYNOWIEC ESTEBAN",
-      "codigo": "31189",
+      "codigo": "31191",
       "clases": [
         {
           "dia": 2,
@@ -14977,7 +15224,7 @@ export const data = {
     },
     {
       "docentes": "MARTOS PEDRO IGNACIO DOMINGO, ALVAREZ NICOLAS",
-      "codigo": "31207",
+      "codigo": "31209",
       "clases": [
         {
           "dia": 4,
@@ -14992,13 +15239,13 @@ export const data = {
       ]
     },
     {
-      "docentes": "ROCA PABLO DANIEL, TORRES FEYUK NICOLAS RODRIGO EZEQUIEL",
-      "codigo": "31211",
+      "docentes": "CRUZ JUAN MANUEL, LUTENBERG ARIEL, GRAÑA JORGE EDUARDO",
+      "codigo": "31213",
       "clases": [
         {
-          "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+          "dia": 3,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         },
         {
           "dia": 4,
@@ -15009,7 +15256,7 @@ export const data = {
     },
     {
       "docentes": "ABBATE HORACIO ANTONIO, MARINO FEDERICO JORGE",
-      "codigo": "31219",
+      "codigo": "31221",
       "clases": [
         {
           "dia": 1,
@@ -15024,137 +15271,40 @@ export const data = {
       ]
     },
     {
-      "docentes": "MUCCIO ADRIAN, CLUA OSVALDO, ABRAHAM SANDRA AIDA, FERNANDEZ GUIDO ESTEBAN",
-      "codigo": "31229",
-      "clases": [
-        {
-          "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "SIMO PIQUERES ADEODATO, MENDEZ MARIANO",
-      "codigo": "31230",
-      "clases": [
-        {
-          "dia": 5,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17:00",
-          "fin": "20:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 5,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20:00",
-          "fin": "23:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "SIMO PIQUERES ADEODATO, MENDEZ MARIANO",
-      "codigo": "31231",
-      "clases": [
-        {
-          "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 5,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17:00",
-          "fin": "20:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "PIÑEIRO GABRIEL, SUALDEA RUBEN HORACIO",
-      "codigo": "31257",
-      "clases": [
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
-          "fin": "21:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
-          "fin": "21:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "DEGIOVANNINI MARCIO, FONTELA MOISES CARLOS, MADEIRA MARIA MERCEDES, MOLINARI ALEJANDRO GUSTAVO",
-      "codigo": "31259",
+      "docentes": "AGUIRRE ANIBAL ROBERTO, COLOMBO HUGO ROBERTO",
+      "codigo": "31227",
       "clases": [
         {
           "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17:00",
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
           "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         },
         {
-          "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "23:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "GABARDINI JUAN ALBERTO, STAMPELLA MARIANO",
-      "codigo": "31261",
-      "clases": [
-        {
-          "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "23:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "VEIGA ANDRES ARTURO, DI PAOLA MARTIN PABLO, LAFROCE MATIAS EZEQUIEL, WERNER EZEQUIEL MAXIMILIANO",
-      "codigo": "31265",
-      "clases": [
-        {
-          "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "AZCURRA DIEGO ANDRES, BIANCHI GUSTAVO OSCAR, SERRA DIEGO ADRIAN",
-      "codigo": "31266",
-      "clases": [
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "21:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t21:00",
-          "fin": "23:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "CALONICO CHRISTIAN MARIO, FUSCA GABRIEL MARCELO",
-      "codigo": "31268",
-      "clases": [
-        {
           "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t15:00",
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
           "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
       ]
     },
     {
-      "docentes": "ALVAREZ HAMELIN JOSE IGNACIO",
-      "codigo": "31270",
+      "docentes": "DERECHO ARIEL OSVALDO, HENTSCHEL RICARDO GABRIE, FUCHS JORGE HECTOR ANTONIO, DIMA HERNAN GUSTAVO",
+      "codigo": "31278",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 5,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "CARAM LEONIDAS FACUNDO, FUCHS JORGE HECTOR ANTONIO, MARTINEZ MIGUEL ANTONIO",
+      "codigo": "31279",
       "clases": [
         {
           "dia": 2,
@@ -15162,15 +15312,63 @@ export const data = {
           "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         },
         {
+          "dia": 5,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "FUCHS JORGE HECTOR ANTONIO, PERFETTO JUAN CARLOS",
+      "codigo": "31280",
+      "clases": [
+        {
+          "dia": 3,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 5,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "VOLPI MARCELO EDUARDO, FUCHS JORGE HECTOR ANTONIO, LLASAT VANESA",
+      "codigo": "31281",
+      "clases": [
+        {
           "dia": 4,
           "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
           "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 5,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "MUSSO RODRIGUEZ GUILLERMO ANDRES, FUCHS JORGE HECTOR ANTONIO, PEÑA PABLO MARTIN",
+      "codigo": "31282",
+      "clases": [
+        {
+          "dia": 5,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 6,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07:00",
+          "fin": "10:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
       ]
     },
     {
       "docentes": "MARTINEZ MIGUEL ANTONIO",
-      "codigo": "31284",
+      "codigo": "31286",
       "clases": [
         {
           "dia": 3,
@@ -15185,8 +15383,8 @@ export const data = {
       ]
     },
     {
-      "docentes": "MONTALDO DIEGO FERNANDO, PANTALEO GUILLERMO GUSTAVO, LOVAGLIO ANIBAL ALEJANDRO, TRISTANT FLORENCIA",
-      "codigo": "31288",
+      "docentes": "DALMATI DANIEL EDUARDO, SELLERIO GUILLERMO CARLO, D`ONOFRIO ENRIQUE MARIO",
+      "codigo": "31309",
       "clases": [
         {
           "dia": 1,
@@ -15194,106 +15392,15 @@ export const data = {
           "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         },
         {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "PAEZ NICOLAS MARTIN, GUTTER EMILIO",
-      "codigo": "31289",
-      "clases": [
-        {
-          "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "TURRI ALEJANDRO",
-      "codigo": "31291",
-      "clases": [
-        {
-          "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "23:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "DEYMONNAZ PABLO ANDRES, GARIBALDI JULIA ELENA",
-      "codigo": "31293",
-      "clases": [
-        {
-          "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "WACHENCHAVZER ROSA, LUDUEÑO LUCAS EZEQUIEL, PODBEREZSKI VICTOR DANIEL",
-      "codigo": "31323",
-      "clases": [
-        {
-          "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 3,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "SELLERIO GUILLERMO CARLO, CASTILLO GONZALO",
-      "codigo": "31333",
-      "clases": [
-        {
-          "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        }
-      ]
-    },
-    {
-      "docentes": "ANGELOPULO ANDRES MARIO, SELLERIO GUILLERMO CARLO, MARTOS PEDRO IGNACIO DOMINGO",
-      "codigo": "31334",
-      "clases": [
-        {
-          "dia": 2,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        },
-        {
-          "dia": 4,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
-          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+          "dia": 5,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
       ]
     },
     {
       "docentes": "GONZALEZ HERNAN JAVIER, BARRAZA NESTOR RUBEN",
-      "codigo": "31342",
+      "codigo": "31344",
       "clases": [
         {
           "dia": 1,
@@ -15308,13 +15415,34 @@ export const data = {
       ]
     },
     {
-      "docentes": "FERRIGNO LEANDRO SEBASTIAN",
-      "codigo": "31348",
+      "docentes": "CONTIGIANI BRUNO, ZOTHNER ENRIQUE FELIX EDU, SANCHEZ DIEGO",
+      "codigo": "31457",
       "clases": [
         {
-          "dia": 1,
-          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18:00",
+          "dia": 2,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
           "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 4,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
+          "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "GROSSI CAYETANO ROBERTO, ALVAREZ GUILLERMO ALEJANDRO",
+      "codigo": "31473",
+      "clases": [
+        {
+          "dia": 3,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10:00",
+          "fin": "13:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        },
+        {
+          "dia": 3,
+          "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16:00",
+          "fin": "19:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
       ]
     },
@@ -16727,6 +16855,1965 @@ export const data = {
           "dia": 5,
           "inicio": "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19:00",
           "fin": "22:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+        }
+      ]
+    },
+    {
+      "docentes": "SANTOS GONZALO DAMIAN, FONTELA MOISES CARLOS, CHELALA JUAN CRUZ, KODELIA AGOSTINA NADIA, SASIN ALEJANDRO ENRIQUE, SMOCOVICH ELIZABETH KARIN",
+      "codigo": "29543",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "16:00",
+          "fin": "19:00"
+        },
+        {
+          "dia": 2,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "ALVARO FERNANDO, ZAPATA LAURA",
+      "codigo": "29545",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "17:00",
+          "fin": "19:00"
+        },
+        {
+          "dia": 2,
+          "inicio": "19:00",
+          "fin": "23:00"
+        }
+      ]
+    },
+    {
+      "docentes": "BIANCHI GUSTAVO OSCAR, GUARNA PABLO FRANCISCO, GONZALEZ BUSQUIN EZEQUIEL MARTIN, JUAREZ ANDRES ALBERTO, KELMAN URIEL",
+      "codigo": "29606",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "MENDEZ MARIANO, CAMEJO MANUEL, TALAVERA CARLOS DAMIAN",
+      "codigo": "29608",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "08:00",
+          "fin": "11:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "08:00",
+          "fin": "11:00"
+        }
+      ]
+    },
+    {
+      "docentes": "ESSAYA DIEGO NICOLAS, ESTEBAN FEDERICO MARTIN, KRISTAL JUAN IGNACIO, RIESGO DANIELA PAULA",
+      "codigo": "29609",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "17:30",
+          "fin": "19:00"
+        },
+        {
+          "dia": 1,
+          "inicio": "19:00",
+          "fin": "20:30"
+        },
+        {
+          "dia": 5,
+          "inicio": "17:30",
+          "fin": "19:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "19:00",
+          "fin": "20:30"
+        }
+      ]
+    },
+    {
+      "docentes": "COSTA GUIDO, LANZILLOTTA BRUNO, SOSA CRISTIAN MARTIN",
+      "codigo": "29610",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "CALVO PATRICIA MABEL, SCHMIDT GUSTAVO ADOLFO, TUGNARELLI MARIANO PATRICIO",
+      "codigo": "29623",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "18:00",
+          "fin": "21:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "BUCHWALD MARTIN EZEQUIEL, GENENDER PEÑA EZEQUIEL DAVID, GONZALEZ LISELLA FIONA CARLA, SELLA FAENA JASMINA, SIMO PIQUERES ADEODATO",
+      "codigo": "29624",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "17:30",
+          "fin": "19:00"
+        },
+        {
+          "dia": 1,
+          "inicio": "19:00",
+          "fin": "20:30"
+        },
+        {
+          "dia": 5,
+          "inicio": "17:30",
+          "fin": "19:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "19:00",
+          "fin": "20:30"
+        }
+      ]
+    },
+    {
+      "docentes": "JUAREZ ANDRES ALBERTO, CIARALLO CRISTIAN ADRIAN, MARIANETTI NICOLAS GABRIEL, PISTILLO CAROLINA ROCIO",
+      "codigo": "29625",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "13:00",
+          "fin": "16:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "13:00",
+          "fin": "16:00"
+        }
+      ]
+    },
+    {
+      "docentes": "MENDEZ MARIANO, CAMEJO MANUEL, PANDOLFO LUCAS HERNAN, TOSCANO GONNELLA MAURO FABRICIO",
+      "codigo": "29626",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "18:00",
+          "fin": "21:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "18:00",
+          "fin": "21:00"
+        }
+      ]
+    },
+    {
+      "docentes": "YOLIS EUGENIO, SUAREZ JOSE PABLO, BLAZQUEZ OLIVERA SEBASTIAN ALEJANDRO, PICCO MARTIN ALEJANDRO",
+      "codigo": "29635",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "16:00",
+          "fin": "19:00"
+        }
+      ]
+    },
+    {
+      "docentes": "SANCHEZ DIEGO, SUAREZ JOSE PABLO, BUSTAMANTE JORGE TOMAS, JUSTO NARCIZO EDSON EDER, RODRIGUEZ MASSUH PABLO MATIAS",
+      "codigo": "29636",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "MENDEZ MARIANO",
+      "codigo": "31646",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "VENTURINO GABRIEL FRANCISCO, ECHARRI MARTIN, CONTIGIANI BRUNO",
+      "codigo": "31551",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "08:00",
+          "fin": "11:30"
+        },
+        {
+          "dia": 3,
+          "inicio": "16:00",
+          "fin": "19:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "08:00",
+          "fin": "11:30"
+        }
+      ]
+    },
+    {
+      "docentes": "VENTURINO GABRIEL FRANCISCO, CEA SASTRE DIEGO HERNAN, LUPI CLAUDIO ALBERTO, ROSSI PABLO DANIEL",
+      "codigo": "31556",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "19:00",
+          "fin": "22:30"
+        },
+        {
+          "dia": 3,
+          "inicio": "16:00",
+          "fin": "19:00"
+        },
+        {
+          "dia": 6,
+          "inicio": "08:00",
+          "fin": "11:30"
+        }
+      ]
+    },
+    {
+      "docentes": "VENTURINO GABRIEL FRANCISCO, CEA SASTRE DIEGO HERNAN, LUPI CLAUDIO ALBERTO, ROSSI PABLO DANIEL",
+      "codigo": "31564",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "19:00",
+          "fin": "22:30"
+        },
+        {
+          "dia": 3,
+          "inicio": "16:00",
+          "fin": "19:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "22:30"
+        }
+      ]
+    },
+    {
+      "docentes": "VILLAGRA SERGIO GUSTAVO, BRUNO TOMAS, DE BENEDETTI GUIDO RUBEN, FERNANDEZ LEONARDO DANIEL",
+      "codigo": "29649",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "18:30",
+          "fin": "21:30"
+        },
+        {
+          "dia": 4,
+          "inicio": "18:30",
+          "fin": "21:30"
+        }
+      ]
+    },
+    {
+      "docentes": "TURRI ALEJANDRO, GONZALEZ NORBERTO DANIEL",
+      "codigo": "29650",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "CALZON MIGUEL ANGEL, ACERO FERNANDO RODOLFO, SMILOVICH DAMIAN NICOLAS",
+      "codigo": "29713",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "09:00",
+          "fin": "11:00"
+        },
+        {
+          "dia": 2,
+          "inicio": "11:00",
+          "fin": "13:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "09:00",
+          "fin": "11:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "11:00",
+          "fin": "13:00"
+        }
+      ]
+    },
+    {
+      "docentes": "ROSITO CLAUS MARTIN, PRELAT DANIEL",
+      "codigo": "29714",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "09:00",
+          "fin": "11:00"
+        },
+        {
+          "dia": 2,
+          "inicio": "11:00",
+          "fin": "13:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "09:00",
+          "fin": "11:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "11:00",
+          "fin": "13:00"
+        }
+      ]
+    },
+    {
+      "docentes": "MURMIS GUSTAVO MARCELO, DEL RIO GARCIA FEDERICO MANUEL, SCARAMAL MARIANO DANIEL",
+      "codigo": "29715",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "18:00",
+          "fin": "20:00"
+        },
+        {
+          "dia": 1,
+          "inicio": "20:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "18:00",
+          "fin": "20:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "20:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "BERGAMINI MARIA LORENA, GONZALEZ GRACIELA ADRIANA, MONZON NELSON",
+      "codigo": "29716",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "14:00",
+          "fin": "16:00"
+        },
+        {
+          "dia": 2,
+          "inicio": "16:00",
+          "fin": "18:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "14:00",
+          "fin": "16:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "16:00",
+          "fin": "18:00"
+        }
+      ]
+    },
+    {
+      "docentes": "CALZON MIGUEL ANGEL, PEÑA NELLY HAYDEE, CACHILE MARIO ANDRES, RIZZO ELISABETH AMALIA",
+      "codigo": "29717",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "14:00",
+          "fin": "16:00"
+        },
+        {
+          "dia": 2,
+          "inicio": "16:00",
+          "fin": "18:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "14:00",
+          "fin": "16:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "16:00",
+          "fin": "18:00"
+        }
+      ]
+    },
+    {
+      "docentes": "RAMOS SILVIA ADRIANA, PEREYRA GUSTAVO MARTIN",
+      "codigo": "29757",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "18:00",
+          "fin": "23:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "18:00",
+          "fin": "19:00"
+        }
+      ]
+    },
+    {
+      "docentes": "CALONICO CHRISTIAN MARIO, RUGILO GUILLERMO HERNAN",
+      "codigo": "29765",
+      "clases": [
+        {
+          "dia": 4,
+          "inicio": "18:00",
+          "fin": "20:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "20:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "PANTAZIS RICARDO DEMETRIO",
+      "codigo": "29773",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "13:30",
+          "fin": "16:30"
+        },
+        {
+          "dia": 4,
+          "inicio": "13:30",
+          "fin": "16:30"
+        }
+      ]
+    },
+    {
+      "docentes": "DEJEAN GUSTAVO ADOLFO, BEIRO MARIANO GASTON, FASCE ALBERTO ARMANDO, ROMAN LUCAS ALEJANDRO",
+      "codigo": "29798",
+      "clases": [
+        {
+          "dia": 3,
+          "inicio": "16:00",
+          "fin": "19:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "SERVETTO ARTURO CARLOS, GARCIA JAIME DIEGO, NAON MARCELO CARLOS",
+      "codigo": "29799",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 2,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "PANTALEO GUILLERMO GUSTAVO, RODRIGUEZ LAURA GUILLERMINA, TAPIA JIMENA SOLEDAD",
+      "codigo": "29815",
+      "clases": [
+        {
+          "dia": 3,
+          "inicio": "17:30",
+          "fin": "19:30"
+        },
+        {
+          "dia": 3,
+          "inicio": "19:30",
+          "fin": "21:30"
+        }
+      ]
+    },
+    {
+      "docentes": "HENTSCHEL RICARDO GABRIE, FUCHS JORGE HECTOR ANTONIO",
+      "codigo": "29837",
+      "clases": [
+        {
+          "dia": 3,
+          "inicio": "16:00",
+          "fin": "19:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "WALD GUILLERMO DIEGO, PAGOLA HUGO ALBERTO, ALABART LEONARDO DANIEL",
+      "codigo": "29933",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "19:30",
+          "fin": "22:30"
+        },
+        {
+          "dia": 5,
+          "inicio": "19:30",
+          "fin": "22:30"
+        }
+      ]
+    },
+    {
+      "docentes": "CASTAGNINO JUAN ESTEBAN, GIACOIA CARLOS ALBERTO",
+      "codigo": "30125",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "18:30",
+          "fin": "21:30"
+        }
+      ]
+    },
+    {
+      "docentes": "LADAGA GRACIELA, GIACOIA CARLOS ALBERTO",
+      "codigo": "30126",
+      "clases": [
+        {
+          "dia": 3,
+          "inicio": "18:30",
+          "fin": "21:30"
+        },
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "ENRIQUEZ RIVERA JUAN ARMANDO, CORRAL ALFREDO ALBERTO",
+      "codigo": "30127",
+      "clases": [
+        {
+          "dia": 3,
+          "inicio": "08:30",
+          "fin": "11:30"
+        },
+        {
+          "dia": 4,
+          "inicio": "09:00",
+          "fin": "12:00"
+        }
+      ]
+    },
+    {
+      "docentes": "PUJOL GABRIEL ALBERTO, CORRAL ALFREDO ALBERTO",
+      "codigo": "30128",
+      "clases": [
+        {
+          "dia": 3,
+          "inicio": "08:30",
+          "fin": "11:30"
+        },
+        {
+          "dia": 5,
+          "inicio": "09:00",
+          "fin": "12:00"
+        }
+      ]
+    },
+    {
+      "docentes": "SOSTI LUIS NELSON, PETRELLI SILVA ADRIANA",
+      "codigo": "30129",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "09:00",
+          "fin": "12:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "09:00",
+          "fin": "12:00"
+        }
+      ]
+    },
+    {
+      "docentes": "RUIZ RE MARIA SANDRA, SOSTI LUIS NELSON, TASLAKTZIAN ADRIANA ESTE",
+      "codigo": "30130",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "09:00",
+          "fin": "12:00"
+        },
+        {
+          "dia": 2,
+          "inicio": "08:30",
+          "fin": "11:30"
+        }
+      ]
+    },
+    {
+      "docentes": "BARMACK NORBERTO BENJAMIN, FRUTOS JUAN DIEGO, ZAMMARANO JOSE SALVADOR, VASSALLO JUAN RAMON, VEVER MARIA ELENA",
+      "codigo": "30134",
+      "clases": [
+        {
+          "dia": 3,
+          "inicio": "17:00",
+          "fin": "19:30"
+        },
+        {
+          "dia": 3,
+          "inicio": "19:30",
+          "fin": "20:30"
+        },
+        {
+          "dia": 3,
+          "inicio": "20:30",
+          "fin": "23:00"
+        }
+      ]
+    },
+    {
+      "docentes": "CABIBBO DANIEL HORACIO, MAZZEO JORGE RAUL, TRINCHERO DANIEL ADRIAN",
+      "codigo": "30136",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "16:00",
+          "fin": "19:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "STOLA GERARDO LUIS, MAZZEO JORGE RAUL",
+      "codigo": "30137",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "16:00",
+          "fin": "19:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "BURIN ABRAHAM ALBERTO DA, MAZZEO JORGE RAUL, GUTIERREZ NESTOR SERGIO, NOVODVORETZ OSCAR DARIO",
+      "codigo": "30138",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "16:00",
+          "fin": "19:00"
+        },
+        {
+          "dia": 2,
+          "inicio": "16:00",
+          "fin": "19:00"
+        }
+      ]
+    },
+    {
+      "docentes": "BERISSO OSVALDO JORGE, BERTOIA DEL VALLE EZEQUIEL",
+      "codigo": "30143",
+      "clases": [
+        {
+          "dia": 5,
+          "inicio": "18:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "VILLAGRA SERGIO GUSTAVO",
+      "codigo": "31597",
+      "clases": [
+        {
+          "dia": 4,
+          "inicio": "18:30",
+          "fin": "22:30"
+        }
+      ]
+    },
+    {
+      "docentes": "ROCCA JAVIER ALEJANDRO, AGUIRRE MARIA ALEJANDRA, A DESIGNAR A DESIGNAR, MALMORIA MARIANO ESTEBAN NOE",
+      "codigo": "30264",
+      "clases": [
+        {
+          "dia": 3,
+          "inicio": "11:00",
+          "fin": "13:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "11:00",
+          "fin": "13:00"
+        }
+      ]
+    },
+    {
+      "docentes": "MINGOLO NELIDA, ZALDIVAR ESCOLA FACUNDO, A DESIGNAR A DESIGNAR",
+      "codigo": "30265",
+      "clases": [
+        {
+          "dia": 3,
+          "inicio": "15:00",
+          "fin": "16:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "16:30",
+          "fin": "17:30"
+        },
+        {
+          "dia": 5,
+          "inicio": "15:00",
+          "fin": "16:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "16:30",
+          "fin": "17:30"
+        }
+      ]
+    },
+    {
+      "docentes": "GALLI ADRIANA SILVIA, PAEZ VIVIANA CAROLINA, VEVER MARIA ELENA",
+      "codigo": "30428",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "17:00",
+          "fin": "19:00"
+        },
+        {
+          "dia": 2,
+          "inicio": "19:00",
+          "fin": "21:00"
+        },
+        {
+          "dia": 2,
+          "inicio": "21:00",
+          "fin": "23:00"
+        }
+      ]
+    },
+    {
+      "docentes": "YOMHA LUIS ALBERTO, DI FIORE ALEJANDRO JAVIER, HRYNKIEWICZ OMAR DAVID",
+      "codigo": "30463",
+      "clases": [
+        {
+          "dia": 4,
+          "inicio": "17:00",
+          "fin": "19:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "23:00"
+        }
+      ]
+    },
+    {
+      "docentes": "CARISIMO ESTEBAN, LOPEZ DESTAIN FRANCISCO, SIMONELLI LUCAS PABLO",
+      "codigo": "30556",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "OCHOA MARIA ALEJANDRA, CONCILiO GERMAN MARTIN",
+      "codigo": "30558",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "18:30",
+          "fin": "21:30"
+        },
+        {
+          "dia": 4,
+          "inicio": "18:30",
+          "fin": "21:30"
+        }
+      ]
+    },
+    {
+      "docentes": "ROSA ADRIAN DARIO, CERVETTO MARCOS ADRIAN",
+      "codigo": "30576",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "16:00",
+          "fin": "19:00"
+        },
+        {
+          "dia": 1,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "ROSA ADRIAN DARIO, FLORENTIN RAUL FELIX",
+      "codigo": "30577",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "14:00",
+          "fin": "17:00"
+        }
+      ]
+    },
+    {
+      "docentes": "ROSA ADRIAN DARIO, BARBAGRIGIA HUGO CESAR, NICORA LAURA IRENE",
+      "codigo": "30578",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "IUZZOLINO RICARDO JAVIER, ROSA ADRIAN DARIO, FANEGO DIEGO ALBERTO",
+      "codigo": "30579",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "STOLA GERARDO LUIS, CAMPIGLIO GUILLERMO CARLOS, COFMAN FERNANDO, SALAYA VELAZQUEZ JUAN GUIDO",
+      "codigo": "30598",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "16:00",
+          "fin": "19:00"
+        }
+      ]
+    },
+    {
+      "docentes": "MARTOS PEDRO IGNACIO DOMINGO, CAMPIGLIO GUILLERMO CARLOS, BAGLIVO FABRICIO HUGO, PUCCI FERNANDO OSCAR",
+      "codigo": "30599",
+      "clases": [
+        {
+          "dia": 3,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "16:00",
+          "fin": "19:00"
+        }
+      ]
+    },
+    {
+      "docentes": "CAMPIGLIO GUILLERMO CARLOS, RATTO GRACIELA SUSANA, GAVINOWICH GABRIEL HUGO",
+      "codigo": "30600",
+      "clases": [
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "16:00",
+          "fin": "19:00"
+        }
+      ]
+    },
+    {
+      "docentes": "D´ACCORSO JAVIER HERNAN, PAGANI NESTOR DARIO, NOREMBERG ADRIAN, IRANZI MARTIN",
+      "codigo": "30632",
+      "clases": [
+        {
+          "dia": 4,
+          "inicio": "18:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "CORSI DIEGO PABLO",
+      "codigo": "31615",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "19:00",
+          "fin": "23:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "17:00",
+          "fin": "19:00"
+        }
+      ]
+    },
+    {
+      "docentes": "OCHOA MARIA ALEJANDRA, IERACHE JORGE SALVADOR",
+      "codigo": "31476",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "17:00",
+          "fin": "19:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "18:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "BOLIVAR MARIA JULIA, MAULHARDT MARTIN ENRIQUE, ACERO FERNANDO RODOLFO, HOLLISCH GISELE",
+      "codigo": "30689",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "08:00",
+          "fin": "11:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "08:00",
+          "fin": "11:00"
+        }
+      ]
+    },
+    {
+      "docentes": "MIGUEL AIDA CARMEN, CANGA SANDRA CARMEN",
+      "codigo": "30690",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "18:00",
+          "fin": "21:00"
+        },
+        {
+          "dia": 2,
+          "inicio": "18:00",
+          "fin": "21:00"
+        }
+      ]
+    },
+    {
+      "docentes": "CANGA SANDRA CARMEN, MIGUEL AIDA CARMEN, ACERO FERNANDO RODOLFO",
+      "codigo": "30691",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "14:00",
+          "fin": "17:00"
+        },
+        {
+          "dia": 2,
+          "inicio": "15:00",
+          "fin": "18:00"
+        }
+      ]
+    },
+    {
+      "docentes": "SALGADO HORACIO, A DESIGNAR A DESIGNAR, PINCHETE LUIS ALBERTO, PITA MARIA MACARENA",
+      "codigo": "30711",
+      "clases": [
+        {
+          "dia": 3,
+          "inicio": "14:00",
+          "fin": "17:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "17:00",
+          "fin": "20:00"
+        }
+      ]
+    },
+    {
+      "docentes": "SALGADO HORACIO, DI LIBERO ERNESTO, PINCHETE LUIS ALBERTO, A DESIGNAR A DESIGNAR, CRAVINO CARLOS GUILLERMO MARTIN",
+      "codigo": "30712",
+      "clases": [
+        {
+          "dia": 3,
+          "inicio": "17:00",
+          "fin": "20:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "20:00",
+          "fin": "23:00"
+        }
+      ]
+    },
+    {
+      "docentes": "SAMBUCO SALOMONE LUCAS IGNACIO, FAIGON ADRIAN NESTOR",
+      "codigo": "30755",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "17:00",
+          "fin": "21:00"
+        }
+      ]
+    },
+    {
+      "docentes": "ECHEVARRIA PABLO, RAMONET JUAN ANTONIO, RAMOS SILVIA ADRIANA, FERNANDEZ CAEIRO JUAN MANUEL, OITANA DIEGO MARTIN",
+      "codigo": "30845",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "18:30",
+          "fin": "21:30"
+        },
+        {
+          "dia": 4,
+          "inicio": "09:00",
+          "fin": "11:30"
+        }
+      ]
+    },
+    {
+      "docentes": "COLOMBO PABLO MARTIN, RAMONET JUAN ANTONIO, RAMOS SILVIA ADRIANA, MARIN EMILIO GERMAN, TERZANO IVAN GUILLERMO",
+      "codigo": "30846",
+      "clases": [
+        {
+          "dia": 3,
+          "inicio": "18:30",
+          "fin": "21:30"
+        },
+        {
+          "dia": 4,
+          "inicio": "09:00",
+          "fin": "11:30"
+        },
+        {
+          "dia": 6,
+          "inicio": "10:00",
+          "fin": "13:00"
+        }
+      ]
+    },
+    {
+      "docentes": "NAVARRO CARLOS ALBERTO, RAMONET JUAN ANTONIO, RAMOS SILVIA ADRIANA, LEVY JONATHAN",
+      "codigo": "31651",
+      "clases": [
+        {
+          "dia": 3,
+          "inicio": "18:30",
+          "fin": "21:30"
+        },
+        {
+          "dia": 4,
+          "inicio": "09:00",
+          "fin": "11:30"
+        },
+        {
+          "dia": 4,
+          "inicio": "18:00",
+          "fin": "21:00"
+        }
+      ]
+    },
+    {
+      "docentes": "GIOSCIO CLAUDIA ROXANA, GE LIXIN, RADICE LILIANA MARTA",
+      "codigo": "30853",
+      "clases": [
+        {
+          "dia": 4,
+          "inicio": "17:00",
+          "fin": "23:00"
+        }
+      ]
+    },
+    {
+      "docentes": "RAMOS SILVIA ADRIANA",
+      "codigo": "30857",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "18:00",
+          "fin": "23:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "18:00",
+          "fin": "19:00"
+        }
+      ]
+    },
+    {
+      "docentes": "SANTI LEANDRO EMILIO, HAMKALO JOSE LUIS, NATALE LUCIANO CESAR, PEREZ MASCI HERNAN ANDRES",
+      "codigo": "30880",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "16:00",
+          "fin": "19:00"
+        },
+        {
+          "dia": 2,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "HAMKALO JOSE LUIS, HEGUIABEHERE JUAN MARTIN, NIÑO KEHOE TOMAS, STAHL MATIAS SEBASTIAN",
+      "codigo": "30881",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "16:00",
+          "fin": "19:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "GOLMAR NATALIA, ARGERICH LUIS RICARDO, MARTINELLI DAMIAN ARIEL, RAMOS MEJIA MARTIN GABRIEL, TORRE ZAFFARONI JOAQUIN",
+      "codigo": "30886",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "COLLINET JORGE FRANCISCO",
+      "codigo": "31490",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "18:00",
+          "fin": "21:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "18:00",
+          "fin": "21:00"
+        }
+      ]
+    },
+    {
+      "docentes": "APUD HERNAN RAMIRO, BETTINI VILMA ROXANA, BROLLO MARIA LUCRECIA",
+      "codigo": "30918",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "BELLO IGNACIO ALBERTO, VERA MATIAS ALEJANDRO, PUEBLA MANUEL LEANDRO",
+      "codigo": "30967",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "15:00",
+          "fin": "17:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "15:00",
+          "fin": "19:00"
+        }
+      ]
+    },
+    {
+      "docentes": "BELLO IGNACIO ALBERTO, BERTALOT FEDERICO MATIAS, LEVITAN DAVID ADRIAN",
+      "codigo": "30968",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "19:00",
+          "fin": "21:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "19:00",
+          "fin": "23:00"
+        }
+      ]
+    },
+    {
+      "docentes": "GONZALEZ ZERBO SANTIAGO, PEREZ SILVIA NOEMI, PUEBLA MANUEL LEANDRO",
+      "codigo": "30969",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "09:00",
+          "fin": "11:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "09:00",
+          "fin": "13:00"
+        }
+      ]
+    },
+    {
+      "docentes": "BOUZA MAGDALENA, GARCIA JEMINA MARIA, EDWARDS MOLINA DIEGO JULIO",
+      "codigo": "30970",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "09:00",
+          "fin": "13:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "09:00",
+          "fin": "11:00"
+        }
+      ]
+    },
+    {
+      "docentes": "CERNUSCHI FRIAS BRUNO, PFEFFERMAN JONAS DAMIAN",
+      "codigo": "31559",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "ESTIENNE CLAUDIO FRANCIS, PELLE PATRICIA ALEJANDRA",
+      "codigo": "30977",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "16:00",
+          "fin": "19:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "16:00",
+          "fin": "19:00"
+        }
+      ]
+    },
+    {
+      "docentes": "ALTIERI ANDRES OSCAR, JOURDAN IVAN, LUPI CLAUDIO ALBERTO",
+      "codigo": "30993",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "10:00",
+          "fin": "13:00"
+        },
+        {
+          "dia": 2,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "ALTIERI ANDRES OSCAR, PECKER MARCOSIG EZEQUIEL, ALBERT RAYMUNDO JOSE",
+      "codigo": "30994",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "10:00",
+          "fin": "13:00"
+        },
+        {
+          "dia": 2,
+          "inicio": "10:00",
+          "fin": "13:00"
+        }
+      ]
+    },
+    {
+      "docentes": "DOMINGUEZ MARIA MERCEDES, RICKERT CARLOS, KLEIN MARIA CAROLINA, SABINO LEANDRO OSCAR, TURCO GRECO MARIA CLARA",
+      "codigo": "31099",
+      "clases": [
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "23:00"
+        }
+      ]
+    },
+    {
+      "docentes": "LEW SERGIO EDUARDO",
+      "codigo": "31107",
+      "clases": [
+        {
+          "dia": 3,
+          "inicio": "13:00",
+          "fin": "16:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "16:00",
+          "fin": "19:00"
+        }
+      ]
+    },
+    {
+      "docentes": "GONZALEZ PABLO SEBASTIAN, CARTELLI CARLOS JOSE, LISTE VICTOR MARIANO",
+      "codigo": "31119",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "COSSO PABLO GUSTAVO, SALADINO MARCOS ARTURO",
+      "codigo": "31161",
+      "clases": [
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "SARRIS CLAUDIA MONICA, CARAM LEONIDAS FACUNDO",
+      "codigo": "31163",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "19:00",
+          "fin": "21:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "19:00",
+          "fin": "21:00"
+        }
+      ]
+    },
+    {
+      "docentes": "COSSO PABLO GUSTAVO, SALADINO MARCOS ARTURO",
+      "codigo": "31165",
+      "clases": [
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "SARRIS CLAUDIA MONICA, CARAM LEONIDAS FACUNDO",
+      "codigo": "31167",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "19:00",
+          "fin": "21:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "19:00",
+          "fin": "21:00"
+        }
+      ]
+    },
+    {
+      "docentes": "REY VEGA LEONARDO JAVIER, MARQUES ROJO RUI ALEJANDRO, VERA MATIAS ALEJANDRO",
+      "codigo": "31171",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "16:00",
+          "fin": "19:00"
+        },
+        {
+          "dia": 2,
+          "inicio": "16:00",
+          "fin": "19:00"
+        }
+      ]
+    },
+    {
+      "docentes": "CALDENTEY MARTA BEATRIZ, CASAGLIA DANIEL CLAUDIO, REY VEGA LEONARDO JAVIER",
+      "codigo": "31172",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "16:00",
+          "fin": "19:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "16:00",
+          "fin": "19:00"
+        }
+      ]
+    },
+    {
+      "docentes": "REY VEGA LEONARDO JAVIER, TORRES HUMBERTO MAXIMILIANO, PEREZ SEBASTIAN GABRIEL, SAR JUAN FEDERICO",
+      "codigo": "31173",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "16:00",
+          "fin": "19:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "CAIAFA CESAR FEDERICO, BENITEZ CARLOS MARCELO, VILLANUEVA CECILIA AZUL",
+      "codigo": "31181",
+      "clases": [
+        {
+          "dia": 3,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "MERLINO HERNAN DANIEL, RODRIGUEZ JUAN MANUEL",
+      "codigo": "31500",
+      "clases": [
+        {
+          "dia": 3,
+          "inicio": "17:00",
+          "fin": "19:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "19:00",
+          "fin": "23:00"
+        }
+      ]
+    },
+    {
+      "docentes": "ACQUATICCI FABIAN, CYNOWIEC ESTEBAN",
+      "codigo": "31189",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "10:00",
+          "fin": "13:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "10:00",
+          "fin": "13:00"
+        }
+      ]
+    },
+    {
+      "docentes": "MARTOS PEDRO IGNACIO DOMINGO, ALVAREZ NICOLAS",
+      "codigo": "31207",
+      "clases": [
+        {
+          "dia": 4,
+          "inicio": "16:00",
+          "fin": "19:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "ROCA PABLO DANIEL, TORRES FEYUK NICOLAS RODRIGO EZEQUIEL",
+      "codigo": "31211",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "ABBATE HORACIO ANTONIO, MARINO FEDERICO JORGE",
+      "codigo": "31219",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "16:00",
+          "fin": "19:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "16:00",
+          "fin": "19:00"
+        }
+      ]
+    },
+    {
+      "docentes": "MUCCIO ADRIAN, CLUA OSVALDO, ABRAHAM SANDRA AIDA, FERNANDEZ GUIDO ESTEBAN",
+      "codigo": "31229",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "SIMO PIQUERES ADEODATO, MENDEZ MARIANO",
+      "codigo": "31230",
+      "clases": [
+        {
+          "dia": 5,
+          "inicio": "17:00",
+          "fin": "20:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "20:00",
+          "fin": "23:00"
+        }
+      ]
+    },
+    {
+      "docentes": "SIMO PIQUERES ADEODATO, MENDEZ MARIANO",
+      "codigo": "31231",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "17:00",
+          "fin": "20:00"
+        }
+      ]
+    },
+    {
+      "docentes": "PIÑEIRO GABRIEL, SUALDEA RUBEN HORACIO",
+      "codigo": "31257",
+      "clases": [
+        {
+          "dia": 3,
+          "inicio": "18:00",
+          "fin": "21:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "18:00",
+          "fin": "21:00"
+        }
+      ]
+    },
+    {
+      "docentes": "DEGIOVANNINI MARCIO, FONTELA MOISES CARLOS, MADEIRA MARIA MERCEDES, MOLINARI ALEJANDRO GUSTAVO",
+      "codigo": "31259",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "17:00",
+          "fin": "19:00"
+        },
+        {
+          "dia": 1,
+          "inicio": "19:00",
+          "fin": "23:00"
+        }
+      ]
+    },
+    {
+      "docentes": "GABARDINI JUAN ALBERTO, STAMPELLA MARIANO",
+      "codigo": "31261",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "19:00",
+          "fin": "23:00"
+        }
+      ]
+    },
+    {
+      "docentes": "VEIGA ANDRES ARTURO, DI PAOLA MARTIN PABLO, LAFROCE MATIAS EZEQUIEL, WERNER EZEQUIEL MAXIMILIANO",
+      "codigo": "31265",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "18:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "AZCURRA DIEGO ANDRES, BIANCHI GUSTAVO OSCAR, SERRA DIEGO ADRIAN",
+      "codigo": "31266",
+      "clases": [
+        {
+          "dia": 3,
+          "inicio": "19:00",
+          "fin": "21:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "21:00",
+          "fin": "23:00"
+        }
+      ]
+    },
+    {
+      "docentes": "CALONICO CHRISTIAN MARIO, FUSCA GABRIEL MARCELO",
+      "codigo": "31268",
+      "clases": [
+        {
+          "dia": 4,
+          "inicio": "15:00",
+          "fin": "19:00"
+        }
+      ]
+    },
+    {
+      "docentes": "ALVAREZ HAMELIN JOSE IGNACIO",
+      "codigo": "31270",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "MARTINEZ MIGUEL ANTONIO",
+      "codigo": "31284",
+      "clases": [
+        {
+          "dia": 3,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "17:00",
+          "fin": "20:00"
+        }
+      ]
+    },
+    {
+      "docentes": "MONTALDO DIEGO FERNANDO, PANTALEO GUILLERMO GUSTAVO, LOVAGLIO ANIBAL ALEJANDRO, TRISTANT FLORENCIA",
+      "codigo": "31288",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "PAEZ NICOLAS MARTIN, GUTTER EMILIO",
+      "codigo": "31289",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "TURRI ALEJANDRO",
+      "codigo": "31291",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "19:00",
+          "fin": "23:00"
+        }
+      ]
+    },
+    {
+      "docentes": "DEYMONNAZ PABLO ANDRES, GARIBALDI JULIA ELENA",
+      "codigo": "31293",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "WACHENCHAVZER ROSA, LUDUEÑO LUCAS EZEQUIEL, PODBEREZSKI VICTOR DANIEL",
+      "codigo": "31323",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "SELLERIO GUILLERMO CARLO, CASTILLO GONZALO",
+      "codigo": "31333",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 2,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "ANGELOPULO ANDRES MARIO, SELLERIO GUILLERMO CARLO, MARTOS PEDRO IGNACIO DOMINGO",
+      "codigo": "31334",
+      "clases": [
+        {
+          "dia": 2,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "GONZALEZ HERNAN JAVIER, BARRAZA NESTOR RUBEN",
+      "codigo": "31342",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "16:00",
+          "fin": "19:00"
+        },
+        {
+          "dia": 3,
+          "inicio": "19:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "FERRIGNO LEANDRO SEBASTIAN",
+      "codigo": "31348",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "18:00",
+          "fin": "22:00"
         }
       ]
     }

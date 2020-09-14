@@ -75,30 +75,47 @@ const MateriasDrawer = (props) => {
             }
           </Box>
         </DrawerBody>
-        <DrawerFooter>
-          <Link
-            isExternal
-            color="primary.500"
-            href="https://github.com/fdelmazo/FIUBA-Plan"
-          >
-            <Icon size="2em" color="primary" name="github" />
-          </Link>
+        <DrawerFooter flex flexDirection="row" alignItems="center" justifyContent="space-between">
           <Tooltip 
-            zIndex={5502}
             label="Cambiar vista"
             fontFamily="general"
+            zIndex={5501}
             backgroundColor="tooltipBackground"
+            placement="top"
           >
             <IconButton
-              pos="absolute"
-              left="10%"
-              bottom="2%"
               variant="outline"
               variantColor="primary"
               icon="calendar"
               onClick={() => setUseAgenda(!useAgenda)}
             />
           </Tooltip>
+          <Box>
+            <Tooltip
+              label="FdelMazo at fi.uba.ar"
+              fontFamily="general"
+              zIndex={5501}
+              backgroundColor="tooltipBackground"
+              placement="top"
+            >
+              <Icon mx={2} size="1.5em" color="primary.500" name="email" />
+            </Tooltip>
+            <Tooltip
+              label="FdelMazo/FIUBA-Plan"
+              fontFamily="general"
+              zIndex={5501}
+              backgroundColor="tooltipBackground"
+              placement="top"
+            >
+              <Link
+                isExternal
+                color="primary.500"
+                href="https://github.com/fdelmazo/FIUBA-Plan"
+              >
+                <Icon mx={2} size="1.5em" name="github" />
+              </Link>
+            </Tooltip>
+          </Box>
         </DrawerFooter>
       </DrawerContent>
     </Drawer>

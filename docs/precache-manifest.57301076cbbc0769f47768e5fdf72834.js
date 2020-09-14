@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "48fa433f513cc2972018be0237b29bd5",
+    "revision": "d35acd566b36fdd5486a22908dc02ca3",
     "url": "/FIUBA-Plan/index.html"
   },
   {

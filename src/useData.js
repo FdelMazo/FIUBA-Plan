@@ -54,6 +54,7 @@ const useGraph = () => {
         codigo: curso.codigo,
         title: curso.docentes,
         color: curso.color,
+        materia: materia.nombre
       };
     });
     setEvents([...events, ...addEvents]);
@@ -69,7 +70,7 @@ const useGraph = () => {
     setData(newData);
   };
 
-  const toggleCurso = (item) => {
+  const toggleCurso = (item, materia) => {
     const newData = JSON.parse(JSON.stringify(data));
 
     const curso = newData.cursos.find((c) => c.codigo === item.codigo);
@@ -89,13 +90,13 @@ const useGraph = () => {
         const fin = new Date(2018, 0, clase.dia);
         const [finHora, finMinutos] = clase.fin.split(":");
         fin.setHours(finHora, finMinutos);
-
         return {
           start: inicio,
           end: fin,
           codigo: curso.codigo,
           title: curso.docentes,
           color: curso.color,
+          materia: materia.nombre
         };
       });
       setEvents([...events, ...addEvents]);

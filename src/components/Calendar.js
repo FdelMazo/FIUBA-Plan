@@ -18,15 +18,9 @@ const MateriaEvent = (props) => {
 };
 
 const MyCalendar = (props) => {
-  const { events } = props;
-  const { width } = useWindowSize();
-  const [useAgenda, setUseAgenda] = React.useState(false);
+  const { events, useAgenda } = props;
   const localizer = momentLocalizer(moment);
-
-  React.useEffect(() => {
-    setUseAgenda(width < 1000);
-  }, [width]);
-
+  const { width } = useWindowSize();
   const formats = {
     dayFormat: (d) => {
       const f = d

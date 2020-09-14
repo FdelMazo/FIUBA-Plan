@@ -1,7 +1,6 @@
 import React from "react";
 import {
   List,
-  Box,
   ListIcon,
   Input,
   Icon,
@@ -19,9 +18,8 @@ const SelectMateria = (props) => {
 
   React.useEffect(() => {
     const materiasVisibles = data.materias.filter((m) => m.show);
-    const materias = materiasVisibles.length ? materiasVisibles : data.materias;
-    setVisibleSubjects(materias);
-    setInputItems(materias);
+    setVisibleSubjects(materiasVisibles);
+    setInputItems(materiasVisibles);
   }, [data]);
 
   const {
@@ -62,23 +60,22 @@ const SelectMateria = (props) => {
         />
       </InputGroup>
       {isOpen &&
-        (inputItems.length ? (
-          <List
-            textAlign={["left"]}
-            fontFamily="general"
-            {...getMenuProps()}
-            p={1}
-            mb={0}
-            border="1px"
-            borderRadius="md"
-            borderColor="primary.500"
-            style={{
-              maxHeight: "10em",
-              overflowY: "scroll",
-            }}
-          >
-            {inputItems
-              .sort((a, b) => a.codigo > b.codigo)
+        <List
+          textAlign={["left"]}
+          fontFamily="general"
+          {...getMenuProps()}
+          p={1}
+          mb={0}
+          border="1px"
+          borderRadius="md"
+          borderColor="primary.500"
+          style={{
+            maxHeight: "10em",
+            overflowY: "scroll",
+          }}
+        >
+          {inputItems.length ? 
+            inputItems.sort((a, b) => a.codigo > b.codigo)
               .map((item) => (
                 <PseudoBox
                   borderRadius="md"
@@ -94,13 +91,20 @@ const SelectMateria = (props) => {
                     ({item.codigo}) {item.nombre}
                   </li>
                 </PseudoBox>
-              ))}
-          </List>
-        ) : (
-          <Box p={1} mt={3} mb={0} color="primary.500">
-            No hay materias con ese código.
-          </Box>
-        ))}
+              ))
+            :
+          <PseudoBox
+            borderRadius="md"
+            _hover={{ bg: "gray.500" }}
+            color="primary.500"
+            fontSize="small"
+          >
+            <li>
+              No se encontraron materias.
+            </li>
+          </PseudoBox>            }
+        </List>
+    }
     </>
   );
 };

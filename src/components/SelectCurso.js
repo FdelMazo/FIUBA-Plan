@@ -6,6 +6,7 @@ import {
   ListIcon,
   Box,
   IconButton,
+  Flex,
   Tooltip,
 } from "@chakra-ui/core";
 import { useSelect } from "downshift";
@@ -27,41 +28,46 @@ const SelectCurso = (props) => {
   });
 
   return (
-    <Box>
-      <Tooltip
-        hasArrow
-        label={materia.nombre}
-        zIndex={10000}
-        fontFamily="general"
-        backgroundColor="tooltipBackground"
-      >
-        <Button
+    <>
+      <Flex direction="row" justify="flex-end">
+        <Box {...getToggleButtonProps()}>
+          <Tooltip
+            hasArrow
+            label={materia.nombre}
+            zIndex={10000}
+            fontFamily="general"
+            backgroundColor="tooltipBackground"
+          >
+            <Button
+              mt={2}
+              fontFamily="general"
+              backgroundColor="background"
+              variantColor="primary"
+              variant="outline"
+              borderColor="primary"
+              color="primary.500"
+              rightIcon={isOpen ? "chevron-up" : "chevron-down"}
+            >
+              {materia.codigo}
+            </Button>
+          </Tooltip>
+        </Box>
+
+        <IconButton
           mt={2}
-          fontFamily="general"
-          {...getToggleButtonProps()}
+          ml={2}
           backgroundColor="background"
           variantColor="primary"
           variant="outline"
           borderColor="primary"
           color="primary.500"
-        >
-          {materia.codigo}
-        </Button>
-      </Tooltip>
+          icon="minus"
+          onClick={() => {
+            removerMateria(materia);
+          }}
+        />
+      </Flex>
 
-      <IconButton
-        mt={2}
-        ml={2}
-        backgroundColor="background"
-        variantColor="primary"
-        variant="outline"
-        borderColor="primary"
-        color="primary.500"
-        icon="minus"
-        onClick={() => {
-          removerMateria(materia);
-        }}
-      />
       {isOpen && (
         <List
           fontFamily="general"
@@ -81,8 +87,8 @@ const SelectCurso = (props) => {
               borderRadius="md"
               _hover={{ bg: "gray.500" }}
               color="primary.500"
-              fontSize="small"
-              onClick={() => toggleCurso(item)}
+              fontSize="x-small"
+              onClick={() => toggleCurso(item, materia)}
             >
               <li
                 {...getItemProps({
@@ -99,7 +105,7 @@ const SelectCurso = (props) => {
           ))}
         </List>
       )}
-    </Box>
+    </>
   );
 };
 
@@ -111,7 +117,7 @@ function stateReducer(state, actionAndChanges) {
     case useSelect.stateChangeTypes.ItemClick:
       return {
         ...changes,
-        isOpen: true, // keep menu open after selection.
+        isOpen: true,
         highlightedIndex: state.highlightedIndex,
       };
     default:

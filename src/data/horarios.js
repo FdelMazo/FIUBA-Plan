@@ -342,7 +342,6 @@ export const data = {
       "codigo": "9142",
       "nombre": "ADMINISTRACION DE LAS ORGANIZACIONES",
       "cursos": [
-        "29536",
         "29537"
       ]
     },
@@ -513,7 +512,6 @@ export const data = {
       "codigo": "9139",
       "nombre": "ESTRUCTURAS Y PROCESOS ORGANIZACIONALES",
       "cursos": [
-        "30158",
         "30159"
       ]
     },
@@ -615,7 +613,6 @@ export const data = {
       "codigo": "9104",
       "nombre": "MODELOS Y OPTIMIZACION I",
       "cursos": [
-        "30847",
         "30849",
         "30850",
         "30851"
@@ -625,7 +622,6 @@ export const data = {
       "codigo": "9105",
       "nombre": "MODELOS Y OPTIMIZACION II",
       "cursos": [
-        "30854",
         "30855"
       ]
     },
@@ -633,7 +629,6 @@ export const data = {
       "codigo": "9106",
       "nombre": "MODELOS Y OPTIMIZACION III",
       "cursos": [
-        "30858",
         "30859"
       ]
     },
@@ -971,7 +966,6 @@ export const data = {
       "codigo": "9102",
       "nombre": "GERENCIAMIENTO Y ORGANIZACION DE OBRAS CIVILES",
       "cursos": [
-        "30292",
         "30293"
       ]
     },
@@ -2410,7 +2404,6 @@ export const data = {
       "codigo": "7114",
       "nombre": "MODELOS Y OPTIMIZACION I",
       "cursos": [
-        "30842",
         "30845",
         "30846",
         "31651"
@@ -2685,11 +2678,6 @@ export const data = {
     }
   ],
   "cursos": [
-    {
-      "docentes": "CRISTOBAL MARIO, MOLINA WALTER RAUL, OTERO RODRIGUEZ MARIA MARGARITA, BILELLO MIGUEL ANGEL",
-      "codigo": "29536",
-      "clases": []
-    },
     {
       "docentes": "CRISTOBAL MARIO, MOLINA WALTER RAUL, OTERO RODRIGUEZ MARIA MARGARITA, BILELLO MIGUEL ANGEL",
       "codigo": "29537",
@@ -4336,11 +4324,6 @@ export const data = {
     },
     {
       "docentes": "BARMACK NORBERTO BENJAMIN, FRUTOS JUAN DIEGO, CONDE MARIA EUGENIA, VEVER MARIA ELENA",
-      "codigo": "30158",
-      "clases": []
-    },
-    {
-      "docentes": "BARMACK NORBERTO BENJAMIN, FRUTOS JUAN DIEGO, CONDE MARIA EUGENIA, VEVER MARIA ELENA",
       "codigo": "30159",
       "clases": [
         {
@@ -4572,11 +4555,6 @@ export const data = {
       ]
     },
     {
-      "docentes": "COLOMBO PABLO MARTIN, ECHEVARRIA PABLO, NAVARRO CARLOS ALBERTO, RAMONET JUAN ANTONIO, RAMOS SILVIA ADRIANA, CAVALLERO ALEJANDRO PABLO, FERNANDEZ CAEIRO JUAN MANUEL, LEVY JONATHAN, MARIN EMILIO GERMAN, OITANA DIEGO MARTIN, ROMANO PABLO DAVID, TERZANO IVAN GUILLERMO",
-      "codigo": "30847",
-      "clases": []
-    },
-    {
       "docentes": "ECHEVARRIA PABLO, RAMONET JUAN ANTONIO, RAMOS SILVIA ADRIANA, FERNANDEZ CAEIRO JUAN MANUEL, OITANA DIEGO MARTIN",
       "codigo": "30849",
       "clases": [
@@ -4641,11 +4619,6 @@ export const data = {
     },
     {
       "docentes": "GIOSCIO CLAUDIA ROXANA, GE LIXIN, RADICE LILIANA MARTA",
-      "codigo": "30854",
-      "clases": []
-    },
-    {
-      "docentes": "GIOSCIO CLAUDIA ROXANA, GE LIXIN, RADICE LILIANA MARTA",
       "codigo": "30855",
       "clases": [
         {
@@ -4654,11 +4627,6 @@ export const data = {
           "fin": "23:00"
         }
       ]
-    },
-    {
-      "docentes": "RAMOS SILVIA ADRIANA",
-      "codigo": "30858",
-      "clases": []
     },
     {
       "docentes": "RAMOS SILVIA ADRIANA",
@@ -6270,11 +6238,6 @@ export const data = {
           "fin": "23:00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
         }
       ]
-    },
-    {
-      "docentes": "COSCARELLA GLADYS LILIANA, KOMPEL LUIS JOSE, APRILE CARLOS JOSE, BRANCATO GUSTAVO EMILIO, FILIP FRANCO, MOLINA CARLOS LUIS",
-      "codigo": "30292",
-      "clases": []
     },
     {
       "docentes": "COSCARELLA GLADYS LILIANA, KOMPEL LUIS JOSE, APRILE CARLOS JOSE, BRANCATO GUSTAVO EMILIO, FILIP FRANCO, MOLINA CARLOS LUIS",
@@ -13311,11 +13274,6 @@ export const data = {
           "fin": "21:00"
         }
       ]
-    },
-    {
-      "docentes": "COLOMBO PABLO MARTIN, ECHEVARRIA PABLO, NAVARRO CARLOS ALBERTO, RAMONET JUAN ANTONIO, RAMOS SILVIA ADRIANA, CAVALLERO ALEJANDRO PABLO, FERNANDEZ CAEIRO JUAN MANUEL, LEVY JONATHAN, MARIN EMILIO GERMAN, OITANA DIEGO MARTIN, TERZANO IVAN GUILLERMO",
-      "codigo": "30842",
-      "clases": []
     },
     {
       "docentes": "ECHEVARRIA PABLO, RAMONET JUAN ANTONIO, RAMOS SILVIA ADRIANA, FERNANDEZ CAEIRO JUAN MANUEL, OITANA DIEGO MARTIN",

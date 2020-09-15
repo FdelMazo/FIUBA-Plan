@@ -66,6 +66,16 @@ const useGraph = () => {
     const newData = JSON.parse(JSON.stringify(data));
     const materia = newData.materias.find((m) => m.nombre === item.nombre);
     materia.visible = false;
+    
+    const cursos = materia.cursos;
+
+    cursos.forEach((codigo) => {
+      const curso = newData.cursos.find((c) => c.codigo === codigo);
+      const v = !!curso.show;
+      if(v){
+        curso.show = false;
+      }
+    });
 
     setEvents(events.filter((e) => !materia.cursos.includes(e.codigo)));
     setData(newData);

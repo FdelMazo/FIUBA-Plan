@@ -83,8 +83,7 @@
 }
 
 .rbc-agenda-event-cell,
-.rbc-agenda-time-cell,
-.rbc-agenda-date-cell {
+.rbc-agenda-time-cell {
   font-family: "Noto Sans JP", sans-serif;
   font-size: small;
 }
@@ -98,8 +97,8 @@
   color: #555;
 }
 
-/* 
- * Currently Firefox-only 
+/*
+ * Currently Firefox-only
  */
 
 /* Scroll principal */
@@ -114,7 +113,7 @@
 }
 
 /*
- * Works on Webkit based browsers(chrome, edge, safari, etc) 
+ * Works on Webkit based browsers(chrome, edge, safari, etc)
  */
 
 *::-webkit-scrollbar {

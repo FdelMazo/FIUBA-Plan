@@ -21,7 +21,7 @@ import SelectCurso from "./SelectCurso";
 import { DataContext } from "../Context";
 
 const MateriasDrawer = (props) => {
-  const {useAgenda, setUseAgenda} = props;
+  const { useAgenda, setUseAgenda } = props;
   const { data } = React.useContext(DataContext);
   const { isOpen, onToggle, onClose } = useDisclosure();
   const toast = useToast();
@@ -62,7 +62,11 @@ const MateriasDrawer = (props) => {
     <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
       <DrawerOverlay />
       <DrawerContent bg="background" zIndex={5501}>
-        <DrawerBody>
+        <DrawerBody
+          style={{
+            overflowY: "scroll",
+          }}
+        >
           <Box textAlign={["right"]}>
             <SelectCarreras />
             {data.materias
@@ -70,13 +74,18 @@ const MateriasDrawer = (props) => {
               .map((m) => (
                 <SelectCurso materia={m} />
               ))}
-            {data.materias.filter((m) => m.show).length !== 0 &&
+            {data.materias.filter((m) => m.show).length !== 0 && (
               <SelectMateria />
-            }
+            )}
           </Box>
         </DrawerBody>
-        <DrawerFooter flex flexDirection="row" alignItems="center" justifyContent="space-between">
-          <Tooltip 
+        <DrawerFooter
+          flex
+          flexDirection="row"
+          alignItems="center"
+          justifyContent="space-between"
+        >
+          <Tooltip
             label="Cambiar vista"
             fontFamily="general"
             zIndex={5501}

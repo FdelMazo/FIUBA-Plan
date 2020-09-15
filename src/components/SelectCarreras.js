@@ -82,4 +82,5 @@ function stateReducer(state, actionAndChanges) {
       return changes;
   }
 }
+
 export default SelectCarreras;

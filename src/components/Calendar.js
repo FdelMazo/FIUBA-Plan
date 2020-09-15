@@ -50,6 +50,7 @@ const MyCalendar = (props) => {
       borderWidth: "thin thin thin thick",
       color: "#1f1f1f",
       borderLeftColor: event.color,
+      cursor: "default",
     };
     const calendarWeekStyle = {
       textAlign: "right",
@@ -57,7 +58,7 @@ const MyCalendar = (props) => {
       borderRightColor: "#0000",
       borderBottomColor: "#0000",
       borderTopColor: "#0000",
-      boxShadow: "inset 0 0 0 1000px " + event.color + "22"
+      boxShadow: "inset 0 0 0 1000px " + event.color + "22",
     };
     return {
       style: useAgenda ? style : { ...style, ...calendarWeekStyle },

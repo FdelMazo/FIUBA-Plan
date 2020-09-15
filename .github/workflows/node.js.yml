@@ -1,7 +1,6 @@
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+# Basic github action to deploy the site. Runs npm ci (similar to npm install but for ci environments) and then runs npm run build. 
 
-name: Node.js CI
+name: npm CI
 
 on:
   push:

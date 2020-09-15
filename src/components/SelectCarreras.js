@@ -41,9 +41,7 @@ const SelectCarreras = (props) => {
           textAlign={["left"]}
         >
           {data.carreras
-            .sort((a, b) => {
-              return a.nombre > b.nombre;
-            })
+            .sort((a, b) => a.nombre > b.nombre)
             .map((c, index) => (
               <PseudoBox
                 borderRadius="md"

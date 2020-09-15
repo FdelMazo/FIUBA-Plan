@@ -28,7 +28,7 @@ const useGraph = () => {
     materiasShown.forEach((m) => (m.show = true));
     materiasNotShown.forEach((m) => (m.show = false));
     newData.materias = [...materiasShown, ...materiasNotShown];
-    newData.materias.sort((a, b) => (a.codigo.localeCompare(b.codigo)));
+    newData.materias.sort((a, b) => a.codigo > b.codigo);
     setData(newData);
   };
 
@@ -55,7 +55,7 @@ const useGraph = () => {
         codigo: curso.codigo,
         title: curso.docentes,
         color: curso.color,
-        materia: materia.nombre
+        materia: materia.nombre,
       };
     });
     setEvents([...events, ...addEvents]);
@@ -97,7 +97,7 @@ const useGraph = () => {
           codigo: curso.codigo,
           title: curso.docentes,
           color: curso.color,
-          materia: materia.nombre
+          materia: materia.nombre,
         };
       });
       setEvents([...events, ...addEvents]);

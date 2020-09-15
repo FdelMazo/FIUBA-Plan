@@ -28,6 +28,7 @@ const useGraph = () => {
     materiasShown.forEach((m) => (m.show = true));
     materiasNotShown.forEach((m) => (m.show = false));
     newData.materias = [...materiasShown, ...materiasNotShown];
+    newData.materias.sort((a, b) => (a.codigo.localeCompare(b.codigo)));
     setData(newData);
   };
 

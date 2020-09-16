@@ -3,8 +3,24 @@ import { data as jsonData } from "./data/horarios";
 import { randomColor } from "./utils/colorHelper";
 
 const useGraph = () => {
-  const [data, setData] = React.useState(jsonData);
-  const [events, setEvents] = React.useState([]);
+  const cacheData = JSON.parse(window.localStorage.getItem("data"));
+  const cacheEvents = JSON.parse(window.localStorage.getItem("events")) || [];
+  cacheEvents.forEach((e) => {
+    e.start = new Date(e.start);
+    e.end = new Date(e.end);
+  });
+
+  const [data, setData] = React.useState(
+    cacheData?.cuatrimestre === jsonData.cuatrimestre ? cacheData : jsonData
+  );
+  const [events, setEvents] = React.useState(
+    cacheData?.cuatrimestre === jsonData.cuatrimestre ? cacheEvents : []
+  );
+
+  React.useEffect(() => {
+    window.localStorage.setItem("data", JSON.stringify(data));
+    window.localStorage.setItem("events", JSON.stringify(events));
+  }, [data, events]);
 
   const toggleCarrera = (item) => {
     const newData = JSON.parse(JSON.stringify(data));
@@ -66,13 +82,13 @@ const useGraph = () => {
     const newData = JSON.parse(JSON.stringify(data));
     const materia = newData.materias.find((m) => m.nombre === item.nombre);
     materia.visible = false;
-    
+
     const cursos = materia.cursos;
 
     cursos.forEach((codigo) => {
       const curso = newData.cursos.find((c) => c.codigo === codigo);
       const v = !!curso.show;
-      if(v){
+      if (v) {
         curso.show = false;
       }
     });

@@ -50,7 +50,7 @@ const useGraph = () => {
 
   const agregarMateria = (item) => {
     const newData = JSON.parse(JSON.stringify(data));
-    const materia = newData.materias.find((m) => m.nombre === item.nombre);
+    const materia = newData.materias.find((m) => m.codigo === item.codigo);
     materia.visible = true;
     const idPrimerCurso = materia.cursos[0];
     const curso = newData.cursos.find((c) => c.codigo === idPrimerCurso);
@@ -80,7 +80,7 @@ const useGraph = () => {
 
   const removerMateria = (item) => {
     const newData = JSON.parse(JSON.stringify(data));
-    const materia = newData.materias.find((m) => m.nombre === item.nombre);
+    const materia = newData.materias.find((m) => m.codigo === item.codigo);
     materia.visible = false;
 
     const cursos = materia.cursos;

@@ -12692,22 +12692,22 @@ export const data = {
       "codigo": "30244",
       "clases": [
         {
-          "dia": 3,
+          "dia": 2,
           "inicio": "14:00",
           "fin": "16:00"
         },
         {
-          "dia": 3,
+          "dia": 2,
           "inicio": "16:30",
           "fin": "18:30"
         },
         {
-          "dia": 5,
+          "dia": 4,
           "inicio": "14:00",
           "fin": "16:00"
         },
         {
-          "dia": 5,
+          "dia": 4,
           "inicio": "16:30",
           "fin": "18:30"
         }

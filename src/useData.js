@@ -11,10 +11,10 @@ const useGraph = () => {
   });
 
   const [data, setData] = React.useState(
-    cacheData?.cuatrimestre === jsonData.cuatrimestre ? cacheData : jsonData
+    cacheData?.timestamp === jsonData.timestamp ? cacheData : jsonData
   );
   const [events, setEvents] = React.useState(
-    cacheData?.cuatrimestre === jsonData.cuatrimestre ? cacheEvents : []
+    cacheData?.timestamp === jsonData.timestamp ? cacheEvents : []
   );
 
   React.useEffect(() => {

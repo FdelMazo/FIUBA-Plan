@@ -1,5 +1,6 @@
 export const data = {
   "cuatrimestre": "2020C2",
+  "timestamp": "2020-09-22 00:24:11.950205",
   "carreras": [
     {
       "nombre": "Ingeniería Civil",

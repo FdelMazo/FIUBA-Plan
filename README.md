@@ -35,6 +35,7 @@ Una vez tenidos estos archivos, el notebook se encarga de pasarlos a un json y d
 ```jsonc
 {
   "cuatrimestre": "2020C2", // Nombre de Cuatrimestre, para la notificación al entrar al sitio ("Actualizado al 2020C2")
+  "timestamp": "2020-09-22 00:24:11.950205", // Un timestamp que se usa como identificador del json. Esto sirve para que, si el ultimo json almacenado en el cache del usuario no matchea con el json en prod, entonces se borra el cache (para evitar que alguien vea horarios desactualizados solo porque no limpio su historial del browser)
   "carreras": [ // Array de objetos de cada carrera
     {
       "nombre": "Ingeniería de Alimentos", // Nombre de Carrera

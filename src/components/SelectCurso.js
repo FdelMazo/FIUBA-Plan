@@ -11,9 +11,11 @@ import {
 } from "@chakra-ui/core";
 import { useSelect } from "downshift";
 import { DataContext } from "../Context";
+import useWindowSize from "../utils/useWindowSize";
 
 const SelectCurso = (props) => {
   const { data, toggleCurso, removerMateria } = React.useContext(DataContext);
+  const { width } = useWindowSize();
   const { materia } = props;
   const items = data.cursos.filter((c) => materia.cursos.includes(c.codigo));
   const {
@@ -26,6 +28,11 @@ const SelectCurso = (props) => {
     items,
     selectedItem: null,
   });
+
+  const formatName = (name) => {
+    if (name.length <= 10) return name;
+    return `${name.substring(0, 10)}...`;
+  };
 
   return (
     <>
@@ -47,8 +54,11 @@ const SelectCurso = (props) => {
               borderColor="primary"
               color="primary.500"
               rightIcon={isOpen ? "chevron-up" : "chevron-down"}
+              style={{
+                width: "13em"
+              }}
             >
-              {materia.codigo}
+              {width > 1000 ? formatName(materia.nombre) : materia.codigo}
             </Button>
           </Tooltip>
         </Box>

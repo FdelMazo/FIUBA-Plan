@@ -1,24 +1,24 @@
-import React from "react";
 import {
-  Drawer,
-  DrawerBody,
-  DrawerFooter,
-  DrawerOverlay,
-  DrawerContent,
-  useDisclosure,
-  IconButton,
   Alert,
   AlertIcon,
-  Link,
-  useToast,
   Box,
+  Drawer,
+  DrawerBody,
+  DrawerContent,
+  DrawerFooter,
+  DrawerOverlay,
   Icon,
+  IconButton,
+  Link,
   Tooltip,
+  useDisclosure,
+  useToast,
 } from "@chakra-ui/core";
-import SelectCarreras from "./SelectCarreras";
-import SelectMateria from "./SelectMateria";
-import SelectCurso from "./SelectCurso";
+import React from "react";
 import { DataContext } from "../Context";
+import SelectCarreras from "./SelectCarreras";
+import SelectCurso from "./SelectCurso";
+import SelectMateria from "./SelectMateria";
 
 const MateriasDrawer = (props) => {
   const { useAgenda, setUseAgenda } = props;
@@ -101,13 +101,19 @@ const MateriasDrawer = (props) => {
           </Tooltip>
           <Box>
             <Tooltip
-              label="FdelMazo at fi.uba.ar"
+              label="FIUBA-Map"
               fontFamily="general"
               zIndex={5501}
               backgroundColor="tooltipBackground"
               placement="top"
             >
-              <Icon mx={2} size="1.5em" color="primary.500" name="email" />
+              <Link
+                isExternal
+                color="primary.500"
+                href="https://fdelmazo.github.io/FIUBA-Map/"
+              >
+                <Icon mx={2} size="1.5em" name="graph" />
+              </Link>
             </Tooltip>
             <Tooltip
               label="FdelMazo/FIUBA-Plan"
@@ -122,6 +128,21 @@ const MateriasDrawer = (props) => {
                 href="https://github.com/fdelmazo/FIUBA-Plan"
               >
                 <Icon mx={2} size="1.5em" name="github" />
+              </Link>
+            </Tooltip>
+            <Tooltip
+              label="Invitame un Cafecíto"
+              fontFamily="general"
+              zIndex={5501}
+              backgroundColor="tooltipBackground"
+              placement="top"
+            >
+              <Link
+                isExternal
+                color="primary.500"
+                href="https://cafecito.app/fdelmazo"
+              >
+                <Icon mx={2} size="1.5em" name="cafecito" />
               </Link>
             </Tooltip>
           </Box>

@@ -20,7 +20,7 @@ Todos los cuatrimestres hay que actualizar los horarios de la aplicación. Para 
 
 Cada .html se saca del [SIU](https://guaranigrado.fi.uba.ar/), estando loggeado como un usuario de la carrera a scrapear. Es por eso que todos los cuatrimestres se necesita conseguir a un alumno de cada carrera de FIUBA* que consiga los archivos, de la siguiente manera:
 
-*Es importante que el alumno no este anotado en más de una carrera o más de un plan! Gente con simultaneidades, abstenerse de ayudar!
+*Es importante que si el alumno esta anotado en más de una carrera o más de un plan, arriba a la derecha tenga seleccionada la correcta _propuesta_ del SIU.
 
 1. Conectarse al SIU
 2. Ir a "Reportes" > "Oferta de Comisiones"

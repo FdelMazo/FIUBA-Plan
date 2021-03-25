@@ -16,17 +16,16 @@ Una vez terminados los cambios, con solo hacer un PR basta (porque la aplicació
 
 ## Actualización cuatrimestral de horarios
 
-Todos los cuatrimestres hay que actualizar los horarios de la aplicación. Para esto, se utiliza el notebook [`data/parse_horarios.ipynb`](data/parse_horarios.ipynb), que es un pseudo script en Python que utiliza Beautiful Soup 4 para scrapear código html. Se necesita tener dentro de `data` un archivo .html por cada carrera a agregar. Cada .html se saca del [SIU](https://guaranigrado.fi.uba.ar/), estando loggeado como un usuario de la carrera a scrapear.
+Todos los cuatrimestres hay que actualizar los horarios de la aplicación. Para esto, se utiliza el notebook [`data/parse_horarios.ipynb`](data/parse_horarios.ipynb), que es un pseudo script en Python que utiliza Beautiful Soup 4 para scrapear código html. Se necesita tener dentro de `data` un archivo .html por cada carrera a agregar. 
 
-Es por eso que todos los cuatrimestres se necesita conseguir a un alumno de cada carrera de FIUBA que consiga los archivos, de la siguiente manera:
+Cada .html se saca del [SIU](https://guaranigrado.fi.uba.ar/), estando loggeado como un usuario de la carrera a scrapear. Es por eso que todos los cuatrimestres se necesita conseguir a un alumno de cada carrera de FIUBA* que consiga los archivos, de la siguiente manera:
+
+*Es importante que el alumno no este anotado en más de una carrera o más de un plan! Gente con simultaneidades, abstenerse de ayudar!
 
 1. Conectarse al SIU
 2. Ir a "Reportes" > "Oferta de Comisiones"
-3. Si el alumno está en múltiples carreras o planes (por ejemplo, un alumno de Ing Química con simultaneidad con Ing de Alimentos), hay que asegurarse de utilizar el filtro del SIU para que solo aparezcan las materias de la carrera que se quiere hacer. Si no se hace esto, los horarios de una carrera van a incluir materias de otra (más fácil... conseguir alumnos que estén solamente en una carrera, para evitar problemas)
-4. Tocar CTRL+U o COMMAND+OPTION+U para ver el HTML entero
-5. Todo ese texto es el que se necesita. Hay que guardarlo en un archivo .txt (por favor, ni PDFs, ni docx) y ya con eso se puede empezar el parseo con las instrucciones que hay en el notebook.
-
-Si se consiguen esos archivos, con hacérselos llegar a alguien con acceso a master (se puede enviar por mail, o directamente hacer un PR), se van a agregar y actualizar los horarios.
+3. Tocar CTRL+U o COMMAND+OPTION+U para ver el HTML entero
+4. Todo ese texto es el que se necesita. Hay que guardarlo en un archivo .txt (por favor, ni PDFs, ni docx) y mandarselo a alguien que sea un colaborador del proyecto (pueden mandarmelo a mí por mail fdelmazo@fi.uba.ar)
 
 ---
 

@@ -24,9 +24,8 @@ Cada .html se saca del [SIU](https://guaranigrado.fi.uba.ar/), estando loggeado 
 
 1. Conectarse al SIU
 2. Ir a "Reportes" > "Oferta de Comisiones"
-3. Filtrar los resultados poniendo en 'Período Lectivo' el cuatrimestre al que se va a actualizar
-4. Tocar CTRL+U o COMMAND+OPTION+U para ver el HTML entero
-5. Todo ese texto es el que se necesita. Hay que guardarlo en un archivo .txt (por favor, ni PDFs, ni docx) y mandarselo a alguien que sea un colaborador del proyecto (pueden mandarmelo a mí por mail fdelmazo@fi.uba.ar)
+3. Tocar CTRL+U o COMMAND+OPTION+U para ver el HTML entero
+4. Todo ese texto es el que se necesita. Hay que guardarlo en un archivo .txt (por favor, ni PDFs, ni docx) y mandarselo a alguien que sea un colaborador del proyecto (pueden mandarmelo a mí por mail fdelmazo@fi.uba.ar)
 
 ---
 

@@ -16,11 +16,11 @@ Una vez terminados los cambios, con solo hacer un PR basta (porque la aplicació
 
 ## Actualización cuatrimestral de horarios
 
-Todos los cuatrimestres hay que actualizar los horarios de la aplicación. Para esto, se utiliza el notebook [`data/parse_horarios.ipynb`](data/parse_horarios.ipynb), que es un pseudo script en Python que utiliza Beautiful Soup 4 para scrapear código html. Se necesita tener dentro de `data` un archivo .html por cada carrera a agregar. 
+Todos los cuatrimestres hay que actualizar los horarios de la aplicación. Para esto, se utiliza el notebook [`data/parse_horarios.ipynb`](data/parse_horarios.ipynb), que es un pseudo script en Python que utiliza Beautiful Soup 4 para scrapear código html. Se necesita tener dentro de `data/raw` un archivo .html por cada carrera a agregar.
 
-Cada .html se saca del [SIU](https://guaranigrado.fi.uba.ar/), estando loggeado como un usuario de la carrera a scrapear. Es por eso que todos los cuatrimestres se necesita conseguir a un alumno de cada carrera de FIUBA* que consiga los archivos, de la siguiente manera:
+Cada .html se saca del [SIU](https://guaranigrado.fi.uba.ar/), estando loggeado como un usuario de la carrera a scrapear. Es por eso que todos los cuatrimestres se necesita conseguir a un alumno de cada carrera de FIUBA\* que consiga los archivos, de la siguiente manera:
 
-*Es importante que si el alumno esta anotado en más de una carrera o más de un plan, arriba a la derecha tenga seleccionada la correcta _propuesta_ del SIU.
+\*Es importante que si el alumno esta anotado en más de una carrera o más de un plan, arriba a la derecha tenga seleccionada la correcta _propuesta_ del SIU.
 
 1. Conectarse al SIU
 2. Ir a "Reportes" > "Oferta de Comisiones"

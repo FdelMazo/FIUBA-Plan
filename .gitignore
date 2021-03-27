@@ -1,4 +1,5 @@
 node_modules/
 build/
 .ipynb_checkpoints
-clean/
+data/clean/
+data/horarios.js

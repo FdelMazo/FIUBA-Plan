@@ -31,11 +31,16 @@ const SelectMateria = (props) => {
   } = useCombobox({
     items: inputItems,
     onInputValueChange: ({ inputValue }) => {
+      let toSearch = inputValue.toLowerCase();
+      toSearch = toSearch.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
       setInputItems(
         visibleSubjects.filter(
           (item) =>
-            item.nombre.toLowerCase().includes(inputValue.toLowerCase()) ||
-            item.codigo.includes(inputValue)
+            item.nombre
+              .toLowerCase()
+              .normalize("NFD")
+              .replace(/[\u0300-\u036f]/g, "")
+              .includes(toSearch) || item.codigo.includes(toSearch)
         )
       );
     },
@@ -59,7 +64,7 @@ const SelectMateria = (props) => {
           children={<Icon name="search" color="primary.500" />}
         />
       </InputGroup>
-      {isOpen &&
+      {isOpen && (
         <List
           textAlign={["left"]}
           fontFamily="general"
@@ -74,8 +79,9 @@ const SelectMateria = (props) => {
             overflowY: "scroll",
           }}
         >
-          {inputItems.length ? 
-            inputItems.sort((a, b) => a.codigo > b.codigo)
+          {inputItems.length ? (
+            inputItems
+              .sort((a, b) => a.codigo > b.codigo)
               .map((item) => (
                 <PseudoBox
                   borderRadius="md"
@@ -92,19 +98,18 @@ const SelectMateria = (props) => {
                   </li>
                 </PseudoBox>
               ))
-            :
-          <PseudoBox
-            borderRadius="md"
-            _hover={{ bg: "gray.500" }}
-            color="primary.500"
-            fontSize="small"
-          >
-            <li>
-              No se encontraron materias.
-            </li>
-          </PseudoBox>            }
+          ) : (
+            <PseudoBox
+              borderRadius="md"
+              _hover={{ bg: "gray.500" }}
+              color="primary.500"
+              fontSize="small"
+            >
+              <li>No se encontraron materias.</li>
+            </PseudoBox>
+          )}
         </List>
-    }
+      )}
     </>
   );
 };

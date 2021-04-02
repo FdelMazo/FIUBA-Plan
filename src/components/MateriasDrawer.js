@@ -64,7 +64,8 @@ const MateriasDrawer = (props) => {
       <DrawerContent bg="background" zIndex={5501}>
         <DrawerBody
           style={{
-            overflowY: "scroll",
+            overflowY: "auto",
+            scrollbarWidth: "none",
           }}
         >
           <Box textAlign={["right"]}>

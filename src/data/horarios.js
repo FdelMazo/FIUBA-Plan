@@ -2396,7 +2396,8 @@ export const data = {
       "nombre": "TALLER DE PROGRAMACION I",
       "cursos": [
         "33428",
-        "33429"
+        "33429",
+        "33838"
       ]
     },
     {
@@ -23162,6 +23163,17 @@ export const data = {
     {
       "docentes": "DEYMONNAZ PABLO ANDRES",
       "codigo": "33839",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "18:00",
+          "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "docentes": "DEYMONNAZ PABLO ANDRES",
+      "codigo": "33838",
       "clases": [
         {
           "dia": 1,

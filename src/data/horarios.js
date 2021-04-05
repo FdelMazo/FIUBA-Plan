@@ -4866,7 +4866,8 @@ export const data = {
       "codigo": "9508",
       "nombre": "TALLER DE PROGRAMACIÓN",
       "cursos": [
-        "33426"
+        "33426",
+        "33839"
       ]
     },
     {
@@ -19718,11 +19719,11 @@ export const data = {
       ]
     },
     {
-      "docentes": "DEYMONNAZ PABLO ANDRES, GARIBALDI JULIA ELENA",
+      "docentes": "DEYMONNAZ PABLO ANDRES",
       "codigo": "33456",
       "clases": [
         {
-          "dia": 1,
+          "dia": 2,
           "inicio": "19:00",
           "fin": "22:00"
         },
@@ -23155,6 +23156,17 @@ export const data = {
           "dia": 5,
           "inicio": "19:00",
           "fin": "20:30"
+        }
+      ]
+    },
+    {
+      "docentes": "DEYMONNAZ PABLO ANDRES",
+      "codigo": "33839",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "18:00",
+          "fin": "22:00"
         }
       ]
     }

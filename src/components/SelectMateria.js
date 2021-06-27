@@ -13,14 +13,8 @@ import { DataContext } from "../Context";
 
 const SelectMateria = (props) => {
   const { data, agregarMateria } = React.useContext(DataContext);
-  const [inputItems, setInputItems] = React.useState([]);
-  const [visibleSubjects, setVisibleSubjects] = React.useState([]);
-
-  React.useEffect(() => {
-    const materiasVisibles = data.materias.filter((m) => m.show);
-    setVisibleSubjects(materiasVisibles);
-    setInputItems(materiasVisibles);
-  }, [data]);
+  const visibleSubjects = data.materias.filter((m) => m.show);
+  const [inputItems, setInputItems] = React.useState(visibleSubjects);
 
   const {
     isOpen,

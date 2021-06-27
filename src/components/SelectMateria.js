@@ -19,8 +19,8 @@ const SelectMateria = (props) => {
   React.useEffect(() => {
     const materiasVisibles = data.materias.filter((m) => m.show);
     setVisibleSubjects(materiasVisibles);
-    setInputItems(materiasVisibles);
-  }, [data]);
+    setInputItems(inputItems.length === 0 ? materiasVisibles : inputItems);
+  }, [data, inputItems]);
 
   const {
     isOpen,

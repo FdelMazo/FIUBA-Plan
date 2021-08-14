@@ -1,31 +1,27 @@
-import React from "react";
 import {
-  Button,
-  List,
-  PseudoBox,
-  ListIcon,
   Box,
-  IconButton,
+  Button,
   Flex,
+  IconButton,
+  List,
+  ListIcon,
+  PseudoBox,
   Tooltip,
-} from "@chakra-ui/core";
+} from "@chakra-ui/react";
 import { useSelect } from "downshift";
+import React from "react";
 import { DataContext } from "../Context";
 
 const SelectCurso = (props) => {
   const { data, toggleCurso, removerMateria } = React.useContext(DataContext);
   const { materia } = props;
   const items = data.cursos.filter((c) => materia.cursos.includes(c.codigo));
-  const {
-    isOpen,
-    getItemProps,
-    getToggleButtonProps,
-    getMenuProps,
-  } = useSelect({
-    stateReducer,
-    items,
-    selectedItem: null,
-  });
+  const { isOpen, getItemProps, getToggleButtonProps, getMenuProps } =
+    useSelect({
+      stateReducer,
+      items,
+      selectedItem: null,
+    });
 
   return (
     <>
@@ -42,7 +38,7 @@ const SelectCurso = (props) => {
               mt={2}
               fontFamily="general"
               backgroundColor="background"
-              variantColor="primary"
+              colorScheme="primary"
               variant="outline"
               borderColor="primary"
               color="primary.500"
@@ -57,7 +53,7 @@ const SelectCurso = (props) => {
           mt={2}
           ml={2}
           backgroundColor="background"
-          variantColor="primary"
+          colorScheme="primary"
           variant="outline"
           borderColor="primary"
           color="primary.500"

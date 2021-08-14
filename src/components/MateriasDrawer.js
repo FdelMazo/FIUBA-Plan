@@ -1,3 +1,4 @@
+import { AddIcon } from "@chakra-ui/icons";
 import {
   Alert,
   AlertIcon,
@@ -13,7 +14,7 @@ import {
   Tooltip,
   useDisclosure,
   useToast,
-} from "@chakra-ui/core";
+} from "@chakra-ui/react";
 import React from "react";
 import { DataContext } from "../Context";
 import SelectCarreras from "./SelectCarreras";
@@ -29,10 +30,10 @@ const MateriasDrawer = (props) => {
   const AddButton = () => (
     <IconButton
       m={10}
+      icon={<AddIcon />}
       onClick={onToggle}
-      variantColor="primary"
+      colorScheme="primary"
       aria-label="Agregar Materia"
-      icon="add"
       color="background"
       borderColor="background"
       fontFamily="general"
@@ -49,14 +50,21 @@ const MateriasDrawer = (props) => {
       position: "bottom",
       duration: 2000,
       render: () => (
-        <Alert borderRadius={5} mx={10} mb={8} status="success">
+        <Alert
+          borderColor="black"
+          borderWidth={2}
+          borderRadius={5}
+          mx={10}
+          mb={8}
+          status="success"
+        >
           <AlertIcon />
           Actualizado al {data.cuatrimestre}
         </Alert>
       ),
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [toast]);
+  }, []);
 
   return (
     <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
@@ -95,7 +103,7 @@ const MateriasDrawer = (props) => {
           >
             <IconButton
               variant="outline"
-              variantColor="primary"
+              colorScheme="primary"
               icon="calendar"
               onClick={() => setUseAgenda(!useAgenda)}
             />

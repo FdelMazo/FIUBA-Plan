@@ -1,11 +1,11 @@
-import React from "react";
-import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 import "moment/locale/es";
+import React from "react";
+import { Calendar, momentLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import CalendarWeek from "./CalendarWeek";
-import CalendarAgenda from "./CalendarAgenda";
 import useWindowSize from "../utils/useWindowSize";
+import CalendarAgenda from "./CalendarAgenda";
+import CalendarWeek from "./CalendarWeek";
 
 const MateriaEvent = (props) => {
   return (

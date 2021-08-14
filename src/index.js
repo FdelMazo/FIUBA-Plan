@@ -1,11 +1,11 @@
+import { ChakraProvider, CSSReset, Flex } from "@chakra-ui/react";
+import "@fontsource/noto-sans-jp/400.css";
 import React from "react";
 import ReactDOM from "react-dom";
-import { ThemeProvider, Flex } from "@chakra-ui/core";
-import { customTheme } from "./theme";
 import Body from "./components/Body";
-import useData from "./useData";
 import { DataContext } from "./Context";
-
+import customTheme from "./theme";
+import useData from "./useData";
 const App = () => {
   const dataHook = useData();
 
@@ -19,8 +19,9 @@ const App = () => {
 };
 
 ReactDOM.render(
-  <ThemeProvider theme={customTheme}>
+  <ChakraProvider theme={customTheme}>
+    <CSSReset />
     <App />
-  </ThemeProvider>,
+  </ChakraProvider>,
   document.getElementById("root")
 );

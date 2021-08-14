@@ -1,20 +1,16 @@
-import React from "react";
-import { Button, List, PseudoBox, ListIcon, Box } from "@chakra-ui/core";
+import { Box, Button, List, ListIcon, PseudoBox } from "@chakra-ui/react";
 import { useSelect } from "downshift";
+import React from "react";
 import { DataContext } from "../Context";
 
 const SelectCarreras = (props) => {
   const { data, toggleCarrera } = React.useContext(DataContext);
 
-  const {
-    isOpen,
-    getItemProps,
-    getToggleButtonProps,
-    getMenuProps,
-  } = useSelect({
-    items: data.carreras,
-    stateReducer,
-  });
+  const { isOpen, getItemProps, getToggleButtonProps, getMenuProps } =
+    useSelect({
+      items: data.carreras,
+      stateReducer,
+    });
 
   return (
     <Box mb={4}>
@@ -23,7 +19,7 @@ const SelectCarreras = (props) => {
         rightIcon={isOpen ? "chevron-up" : "chevron-down"}
         mt={8}
         w="100%"
-        variantColor="primary"
+        colorScheme="primary"
         variant="outline"
         fontFamily="general"
       >

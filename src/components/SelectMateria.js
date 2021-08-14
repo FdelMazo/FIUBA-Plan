@@ -1,14 +1,14 @@
-import React from "react";
 import {
-  List,
-  ListIcon,
-  Input,
   Icon,
+  Input,
   InputGroup,
   InputRightElement,
+  List,
+  ListIcon,
   PseudoBox,
-} from "@chakra-ui/core";
+} from "@chakra-ui/react";
 import { useCombobox } from "downshift";
+import React from "react";
 import { DataContext } from "../Context";
 
 const SelectMateria = (props) => {
@@ -52,7 +52,7 @@ const SelectMateria = (props) => {
         <Input
           {...getToggleButtonProps()}
           backgroundColor="background"
-          variantColor="primary"
+          colorScheme="primary"
           variant="outline"
           borderColor="primary"
           color="primary.500"

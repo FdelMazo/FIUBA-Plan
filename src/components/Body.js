@@ -24,15 +24,14 @@ const Body = () => {
 
   React.useEffect(() => {
     toast({
-      position: "bottom",
+      position: "top",
       duration: 2000,
       render: () => (
         <Alert
           borderColor="black"
           borderWidth={2}
           borderRadius={5}
-          mx={10}
-          mb={8}
+          mt={8}
           status="success"
         >
           <AlertIcon />
@@ -60,14 +59,12 @@ const Body = () => {
         position="absolute"
         right={10}
         bottom={10}
-        m={10}
-        icon={<AddIcon />}
+        borderColor="drawerbg"
+        borderWidth={2}
+        icon={<AddIcon fontWeight="bold" color="drawerbg" />}
         onClick={onToggle}
         colorScheme="primary"
         aria-label="Agregar Materia"
-        color="background"
-        borderColor="background"
-        fontFamily="general"
       />
     </Box>
   );

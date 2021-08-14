@@ -1,4 +1,3 @@
-import { AddIcon } from "@chakra-ui/icons";
 import {
   Alert,
   AlertIcon,
@@ -12,7 +11,6 @@ import {
   IconButton,
   Link,
   Tooltip,
-  useDisclosure,
   useToast,
 } from "@chakra-ui/react";
 import React from "react";
@@ -22,54 +20,13 @@ import SelectCurso from "./SelectCurso";
 import SelectMateria from "./SelectMateria";
 
 const MateriasDrawer = (props) => {
-  const { useAgenda, setUseAgenda } = props;
+  const { useAgenda, setUseAgenda, isOpen, onClose } = props;
   const { data } = React.useContext(DataContext);
-  const { isOpen, onToggle, onClose } = useDisclosure();
-  const toast = useToast();
-
-  const AddButton = () => (
-    <IconButton
-      m={10}
-      icon={<AddIcon />}
-      onClick={onToggle}
-      colorScheme="primary"
-      aria-label="Agregar Materia"
-      color="background"
-      borderColor="background"
-      fontFamily="general"
-    />
-  );
-
-  React.useEffect(() => {
-    toast({
-      position: "bottom-right",
-      render: () => <AddButton />,
-      duration: null,
-    });
-    toast({
-      position: "bottom",
-      duration: 2000,
-      render: () => (
-        <Alert
-          borderColor="black"
-          borderWidth={2}
-          borderRadius={5}
-          mx={10}
-          mb={8}
-          status="success"
-        >
-          <AlertIcon />
-          Actualizado al {data.cuatrimestre}
-        </Alert>
-      ),
-    });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   return (
     <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
       <DrawerOverlay />
-      <DrawerContent bg="background" zIndex={5501}>
+      <DrawerContent bg="background">
         <DrawerBody
           style={{
             overflowY: "auto",
@@ -97,7 +54,6 @@ const MateriasDrawer = (props) => {
           <Tooltip
             label="Cambiar vista"
             fontFamily="general"
-            zIndex={5501}
             backgroundColor="tooltipBackground"
             placement="top"
           >
@@ -112,7 +68,6 @@ const MateriasDrawer = (props) => {
             <Tooltip
               label="FIUBA-Map"
               fontFamily="general"
-              zIndex={5501}
               backgroundColor="tooltipBackground"
               placement="top"
             >
@@ -127,7 +82,6 @@ const MateriasDrawer = (props) => {
             <Tooltip
               label="FdelMazo/FIUBA-Plan"
               fontFamily="general"
-              zIndex={5501}
               backgroundColor="tooltipBackground"
               placement="top"
             >
@@ -142,7 +96,6 @@ const MateriasDrawer = (props) => {
             <Tooltip
               label="Invitame un Cafecíto"
               fontFamily="general"
-              zIndex={5501}
               backgroundColor="tooltipBackground"
               placement="top"
             >

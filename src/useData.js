@@ -24,7 +24,6 @@ const useGraph = () => {
       return null;
     return JSON.parse(window.localStorage.getItem("fiubaplan"))?.[key];
   };
-  console.log(window.localStorage.getItem("fiubaplan")?.selectedMaterias);
   const colorHash = new ColorHash({ lightness: 0.7, saturation: 0.7 });
   const [selectedCarreras, setSelectedCarreras] = React.useState(
     select("selectedCarreras") || []
@@ -36,6 +35,7 @@ const useGraph = () => {
     select("selectedCursos") || []
   );
   const [events, setEvents] = React.useState([]);
+  const [noCursar, setNoCursar] = React.useState(select("noCursar") || []);
   const [materiasToShow, setMateriasToShow] = React.useState([]);
 
   React.useEffect(() => {
@@ -46,9 +46,10 @@ const useGraph = () => {
         selectedCarreras,
         selectedMaterias,
         selectedCursos,
+        noCursar,
       })
     );
-  }, [selectedCarreras, selectedMaterias, selectedCursos]);
+  }, [selectedCarreras, selectedMaterias, selectedCursos, noCursar]);
 
   const carreras = React.useMemo(
     () => jsonData.carreras.map((c) => c.nombre).sort(),
@@ -108,7 +109,6 @@ const useGraph = () => {
   };
 
   React.useEffect(() => {
-    console.log(selectedCursos);
     let eventos = selectedCursos
       .map((curso) => ({
         ...jsonData.cursos.find((c) => c.codigo === curso.codigo),
@@ -159,6 +159,10 @@ const useGraph = () => {
     let newSelectedCursos = selectedCursos.filter(
       (item) => !!item && !cursos.map((c) => c.codigo).includes(item.codigo)
     );
+    let newNoCursar = noCursar.filter(
+      (id) => !!id && !cursos.some((c) => id.startsWith(c.codigo))
+    );
+    setNoCursar(newNoCursar);
     setSelectedCursos(newSelectedCursos);
   };
 
@@ -167,6 +171,9 @@ const useGraph = () => {
     if (selectedCursos.find((item) => item.codigo === curso.codigo)) {
       newSelectedCursos = selectedCursos.filter(
         (item) => !!item && item.codigo !== curso.codigo
+      );
+      setNoCursar(
+        noCursar.filter((id) => !!id && !id.startsWith(curso.codigo))
       );
     } else {
       newSelectedCursos = [
@@ -183,11 +190,17 @@ const useGraph = () => {
 
   const limpiarCursos = () => {
     setSelectedCursos([]);
+    setNoCursar([]);
+  };
+
+  const toggleNoCursar = (id) => {
+    toggler(noCursar, setNoCursar, id);
   };
 
   return {
     toggleCarrera,
     toggleMateria,
+    noCursar,
     selectedMaterias,
     carreras,
     selectedCarreras,
@@ -199,6 +212,7 @@ const useGraph = () => {
     getMateria,
     events,
     toggleCurso,
+    toggleNoCursar,
   };
 };
 

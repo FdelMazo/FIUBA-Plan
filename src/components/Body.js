@@ -29,11 +29,12 @@ const Body = () => {
       duration: 2000,
       render: () => (
         <Alert
-          borderColor="black"
+          borderColor="drawerbg"
           borderWidth={2}
           borderRadius={5}
           mt={8}
           status="success"
+          color="drawerbg"
         >
           <AlertIcon />
           Actualizado al {actualizacion.cuatrimestre}

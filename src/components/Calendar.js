@@ -1,24 +1,18 @@
+import { ViewOffIcon } from "@chakra-ui/icons";
+import { Box, IconButton, Text, Tooltip } from "@chakra-ui/react";
 import moment from "moment";
 import "moment/locale/es";
 import React from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
+import { DataContext } from "../Context";
 import useWindowSize from "../utils/useWindowSize";
 import CalendarAgenda from "./CalendarAgenda";
 import CalendarWeek from "./CalendarWeek";
 
-const MateriaEvent = (props) => {
-  return (
-    <div>
-      <span className="rbc-agenda-event-cell">{props.event.materia}</span>
-      <br />
-      <span className="rbc-agenda-event-cell-sub">{props.event.title}</span>
-    </div>
-  );
-};
-
 const MyCalendar = (props) => {
   const { events, useAgenda } = props;
+  const { toggleNoCursar, noCursar } = React.useContext(DataContext);
   const localizer = momentLocalizer(moment);
   const { width } = useWindowSize();
   const formats = {
@@ -54,6 +48,9 @@ const MyCalendar = (props) => {
       borderLeftColor: event.color,
       color: "#1f1f1f",
       cursor: "default",
+      backgroundImage: noCursar.includes(event.id)
+        ? `repeating-linear-gradient(135deg, #ededed, #ededed 10px, transparent 10px, transparent 30px)`
+        : undefined,
     };
     const calendarWeekStyle = {
       textAlign: "right",
@@ -61,12 +58,59 @@ const MyCalendar = (props) => {
       borderRightColor: "#0000",
       borderBottomColor: "#0000",
       borderTopColor: "#0000",
-      boxShadow: "inset 0 0 0 1000px " + event.color + "22",
+      boxShadow: "inset 0 0 0 1000px " + event.color + "44",
     };
     return {
       style: useAgenda ? style : { ...style, ...calendarWeekStyle },
     };
   }
+
+  const MateriaEvent = (props) => {
+    return useAgenda ? (
+      <Box>
+        <Box
+          style={{
+            display: "flex",
+            flexDirection: "row",
+          }}
+        >
+          <Text noOfLines={[1, 2, 3]} className="rbc-agenda-event-cell" mb={2}>
+            {props.event.materia}
+          </Text>
+          <Tooltip label="No la voy a cursar" placement="top">
+            <IconButton
+              variant="ghost"
+              colorScheme="primary"
+              icon={<ViewOffIcon color={props.event.color} />}
+              onClick={() => toggleNoCursar(props.event.id)}
+            />
+          </Tooltip>
+        </Box>
+        <Text noOfLines={[1, 3, 5]} className="rbc-agenda-event-cell-sub">
+          {props.event.title}
+        </Text>
+      </Box>
+    ) : (
+      <Box>
+        <Box>
+          <Text noOfLines={[1, 2, 3]} className="rbc-agenda-event-cell" mb={2}>
+            {props.event.materia}
+          </Text>
+          <Text noOfLines={[1, 3, 5]} className="rbc-agenda-event-cell-sub">
+            {props.event.title}
+          </Text>
+        </Box>
+        <Tooltip label="No la voy a cursar" placement="top">
+          <IconButton
+            variant="ghost"
+            colorScheme="primary"
+            icon={<ViewOffIcon color={props.event.color} />}
+            onClick={() => toggleNoCursar(props.event.id)}
+          />
+        </Tooltip>
+      </Box>
+    );
+  };
 
   return (
     <Calendar

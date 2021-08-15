@@ -181,6 +181,10 @@ const useGraph = () => {
     setSelectedCursos(newSelectedCursos);
   };
 
+  const limpiarCursos = () => {
+    setSelectedCursos([]);
+  };
+
   return {
     toggleCarrera,
     toggleMateria,
@@ -190,6 +194,7 @@ const useGraph = () => {
     materiasToShow,
     actualizacion,
     selectedCursos,
+    limpiarCursos,
     getCursos,
     getMateria,
     events,

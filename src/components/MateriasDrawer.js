@@ -11,6 +11,7 @@ import {
   AlertDescription,
   AlertTitle,
   Box,
+  Button,
   CloseButton,
   DarkMode,
   Drawer,
@@ -55,8 +56,9 @@ const submitBug = (bug) => {
 
 const MateriasDrawer = (props) => {
   const { useAgenda, setUseAgenda, isOpen, onClose } = props;
-  const { materiasToShow, selectedMaterias } = React.useContext(DataContext);
-  const { toggleColorMode, colorMode } = useColorMode();
+  const { materiasToShow, selectedMaterias, limpiarCursos, selectedCursos } =
+    React.useContext(DataContext);
+  const { toggleColorMode } = useColorMode();
   const toast = useToast();
   const bugToast = React.useRef();
   const [showGracias, setShowGracias] = React.useState(false);
@@ -75,6 +77,22 @@ const MateriasDrawer = (props) => {
             <Box my={8}>
               <SelectCarreras />
               {!!materiasToShow.length && <SelectMateria />}
+              {!!selectedCursos.length && (
+                <Box textAlign="right" w="100%">
+                  <Button
+                    p={0}
+                    rightIcon={<CloseButton fontSize="xs" />}
+                    colorScheme="primary"
+                    variant="ghost"
+                    fontSize="sm"
+                    onClick={() => {
+                      limpiarCursos();
+                    }}
+                  >
+                    Resetear Catedras
+                  </Button>
+                </Box>
+              )}
               {selectedMaterias.map((m) => (
                 <SelectCurso codigo={m} />
               ))}
@@ -159,13 +177,12 @@ const MateriasDrawer = (props) => {
                     return (bugToast.current = toast({
                       render: (props) => (
                         <Alert
-                          zIndex={100000}
                           borderRadius={6}
-                          p={5}
+                          p={8}
                           mb="4em"
                           borderColor="primary.300"
                           borderWidth={2}
-                          bg="gray.700"
+                          bg="drawerbg"
                           color="white"
                         >
                           <Box flex="1">

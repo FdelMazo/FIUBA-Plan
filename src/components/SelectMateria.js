@@ -56,6 +56,7 @@ const SelectMateria = (props) => {
           variant="outline"
           borderColor="primary"
           color="primary.500"
+          fontFamily="body"
           placeholder="Buscar Materia..."
         />
         <InputRightElement children={<SearchIcon color="primary.500" />} />

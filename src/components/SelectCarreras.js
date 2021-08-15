@@ -1,14 +1,15 @@
-import { Box, Button, List, ListIcon, PseudoBox } from "@chakra-ui/react";
+import { CheckIcon, ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
+import { Box, Button, List } from "@chakra-ui/react";
 import { useSelect } from "downshift";
 import React from "react";
 import { DataContext } from "../Context";
 
-const SelectCarreras = (props) => {
-  const { data, toggleCarrera } = React.useContext(DataContext);
-
+const SelectCarreras = () => {
+  const { carreras, toggleCarrera, selectedCarreras } =
+    React.useContext(DataContext);
   const { isOpen, getItemProps, getToggleButtonProps, getMenuProps } =
     useSelect({
-      items: data.carreras,
+      items: carreras,
       stateReducer,
     });
 
@@ -16,46 +17,43 @@ const SelectCarreras = (props) => {
     <Box mb={4}>
       <Button
         {...getToggleButtonProps()}
-        rightIcon={isOpen ? "chevron-up" : "chevron-down"}
-        mt={8}
+        rightIcon={isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
         w="100%"
         colorScheme="primary"
         variant="outline"
-        fontFamily="general"
       >
         Carreras
       </Button>
+
       {isOpen && (
         <List
           {...getMenuProps()}
           p={1}
-          mb={0}
-          border="1px"
-          borderRadius="md"
+          mt={4}
+          borderWidth={1}
+          borderRadius={5}
           borderColor="primary.500"
-          fontFamily="general"
-          textAlign={["left"]}
         >
-          {data.carreras
+          {carreras
             .sort((a, b) => a.nombre > b.nombre)
             .map((c, index) => (
-              <PseudoBox
-                borderRadius="md"
+              <Box
+                borderRadius={5}
                 _hover={{ bg: "gray.500" }}
                 color="primary.500"
                 onClick={() => toggleCarrera(c)}
               >
                 <li
-                  key={`${c}${index}`}
                   {...getItemProps({
                     c,
                     index,
                   })}
+                  key={c}
                 >
-                  {c.nombre}
-                  <ListIcon ml={2} icon={c.show && "check"} />
+                  {c}
+                  {selectedCarreras.includes(c) && <CheckIcon ml={2} />}
                 </li>
-              </PseudoBox>
+              </Box>
             ))}
         </List>
       )}

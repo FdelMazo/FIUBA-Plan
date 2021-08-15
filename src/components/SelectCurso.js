@@ -1,21 +1,22 @@
 import {
-  Box,
-  Button,
-  Flex,
-  IconButton,
-  List,
-  ListIcon,
-  PseudoBox,
-  Tooltip,
-} from "@chakra-ui/react";
+  ChevronDownIcon,
+  ChevronUpIcon,
+  MinusIcon,
+  ViewIcon,
+} from "@chakra-ui/icons";
+import { Box, Button, Flex, IconButton, List, Tooltip } from "@chakra-ui/react";
 import { useSelect } from "downshift";
 import React from "react";
 import { DataContext } from "../Context";
 
 const SelectCurso = (props) => {
-  const { data, toggleCurso, removerMateria } = React.useContext(DataContext);
-  const { materia } = props;
-  const items = data.cursos.filter((c) => materia.cursos.includes(c.codigo));
+  const { toggleCurso, selectedCursos, getMateria, toggleMateria, getCursos } =
+    React.useContext(DataContext);
+  const { codigo } = props;
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const items = React.useMemo(() => getCursos(codigo), []);
+  const materia = React.useMemo(() => getMateria(codigo), [codigo, getMateria]);
+
   const { isOpen, getItemProps, getToggleButtonProps, getMenuProps } =
     useSelect({
       stateReducer,
@@ -27,22 +28,14 @@ const SelectCurso = (props) => {
     <>
       <Flex direction="row" justify="flex-end">
         <Box {...getToggleButtonProps()}>
-          <Tooltip
-            hasArrow
-            label={materia.nombre}
-            zIndex={10000}
-            fontFamily="general"
-            backgroundColor="tooltipBackground"
-          >
+          <Tooltip placement="left" hasArrow label={materia.nombre}>
             <Button
-              mt={2}
-              fontFamily="general"
-              backgroundColor="background"
+              my={2}
               colorScheme="primary"
               variant="outline"
               borderColor="primary"
               color="primary.500"
-              rightIcon={isOpen ? "chevron-up" : "chevron-down"}
+              rightIcon={isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
             >
               {materia.codigo}
             </Button>
@@ -50,28 +43,25 @@ const SelectCurso = (props) => {
         </Box>
 
         <IconButton
-          mt={2}
+          my={2}
           ml={2}
-          backgroundColor="background"
           colorScheme="primary"
           variant="outline"
           borderColor="primary"
           color="primary.500"
-          icon="minus"
+          icon={<MinusIcon />}
           onClick={() => {
-            removerMateria(materia);
+            toggleMateria(materia.codigo);
           }}
         />
       </Flex>
 
       {isOpen && (
         <List
-          fontFamily="general"
           {...getMenuProps()}
           p={1}
-          mb={0}
-          border="1px"
-          borderRadius="md"
+          borderWidth={1}
+          borderRadius={5}
           borderColor="primary.500"
           style={{
             maxHeight: "10em",
@@ -79,11 +69,15 @@ const SelectCurso = (props) => {
           }}
         >
           {items.map((item, index) => (
-            <PseudoBox
-              borderRadius="md"
+            <Box
+              borderRadius={5}
               _hover={{ bg: "gray.500" }}
-              color="primary.500"
-              fontSize="x-small"
+              color={
+                selectedCursos.find((i) => i.codigo === item.codigo)
+                  ? selectedCursos.find((i) => i.codigo === item.codigo).color
+                  : "primary.500"
+              }
+              fontSize="xs"
               onClick={() => toggleCurso(item, materia)}
             >
               <li
@@ -91,13 +85,19 @@ const SelectCurso = (props) => {
                   item,
                   index,
                 })}
+                key={item.codigo}
               >
-                {item.docentes}
-                {item.show && (
-                  <ListIcon color={item?.color} ml={2} icon="view" />
+                {selectedCursos.find((i) => i.codigo === item.codigo) && (
+                  <ViewIcon
+                    mr={2}
+                    color={
+                      selectedCursos.find((i) => i.codigo === item.codigo).color
+                    }
+                  />
                 )}
+                {item.docentes}
               </li>
-            </PseudoBox>
+            </Box>
           ))}
         </List>
       )}

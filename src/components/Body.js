@@ -4,6 +4,7 @@ import {
   AlertIcon,
   Box,
   IconButton,
+  useColorModeValue,
   useDisclosure,
   useToast,
 } from "@chakra-ui/react";
@@ -16,7 +17,7 @@ import Calendar from "./Calendar";
 import MateriasDrawer from "./MateriasDrawer";
 
 const Body = () => {
-  const { events, data } = React.useContext(DataContext);
+  const { actualizacion, events } = React.useContext(DataContext);
   const [useAgenda, setUseAgenda] = React.useState(false);
   const { width } = useWindowSize();
   const { isOpen, onToggle, onClose } = useDisclosure();
@@ -35,7 +36,7 @@ const Body = () => {
           status="success"
         >
           <AlertIcon />
-          Actualizado al {data.cuatrimestre}
+          Actualizado al {actualizacion.cuatrimestre}
         </Alert>
       ),
     });
@@ -47,7 +48,7 @@ const Body = () => {
   }, [width]);
 
   return (
-    <Box flexGrow={1}>
+    <Box id={useColorModeValue(undefined, "dark")} flexGrow={1}>
       <MateriasDrawer
         isOpen={isOpen}
         onClose={onClose}

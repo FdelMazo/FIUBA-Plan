@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400&display=swap");
 
+.rbc-calendar {
+  background: var(--chakra-colors-calendarbg);
+}
+
+#dark .rbc-calendar {
+  background: var(--chakra-colors-calendarbgdark);
+}
+
 .rbc-allday-cell {
   display: none;
 }
@@ -17,21 +25,28 @@
 
 .rbc-time-gutter {
   padding: 0 0.5em;
-  border-right: 2px solid #2d3436;
   font-weight: bold;
-  color: #2d3436;
+  font-size: large;
+  color: var(--chakra-colors-drawerbg);
+  margin-right: 5px;
+}
+#dark .rbc-time-gutter {
+  color: var(--chakra-colors-primary-600);
 }
 
-.rbc-time-header.rbc-overflowing {
-  border: none;
+.rbc-time-content > * + * > * {
+  border: 3px solid;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  border-color: var(--chakra-colors-drawerbg);
+}
+#dark .rbc-time-content > * + * > * {
+  border-color: var(--chakra-colors-primary-300);
 }
 
 .rbc-day-slot .rbc-events-container {
   margin: 0;
-}
-
-.rbc-time-content > * + * > * {
-  border: none;
 }
 
 .rbc-timeslot-group {
@@ -40,21 +55,32 @@
   align-items: center;
   border: none;
 }
+#dark .rbc-time-gutter .rbc-timeslot-group {
+  border-bottom: 1px solid var(--chakra-colors-primary-300);
+}
+#dark .rbc-time-gutter .rbc-timeslot-group:last-child {
+  border-bottom: none;
+}
 
 .rbc-row {
   height: 3em;
   line-height: 3em;
-  border: none;
 }
 
 .rbc-header * {
   cursor: text;
-  color: #2d3436;
+  color: var(--chakra-colors-drawerbg);
   font-size: larger;
+}
+#dark .rbc-header * {
+  color: var(--chakra-colors-primary-600);
 }
 
 .rbc-day-slot .rbc-timeslot-group:nth-child(even) {
-  background: #f1f1f1;
+  background: var(--chakra-colors-calendarbggrey);
+}
+#dark .rbc-day-slot .rbc-timeslot-group {
+  background: inherit;
 }
 
 .rbc-header {
@@ -62,7 +88,7 @@
 }
 
 .rbc-day-slot {
-  border-right: 2px solid #2d3436;
+  border: none;
 }
 
 .rbc-day-slot .rbc-time-slot {
@@ -71,10 +97,6 @@
 
 .rbc-time-content {
   border-top: none;
-}
-
-.rbc-header {
-  border-left: none;
 }
 
 .rbc-header + .rbc-header {
@@ -90,50 +112,29 @@
   font-size: small;
 }
 
+.rbc-agenda-time-cell {
+  border: 1px solid var(--chakra-colors-primary-300);
+}
+
 .rbc-agenda-date-cell {
-  background-color: #f1f1f1;
+  background: var(--chakra-colors-calendarbggrey);
+  border: none;
+}
+
+#dark .rbc-agenda-table .rbc-agenda-date-cell {
+  background: var(--chakra-colors-calendarbgdark);
 }
 
 .rbc-agenda-event-cell-sub {
   font-size: x-small;
-  color: #555;
+  color: var(--chakra-colors-drawerbg);
 }
 
-/*
- * Currently Firefox-only
- */
-
-/* Scroll principal */
-.rbc-time-content {
-  scrollbar-width: thin;
-  scrollbar-color: #9f9f9f white;
-}
-/* Scroll busqueda de materias */
-.css-yks5vd {
-  scrollbar-width: thin;
-  scrollbar-color: #b794f4 #2d3436;
+#dark .rbc-agenda-table * {
+  background: var(--chakra-colors-agendabgdark);
+  color: var(--chakra-colors-calendarbg);
 }
 
-/*
- * Works on Webkit based browsers(chrome, edge, safari, etc)
- */
-
-*::-webkit-scrollbar {
-  width: 6px;
-}
-
-/* Scroll principal */
-.rbc-time-content::-webkit-scrollbar-track {
-  background: white;
-}
-.rbc-time-content::-webkit-scrollbar-thumb {
-  background-color: #9f9f9f;
-}
-
-/* Scroll busqueda de materias */
-.css-yks5vd::-webkit-scrollbar-track {
-  background: #2d3436;
-}
-.css-yks5vd::-webkit-scrollbar-thumb {
-  background-color: #b794f4;
+#dark .rbc-agenda-table {
+  border: none;
 }

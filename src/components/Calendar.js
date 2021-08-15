@@ -48,8 +48,11 @@ const MyCalendar = (props) => {
   function eventPropsGetter(event, start, end, isSelected) {
     const style = {
       borderWidth: "thin thin thin thick",
-      color: "#1f1f1f",
+      borderRightColor: "#d2adf4", //primary.300
+      borderBottomColor: "#d2adf4", //primary.300
+      borderTopColor: "#d2adf4", //primary.300
       borderLeftColor: event.color,
+      color: "#1f1f1f",
       cursor: "default",
     };
     const calendarWeekStyle = {
@@ -70,7 +73,6 @@ const MyCalendar = (props) => {
       formats={formats}
       toolbar={false}
       view={useAgenda ? "calendarAgenda" : "calendarWeek"}
-      onView={() => {}}
       views={{ calendarAgenda: CalendarAgenda, calendarWeek: CalendarWeek }}
       localizer={localizer}
       min={min}

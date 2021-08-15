@@ -1,10 +1,10 @@
+import { CheckIcon, ChevronRightIcon, SearchIcon } from "@chakra-ui/icons";
 import {
-  Icon,
+  Box,
   Input,
   InputGroup,
   InputRightElement,
   List,
-  ListIcon,
   PseudoBox,
 } from "@chakra-ui/react";
 import { useCombobox } from "downshift";
@@ -12,15 +12,14 @@ import React from "react";
 import { DataContext } from "../Context";
 
 const SelectMateria = (props) => {
-  const { data, agregarMateria } = React.useContext(DataContext);
+  const { materiasToShow, toggleMateria, selectedMaterias } =
+    React.useContext(DataContext);
+  const allMaterias = React.useMemo(() => materiasToShow, [materiasToShow]);
   const [inputItems, setInputItems] = React.useState([]);
-  const [visibleSubjects, setVisibleSubjects] = React.useState([]);
 
   React.useEffect(() => {
-    const materiasVisibles = data.materias.filter((m) => m.show);
-    setVisibleSubjects(materiasVisibles);
-    setInputItems(materiasVisibles);
-  }, [data]);
+    setInputItems(allMaterias);
+  }, [allMaterias]);
 
   const {
     isOpen,
@@ -34,7 +33,7 @@ const SelectMateria = (props) => {
       let toSearch = inputValue.toLowerCase();
       toSearch = toSearch.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
       setInputItems(
-        visibleSubjects.filter(
+        allMaterias.filter(
           (item) =>
             item.nombre
               .toLowerCase()
@@ -48,62 +47,60 @@ const SelectMateria = (props) => {
 
   return (
     <>
-      <InputGroup w="100%" fontFamily="general" mt={4}>
+      <InputGroup w="100%" fontFamily="general" mt={4} mb={2}>
         <Input
           {...getToggleButtonProps()}
-          backgroundColor="background"
+          {...getInputProps()}
+          {...getComboboxProps()}
           colorScheme="primary"
           variant="outline"
           borderColor="primary"
           color="primary.500"
-          {...getInputProps()}
-          {...getComboboxProps()}
           placeholder="Buscar Materia..."
         />
-        <InputRightElement
-          children={<Icon name="search" color="primary.500" />}
-        />
+        <InputRightElement children={<SearchIcon color="primary.500" />} />
       </InputGroup>
       {isOpen && (
         <List
-          textAlign={["left"]}
-          fontFamily="general"
           {...getMenuProps()}
           p={1}
-          mb={0}
-          border="1px"
-          borderRadius="md"
+          mt={4}
+          mb={2}
+          borderWidth={1}
+          borderRadius={5}
           borderColor="primary.500"
           style={{
-            maxHeight: "10em",
+            maxHeight: "20em",
             overflowY: "scroll",
           }}
         >
           {inputItems.length ? (
             inputItems
               .sort((a, b) => a.codigo > b.codigo)
-              .map((item) => (
-                <PseudoBox
-                  borderRadius="md"
+              .map((materia) => (
+                <Box
+                  borderRadius={5}
                   _hover={{ bg: "gray.500" }}
                   color="primary.500"
-                  fontSize="small"
-                  onClick={() => {
-                    !item.visible && agregarMateria(item);
-                  }}
+                  fontSize="sm"
+                  onClick={() => toggleMateria(materia.codigo)}
                 >
-                  <li>
-                    <ListIcon icon={item.visible ? "check" : "chevron-right"} />
-                    ({item.codigo}) {item.nombre}
+                  <li key={materia.codigo}>
+                    {selectedMaterias.includes(materia.codigo) ? (
+                      <CheckIcon mr={2} />
+                    ) : (
+                      <ChevronRightIcon mr={2} />
+                    )}
+                    ({materia.codigo}) {materia.nombre}
                   </li>
-                </PseudoBox>
+                </Box>
               ))
           ) : (
             <PseudoBox
               borderRadius="md"
               _hover={{ bg: "gray.500" }}
               color="primary.500"
-              fontSize="small"
+              fontSize="sm"
             >
               <li>No se encontraron materias.</li>
             </PseudoBox>

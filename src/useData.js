@@ -1,144 +1,199 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+import ColorHash from "color-hash";
 import React from "react";
 import { data as jsonData } from "./data/horarios";
-import { randomColor } from "./utils/colorHelper";
+
+const toggler = (arr, setArr, item) => {
+  let newArr = [];
+
+  if (arr.includes(item)) {
+    newArr = arr.filter((i) => !!i && i !== item);
+  } else {
+    newArr = [...arr, item];
+  }
+
+  setArr(newArr);
+};
 
 const useGraph = () => {
-  const cacheData = JSON.parse(window.localStorage.getItem("data"));
-  const cacheEvents = JSON.parse(window.localStorage.getItem("events")) || [];
-  cacheEvents.forEach((e) => {
-    e.start = new Date(e.start);
-    e.end = new Date(e.end);
-  });
-
-  const [data, setData] = React.useState(
-    cacheData?.timestamp === jsonData.timestamp ? cacheData : jsonData
+  const select = (key) => {
+    if (
+      JSON.parse(window.localStorage.getItem("fiubaplan"))?.cuatrimestre !==
+      jsonData.cuatrimestre
+    )
+      return null;
+    return JSON.parse(window.localStorage.getItem("fiubaplan"))?.[key];
+  };
+  console.log(window.localStorage.getItem("fiubaplan")?.selectedMaterias);
+  const colorHash = new ColorHash({ lightness: 0.7, saturation: 0.7 });
+  const [selectedCarreras, setSelectedCarreras] = React.useState(
+    select("selectedCarreras") || []
   );
-  const [events, setEvents] = React.useState(
-    cacheData?.timestamp === jsonData.timestamp ? cacheEvents : []
+  const [selectedMaterias, setSelectedMaterias] = React.useState(
+    select("selectedMaterias") || []
+  );
+  const [selectedCursos, setSelectedCursos] = React.useState(
+    select("selectedCursos") || []
+  );
+  const [events, setEvents] = React.useState([]);
+  const [materiasToShow, setMateriasToShow] = React.useState([]);
+
+  React.useEffect(() => {
+    window.localStorage.setItem(
+      "fiubaplan",
+      JSON.stringify({
+        cuatrimestre: jsonData.cuatrimestre,
+        selectedCarreras,
+        selectedMaterias,
+        selectedCursos,
+      })
+    );
+  }, [selectedCarreras, selectedMaterias, selectedCursos]);
+
+  const carreras = React.useMemo(
+    () => jsonData.carreras.map((c) => c.nombre).sort(),
+    []
+  );
+
+  const actualizacion = React.useMemo(
+    () => ({
+      cuatrimestre: jsonData.cuatrimestre,
+    }),
+    []
   );
 
   React.useEffect(() => {
-    window.localStorage.setItem("data", JSON.stringify(data));
-    window.localStorage.setItem("events", JSON.stringify(events));
-  }, [data, events]);
-
-  const toggleCarrera = (item) => {
-    const newData = JSON.parse(JSON.stringify(data));
-    const carrera = newData.carreras.find((c) => c.nombre === item.nombre);
-    const v = !!carrera.show;
-    carrera.show = !v;
-
-    const materiasAMostrar = new Set(
-      newData.carreras
-        .filter((c) => c?.show)
-        .reduce((arr, c) => arr.concat(...c.materias), [])
-    );
-
-    const materiasShown = data.materias.filter((m) =>
-      materiasAMostrar.has(m.codigo)
-    );
-    const materiasNotShown = newData.materias.filter(
-      (m) => !materiasAMostrar.has(m.codigo)
-    );
-
-    materiasShown.forEach((m) => (m.show = true));
-    materiasNotShown.forEach((m) => (m.show = false));
-    newData.materias = [...materiasShown, ...materiasNotShown];
-    newData.materias.sort((a, b) => a.codigo > b.codigo);
-    setData(newData);
-  };
-
-  const agregarMateria = (item) => {
-    const newData = JSON.parse(JSON.stringify(data));
-    const materia = newData.materias.find((m) => m.codigo === item.codigo);
-    materia.visible = true;
-    const idPrimerCurso = materia.cursos[0];
-    const curso = newData.cursos.find((c) => c.codigo === idPrimerCurso);
-    curso.show = true;
-    curso.color = randomColor(10);
-
-    const addEvents = curso.clases.map((clase) => {
-      const inicio = new Date(2018, 0, clase.dia);
-      const [inicioHora, inicioMinutos] = clase.inicio.split(":");
-      inicio.setHours(inicioHora, inicioMinutos);
-      const fin = new Date(2018, 0, clase.dia);
-      const [finHora, finMinutos] = clase.fin.split(":");
-      fin.setHours(finHora, finMinutos);
-
-      return {
-        start: inicio,
-        end: fin,
-        codigo: curso.codigo,
-        title: curso.docentes,
-        color: curso.color,
-        materia: materia.nombre,
-      };
-    });
-    setEvents([...events, ...addEvents]);
-    setData(newData);
-  };
-
-  const removerMateria = (item) => {
-    const newData = JSON.parse(JSON.stringify(data));
-    const materia = newData.materias.find((m) => m.codigo === item.codigo);
-    materia.visible = false;
-
-    const cursos = materia.cursos;
-
-    cursos.forEach((codigo) => {
-      const curso = newData.cursos.find((c) => c.codigo === codigo);
-      const v = !!curso.show;
-      if (v) {
-        curso.show = false;
-      }
-    });
-
-    setEvents(events.filter((e) => !materia.cursos.includes(e.codigo)));
-    setData(newData);
-  };
-
-  const toggleCurso = (item, materia) => {
-    const newData = JSON.parse(JSON.stringify(data));
-
-    const curso = newData.cursos.find((c) => c.codigo === item.codigo);
-    const v = !!curso.show;
-    if (v) {
-      curso.show = false;
-      const addEvents = events.filter((e) => e.codigo !== curso.codigo);
-      setEvents(addEvents);
+    let codigos = [];
+    if (!selectedCarreras.length) {
+      codigos = carreras
+        .map((nombre) => jsonData.carreras.find((c) => c.nombre === nombre))
+        .filter((materia) => !!materia)
+        .reduce((arr, c) => arr.concat(...c.materias), []);
     } else {
-      curso.show = true;
-      curso.color = randomColor(10);
-
-      const addEvents = curso.clases.map((clase) => {
-        const inicio = new Date(2018, 0, clase.dia);
-        const [inicioHora, inicioMinutos] = clase.inicio.split(":");
-        inicio.setHours(inicioHora, inicioMinutos);
-        const fin = new Date(2018, 0, clase.dia);
-        const [finHora, finMinutos] = clase.fin.split(":");
-        fin.setHours(finHora, finMinutos);
-        return {
-          start: inicio,
-          end: fin,
-          codigo: curso.codigo,
-          title: curso.docentes,
-          color: curso.color,
-          materia: materia.nombre,
-        };
-      });
-      setEvents([...events, ...addEvents]);
+      codigos = selectedCarreras
+        .map((nombre) => jsonData.carreras.find((c) => c.nombre === nombre))
+        .filter((materia) => !!materia)
+        .reduce((arr, c) => arr.concat(...c.materias), []);
     }
+    const codigosUnicos = [...new Set(codigos)].sort();
+    let materias = codigosUnicos
+      .map((c) => jsonData.materias.find((m) => m.codigo === c))
+      .filter((materia) => !!materia)
+      .map((m) => {
+        return { codigo: m.codigo, nombre: m.nombre };
+      });
+    setMateriasToShow(materias);
+  }, [carreras, selectedCarreras]);
 
-    setData(newData);
+  const getMateria = (codigo) => {
+    const materia = jsonData.materias.find((m) => m.codigo === codigo);
+    return {
+      codigo: materia.codigo,
+      nombre: materia.nombre,
+    };
+  };
+
+  const getCursos = (codigo) => {
+    const comisiones = jsonData.materias.find(
+      (m) => m.codigo === codigo
+    ).cursos;
+    return comisiones
+      .map((codigo) => jsonData.cursos.find((c) => c.codigo === codigo))
+      .filter((curso) => !!curso)
+      .map((curso) => ({
+        codigo: curso.codigo,
+        docentes: curso.docentes,
+        materia: getMateria(codigo).nombre,
+      }));
+  };
+
+  React.useEffect(() => {
+    console.log(selectedCursos);
+    let eventos = selectedCursos
+      .map((curso) => ({
+        ...jsonData.cursos.find((c) => c.codigo === curso.codigo),
+        materia: curso.materia,
+      }))
+      .filter((curso) => !!curso)
+      .map((curso) =>
+        curso.clases.map((clase) => {
+          const inicio = new Date(2018, 0, clase.dia);
+          const [inicioHora, inicioMinutos] = clase.inicio.split(":");
+          inicio.setHours(inicioHora, inicioMinutos);
+          const fin = new Date(2018, 0, clase.dia);
+          const [finHora, finMinutos] = clase.fin.split(":");
+          fin.setHours(finHora, finMinutos);
+
+          return {
+            start: inicio,
+            end: fin,
+            codigo: curso.codigo,
+            id: `${curso.codigo}${inicio}`,
+            title: curso.docentes,
+            color: colorHash.hex(curso.docentes),
+            materia: curso.materia.nombre,
+          };
+        })
+      )
+      .reduce((arr, e) => arr.concat(...e), []);
+    setEvents(eventos);
+  }, [selectedCursos]);
+
+  const toggleCarrera = (nombre) => {
+    toggler(selectedCarreras, setSelectedCarreras, nombre);
+  };
+  const toggleMateria = (codigo) => {
+    const materia = getMateria(codigo);
+    if (selectedMaterias.includes(codigo)) {
+      const remover = getCursos(codigo).filter((curso) =>
+        selectedCursos.find((c) => c.codigo === curso.codigo)
+      );
+      removerCursos(remover);
+    } else {
+      toggleCurso(getCursos(codigo)[0], materia);
+    }
+    toggler(selectedMaterias, setSelectedMaterias, codigo);
+  };
+
+  const removerCursos = (cursos) => {
+    let newSelectedCursos = selectedCursos.filter(
+      (item) => !!item && !cursos.map((c) => c.codigo).includes(item.codigo)
+    );
+    setSelectedCursos(newSelectedCursos);
+  };
+
+  const toggleCurso = (curso, materia) => {
+    let newSelectedCursos = [];
+    if (selectedCursos.find((item) => item.codigo === curso.codigo)) {
+      newSelectedCursos = selectedCursos.filter(
+        (item) => !!item && item.codigo !== curso.codigo
+      );
+    } else {
+      newSelectedCursos = [
+        ...selectedCursos,
+        {
+          codigo: curso.codigo,
+          color: colorHash.hex(curso.docentes),
+          materia,
+        },
+      ];
+    }
+    setSelectedCursos(newSelectedCursos);
   };
 
   return {
-    data,
-    events,
     toggleCarrera,
-    agregarMateria,
+    toggleMateria,
+    selectedMaterias,
+    carreras,
+    selectedCarreras,
+    materiasToShow,
+    actualizacion,
+    selectedCursos,
+    getCursos,
+    getMateria,
+    events,
     toggleCurso,
-    removerMateria,
   };
 };
 

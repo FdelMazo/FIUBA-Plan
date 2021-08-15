@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import ColorHash from "color-hash";
 import React from "react";
+import { carreras as jsonCarreras } from "./data/carreras";
 import { data as jsonData } from "./data/horarios";
 
 const toggler = (arr, setArr, item) => {
@@ -52,7 +53,7 @@ const useGraph = () => {
   }, [selectedCarreras, selectedMaterias, selectedCursos, noCursar]);
 
   const carreras = React.useMemo(
-    () => jsonData.carreras.map((c) => c.nombre).sort(),
+    () => jsonCarreras.map((c) => c.nombre).sort(),
     []
   );
 
@@ -67,12 +68,12 @@ const useGraph = () => {
     let codigos = [];
     if (!selectedCarreras.length) {
       codigos = carreras
-        .map((nombre) => jsonData.carreras.find((c) => c.nombre === nombre))
+        .map((nombre) => jsonCarreras.find((c) => c.nombre === nombre))
         .filter((materia) => !!materia)
         .reduce((arr, c) => arr.concat(...c.materias), []);
     } else {
       codigos = selectedCarreras
-        .map((nombre) => jsonData.carreras.find((c) => c.nombre === nombre))
+        .map((nombre) => jsonCarreras.find((c) => c.nombre === nombre))
         .filter((materia) => !!materia)
         .reduce((arr, c) => arr.concat(...c.materias), []);
     }

@@ -5,7 +5,6 @@ import {
   InputGroup,
   InputRightElement,
   List,
-  PseudoBox,
 } from "@chakra-ui/react";
 import { useCombobox } from "downshift";
 import React from "react";
@@ -97,14 +96,9 @@ const SelectMateria = (props) => {
                 </Box>
               ))
           ) : (
-            <PseudoBox
-              borderRadius="md"
-              _hover={{ bg: "gray.500" }}
-              color="primary.500"
-              fontSize="sm"
-            >
+            <Box borderRadius={5} color="primary.500" fontSize="sm">
               <li>No se encontraron materias.</li>
-            </PseudoBox>
+            </Box>
           )}
         </List>
       )}

@@ -16,35 +16,16 @@ Una vez terminados los cambios, con solo hacer un PR basta (porque la aplicació
 
 ## Actualización cuatrimestral de horarios
 
-Todos los cuatrimestres hay que actualizar los horarios de la aplicación. Para esto, se utiliza el notebook [`data/parse_horarios.ipynb`](data/parse_horarios.ipynb), que es un pseudo script en Python que utiliza Beautiful Soup 4 para scrapear código html. Se necesita tener dentro de `data/raw` un archivo .html por cada carrera a agregar.
-
-Cada .html se saca del [SIU](https://guaranigrado.fi.uba.ar/), estando loggeado como un usuario de la carrera a scrapear. Es por eso que todos los cuatrimestres se necesita conseguir a un alumno de cada carrera de FIUBA\* que consiga los archivos, de la siguiente manera:
-
-\*Es importante que si el alumno esta anotado en más de una carrera o más de un plan, arriba a la derecha tenga seleccionada la correcta _propuesta_ del SIU.
-
-1. Conectarse al SIU
-2. Ir a "Reportes" > "Oferta de Comisiones"
-3. Tocar CTRL+U o COMMAND+OPTION+U para ver el HTML entero
-4. Todo ese texto es el que se necesita. Hay que guardarlo en un archivo .txt (por favor, ni PDFs, ni docx) y mandarselo a alguien que sea un colaborador del proyecto (pueden mandarmelo a mí por mail fdelmazo@fi.uba.ar)
+Todos los cuatrimestres hay que actualizar los horarios de la aplicación. Para esto, se utiliza el notebook [`get_cursos.ipynb`](get_cursos.ipynb), que es un script en Python que llama a la API de [https://ofertahoraria.fi.uba.ar](https://ofertahoraria.fi.uba.ar) y consigue todos los horarios y los pone en `src/data/horarios.js`. La lista de materias por carrera se encuentra en `src/data/carreras.js` y esta hecha 'a mano' (no sale de ningun lado, más que de registros de cuatris anteriores). Esta lista es algo que no debería cambiar cuatrimestre a cuatrimestre, pero si una materia fuese a cambiar de código en el SIU o en ofertahoraria entonces habría que actualizar el archivo.
 
 ---
 
-Una vez tenidos estos archivos, el notebook se encarga de pasarlos a un json y devolver un archivo `horarios.js`. De todas formas, si algún día cambia el código del SIU y se hace más difícil de scrapear, o surge que FIUBA larga algún json/csv/pdf/x con todos los horarios unificados (que se agradecería bastante...), o lo que sea, no importa cómo se consigan los datos, lo único importante es llegar a tener el json en sí, el cual tiene el siguiente formato:
+De todas formas, si algún día cambia el código del ofertahoraria y se hace más difícil de llamra a la API, o se cae el servicio, o lo que sea, no importa cómo se consigan los datos, lo único importante es llegar a tener el `horarios.js` en sí, el cual tiene el siguiente formato:
 
 ```jsonc
 {
   "cuatrimestre": "2020C2", // Nombre de Cuatrimestre, para la notificación al entrar al sitio ("Actualizado al 2020C2")
   "timestamp": "2020-09-22 00:24:11.950205", // Un timestamp que se usa como identificador del json. Esto sirve para que, si el ultimo json almacenado en el cache del usuario no matchea con el json en prod, entonces se borra el cache (para evitar que alguien vea horarios desactualizados solo porque no limpio su historial del browser)
-  "carreras": [ // Array de objetos de cada carrera
-    {
-      "nombre": "Ingeniería de Alimentos", // Nombre de Carrera
-      "materias": [ // Array de códigos de materias que contiene la carrera
-        "7641",
-        "...",
-      ]
-    },
-    {...}
-  ],
   "materias": [ // Array de todas las materias de todas las carreras
     {
       "codigo": "7641", // Código de la materia, que es por el cual se la identifica para decidir qué carrera la contiene

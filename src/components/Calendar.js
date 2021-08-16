@@ -1,5 +1,5 @@
-import { ViewOffIcon } from "@chakra-ui/icons";
-import { Box, IconButton, Text, Tooltip } from "@chakra-ui/react";
+import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
+import { Box, IconButton, Text } from "@chakra-ui/react";
 import moment from "moment";
 import "moment/locale/es";
 import React from "react";
@@ -77,14 +77,17 @@ const MyCalendar = (props) => {
           <Text noOfLines={[1, 2, 3]} className="rbc-agenda-event-cell" mb={2}>
             {props.event.materia}
           </Text>
-          <Tooltip label="No la voy a cursar" placement="top">
-            <IconButton
-              variant="ghost"
-              colorScheme="primary"
-              icon={<ViewOffIcon color={props.event.color} />}
-              onClick={() => toggleNoCursar(props.event.id)}
-            />
-          </Tooltip>
+          <IconButton
+            variant="ghost"
+            icon={
+              noCursar.includes(props.event.id) ? (
+                <ViewIcon color={props.event.color} />
+              ) : (
+                <ViewOffIcon color={props.event.color} />
+              )
+            }
+            onClick={() => toggleNoCursar(props.event.id)}
+          />
         </Box>
         <Text noOfLines={[1, 3, 5]} className="rbc-agenda-event-cell-sub">
           {props.event.title}
@@ -92,22 +95,12 @@ const MyCalendar = (props) => {
       </Box>
     ) : (
       <Box>
-        <Box>
-          <Text noOfLines={[1, 2, 3]} className="rbc-agenda-event-cell" mb={2}>
-            {props.event.materia}
-          </Text>
-          <Text noOfLines={[1, 3, 5]} className="rbc-agenda-event-cell-sub">
-            {props.event.title}
-          </Text>
-        </Box>
-        <Tooltip label="No la voy a cursar" placement="top">
-          <IconButton
-            variant="ghost"
-            colorScheme="primary"
-            icon={<ViewOffIcon color={props.event.color} />}
-            onClick={() => toggleNoCursar(props.event.id)}
-          />
-        </Tooltip>
+        <Text noOfLines={[1, 2, 3]} className="rbc-agenda-event-cell" mb={2}>
+          {props.event.materia}
+        </Text>
+        <Text noOfLines={[1, 3, 5]} className="rbc-agenda-event-cell-sub">
+          {props.event.title}
+        </Text>
       </Box>
     );
   };
@@ -126,6 +119,9 @@ const MyCalendar = (props) => {
       eventPropGetter={eventPropsGetter}
       components={{
         event: MateriaEvent,
+      }}
+      onSelectEvent={(e) => {
+        toggleNoCursar(e.id);
       }}
       dayLayoutAlgorithm="no-overlap"
     />

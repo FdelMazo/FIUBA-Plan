@@ -62,7 +62,6 @@ const MateriasDrawer = (props) => {
   const toast = useToast();
   const bugToast = React.useRef();
   const [showGracias, setShowGracias] = React.useState(false);
-  const [showReminder, setShowReminder] = React.useState(true);
 
   return (
     <LightMode>
@@ -99,55 +98,7 @@ const MateriasDrawer = (props) => {
               ))}
             </Box>
           </DrawerBody>
-          {showReminder && (
-            <Box
-              m={2}
-              p={2}
-              borderColor="primary.300"
-              borderWidth={1}
-              borderRadius={5}
-            >
-              <Flex row justifyContent="space-between">
-                <Text color="primary.600" fontSize="sm" fontWeight="bold">
-                  Un recordatorio que nadie pidió.
-                </Text>
-                <CloseButton
-                  size="sm"
-                  color="primary.600"
-                  onClick={() => {
-                    setShowReminder(false);
-                  }}
-                />
-              </Flex>
-
-              <Text color="primary.600" fontSize="xs" fontWeight="bold">
-                Todos los cuatrimestres se sobrecarga el SIU y se cae,
-                retrasando todo el proceso de inscripcion. Esto es en gran parte
-                por culpa de que la gente entra a fijarse cuantos cupos quedan
-                de cada materia antes de poder inscribirse.
-              </Text>
-              <Text color="primary.600" fontSize="xs" fontWeight="bold">
-                El sitio{" "}
-                <Link
-                  isExternal
-                  _hover={{
-                    color: "white",
-                  }}
-                  href="https://ofertahoraria.fi.uba.ar/"
-                >
-                  https://ofertahoraria.fi.uba.ar/
-                  <ExternalLinkIcon color="white" mx={1} />
-                </Link>
-                (oficial de FIUBA) tiene <Text as="em"> exactamente </Text> la
-                misma información que el SIU, incluyendo los cupos. Si queres
-                chusmear si podes anotarte, anda a ofertahoraria, no al SIU!
-              </Text>
-              <Text color="primary.600" fontSize="xs" fontWeight="bold">
-                Gracias!
-              </Text>
-            </Box>
-          )}
-          <DrawerFooter flex row justifyContent="space-between" p={4}>
+          <DrawerFooter p={4} flex row justifyContent="space-between">
             <Tooltip label="Cambiar vista" placement="top">
               <IconButton
                 variant="outline"

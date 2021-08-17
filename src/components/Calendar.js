@@ -77,17 +77,19 @@ const MyCalendar = (props) => {
           <Text noOfLines={[1, 2, 3]} className="rbc-agenda-event-cell" mb={2}>
             {props.event.materia}
           </Text>
-          <IconButton
-            variant="ghost"
-            icon={
-              noCursar.includes(props.event.id) ? (
-                <ViewIcon color={props.event.color} />
-              ) : (
-                <ViewOffIcon color={props.event.color} />
-              )
-            }
-            onClick={() => toggleNoCursar(props.event.id)}
-          />
+          {props.event.id && (
+            <IconButton
+              variant="ghost"
+              icon={
+                noCursar.includes(props.event.id) ? (
+                  <ViewIcon color={props.event.color} />
+                ) : (
+                  <ViewOffIcon color={props.event.color} />
+                )
+              }
+              onClick={() => toggleNoCursar(props.event.id)}
+            />
+          )}
         </Box>
         <Text noOfLines={[1, 3, 5]} className="rbc-agenda-event-cell-sub">
           {props.event.title}

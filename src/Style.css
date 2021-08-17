@@ -79,8 +79,8 @@
 .rbc-day-slot .rbc-timeslot-group:nth-child(even) {
   background: var(--chakra-colors-calendarbggrey);
 }
-#dark .rbc-day-slot .rbc-timeslot-group {
-  background: inherit;
+#dark .rbc-day-slot .rbc-timeslot-group:nth-child(even) {
+  background: var(--chakra-colors-agendabgdark);
 }
 
 .rbc-header {

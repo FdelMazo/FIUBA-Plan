@@ -56,8 +56,13 @@ const submitBug = (bug) => {
 
 const MateriasDrawer = (props) => {
   const { useAgenda, setUseAgenda, isOpen, onClose } = props;
-  const { materiasToShow, selectedMaterias, limpiarCursos, selectedCursos } =
-    React.useContext(DataContext);
+  const {
+    materiasToShow,
+    selectedMaterias,
+    limpiarCursos,
+    limpiarMaterias,
+    selectedCursos,
+  } = React.useContext(DataContext);
   const { toggleColorMode } = useColorMode();
   const toast = useToast();
   const bugToast = React.useRef();
@@ -77,22 +82,63 @@ const MateriasDrawer = (props) => {
             <Box my={8}>
               <SelectCarreras />
               {!!materiasToShow.length && <SelectMateria />}
-              {!!selectedCursos.length && (
-                <Box textAlign="right" w="100%">
-                  <Button
-                    p={0}
-                    rightIcon={<CloseButton fontSize="xs" />}
-                    colorScheme="primary"
-                    variant="ghost"
-                    fontSize="sm"
-                    onClick={() => {
-                      limpiarCursos();
-                    }}
-                  >
-                    Resetear Catedras
-                  </Button>
-                </Box>
-              )}
+
+              <Flex row justifyContent="space-around">
+                {!!selectedMaterias.length && (
+                  <Box>
+                    <Button
+                      mx={2}
+                      borderColor="primary.300"
+                      borderWidth={1}
+                      py={0}
+                      px={3}
+                      leftIcon={
+                        <Icon boxSize={5} viewBox="0 0 24 24">
+                          <path
+                            fill="currentColor"
+                            d="M7 4C7 2.89543 7.89543 2 9 2H15C16.1046 2 17 2.89543 17 4V6H18.9897C18.9959 5.99994 19.0021 5.99994 19.0083 6H21C21.5523 6 22 6.44772 22 7C22 7.55228 21.5523 8 21 8H19.9311L19.0638 20.1425C18.989 21.1891 18.1182 22 17.0689 22H6.93112C5.88184 22 5.01096 21.1891 4.9362 20.1425L4.06888 8H3C2.44772 8 2 7.55228 2 7C2 6.44772 2.44772 6 3 6H4.99174C4.99795 5.99994 5.00414 5.99994 5.01032 6H7V4ZM9 6H15V4H9V6ZM6.07398 8L6.93112 20H17.0689L17.926 8H6.07398ZM10 10C10.5523 10 11 10.4477 11 11V17C11 17.5523 10.5523 18 10 18C9.44772 18 9 17.5523 9 17V11C9 10.4477 9.44772 10 10 10ZM14 10C14.5523 10 15 10.4477 15 11V17C15 17.5523 14.5523 18 14 18C13.4477 18 13 17.5523 13 17V11C13 10.4477 13.4477 10 14 10Z"
+                          />
+                        </Icon>
+                      }
+                      colorScheme="primary"
+                      variant="ghost"
+                      fontSize="sm"
+                      onClick={() => {
+                        limpiarMaterias();
+                      }}
+                    >
+                      Materias
+                    </Button>
+                  </Box>
+                )}
+                {!!selectedCursos.length && (
+                  <Box>
+                    <Button
+                      mx={2}
+                      borderColor="primary.300"
+                      borderWidth={1}
+                      py={0}
+                      px={3}
+                      rightIcon={
+                        <Icon boxSize={5} viewBox="0 0 24 24">
+                          <path
+                            fill="currentColor"
+                            d="M7 4C7 2.89543 7.89543 2 9 2H15C16.1046 2 17 2.89543 17 4V6H18.9897C18.9959 5.99994 19.0021 5.99994 19.0083 6H21C21.5523 6 22 6.44772 22 7C22 7.55228 21.5523 8 21 8H19.9311L19.0638 20.1425C18.989 21.1891 18.1182 22 17.0689 22H6.93112C5.88184 22 5.01096 21.1891 4.9362 20.1425L4.06888 8H3C2.44772 8 2 7.55228 2 7C2 6.44772 2.44772 6 3 6H4.99174C4.99795 5.99994 5.00414 5.99994 5.01032 6H7V4ZM9 6H15V4H9V6ZM6.07398 8L6.93112 20H17.0689L17.926 8H6.07398ZM10 10C10.5523 10 11 10.4477 11 11V17C11 17.5523 10.5523 18 10 18C9.44772 18 9 17.5523 9 17V11C9 10.4477 9.44772 10 10 10ZM14 10C14.5523 10 15 10.4477 15 11V17C15 17.5523 14.5523 18 14 18C13.4477 18 13 17.5523 13 17V11C13 10.4477 13.4477 10 14 10Z"
+                          />
+                        </Icon>
+                      }
+                      colorScheme="primary"
+                      variant="ghost"
+                      fontSize="sm"
+                      onClick={() => {
+                        limpiarCursos();
+                      }}
+                    >
+                      Catedras
+                    </Button>
+                  </Box>
+                )}
+              </Flex>
               {selectedMaterias.map((m) => (
                 <SelectCurso codigo={m} />
               ))}

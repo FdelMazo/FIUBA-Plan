@@ -16,7 +16,7 @@ const toggler = (arr, setArr, item) => {
   setArr(newArr);
 };
 
-const useGraph = () => {
+const useData = () => {
   const select = (key) => {
     if (
       JSON.parse(window.localStorage.getItem("fiubaplan"))?.cuatrimestre !==
@@ -194,6 +194,11 @@ const useGraph = () => {
     setNoCursar([]);
   };
 
+  const limpiarMaterias = () => {
+    limpiarCursos();
+    setSelectedMaterias([]);
+  };
+
   const toggleNoCursar = (id) => {
     toggler(noCursar, setNoCursar, id);
   };
@@ -209,6 +214,7 @@ const useGraph = () => {
     actualizacion,
     selectedCursos,
     limpiarCursos,
+    limpiarMaterias,
     getCursos,
     getMateria,
     events,
@@ -217,4 +223,4 @@ const useGraph = () => {
   };
 };
 
-export default useGraph;
+export default useData;

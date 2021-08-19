@@ -26,6 +26,8 @@ const useData = () => {
     return JSON.parse(window.localStorage.getItem("fiubaplan"))?.[key];
   };
   const colorHash = new ColorHash({ lightness: 0.7, saturation: 0.7 });
+
+  const [showSabado, setShowSabado] = React.useState(false);
   const [selectedCarreras, setSelectedCarreras] = React.useState(
     select("selectedCarreras") || []
   );
@@ -63,6 +65,17 @@ const useData = () => {
     }),
     []
   );
+
+  React.useEffect(() => {
+    let sabado = false;
+    for (const e of events) {
+      if (e.end.getDay() === 6) {
+        sabado = true;
+        break;
+      }
+    }
+    setShowSabado(sabado);
+  }, [events]);
 
   React.useEffect(() => {
     let codigos = [];
@@ -218,6 +231,7 @@ const useData = () => {
     getCursos,
     getMateria,
     events,
+    showSabado,
     toggleCurso,
     toggleNoCursar,
   };

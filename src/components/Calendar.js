@@ -12,7 +12,8 @@ import CalendarWeek from "./CalendarWeek";
 
 const MyCalendar = (props) => {
   const { events, useAgenda } = props;
-  const { toggleNoCursar, noCursar } = React.useContext(DataContext);
+  const { toggleNoCursar, noCursar, showSabado } =
+    React.useContext(DataContext);
   const localizer = momentLocalizer(moment);
   const { width } = useWindowSize();
   const formats = {
@@ -125,6 +126,7 @@ const MyCalendar = (props) => {
       onSelectEvent={(e) => {
         toggleNoCursar(e.id);
       }}
+      showSabado={showSabado}
       dayLayoutAlgorithm="no-overlap"
     />
   );

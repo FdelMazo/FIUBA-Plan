@@ -19,7 +19,7 @@ function Agenda({
   const tbodyRef = useRef(null)
 
   const coveredDays = events.map((e) => e.start.getDay());
-  const notCoveredDays = [0, 1, 2, 3, 4, 5, 6].filter(
+  const notCoveredDays = [1, 2, 3, 4, 5].filter(
     (d) => !coveredDays.includes(d)
   );
   const dummyEvents = notCoveredDays.map((i) => ({

@@ -1,13 +1,13 @@
 import React from "react";
+import TimeGrid from "react-big-calendar/lib/TimeGrid";
 import Week from "react-big-calendar/lib/Week";
 import WorkWeek from "react-big-calendar/lib/WorkWeek";
-import TimeGrid from "react-big-calendar/lib/TimeGrid";
 
 class CalendarWeek extends WorkWeek {
   range(date, options) {
-    return Week.range(date, options).filter(
-      (d) => [0].indexOf(d.getDay()) === -1
-    );
+    const { showSabado } = options;
+    const DAYS = showSabado ? [1, 2, 3, 4, 5, 6] : [1, 2, 3, 4, 5];
+    return Week.range(date, options).filter((d) => DAYS.includes(d.getDay()));
   }
 
   title(date, { localizer }) {

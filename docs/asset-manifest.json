@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/FIUBA-Plan/static/css/main.d06e9150.chunk.css",
-    "main.js": "/FIUBA-Plan/static/js/main.a827078b.chunk.js",
-    "main.js.map": "/FIUBA-Plan/static/js/main.a827078b.chunk.js.map",
+    "main.js": "/FIUBA-Plan/static/js/main.d93b4b32.chunk.js",
+    "main.js.map": "/FIUBA-Plan/static/js/main.d93b4b32.chunk.js.map",
     "runtime-main.js": "/FIUBA-Plan/static/js/runtime-main.10d873af.js",
     "runtime-main.js.map": "/FIUBA-Plan/static/js/runtime-main.10d873af.js.map",
     "static/css/2.a32fabc6.chunk.css": "/FIUBA-Plan/static/css/2.a32fabc6.chunk.css",
     "static/js/2.3ff87aef.chunk.js": "/FIUBA-Plan/static/js/2.3ff87aef.chunk.js",
     "static/js/2.3ff87aef.chunk.js.map": "/FIUBA-Plan/static/js/2.3ff87aef.chunk.js.map",
     "index.html": "/FIUBA-Plan/index.html",
-    "precache-manifest.80c9390c8a8a90567dcd655ab81b8869.js": "/FIUBA-Plan/precache-manifest.80c9390c8a8a90567dcd655ab81b8869.js",
+    "precache-manifest.3e18a614fedf1f61633411ab2e549f6a.js": "/FIUBA-Plan/precache-manifest.3e18a614fedf1f61633411ab2e549f6a.js",
     "service-worker.js": "/FIUBA-Plan/service-worker.js",
     "static/css/2.a32fabc6.chunk.css.map": "/FIUBA-Plan/static/css/2.a32fabc6.chunk.css.map",
     "static/css/main.d06e9150.chunk.css.map": "/FIUBA-Plan/static/css/main.d06e9150.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.a32fabc6.chunk.css",
     "static/js/2.3ff87aef.chunk.js",
     "static/css/main.d06e9150.chunk.css",
-    "static/js/main.a827078b.chunk.js"
+    "static/js/main.d93b4b32.chunk.js"
   ]
 }

@@ -1,6 +1,6 @@
 export const data = {
   "cuatrimestre": "2021C2",
-  "timestamp": "2021-08-19 17:05:45.184175",
+  "timestamp": "2021-08-20 21:36:03.278412",
   "materias": [
     {
       "codigo": "6103",
@@ -1117,15 +1117,15 @@ export const data = {
       "cursos": [
         "6903-CURSO 10: BACHA / Barra Araujo",
         "6903-CURSO 11: BACHA / Coronel",
-        "6903-CURSO 12: BACHA / Asiitico",
+        "6903-CURSO 12: BACHA / Asiático",
         "6903-CURSO 1: CALZARETTO / Cabello",
         "6903-CURSO 2: CALZARETTO / Barra Araujo",
         "6903-CURSO 3: CALZARETTO / Coronel",
-        "6903-CURSO 4: CALZARETTO / Asiitico",
+        "6903-CURSO 4: CALZARETTO / Asiático",
         "6903-CURSO 5: LASANTA / Cabello",
         "6903-CURSO 6: LASANTA / Barra Araujo",
         "6903-CURSO 7: LASANTA / Coronel",
-        "6903-CURSO 8: LASANTA / Asiitico",
+        "6903-CURSO 8: LASANTA / Asiático",
         "6903-CURSO 9: BACHA / Cabello"
       ]
     },
@@ -1914,8 +1914,8 @@ export const data = {
         "7512-CURSO: 04-Schwarz",
         "7512-CURSO: 05-Sassano",
         "7512-CURSO: 06-Rodriguez",
-        "7512-CURSO: 07-Cavaliere Prictica Martes",
-        "7512-CURSO: 08-Cavaliere Prictica Lunes"
+        "7512-CURSO: 07-Cavaliere Práctica Martes",
+        "7512-CURSO: 08-Cavaliere Práctica Lunes"
       ]
     },
     {
@@ -3216,7 +3216,7 @@ export const data = {
     },
     {
       "codigo": "8534",
-      "nombre": "REGULACIÓN DE SERVICIOS PUBLICOS",
+      "nombre": "REGULACIÓN DE SERVICIOS PÚBLICOS",
       "cursos": [
         "8534-CURSO: 11"
       ]
@@ -3570,7 +3570,7 @@ export const data = {
       "codigo": "8648",
       "nombre": "SEMINARIO DE ELECTRÓNICA",
       "cursos": [
-        "8648-CURSO: 1 - Computación Cuintica (CARAM)",
+        "8648-CURSO: 1 - Computación Cuántica (CARAM)",
         "8648-CURSO: 2 - Robótica Móvil (MAS)",
         "8648-CURSO: 3 - Redes Satelitales (BELAUSTEGUI)"
       ]
@@ -3579,7 +3579,7 @@ export const data = {
       "codigo": "8649",
       "nombre": "SEMINARIO DE ELECTRÓNICA II",
       "cursos": [
-        "8649-CURSO: 1 - Computación Cuintica (CARAM)",
+        "8649-CURSO: 1 - Computación Cuántica (CARAM)",
         "8649-CURSO: 2 - Robótica Móvil (MAS)",
         "8649-CURSO: 3 - Redes Satelitales (BELAUSTEGUI)"
       ]
@@ -3628,14 +3628,14 @@ export const data = {
     },
     {
       "codigo": "8657",
-      "nombre": "ACUSTICA",
+      "nombre": "ACÚSTICA",
       "cursos": [
         "8657-CURSO: 1"
       ]
     },
     {
       "codigo": "8658",
-      "nombre": "ELECTROACUSTICA",
+      "nombre": "ELECTROACÚSTICA",
       "cursos": [
         "8658-CURSO: 1"
       ]
@@ -4003,15 +4003,15 @@ export const data = {
       "cursos": [
         "8917-CURSO 10: BACHA / Barra Araujo",
         "8917-CURSO 11: BACHA / Coronel",
-        "8917-CURSO 12: BACHA / Asiitico",
+        "8917-CURSO 12: BACHA / Asiático",
         "8917-CURSO 1: CALZARETTO / Cabello",
         "8917-CURSO 2: CALZARETTO / Barra Araujo",
         "8917-CURSO 3: CALZARETTO / Coronel",
-        "8917-CURSO 4: CALZARETTO / Asiitico",
+        "8917-CURSO 4: CALZARETTO / Asiático",
         "8917-CURSO 5: LASANTA / Cabello",
         "8917-CURSO 6: LASANTA / Barra Araujo",
         "8917-CURSO 7: LASANTA / Coronel",
-        "8917-CURSO 8: LASANTA / Asiitico",
+        "8917-CURSO 8: LASANTA / Asiático",
         "8917-CURSO 9: BACHA / Cabello"
       ]
     },
@@ -4631,7 +4631,7 @@ export const data = {
         "9504-CURSO: 05-Sassano",
         "9504-CURSO: 06-Rodriguez",
         "9504-CURSO: 07-Cavaliere Practica Martes",
-        "9504-CURSO: 08-Cavaliere Prictica Lunes"
+        "9504-CURSO: 08-Cavaliere Práctica Lunes"
       ]
     },
     {
@@ -5456,22 +5456,22 @@ export const data = {
       "docentes": "DI IORIO Y LUCERO, MARIA EUGENIA - GUALTIERI, SERGIO ALBERTO - A DESIGNAR, A DESIGNAR - ROMERO, FABIAN ALEJANDRO",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "14:00",
           "fin": "16:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "16:00",
           "fin": "18:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "14:00",
           "fin": "16:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "16:00",
           "fin": "18:00"
         }
@@ -5589,14 +5589,14 @@ export const data = {
       "docentes": "ALTIERI, ANDRES OSCAR - EDWARDS MOLINA, DIEGO JULIO - COSATTO AMMANN, PEDRO CAMILO",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "09:00",
-          "fin": "11:00"
-        },
-        {
           "dia": 3,
           "inicio": "09:00",
           "fin": "13:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "09:00",
+          "fin": "11:00"
         }
       ]
     },
@@ -5701,22 +5701,22 @@ export const data = {
       "docentes": "HANSEN, ROBERTA - FITTIPALDI, MARÍA SOL - GELPI, GABRIEL RICARDO",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "09:00",
           "fin": "11:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "11:00",
           "fin": "13:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "09:00",
           "fin": "11:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "11:00",
           "fin": "13:00"
         }
@@ -5727,22 +5727,22 @@ export const data = {
       "docentes": "CABANA, ADRIANA ELENA - PERALTA, NORA BEATRIZ - HERRMANN, GUILLERMO WALTER - MARTI, MARIA ELIZABETH",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "13:00",
           "fin": "15:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "15:00",
           "fin": "17:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "13:00",
           "fin": "15:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "15:00",
           "fin": "17:00"
         }
@@ -6091,22 +6091,22 @@ export const data = {
       "docentes": "CAMMILLERI, ADA LEONOR - PERALTA, NORA BEATRIZ - FITTIPALDI, MARÍA SOL",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "09:00",
           "fin": "11:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "11:00",
           "fin": "13:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "09:00",
           "fin": "11:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "11:00",
           "fin": "13:00"
         }
@@ -6892,12 +6892,12 @@ export const data = {
       "docentes": "VEIRAS, FRANCISCO EZEQUIEL - INDELICATO, EVANGELINA LAURA - PEREYRA, MARCELA ROSA - BALBI, MARIA DEL PILAR - MIGLIORISI, JUAN IGNACIO",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "15:00",
           "fin": "19:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "15:00",
           "fin": "19:00"
         }
@@ -6956,12 +6956,12 @@ export const data = {
       "docentes": "CHIABRANDO, LAURA - DUPLAA, MARIA CELESTE - RIVAS ROJAS, PATRICIA CAROLINA - BARBER, MATIAS ERNESTO - A DESIGNAR, A DESIGNAR",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "08:00",
           "fin": "12:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "08:00",
           "fin": "12:00"
         }
@@ -7058,22 +7058,22 @@ export const data = {
       "docentes": "PAMPILLO, LAURA GABRIELA - ROHT, YANINA LUCRECIA - SEINHART, NICOLE - PEÑA, LEANDRO",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "08:30",
           "fin": "10:30"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "11:00",
           "fin": "13:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "08:30",
           "fin": "10:30"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "11:00",
           "fin": "13:00"
         }
@@ -7084,22 +7084,22 @@ export const data = {
       "docentes": "ROHT, YANINA LUCRECIA - PIÑERA, EDUARDO ERNESTO - PAMPILLO, LAURA GABRIELA - BILOVOL, VITALIY",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "14:00",
           "fin": "16:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "16:30",
           "fin": "18:30"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "14:00",
           "fin": "16:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "16:30",
           "fin": "18:30"
         }
@@ -7240,22 +7240,22 @@ export const data = {
       "docentes": "CIOCCI, BRAZZANO LIGIA - PRESA, VERÓNICA  ANA - COLECCHIO PUA, IVAN - CAIVANO, LUCIANA",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "09:00",
           "fin": "11:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "11:30",
           "fin": "13:30"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "09:00",
           "fin": "11:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "11:30",
           "fin": "13:30"
         }
@@ -7292,22 +7292,22 @@ export const data = {
       "docentes": "SILVEYRA, JOSEFINA MARIA - PRESA, VERÓNICA  ANA - FERNANDEZ, VIRGINIA VELMA - GALLOSO, VERONICA VIVIANA - LEON MORALES, ANDY JAVIER",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "10:30",
           "fin": "12:30"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "13:30",
           "fin": "15:30"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "10:30",
           "fin": "12:30"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "13:30",
           "fin": "15:30"
         }
@@ -7344,22 +7344,22 @@ export const data = {
       "docentes": "CIOCCI, BRAZZANO LIGIA - BINDA, Leonardo David - INSABELLA, ROBERTO MARIANO",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "09:00",
           "fin": "11:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "11:30",
           "fin": "13:30"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "09:00",
           "fin": "11:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "11:30",
           "fin": "13:30"
         }
@@ -7370,22 +7370,22 @@ export const data = {
       "docentes": "FERRINI, ADRIAN - GARCIA MARRA, SEBASTIÁN - GALLOSO, VERONICA VIVIANA - SARASI MERINO, FROY DENNIS",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "14:00",
           "fin": "16:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "16:00",
           "fin": "18:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "14:00",
           "fin": "16:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "16:00",
           "fin": "18:00"
         }
@@ -7396,22 +7396,22 @@ export const data = {
       "docentes": "REDIN, EDUARDO GABRIEL - ROSCARDI, JAVIER EDUARDO - JAN, LUIS EMILIANO - POLENTA, PABLO NICOLAS - MORINIGO FERREIRA, ANGEL ANDERSON",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "17:00",
           "fin": "19:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "19:00",
           "fin": "21:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "17:00",
           "fin": "19:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "19:00",
           "fin": "21:00"
         }
@@ -7448,22 +7448,22 @@ export const data = {
       "docentes": "PAMPILLO, LAURA GABRIELA - ROHT, YANINA LUCRECIA - SEINHART, NICOLE - PEÑA, LEANDRO",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "08:30",
           "fin": "10:30"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "11:00",
           "fin": "13:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "08:30",
           "fin": "10:30"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "11:00",
           "fin": "13:00"
         }
@@ -7474,22 +7474,22 @@ export const data = {
       "docentes": "ROHT, YANINA LUCRECIA - PAMPILLO, LAURA GABRIELA - PIÑERA, EDUARDO ERNESTO - BILOVOL, VITALIY",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "14:00",
           "fin": "16:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "16:30",
           "fin": "18:30"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "14:00",
           "fin": "16:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "16:30",
           "fin": "18:30"
         }
@@ -7552,22 +7552,22 @@ export const data = {
       "docentes": "CIOCCI, BRAZZANO LIGIA - PRESA, VERÓNICA  ANA - COLECCHIO PUA, IVAN - CAIVANO, LUCIANA",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "09:00",
           "fin": "11:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "11:30",
           "fin": "13:30"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "09:00",
           "fin": "11:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "11:30",
           "fin": "13:30"
         }
@@ -7578,22 +7578,22 @@ export const data = {
       "docentes": "SILVEYRA, JOSEFINA MARIA - PRESA, VERÓNICA  ANA - GALLOSO, VERONICA VIVIANA - FERNANDEZ, VIRGINIA VELMA - LEON MORALES, ANDY JAVIER",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "10:30",
           "fin": "12:30"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "13:30",
           "fin": "15:30"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "10:30",
           "fin": "12:30"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "13:30",
           "fin": "15:30"
         }
@@ -7630,22 +7630,22 @@ export const data = {
       "docentes": "FERRINI, ADRIAN - GARCIA MARRA, SEBASTIÁN - GALLOSO, VERONICA VIVIANA - SARASI MERINO, FROY DENNIS",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "14:00",
           "fin": "16:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "16:00",
           "fin": "18:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "14:00",
           "fin": "16:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "16:00",
           "fin": "18:00"
         }
@@ -7656,22 +7656,22 @@ export const data = {
       "docentes": "REDIN, EDUARDO GABRIEL - ROSCARDI, JAVIER EDUARDO - JAN, LUIS EMILIANO - POLENTA, PABLO NICOLAS - MORINIGO FERREIRA, ANGEL ANDERSON",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "17:00",
           "fin": "19:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "19:00",
           "fin": "21:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "17:00",
           "fin": "19:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "19:00",
           "fin": "21:00"
         }
@@ -7698,12 +7698,12 @@ export const data = {
       "docentes": "MATTEO, CLAUDIA LEDA - SAMBUCO SALOMONE, LUCAS IGNACIO - GARCIA EIJÓ, PEDRO MANUEL",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "15:00",
           "fin": "18:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "15:00",
           "fin": "18:00"
         }
@@ -7832,6 +7832,11 @@ export const data = {
           "fin": "10:30"
         },
         {
+          "dia": 3,
+          "inicio": "09:00",
+          "fin": "10:30"
+        },
+        {
           "dia": 5,
           "inicio": "17:00",
           "fin": "19:00"
@@ -7840,11 +7845,6 @@ export const data = {
           "dia": 5,
           "inicio": "19:00",
           "fin": "20:00"
-        },
-        {
-          "dia": 3,
-          "inicio": "09:00",
-          "fin": "10:30"
         }
       ]
     },
@@ -7879,6 +7879,11 @@ export const data = {
       "docentes": "UREÑA, ARIA ANDREA - DIZ, VIRGINIA EMILSE - MELAJ, MARIANA ANDREA - MONTAÑO HEREDIA, GABRIELA GRISEL - PRINCIPE LOPEZ, JESUS BENJAMIN - CRESPO, ELISEO",
       "clases": [
         {
+          "dia": 3,
+          "inicio": "10:00",
+          "fin": "13:00"
+        },
+        {
           "dia": 5,
           "inicio": "17:00",
           "fin": "19:00"
@@ -7887,11 +7892,6 @@ export const data = {
           "dia": 5,
           "inicio": "19:00",
           "fin": "20:00"
-        },
-        {
-          "dia": 3,
-          "inicio": "10:00",
-          "fin": "13:00"
         }
       ]
     },
@@ -8068,6 +8068,11 @@ export const data = {
       "docentes": "BOEYKENS, SUSANA PATRICIA - UREÑA, ARIA ANDREA - RUIZ VAZQUEZ, MARÍA MACARENA - LUNATI, CAROLINA SOLEDAD",
       "clases": [
         {
+          "dia": 3,
+          "inicio": "18:30",
+          "fin": "21:30"
+        },
+        {
           "dia": 5,
           "inicio": "17:00",
           "fin": "19:00"
@@ -8076,11 +8081,6 @@ export const data = {
           "dia": 5,
           "inicio": "19:00",
           "fin": "20:00"
-        },
-        {
-          "dia": 3,
-          "inicio": "18:30",
-          "fin": "21:30"
         }
       ]
     },
@@ -8177,14 +8177,14 @@ export const data = {
           "fin": "17:00"
         },
         {
-          "dia": 4,
-          "inicio": "13:00",
-          "fin": "15:00"
-        },
-        {
           "dia": 3,
           "inicio": "15:00",
           "fin": "16:30"
+        },
+        {
+          "dia": 4,
+          "inicio": "13:00",
+          "fin": "15:00"
         }
       ]
     },
@@ -8198,6 +8198,11 @@ export const data = {
           "fin": "17:00"
         },
         {
+          "dia": 3,
+          "inicio": "15:00",
+          "fin": "16:30"
+        },
+        {
           "dia": 4,
           "inicio": "12:30",
           "fin": "14:30"
@@ -8206,11 +8211,6 @@ export const data = {
           "dia": 4,
           "inicio": "15:00",
           "fin": "18:00"
-        },
-        {
-          "dia": 3,
-          "inicio": "15:00",
-          "fin": "16:30"
         }
       ]
     },
@@ -8229,14 +8229,14 @@ export const data = {
           "fin": "17:00"
         },
         {
-          "dia": 4,
-          "inicio": "09:00",
-          "fin": "11:00"
-        },
-        {
           "dia": 3,
           "inicio": "15:00",
           "fin": "16:30"
+        },
+        {
+          "dia": 4,
+          "inicio": "09:00",
+          "fin": "11:00"
         }
       ]
     },
@@ -8438,6 +8438,11 @@ export const data = {
           "fin": "17:00"
         },
         {
+          "dia": 3,
+          "inicio": "17:00",
+          "fin": "18:30"
+        },
+        {
           "dia": 4,
           "inicio": "13:00",
           "fin": "16:00"
@@ -8446,11 +8451,6 @@ export const data = {
           "dia": 4,
           "inicio": "16:00",
           "fin": "18:00"
-        },
-        {
-          "dia": 3,
-          "inicio": "17:00",
-          "fin": "18:30"
         }
       ]
     },
@@ -8495,6 +8495,11 @@ export const data = {
           "fin": "12:00"
         },
         {
+          "dia": 3,
+          "inicio": "08:00",
+          "fin": "10:00"
+        },
+        {
           "dia": 5,
           "inicio": "08:00",
           "fin": "10:00"
@@ -8508,11 +8513,6 @@ export const data = {
           "dia": 5,
           "inicio": "11:00",
           "fin": "12:00"
-        },
-        {
-          "dia": 3,
-          "inicio": "08:00",
-          "fin": "10:00"
         }
       ]
     },
@@ -8541,12 +8541,12 @@ export const data = {
           "fin": "21:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "08:00",
           "fin": "10:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "08:00",
           "fin": "10:00"
         }
@@ -8556,21 +8556,6 @@ export const data = {
       "codigo": "6314-CURSO: 03",
       "docentes": "MARTINS ALHO, MIRIAM - EIRAS, JAVIER - FIGUEROA, MARIA AMALIA - POZZOLI, ANGEL VALERIA - ARANDA, MARIO ARIEL - URBANO MARCHESSI, MAXIMO FRANCO",
       "clases": [
-        {
-          "dia": 5,
-          "inicio": "08:00",
-          "fin": "10:00"
-        },
-        {
-          "dia": 5,
-          "inicio": "13:00",
-          "fin": "14:00"
-        },
-        {
-          "dia": 5,
-          "inicio": "14:00",
-          "fin": "15:00"
-        },
         {
           "dia": 3,
           "inicio": "08:00",
@@ -8585,6 +8570,21 @@ export const data = {
           "dia": 3,
           "inicio": "14:00",
           "fin": "17:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "08:00",
+          "fin": "10:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "13:00",
+          "fin": "14:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "14:00",
+          "fin": "15:00"
         }
       ]
     },
@@ -8667,14 +8667,14 @@ export const data = {
       "docentes": "GIACOIA, CARLOS ALBERTO - LADAGA, GRACIELA - VAZQUEZ BARBATTO, LUCAS",
       "clases": [
         {
-          "dia": 4,
-          "inicio": "19:00",
-          "fin": "22:00"
-        },
-        {
           "dia": 3,
           "inicio": "18:00",
           "fin": "21:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "22:00"
         }
       ]
     },
@@ -8683,14 +8683,14 @@ export const data = {
       "docentes": "CORRAL, ALFREDO ALBERTO - ENRIQUEZ RIVERA, JUAN ARMANDO - HARGAIN, IÑAKI JUAN",
       "clases": [
         {
-          "dia": 4,
-          "inicio": "09:00",
-          "fin": "12:00"
-        },
-        {
           "dia": 3,
           "inicio": "08:30",
           "fin": "11:30"
+        },
+        {
+          "dia": 4,
+          "inicio": "09:00",
+          "fin": "12:00"
         }
       ]
     },
@@ -8699,14 +8699,14 @@ export const data = {
       "docentes": "CORRAL, ALFREDO ALBERTO - PUJOL, GABRIEL ALBERTO",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "09:00",
-          "fin": "12:00"
-        },
-        {
           "dia": 3,
           "inicio": "08:30",
           "fin": "11:30"
+        },
+        {
+          "dia": 5,
+          "inicio": "09:00",
+          "fin": "12:00"
         }
       ]
     },
@@ -8715,12 +8715,12 @@ export const data = {
       "docentes": "LOPEZ RIVAROLA, FELIPE - ALTIERI, RUBEN DANIEL - TASLAKTZIAN, ADRIANA ESTE",
       "clases": [
         {
-          "dia": 4,
+          "dia": 3,
           "inicio": "09:00",
           "fin": "12:00"
         },
         {
-          "dia": 3,
+          "dia": 4,
           "inicio": "09:00",
           "fin": "12:00"
         }
@@ -8763,14 +8763,14 @@ export const data = {
       "docentes": "GIACOIA, CARLOS ALBERTO - LADAGA, GRACIELA - VAZQUEZ BARBATTO, LUCAS",
       "clases": [
         {
-          "dia": 4,
-          "inicio": "19:00",
-          "fin": "22:00"
-        },
-        {
           "dia": 3,
           "inicio": "18:00",
           "fin": "21:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "22:00"
         }
       ]
     },
@@ -8779,14 +8779,14 @@ export const data = {
       "docentes": "CORRAL, ALFREDO ALBERTO - ENRIQUEZ RIVERA, JUAN ARMANDO - HARGAIN, IÑAKI JUAN",
       "clases": [
         {
-          "dia": 4,
-          "inicio": "09:00",
-          "fin": "12:00"
-        },
-        {
           "dia": 3,
           "inicio": "08:30",
           "fin": "11:30"
+        },
+        {
+          "dia": 4,
+          "inicio": "09:00",
+          "fin": "12:00"
         }
       ]
     },
@@ -8795,14 +8795,14 @@ export const data = {
       "docentes": "CORRAL, ALFREDO ALBERTO - PUJOL, GABRIEL ALBERTO",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "09:00",
-          "fin": "12:00"
-        },
-        {
           "dia": 3,
           "inicio": "08:30",
           "fin": "11:30"
+        },
+        {
+          "dia": 5,
+          "inicio": "09:00",
+          "fin": "12:00"
         }
       ]
     },
@@ -8811,12 +8811,12 @@ export const data = {
       "docentes": "LOPEZ RIVAROLA, FELIPE - ALTIERI, RUBEN DANIEL - TASLAKTZIAN, ADRIANA ESTE",
       "clases": [
         {
-          "dia": 4,
+          "dia": 3,
           "inicio": "09:00",
           "fin": "12:00"
         },
         {
-          "dia": 3,
+          "dia": 4,
           "inicio": "09:00",
           "fin": "12:00"
         }
@@ -9206,12 +9206,12 @@ export const data = {
       "docentes": "KISIELEWSKY, ADRIAN ERNESTO",
       "clases": [
         {
-          "dia": 4,
+          "dia": 3,
           "inicio": "19:00",
           "fin": "22:00"
         },
         {
-          "dia": 3,
+          "dia": 4,
           "inicio": "19:00",
           "fin": "22:00"
         }
@@ -9296,14 +9296,14 @@ export const data = {
       "docentes": "VINSON, EDGARDO GUSTAVO - JURADO, ALEJANDRO DIEGO - VAZQUEZ, MARIANO RAUL",
       "clases": [
         {
-          "dia": 4,
-          "inicio": "17:00",
-          "fin": "21:00"
-        },
-        {
           "dia": 3,
           "inicio": "18:00",
           "fin": "22:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "17:00",
+          "fin": "21:00"
         }
       ]
     },
@@ -9371,14 +9371,14 @@ export const data = {
       "docentes": "FERREIRA AICARDI, LYDIA F - ZELECHOWSKI, VICTOR ALEJANDRO - HAWRYLUK, JORGE ALEJANDRO",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "19:00",
-          "fin": "23:00"
-        },
-        {
           "dia": 3,
           "inicio": "12:00",
           "fin": "15:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "19:00",
+          "fin": "23:00"
         }
       ]
     },
@@ -9522,14 +9522,14 @@ export const data = {
       "docentes": "FERREIRA AICARDI, LYDIA F - ZELECHOWSKI, VICTOR ALEJANDRO - HAWRYLUK, JORGE ALEJANDRO",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "19:00",
-          "fin": "23:00"
-        },
-        {
           "dia": 3,
           "inicio": "12:00",
           "fin": "15:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "19:00",
+          "fin": "23:00"
         }
       ]
     },
@@ -9613,14 +9613,14 @@ export const data = {
       "docentes": "FERREIRA AICARDI, LYDIA F - ZELECHOWSKI, VICTOR ALEJANDRO - HAWRYLUK, JORGE ALEJANDRO",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "19:00",
-          "fin": "23:00"
-        },
-        {
           "dia": 3,
           "inicio": "12:00",
           "fin": "15:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "19:00",
+          "fin": "23:00"
         }
       ]
     },
@@ -9706,7 +9706,7 @@ export const data = {
     },
     {
       "codigo": "6602-CURSO: 2",
-      "docentes": "ROSA, ADRIÁN DARÍO - FLORENTIN, RAUL FÉLIX",
+      "docentes": "ROSA, ADRIÁN DARÍO - FLORENTIN, RAÚL FÉLIX",
       "clases": [
         {
           "dia": 1,
@@ -9847,14 +9847,14 @@ export const data = {
           "fin": "11:00"
         },
         {
-          "dia": 4,
-          "inicio": "08:00",
-          "fin": "11:00"
-        },
-        {
           "dia": 3,
           "inicio": "16:00",
           "fin": "19:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "08:00",
+          "fin": "11:00"
         }
       ]
     },
@@ -9868,14 +9868,14 @@ export const data = {
           "fin": "22:00"
         },
         {
-          "dia": 4,
-          "inicio": "19:00",
-          "fin": "22:00"
-        },
-        {
           "dia": 3,
           "inicio": "16:00",
           "fin": "19:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "22:00"
         }
       ]
     },
@@ -9884,17 +9884,17 @@ export const data = {
       "docentes": "VENTURINO, GABRIEL FRANCISCO - ZACCHIGNA, FEDERICO GIORDANO - ULLOA, JOAQUIN GASPAR - LOPEZ de ARMENTIA, NICOLAS",
       "clases": [
         {
-          "dia": 4,
-          "inicio": "19:00",
-          "fin": "22:00"
-        },
-        {
           "dia": 3,
           "inicio": "16:00",
           "fin": "19:00"
         },
         {
           "dia": 3,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 4,
           "inicio": "19:00",
           "fin": "22:00"
         }
@@ -10244,11 +10244,6 @@ export const data = {
       "docentes": "GEREZ, CARLOS JULIO - FACAL, GUILLERMO RUBEN - GUTIERREZ GAMMINO, JUAN ANTONIO",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "14:00",
-          "fin": "17:00"
-        },
-        {
           "dia": 3,
           "inicio": "15:00",
           "fin": "18:00"
@@ -10257,6 +10252,11 @@ export const data = {
           "dia": 3,
           "inicio": "19:00",
           "fin": "22:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "14:00",
+          "fin": "17:00"
         }
       ]
     },
@@ -10307,6 +10307,11 @@ export const data = {
       "docentes": "GEREZ, CARLOS JULIO - CALOIA, JORGE LUIS - AITA, EZEQUIEL ALBERTO",
       "clases": [
         {
+          "dia": 3,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
           "dia": 4,
           "inicio": "19:00",
           "fin": "22:00"
@@ -10315,11 +10320,6 @@ export const data = {
           "dia": 5,
           "inicio": "14:00",
           "fin": "17:00"
-        },
-        {
-          "dia": 3,
-          "inicio": "19:00",
-          "fin": "22:00"
         }
       ]
     },
@@ -10349,6 +10349,11 @@ export const data = {
       "docentes": "GEREZ, CARLOS JULIO - CHAGUAYO YANGALI, JUAN CARLOS",
       "clases": [
         {
+          "dia": 3,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
           "dia": 4,
           "inicio": "19:00",
           "fin": "22:00"
@@ -10357,11 +10362,6 @@ export const data = {
           "dia": 5,
           "inicio": "14:00",
           "fin": "17:00"
-        },
-        {
-          "dia": 3,
-          "inicio": "19:00",
-          "fin": "22:00"
         }
       ]
     },
@@ -10466,14 +10466,14 @@ export const data = {
       "docentes": "YOMHA, LUIS ALBERTO - HOYOS QUINTERO, JOHN JAIRO - BERNAL, CELINA RAQUEL - KEMPF, RODOLFO ANTONIO - MIRANDA, ALEJANDRO OSCAR",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "19:00",
-          "fin": "21:00"
-        },
-        {
           "dia": 3,
           "inicio": "15:00",
           "fin": "17:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "19:00",
+          "fin": "21:00"
         }
       ]
     },
@@ -10662,6 +10662,11 @@ export const data = {
       "docentes": "ARTANA, GUILLERMO OSVALDO - DURIEZ, THOMAS PIERRE COMIL - LEONARDO, LEANDRO - KHARSANSKY ATALLAH, IVAN",
       "clases": [
         {
+          "dia": 3,
+          "inicio": "16:00",
+          "fin": "19:00"
+        },
+        {
           "dia": 5,
           "inicio": "16:00",
           "fin": "19:00"
@@ -10670,11 +10675,6 @@ export const data = {
           "dia": 5,
           "inicio": "19:00",
           "fin": "21:00"
-        },
-        {
-          "dia": 3,
-          "inicio": "16:00",
-          "fin": "19:00"
         }
       ]
     },
@@ -10715,14 +10715,14 @@ export const data = {
       "docentes": "BARROSO, HORACIO JORGE - MARISCOTTI, ALBERTO JUAN",
       "clases": [
         {
-          "dia": 6,
-          "inicio": "09:00",
-          "fin": "13:00"
-        },
-        {
           "dia": 3,
           "inicio": "19:00",
           "fin": "23:00"
+        },
+        {
+          "dia": 6,
+          "inicio": "09:00",
+          "fin": "13:00"
         }
       ]
     },
@@ -10753,14 +10753,14 @@ export const data = {
       "docentes": "ERRAZQUIN, JORGE - GÓMEZ, FERNANDO GABRIEL - MALM MORGAN, MARCOS TOMÁS - ILUNDAIN, IGNACIO HUGO - MARTÍN ABAD, JAVIER FERNANDO TOMÁS",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "19:00",
-          "fin": "22:00"
-        },
-        {
           "dia": 3,
           "inicio": "16:00",
           "fin": "19:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "19:00",
+          "fin": "22:00"
         }
       ]
     },
@@ -10946,14 +10946,14 @@ export const data = {
           "fin": "21:00"
         },
         {
-          "dia": 4,
-          "inicio": "19:00",
-          "fin": "20:00"
-        },
-        {
           "dia": 3,
           "inicio": "19:00",
           "fin": "21:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "20:00"
         }
       ]
     },
@@ -11242,13 +11242,13 @@ export const data = {
       "docentes": "PALOMAR, ALBERTO GUSTAVO - SIVORI, GISELA ROSANA - FARAH, GABRIEL HERNAN",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "17:00",
+          "dia": 3,
+          "inicio": "15:00",
           "fin": "19:00"
         },
         {
-          "dia": 3,
-          "inicio": "15:00",
+          "dia": 5,
+          "inicio": "17:00",
           "fin": "19:00"
         }
       ]
@@ -11329,7 +11329,7 @@ export const data = {
       ]
     },
     {
-      "codigo": "6903-CURSO 12: BACHA / Asiitico",
+      "codigo": "6903-CURSO 12: BACHA / Asiático",
       "docentes": "BACHA, LAURA ELENA - ASIÁTICO, ANDRÉS ENRIQUE - BURGELL, NICOLAS",
       "clases": [
         {
@@ -11393,7 +11393,7 @@ export const data = {
       ]
     },
     {
-      "codigo": "6903-CURSO 4: CALZARETTO / Asiitico",
+      "codigo": "6903-CURSO 4: CALZARETTO / Asiático",
       "docentes": "CALZARETTO, RICARDO ALBERTO - ASIÁTICO, ANDRÉS ENRIQUE - BURGELL, NICOLAS",
       "clases": [
         {
@@ -11457,7 +11457,7 @@ export const data = {
       ]
     },
     {
-      "codigo": "6903-CURSO 8: LASANTA / Asiitico",
+      "codigo": "6903-CURSO 8: LASANTA / Asiático",
       "docentes": "LASANTA, TITO IGNACIO - ASIÁTICO, ANDRÉS ENRIQUE - BURGELL, NICOLAS",
       "clases": [
         {
@@ -11477,14 +11477,14 @@ export const data = {
       "docentes": "BACHA, LAURA ELENA - CABELLO, RAUL MARIA - TOMAZIN, NICOLAS JAVIER",
       "clases": [
         {
-          "dia": 4,
-          "inicio": "09:00",
-          "fin": "12:00"
-        },
-        {
           "dia": 3,
           "inicio": "19:00",
           "fin": "22:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "09:00",
+          "fin": "12:00"
         }
       ]
     },
@@ -11830,12 +11830,12 @@ export const data = {
       "docentes": "MIRANDA, MIGUEL - GONZALEZ, XAVIER IGNACIO - RIGOU, DANIEL FRANCISCO - STEGMANN, CLAUS - GUALA, MARIA VIRGINIA - PATRIZI, MARIA JOSE - LEWIN, ALEJANDRO - MURADIAN, FEDERICO",
       "clases": [
         {
-          "dia": 4,
+          "dia": 3,
           "inicio": "19:00",
           "fin": "23:00"
         },
         {
-          "dia": 3,
+          "dia": 4,
           "inicio": "19:00",
           "fin": "23:00"
         }
@@ -11973,12 +11973,12 @@ export const data = {
       "docentes": "ECHEVARRIA, PABLO - RAMOS, SILVIA ADRIANA - NAVARRO, CARLOS ALBERTO - LEVY, JONATHAN",
       "clases": [
         {
-          "dia": 4,
+          "dia": 3,
           "inicio": "18:30",
           "fin": "21:30"
         },
         {
-          "dia": 3,
+          "dia": 4,
           "inicio": "18:30",
           "fin": "21:30"
         }
@@ -11989,14 +11989,14 @@ export const data = {
       "docentes": "ECHEVARRIA, PABLO - RAMOS, SILVIA ADRIANA - COLOMBO, PABLO MARTIN - MARIN, EMILIO GERMAN - TERZANO, IVAN GUILLERMO",
       "clases": [
         {
-          "dia": 6,
-          "inicio": "10:00",
-          "fin": "13:00"
-        },
-        {
           "dia": 3,
           "inicio": "18:30",
           "fin": "21:30"
+        },
+        {
+          "dia": 6,
+          "inicio": "10:00",
+          "fin": "13:00"
         }
       ]
     },
@@ -12342,11 +12342,6 @@ export const data = {
       "docentes": "ESCARDO, ADRIAN JAVIER - HACHELIAS, LAURA ADELINA - BIONDI, PATRICIO EMILIANO",
       "clases": [
         {
-          "dia": 6,
-          "inicio": "09:00",
-          "fin": "12:00"
-        },
-        {
           "dia": 3,
           "inicio": "18:00",
           "fin": "19:00"
@@ -12355,6 +12350,11 @@ export const data = {
           "dia": 3,
           "inicio": "19:00",
           "fin": "23:00"
+        },
+        {
+          "dia": 6,
+          "inicio": "09:00",
+          "fin": "12:00"
         }
       ]
     },
@@ -12363,11 +12363,6 @@ export const data = {
       "docentes": "ESCARDO, ADRIAN JAVIER - HACHELIAS, LAURA ADELINA - BIONDI, PATRICIO EMILIANO",
       "clases": [
         {
-          "dia": 6,
-          "inicio": "09:00",
-          "fin": "12:00"
-        },
-        {
           "dia": 3,
           "inicio": "18:00",
           "fin": "19:00"
@@ -12376,6 +12371,11 @@ export const data = {
           "dia": 3,
           "inicio": "19:00",
           "fin": "23:00"
+        },
+        {
+          "dia": 6,
+          "inicio": "09:00",
+          "fin": "12:00"
         }
       ]
     },
@@ -12540,12 +12540,12 @@ export const data = {
       "docentes": "NICOLINI, JORGE VICTOR - BARRIONUEVO, JUAN CARLOS AUDELINO - SAEZ DE ARREGUI, MERCEDES - MORDEGLIA, PEDRO - KOHN, SEBASTIAN",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "19:00",
           "fin": "22:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "19:00",
           "fin": "22:00"
         }
@@ -12700,14 +12700,14 @@ export const data = {
           "fin": "20:30"
         },
         {
-          "dia": 5,
-          "inicio": "20:00",
-          "fin": "21:00"
-        },
-        {
           "dia": 3,
           "inicio": "19:00",
           "fin": "20:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "20:00",
+          "fin": "21:00"
         }
       ]
     },
@@ -13001,14 +13001,14 @@ export const data = {
       "docentes": "QUIROGA, RICARDO MARTIN - CAMUEIRA, LUCAS MANUEL",
       "clases": [
         {
-          "dia": 4,
-          "inicio": "19:00",
-          "fin": "22:00"
-        },
-        {
           "dia": 3,
           "inicio": "16:00",
           "fin": "19:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "22:00"
         }
       ]
     },
@@ -13506,12 +13506,12 @@ export const data = {
       "docentes": "SASSANO, MIRYAM PATRICIA - TURANO, MARIA AGUSTINA - HUSAIN CERRUTI, IGNACIO SANTIAGO - GARCIA, EZEQUIEL - VERA GUZMAN, RAMIRO AUGUSTO",
       "clases": [
         {
-          "dia": 4,
+          "dia": 3,
           "inicio": "16:00",
           "fin": "19:00"
         },
         {
-          "dia": 3,
+          "dia": 4,
           "inicio": "16:00",
           "fin": "19:00"
         }
@@ -13522,19 +13522,19 @@ export const data = {
       "docentes": "RODRIGUEZ, DANIEL FABIAN - MACHIUNAS, VALERIA",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "17:00",
           "fin": "20:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "17:00",
           "fin": "20:00"
         }
       ]
     },
     {
-      "codigo": "7512-CURSO: 07-Cavaliere Prictica Martes",
+      "codigo": "7512-CURSO: 07-Cavaliere Práctica Martes",
       "docentes": "CAVALIERE, MIGUEL ANGEL - MASTROPIETRO, GABRIEL MARCELO - BALZAROTTI, FEDERICO - KOWAL, ADRIAN MARCELO - EZCURRA, DIEGO MARTIN",
       "clases": [
         {
@@ -13550,7 +13550,7 @@ export const data = {
       ]
     },
     {
-      "codigo": "7512-CURSO: 08-Cavaliere Prictica Lunes",
+      "codigo": "7512-CURSO: 08-Cavaliere Práctica Lunes",
       "docentes": "CAVALIERE, MIGUEL ANGEL - BALZAROTTI, FEDERICO - PORTOCARRERO MIRANDA, MICHAEL - GARCIA, EZEQUIEL",
       "clases": [
         {
@@ -13634,14 +13634,14 @@ export const data = {
       "docentes": "CABRERA, JOSE LUIS",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "07:00",
-          "fin": "09:00"
-        },
-        {
           "dia": 3,
           "inicio": "19:00",
           "fin": "23:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "07:00",
+          "fin": "09:00"
         }
       ]
     },
@@ -13661,12 +13661,12 @@ export const data = {
       "docentes": "CAIAFA, CESAR FEDERICO - BENITEZ, CARLOS MARCELO - VILLANUEVA, CECILIA AZUL",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "19:00",
           "fin": "22:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "19:00",
           "fin": "22:00"
         }
@@ -14002,12 +14002,12 @@ export const data = {
       "docentes": "PIÑEIRO, GABRIEL - SUALDEA, RUBEN HORACIO",
       "clases": [
         {
-          "dia": 4,
+          "dia": 3,
           "inicio": "19:00",
           "fin": "22:00"
         },
         {
-          "dia": 3,
+          "dia": 4,
           "inicio": "19:00",
           "fin": "22:00"
         }
@@ -14345,12 +14345,12 @@ export const data = {
       "docentes": "CHOCRON, MAURICIO - AGALIOTIS, ELIANA MABEL - FORTUNATO, NICOLAS - LUSTIG, SONIA - de GREGORIO, CLAUDIA ESTELA",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "17:00",
           "fin": "22:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "17:00",
           "fin": "22:00"
         }
@@ -14366,13 +14366,13 @@ export const data = {
           "fin": "22:00"
         },
         {
-          "dia": 4,
-          "inicio": "18:00",
+          "dia": 3,
+          "inicio": "20:00",
           "fin": "22:00"
         },
         {
-          "dia": 3,
-          "inicio": "20:00",
+          "dia": 4,
+          "inicio": "18:00",
           "fin": "22:00"
         }
       ]
@@ -14387,14 +14387,14 @@ export const data = {
           "fin": "22:00"
         },
         {
-          "dia": 5,
-          "inicio": "18:00",
-          "fin": "22:00"
-        },
-        {
           "dia": 3,
           "inicio": "18:00",
           "fin": "20:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "18:00",
+          "fin": "22:00"
         }
       ]
     },
@@ -14419,22 +14419,22 @@ export const data = {
       "docentes": "AMADEO, NORMA ELVIRA - DIEUZEIDE, MARIA LAURA - SUAREZ ANZORENA, MARIA DEL ROSARIO - MACKINNON, CAMILA - GUADAGNINI, SIMÓN",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "17:00",
           "fin": "18:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "18:00",
           "fin": "22:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "17:00",
           "fin": "18:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "18:00",
           "fin": "22:00"
         }
@@ -14487,14 +14487,14 @@ export const data = {
       "docentes": "MUGLIAROLI, SANDRA LÍA - OLLE RESA, CAROLINA",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "14:00",
-          "fin": "17:00"
-        },
-        {
           "dia": 3,
           "inicio": "10:00",
           "fin": "13:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "14:00",
+          "fin": "17:00"
         }
       ]
     },
@@ -14503,14 +14503,14 @@ export const data = {
       "docentes": "MARIÑO, FERNANDO JAVIER - FERNANDEZ, MARÍA VERÓNICA - LÓPEZ JOVÉ, MARTÍN - RUQUET, JUAN ANDRÉS - VIDAL, JULIETA PAULA",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "19:00",
-          "fin": "21:00"
-        },
-        {
           "dia": 3,
           "inicio": "18:00",
           "fin": "22:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "19:00",
+          "fin": "21:00"
         }
       ]
     },
@@ -14627,14 +14627,14 @@ export const data = {
       "docentes": "MARIÑO, FERNANDO JAVIER - FERNANDEZ, MARÍA VERÓNICA - RUQUET, JUAN ANDRÉS - LÓPEZ JOVÉ, MARTÍN - VIDAL, JULIETA PAULA",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "19:00",
-          "fin": "21:00"
-        },
-        {
           "dia": 3,
           "inicio": "18:00",
           "fin": "22:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "19:00",
+          "fin": "21:00"
         }
       ]
     },
@@ -14738,12 +14738,12 @@ export const data = {
       "docentes": "CHOCRON, MAURICIO - AGALIOTIS, ELIANA MABEL - de GREGORIO, CLAUDIA ESTELA - FORTUNATO, NICOLAS - LUSTIG, SONIA",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "17:00",
           "fin": "22:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "17:00",
           "fin": "22:00"
         }
@@ -14775,13 +14775,13 @@ export const data = {
           "fin": "22:00"
         },
         {
-          "dia": 4,
-          "inicio": "18:00",
+          "dia": 3,
+          "inicio": "20:00",
           "fin": "22:00"
         },
         {
-          "dia": 3,
-          "inicio": "20:00",
+          "dia": 4,
+          "inicio": "18:00",
           "fin": "22:00"
         }
       ]
@@ -14796,14 +14796,14 @@ export const data = {
           "fin": "22:00"
         },
         {
-          "dia": 5,
-          "inicio": "18:00",
-          "fin": "22:00"
-        },
-        {
           "dia": 3,
           "inicio": "18:00",
           "fin": "20:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "18:00",
+          "fin": "22:00"
         }
       ]
     },
@@ -14812,22 +14812,22 @@ export const data = {
       "docentes": "AMADEO, NORMA ELVIRA - DIEUZEIDE, MARIA LAURA - GUADAGNINI, SIMÓN - SUAREZ ANZORENA, MARIA DEL ROSARIO - MACKINNON, CAMILA - A DESIGNAR, A DESIGNAR",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "17:00",
           "fin": "18:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "18:00",
           "fin": "22:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "17:00",
           "fin": "18:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "18:00",
           "fin": "22:00"
         }
@@ -14944,14 +14944,14 @@ export const data = {
       "docentes": "MARIÑO, FERNANDO JAVIER - FERNANDEZ, MARÍA VERÓNICA - LÓPEZ JOVÉ, MARTÍN - RUQUET, JUAN ANDRÉS - VIDAL, JULIETA PAULA",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "19:00",
-          "fin": "21:00"
-        },
-        {
           "dia": 3,
           "inicio": "18:00",
           "fin": "22:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "19:00",
+          "fin": "21:00"
         }
       ]
     },
@@ -14987,12 +14987,12 @@ export const data = {
       "docentes": "REBOREDO, LUCAS GABRIEL",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "19:00",
           "fin": "21:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "19:00",
           "fin": "21:00"
         }
@@ -15455,13 +15455,13 @@ export const data = {
       "docentes": "VEIGA, RICARDO DANIEL - GIACHINO, CARLOS ADRIAN",
       "clases": [
         {
-          "dia": 4,
-          "inicio": "18:00",
+          "dia": 3,
+          "inicio": "20:00",
           "fin": "22:00"
         },
         {
-          "dia": 3,
-          "inicio": "20:00",
+          "dia": 4,
+          "inicio": "18:00",
           "fin": "22:00"
         }
       ]
@@ -15471,13 +15471,13 @@ export const data = {
       "docentes": "VINSON, EDGARDO GUSTAVO",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "18:00",
+          "dia": 3,
+          "inicio": "20:00",
           "fin": "22:00"
         },
         {
-          "dia": 3,
-          "inicio": "20:00",
+          "dia": 5,
+          "inicio": "18:00",
           "fin": "22:00"
         }
       ]
@@ -16196,22 +16196,22 @@ export const data = {
       "docentes": "DI IORIO Y LUCERO, MARIA EUGENIA - A DESIGNAR, A DESIGNAR - GUALTIERI, SERGIO ALBERTO - ROMERO, FABIAN ALEJANDRO",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "14:00",
           "fin": "16:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "16:00",
           "fin": "18:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "14:00",
           "fin": "16:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "16:00",
           "fin": "18:00"
         }
@@ -16274,22 +16274,22 @@ export const data = {
       "docentes": "HANSEN, ROBERTA - GELPI, GABRIEL RICARDO - FITTIPALDI, MARÍA SOL",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "09:00",
           "fin": "11:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "11:00",
           "fin": "13:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "09:00",
           "fin": "11:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "11:00",
           "fin": "13:00"
         }
@@ -16300,22 +16300,22 @@ export const data = {
       "docentes": "CABANA, ADRIANA ELENA - PERALTA, NORA BEATRIZ - HERRMANN, GUILLERMO WALTER - MARTI, MARIA ELIZABETH",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "13:00",
           "fin": "15:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "15:00",
           "fin": "17:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "13:00",
           "fin": "15:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "15:00",
           "fin": "17:00"
         }
@@ -16664,22 +16664,22 @@ export const data = {
       "docentes": "CAMMILLERI, ADA LEONOR - PERALTA, NORA BEATRIZ - FITTIPALDI, MARÍA SOL",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "09:00",
           "fin": "11:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "11:00",
           "fin": "13:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "09:00",
           "fin": "11:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "11:00",
           "fin": "13:00"
         }
@@ -17310,14 +17310,14 @@ export const data = {
       "docentes": "ALTIERI, ANDRES OSCAR - COSATTO AMMANN, PEDRO CAMILO - EDWARDS MOLINA, DIEGO JULIO",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "09:00",
-          "fin": "11:00"
-        },
-        {
           "dia": 3,
           "inicio": "09:00",
           "fin": "13:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "09:00",
+          "fin": "11:00"
         }
       ]
     },
@@ -17486,12 +17486,12 @@ export const data = {
       "docentes": "VEIRAS, FRANCISCO EZEQUIEL - INDELICATO, EVANGELINA LAURA - BALBI, MARIA DEL PILAR - PEREYRA, MARCELA ROSA - MIGLIORISI, JUAN IGNACIO",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "15:00",
           "fin": "19:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "15:00",
           "fin": "19:00"
         }
@@ -17550,12 +17550,12 @@ export const data = {
       "docentes": "CHIABRANDO, LAURA - DUPLAA, MARIA CELESTE - BARBER, MATIAS ERNESTO - RIVAS ROJAS, PATRICIA CAROLINA - A DESIGNAR, A DESIGNAR",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "08:00",
           "fin": "12:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "08:00",
           "fin": "12:00"
         }
@@ -17652,22 +17652,22 @@ export const data = {
       "docentes": "PAMPILLO, LAURA GABRIELA - ROHT, YANINA LUCRECIA - PEÑA, LEANDRO - SEINHART, NICOLE",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "08:30",
           "fin": "10:30"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "11:00",
           "fin": "13:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "08:30",
           "fin": "10:30"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "11:00",
           "fin": "13:00"
         }
@@ -17678,22 +17678,22 @@ export const data = {
       "docentes": "ROHT, YANINA LUCRECIA - PAMPILLO, LAURA GABRIELA - PIÑERA, EDUARDO ERNESTO - BILOVOL, VITALIY",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "14:00",
           "fin": "16:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "16:30",
           "fin": "18:30"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "14:00",
           "fin": "16:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "16:30",
           "fin": "18:30"
         }
@@ -17834,22 +17834,22 @@ export const data = {
       "docentes": "CIOCCI, BRAZZANO LIGIA - PRESA, VERÓNICA  ANA - COLECCHIO PUA, IVAN - CAIVANO, LUCIANA",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "09:00",
           "fin": "11:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "11:30",
           "fin": "13:30"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "09:00",
           "fin": "11:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "11:30",
           "fin": "13:30"
         }
@@ -17886,22 +17886,22 @@ export const data = {
       "docentes": "SILVEYRA, JOSEFINA MARIA - PRESA, VERÓNICA  ANA - GALLOSO, VERONICA VIVIANA - FERNANDEZ, VIRGINIA VELMA - LEON MORALES, ANDY JAVIER",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "10:30",
           "fin": "12:30"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "13:30",
           "fin": "15:30"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "10:30",
           "fin": "12:30"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "13:30",
           "fin": "15:30"
         }
@@ -17938,22 +17938,22 @@ export const data = {
       "docentes": "CIOCCI, BRAZZANO LIGIA - BINDA, Leonardo David - INSABELLA, ROBERTO MARIANO",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "09:00",
           "fin": "11:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "11:30",
           "fin": "13:30"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "09:00",
           "fin": "11:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "11:30",
           "fin": "13:30"
         }
@@ -17964,22 +17964,22 @@ export const data = {
       "docentes": "FERRINI, ADRIAN - GARCIA MARRA, SEBASTIÁN - GALLOSO, VERONICA VIVIANA - SARASI MERINO, FROY DENNIS",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "14:00",
           "fin": "16:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "16:00",
           "fin": "18:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "14:00",
           "fin": "16:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "16:00",
           "fin": "18:00"
         }
@@ -17990,22 +17990,22 @@ export const data = {
       "docentes": "REDIN, EDUARDO GABRIEL - ROSCARDI, JAVIER EDUARDO - POLENTA, PABLO NICOLAS - JAN, LUIS EMILIANO - MORINIGO FERREIRA, ANGEL ANDERSON",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "17:00",
           "fin": "19:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "19:00",
           "fin": "21:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "17:00",
           "fin": "19:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "19:00",
           "fin": "21:00"
         }
@@ -18058,12 +18058,12 @@ export const data = {
       "docentes": "MARTINEZ, OSCAR EDUARDO - SANCHEZ, Gustavo Alberto - LACAPMESURE, AXEL",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "18:00",
           "fin": "21:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "18:00",
           "fin": "21:00"
         }
@@ -18106,6 +18106,11 @@ export const data = {
           "fin": "10:30"
         },
         {
+          "dia": 3,
+          "inicio": "09:00",
+          "fin": "10:30"
+        },
+        {
           "dia": 5,
           "inicio": "17:00",
           "fin": "19:00"
@@ -18114,11 +18119,6 @@ export const data = {
           "dia": 5,
           "inicio": "19:00",
           "fin": "20:00"
-        },
-        {
-          "dia": 3,
-          "inicio": "09:00",
-          "fin": "10:30"
         }
       ]
     },
@@ -18153,6 +18153,11 @@ export const data = {
       "docentes": "UREÑA, ARIA ANDREA - DIZ, VIRGINIA EMILSE - MELAJ, MARIANA ANDREA - MONTAÑO HEREDIA, GABRIELA GRISEL - PRINCIPE LOPEZ, JESUS BENJAMIN - CRESPO, ELISEO",
       "clases": [
         {
+          "dia": 3,
+          "inicio": "10:00",
+          "fin": "13:00"
+        },
+        {
           "dia": 5,
           "inicio": "17:00",
           "fin": "19:00"
@@ -18161,11 +18166,6 @@ export const data = {
           "dia": 5,
           "inicio": "19:00",
           "fin": "20:00"
-        },
-        {
-          "dia": 3,
-          "inicio": "10:00",
-          "fin": "13:00"
         }
       ]
     },
@@ -18342,6 +18342,11 @@ export const data = {
       "docentes": "BOEYKENS, SUSANA PATRICIA - UREÑA, ARIA ANDREA - RUIZ VAZQUEZ, MARÍA MACARENA - LUNATI, CAROLINA SOLEDAD",
       "clases": [
         {
+          "dia": 3,
+          "inicio": "18:30",
+          "fin": "21:30"
+        },
+        {
           "dia": 5,
           "inicio": "17:00",
           "fin": "19:00"
@@ -18350,11 +18355,6 @@ export const data = {
           "dia": 5,
           "inicio": "19:00",
           "fin": "20:00"
-        },
-        {
-          "dia": 3,
-          "inicio": "18:30",
-          "fin": "21:30"
         }
       ]
     },
@@ -18616,14 +18616,14 @@ export const data = {
       "docentes": "ALONSO, MARIO EDUARDO - MARTIN, CHRISTIAN MARCELO",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "09:00",
-          "fin": "13:00"
-        },
-        {
           "dia": 3,
           "inicio": "18:30",
           "fin": "22:30"
+        },
+        {
+          "dia": 5,
+          "inicio": "09:00",
+          "fin": "13:00"
         }
       ]
     },
@@ -18680,12 +18680,12 @@ export const data = {
       "docentes": "ALONSO, MARIO EDUARDO - TERLISKY, ARIEL GUSTAVO - BRUNO, NATALIA",
       "clases": [
         {
-          "dia": 4,
+          "dia": 3,
           "inicio": "18:30",
           "fin": "22:30"
         },
         {
-          "dia": 3,
+          "dia": 4,
           "inicio": "18:30",
           "fin": "22:30"
         }
@@ -18696,14 +18696,14 @@ export const data = {
       "docentes": "ALONSO, MARIO EDUARDO - BERTERO, AGUSTÍN",
       "clases": [
         {
-          "dia": 4,
-          "inicio": "09:00",
-          "fin": "13:00"
-        },
-        {
           "dia": 3,
           "inicio": "18:30",
           "fin": "22:30"
+        },
+        {
+          "dia": 4,
+          "inicio": "09:00",
+          "fin": "13:00"
         }
       ]
     },
@@ -18744,14 +18744,14 @@ export const data = {
       "docentes": "GIACOIA, CARLOS ALBERTO - LADAGA, GRACIELA - VAZQUEZ BARBATTO, LUCAS",
       "clases": [
         {
-          "dia": 4,
-          "inicio": "19:00",
-          "fin": "22:00"
-        },
-        {
           "dia": 3,
           "inicio": "18:00",
           "fin": "21:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "22:00"
         }
       ]
     },
@@ -18760,14 +18760,14 @@ export const data = {
       "docentes": "CORRAL, ALFREDO ALBERTO - ENRIQUEZ RIVERA, JUAN ARMANDO - HARGAIN, IÑAKI JUAN",
       "clases": [
         {
-          "dia": 4,
-          "inicio": "09:00",
-          "fin": "12:00"
-        },
-        {
           "dia": 3,
           "inicio": "08:30",
           "fin": "11:30"
+        },
+        {
+          "dia": 4,
+          "inicio": "09:00",
+          "fin": "12:00"
         }
       ]
     },
@@ -18776,14 +18776,14 @@ export const data = {
       "docentes": "CORRAL, ALFREDO ALBERTO - PUJOL, GABRIEL ALBERTO",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "09:00",
-          "fin": "12:00"
-        },
-        {
           "dia": 3,
           "inicio": "08:30",
           "fin": "11:30"
+        },
+        {
+          "dia": 5,
+          "inicio": "09:00",
+          "fin": "12:00"
         }
       ]
     },
@@ -18792,12 +18792,12 @@ export const data = {
       "docentes": "LOPEZ RIVAROLA, FELIPE - ALTIERI, RUBEN DANIEL - TASLAKTZIAN, ADRIANA ESTE",
       "clases": [
         {
-          "dia": 4,
+          "dia": 3,
           "inicio": "09:00",
           "fin": "12:00"
         },
         {
-          "dia": 3,
+          "dia": 4,
           "inicio": "09:00",
           "fin": "12:00"
         }
@@ -19022,12 +19022,12 @@ export const data = {
       "docentes": "KISIELEWSKY, ADRIAN ERNESTO - ROSS, RENATO RAMÓN - TRESOLS, MARÍA EUGENIA",
       "clases": [
         {
-          "dia": 4,
+          "dia": 3,
           "inicio": "19:00",
           "fin": "22:00"
         },
         {
-          "dia": 3,
+          "dia": 4,
           "inicio": "19:00",
           "fin": "22:00"
         }
@@ -19091,14 +19091,14 @@ export const data = {
       "docentes": "VINSON, EDGARDO GUSTAVO - JURADO, ALEJANDRO DIEGO - VAZQUEZ, MARIANO RAUL",
       "clases": [
         {
-          "dia": 4,
-          "inicio": "17:00",
-          "fin": "21:00"
-        },
-        {
           "dia": 3,
           "inicio": "18:00",
           "fin": "22:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "17:00",
+          "fin": "21:00"
         }
       ]
     },
@@ -19375,14 +19375,14 @@ export const data = {
       "docentes": "FERREIRA AICARDI, LYDIA F - ZELECHOWSKI, VICTOR ALEJANDRO - HAWRYLUK, JORGE ALEJANDRO",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "19:00",
-          "fin": "23:00"
-        },
-        {
           "dia": 3,
           "inicio": "12:00",
           "fin": "15:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "19:00",
+          "fin": "23:00"
         }
       ]
     },
@@ -19471,14 +19471,14 @@ export const data = {
       "docentes": "FERREIRA AICARDI, LYDIA F - ZELECHOWSKI, VICTOR ALEJANDRO - HAWRYLUK, JORGE ALEJANDRO",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "19:00",
-          "fin": "23:00"
-        },
-        {
           "dia": 3,
           "inicio": "12:00",
           "fin": "15:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "19:00",
+          "fin": "23:00"
         }
       ]
     },
@@ -19535,14 +19535,14 @@ export const data = {
       "docentes": "FERREIRA AICARDI, LYDIA F - ZELECHOWSKI, VICTOR ALEJANDRO - HAWRYLUK, JORGE ALEJANDRO",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "19:00",
-          "fin": "23:00"
-        },
-        {
           "dia": 3,
           "inicio": "12:00",
           "fin": "15:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "19:00",
+          "fin": "23:00"
         }
       ]
     },
@@ -19647,14 +19647,14 @@ export const data = {
       "docentes": "PERFETTO, JUAN CARLOS - FUCHS, JORGE HECTOR ANTONIO",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "19:00",
-          "fin": "22:00"
-        },
-        {
           "dia": 3,
           "inicio": "16:00",
           "fin": "19:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "19:00",
+          "fin": "22:00"
         }
       ]
     },
@@ -19663,12 +19663,12 @@ export const data = {
       "docentes": "FUCHS, JORGE HECTOR ANTONIO - VOLPI, MARCELO EDUARDO - HENTSCHEL, RICARDO GABRIE - LLASAT, VANESA",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "19:00",
           "fin": "22:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "19:00",
           "fin": "22:00"
         }
@@ -19764,14 +19764,14 @@ export const data = {
           "fin": "11:00"
         },
         {
-          "dia": 4,
-          "inicio": "08:00",
-          "fin": "11:00"
-        },
-        {
           "dia": 3,
           "inicio": "16:00",
           "fin": "19:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "08:00",
+          "fin": "11:00"
         }
       ]
     },
@@ -19785,14 +19785,14 @@ export const data = {
           "fin": "22:00"
         },
         {
-          "dia": 4,
-          "inicio": "19:00",
-          "fin": "22:00"
-        },
-        {
           "dia": 3,
           "inicio": "16:00",
           "fin": "19:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "22:00"
         }
       ]
     },
@@ -19801,17 +19801,17 @@ export const data = {
       "docentes": "VENTURINO, GABRIEL FRANCISCO - ZACCHIGNA, FEDERICO GIORDANO - ULLOA, JOAQUIN GASPAR - LOPEZ de ARMENTIA, NICOLAS",
       "clases": [
         {
-          "dia": 4,
-          "inicio": "19:00",
-          "fin": "22:00"
-        },
-        {
           "dia": 3,
           "inicio": "16:00",
           "fin": "19:00"
         },
         {
           "dia": 3,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
+          "dia": 4,
           "inicio": "19:00",
           "fin": "22:00"
         }
@@ -19875,12 +19875,12 @@ export const data = {
           "fin": "15:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "13:00",
           "fin": "16:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "13:00",
           "fin": "16:00"
         }
@@ -19896,12 +19896,12 @@ export const data = {
           "fin": "15:00"
         },
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "19:00",
           "fin": "22:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "19:00",
           "fin": "22:00"
         }
@@ -19949,14 +19949,14 @@ export const data = {
       "docentes": "CAMPIGLIO, GUILLERMO CARLOS - MARTOS, PEDRO IGNACIO DOMINGO - BAGLIVO, FABRICIO HUGO - PUCCI, FERNANDO OSCAR",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "16:00",
-          "fin": "19:00"
-        },
-        {
           "dia": 3,
           "inicio": "19:00",
           "fin": "22:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "16:00",
+          "fin": "19:00"
         }
       ]
     },
@@ -20045,12 +20045,12 @@ export const data = {
       "docentes": "BRUNO, MARCELO ADRIAN - MALMORIA, MARIANO ESTEBAN NOÉ - ESTEVA, SANTIAGO - BULACIO, MATIAS FERNANDO - MARCHI, EDGARDO JOSE - D´ANGIOLO, FEDERICO GABRIEL",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "19:00",
           "fin": "22:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "19:00",
           "fin": "22:00"
         }
@@ -20221,12 +20221,12 @@ export const data = {
       "docentes": "TACCA, HERNAN EMILIO - BERTOLOTTI, FERNANDO NESTOR - NACHAJON SCHWARTZ, YAKI - VEYRAT DURBEX, ALEJANDRO FABIO",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "18:00",
           "fin": "21:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "18:00",
           "fin": "21:00"
         }
@@ -20381,12 +20381,12 @@ export const data = {
       "docentes": "GROSSI CAYETANO, ROBERTO - ALVAREZ, GUILLERMO ALEJANDRO",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "17:00",
           "fin": "20:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "17:00",
           "fin": "20:00"
         }
@@ -20541,14 +20541,14 @@ export const data = {
       "docentes": "MARTINEZ, MIGUEL ANTONIO - DIOGRAZIA, FEDERICO HERNAN",
       "clases": [
         {
-          "dia": 4,
-          "inicio": "16:00",
-          "fin": "19:00"
-        },
-        {
           "dia": 3,
           "inicio": "19:00",
           "fin": "22:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "16:00",
+          "fin": "19:00"
         }
       ]
     },
@@ -20601,7 +20601,7 @@ export const data = {
       ]
     },
     {
-      "codigo": "8648-CURSO: 1 - Computación Cuintica (CARAM)",
+      "codigo": "8648-CURSO: 1 - Computación Cuántica (CARAM)",
       "docentes": "CARAM, LEONIDAS FACUNDO - SARRIS, CLAUDIA MONICA",
       "clases": [
         {
@@ -20649,7 +20649,7 @@ export const data = {
       ]
     },
     {
-      "codigo": "8649-CURSO: 1 - Computación Cuintica (CARAM)",
+      "codigo": "8649-CURSO: 1 - Computación Cuántica (CARAM)",
       "docentes": "CARAM, LEONIDAS FACUNDO - SARRIS, CLAUDIA MONICA",
       "clases": [
         {
@@ -20909,14 +20909,14 @@ export const data = {
       "docentes": "LUTENBERG, ARIEL - CRUZ, JUAN MANUEL - GRAÑA, JORGE EDUARDO",
       "clases": [
         {
-          "dia": 4,
-          "inicio": "19:00",
-          "fin": "22:00"
-        },
-        {
           "dia": 3,
           "inicio": "16:00",
           "fin": "19:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "19:00",
+          "fin": "22:00"
         }
       ]
     },
@@ -21165,14 +21165,14 @@ export const data = {
           "fin": "17:00"
         },
         {
-          "dia": 4,
-          "inicio": "15:00",
-          "fin": "17:00"
-        },
-        {
           "dia": 3,
           "inicio": "18:00",
           "fin": "22:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "15:00",
+          "fin": "17:00"
         }
       ]
     },
@@ -21202,11 +21202,6 @@ export const data = {
       "docentes": "GEREZ, CARLOS JULIO - FACAL, GUILLERMO RUBEN - GUTIERREZ GAMMINO, JUAN ANTONIO",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "14:00",
-          "fin": "17:00"
-        },
-        {
           "dia": 3,
           "inicio": "15:00",
           "fin": "18:00"
@@ -21215,6 +21210,11 @@ export const data = {
           "dia": 3,
           "inicio": "19:00",
           "fin": "22:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "14:00",
+          "fin": "17:00"
         }
       ]
     },
@@ -21265,6 +21265,11 @@ export const data = {
       "docentes": "GEREZ, CARLOS JULIO - CALOIA, JORGE LUIS - AITA, EZEQUIEL ALBERTO",
       "clases": [
         {
+          "dia": 3,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
           "dia": 4,
           "inicio": "19:00",
           "fin": "22:00"
@@ -21273,11 +21278,6 @@ export const data = {
           "dia": 5,
           "inicio": "14:00",
           "fin": "17:00"
-        },
-        {
-          "dia": 3,
-          "inicio": "19:00",
-          "fin": "22:00"
         }
       ]
     },
@@ -21307,6 +21307,11 @@ export const data = {
       "docentes": "GEREZ, CARLOS JULIO - CHAGUAYO YANGALI, JUAN CARLOS",
       "clases": [
         {
+          "dia": 3,
+          "inicio": "19:00",
+          "fin": "22:00"
+        },
+        {
           "dia": 4,
           "inicio": "19:00",
           "fin": "22:00"
@@ -21315,11 +21320,6 @@ export const data = {
           "dia": 5,
           "inicio": "14:00",
           "fin": "17:00"
-        },
-        {
-          "dia": 3,
-          "inicio": "19:00",
-          "fin": "22:00"
         }
       ]
     },
@@ -21593,13 +21593,13 @@ export const data = {
       "docentes": "PALOMAR, ALBERTO GUSTAVO - FARAH, GABRIEL HERNAN - SIVORI, GISELA ROSANA",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "17:00",
+          "dia": 3,
+          "inicio": "15:00",
           "fin": "19:00"
         },
         {
-          "dia": 3,
-          "inicio": "15:00",
+          "dia": 5,
+          "inicio": "17:00",
           "fin": "19:00"
         }
       ]
@@ -21972,7 +21972,7 @@ export const data = {
       ]
     },
     {
-      "codigo": "8917-CURSO 12: BACHA / Asiitico",
+      "codigo": "8917-CURSO 12: BACHA / Asiático",
       "docentes": "BACHA, LAURA ELENA - ASIÁTICO, ANDRÉS ENRIQUE - BURGELL, NICOLAS",
       "clases": [
         {
@@ -22036,7 +22036,7 @@ export const data = {
       ]
     },
     {
-      "codigo": "8917-CURSO 4: CALZARETTO / Asiitico",
+      "codigo": "8917-CURSO 4: CALZARETTO / Asiático",
       "docentes": "CALZARETTO, RICARDO ALBERTO - ASIÁTICO, ANDRÉS ENRIQUE - BURGELL, NICOLAS",
       "clases": [
         {
@@ -22100,7 +22100,7 @@ export const data = {
       ]
     },
     {
-      "codigo": "8917-CURSO 8: LASANTA / Asiitico",
+      "codigo": "8917-CURSO 8: LASANTA / Asiático",
       "docentes": "LASANTA, TITO IGNACIO - ASIÁTICO, ANDRÉS ENRIQUE - BURGELL, NICOLAS",
       "clases": [
         {
@@ -22120,14 +22120,14 @@ export const data = {
       "docentes": "BACHA, LAURA ELENA - CABELLO, RAUL MARIA - TOMAZIN, NICOLAS JAVIER",
       "clases": [
         {
-          "dia": 4,
-          "inicio": "09:00",
-          "fin": "12:00"
-        },
-        {
           "dia": 3,
           "inicio": "19:00",
           "fin": "22:00"
+        },
+        {
+          "dia": 4,
+          "inicio": "09:00",
+          "fin": "12:00"
         }
       ]
     },
@@ -22238,12 +22238,12 @@ export const data = {
       "docentes": "ECHEVARRIA, PABLO - RAMOS, SILVIA ADRIANA - NAVARRO, CARLOS ALBERTO - LEVY, JONATHAN",
       "clases": [
         {
-          "dia": 4,
+          "dia": 3,
           "inicio": "18:30",
           "fin": "21:30"
         },
         {
-          "dia": 3,
+          "dia": 4,
           "inicio": "18:30",
           "fin": "21:30"
         }
@@ -22254,14 +22254,14 @@ export const data = {
       "docentes": "ECHEVARRIA, PABLO - RAMOS, SILVIA ADRIANA - COLOMBO, PABLO MARTIN - TERZANO, IVAN GUILLERMO - MARIN, EMILIO GERMAN",
       "clases": [
         {
-          "dia": 6,
-          "inicio": "10:00",
-          "fin": "13:00"
-        },
-        {
           "dia": 3,
           "inicio": "18:30",
           "fin": "21:30"
+        },
+        {
+          "dia": 6,
+          "inicio": "10:00",
+          "fin": "13:00"
         }
       ]
     },
@@ -22971,12 +22971,12 @@ export const data = {
       "docentes": "NICOLINI, JORGE VICTOR - BARRIONUEVO, JUAN CARLOS AUDELINO - MORDEGLIA, PEDRO - SAEZ DE ARREGUI, MERCEDES - KOHN, SEBASTIAN",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "19:00",
           "fin": "22:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "19:00",
           "fin": "22:00"
         }
@@ -23180,14 +23180,14 @@ export const data = {
           "fin": "20:30"
         },
         {
-          "dia": 5,
-          "inicio": "20:00",
-          "fin": "21:00"
-        },
-        {
           "dia": 3,
           "inicio": "19:00",
           "fin": "20:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "20:00",
+          "fin": "21:00"
         }
       ]
     },
@@ -23950,12 +23950,12 @@ export const data = {
       "docentes": "SASSANO, MIRYAM PATRICIA - VERA GUZMAN, RAMIRO AUGUSTO - HUSAIN CERRUTI, IGNACIO SANTIAGO - GARCIA, EZEQUIEL - TURANO, MARIA AGUSTINA",
       "clases": [
         {
-          "dia": 4,
+          "dia": 3,
           "inicio": "16:00",
           "fin": "19:00"
         },
         {
-          "dia": 3,
+          "dia": 4,
           "inicio": "16:00",
           "fin": "19:00"
         }
@@ -23966,12 +23966,12 @@ export const data = {
       "docentes": "RODRIGUEZ, DANIEL FABIAN - MACHIUNAS, VALERIA",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "17:00",
           "fin": "20:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "17:00",
           "fin": "20:00"
         }
@@ -23994,7 +23994,7 @@ export const data = {
       ]
     },
     {
-      "codigo": "9504-CURSO: 08-Cavaliere Prictica Lunes",
+      "codigo": "9504-CURSO: 08-Cavaliere Práctica Lunes",
       "docentes": "CAVALIERE, MIGUEL ANGEL - BALZAROTTI, FEDERICO - GARCIA, EZEQUIEL",
       "clases": [
         {
@@ -24345,12 +24345,12 @@ export const data = {
       "docentes": "SASSANO, MIRYAM PATRICIA - GARCIA, EZEQUIEL - HUSAIN CERRUTI, IGNACIO SANTIAGO - VERA GUZMAN, RAMIRO AUGUSTO - TURANO, MARIA AGUSTINA",
       "clases": [
         {
-          "dia": 4,
+          "dia": 3,
           "inicio": "16:00",
           "fin": "19:00"
         },
         {
-          "dia": 3,
+          "dia": 4,
           "inicio": "16:00",
           "fin": "19:00"
         }
@@ -24361,12 +24361,12 @@ export const data = {
       "docentes": "RODRIGUEZ, DANIEL FABIAN - MACHIUNAS, VALERIA",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "17:00",
           "fin": "20:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "17:00",
           "fin": "20:00"
         }
@@ -24557,12 +24557,12 @@ export const data = {
       "docentes": "CAIAFA, CESAR FEDERICO - BENITEZ, CARLOS MARCELO - VILLANUEVA, CECILIA AZUL",
       "clases": [
         {
-          "dia": 5,
+          "dia": 3,
           "inicio": "19:00",
           "fin": "22:00"
         },
         {
-          "dia": 3,
+          "dia": 5,
           "inicio": "19:00",
           "fin": "22:00"
         }
@@ -24621,14 +24621,14 @@ export const data = {
       "docentes": "CABRERA, JOSE LUIS",
       "clases": [
         {
-          "dia": 5,
-          "inicio": "07:00",
-          "fin": "09:00"
-        },
-        {
           "dia": 3,
           "inicio": "19:00",
           "fin": "23:00"
+        },
+        {
+          "dia": 5,
+          "inicio": "07:00",
+          "fin": "09:00"
         }
       ]
     },

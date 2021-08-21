@@ -25,14 +25,13 @@ const Body = () => {
 
   React.useEffect(() => {
     toast({
-      position: "top",
+      position: "bottom-right",
       duration: 2000,
       render: () => (
         <Alert
           borderColor="drawerbg"
           borderWidth={2}
           borderRadius={5}
-          mt={8}
           status="success"
           color="drawerbg"
         >

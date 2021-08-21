@@ -80,14 +80,11 @@ const useData = () => {
   React.useEffect(() => {
     let codigos = [];
     if (!selectedCarreras.length) {
-      codigos = carreras
-        .map((nombre) => jsonCarreras.find((c) => c.nombre === nombre))
-        .filter((materia) => !!materia)
-        .reduce((arr, c) => arr.concat(...c.materias), []);
+      codigos = jsonData.materias.map((m) => m.codigo);
     } else {
       codigos = selectedCarreras
         .map((nombre) => jsonCarreras.find((c) => c.nombre === nombre))
-        .filter((materia) => !!materia)
+        .filter((carrera) => !!carrera)
         .reduce((arr, c) => arr.concat(...c.materias), []);
     }
     const codigosUnicos = [...new Set(codigos)].sort();

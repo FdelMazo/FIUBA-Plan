@@ -7622,13 +7622,13 @@ export const data = {
       "clases": [
         {
           "dia": 2,
-          "inicio": "13:00",
-          "fin": "19:00"
+          "inicio": "14:00",
+          "fin": "17:00"
         },
         {
           "dia": 4,
           "inicio": "14:00",
-          "fin": "18:00"
+          "fin": "17:00"
         }
       ]
     },

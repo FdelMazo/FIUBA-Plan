@@ -195,7 +195,7 @@ const MateriasDrawer = (props) => {
                 </Link>
               </Tooltip>
 
-              <Tooltip label="Invitame un Cafecíto" placement="top">
+              <Tooltip label="Invitame un Cafecito" placement="top">
                 <Link
                   Link
                   color="primary.600"
@@ -253,14 +253,31 @@ const MateriasDrawer = (props) => {
                                 , y la verdad es que nunca me gusta como queda.
                               </Text>
                               <Text>
-                                Si encontras algo incorrecto o que no funciona,
+                                Si encontrás algo incorrecto o que no funciona,
                                 me avisas?
                               </Text>
                               <Text>
-                                Todos los horarios salen del sistema de FIUBA,
-                                así que los comentarios de 'ese profesor empieza
-                                una hora antes' o 'esa materia ya no la dan' los
-                                voy a ignorar.
+                                Todos los horarios salen del 
+                                <Link
+                                  isExternal
+                                  _hover={{
+                                    color: "primary.500",
+                                  }}
+                                  href="https://ofertahoraria.fi.uba.ar/"
+                                >
+                                  {" "}
+                                  sistema de FIUBA{" "}
+                                  <ExternalLinkIcon
+                                    color="primary.500"
+                                    mx="2px"
+                                  />
+                                </Link>
+                                , así que los comentarios del estilo 'ese profesor empieza
+                                una hora antes' los voy a ignorar.
+                              </Text>
+                              <Text>
+                                Pero, los comentarios de 'este horario figura en el
+                                SIU pero no en el FIUBA-Plan' me ayudan un montón.
                               </Text>
                               <Text>
                                 Si querés que te responda, escribí tu

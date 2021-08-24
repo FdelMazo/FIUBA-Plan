@@ -134,14 +134,13 @@ const useData = () => {
           const fin = new Date(2018, 0, clase.dia);
           const [finHora, finMinutos] = clase.fin.split(":");
           fin.setHours(finHora, finMinutos);
-
           return {
             start: inicio,
             end: fin,
             codigo: curso.codigo,
             id: `${curso.codigo}${inicio}`,
             title: curso.docentes,
-            color: colorHash.hex(curso.docentes + curso.codigo),
+            color: colorHash.hex(curso.codigo + curso.docentes),
             materia: curso.materia.nombre,
           };
         })
@@ -191,7 +190,7 @@ const useData = () => {
         ...selectedCursos,
         {
           codigo: curso.codigo,
-          color: colorHash.hex(curso.docentes),
+          color: colorHash.hex(curso.codigo + curso.docentes),
           materia,
         },
       ];

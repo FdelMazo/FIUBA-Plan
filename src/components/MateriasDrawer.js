@@ -140,7 +140,7 @@ const MateriasDrawer = (props) => {
                 )}
               </Flex>
               {selectedMaterias.map((m) => (
-                <SelectCurso codigo={m} />
+                <SelectCurso codigo={m} key={m} />
               ))}
             </Box>
           </DrawerBody>
@@ -257,7 +257,7 @@ const MateriasDrawer = (props) => {
                                 me avisas?
                               </Text>
                               <Text>
-                                Todos los horarios salen del 
+                                Todos los horarios salen del
                                 <Link
                                   isExternal
                                   _hover={{
@@ -272,12 +272,14 @@ const MateriasDrawer = (props) => {
                                     mx="2px"
                                   />
                                 </Link>
-                                , así que los comentarios del estilo 'ese profesor empieza
-                                una hora antes' los voy a ignorar.
+                                , así que los comentarios del estilo 'ese
+                                profesor empieza una hora antes' los voy a
+                                ignorar.
                               </Text>
                               <Text>
-                                Pero, los comentarios de 'este horario figura en el
-                                SIU pero no en el FIUBA-Plan' me ayudan un montón.
+                                Pero, los comentarios de 'este horario figura en
+                                el SIU pero no en el FIUBA-Plan' me ayudan un
+                                montón.
                               </Text>
                               <Text>
                                 Si querés que te responda, escribí tu

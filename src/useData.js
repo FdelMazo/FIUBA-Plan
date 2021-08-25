@@ -16,6 +16,18 @@ const toggler = (arr, setArr, item) => {
   setArr(newArr);
 };
 
+const ValidCurso = (codigo) => {
+  return !!jsonData.cursos.find((curso) => curso.codigo === codigo);
+};
+
+const ValidMateria = (codigo) => {
+  const materia = jsonData.materias.find(
+    (materia) => materia.codigo === codigo
+  );
+  if (!materia) return false;
+  return materia.cursos.filter(ValidCurso).length;
+};
+
 const useData = () => {
   const select = (key) => {
     if (
@@ -32,10 +44,10 @@ const useData = () => {
     select("selectedCarreras") || []
   );
   const [selectedMaterias, setSelectedMaterias] = React.useState(
-    select("selectedMaterias") || []
+    select("selectedMaterias").filter(ValidMateria) || []
   );
   const [selectedCursos, setSelectedCursos] = React.useState(
-    select("selectedCursos") || []
+    select("selectedCursos").filter(ValidCurso) || []
   );
   const [events, setEvents] = React.useState([]);
   const [noCursar, setNoCursar] = React.useState(select("noCursar") || []);
@@ -125,7 +137,7 @@ const useData = () => {
         ...jsonData.cursos.find((c) => c.codigo === curso.codigo),
         materia: curso.materia,
       }))
-      .filter((curso) => !!curso)
+      .filter((curso) => !!curso.codigo)
       .map((curso) =>
         curso.clases.map((clase) => {
           const inicio = new Date(2018, 0, clase.dia);

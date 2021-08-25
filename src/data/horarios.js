@@ -1,6 +1,6 @@
 export const data = {
   "cuatrimestre": "2021C2",
-  "timestamp": "2021-08-21 11:10:15.338959",
+  "timestamp": "2021-08-25 19:40:32.025972",
   "materias": [
     {
       "codigo": "6103",
@@ -1136,6 +1136,13 @@ export const data = {
       "nombre": "GEOGRAFIA FISICA Y GEOLOGIA",
       "cursos": [
         "7006-CURSO: 01"
+      ]
+    },
+    {
+      "codigo": "7007",
+      "nombre": "CÁLCULO DE COMPENSACIÓN",
+      "cursos": [
+        "7007-CURSO: 1"
       ]
     },
     {
@@ -2512,71 +2519,69 @@ export const data = {
       "codigo": "7901",
       "nombre": "INTRODUCCIÓN A LA  INGENIERÍA  EN PETRÓLEO",
       "cursos": [
-        "7901-CURSO: 013"
+        "7901-CURSO: 01"
       ]
     },
     {
       "codigo": "7902",
       "nombre": "PERFORACIÓN DE POZOS I",
       "cursos": [
-        "7902-CURSO: 013"
+        "7902-CURSO: 01"
       ]
     },
     {
       "codigo": "7903",
       "nombre": "TERMINACIÓN Y REPARACIÓN DE POZOS I",
       "cursos": [
-        "7903-CURSO: 013"
+        "7903-CURSO: 01"
       ]
     },
     {
       "codigo": "7904",
       "nombre": "INTERPRETACIÓN DE REGISTROS DE POZOS",
       "cursos": [
-        "7904-CURSO: 013"
+        "7904-CURSO: 01"
       ]
     },
     {
       "codigo": "7905",
       "nombre": "GEOLOGÍA DEL PETRÓLEO",
       "cursos": [
-        "7905-CURSO: 013"
+        "7905-CURSO: 01"
       ]
     },
     {
       "codigo": "7906",
       "nombre": "GEOFÍSICA DEL PETRÓLEO",
       "cursos": [
-        "7906-CURSO: 013"
+        "7906-CURSO: 01"
       ]
     },
     {
       "codigo": "7907",
       "nombre": "PERFORACIÓN DE POZOS II",
       "cursos": [
-        "7907-CURSO: 013"
+        "7907-CURSO: 01"
       ]
     },
     {
       "codigo": "7908",
       "nombre": "INGENIERÍA DE RESERVORIOS NO CONVENCIONALES",
       "cursos": [
-        "7908-CURSO UNICO",
-        "7908-CURSO: 01"
+        "7908-CURSO UNICO"
       ]
     },
     {
       "codigo": "7909",
       "nombre": "GAS Y CONDENSADOS",
       "cursos": [
-        "7909-CURSO: 13"
+        "7909-CURSO: 1"
       ]
     },
     {
       "codigo": "7910",
       "nombre": "DESARROLLO DE YACIMIENTOS",
       "cursos": [
-        "7910-CURSO:01",
         "7910-CUSO UNICO"
       ]
     },
@@ -2584,16 +2589,14 @@ export const data = {
       "codigo": "7911",
       "nombre": "TERMINACIÓN Y REPARACIÓN DE POZOS II",
       "cursos": [
-        "7911-CURSO UNICO",
-        "7911-CURSO:01"
+        "7911-CURSO UNICO"
       ]
     },
     {
       "codigo": "7912",
       "nombre": "PRODUCCIÓN DE PETRÓLEO",
       "cursos": [
-        "7912-CURSO: 01",
-        "7912-CURSO: 013"
+        "7912-CURSO: 01"
       ]
     },
     {
@@ -2607,50 +2610,56 @@ export const data = {
       "codigo": "7915",
       "nombre": "INSTALACIONES DE PRODUCCIÓN",
       "cursos": [
-        "7915-CURSO: 13"
+        "7915-CURSO: 1"
       ]
     },
     {
       "codigo": "7918",
       "nombre": "PROPIEDADES DE LA ROCA Y LOS FLUÍDOS DE RESERVORIOS",
       "cursos": [
-        "7918-CURSO: 013"
+        "7918-CURSO: 01"
       ]
     },
     {
       "codigo": "7919",
       "nombre": "INGENIERÍA DE RESERVORIOS",
       "cursos": [
-        "7919-CURSO: 013"
+        "7919-CURSO: 01"
       ]
     },
     {
       "codigo": "7920",
       "nombre": "ENSAYOS DE POZO",
       "cursos": [
-        "7920-CURSO: 13"
+        "7920-CURSO: 01"
       ]
     },
     {
       "codigo": "7921",
       "nombre": "RECUPERACIÓN SECUNDARIA Y ASISTIDA DE PETRÓLEO",
       "cursos": [
-        "7921-CURSO: 13"
+        "7921-CURSO: 1"
       ]
     },
     {
       "codigo": "7922",
       "nombre": "SIMULACIÓN NUMÉRICA DE RESERVORIOS",
       "cursos": [
-        "7922-CURSO UNICO",
-        "7922-CURSO:01"
+        "7922-CURSO UNICO"
       ]
     },
     {
       "codigo": "7923",
       "nombre": "INDUSTRIALIZACIÓN DEL PETRÓLEO Y DEL GAS",
       "cursos": [
-        "7923-CURSO:013"
+        "7923-CURSO:01"
+      ]
+    },
+    {
+      "codigo": "7924",
+      "nombre": "TECNOLOGÍA Y SOCIEDAD",
+      "cursos": [
+        "7924-CURSO 01"
       ]
     },
     {
@@ -3549,13 +3558,6 @@ export const data = {
       "nombre": "REDES NEURONALES",
       "cursos": [
         "8654-CURSO: 1"
-      ]
-    },
-    {
-      "codigo": "8655",
-      "nombre": "TEORÍA DE DETECCIÓN Y ESTIMACIÓN",
-      "cursos": [
-        "8655-CURSO: 1"
       ]
     },
     {
@@ -5106,7 +5108,7 @@ export const data = {
     },
     {
       "codigo": "6103-CURSO: 20B",
-      "docentes": "SEMINARA, SILVIA ALEJANDRA - PALAZÓN, MANUELA - LUCUY SUAREZ, FRED ALBERTO",
+      "docentes": "SEMINARA, SILVIA ALEJANDRA - LUCUY SUAREZ, FRED ALBERTO - PALAZÓN, MANUELA",
       "clases": [
         {
           "dia": 1,
@@ -5132,7 +5134,7 @@ export const data = {
     },
     {
       "codigo": "6103-CURSO: 22",
-      "docentes": "MANCILLA AGUILAR, JOSE LUIS - GONZALEZ, DANIEL ALEJANDRO - AMOREO, ANIBAL - VENTURIELLO, VERONICA LAURA - CENTENO, HERNÁN DIEGO",
+      "docentes": "MANCILLA AGUILAR, JOSE LUIS - GONZALEZ, DANIEL ALEJANDRO - AMOREO, ANIBAL - CENTENO, HERNÁN DIEGO - VENTURIELLO, VERONICA LAURA",
       "clases": [
         {
           "dia": 2,
@@ -5210,7 +5212,7 @@ export const data = {
     },
     {
       "codigo": "6103-CURSO: 3",
-      "docentes": "GIGOLA, SILVIA VIVIANA - DE ROSSI, FERNANDO DANIEL - PORTOCARRERO MIRANDA, MICHAEL - A DESIGNAR, A DESIGNAR",
+      "docentes": "GIGOLA, SILVIA VIVIANA - DE ROSSI, FERNANDO DANIEL - A DESIGNAR, A DESIGNAR - PORTOCARRERO MIRANDA, MICHAEL",
       "clases": [
         {
           "dia": 1,
@@ -5288,7 +5290,7 @@ export const data = {
     },
     {
       "codigo": "6103-CURSO: 5A",
-      "docentes": "MAULHARDT, MARTIN ENRIQUE - PUEBLA, MANUEL LEANDRO - RIZZO, ELISABETH AMALIA - A DESIGNAR, A DESIGNAR",
+      "docentes": "MAULHARDT, MARTIN ENRIQUE - RIZZO, ELISABETH AMALIA - PUEBLA, MANUEL LEANDRO - A DESIGNAR, A DESIGNAR",
       "clases": [
         {
           "dia": 2,
@@ -5392,7 +5394,7 @@ export const data = {
     },
     {
       "codigo": "6103-CURSO: 8",
-      "docentes": "DI IORIO Y LUCERO, MARIA EUGENIA - A DESIGNAR, A DESIGNAR - GUALTIERI, SERGIO ALBERTO - ROMERO, FABIAN ALEJANDRO",
+      "docentes": "DI IORIO Y LUCERO, MARIA EUGENIA - GUALTIERI, SERGIO ALBERTO - A DESIGNAR, A DESIGNAR - ROMERO, FABIAN ALEJANDRO",
       "clases": [
         {
           "dia": 3,
@@ -5514,7 +5516,7 @@ export const data = {
     },
     {
       "codigo": "6106-CURSO: 08",
-      "docentes": "MARTINEZ, JULIAN FACUNDO - COSATTO AMMANN, PEDRO CAMILO - SOSA, MARINA",
+      "docentes": "MARTINEZ, JULIAN FACUNDO - SOSA, MARINA - COSATTO AMMANN, PEDRO CAMILO",
       "clases": [
         {
           "dia": 2,
@@ -5589,7 +5591,7 @@ export const data = {
     },
     {
       "codigo": "6107-CURSO: 1",
-      "docentes": "ACERO, FERNANDO RODOLFO - BOLIVAR, MARIA JULIA - MAULHARDT, MARTIN ENRIQUE - HOLLISCH, GISELE",
+      "docentes": "ACERO, FERNANDO RODOLFO - MAULHARDT, MARTIN ENRIQUE - BOLIVAR, MARIA JULIA - HOLLISCH, GISELE",
       "clases": [
         {
           "dia": 1,
@@ -5621,7 +5623,7 @@ export const data = {
     },
     {
       "codigo": "6107-CURSO: 3",
-      "docentes": "ACERO, FERNANDO RODOLFO - MIGUEL, AIDA CARMEN - CANGA, SANDRA CARMEN",
+      "docentes": "ACERO, FERNANDO RODOLFO - CANGA, SANDRA CARMEN - MIGUEL, AIDA CARMEN",
       "clases": [
         {
           "dia": 1,
@@ -5663,7 +5665,7 @@ export const data = {
     },
     {
       "codigo": "6108-CURSO: 13",
-      "docentes": "CABANA, ADRIANA ELENA - PERALTA, NORA BEATRIZ - HERRMANN, GUILLERMO WALTER - MARTI, MARIA ELIZABETH",
+      "docentes": "CABANA, ADRIANA ELENA - PERALTA, NORA BEATRIZ - MARTI, MARIA ELIZABETH - HERRMANN, GUILLERMO WALTER",
       "clases": [
         {
           "dia": 3,
@@ -5949,7 +5951,7 @@ export const data = {
     },
     {
       "codigo": "6108-CURSO: 25",
-      "docentes": "MEDINA, JUAN MIGUEL - HERRMANN, GUILLERMO WALTER - MAILING, AGUSTIN BELTRAN",
+      "docentes": "MEDINA, JUAN MIGUEL - MAILING, AGUSTIN BELTRAN - HERRMANN, GUILLERMO WALTER",
       "clases": [
         {
           "dia": 2,
@@ -6001,7 +6003,7 @@ export const data = {
     },
     {
       "codigo": "6108-CURSO: 2B",
-      "docentes": "SARRIS, CLAUDIA MONICA - CHARO, GISELA DANIELA - HERRMANN, GUILLERMO WALTER",
+      "docentes": "SARRIS, CLAUDIA MONICA - HERRMANN, GUILLERMO WALTER - CHARO, GISELA DANIELA",
       "clases": [
         {
           "dia": 2,
@@ -6429,7 +6431,7 @@ export const data = {
     },
     {
       "codigo": "6113-CURSO: 1",
-      "docentes": "MURMIS, EDUARDO GABRIEL - UNCAL BRESSI, MATIAS EZEQUIEL - BARRERA SANCHEZ, KELLY JOHANA",
+      "docentes": "MURMIS, EDUARDO GABRIEL - BARRERA SANCHEZ, KELLY JOHANA - UNCAL BRESSI, MATIAS EZEQUIEL",
       "clases": [
         {
           "dia": 4,
@@ -6812,7 +6814,7 @@ export const data = {
     },
     {
       "codigo": "6201-CURSO: 08",
-      "docentes": "FERRINI, ADRIAN - MARTÍNEZ STENGER, PABLO FRANCISCO - DANERI, CLAUDIO ESTEBAN MA - SUAREZ ANZORENA ROSASCO, X - DI BENEDETTO, TOMAS PEDRO",
+      "docentes": "FERRINI, ADRIAN - MARTÍNEZ STENGER, PABLO FRANCISCO - SUAREZ ANZORENA ROSASCO, X - DANERI, CLAUDIO ESTEBAN MA - DI BENEDETTO, TOMAS PEDRO",
       "clases": [
         {
           "dia": 2,
@@ -6860,7 +6862,7 @@ export const data = {
     },
     {
       "codigo": "6201-CURSO: 11",
-      "docentes": "FONTANA, MARCELO RAUL - CAMUYRANO, MARIO - BELLOCQ, ELISABET CRISTINA - CARO, GERMAN - HERNANDEZ, FEDERICO ALBERTO",
+      "docentes": "FONTANA, MARCELO RAUL - CAMUYRANO, MARIO - CARO, GERMAN - BELLOCQ, ELISABET CRISTINA - HERNANDEZ, FEDERICO ALBERTO",
       "clases": [
         {
           "dia": 2,
@@ -6892,7 +6894,7 @@ export const data = {
     },
     {
       "codigo": "6201-CURSO: 13",
-      "docentes": "CHIABRANDO, LAURA - DUPLAA, MARIA CELESTE - RIVAS ROJAS, PATRICIA CAROLINA - BARBER, MATIAS ERNESTO - A DESIGNAR, A DESIGNAR",
+      "docentes": "CHIABRANDO, LAURA - DUPLAA, MARIA CELESTE - BARBER, MATIAS ERNESTO - RIVAS ROJAS, PATRICIA CAROLINA - A DESIGNAR, A DESIGNAR",
       "clases": [
         {
           "dia": 3,
@@ -6956,7 +6958,7 @@ export const data = {
     },
     {
       "codigo": "6201-CURSO: 17",
-      "docentes": "GAREA, MARIA TERESA - MIRALLES, MONICA TERESITA - AULIEL, MARIA INES - A DESIGNAR, A DESIGNAR - CHARRUT, MATIAS EZEQUIEL",
+      "docentes": "GAREA, MARIA TERESA - MIRALLES, MONICA TERESITA - A DESIGNAR, A DESIGNAR - AULIEL, MARIA INES - CHARRUT, MATIAS EZEQUIEL",
       "clases": [
         {
           "dia": 1,
@@ -6983,7 +6985,7 @@ export const data = {
     },
     {
       "codigo": "6201-CURSO: SP2",
-      "docentes": "DADAMIA, DANILO JOSE - VILLAFAÑE, ALBERTO RAUL - ROBLEDO, FABIANA ELIZABETH - MUÑOZ, MARCOS ALFREDO SEBASTIAN - GOMEZ TOBA, GONZALO HERNAN",
+      "docentes": "DADAMIA, DANILO JOSE - VILLAFAÑE, ALBERTO RAUL - MUÑOZ, MARCOS ALFREDO SEBASTIAN - ROBLEDO, FABIANA ELIZABETH - GOMEZ TOBA, GONZALO HERNAN",
       "clases": [
         {
           "dia": 2,
@@ -7150,7 +7152,7 @@ export const data = {
     },
     {
       "codigo": "6203-CURSO: 08",
-      "docentes": "PIVA, MARCELO FABIAN - ZALDIVAR, ESCOLA FACUNDO - AULIEL, MARIA INES - CARREÑO ROMANO, CARLOS GERMAN - ARANDA CORDERO, CRISTIAN ZOZIMO",
+      "docentes": "PIVA, MARCELO FABIAN - ZALDIVAR, ESCOLA FACUNDO - CARREÑO ROMANO, CARLOS GERMAN - AULIEL, MARIA INES - ARANDA CORDERO, CRISTIAN ZOZIMO",
       "clases": [
         {
           "dia": 2,
@@ -7228,7 +7230,7 @@ export const data = {
     },
     {
       "codigo": "6203-CURSO: 11",
-      "docentes": "SILVEYRA, JOSEFINA MARIA - PRESA, VERÓNICA  ANA - GALLOSO, VERONICA VIVIANA - FERNANDEZ, VIRGINIA VELMA - LEON MORALES, ANDY JAVIER",
+      "docentes": "SILVEYRA, JOSEFINA MARIA - PRESA, VERÓNICA  ANA - FERNANDEZ, VIRGINIA VELMA - GALLOSO, VERONICA VIVIANA - LEON MORALES, ANDY JAVIER",
       "clases": [
         {
           "dia": 3,
@@ -7332,7 +7334,7 @@ export const data = {
     },
     {
       "codigo": "6203-CURSO: 15",
-      "docentes": "REDIN, EDUARDO GABRIEL - ROSCARDI, JAVIER EDUARDO - POLENTA, PABLO NICOLAS - JAN, LUIS EMILIANO - MORINIGO FERREIRA, ANGEL ANDERSON",
+      "docentes": "REDIN, EDUARDO GABRIEL - ROSCARDI, JAVIER EDUARDO - JAN, LUIS EMILIANO - POLENTA, PABLO NICOLAS - MORINIGO FERREIRA, ANGEL ANDERSON",
       "clases": [
         {
           "dia": 3,
@@ -7592,7 +7594,7 @@ export const data = {
     },
     {
       "codigo": "6204-CURSO: 15",
-      "docentes": "REDIN, EDUARDO GABRIEL - ROSCARDI, JAVIER EDUARDO - POLENTA, PABLO NICOLAS - JAN, LUIS EMILIANO - MORINIGO FERREIRA, ANGEL ANDERSON",
+      "docentes": "REDIN, EDUARDO GABRIEL - ROSCARDI, JAVIER EDUARDO - JAN, LUIS EMILIANO - POLENTA, PABLO NICOLAS - MORINIGO FERREIRA, ANGEL ANDERSON",
       "clases": [
         {
           "dia": 3,
@@ -7618,7 +7620,7 @@ export const data = {
     },
     {
       "codigo": "6205-CURSO: 01",
-      "docentes": "OZOLS, ANDRES - PUCEIRO, ALEJANDRO JOSE LUIS - DELLA VALLE, EUGENIO ANDRÉS - FREIRE, FACUNDO",
+      "docentes": "OZOLS, ANDRES - PUCEIRO, ALEJANDRO JOSE LUIS - FREIRE, FACUNDO - DELLA VALLE, EUGENIO ANDRÉS",
       "clases": [
         {
           "dia": 2,
@@ -7815,7 +7817,7 @@ export const data = {
     },
     {
       "codigo": "6301-CURSO: 03",
-      "docentes": "UREÑA, ARIA ANDREA - DIZ, VIRGINIA EMILSE - MELAJ, MARIANA ANDREA - MONTAÑO HEREDIA, GABRIELA GRISEL - PRINCIPE LOPEZ, JESUS BENJAMIN - CRESPO, ELISEO",
+      "docentes": "DIZ, VIRGINIA EMILSE - UREÑA, ARIA ANDREA - MELAJ, MARIANA ANDREA - MONTAÑO HEREDIA, GABRIELA GRISEL - PRINCIPE LOPEZ, JESUS BENJAMIN - CRESPO, ELISEO",
       "clases": [
         {
           "dia": 3,
@@ -7836,7 +7838,7 @@ export const data = {
     },
     {
       "codigo": "6301-CURSO: 04",
-      "docentes": "PORTA, GUSTAVO ROBERTO - UREÑA, ARIA ANDREA - NUÑEZ, NATALIA ELENA - GOMEZ KRAWIECKY, JOAQUIN ALEJANDRO - FRAGA DIAZ de VIVAR, JOAQUIN",
+      "docentes": "UREÑA, ARIA ANDREA - PORTA, GUSTAVO ROBERTO - NUÑEZ, NATALIA ELENA - FRAGA DIAZ de VIVAR, JOAQUIN - GOMEZ KRAWIECKY, JOAQUIN ALEJANDRO",
       "clases": [
         {
           "dia": 4,
@@ -7857,7 +7859,7 @@ export const data = {
     },
     {
       "codigo": "6301-CURSO: 05",
-      "docentes": "SARALEGUI, ANDREA BEATRIZ - UREÑA, ARIA ANDREA - MACRI, DANIEL AGUSTÍN - MORALES, MAXIMILIANO PABLO - SAMRA, GISELLE VANESA",
+      "docentes": "UREÑA, ARIA ANDREA - SARALEGUI, ANDREA BEATRIZ - MACRI, DANIEL AGUSTÍN - MORALES, MAXIMILIANO PABLO - SAMRA, GISELLE VANESA",
       "clases": [
         {
           "dia": 5,
@@ -7899,7 +7901,7 @@ export const data = {
     },
     {
       "codigo": "6301-CURSO: 07",
-      "docentes": "UREÑA, ARIA ANDREA - VAZQUEZ, CRISTINA - GONZALEZ, ESTEBAN MANUEL - IRIANNI, JORGE LUIS - ANDRONIKOV, ANDRES",
+      "docentes": "VAZQUEZ, CRISTINA - UREÑA, ARIA ANDREA - GONZALEZ, ESTEBAN MANUEL - IRIANNI, JORGE LUIS - ANDRONIKOV, ANDRES",
       "clases": [
         {
           "dia": 2,
@@ -7962,7 +7964,7 @@ export const data = {
     },
     {
       "codigo": "6301-CURSO: 11",
-      "docentes": "UREÑA, ARIA ANDREA - GRANDE, MARIA DEL CARMEN - GAMBOA, BRICEÑO WILFREDO - DIAZ, LILIANA ANALIA - SARKOZY, ADRIANA ELENA",
+      "docentes": "UREÑA, ARIA ANDREA - GRANDE, MARIA DEL CARMEN - GAMBOA, BRICEÑO WILFREDO - SARKOZY, ADRIANA ELENA - DIAZ, LILIANA ANALIA",
       "clases": [
         {
           "dia": 1,
@@ -8025,7 +8027,7 @@ export const data = {
     },
     {
       "codigo": "6301-CURSO: 14",
-      "docentes": "UREÑA, ARIA ANDREA - RICOTTI, ELISA BEATRIZ - TESTA, FERNANDEZ JUAN JOSE - SANCHEZ, ALEJANDRO DARÍO - LAVALLE, MYRIAM BEATRIZ",
+      "docentes": "RICOTTI, ELISA BEATRIZ - UREÑA, ARIA ANDREA - TESTA, FERNANDEZ JUAN JOSE - SANCHEZ, ALEJANDRO DARÍO - LAVALLE, MYRIAM BEATRIZ",
       "clases": [
         {
           "dia": 1,
@@ -8077,7 +8079,7 @@ export const data = {
     },
     {
       "codigo": "6302-CURSO: 02",
-      "docentes": "APHESTEGUY, JUAN CARLOS - FRANCOIS, NORA JUDIT - REQUENA, CARLOS EDUARDO - MAS TONÓN, MAURICIO XAVIER - MAURO, ANTONELLA ROMINA",
+      "docentes": "FRANCOIS, NORA JUDIT - APHESTEGUY, JUAN CARLOS - REQUENA, CARLOS EDUARDO - MAS TONÓN, MAURICIO XAVIER - MAURO, ANTONELLA ROMINA",
       "clases": [
         {
           "dia": 2,
@@ -8103,7 +8105,7 @@ export const data = {
     },
     {
       "codigo": "6302-CURSO: 03",
-      "docentes": "FRANCOIS, NORA JUDIT - APHESTEGUY, JUAN CARLOS - GAVIOLI, NATALIA - ACOSTA, NICOLAS ALBERTO - NUÑEZ, NATALIA ELENA",
+      "docentes": "APHESTEGUY, JUAN CARLOS - FRANCOIS, NORA JUDIT - GAVIOLI, NATALIA - ACOSTA, NICOLAS ALBERTO - NUÑEZ, NATALIA ELENA",
       "clases": [
         {
           "dia": 2,
@@ -8129,7 +8131,7 @@ export const data = {
     },
     {
       "codigo": "6302-CURSO: 04",
-      "docentes": "FRANCOIS, NORA JUDIT - APHESTEGUY, JUAN CARLOS - FANCHIOTTI, SANDRA GABRIEL - VIOLA, FEDERICO LUIS - MASURSKI, ANDRES - COSTA, ARIEL MATIAS",
+      "docentes": "FRANCOIS, NORA JUDIT - APHESTEGUY, JUAN CARLOS - FANCHIOTTI, SANDRA GABRIEL - VIOLA, FEDERICO LUIS - COSTA, ARIEL MATIAS - MASURSKI, ANDRES",
       "clases": [
         {
           "dia": 2,
@@ -8202,7 +8204,7 @@ export const data = {
     },
     {
       "codigo": "6305-CURSO: 02",
-      "docentes": "FASOLI, HECTOR JOSE - PIOL, MARIA NATALIA - TORIGGIA, IGNACIO SEBASTIAN - DICKERMAN, CAROLINA - SANCHEZ, MARTÍN FEDERICO",
+      "docentes": "FASOLI, HECTOR JOSE - PIOL, MARIA NATALIA - TORIGGIA, IGNACIO SEBASTIAN - SANCHEZ, MARTÍN FEDERICO - DICKERMAN, CAROLINA",
       "clases": [
         {
           "dia": 1,
@@ -8223,7 +8225,7 @@ export const data = {
     },
     {
       "codigo": "6307-CURSO: 01",
-      "docentes": "RAZZITTE, ADRIAN CESAR - BARBIRIC, DORA ANA JOSEFINA - KINGSTON, DIEGO - GUREVICH MESSINA, LUCIANO IGNACIO - RUIZ, MARIA SOL - DI LIBERO, ERNESTO",
+      "docentes": "RAZZITTE, ADRIAN CESAR - BARBIRIC, DORA ANA JOSEFINA - GUREVICH MESSINA, LUCIANO IGNACIO - KINGSTON, DIEGO - RUIZ, MARIA SOL - DI LIBERO, ERNESTO",
       "clases": [
         {
           "dia": 1,
@@ -8265,7 +8267,7 @@ export const data = {
     },
     {
       "codigo": "6311-CURSO: 02",
-      "docentes": "BARRERO DEL SOLAR, CARMEN RAQUEL - RAJCHENBERG, NATAN ARIEL - VARGAS, MARIA ESTHER MONICA",
+      "docentes": "BARRERO DEL SOLAR, CARMEN RAQUEL - VARGAS, MARIA ESTHER MONICA - RAJCHENBERG, NATAN ARIEL",
       "clases": [
         {
           "dia": 1,
@@ -8317,7 +8319,7 @@ export const data = {
     },
     {
       "codigo": "6311-CURSO: 04",
-      "docentes": "CARACCIOLO, NESTOR - PEREZ BRAVO, JONAS JOSE - CID, LUCIA DEL CARMEN ISABEL",
+      "docentes": "CARACCIOLO, NESTOR - CID, LUCIA DEL CARMEN ISABEL - PEREZ BRAVO, JONAS JOSE",
       "clases": [
         {
           "dia": 2,
@@ -8457,7 +8459,7 @@ export const data = {
     },
     {
       "codigo": "6314-CURSO: 02",
-      "docentes": "MARTINS ALHO, MIRIAM - EIRAS, JAVIER - ARANDA, MARIO ARIEL - LUENGO, JOSEFINA - SANCHEZ, MARTÍN FEDERICO - PIANELLI, AGOSTINA",
+      "docentes": "MARTINS ALHO, MIRIAM - EIRAS, JAVIER - ARANDA, MARIO ARIEL - LUENGO, JOSEFINA - PIANELLI, AGOSTINA - SANCHEZ, MARTÍN FEDERICO",
       "clases": [
         {
           "dia": 1,
@@ -8493,7 +8495,7 @@ export const data = {
     },
     {
       "codigo": "6314-CURSO: 03",
-      "docentes": "EIRAS, JAVIER - MARTINS ALHO, MIRIAM - ARANDA, MARIO ARIEL - POZZOLI, ANGEL VALERIA - FIGUEROA, MARIA AMALIA - URBANO MARCHESSI, MAXIMO FRANCO",
+      "docentes": "EIRAS, JAVIER - MARTINS ALHO, MIRIAM - FIGUEROA, MARIA AMALIA - POZZOLI, ANGEL VALERIA - ARANDA, MARIO ARIEL - URBANO MARCHESSI, MAXIMO FRANCO",
       "clases": [
         {
           "dia": 3,
@@ -8550,7 +8552,7 @@ export const data = {
     },
     {
       "codigo": "6315-CURSO: 02",
-      "docentes": "FASOLI, HECTOR JOSE - PIOL, MARIA NATALIA - TORIGGIA, IGNACIO SEBASTIAN - SANCHEZ, MARTÍN FEDERICO - DICKERMAN, CAROLINA",
+      "docentes": "FASOLI, HECTOR JOSE - PIOL, MARIA NATALIA - TORIGGIA, IGNACIO SEBASTIAN - DICKERMAN, CAROLINA - SANCHEZ, MARTÍN FEDERICO",
       "clases": [
         {
           "dia": 1,
@@ -8571,7 +8573,7 @@ export const data = {
     },
     {
       "codigo": "6316-CURSO: 01",
-      "docentes": "RAZZITTE, ADRIAN CESAR - BARBIRIC, DORA ANA JOSEFINA - KINGSTON, DIEGO - GUREVICH MESSINA, LUCIANO IGNACIO - RUIZ, MARIA SOL - DI LIBERO, ERNESTO",
+      "docentes": "RAZZITTE, ADRIAN CESAR - BARBIRIC, DORA ANA JOSEFINA - GUREVICH MESSINA, LUCIANO IGNACIO - KINGSTON, DIEGO - DI LIBERO, ERNESTO - RUIZ, MARIA SOL",
       "clases": [
         {
           "dia": 1,
@@ -8651,7 +8653,7 @@ export const data = {
     },
     {
       "codigo": "6404-CURSO: 5",
-      "docentes": "LOPEZ RIVAROLA, FELIPE - ALTIERI, RUBEN DANIEL - TASLAKTZIAN, ADRIANA ESTE",
+      "docentes": "ALTIERI, RUBEN DANIEL - LOPEZ RIVAROLA, FELIPE - TASLAKTZIAN, ADRIANA ESTE",
       "clases": [
         {
           "dia": 3,
@@ -8667,7 +8669,7 @@ export const data = {
     },
     {
       "codigo": "6404-CURSO: 6",
-      "docentes": "RUIZ RE, MARIA SANDRA - LOPEZ RIVAROLA, FELIPE - PETRELLI SILVA, ADRIANA",
+      "docentes": "LOPEZ RIVAROLA, FELIPE - RUIZ RE, MARIA SANDRA - PETRELLI SILVA, ADRIANA",
       "clases": [
         {
           "dia": 2,
@@ -8763,7 +8765,7 @@ export const data = {
     },
     {
       "codigo": "6405-CURSO: 6",
-      "docentes": "LOPEZ RIVAROLA, FELIPE - RUIZ RE, MARIA SANDRA - PETRELLI SILVA, ADRIANA",
+      "docentes": "RUIZ RE, MARIA SANDRA - LOPEZ RIVAROLA, FELIPE - PETRELLI SILVA, ADRIANA",
       "clases": [
         {
           "dia": 2,
@@ -8934,7 +8936,7 @@ export const data = {
     },
     {
       "codigo": "6416-CURSO: 1",
-      "docentes": "BERTERO, AGUSTÍN - CASTAGNOLA, PEDRO DANTE - NET, MARCELO MANUEL - GUZMAN, CARLOS ALBERTO",
+      "docentes": "BERTERO, AGUSTÍN - NET, MARCELO MANUEL - CASTAGNOLA, PEDRO DANTE - GUZMAN, CARLOS ALBERTO",
       "clases": [
         {
           "dia": 1,
@@ -9602,7 +9604,7 @@ export const data = {
     },
     {
       "codigo": "6603-CURSO: 2",
-      "docentes": "OREGLIA, EDUARDO VICTOR - MALMORIA, MARIANO ESTEBAN NOÉ - ALONSO, RAMIRO",
+      "docentes": "OREGLIA, EDUARDO VICTOR - ALONSO, RAMIRO - MALMORIA, MARIANO ESTEBAN NOÉ",
       "clases": [
         {
           "dia": 2,
@@ -9692,7 +9694,7 @@ export const data = {
     },
     {
       "codigo": "6606-CURSO: 2",
-      "docentes": "VENTURINO, GABRIEL FRANCISCO - ZACCHIGNA, FEDERICO GIORDANO - CEA SASTRE, DIEGO HERNAN - LUPI, CLAUDIO ALBERTO - ROSSI, PABLO DANIEL",
+      "docentes": "VENTURINO, GABRIEL FRANCISCO - ZACCHIGNA, FEDERICO GIORDANO - CEA SASTRE, DIEGO HERNAN - ROSSI, PABLO DANIEL - LUPI, CLAUDIO ALBERTO",
       "clases": [
         {
           "dia": 1,
@@ -9750,7 +9752,7 @@ export const data = {
     },
     {
       "codigo": "6620-CURSO: 2",
-      "docentes": "HAMKALO, JOSE LUIS - HEGUIABEHERE, JUAN MARTIN - STAHL, MATIAS SEBASTIAN - NIÑO KEHOE, TOMAS",
+      "docentes": "HEGUIABEHERE, JUAN MARTIN - HAMKALO, JOSE LUIS - STAHL, MATIAS SEBASTIAN - NIÑO KEHOE, TOMAS",
       "clases": [
         {
           "dia": 1,
@@ -9932,7 +9934,7 @@ export const data = {
     },
     {
       "codigo": "6703-CURSO: 2",
-      "docentes": "MERLO, RUBEN OSVALDO - PERFUMO, LUCAS ALBERTO - NATALINO, ROXANA VANINA - REY, ALEJANDRO",
+      "docentes": "MERLO, RUBEN OSVALDO - PERFUMO, LUCAS ALBERTO - REY, ALEJANDRO - NATALINO, ROXANA VANINA",
       "clases": [
         {
           "dia": 3,
@@ -9965,7 +9967,7 @@ export const data = {
     },
     {
       "codigo": "6703-CURSO: 5",
-      "docentes": "MERLO, RUBEN OSVALDO - MERLO, ANTONELLA CAROLINA - NATALINO, ROXANA VANINA - BELLINO, LEANDRO",
+      "docentes": "MERLO, RUBEN OSVALDO - BELLINO, LEANDRO - MERLO, ANTONELLA CAROLINA - NATALINO, ROXANA VANINA",
       "clases": [
         {
           "dia": 1,
@@ -10215,7 +10217,7 @@ export const data = {
     },
     {
       "codigo": "6713-CURSO: 1B",
-      "docentes": "LAUFGANG, SERGIO GUSTAVO - SALAS, ENRIQUE GUSTAVO - DIAZ PERDIGUERO, LORENA REBECA DEL HUERTO - LORUSSO, HERNAN NORBERTO - DE LA CONCEPCIÓN MARÍA, VALERIA LUJÁN",
+      "docentes": "LAUFGANG, SERGIO GUSTAVO - SALAS, ENRIQUE GUSTAVO - LORUSSO, HERNAN NORBERTO - DIAZ PERDIGUERO, LORENA REBECA DEL HUERTO - DE LA CONCEPCIÓN MARÍA, VALERIA LUJÁN",
       "clases": [
         {
           "dia": 1,
@@ -10279,7 +10281,7 @@ export const data = {
     },
     {
       "codigo": "6713-CURSO: 3B",
-      "docentes": "LAUFGANG, SERGIO GUSTAVO - SALAS, ENRIQUE GUSTAVO - PICHIPIL HUIRCAPAN, MARCELA FRANCISCA - LUCCHETTA, MARÍA CLARISBEL - FRANCO, MARIA DE LAS MERCEDES - RULL, PABLO MARCELO",
+      "docentes": "LAUFGANG, SERGIO GUSTAVO - PICHIPIL HUIRCAPAN, MARCELA FRANCISCA - SALAS, ENRIQUE GUSTAVO - FRANCO, MARIA DE LAS MERCEDES - LUCCHETTA, MARÍA CLARISBEL - RULL, PABLO MARCELO",
       "clases": [
         {
           "dia": 1,
@@ -10295,7 +10297,7 @@ export const data = {
     },
     {
       "codigo": "6714-CURSO: 1",
-      "docentes": "YOMHA, LUIS ALBERTO - HOYOS QUINTERO, JOHN JAIRO - BERNAL, CELINA RAQUEL - KEMPF, RODOLFO ANTONIO - MIRANDA, ALEJANDRO OSCAR",
+      "docentes": "BERNAL, CELINA RAQUEL - HOYOS QUINTERO, JOHN JAIRO - YOMHA, LUIS ALBERTO - KEMPF, RODOLFO ANTONIO - MIRANDA, ALEJANDRO OSCAR",
       "clases": [
         {
           "dia": 3,
@@ -10370,7 +10372,7 @@ export const data = {
     },
     {
       "codigo": "6717-CURSO: 2A",
-      "docentes": "SCHENKEL, CHRISTIAN DAVID - PIZZICHINI, ESTEBAN LEANDRO - AREVALO BUSHARA, YAMIL ELIAS - CALAHONRA, CARLOS VITALI",
+      "docentes": "SCHENKEL, CHRISTIAN DAVID - PIZZICHINI, ESTEBAN LEANDRO - CALAHONRA, CARLOS VITALI - AREVALO BUSHARA, YAMIL ELIAS",
       "clases": [
         {
           "dia": 2,
@@ -10414,7 +10416,7 @@ export const data = {
     },
     {
       "codigo": "6717-CURSO: 4A",
-      "docentes": "SCHENKEL, CHRISTIAN DAVID - CAGEAO, SEBASTIAN - ALVAREZ, FACUNDO EMANUEL - YAÑEZ, MATIAS ANTONIO",
+      "docentes": "SCHENKEL, CHRISTIAN DAVID - ALVAREZ, FACUNDO EMANUEL - YAÑEZ, MATIAS ANTONIO - CAGEAO, SEBASTIAN",
       "clases": [
         {
           "dia": 4,
@@ -10425,7 +10427,7 @@ export const data = {
     },
     {
       "codigo": "6717-CURSO: 4B",
-      "docentes": "SCHENKEL, CHRISTIAN DAVID - ALVAREZ, FACUNDO EMANUEL - YAÑEZ, MATIAS ANTONIO - CAGEAO, SEBASTIAN",
+      "docentes": "SCHENKEL, CHRISTIAN DAVID - YAÑEZ, MATIAS ANTONIO - CAGEAO, SEBASTIAN - ALVAREZ, FACUNDO EMANUEL",
       "clases": [
         {
           "dia": 4,
@@ -10458,7 +10460,7 @@ export const data = {
     },
     {
       "codigo": "6717-CURSO: 6A",
-      "docentes": "ANTEZANA LOPEZ, JAVIER ARMANDO - GUARINIELLO, ESTEBAN - BURGHI, LUCAS - SPERONI, JORGE ANDRÉS",
+      "docentes": "ANTEZANA LOPEZ, JAVIER ARMANDO - SPERONI, JORGE ANDRÉS - BURGHI, LUCAS - GUARINIELLO, ESTEBAN",
       "clases": [
         {
           "dia": 6,
@@ -10469,7 +10471,7 @@ export const data = {
     },
     {
       "codigo": "6717-CURSO: 6B",
-      "docentes": "SCHENKEL, CHRISTIAN DAVID - ANTEZANA LOPEZ, JAVIER ARMANDO - SPERONI, JORGE ANDRÉS - GUARINIELLO, ESTEBAN - BURGHI, LUCAS",
+      "docentes": "SCHENKEL, CHRISTIAN DAVID - ANTEZANA LOPEZ, JAVIER ARMANDO - GUARINIELLO, ESTEBAN - SPERONI, JORGE ANDRÉS - BURGHI, LUCAS",
       "clases": [
         {
           "dia": 6,
@@ -10839,7 +10841,7 @@ export const data = {
     },
     {
       "codigo": "6743-CURSO: 1",
-      "docentes": "GONZALEZ, PABLO SEBASTIAN - BRUMOVSKY, ANDRES FRANCISCO",
+      "docentes": "BRUMOVSKY, ANDRES FRANCISCO - GONZALEZ, PABLO SEBASTIAN",
       "clases": [
         {
           "dia": 1,
@@ -10920,7 +10922,7 @@ export const data = {
     },
     {
       "codigo": "6751-CURSO: 3",
-      "docentes": "ZAMBRANO, DANIEL ALBERTO - CAGEAO, SEBASTIAN - ERRAZQUIN, JORGE",
+      "docentes": "ZAMBRANO, DANIEL ALBERTO - ERRAZQUIN, JORGE - CAGEAO, SEBASTIAN",
       "clases": [
         {
           "dia": 5,
@@ -10984,7 +10986,7 @@ export const data = {
     },
     {
       "codigo": "6752-CURSO: 4",
-      "docentes": "COSTA, LUIS CRISTIAN - SOSA, ROBERTO - COSTA, LUIS MARIA - OYBIN, JAVIER MARCOS",
+      "docentes": "SOSA, ROBERTO - COSTA, LUIS CRISTIAN - COSTA, LUIS MARIA - OYBIN, JAVIER MARCOS",
       "clases": [
         {
           "dia": 5,
@@ -11071,7 +11073,7 @@ export const data = {
     },
     {
       "codigo": "6803-CURSO 1",
-      "docentes": "PALOMAR, ALBERTO GUSTAVO - FARAH, GABRIEL HERNAN - SIVORI, GISELA ROSANA",
+      "docentes": "PALOMAR, ALBERTO GUSTAVO - SIVORI, GISELA ROSANA - FARAH, GABRIEL HERNAN",
       "clases": [
         {
           "dia": 3,
@@ -11375,6 +11377,17 @@ export const data = {
       ]
     },
     {
+      "codigo": "7007-CURSO: 1",
+      "docentes": "ROBERTS, ALEJANDRO RICARDO - RAFFO, AGUSTIN ALBERTO",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "19:00",
+          "fin": "23:00"
+        }
+      ]
+    },
+    {
       "codigo": "7008-CURSO: 01",
       "docentes": "LUVINI, LUIS FERNANDO - CARBONE, FERNANDO MARTIN PASCUAL - DARIN, MARCELA CLOTILDE",
       "clases": [
@@ -11425,7 +11438,7 @@ export const data = {
     },
     {
       "codigo": "7016-CURSO: 01",
-      "docentes": "PIÑERO, CARLOS ALBERTO - FERREIRA, MARISA ROSANA - AIRA, VICTOR GERARDO",
+      "docentes": "PIÑERO, CARLOS ALBERTO - AIRA, VICTOR GERARDO - FERREIRA, MARISA ROSANA",
       "clases": [
         {
           "dia": 5,
@@ -11621,7 +11634,7 @@ export const data = {
     },
     {
       "codigo": "7104-CURSO: 1",
-      "docentes": "GUIDA, PABLO OSVALDO - DIEHL, GERARDO ADRIAN - ESTEVA, GONZALO CARLOS - BRANCATO, GUSTAVO EMILIO - MINAFRO SPINELLI, FERNANDO MIGUEL - DI NATALE, ALEJANDRO CLAU - PAGANI, NESTOR DARIO - BRAGGIO, MARIANELA SABRINA - PAPI, CAROLINA DANIELA",
+      "docentes": "GUIDA, PABLO OSVALDO - DIEHL, GERARDO ADRIAN - ESTEVA, GONZALO CARLOS - DI NATALE, ALEJANDRO CLAU - BRANCATO, GUSTAVO EMILIO - MINAFRO SPINELLI, FERNANDO MIGUEL - PAGANI, NESTOR DARIO - BRAGGIO, MARIANELA SABRINA - PAPI, CAROLINA DANIELA",
       "clases": [
         {
           "dia": 2,
@@ -11632,7 +11645,7 @@ export const data = {
     },
     {
       "codigo": "7105-CURSO: 1",
-      "docentes": "LEITER, ALFREDO - SOTO, MARCELA FABIANA - SPECTOR, HUGO RODOLFO - VISINTINI JAIME, MARIA BELÉN - LUCIOLI, MONICA - MAYO, GUSTAVO RAUL - NOCETI, NELSON FABIAN - BARRERA, MARIO ADOLFO - BARMACK, NORBERTO BENJAMIN - REITKLING, LAURA INES - ALVAREZ FARIÑA, MARIA AGUSTINA - de GONGORA, FRANCISCO",
+      "docentes": "LEITER, ALFREDO - SOTO, MARCELA FABIANA - SPECTOR, HUGO RODOLFO - VISINTINI JAIME, MARIA BELÉN - ALVAREZ FARIÑA, MARIA AGUSTINA - de GONGORA, FRANCISCO - BARMACK, NORBERTO BENJAMIN - BARRERA, MARIO ADOLFO - NOCETI, NELSON FABIAN - REITKLING, LAURA INES - MAYO, GUSTAVO RAUL - LUCIOLI, MONICA",
       "clases": [
         {
           "dia": 4,
@@ -11643,7 +11656,7 @@ export const data = {
     },
     {
       "codigo": "7106-CURSO: 1",
-      "docentes": "SURACE, PABLO ESTEBAN - LEPERA, PABLO ADRIAN - CAGNASSO, DARIO ALBERTO - NACUCCHIO, IVO LUCIANO - ALVAREZ DE TOLEDO, ANGELES - OBST DEMAESTRI, HERMAN - GODOY, ANDRÉS ALEJANDRO - CIANCI, LUCIANO JULIÁN - PEREDNIK, FRANCISCO - MC CALLUM, VICTORIA MARIA",
+      "docentes": "SURACE, PABLO ESTEBAN - LEPERA, PABLO ADRIAN - CAGNASSO, DARIO ALBERTO - NACUCCHIO, IVO LUCIANO - OBST DEMAESTRI, HERMAN - GODOY, ANDRÉS ALEJANDRO - ALVAREZ DE TOLEDO, ANGELES - CIANCI, LUCIANO JULIÁN - PEREDNIK, FRANCISCO - MC CALLUM, VICTORIA MARIA",
       "clases": [
         {
           "dia": 5,
@@ -11659,7 +11672,7 @@ export const data = {
     },
     {
       "codigo": "7107-CURSO: 1",
-      "docentes": "MIRANDA, MIGUEL - GONZALEZ, XAVIER IGNACIO - RIGOU, DANIEL FRANCISCO - PATRIZI, MARIA JOSE - STEGMANN, CLAUS - GUALA, MARIA VIRGINIA - MURADIAN, FEDERICO - LEWIN, ALEJANDRO",
+      "docentes": "MIRANDA, MIGUEL - RIGOU, DANIEL FRANCISCO - GONZALEZ, XAVIER IGNACIO - GUALA, MARIA VIRGINIA - PATRIZI, MARIA JOSE - STEGMANN, CLAUS - MURADIAN, FEDERICO - LEWIN, ALEJANDRO",
       "clases": [
         {
           "dia": 3,
@@ -11675,7 +11688,7 @@ export const data = {
     },
     {
       "codigo": "7108-CURSO: 1",
-      "docentes": "HORMAN, FERNANDO GABRIEL - CONDE, MARIA EUGENIA - GROISMAN, SERGIO DANIEL - BEAUMARIE, CARLOS FABIAN - MONROY, GUILLERMO EDUARDO",
+      "docentes": "HORMAN, FERNANDO GABRIEL - CONDE, MARIA EUGENIA - MONROY, GUILLERMO EDUARDO - BEAUMARIE, CARLOS FABIAN - GROISMAN, SERGIO DANIEL",
       "clases": [
         {
           "dia": 2,
@@ -11691,7 +11704,7 @@ export const data = {
     },
     {
       "codigo": "7108-CURSO: 2",
-      "docentes": "HORMAN, FERNANDO GABRIEL - CONDE, MARIA EUGENIA - LIBSTER, JUAN DARIO - SATYR, JULIO ARIEL",
+      "docentes": "HORMAN, FERNANDO GABRIEL - CONDE, MARIA EUGENIA - SATYR, JULIO ARIEL - LIBSTER, JUAN DARIO",
       "clases": [
         {
           "dia": 2,
@@ -11707,7 +11720,7 @@ export const data = {
     },
     {
       "codigo": "7108-CURSO: 3",
-      "docentes": "HORMAN, FERNANDO GABRIEL - CONDE, MARIA EUGENIA - LOPEZ, GABRIEL ADRIAN - MOREY RIOS, BORIS - MAROTTA, ANDRES MIGUEL",
+      "docentes": "HORMAN, FERNANDO GABRIEL - CONDE, MARIA EUGENIA - MOREY RIOS, BORIS - MAROTTA, ANDRES MIGUEL - LOPEZ, GABRIEL ADRIAN",
       "clases": [
         {
           "dia": 2,
@@ -11723,7 +11736,7 @@ export const data = {
     },
     {
       "codigo": "7111-CURSO: 1",
-      "docentes": "KOMPEL, LUIS JOSE - COSCARELLA, GLADYS LILIANA - BRANCATO, GUSTAVO EMILIO - APRILE, CARLOS JOSE - FILIP, FRANCO - MOLINA, CARLOS LUIS - IZARRA, LUCAS FERNANDO",
+      "docentes": "KOMPEL, LUIS JOSE - COSCARELLA, GLADYS LILIANA - MOLINA, CARLOS LUIS - BRANCATO, GUSTAVO EMILIO - APRILE, CARLOS JOSE - FILIP, FRANCO - IZARRA, LUCAS FERNANDO",
       "clases": [
         {
           "dia": 1,
@@ -11744,7 +11757,7 @@ export const data = {
     },
     {
       "codigo": "7112-CURSO: 1",
-      "docentes": "ZAMMARANO, JOSE SALVADOR - BARMACK, NORBERTO BENJAMIN - FRUTOS, JUAN DIEGO - VEVER, MARIA ELENA - VASSALLO, JUAN RAMON",
+      "docentes": "ZAMMARANO, JOSE SALVADOR - BARMACK, NORBERTO BENJAMIN - FRUTOS, JUAN DIEGO - VASSALLO, JUAN RAMON - VEVER, MARIA ELENA",
       "clases": [
         {
           "dia": 3,
@@ -11802,7 +11815,7 @@ export const data = {
     },
     {
       "codigo": "7114-CURSO 3",
-      "docentes": "ECHEVARRIA, PABLO - RAMOS, SILVIA ADRIANA - NAVARRO, CARLOS ALBERTO - LEVY, JONATHAN",
+      "docentes": "RAMOS, SILVIA ADRIANA - ECHEVARRIA, PABLO - NAVARRO, CARLOS ALBERTO - LEVY, JONATHAN",
       "clases": [
         {
           "dia": 3,
@@ -11845,7 +11858,7 @@ export const data = {
     },
     {
       "codigo": "7116-CURSO: 1",
-      "docentes": "BILELLO, MIGUEL ANGEL - MOLINA, WALTER RAUL - CRISTOBAL, MARIO - OTERO RODRIGUEZ, MARIA MARGARITA - MARTINEZ, VERONICA ESTHER",
+      "docentes": "BILELLO, MIGUEL ANGEL - CRISTOBAL, MARIO - OTERO RODRIGUEZ, MARIA MARGARITA - MOLINA, WALTER RAUL - MARTINEZ, VERONICA ESTHER",
       "clases": [
         {
           "dia": 2,
@@ -11861,7 +11874,7 @@ export const data = {
     },
     {
       "codigo": "7117-CURSO: 1",
-      "docentes": "NOREMBERG, ADRIAN - D´ACCORSO, JAVIER HERNAN - PAGANI, NESTOR DARIO - IRANZI, MARTIN",
+      "docentes": "NOREMBERG, ADRIAN - PAGANI, NESTOR DARIO - D´ACCORSO, JAVIER HERNAN - IRANZI, MARTIN",
       "clases": [
         {
           "dia": 4,
@@ -11921,7 +11934,7 @@ export const data = {
     },
     {
       "codigo": "7123-CURSO: 1",
-      "docentes": "JAHN, LUIS GERMAN - HACHELIAS, LAURA ADELINA - MUÑOZ, JORGE GUSTAVO - VALLEJOS, ALBERTO PEDRO - VASEN, GERMAN - SCHERF, MAURO SEBASTIAN",
+      "docentes": "JAHN, LUIS GERMAN - MUÑOZ, JORGE GUSTAVO - HACHELIAS, LAURA ADELINA - VALLEJOS, ALBERTO PEDRO - VASEN, GERMAN - SCHERF, MAURO SEBASTIAN",
       "clases": [
         {
           "dia": 2,
@@ -12024,7 +12037,7 @@ export const data = {
     },
     {
       "codigo": "7134-CURSO: 1",
-      "docentes": "DIEGO, ALEJANDRO OSCAR - GARCIA, DIEGO EDUARDO - LEREA, GUIDO ALBERTO - BARRAL, PABLO DANIEL - MARCH, JONATAN - ESPINOSA, SOL - BRUNO, PABLO",
+      "docentes": "DIEGO, ALEJANDRO OSCAR - GARCIA, DIEGO EDUARDO - BARRAL, PABLO DANIEL - MARCH, JONATAN - LEREA, GUIDO ALBERTO - BRUNO, PABLO - ESPINOSA, SOL",
       "clases": [
         {
           "dia": 1,
@@ -12046,7 +12059,7 @@ export const data = {
     },
     {
       "codigo": "7136-CURSO 1",
-      "docentes": "KOLL, MARCELO HORACIO - MARTINEZ, MARCELO ALEJANDRO - CAROLA, LUIS FEDERICO JOSE - PINTO, SARA ALICIA",
+      "docentes": "KOLL, MARCELO HORACIO - MARTINEZ, MARCELO ALEJANDRO - PINTO, SARA ALICIA - CAROLA, LUIS FEDERICO JOSE",
       "clases": [
         {
           "dia": 5,
@@ -12090,7 +12103,7 @@ export const data = {
     },
     {
       "codigo": "7140-CURSO: 1",
-      "docentes": "NOREMBERG, ADRIAN - D´ACCORSO, JAVIER HERNAN - PAGANI, NESTOR DARIO - IRANZI, MARTIN",
+      "docentes": "NOREMBERG, ADRIAN - PAGANI, NESTOR DARIO - D´ACCORSO, JAVIER HERNAN - IRANZI, MARTIN",
       "clases": [
         {
           "dia": 4,
@@ -12133,7 +12146,7 @@ export const data = {
     },
     {
       "codigo": "7144-CURSO: 1",
-      "docentes": "RICKERT, CARLOS - DOMINGUEZ, MARIA MERCEDES - TURCO GRECO, MARIA CLARA - KLEIN, MARIA CAROLINA - SABINO, LEANDRO OSCAR",
+      "docentes": "RICKERT, CARLOS - DOMINGUEZ, MARIA MERCEDES - TURCO GRECO, MARIA CLARA - SABINO, LEANDRO OSCAR - KLEIN, MARIA CAROLINA",
       "clases": [
         {
           "dia": 4,
@@ -12213,7 +12226,7 @@ export const data = {
     },
     {
       "codigo": "7151-CURSO: 1",
-      "docentes": "LELIC, RIFAT - PALANDELLA, MAURICIO GUILLERMO - VENTURA, JULIA - SEGAL, MAXIMILIANO - YLLAÑEZ, VALERIA - LAPIDUS, PABLO ANDRES - YAÑEZ, MATIAS ANTONIO - LALANNE, SANTIAGO - MONTERO, DIEGO - SAFRANCHIK, DAN - CASSINELLI, JUAN IGNACIO",
+      "docentes": "LELIC, RIFAT - PALANDELLA, MAURICIO GUILLERMO - VENTURA, JULIA - SEGAL, MAXIMILIANO - LAPIDUS, PABLO ANDRES - YAÑEZ, MATIAS ANTONIO - YLLAÑEZ, VALERIA - LALANNE, SANTIAGO - CASSINELLI, JUAN IGNACIO - SAFRANCHIK, DAN - MONTERO, DIEGO",
       "clases": [
         {
           "dia": 5,
@@ -12229,7 +12242,7 @@ export const data = {
     },
     {
       "codigo": "7151-CURSO: 2",
-      "docentes": "LELIC, RIFAT - PALANDELLA, MAURICIO GUILLERMO - VENTURA, JULIA - YAÑEZ, ESTEBAN HERNAN - SEGAL, MAXIMILIANO - YLLAÑEZ, VALERIA - LAPIDUS, PABLO ANDRES - LALANNE, SANTIAGO - SAFRANCHIK, DAN - CASSINELLI, JUAN IGNACIO - MONTERO, DIEGO",
+      "docentes": "LELIC, RIFAT - PALANDELLA, MAURICIO GUILLERMO - VENTURA, JULIA - SEGAL, MAXIMILIANO - LAPIDUS, PABLO ANDRES - YLLAÑEZ, VALERIA - YAÑEZ, ESTEBAN HERNAN - LALANNE, SANTIAGO - CASSINELLI, JUAN IGNACIO - MONTERO, DIEGO - SAFRANCHIK, DAN",
       "clases": [
         {
           "dia": 5,
@@ -12283,7 +12296,7 @@ export const data = {
     },
     {
       "codigo": "7156-CURSO: 1",
-      "docentes": "NOREMBERG, ADRIAN - PAGANI, NESTOR DARIO - D´ACCORSO, JAVIER HERNAN",
+      "docentes": "NOREMBERG, ADRIAN - D´ACCORSO, JAVIER HERNAN - PAGANI, NESTOR DARIO",
       "clases": [
         {
           "dia": 4,
@@ -12353,7 +12366,7 @@ export const data = {
     },
     {
       "codigo": "7202-CURSO: 1",
-      "docentes": "LEGUIZAMON, CARLOS DANIEL - CELANO GOMEZ, BRUNO ALEJANDRO - AZTIRIA, MARIANO LUIS - ORTIZ, MAXIMILIANO - A DESIGNAR, A DESIGNAR - de LUIS, JULIAN PABLO - TALENTON, JUAN ENRIQUE",
+      "docentes": "LEGUIZAMON, CARLOS DANIEL - CELANO GOMEZ, BRUNO ALEJANDRO - ORTIZ, MAXIMILIANO - AZTIRIA, MARIANO LUIS - A DESIGNAR, A DESIGNAR - TALENTON, JUAN ENRIQUE - de LUIS, JULIAN PABLO",
       "clases": [
         {
           "dia": 2,
@@ -12369,7 +12382,7 @@ export const data = {
     },
     {
       "codigo": "7202-CURSO: 2",
-      "docentes": "NICOLINI, JORGE VICTOR - BARRIONUEVO, JUAN CARLOS AUDELINO - SAEZ DE ARREGUI, MERCEDES - MORDEGLIA, PEDRO - KOHN, SEBASTIAN",
+      "docentes": "NICOLINI, JORGE VICTOR - BARRIONUEVO, JUAN CARLOS AUDELINO - MORDEGLIA, PEDRO - SAEZ DE ARREGUI, MERCEDES - KOHN, SEBASTIAN",
       "clases": [
         {
           "dia": 3,
@@ -12401,7 +12414,7 @@ export const data = {
     },
     {
       "codigo": "7205-CURSO: 1",
-      "docentes": "DIEGO, ROSA ANGELA - GAYOSO, MARCELA ANDREA - AZZOLLINI, MARIANO MARTIN - SALAGARAY, JULIETA - MONTI, FABIAN ARMANDO - AZCARATE, CINTIA - CARMONA, DANIELA",
+      "docentes": "DIEGO, ROSA ANGELA - AZZOLLINI, MARIANO MARTIN - GAYOSO, MARCELA ANDREA - AZCARATE, CINTIA - SALAGARAY, JULIETA - MONTI, FABIAN ARMANDO - CARMONA, DANIELA",
       "clases": [
         {
           "dia": 1,
@@ -12433,7 +12446,7 @@ export const data = {
     },
     {
       "codigo": "7206-CURSO: 2",
-      "docentes": "NITTI, ALEJANDRO LEONARDO - ORLANDELLI, CARLOS GABRIE - GRECO, ANTONIO",
+      "docentes": "NITTI, ALEJANDRO LEONARDO - GRECO, ANTONIO - ORLANDELLI, CARLOS GABRIE",
       "clases": [
         {
           "dia": 2,
@@ -12449,7 +12462,7 @@ export const data = {
     },
     {
       "codigo": "7206-CURSO: 3",
-      "docentes": "NITTI, ALEJANDRO LEONARDO - CUNEO, MARIA FLORENCIA - ALVAREZ, HERNAN GERARDO",
+      "docentes": "NITTI, ALEJANDRO LEONARDO - ALVAREZ, HERNAN GERARDO - CUNEO, MARIA FLORENCIA",
       "clases": [
         {
           "dia": 2,
@@ -12481,7 +12494,7 @@ export const data = {
     },
     {
       "codigo": "7207-CURSO: 1",
-      "docentes": "SABELLI, ALFREDO JORGE - GALBUSERA, SEBASTIAN - MARTINI, DARíO OSCAR - CARMINATTI, NICOLAS - LEGUIZA, JULIA ALEJANDRA - LUCHINI, AGUSTINA - CIARFAGLIA, MARTIN - BREA, NICOLAS MARTIN - CIFUENTES, CAMILA SOFIA - GONZALO JUARROS, FELIPE LORENZO - VILLANUEVA, LUCIANA",
+      "docentes": "SABELLI, ALFREDO JORGE - MARTINI, DARíO OSCAR - GALBUSERA, SEBASTIAN - CARMINATTI, NICOLAS - CIARFAGLIA, MARTIN - BREA, NICOLAS MARTIN - LEGUIZA, JULIA ALEJANDRA - LUCHINI, AGUSTINA - CIFUENTES, CAMILA SOFIA - VILLANUEVA, LUCIANA - GONZALO JUARROS, FELIPE LORENZO",
       "clases": [
         {
           "dia": 2,
@@ -12497,7 +12510,7 @@ export const data = {
     },
     {
       "codigo": "7207-CURSO: 2",
-      "docentes": "SABELLI, ALFREDO JORGE - MARTINI, DARíO OSCAR - GALBUSERA, SEBASTIAN - CARMINATTI, NICOLAS - BREA, NICOLAS MARTIN - LUCHINI, AGUSTINA - LEGUIZA, JULIA ALEJANDRA - CIARFAGLIA, MARTIN - CIFUENTES, CAMILA SOFIA - GONZALO JUARROS, FELIPE LORENZO - VILLANUEVA, LUCIANA",
+      "docentes": "SABELLI, ALFREDO JORGE - GALBUSERA, SEBASTIAN - MARTINI, DARíO OSCAR - CARMINATTI, NICOLAS - LEGUIZA, JULIA ALEJANDRA - CIARFAGLIA, MARTIN - BREA, NICOLAS MARTIN - LUCHINI, AGUSTINA - GONZALO JUARROS, FELIPE LORENZO - VILLANUEVA, LUCIANA - CIFUENTES, CAMILA SOFIA",
       "clases": [
         {
           "dia": 2,
@@ -12572,7 +12585,7 @@ export const data = {
     },
     {
       "codigo": "7214-CURSO: 1",
-      "docentes": "ARCAGNI, ADOLFO ALBERTO - ALONSO, ANDRES EZEQUIEL - FORNARI, CECILIA - VALENTINI, LEANDRO LUIS - TURCO GRECO, MARIA TERESA - VIERA, ANA DANIELA",
+      "docentes": "ARCAGNI, ADOLFO ALBERTO - ALONSO, ANDRES EZEQUIEL - VIERA, ANA DANIELA - FORNARI, CECILIA - VALENTINI, LEANDRO LUIS - TURCO GRECO, MARIA TERESA",
       "clases": [
         {
           "dia": 2,
@@ -12605,7 +12618,7 @@ export const data = {
     },
     {
       "codigo": "7218-CURSO: 1",
-      "docentes": "DAMIANO, AUGUSTO ALEJANDRO - AMAYA, MYRIAN ANABELLA - MENDOZA, SUSANA MONICA - ETCHEBEHERE, INES - SAPUPPO, ANABELA - LANA, ROSANA PATRICIA",
+      "docentes": "DAMIANO, AUGUSTO ALEJANDRO - MENDOZA, SUSANA MONICA - AMAYA, MYRIAN ANABELLA - SAPUPPO, ANABELA - ETCHEBEHERE, INES - LANA, ROSANA PATRICIA",
       "clases": [
         {
           "dia": 2,
@@ -12621,7 +12634,7 @@ export const data = {
     },
     {
       "codigo": "7299-CURSO: 1",
-      "docentes": "COFONE, ANIBAL EDGARDO - MIGLIORINO, DIEGO FERNANDO - CORNES, MARTIN DIEGO - LOPEZ CONDE, MARIA EUGENIA - VILARIÑO, RAMIRO MARTIN - BIANCO, GUILLERMO ERNESTO - MARINO RODRIGUEZ, VANESA GISELLE",
+      "docentes": "COFONE, ANIBAL EDGARDO - CORNES, MARTIN DIEGO - MIGLIORINO, DIEGO FERNANDO - LOPEZ CONDE, MARIA EUGENIA - VILARIÑO, RAMIRO MARTIN - MARINO RODRIGUEZ, VANESA GISELLE - BIANCO, GUILLERMO ERNESTO",
       "clases": [
         {
           "dia": 1,
@@ -12632,7 +12645,7 @@ export const data = {
     },
     {
       "codigo": "7299-CURSO: 2",
-      "docentes": "COFONE, ANIBAL EDGARDO - CORNES, MARTIN DIEGO - MIGLIORINO, DIEGO FERNANDO - LEYBOVICH, PABLO DANIEL - ARANDA, MODESTO MANUEL - CELANO GOMEZ, BRUNO ALEJANDRO - ORTEGA, MARIANO - VERA, JOSE ERNESTO - VITA SANCHEZ, MATíAS ALEJANDRO",
+      "docentes": "COFONE, ANIBAL EDGARDO - MIGLIORINO, DIEGO FERNANDO - CORNES, MARTIN DIEGO - LEYBOVICH, PABLO DANIEL - ARANDA, MODESTO MANUEL - ORTEGA, MARIANO - CELANO GOMEZ, BRUNO ALEJANDRO - VERA, JOSE ERNESTO - VITA SANCHEZ, MATíAS ALEJANDRO",
       "clases": [
         {
           "dia": 2,
@@ -12643,7 +12656,7 @@ export const data = {
     },
     {
       "codigo": "7299-CURSO: 3",
-      "docentes": "COFONE, ANIBAL EDGARDO - MIGLIORINO, DIEGO FERNANDO - CORNES, MARTIN DIEGO - RATTEL, PABLO HORACIO - SAROKA, ALEJANDRO MARTIN - GUIM, SEBASTIAN ROBERTO - FERNANDEZ, HERNAN ALVARO - SOLANA, ROMINA SOLEDAD - SIMONELLI, JULIAN",
+      "docentes": "COFONE, ANIBAL EDGARDO - CORNES, MARTIN DIEGO - MIGLIORINO, DIEGO FERNANDO - RATTEL, PABLO HORACIO - GUIM, SEBASTIAN ROBERTO - FERNANDEZ, HERNAN ALVARO - SAROKA, ALEJANDRO MARTIN - SOLANA, ROMINA SOLEDAD - SIMONELLI, JULIAN",
       "clases": [
         {
           "dia": 3,
@@ -12654,7 +12667,7 @@ export const data = {
     },
     {
       "codigo": "7299-CURSO: 4",
-      "docentes": "COFONE, ANIBAL EDGARDO - CORNES, MARTIN DIEGO - MIGLIORINO, DIEGO FERNANDO - PRANDI, PATRICIO RAUL - SPIAZZI, JORGE JOAQUIN - LOSINO, DANIELA - TERZOLO, HERNAN JAVIER",
+      "docentes": "COFONE, ANIBAL EDGARDO - CORNES, MARTIN DIEGO - MIGLIORINO, DIEGO FERNANDO - SPIAZZI, JORGE JOAQUIN - TERZOLO, HERNAN JAVIER - PRANDI, PATRICIO RAUL - LOSINO, DANIELA",
       "clases": [
         {
           "dia": 4,
@@ -12665,7 +12678,7 @@ export const data = {
     },
     {
       "codigo": "7299-CURSO: 5",
-      "docentes": "COFONE, ANIBAL EDGARDO - CORNES, MARTIN DIEGO - MIGLIORINO, DIEGO FERNANDO - RODRIGUEZ, HERNAN ALBERTO - ALMANZA, MARIANO ANDRES - JUDAS, MARTIN ENRIQUE",
+      "docentes": "COFONE, ANIBAL EDGARDO - CORNES, MARTIN DIEGO - MIGLIORINO, DIEGO FERNANDO - RODRIGUEZ, HERNAN ALBERTO - JUDAS, MARTIN ENRIQUE - ALMANZA, MARIANO ANDRES",
       "clases": [
         {
           "dia": 5,
@@ -12976,7 +12989,7 @@ export const data = {
     },
     {
       "codigo": "7501-CURSO: 06-Servetto",
-      "docentes": "SERVETTO, ARTURO CARLOS - NAON, MARCELO CARLOS - GARCIA JAIME, DIEGO",
+      "docentes": "SERVETTO, ARTURO CARLOS - GARCIA JAIME, DIEGO - NAON, MARCELO CARLOS",
       "clases": [
         {
           "dia": 2,
@@ -13047,7 +13060,7 @@ export const data = {
     },
     {
       "codigo": "7503-CURSO: 01-Benitez",
-      "docentes": "BENITEZ, CARLOS EDUARDO - MANSILLA, MARIANO CLAUDIO - RADUCCI, DARIO MARTIN - BERRUEZO, RAMIRO NICOLÁS - PAN, YEN CHANG",
+      "docentes": "BENITEZ, CARLOS EDUARDO - MANSILLA, MARIANO CLAUDIO - BERRUEZO, RAMIRO NICOLÁS - PAN, YEN CHANG - RADUCCI, DARIO MARTIN",
       "clases": [
         {
           "dia": 2,
@@ -13079,7 +13092,7 @@ export const data = {
     },
     {
       "codigo": "7506-CURSO: 01-Argerich",
-      "docentes": "ARGERICH, LUIS RICARDO - GOLMAR, NATALIA - MARTINELLI, DAMIAN ARIEL - RAMOS MEJIA, MARTÍN GABRIEL - TORRÉ ZAFFARONI, JOAQUIN",
+      "docentes": "ARGERICH, LUIS RICARDO - GOLMAR, NATALIA - RAMOS MEJIA, MARTÍN GABRIEL - MARTINELLI, DAMIAN ARIEL - TORRÉ ZAFFARONI, JOAQUIN",
       "clases": [
         {
           "dia": 1,
@@ -13111,7 +13124,7 @@ export const data = {
     },
     {
       "codigo": "7507-CURSO: 01-Suarez",
-      "docentes": "SUAREZ, JOSE PABLO - SANCHEZ, DIEGO - YOLIS, EUGENIO - BUSTAMANTE, JORGE TOMAS - BLAZQUEZ OLIVERA, SEBASTIAN ALEJANDRO - FERNÁNDEZ THEILLET, NICOLÁS PABLO - JUSTO NARCIZO, EDSON EDER - RODRÍGUEZ MASSUH, PABLO MATÍAS",
+      "docentes": "SUAREZ, JOSE PABLO - YOLIS, EUGENIO - SANCHEZ, DIEGO - BLAZQUEZ OLIVERA, SEBASTIAN ALEJANDRO - FERNÁNDEZ THEILLET, NICOLÁS PABLO - JUSTO NARCIZO, EDSON EDER - BUSTAMANTE, JORGE TOMAS - RODRÍGUEZ MASSUH, PABLO MATÍAS",
       "clases": [
         {
           "dia": 2,
@@ -13175,7 +13188,7 @@ export const data = {
     },
     {
       "codigo": "7509-CURSO: 01-Villagra",
-      "docentes": "VILLAGRA, SERGIO GUSTAVO - FERNANDEZ, LEONARDO DANIEL - BRUNO, TOMAS - DE BENEDETTI, GUIDO RUBEN",
+      "docentes": "VILLAGRA, SERGIO GUSTAVO - BRUNO, TOMAS - FERNANDEZ, LEONARDO DANIEL - DE BENEDETTI, GUIDO RUBEN",
       "clases": [
         {
           "dia": 1,
@@ -13335,7 +13348,7 @@ export const data = {
     },
     {
       "codigo": "7512-CURSO: 07-Cavaliere Práctica Martes",
-      "docentes": "CAVALIERE, MIGUEL ANGEL - MASTROPIETRO, GABRIEL MARCELO - KOWAL, ADRIAN MARCELO - EZCURRA, DIEGO MARTIN - BALZAROTTI, FEDERICO",
+      "docentes": "CAVALIERE, MIGUEL ANGEL - MASTROPIETRO, GABRIEL MARCELO - BALZAROTTI, FEDERICO - EZCURRA, DIEGO MARTIN - KOWAL, ADRIAN MARCELO",
       "clases": [
         {
           "dia": 2,
@@ -13351,7 +13364,7 @@ export const data = {
     },
     {
       "codigo": "7512-CURSO: 08-Cavaliere Práctica Lunes",
-      "docentes": "CAVALIERE, MIGUEL ANGEL - BALZAROTTI, FEDERICO - PORTOCARRERO MIRANDA, MICHAEL - GARCIA, EZEQUIEL",
+      "docentes": "CAVALIERE, MIGUEL ANGEL - BALZAROTTI, FEDERICO - GARCIA, EZEQUIEL - PORTOCARRERO MIRANDA, MICHAEL",
       "clases": [
         {
           "dia": 1,
@@ -13383,7 +13396,7 @@ export const data = {
     },
     {
       "codigo": "7515-CURSO: 01-Beiro",
-      "docentes": "BEIRO, MARIANO GASTON - DEJEAN, GUSTAVO ADOLFO - ROMAN, LUCAS ALEJANDRO - ZHANG, YICHENG - FASCE, ALBERTO ARMANDO",
+      "docentes": "BEIRO, MARIANO GASTON - DEJEAN, GUSTAVO ADOLFO - ZHANG, YICHENG - FASCE, ALBERTO ARMANDO - ROMAN, LUCAS ALEJANDRO",
       "clases": [
         {
           "dia": 2,
@@ -13474,7 +13487,7 @@ export const data = {
     },
     {
       "codigo": "7528-CURSO: 01-Beiro",
-      "docentes": "BEIRO, MARIANO GASTON - DEJEAN, GUSTAVO ADOLFO - ROMAN, LUCAS ALEJANDRO - FASCE, ALBERTO ARMANDO - ZHANG, YICHENG",
+      "docentes": "BEIRO, MARIANO GASTON - DEJEAN, GUSTAVO ADOLFO - FASCE, ALBERTO ARMANDO - ROMAN, LUCAS ALEJANDRO - ZHANG, YICHENG",
       "clases": [
         {
           "dia": 2,
@@ -13565,7 +13578,7 @@ export const data = {
     },
     {
       "codigo": "7540-CURSO: 01-Guarna",
-      "docentes": "GUARNA, PABLO FRANCISCO - BIANCHI, GUSTAVO OSCAR - JUAREZ, ANDRÉS ALBERTO - GONZÁLEZ BUSQUIN, EZEQUIEL MARTÍN - MARIANETTI, NICOLAS GABRIEL",
+      "docentes": "GUARNA, PABLO FRANCISCO - JUAREZ, ANDRÉS ALBERTO - BIANCHI, GUSTAVO OSCAR - GONZÁLEZ BUSQUIN, EZEQUIEL MARTÍN - MARIANETTI, NICOLAS GABRIEL",
       "clases": [
         {
           "dia": 2,
@@ -13613,7 +13626,7 @@ export const data = {
     },
     {
       "codigo": "7540-CURSO: 04-Essaya",
-      "docentes": "ESSAYA, DIEGO NICOLAS - ESTEBAN, FEDERICO MARTÍN - SPORTELLI CASTRO, LUCIANO - KRISTAL, JUAN IGNACIO",
+      "docentes": "ESSAYA, DIEGO NICOLAS - ESTEBAN, FEDERICO MARTÍN - KRISTAL, JUAN IGNACIO - SPORTELLI CASTRO, LUCIANO",
       "clases": [
         {
           "dia": 1,
@@ -13713,7 +13726,7 @@ export const data = {
     },
     {
       "codigo": "7541-CURSO: 04-Mendez",
-      "docentes": "MENDEZ, MARIANO - TOSCANO GONNELLA, MAURO FABRICIO - PANDOLFO, LUCAS HERNAN",
+      "docentes": "MENDEZ, MARIANO - PANDOLFO, LUCAS HERNAN - TOSCANO GONNELLA, MAURO FABRICIO",
       "clases": [
         {
           "dia": 2,
@@ -13745,7 +13758,7 @@ export const data = {
     },
     {
       "codigo": "7542-CURSO: 01-Veiga",
-      "docentes": "VEIGA, ANDRES ARTURO - LAFROCE, MATÍAS EZEQUIEL - WERNER, EZEQUIEL MAXIMILIANO - DI PAOLA, MARTIN PABLO",
+      "docentes": "VEIGA, ANDRES ARTURO - DI PAOLA, MARTIN PABLO - LAFROCE, MATÍAS EZEQUIEL - WERNER, EZEQUIEL MAXIMILIANO",
       "clases": [
         {
           "dia": 2,
@@ -13831,7 +13844,7 @@ export const data = {
     },
     {
       "codigo": "7547-CURSO: 01-Fontela",
-      "docentes": "FONTELA, MOISES CARLOS - DEGIOVANNINI, MARCIO - MADEIRA, MARIA MERCEDES - MOLINARI, ALEJANDRO GUSTAVO",
+      "docentes": "FONTELA, MOISES CARLOS - DEGIOVANNINI, MARCIO - MOLINARI, ALEJANDRO GUSTAVO - MADEIRA, MARIA MERCEDES",
       "clases": [
         {
           "dia": 1,
@@ -14100,7 +14113,7 @@ export const data = {
     },
     {
       "codigo": "7603-CURSO 01",
-      "docentes": "CHOCRON, MAURICIO - AGALIOTIS, ELIANA MABEL - de GREGORIO, CLAUDIA ESTELA - FORTUNATO, NICOLAS - LUSTIG, SONIA",
+      "docentes": "CHOCRON, MAURICIO - AGALIOTIS, ELIANA MABEL - LUSTIG, SONIA - de GREGORIO, CLAUDIA ESTELA - FORTUNATO, NICOLAS",
       "clases": [
         {
           "dia": 3,
@@ -14200,7 +14213,7 @@ export const data = {
     },
     {
       "codigo": "7609-CURSO 1",
-      "docentes": "ZANINI, ANIBAL JOSE ANTONIO - BERRA, SEBASTIÁN - HANELA, SERGIO DANIEL - AKAUI, AXEL HERNÁN - MORI, FEDERICO",
+      "docentes": "ZANINI, ANIBAL JOSE ANTONIO - BERRA, SEBASTIÁN - AKAUI, AXEL HERNÁN - HANELA, SERGIO DANIEL - MORI, FEDERICO",
       "clases": [
         {
           "dia": 1,
@@ -14226,7 +14239,7 @@ export const data = {
     },
     {
       "codigo": "7612-CURSO 01",
-      "docentes": "CERRUTTI, PATRICIA - GONZALEZ, HECTOR HORACIO L - TUPA VALENCIA, MARIBEL VICTORIA - CAVALLO, EMA CLAUDIA - ROMERO BERNAL, ANGELA ROCIO",
+      "docentes": "CERRUTTI, PATRICIA - TUPA VALENCIA, MARIBEL VICTORIA - CAVALLO, EMA CLAUDIA - GONZALEZ, HECTOR HORACIO L - ROMERO BERNAL, ANGELA ROCIO",
       "clases": [
         {
           "dia": 2,
@@ -14304,7 +14317,7 @@ export const data = {
           "fin": "21:00"
         },
         {
-          "dia": 3,
+          "dia": 4,
           "inicio": "18:00",
           "fin": "21:00"
         }
@@ -14451,7 +14464,7 @@ export const data = {
     },
     {
       "codigo": "7645-CURSO 01",
-      "docentes": "IRIGOYEN, BEATRIZ DEL LUJAN - EUGENIO RUSSMANN, JUAN IGNACIO - SALCEDO, AGUSTIN - LOPEZ TORRES, LUCIANO - ROZENBLIT, ABIGAIL - CLOZZA, BRUNO JOSE GUILLERMO - SERRANO HERRERA, LUZ ANGELA",
+      "docentes": "IRIGOYEN, BEATRIZ DEL LUJAN - EUGENIO RUSSMANN, JUAN IGNACIO - SALCEDO, AGUSTIN - ROZENBLIT, ABIGAIL - LOPEZ TORRES, LUCIANO - CLOZZA, BRUNO JOSE GUILLERMO - SERRANO HERRERA, LUZ ANGELA",
       "clases": [
         {
           "dia": 2,
@@ -14525,7 +14538,7 @@ export const data = {
     },
     {
       "codigo": "7649-CURSO 01",
-      "docentes": "MARTUCCI, JOSE FERNANDO - MIGUEZ, PABLO JOSE - CUTINI, FLORENCIA BELÉN - ROSSINI, LUCAS - PAVON, NATHALIE DENISE",
+      "docentes": "MARTUCCI, JOSE FERNANDO - MIGUEZ, PABLO JOSE - CUTINI, FLORENCIA BELÉN - PAVON, NATHALIE DENISE - ROSSINI, LUCAS",
       "clases": [
         {
           "dia": 1,
@@ -14567,7 +14580,7 @@ export const data = {
     },
     {
       "codigo": "7653-CURSO 01",
-      "docentes": "AMADEO, NORMA ELVIRA - DIEUZEIDE, MARIA LAURA - SUAREZ ANZORENA, MARIA DEL ROSARIO - MACKINNON, CAMILA - GUADAGNINI, SIMÓN - A DESIGNAR, A DESIGNAR",
+      "docentes": "AMADEO, NORMA ELVIRA - DIEUZEIDE, MARIA LAURA - MACKINNON, CAMILA - SUAREZ ANZORENA, MARIA DEL ROSARIO - GUADAGNINI, SIMÓN - A DESIGNAR, A DESIGNAR",
       "clases": [
         {
           "dia": 3,
@@ -14609,7 +14622,7 @@ export const data = {
     },
     {
       "codigo": "7655-CURSO 01",
-      "docentes": "CERRUTTI, PATRICIA - CAVALLO, EMA CLAUDIA - TUPA VALENCIA, MARIBEL VICTORIA - GONZALEZ, HECTOR HORACIO L - ROMERO BERNAL, ANGELA ROCIO",
+      "docentes": "CERRUTTI, PATRICIA - GONZALEZ, HECTOR HORACIO L - TUPA VALENCIA, MARIBEL VICTORIA - CAVALLO, EMA CLAUDIA - ROMERO BERNAL, ANGELA ROCIO",
       "clases": [
         {
           "dia": 2,
@@ -14651,7 +14664,7 @@ export const data = {
     },
     {
       "codigo": "7657-CURSO 1",
-      "docentes": "FERNANDEZ, BEATRIZ ETHEL - SCHULZE, BRUNO - ZUKOWSKI, ENZO FERNANDO - HERRERO, LEANDRO - PEREZ CORREA, IGNACIO",
+      "docentes": "FERNANDEZ, BEATRIZ ETHEL - PEREZ CORREA, IGNACIO - ZUKOWSKI, ENZO FERNANDO - SCHULZE, BRUNO - HERRERO, LEANDRO",
       "clases": [
         {
           "dia": 2,
@@ -14715,7 +14728,7 @@ export const data = {
     },
     {
       "codigo": "7662-CURSO 1",
-      "docentes": "ROLLHAISER, MARCELO OSCAR - VARGAS, MARIA ESTHER MONICA - DE MICHELI, FABIÁN - MARTUCCI, JOSE FERNANDO - PARKKULAINEN, CARLOS FEDERICO",
+      "docentes": "ROLLHAISER, MARCELO OSCAR - DE MICHELI, FABIÁN - VARGAS, MARIA ESTHER MONICA - MARTUCCI, JOSE FERNANDO - PARKKULAINEN, CARLOS FEDERICO",
       "clases": [
         {
           "dia": 4,
@@ -14758,7 +14771,7 @@ export const data = {
     },
     {
       "codigo": "7699-CURSO 1",
-      "docentes": "ROLLHAISER, MARCELO OSCAR - CARP, ARIEL - MASNATTA, EMILIANO CARLOS - DE MICHELI, FABIÁN - MARTUCCI, JOSE FERNANDO - VARGAS, MARIA ESTHER MONICA - PARKKULAINEN, CARLOS FEDERICO",
+      "docentes": "ROLLHAISER, MARCELO OSCAR - DE MICHELI, FABIÁN - MARTUCCI, JOSE FERNANDO - CARP, ARIEL - VARGAS, MARIA ESTHER MONICA - MASNATTA, EMILIANO CARLOS - PARKKULAINEN, CARLOS FEDERICO",
       "clases": [
         {
           "dia": 2,
@@ -15094,18 +15107,18 @@ export const data = {
       ]
     },
     {
-      "codigo": "7901-CURSO: 013",
+      "codigo": "7901-CURSO: 01",
       "docentes": "CARRONE, EDUARDO JORGE - KLIMOWITSCH, ESTEFANIA",
       "clases": [
         {
-          "dia": 2,
+          "dia": 4,
           "inicio": "18:00",
           "fin": "20:00"
         }
       ]
     },
     {
-      "codigo": "7902-CURSO: 013",
+      "codigo": "7902-CURSO: 01",
       "docentes": "LOGIODICE, JESUS",
       "clases": [
         {
@@ -15116,7 +15129,7 @@ export const data = {
       ]
     },
     {
-      "codigo": "7903-CURSO: 013",
+      "codigo": "7903-CURSO: 01",
       "docentes": "LALUF, CARLOS",
       "clases": [
         {
@@ -15127,7 +15140,7 @@ export const data = {
       ]
     },
     {
-      "codigo": "7904-CURSO: 013",
+      "codigo": "7904-CURSO: 01",
       "docentes": "NAIDES, CLAUDIO",
       "clases": [
         {
@@ -15143,7 +15156,7 @@ export const data = {
       ]
     },
     {
-      "codigo": "7905-CURSO: 013",
+      "codigo": "7905-CURSO: 01",
       "docentes": "BARREDO, SILVIA PATRICIA - FALCIONI, FLORENCIA",
       "clases": [
         {
@@ -15154,7 +15167,7 @@ export const data = {
       ]
     },
     {
-      "codigo": "7906-CURSO: 013",
+      "codigo": "7906-CURSO: 01",
       "docentes": "FLORES, GONZALO",
       "clases": [
         {
@@ -15165,11 +15178,11 @@ export const data = {
       ]
     },
     {
-      "codigo": "7907-CURSO: 013",
+      "codigo": "7907-CURSO: 01",
       "docentes": "LOGIODICE, JESUS",
       "clases": [
         {
-          "dia": 4,
+          "dia": 3,
           "inicio": "18:00",
           "fin": "22:00"
         }
@@ -15187,38 +15200,11 @@ export const data = {
       ]
     },
     {
-      "codigo": "7908-CURSO: 01",
-      "docentes": "LERZA, ALEJANDRO",
-      "clases": [
-        {
-          "dia": 5,
-          "inicio": "18:00",
-          "fin": "22:00"
-        }
-      ]
-    },
-    {
-      "codigo": "7909-CURSO: 13",
+      "codigo": "7909-CURSO: 1",
       "docentes": "CASARES, CARLOS ALBERTO MARIA",
       "clases": [
         {
           "dia": 1,
-          "inicio": "18:00",
-          "fin": "22:00"
-        }
-      ]
-    },
-    {
-      "codigo": "7910-CURSO:01",
-      "docentes": "VEIGA, RICARDO DANIEL - GIACHINO, CARLOS ADRIAN",
-      "clases": [
-        {
-          "dia": 3,
-          "inicio": "20:00",
-          "fin": "22:00"
-        },
-        {
-          "dia": 4,
           "inicio": "18:00",
           "fin": "22:00"
         }
@@ -15252,29 +15238,7 @@ export const data = {
       ]
     },
     {
-      "codigo": "7911-CURSO:01",
-      "docentes": "SORENSON, FEDERICO",
-      "clases": [
-        {
-          "dia": 2,
-          "inicio": "18:00",
-          "fin": "22:00"
-        }
-      ]
-    },
-    {
       "codigo": "7912-CURSO: 01",
-      "docentes": "GONZALEZ FERRER, JUAN MANUEL",
-      "clases": [
-        {
-          "dia": 1,
-          "inicio": "18:00",
-          "fin": "22:00"
-        }
-      ]
-    },
-    {
-      "codigo": "7912-CURSO: 013",
       "docentes": "GONZALEZ FERRER, JUAN MANUEL",
       "clases": [
         {
@@ -15296,7 +15260,7 @@ export const data = {
       ]
     },
     {
-      "codigo": "7915-CURSO: 13",
+      "codigo": "7915-CURSO: 1",
       "docentes": "MELLANO, ANIBAL",
       "clases": [
         {
@@ -15307,23 +15271,23 @@ export const data = {
       ]
     },
     {
-      "codigo": "7918-CURSO: 013",
+      "codigo": "7918-CURSO: 01",
       "docentes": "MANESTAR, GASTÓN JOSÉ - DESTEFANIS, MARIA FLORENCIA",
       "clases": [
         {
-          "dia": 4,
+          "dia": 2,
           "inicio": "19:00",
           "fin": "22:00"
         },
         {
-          "dia": 5,
+          "dia": 4,
           "inicio": "19:00",
           "fin": "22:00"
         }
       ]
     },
     {
-      "codigo": "7919-CURSO: 013",
+      "codigo": "7919-CURSO: 01",
       "docentes": "SAVIOLI, GABRIELA BEATRIZ",
       "clases": [
         {
@@ -15332,14 +15296,14 @@ export const data = {
           "fin": "19:00"
         },
         {
-          "dia": 3,
+          "dia": 4,
           "inicio": "18:00",
           "fin": "21:00"
         }
       ]
     },
     {
-      "codigo": "7920-CURSO: 13",
+      "codigo": "7920-CURSO: 01",
       "docentes": "RODRIGUEZ EBOLI AROZTEGUY, MARIA MAGDALENA",
       "clases": [
         {
@@ -15350,13 +15314,13 @@ export const data = {
       ]
     },
     {
-      "codigo": "7921-CURSO: 13",
+      "codigo": "7921-CURSO: 1",
       "docentes": "D'ANGELO, MARÍA VERÓNICA",
       "clases": [
         {
-          "dia": 3,
-          "inicio": "09:00",
-          "fin": "13:00"
+          "dia": 4,
+          "inicio": "17:00",
+          "fin": "21:00"
         }
       ]
     },
@@ -15377,29 +15341,24 @@ export const data = {
       ]
     },
     {
-      "codigo": "7922-CURSO:01",
-      "docentes": "PEREZ, DIEGO GASTON - SUAREZ, MARIANO IGNACIO",
-      "clases": [
-        {
-          "dia": 1,
-          "inicio": "18:00",
-          "fin": "22:00"
-        },
-        {
-          "dia": 3,
-          "inicio": "18:00",
-          "fin": "20:00"
-        }
-      ]
-    },
-    {
-      "codigo": "7923-CURSO:013",
+      "codigo": "7923-CURSO:01",
       "docentes": "VINSON, EDGARDO GUSTAVO",
       "clases": [
         {
           "dia": 2,
           "inicio": "18:00",
           "fin": "22:00"
+        }
+      ]
+    },
+    {
+      "codigo": "7924-CURSO 01",
+      "docentes": "VINSON, EDGARDO GUSTAVO",
+      "clases": [
+        {
+          "dia": 1,
+          "inicio": "18:00",
+          "fin": "21:00"
         }
       ]
     },
@@ -15431,7 +15390,7 @@ export const data = {
     },
     {
       "codigo": "8101-CURSO: 11A",
-      "docentes": "SIRNE, RICARDO OSCAR - MARTINS, MARCELA - CENTENO, HERNÁN DIEGO - ZHANG, FAN",
+      "docentes": "SIRNE, RICARDO OSCAR - CENTENO, HERNÁN DIEGO - MARTINS, MARCELA - ZHANG, FAN",
       "clases": [
         {
           "dia": 2,
@@ -15457,7 +15416,7 @@ export const data = {
     },
     {
       "codigo": "8101-CURSO: 11B",
-      "docentes": "SIRNE, RICARDO OSCAR - DE ROSSI, FERNANDO DANIEL - LOPEZ, CLAUDIA ANDREA - ROZENWASSER, LAURA",
+      "docentes": "SIRNE, RICARDO OSCAR - LOPEZ, CLAUDIA ANDREA - DE ROSSI, FERNANDO DANIEL - ROZENWASSER, LAURA",
       "clases": [
         {
           "dia": 2,
@@ -15561,7 +15520,7 @@ export const data = {
     },
     {
       "codigo": "8101-CURSO: 14B",
-      "docentes": "COMAS, JORGE MIGUEL - ALVAREZ, MACARENA - CRISTI, JUAN - CANEPA, VICTOR MANUEL",
+      "docentes": "COMAS, JORGE MIGUEL - ALVAREZ, MACARENA - CANEPA, VICTOR MANUEL - CRISTI, JUAN",
       "clases": [
         {
           "dia": 2,
@@ -15639,7 +15598,7 @@ export const data = {
     },
     {
       "codigo": "8101-CURSO: 20A",
-      "docentes": "SEMINARA, SILVIA ALEJANDRA - ESTRIN, ANDRES ALEJANDRO - WILK, BERNARDO - OLIVA, CECILIA MARIEL",
+      "docentes": "SEMINARA, SILVIA ALEJANDRA - ESTRIN, ANDRES ALEJANDRO - OLIVA, CECILIA MARIEL - WILK, BERNARDO",
       "clases": [
         {
           "dia": 1,
@@ -15847,7 +15806,7 @@ export const data = {
     },
     {
       "codigo": "8101-CURSO: 5A",
-      "docentes": "MAULHARDT, MARTIN ENRIQUE - PUEBLA, MANUEL LEANDRO - RIZZO, ELISABETH AMALIA - A DESIGNAR, A DESIGNAR",
+      "docentes": "MAULHARDT, MARTIN ENRIQUE - RIZZO, ELISABETH AMALIA - PUEBLA, MANUEL LEANDRO - A DESIGNAR, A DESIGNAR",
       "clases": [
         {
           "dia": 2,
@@ -16029,7 +15988,7 @@ export const data = {
     },
     {
       "codigo": "8102-CURSO: 10",
-      "docentes": "HANSEN, ROBERTA - GELPI, GABRIEL RICARDO - FITTIPALDI, MARÍA SOL",
+      "docentes": "HANSEN, ROBERTA - FITTIPALDI, MARÍA SOL - GELPI, GABRIEL RICARDO",
       "clases": [
         {
           "dia": 3,
@@ -16185,7 +16144,7 @@ export const data = {
     },
     {
       "codigo": "8102-CURSO: 19B",
-      "docentes": "PRELAT, DANIEL - GALVAN, MONICA BEATRIZ - ENDELLI, JORGE RODOLFO",
+      "docentes": "PRELAT, DANIEL - ENDELLI, JORGE RODOLFO - GALVAN, MONICA BEATRIZ",
       "clases": [
         {
           "dia": 1,
@@ -16237,7 +16196,7 @@ export const data = {
     },
     {
       "codigo": "8102-CURSO: 1B",
-      "docentes": "VARGAS, GABRIELA - CABANA, ADRIANA ELENA - TILLI, DORA",
+      "docentes": "CABANA, ADRIANA ELENA - VARGAS, GABRIELA - TILLI, DORA",
       "clases": [
         {
           "dia": 1,
@@ -16627,7 +16586,7 @@ export const data = {
     },
     {
       "codigo": "8103-CURSO: 01",
-      "docentes": "LASANTA, TITO IGNACIO - ALVAREZ PONTE, LUCIA INES - GUTIERREZ, EDITH MABEL",
+      "docentes": "LASANTA, TITO IGNACIO - GUTIERREZ, EDITH MABEL - ALVAREZ PONTE, LUCIA INES",
       "clases": [
         {
           "dia": 3,
@@ -16671,7 +16630,7 @@ export const data = {
     },
     {
       "codigo": "8103-CURSO: 08",
-      "docentes": "MARTINEZ, JULIAN FACUNDO - COSATTO AMMANN, PEDRO CAMILO - SOSA, MARINA",
+      "docentes": "MARTINEZ, JULIAN FACUNDO - SOSA, MARINA - COSATTO AMMANN, PEDRO CAMILO",
       "clases": [
         {
           "dia": 2,
@@ -16980,7 +16939,7 @@ export const data = {
     },
     {
       "codigo": "8106-CURSO: 5",
-      "docentes": "CACHILE, MARIO ANDRES - PEÑA, NELLY HAYDEE - CALZON, MIGUEL ANGEL",
+      "docentes": "CACHILE, MARIO ANDRES - CALZON, MIGUEL ANGEL - PEÑA, NELLY HAYDEE",
       "clases": [
         {
           "dia": 2,
@@ -17065,7 +17024,7 @@ export const data = {
     },
     {
       "codigo": "8116-CURSO: 10",
-      "docentes": "ALTIERI, ANDRES OSCAR - EDWARDS MOLINA, DIEGO JULIO - COSATTO AMMANN, PEDRO CAMILO",
+      "docentes": "ALTIERI, ANDRES OSCAR - COSATTO AMMANN, PEDRO CAMILO - EDWARDS MOLINA, DIEGO JULIO",
       "clases": [
         {
           "dia": 3,
@@ -17241,7 +17200,7 @@ export const data = {
     },
     {
       "codigo": "8201-CURSO: 09",
-      "docentes": "VEIRAS, FRANCISCO EZEQUIEL - INDELICATO, EVANGELINA LAURA - PEREYRA, MARCELA ROSA - BALBI, MARIA DEL PILAR - MIGLIORISI, JUAN IGNACIO",
+      "docentes": "VEIRAS, FRANCISCO EZEQUIEL - INDELICATO, EVANGELINA LAURA - BALBI, MARIA DEL PILAR - PEREYRA, MARCELA ROSA - MIGLIORISI, JUAN IGNACIO",
       "clases": [
         {
           "dia": 3,
@@ -17257,7 +17216,7 @@ export const data = {
     },
     {
       "codigo": "8201-CURSO: 10",
-      "docentes": "CORNEJO, JORGE NORBERTO - SOLA, MARCOS OSCAR - STRUSIAT, PAMELA IVANA - PAPA, HERNAN ALDO - PETROVICH, JOSE LUIS ALEJANDRO",
+      "docentes": "CORNEJO, JORGE NORBERTO - SOLA, MARCOS OSCAR - PAPA, HERNAN ALDO - STRUSIAT, PAMELA IVANA - PETROVICH, JOSE LUIS ALEJANDRO",
       "clases": [
         {
           "dia": 1,
@@ -17337,7 +17296,7 @@ export const data = {
     },
     {
       "codigo": "8201-CURSO: 15",
-      "docentes": "CONDE GARRIDO, JUAN MANUEL - ROSSI, SERGIO - FERRARI, SERGIO - SOLA, MARCOS OSCAR - LARREA BUENDIA, HUGO MARCELO",
+      "docentes": "CONDE GARRIDO, JUAN MANUEL - ROSSI, SERGIO - SOLA, MARCOS OSCAR - FERRARI, SERGIO - LARREA BUENDIA, HUGO MARCELO",
       "clases": [
         {
           "dia": 2,
@@ -17353,7 +17312,7 @@ export const data = {
     },
     {
       "codigo": "8201-CURSO: 16",
-      "docentes": "BOSCHAN, ALEJANDRO - CEBREIRO, JOSE PABLO - BANEGAS, Agustin - DURIEZ, THOMAS PIERRE COMIL",
+      "docentes": "BOSCHAN, ALEJANDRO - CEBREIRO, JOSE PABLO - DURIEZ, THOMAS PIERRE COMIL - BANEGAS, Agustin",
       "clases": [
         {
           "dia": 2,
@@ -17369,7 +17328,7 @@ export const data = {
     },
     {
       "codigo": "8201-CURSO: 17",
-      "docentes": "GAREA, MARIA TERESA - MIRALLES, MONICA TERESITA - AULIEL, MARIA INES - A DESIGNAR, A DESIGNAR - CHARRUT, MATIAS EZEQUIEL",
+      "docentes": "GAREA, MARIA TERESA - MIRALLES, MONICA TERESITA - AULIEL, MARIA INES - CHARRUT, MATIAS EZEQUIEL - A DESIGNAR, A DESIGNAR",
       "clases": [
         {
           "dia": 1,
@@ -17385,7 +17344,7 @@ export const data = {
     },
     {
       "codigo": "8201-CURSO: SP1",
-      "docentes": "CHIABRANDO, LAURA - RACERO, DIEGO ADRIÁN - CORACH, JULIÁN - BALBI, MARIA DEL PILAR - ANZE LAFUENTE, FRANK DOUGLAS",
+      "docentes": "CHIABRANDO, LAURA - CORACH, JULIÁN - RACERO, DIEGO ADRIÁN - BALBI, MARIA DEL PILAR - ANZE LAFUENTE, FRANK DOUGLAS",
       "clases": [
         {
           "dia": 4,
@@ -17396,7 +17355,7 @@ export const data = {
     },
     {
       "codigo": "8201-CURSO: SP2",
-      "docentes": "DADAMIA, DANILO JOSE - VILLAFAÑE, ALBERTO RAUL - MUÑOZ, MARCOS ALFREDO SEBASTIAN - ROBLEDO, FABIANA ELIZABETH - GOMEZ TOBA, GONZALO HERNAN",
+      "docentes": "DADAMIA, DANILO JOSE - VILLAFAÑE, ALBERTO RAUL - ROBLEDO, FABIANA ELIZABETH - MUÑOZ, MARCOS ALFREDO SEBASTIAN - GOMEZ TOBA, GONZALO HERNAN",
       "clases": [
         {
           "dia": 2,
@@ -17407,7 +17366,7 @@ export const data = {
     },
     {
       "codigo": "8202-CURSO: 01",
-      "docentes": "PAMPILLO, LAURA GABRIELA - ROHT, YANINA LUCRECIA - PEÑA, LEANDRO - SEINHART, NICOLE",
+      "docentes": "PAMPILLO, LAURA GABRIELA - ROHT, YANINA LUCRECIA - SEINHART, NICOLE - PEÑA, LEANDRO",
       "clases": [
         {
           "dia": 3,
@@ -17433,7 +17392,7 @@ export const data = {
     },
     {
       "codigo": "8202-CURSO: 02",
-      "docentes": "ROHT, YANINA LUCRECIA - PIÑERA, EDUARDO ERNESTO - PAMPILLO, LAURA GABRIELA - BILOVOL, VITALIY",
+      "docentes": "ROHT, YANINA LUCRECIA - PAMPILLO, LAURA GABRIELA - PIÑERA, EDUARDO ERNESTO - BILOVOL, VITALIY",
       "clases": [
         {
           "dia": 3,
@@ -17719,7 +17678,7 @@ export const data = {
     },
     {
       "codigo": "8202-CURSO: 14",
-      "docentes": "FERRINI, ADRIAN - GARCIA MARRA, SEBASTIÁN - GALLOSO, VERONICA VIVIANA - SARASI MERINO, FROY DENNIS",
+      "docentes": "FERRINI, ADRIAN - GALLOSO, VERONICA VIVIANA - GARCIA MARRA, SEBASTIÁN - SARASI MERINO, FROY DENNIS",
       "clases": [
         {
           "dia": 3,
@@ -17771,7 +17730,7 @@ export const data = {
     },
     {
       "codigo": "8202-CURSO: 16",
-      "docentes": "APARICIO, RODOLFO RUBEN - ALVAREZ, NATALIA CLARA - HERNANDEZ, GONZALO EDUARDO - A DESIGNAR, A DESIGNAR",
+      "docentes": "ALVAREZ, NATALIA CLARA - APARICIO, RODOLFO RUBEN - HERNANDEZ, GONZALO EDUARDO - A DESIGNAR, A DESIGNAR",
       "clases": [
         {
           "dia": 2,
@@ -17797,7 +17756,7 @@ export const data = {
     },
     {
       "codigo": "8203-CURSO: 01",
-      "docentes": "OZOLS, ANDRES - PUCEIRO, ALEJANDRO JOSE LUIS - FREIRE, FACUNDO - DELLA VALLE, EUGENIO ANDRÉS",
+      "docentes": "OZOLS, ANDRES - PUCEIRO, ALEJANDRO JOSE LUIS - DELLA VALLE, EUGENIO ANDRÉS - FREIRE, FACUNDO",
       "clases": [
         {
           "dia": 2,
@@ -17813,7 +17772,7 @@ export const data = {
     },
     {
       "codigo": "8203-CURSO: 02",
-      "docentes": "MARTINEZ, OSCAR EDUARDO - SANCHEZ, Gustavo Alberto - LACAPMESURE, AXEL",
+      "docentes": "MARTINEZ, OSCAR EDUARDO - LACAPMESURE, AXEL - SANCHEZ, Gustavo Alberto",
       "clases": [
         {
           "dia": 3,
@@ -17929,7 +17888,7 @@ export const data = {
     },
     {
       "codigo": "8301-CURSO: 04",
-      "docentes": "PORTA, GUSTAVO ROBERTO - UREÑA, ARIA ANDREA - NUÑEZ, NATALIA ELENA - FRAGA DIAZ de VIVAR, JOAQUIN - GOMEZ KRAWIECKY, JOAQUIN ALEJANDRO",
+      "docentes": "PORTA, GUSTAVO ROBERTO - UREÑA, ARIA ANDREA - NUÑEZ, NATALIA ELENA - GOMEZ KRAWIECKY, JOAQUIN ALEJANDRO - FRAGA DIAZ de VIVAR, JOAQUIN",
       "clases": [
         {
           "dia": 4,
@@ -17950,7 +17909,7 @@ export const data = {
     },
     {
       "codigo": "8301-CURSO: 05",
-      "docentes": "UREÑA, ARIA ANDREA - SARALEGUI, ANDREA BEATRIZ - MACRI, DANIEL AGUSTÍN - SAMRA, GISELLE VANESA - MORALES, MAXIMILIANO PABLO",
+      "docentes": "SARALEGUI, ANDREA BEATRIZ - UREÑA, ARIA ANDREA - MACRI, DANIEL AGUSTÍN - SAMRA, GISELLE VANESA - MORALES, MAXIMILIANO PABLO",
       "clases": [
         {
           "dia": 5,
@@ -17992,7 +17951,7 @@ export const data = {
     },
     {
       "codigo": "8301-CURSO: 07",
-      "docentes": "UREÑA, ARIA ANDREA - VAZQUEZ, CRISTINA - IRIANNI, JORGE LUIS - GONZALEZ, ESTEBAN MANUEL - ANDRONIKOV, ANDRES",
+      "docentes": "VAZQUEZ, CRISTINA - UREÑA, ARIA ANDREA - IRIANNI, JORGE LUIS - ANDRONIKOV, ANDRES - GONZALEZ, ESTEBAN MANUEL",
       "clases": [
         {
           "dia": 2,
@@ -18034,7 +17993,7 @@ export const data = {
     },
     {
       "codigo": "8301-CURSO: 09",
-      "docentes": "UREÑA, ARIA ANDREA - GOBBI MIÑONES, ALEJANDRO RICARDO - MONTAÑO HEREDIA, GABRIELA GRISEL - COLECCHIA, AGUSTIN GUIDO",
+      "docentes": "GOBBI MIÑONES, ALEJANDRO RICARDO - UREÑA, ARIA ANDREA - MONTAÑO HEREDIA, GABRIELA GRISEL - COLECCHIA, AGUSTIN GUIDO",
       "clases": [
         {
           "dia": 5,
@@ -18055,7 +18014,7 @@ export const data = {
     },
     {
       "codigo": "8301-CURSO: 11",
-      "docentes": "GRANDE, MARIA DEL CARMEN - UREÑA, ARIA ANDREA - DIAZ, LILIANA ANALIA - GAMBOA, BRICEÑO WILFREDO - SARKOZY, ADRIANA ELENA",
+      "docentes": "UREÑA, ARIA ANDREA - GRANDE, MARIA DEL CARMEN - SARKOZY, ADRIANA ELENA - DIAZ, LILIANA ANALIA - GAMBOA, BRICEÑO WILFREDO",
       "clases": [
         {
           "dia": 1,
@@ -18076,7 +18035,7 @@ export const data = {
     },
     {
       "codigo": "8301-CURSO: 12",
-      "docentes": "UREÑA, ARIA ANDREA - PORTA, GUSTAVO ROBERTO - IRIANNI, JORGE LUIS - BOUDIN, MARIA LAURA",
+      "docentes": "PORTA, GUSTAVO ROBERTO - UREÑA, ARIA ANDREA - IRIANNI, JORGE LUIS - BOUDIN, MARIA LAURA",
       "clases": [
         {
           "dia": 2,
@@ -18118,7 +18077,7 @@ export const data = {
     },
     {
       "codigo": "8301-CURSO: 14",
-      "docentes": "UREÑA, ARIA ANDREA - RICOTTI, ELISA BEATRIZ - TESTA, FERNANDEZ JUAN JOSE - SANCHEZ, ALEJANDRO DARÍO - LAVALLE, MYRIAM BEATRIZ",
+      "docentes": "RICOTTI, ELISA BEATRIZ - UREÑA, ARIA ANDREA - TESTA, FERNANDEZ JUAN JOSE - SANCHEZ, ALEJANDRO DARÍO - LAVALLE, MYRIAM BEATRIZ",
       "clases": [
         {
           "dia": 1,
@@ -18144,7 +18103,7 @@ export const data = {
     },
     {
       "codigo": "8302-CURSO: 01",
-      "docentes": "MAIOCO, SILVIA ESTER - ORONA, GISELA CECILIA - LITTLE, LAURA - PICCONE, AGUSTINA MARÌA",
+      "docentes": "MAIOCO, SILVIA ESTER - ORONA, GISELA CECILIA - PICCONE, AGUSTINA MARÌA - LITTLE, LAURA",
       "clases": [
         {
           "dia": 1,
@@ -18170,7 +18129,7 @@ export const data = {
     },
     {
       "codigo": "8302-CURSO: 02",
-      "docentes": "BARRERO DEL SOLAR, CARMEN RAQUEL - VARGAS, MARIA ESTHER MONICA - RAJCHENBERG, NATAN ARIEL",
+      "docentes": "BARRERO DEL SOLAR, CARMEN RAQUEL - RAJCHENBERG, NATAN ARIEL - VARGAS, MARIA ESTHER MONICA",
       "clases": [
         {
           "dia": 1,
@@ -18222,7 +18181,7 @@ export const data = {
     },
     {
       "codigo": "8302-CURSO: 04",
-      "docentes": "CARACCIOLO, NESTOR - PEREZ BRAVO, JONAS JOSE - CID, LUCIA DEL CARMEN ISABEL",
+      "docentes": "CARACCIOLO, NESTOR - CID, LUCIA DEL CARMEN ISABEL - PEREZ BRAVO, JONAS JOSE",
       "clases": [
         {
           "dia": 2,
@@ -18264,7 +18223,7 @@ export const data = {
     },
     {
       "codigo": "8401-CURSO: 1",
-      "docentes": "AMURA, CARLOS ALBERTO - MARCHETTI, LEONEL HERNAN - PEREZ TABOADA, CAROLINA MARCELA",
+      "docentes": "AMURA, CARLOS ALBERTO - PEREZ TABOADA, CAROLINA MARCELA - MARCHETTI, LEONEL HERNAN",
       "clases": [
         {
           "dia": 4,
@@ -18467,7 +18426,7 @@ export const data = {
     },
     {
       "codigo": "8404-CURSO: 1",
-      "docentes": "FERNANDEZ LUCO, LUIS - BENITEZ, ALEJANDRA - DOBEL, MARTIN ALEJANDRO - ETCHEGORRY, ALEJANDRO - RUIZ, ADRIAN ALEJANDRO - MIHAILOVSCHI, GEORGINA ALEJANDRA",
+      "docentes": "FERNANDEZ LUCO, LUIS - BENITEZ, ALEJANDRA - ETCHEGORRY, ALEJANDRO - DOBEL, MARTIN ALEJANDRO - RUIZ, ADRIAN ALEJANDRO - MIHAILOVSCHI, GEORGINA ALEJANDRA",
       "clases": [
         {
           "dia": 2,
@@ -18547,7 +18506,7 @@ export const data = {
     },
     {
       "codigo": "8405-CURSO: 5",
-      "docentes": "LOPEZ RIVAROLA, FELIPE - ALTIERI, RUBEN DANIEL - TASLAKTZIAN, ADRIANA ESTE",
+      "docentes": "ALTIERI, RUBEN DANIEL - LOPEZ RIVAROLA, FELIPE - TASLAKTZIAN, ADRIANA ESTE",
       "clases": [
         {
           "dia": 3,
@@ -18563,7 +18522,7 @@ export const data = {
     },
     {
       "codigo": "8405-CURSO: 6",
-      "docentes": "RUIZ RE, MARIA SANDRA - LOPEZ RIVAROLA, FELIPE - PETRELLI SILVA, ADRIANA",
+      "docentes": "LOPEZ RIVAROLA, FELIPE - RUIZ RE, MARIA SANDRA - PETRELLI SILVA, ADRIANA",
       "clases": [
         {
           "dia": 2,
@@ -18611,7 +18570,7 @@ export const data = {
     },
     {
       "codigo": "8407-CURSO: 1",
-      "docentes": "SFRISO, ALEJO OSCAR - CODEVILLA, MAURO - LAIUN, JORGE GABRIEL - STRINA, ERNESTO DIEGO",
+      "docentes": "SFRISO, ALEJO OSCAR - STRINA, ERNESTO DIEGO - CODEVILLA, MAURO - LAIUN, JORGE GABRIEL",
       "clases": [
         {
           "dia": 2,
@@ -18654,7 +18613,7 @@ export const data = {
     },
     {
       "codigo": "8410-CURSO: 1",
-      "docentes": "BERTERO, AGUSTÍN - CASTAGNOLA, PEDRO DANTE - NET, MARCELO MANUEL - GUZMAN, CARLOS ALBERTO",
+      "docentes": "BERTERO, AGUSTÍN - NET, MARCELO MANUEL - CASTAGNOLA, PEDRO DANTE - GUZMAN, CARLOS ALBERTO",
       "clases": [
         {
           "dia": 1,
@@ -18670,7 +18629,7 @@ export const data = {
     },
     {
       "codigo": "8411-CURSO: 1",
-      "docentes": "LEHMANN, ALEJANDRO NICOLAS - DANKERT, GUILLERMO LEO - AAB, PATRICIA LUCIA",
+      "docentes": "LEHMANN, ALEJANDRO NICOLAS - AAB, PATRICIA LUCIA - DANKERT, GUILLERMO LEO",
       "clases": [
         {
           "dia": 1,
@@ -19354,7 +19313,7 @@ export const data = {
     },
     {
       "codigo": "8601-CURSO: 1",
-      "docentes": "FUCHS, JORGE HECTOR ANTONIO - HENTSCHEL, RICARDO GABRIE - DERECHO, ARIEL OSVALDO - DIMA, HERNAN GUSTAVO",
+      "docentes": "FUCHS, JORGE HECTOR ANTONIO - DERECHO, ARIEL OSVALDO - HENTSCHEL, RICARDO GABRIE - DIMA, HERNAN GUSTAVO",
       "clases": [
         {
           "dia": 1,
@@ -19386,7 +19345,7 @@ export const data = {
     },
     {
       "codigo": "8601-CURSO: 3",
-      "docentes": "FUCHS, JORGE HECTOR ANTONIO - PERFETTO, JUAN CARLOS",
+      "docentes": "PERFETTO, JUAN CARLOS - FUCHS, JORGE HECTOR ANTONIO",
       "clases": [
         {
           "dia": 3,
@@ -19402,7 +19361,7 @@ export const data = {
     },
     {
       "codigo": "8601-CURSO: 4",
-      "docentes": "FUCHS, JORGE HECTOR ANTONIO - HENTSCHEL, RICARDO GABRIE - VOLPI, MARCELO EDUARDO - LLASAT, VANESA",
+      "docentes": "FUCHS, JORGE HECTOR ANTONIO - VOLPI, MARCELO EDUARDO - HENTSCHEL, RICARDO GABRIE - LLASAT, VANESA",
       "clases": [
         {
           "dia": 3,
@@ -19434,7 +19393,7 @@ export const data = {
     },
     {
       "codigo": "8602-CURSO: 1",
-      "docentes": "VEIGA, RICARDO ALFREDO - BONELLI, FERNANDO OSCAR - TELLO de MENESES, GISELLE - CARDUCCI, LEONARDO MARTIN - PERRONI, ROCÍO BELÉN - LISMAN, IVÁN ALEJANDRO - PITTIDU, ORNELLA SOFIA",
+      "docentes": "VEIGA, RICARDO ALFREDO - BONELLI, FERNANDO OSCAR - TELLO de MENESES, GISELLE - CARDUCCI, LEONARDO MARTIN - LISMAN, IVÁN ALEJANDRO - PERRONI, ROCÍO BELÉN - PITTIDU, ORNELLA SOFIA",
       "clases": [
         {
           "dia": 1,
@@ -19498,7 +19457,7 @@ export const data = {
     },
     {
       "codigo": "8604-CURSO: 1",
-      "docentes": "VENTURINO, GABRIEL FRANCISCO - ZACCHIGNA, FEDERICO GIORDANO - CONTIGIANI, BRUNO - SOBICO, CARLA MARIEL - ROSSI, FRANCISCO",
+      "docentes": "VENTURINO, GABRIEL FRANCISCO - ZACCHIGNA, FEDERICO GIORDANO - CONTIGIANI, BRUNO - ROSSI, FRANCISCO - SOBICO, CARLA MARIEL",
       "clases": [
         {
           "dia": 2,
@@ -19577,7 +19536,7 @@ export const data = {
     },
     {
       "codigo": "8605-CURSO: 2",
-      "docentes": "REY VEGA, LEONARDO JAVIER - CASAGLIA, DANIEL CLAUDIO - CALDENTEY, MARTA BEATRIZ",
+      "docentes": "REY VEGA, LEONARDO JAVIER - CALDENTEY, MARTA BEATRIZ - CASAGLIA, DANIEL CLAUDIO",
       "clases": [
         {
           "dia": 1,
@@ -19593,7 +19552,7 @@ export const data = {
     },
     {
       "codigo": "8605-CURSO: 3",
-      "docentes": "REY VEGA, LEONARDO JAVIER - TORRES, HUMBERTO MAXIMILIANO - SAR, JUAN FEDERICO - PÉREZ, SEBASTIÁN GABRIEL",
+      "docentes": "REY VEGA, LEONARDO JAVIER - TORRES, HUMBERTO MAXIMILIANO - PÉREZ, SEBASTIÁN GABRIEL - SAR, JUAN FEDERICO",
       "clases": [
         {
           "dia": 1,
@@ -19672,7 +19631,7 @@ export const data = {
     },
     {
       "codigo": "8607-CURSO: 1",
-      "docentes": "CAMPIGLIO, GUILLERMO CARLOS - COFMAN, FERNANDO - STOLA, GERARDO LUIS - SALAYA VELAZQUEZ, JUAN GUIDO",
+      "docentes": "CAMPIGLIO, GUILLERMO CARLOS - STOLA, GERARDO LUIS - COFMAN, FERNANDO - SALAYA VELAZQUEZ, JUAN GUIDO",
       "clases": [
         {
           "dia": 2,
@@ -19688,7 +19647,7 @@ export const data = {
     },
     {
       "codigo": "8607-CURSO: 2",
-      "docentes": "CAMPIGLIO, GUILLERMO CARLOS - MARTOS, PEDRO IGNACIO DOMINGO - PUCCI, FERNANDO OSCAR - BAGLIVO, FABRICIO HUGO",
+      "docentes": "CAMPIGLIO, GUILLERMO CARLOS - MARTOS, PEDRO IGNACIO DOMINGO - BAGLIVO, FABRICIO HUGO - PUCCI, FERNANDO OSCAR",
       "clases": [
         {
           "dia": 3,
@@ -19752,7 +19711,7 @@ export const data = {
     },
     {
       "codigo": "8609-CURSO: 1",
-      "docentes": "ALTIERI, ANDRES OSCAR - JOURDAN, IVAN - LUPI, CLAUDIO ALBERTO",
+      "docentes": "ALTIERI, ANDRES OSCAR - LUPI, CLAUDIO ALBERTO - JOURDAN, IVAN",
       "clases": [
         {
           "dia": 1,
@@ -19784,7 +19743,7 @@ export const data = {
     },
     {
       "codigo": "8610-CURSO: 1",
-      "docentes": "BRUNO, MARCELO ADRIAN - ESTEVA, SANTIAGO - D´ANGIOLO, FEDERICO GABRIEL - MARCHI, EDGARDO JOSE - MALMORIA, MARIANO ESTEBAN NOÉ - BULACIO, MATIAS FERNANDO",
+      "docentes": "BRUNO, MARCELO ADRIAN - MALMORIA, MARIANO ESTEBAN NOÉ - D´ANGIOLO, FEDERICO GABRIEL - ESTEVA, SANTIAGO - MARCHI, EDGARDO JOSE - BULACIO, MATIAS FERNANDO",
       "clases": [
         {
           "dia": 3,
@@ -19880,7 +19839,7 @@ export const data = {
     },
     {
       "codigo": "8615-CURSO: 1",
-      "docentes": "GONZALEZ, PABLO SEBASTIAN - LISTE, VICTOR MARIANO - CARTELLI, CARLOS JOSÉ",
+      "docentes": "GONZALEZ, PABLO SEBASTIAN - CARTELLI, CARLOS JOSÉ - LISTE, VICTOR MARIANO",
       "clases": [
         {
           "dia": 1,
@@ -19912,7 +19871,7 @@ export const data = {
     },
     {
       "codigo": "8617-CURSO: 1",
-      "docentes": "ZANINI, ANIBAL JOSE ANTONIO - PAZOS, FERNANDO AGUSTIN - BERRA, SEBASTIÁN",
+      "docentes": "ZANINI, ANIBAL JOSE ANTONIO - BERRA, SEBASTIÁN - PAZOS, FERNANDO AGUSTIN",
       "clases": [
         {
           "dia": 2,
@@ -20280,7 +20239,7 @@ export const data = {
     },
     {
       "codigo": "8645-CURSO: 1",
-      "docentes": "ZANABRIA, JORGE NESTOR - CASTELLI, ENRIQUE JORGE - NITOLI, MONICA VIVIANA - DALMATI, DANIEL EDUARDO",
+      "docentes": "ZANABRIA, JORGE NESTOR - DALMATI, DANIEL EDUARDO - NITOLI, MONICA VIVIANA - CASTELLI, ENRIQUE JORGE",
       "clases": [
         {
           "dia": 2,
@@ -20487,22 +20446,6 @@ export const data = {
       ]
     },
     {
-      "codigo": "8655-CURSO: 1",
-      "docentes": "CERNUSCHI FRIAS, BRUNO - PFEFFERMAN, JONAS DAMIAN",
-      "clases": [
-        {
-          "dia": 1,
-          "inicio": "19:00",
-          "fin": "22:00"
-        },
-        {
-          "dia": 3,
-          "inicio": "19:00",
-          "fin": "22:00"
-        }
-      ]
-    },
-    {
       "codigo": "8656-CURSO: 1",
       "docentes": "GALARZA, CECILIA GABRIELA - PFEFFERMAN, JONAS DAMIAN",
       "clases": [
@@ -20632,7 +20575,7 @@ export const data = {
     },
     {
       "codigo": "8665-CURSO: 1",
-      "docentes": "CRUZ, JUAN MANUEL - LUTENBERG, ARIEL - GRAÑA, JORGE EDUARDO",
+      "docentes": "LUTENBERG, ARIEL - CRUZ, JUAN MANUEL - GRAÑA, JORGE EDUARDO",
       "clases": [
         {
           "dia": 3,
@@ -20712,7 +20655,7 @@ export const data = {
     },
     {
       "codigo": "8669-CURSO: 4",
-      "docentes": "ZOTHNER, ENRIQUE FELIX EDU - BERTETTA, ADOLFO ANTONIO - CABIBBO, DANIEL HORACIO",
+      "docentes": "BERTETTA, ADOLFO ANTONIO - ZOTHNER, ENRIQUE FELIX EDU - CABIBBO, DANIEL HORACIO",
       "clases": [
         {
           "dia": 2,
@@ -20728,7 +20671,7 @@ export const data = {
     },
     {
       "codigo": "8670-CURSO: 1",
-      "docentes": "PEDERSEN, EDUARDO CRISTIAN - NUÑEZ FRAU, FEDERICO IGNACIO - PRIMON, AGUSTIN LEANDRO",
+      "docentes": "PEDERSEN, EDUARDO CRISTIAN - PRIMON, AGUSTIN LEANDRO - NUÑEZ FRAU, FEDERICO IGNACIO",
       "clases": [
         {
           "dia": 5,
@@ -20841,7 +20784,7 @@ export const data = {
     },
     {
       "codigo": "8711-CURSO: 1",
-      "docentes": "MERLO, RUBEN OSVALDO - SANTAMARTINA, ALFREDO NORBERTO - RAIDEN, EMILIO AMADO - DE PIERO, MARIA INES - AGÜERA, WALTER ALBERTO",
+      "docentes": "MERLO, RUBEN OSVALDO - SANTAMARTINA, ALFREDO NORBERTO - DE PIERO, MARIA INES - RAIDEN, EMILIO AMADO - AGÜERA, WALTER ALBERTO",
       "clases": [
         {
           "dia": 1,
@@ -20904,7 +20847,7 @@ export const data = {
     },
     {
       "codigo": "8711-CURSO: 4",
-      "docentes": "MERLO, RUBEN OSVALDO - SANTAMARTINA, ALFREDO NORBERTO - RAIDEN, EMILIO AMADO - DE PIERO, MARIA INES - AGÜERA, WALTER ALBERTO - CORTESE, JULIAN EVARISTO",
+      "docentes": "MERLO, RUBEN OSVALDO - SANTAMARTINA, ALFREDO NORBERTO - DE PIERO, MARIA INES - RAIDEN, EMILIO AMADO - CORTESE, JULIAN EVARISTO - AGÜERA, WALTER ALBERTO",
       "clases": [
         {
           "dia": 2,
@@ -21051,7 +20994,7 @@ export const data = {
     },
     {
       "codigo": "8713-CURSO: 1",
-      "docentes": "MERLO, RUBEN OSVALDO - MERLO, ANTONELLA CAROLINA - AMATO, MARÍA BELÉN - PEREZ, GUSTAVO JAVIER - LAZZARINI BEHRMANN, ALEJANDRO CLAUDIO",
+      "docentes": "MERLO, RUBEN OSVALDO - PEREZ, GUSTAVO JAVIER - AMATO, MARÍA BELÉN - MERLO, ANTONELLA CAROLINA - LAZZARINI BEHRMANN, ALEJANDRO CLAUDIO",
       "clases": [
         {
           "dia": 2,
@@ -21062,7 +21005,7 @@ export const data = {
     },
     {
       "codigo": "8713-CURSO: 2",
-      "docentes": "MERLO, RUBEN OSVALDO - PERFUMO, LUCAS ALBERTO - NATALINO, ROXANA VANINA - REY, ALEJANDRO",
+      "docentes": "MERLO, RUBEN OSVALDO - PERFUMO, LUCAS ALBERTO - REY, ALEJANDRO - NATALINO, ROXANA VANINA",
       "clases": [
         {
           "dia": 3,
@@ -21073,7 +21016,7 @@ export const data = {
     },
     {
       "codigo": "8713-CURSO: 3",
-      "docentes": "MERLO, RUBEN OSVALDO - FERRARIO, GUILLERMO PABLO - PEREZ, GUSTAVO JAVIER - RODRIGUEZ MOLARO, MARTÍN PATRICIO",
+      "docentes": "MERLO, RUBEN OSVALDO - FERRARIO, GUILLERMO PABLO - RODRIGUEZ MOLARO, MARTÍN PATRICIO - PEREZ, GUSTAVO JAVIER",
       "clases": [
         {
           "dia": 3,
@@ -21154,7 +21097,7 @@ export const data = {
     },
     {
       "codigo": "8714-CURSO: 4",
-      "docentes": "SOSA, ROBERTO - COSTA, LUIS CRISTIAN - COSTA, LUIS MARIA - OYBIN, JAVIER MARCOS",
+      "docentes": "COSTA, LUIS CRISTIAN - SOSA, ROBERTO - COSTA, LUIS MARIA - OYBIN, JAVIER MARCOS",
       "clases": [
         {
           "dia": 5,
@@ -21181,7 +21124,7 @@ export const data = {
     },
     {
       "codigo": "8715-CURSO: 2B",
-      "docentes": "SCHENKEL, CHRISTIAN DAVID - PIZZICHINI, ESTEBAN LEANDRO - CALAHONRA, CARLOS VITALI - AREVALO BUSHARA, YAMIL ELIAS",
+      "docentes": "SCHENKEL, CHRISTIAN DAVID - PIZZICHINI, ESTEBAN LEANDRO - AREVALO BUSHARA, YAMIL ELIAS - CALAHONRA, CARLOS VITALI",
       "clases": [
         {
           "dia": 2,
@@ -21203,7 +21146,7 @@ export const data = {
     },
     {
       "codigo": "8715-CURSO: 4B",
-      "docentes": "SCHENKEL, CHRISTIAN DAVID - CAGEAO, SEBASTIAN - YAÑEZ, MATIAS ANTONIO - ALVAREZ, FACUNDO EMANUEL",
+      "docentes": "SCHENKEL, CHRISTIAN DAVID - YAÑEZ, MATIAS ANTONIO - CAGEAO, SEBASTIAN - ALVAREZ, FACUNDO EMANUEL",
       "clases": [
         {
           "dia": 4,
@@ -21236,7 +21179,7 @@ export const data = {
     },
     {
       "codigo": "8717-CURSO: 1",
-      "docentes": "ZAMBRANO, DANIEL ALBERTO - LEONARDO, LEANDRO - MONSALVE, GUSTAVO ADOLFO",
+      "docentes": "ZAMBRANO, DANIEL ALBERTO - MONSALVE, GUSTAVO ADOLFO - LEONARDO, LEANDRO",
       "clases": [
         {
           "dia": 4,
@@ -21268,7 +21211,7 @@ export const data = {
     },
     {
       "codigo": "8717-CURSO: 3",
-      "docentes": "ZAMBRANO, DANIEL ALBERTO - ERRAZQUIN, JORGE - CAGEAO, SEBASTIAN",
+      "docentes": "ZAMBRANO, DANIEL ALBERTO - CAGEAO, SEBASTIAN - ERRAZQUIN, JORGE",
       "clases": [
         {
           "dia": 5,
@@ -21316,7 +21259,7 @@ export const data = {
     },
     {
       "codigo": "8803-CURSO: 1",
-      "docentes": "PALOMAR, ALBERTO GUSTAVO - SIVORI, GISELA ROSANA - FARAH, GABRIEL HERNAN",
+      "docentes": "PALOMAR, ALBERTO GUSTAVO - FARAH, GABRIEL HERNAN - SIVORI, GISELA ROSANA",
       "clases": [
         {
           "dia": 3,
@@ -21412,7 +21355,7 @@ export const data = {
     },
     {
       "codigo": "8809-CURSO: 1",
-      "docentes": "AGOSTA, ROBERTO DANIEL - PAPAZIAN, ARTURO - MOLERES, CRISTIAN JOAQUIN",
+      "docentes": "AGOSTA, ROBERTO DANIEL - MOLERES, CRISTIAN JOAQUIN - PAPAZIAN, ARTURO",
       "clases": [
         {
           "dia": 1,
@@ -21456,7 +21399,7 @@ export const data = {
     },
     {
       "codigo": "8813-CURSO: 1",
-      "docentes": "PALOMAR, ALBERTO GUSTAVO - SIVORI, GISELA ROSANA - FARAH, GABRIEL HERNAN",
+      "docentes": "PALOMAR, ALBERTO GUSTAVO - FARAH, GABRIEL HERNAN - SIVORI, GISELA ROSANA",
       "clases": [
         {
           "dia": 3,
@@ -21494,7 +21437,7 @@ export const data = {
     },
     {
       "codigo": "8901-CURSO 2 Schifini Fernando",
-      "docentes": "SCHIFINI GLADCHTEIN, FERNANDO - ISI, MATÍAS RODRIGO - PEREYRA YRAOLA, IGNACIO JOSÉ - CHU, JAVIER NICOLÁS - MILANOWSKI, MAIA SOFIA - PEREZ MILLÁN, MARÍA BELÉN - GOLLUSCIO, DANIEL PABLO",
+      "docentes": "SCHIFINI GLADCHTEIN, FERNANDO - PEREYRA YRAOLA, IGNACIO JOSÉ - ISI, MATÍAS RODRIGO - PEREZ MILLÁN, MARÍA BELÉN - CHU, JAVIER NICOLÁS - MILANOWSKI, MAIA SOFIA - GOLLUSCIO, DANIEL PABLO",
       "clases": [
         {
           "dia": 1,
@@ -21526,7 +21469,7 @@ export const data = {
     },
     {
       "codigo": "8905-CURSO : Uriburu Quirno",
-      "docentes": "URIBURU QUIRNO, MARCELO - LECERTUA, EMILIO ALEJANDRO - GIACOSA, JUAN PABLO - SURIANO, MICAELA PAULA - SUSNIK, TOMÁS - SCASSERRA, DAIANA CARLA - MARCENARO, JUAN MARTÍN - DEVOTO, MARCOS TOMAS",
+      "docentes": "URIBURU QUIRNO, MARCELO - LECERTUA, EMILIO ALEJANDRO - SURIANO, MICAELA PAULA - GIACOSA, JUAN PABLO - SUSNIK, TOMÁS - SCASSERRA, DAIANA CARLA - DEVOTO, MARCOS TOMAS - MARCENARO, JUAN MARTÍN",
       "clases": [
         {
           "dia": 4,
@@ -21548,7 +21491,7 @@ export const data = {
     },
     {
       "codigo": "8908-Bereciartua / Antunez",
-      "docentes": "BERECIARTUA, PABLO JOSE - ANTUNEZ, NORA MABEL - VEREERTBRUGGHEN, DIEGO ALEJANDRO",
+      "docentes": "ANTUNEZ, NORA MABEL - BERECIARTUA, PABLO JOSE - VEREERTBRUGGHEN, DIEGO ALEJANDRO",
       "clases": [
         {
           "dia": 2,
@@ -21564,7 +21507,7 @@ export const data = {
     },
     {
       "codigo": "8909-CURSO: Dalmati / Zanalda",
-      "docentes": "DALMATI, RODOLFO ENRIQUE - ZANALDA, CARLOS EDUARDO E - VAZQUEZ, MIRYAM GABRIELA - SCASSERRA, DAIANA CARLA - ALBERTSEN, ERIK - OSSORIO ARANA, ARTURO JOSE - SHOCRON, WANDA - MATHIEU, JUAN ESTEBAN - FRANCO, NICOLAS MANUEL",
+      "docentes": "DALMATI, RODOLFO ENRIQUE - ZANALDA, CARLOS EDUARDO E - VAZQUEZ, MIRYAM GABRIELA - SCASSERRA, DAIANA CARLA - ALBERTSEN, ERIK - FRANCO, NICOLAS MANUEL - MATHIEU, JUAN ESTEBAN - SHOCRON, WANDA - OSSORIO ARANA, ARTURO JOSE",
       "clases": [
         {
           "dia": 1,
@@ -21580,7 +21523,7 @@ export const data = {
     },
     {
       "codigo": "8910-Curso: Arostegui",
-      "docentes": "AROSTEGUI, MARCELO PABLO - SABAROTS GERBEC, MARTIN - RE, FERNANDO - MARCHESE, MAURO ENRICO - SUSNIK, TOMÁS - FANELLI, ARIEL DARIO",
+      "docentes": "AROSTEGUI, MARCELO PABLO - SABAROTS GERBEC, MARTIN - RE, FERNANDO - FANELLI, ARIEL DARIO - SUSNIK, TOMÁS - MARCHESE, MAURO ENRICO",
       "clases": [
         {
           "dia": 2,
@@ -21607,7 +21550,7 @@ export const data = {
     },
     {
       "codigo": "8912-CURSO: Antunez / Bereciartua",
-      "docentes": "ANTUNEZ, NORA MABEL - BERECIARTUA, PABLO JOSE - GUIZZARDI, SANTIAGO - VEREERTBRUGGHEN, DIEGO ALEJANDRO - VALGAÑON, ANA LAURA - FINNEMORE, VALERIA - PEREYRA SIBILLA, PEDRO JOSÉ - BRUGALETTA, ANDREINA SOL",
+      "docentes": "BERECIARTUA, PABLO JOSE - ANTUNEZ, NORA MABEL - GUIZZARDI, SANTIAGO - VEREERTBRUGGHEN, DIEGO ALEJANDRO - PEREYRA SIBILLA, PEDRO JOSÉ - VALGAÑON, ANA LAURA - BRUGALETTA, ANDREINA SOL - FINNEMORE, VALERIA",
       "clases": [
         {
           "dia": 2,
@@ -21683,7 +21626,7 @@ export const data = {
     },
     {
       "codigo": "8917-CURSO 11: BACHA / Coronel",
-      "docentes": "BACHA, LAURA ELENA - CORONEL, FERNANDO - RAMATI, PABLO JOSE - BERBERY, GUSTAVO FEDERICO",
+      "docentes": "BACHA, LAURA ELENA - CORONEL, FERNANDO - BERBERY, GUSTAVO FEDERICO - RAMATI, PABLO JOSE",
       "clases": [
         {
           "dia": 4,
@@ -21747,7 +21690,7 @@ export const data = {
     },
     {
       "codigo": "8917-CURSO 3: CALZARETTO / Coronel",
-      "docentes": "CALZARETTO, RICARDO ALBERTO - CORONEL, FERNANDO - RAMATI, PABLO JOSE - BERBERY, GUSTAVO FEDERICO",
+      "docentes": "CALZARETTO, RICARDO ALBERTO - CORONEL, FERNANDO - BERBERY, GUSTAVO FEDERICO - RAMATI, PABLO JOSE",
       "clases": [
         {
           "dia": 1,
@@ -21811,7 +21754,7 @@ export const data = {
     },
     {
       "codigo": "8917-CURSO 7: LASANTA / Coronel",
-      "docentes": "LASANTA, TITO IGNACIO - CORONEL, FERNANDO - RAMATI, PABLO JOSE - BERBERY, GUSTAVO FEDERICO",
+      "docentes": "LASANTA, TITO IGNACIO - CORONEL, FERNANDO - BERBERY, GUSTAVO FEDERICO - RAMATI, PABLO JOSE",
       "clases": [
         {
           "dia": 2,
@@ -21897,7 +21840,7 @@ export const data = {
     },
     {
       "codigo": "9102-CURSO: 1",
-      "docentes": "KOMPEL, LUIS JOSE - COSCARELLA, GLADYS LILIANA - FILIP, FRANCO - MOLINA, CARLOS LUIS - BRANCATO, GUSTAVO EMILIO - APRILE, CARLOS JOSE - IZARRA, LUCAS FERNANDO",
+      "docentes": "KOMPEL, LUIS JOSE - COSCARELLA, GLADYS LILIANA - BRANCATO, GUSTAVO EMILIO - FILIP, FRANCO - APRILE, CARLOS JOSE - MOLINA, CARLOS LUIS - IZARRA, LUCAS FERNANDO",
       "clases": [
         {
           "dia": 1,
@@ -21929,7 +21872,7 @@ export const data = {
     },
     {
       "codigo": "9103-CURSO: 2",
-      "docentes": "BURSKY, JORGE CESAR CARLOS - GIL, JAVIER LUIS - COSATTO AMMANN, PEDRO CAMILO - MONTEMURRI, DAVID - LIPARI, WALTER DANIEL",
+      "docentes": "GIL, JAVIER LUIS - BURSKY, JORGE CESAR CARLOS - LIPARI, WALTER DANIEL - COSATTO AMMANN, PEDRO CAMILO - MONTEMURRI, DAVID",
       "clases": [
         {
           "dia": 4,
@@ -21945,7 +21888,7 @@ export const data = {
     },
     {
       "codigo": "9104-CURSO 2",
-      "docentes": "RAMOS, SILVIA ADRIANA - ECHEVARRIA, PABLO - OITANA, DIEGO MARTIN",
+      "docentes": "ECHEVARRIA, PABLO - RAMOS, SILVIA ADRIANA - OITANA, DIEGO MARTIN",
       "clases": [
         {
           "dia": 1,
@@ -21977,7 +21920,7 @@ export const data = {
     },
     {
       "codigo": "9104-CURSO 4",
-      "docentes": "RAMOS, SILVIA ADRIANA - ECHEVARRIA, PABLO - COLOMBO, PABLO MARTIN - TERZANO, IVAN GUILLERMO - MARIN, EMILIO GERMAN",
+      "docentes": "ECHEVARRIA, PABLO - RAMOS, SILVIA ADRIANA - COLOMBO, PABLO MARTIN - TERZANO, IVAN GUILLERMO - MARIN, EMILIO GERMAN",
       "clases": [
         {
           "dia": 3,
@@ -22020,7 +21963,7 @@ export const data = {
     },
     {
       "codigo": "9107-CURSO: 1",
-      "docentes": "MIRANDA, MIGUEL - GONZALEZ, XAVIER IGNACIO - RIGOU, DANIEL FRANCISCO - PATRIZI, MARIA JOSE - GUALA, MARIA VIRGINIA - STEGMANN, CLAUS - MURADIAN, FEDERICO - LEWIN, ALEJANDRO",
+      "docentes": "MIRANDA, MIGUEL - RIGOU, DANIEL FRANCISCO - GONZALEZ, XAVIER IGNACIO - PATRIZI, MARIA JOSE - GUALA, MARIA VIRGINIA - STEGMANN, CLAUS - LEWIN, ALEJANDRO - MURADIAN, FEDERICO",
       "clases": [
         {
           "dia": 3,
@@ -22031,7 +21974,7 @@ export const data = {
     },
     {
       "codigo": "9108-CURSO 1 Beaumarie-Monroy",
-      "docentes": "HORMAN, FERNANDO GABRIEL - CONDE, MARIA EUGENIA - BEAUMARIE, CARLOS FABIAN - GROISMAN, SERGIO DANIEL - MONROY, GUILLERMO EDUARDO",
+      "docentes": "HORMAN, FERNANDO GABRIEL - CONDE, MARIA EUGENIA - GROISMAN, SERGIO DANIEL - BEAUMARIE, CARLOS FABIAN - MONROY, GUILLERMO EDUARDO",
       "clases": [
         {
           "dia": 2,
@@ -22047,7 +21990,7 @@ export const data = {
     },
     {
       "codigo": "9108-CURSO 2 Libster",
-      "docentes": "HORMAN, FERNANDO GABRIEL - CONDE, MARIA EUGENIA - SATYR, JULIO ARIEL - LIBSTER, JUAN DARIO",
+      "docentes": "HORMAN, FERNANDO GABRIEL - CONDE, MARIA EUGENIA - LIBSTER, JUAN DARIO - SATYR, JULIO ARIEL",
       "clases": [
         {
           "dia": 2,
@@ -22063,7 +22006,7 @@ export const data = {
     },
     {
       "codigo": "9108-CURSO 3 Lopez-Marotta",
-      "docentes": "CONTI, CARLOS ALBERTO - HORMAN, FERNANDO GABRIEL - CONDE, MARIA EUGENIA - MAROTTA, ANDRES MIGUEL - LOPEZ, GABRIEL ADRIAN - MOREY RIOS, BORIS",
+      "docentes": "HORMAN, FERNANDO GABRIEL - CONTI, CARLOS ALBERTO - CONDE, MARIA EUGENIA - MOREY RIOS, BORIS - LOPEZ, GABRIEL ADRIAN - MAROTTA, ANDRES MIGUEL",
       "clases": [
         {
           "dia": 2,
@@ -22079,7 +22022,7 @@ export const data = {
     },
     {
       "codigo": "9109-CURSO: 1",
-      "docentes": "JAHN, LUIS GERMAN - MUÑOZ, JORGE GUSTAVO - HACHELIAS, LAURA ADELINA - VALLEJOS, ALBERTO PEDRO - VASEN, GERMAN - SCHERF, MAURO SEBASTIAN",
+      "docentes": "JAHN, LUIS GERMAN - HACHELIAS, LAURA ADELINA - MUÑOZ, JORGE GUSTAVO - VALLEJOS, ALBERTO PEDRO - VASEN, GERMAN - SCHERF, MAURO SEBASTIAN",
       "clases": [
         {
           "dia": 2,
@@ -22234,7 +22177,7 @@ export const data = {
     },
     {
       "codigo": "9112-CURSO 1",
-      "docentes": "LEITER, ALFREDO - SOTO, MARCELA FABIANA - SPECTOR, HUGO RODOLFO - LUCIOLI, MONICA - REITKLING, LAURA INES - MAYO, GUSTAVO RAUL - BARMACK, NORBERTO BENJAMIN - BARRERA, MARIO ADOLFO - ALVAREZ FARIÑA, MARIA AGUSTINA - de GONGORA, FRANCISCO - VISINTINI JAIME, MARIA BELÉN - NOCETI, NELSON FABIAN",
+      "docentes": "LEITER, ALFREDO - SOTO, MARCELA FABIANA - SPECTOR, HUGO RODOLFO - REITKLING, LAURA INES - BARMACK, NORBERTO BENJAMIN - MAYO, GUSTAVO RAUL - LUCIOLI, MONICA - NOCETI, NELSON FABIAN - VISINTINI JAIME, MARIA BELÉN - de GONGORA, FRANCISCO - ALVAREZ FARIÑA, MARIA AGUSTINA - BARRERA, MARIO ADOLFO",
       "clases": [
         {
           "dia": 1,
@@ -22299,7 +22242,7 @@ export const data = {
     },
     {
       "codigo": "9117-CURSO: 1",
-      "docentes": "RICKERT, CARLOS - DOMINGUEZ, MARIA MERCEDES - SABINO, LEANDRO OSCAR - KLEIN, MARIA CAROLINA - TURCO GRECO, MARIA CLARA",
+      "docentes": "RICKERT, CARLOS - DOMINGUEZ, MARIA MERCEDES - TURCO GRECO, MARIA CLARA - KLEIN, MARIA CAROLINA - SABINO, LEANDRO OSCAR",
       "clases": [
         {
           "dia": 4,
@@ -22354,7 +22297,7 @@ export const data = {
     },
     {
       "codigo": "9124-CURSO: 1",
-      "docentes": "SURACE, PABLO ESTEBAN - LEPERA, PABLO ADRIAN - NACUCCHIO, IVO LUCIANO - CAGNASSO, DARIO ALBERTO - GODOY, ANDRÉS ALEJANDRO - ALVAREZ DE TOLEDO, ANGELES - OBST DEMAESTRI, HERMAN - CIANCI, LUCIANO JULIÁN - MC CALLUM, VICTORIA MARIA - PEREDNIK, FRANCISCO",
+      "docentes": "SURACE, PABLO ESTEBAN - LEPERA, PABLO ADRIAN - CAGNASSO, DARIO ALBERTO - NACUCCHIO, IVO LUCIANO - GODOY, ANDRÉS ALEJANDRO - ALVAREZ DE TOLEDO, ANGELES - OBST DEMAESTRI, HERMAN - CIANCI, LUCIANO JULIÁN - MC CALLUM, VICTORIA MARIA - PEREDNIK, FRANCISCO",
       "clases": [
         {
           "dia": 5,
@@ -22408,7 +22351,7 @@ export const data = {
     },
     {
       "codigo": "9128-CURSO: 1",
-      "docentes": "ZANCHETTI, BEATRIZ SUSANA - RENSIN, LUIS - COUGNET, JORGE ALBERTO - ARCIDIACONO, SALVADOR EUGENIO - ALONSO, KARINA CECILIA - SCHVARCHMAN, GASTON EZEQUIEL - VEGA, SERGIO ANDRES - HENRY, MIGUEL ALBERTO - ZOGBI, MARCELO MIGUEL - GIACOPELLO, DANIEL",
+      "docentes": "ZANCHETTI, BEATRIZ SUSANA - RENSIN, LUIS - COUGNET, JORGE ALBERTO - HENRY, MIGUEL ALBERTO - ZOGBI, MARCELO MIGUEL - ARCIDIACONO, SALVADOR EUGENIO - VEGA, SERGIO ANDRES - SCHVARCHMAN, GASTON EZEQUIEL - ALONSO, KARINA CECILIA - GIACOPELLO, DANIEL",
       "clases": [
         {
           "dia": 1,
@@ -22424,7 +22367,7 @@ export const data = {
     },
     {
       "codigo": "9128-CURSO: 2",
-      "docentes": "ZANCHETTI, BEATRIZ SUSANA - COUGNET, JORGE ALBERTO - RENSIN, LUIS - ARCIDIACONO, SALVADOR EUGENIO - GIACOPELLO, DANIEL - HENRY, MIGUEL ALBERTO - ZOGBI, MARCELO MIGUEL - SCHVARCHMAN, GASTON EZEQUIEL - ALONSO, KARINA CECILIA - VEGA, SERGIO ANDRES",
+      "docentes": "ZANCHETTI, BEATRIZ SUSANA - RENSIN, LUIS - COUGNET, JORGE ALBERTO - VEGA, SERGIO ANDRES - ZOGBI, MARCELO MIGUEL - ALONSO, KARINA CECILIA - HENRY, MIGUEL ALBERTO - ARCIDIACONO, SALVADOR EUGENIO - SCHVARCHMAN, GASTON EZEQUIEL - GIACOPELLO, DANIEL",
       "clases": [
         {
           "dia": 1,
@@ -22440,7 +22383,7 @@ export const data = {
     },
     {
       "codigo": "9129-CURSO: 1",
-      "docentes": "LELIC, RIFAT - PALANDELLA, MAURICIO GUILLERMO - VENTURA, JULIA - LAPIDUS, PABLO ANDRES - YLLAÑEZ, VALERIA - SEGAL, MAXIMILIANO - YAÑEZ, ESTEBAN HERNAN - MONTERO, DIEGO - LALANNE, SANTIAGO - CASSINELLI, JUAN IGNACIO - SAFRANCHIK, DAN",
+      "docentes": "LELIC, RIFAT - PALANDELLA, MAURICIO GUILLERMO - VENTURA, JULIA - SEGAL, MAXIMILIANO - LAPIDUS, PABLO ANDRES - YAÑEZ, ESTEBAN HERNAN - YLLAÑEZ, VALERIA - LALANNE, SANTIAGO - SAFRANCHIK, DAN - CASSINELLI, JUAN IGNACIO - MONTERO, DIEGO",
       "clases": [
         {
           "dia": 5,
@@ -22456,7 +22399,7 @@ export const data = {
     },
     {
       "codigo": "9130-CURSO: 1",
-      "docentes": "BONOLI ESCOBAR, MARIANO FELIPE - BURSKY, JORGE CESAR CARLOS - GIL, JAVIER LUIS - LIPARI, WALTER DANIEL - MONTEMURRI, DAVID - COSATTO AMMANN, PEDRO CAMILO",
+      "docentes": "BONOLI ESCOBAR, MARIANO FELIPE - BURSKY, JORGE CESAR CARLOS - GIL, JAVIER LUIS - LIPARI, WALTER DANIEL - COSATTO AMMANN, PEDRO CAMILO - MONTEMURRI, DAVID",
       "clases": [
         {
           "dia": 4,
@@ -22472,7 +22415,7 @@ export const data = {
     },
     {
       "codigo": "9130-CURSO: 2",
-      "docentes": "GIL, JAVIER LUIS - BURSKY, JORGE CESAR CARLOS - BONOLI ESCOBAR, MARIANO FELIPE - LIPARI, WALTER DANIEL - COSATTO AMMANN, PEDRO CAMILO - MONTEMURRI, DAVID",
+      "docentes": "GIL, JAVIER LUIS - BONOLI ESCOBAR, MARIANO FELIPE - BURSKY, JORGE CESAR CARLOS - LIPARI, WALTER DANIEL - COSATTO AMMANN, PEDRO CAMILO - MONTEMURRI, DAVID",
       "clases": [
         {
           "dia": 1,
@@ -22488,7 +22431,7 @@ export const data = {
     },
     {
       "codigo": "9131-CURSO: 1",
-      "docentes": "MIRANDA, MIGUEL - GONZALEZ, XAVIER IGNACIO - RIGOU, DANIEL FRANCISCO - GUALA, MARIA VIRGINIA - PATRIZI, MARIA JOSE - STEGMANN, CLAUS - MURADIAN, FEDERICO - LEWIN, ALEJANDRO",
+      "docentes": "MIRANDA, MIGUEL - GONZALEZ, XAVIER IGNACIO - RIGOU, DANIEL FRANCISCO - STEGMANN, CLAUS - GUALA, MARIA VIRGINIA - PATRIZI, MARIA JOSE - MURADIAN, FEDERICO - LEWIN, ALEJANDRO",
       "clases": [
         {
           "dia": 4,
@@ -22526,7 +22469,7 @@ export const data = {
     },
     {
       "codigo": "9134-CURSO: 1",
-      "docentes": "DIEGO, ALEJANDRO OSCAR - GARCIA, DIEGO EDUARDO - BARRAL, PABLO DANIEL - LEREA, GUIDO ALBERTO - MARCH, JONATAN - BRUNO, PABLO - ESPINOSA, SOL",
+      "docentes": "DIEGO, ALEJANDRO OSCAR - GARCIA, DIEGO EDUARDO - MARCH, JONATAN - BARRAL, PABLO DANIEL - LEREA, GUIDO ALBERTO - BRUNO, PABLO - ESPINOSA, SOL",
       "clases": [
         {
           "dia": 1,
@@ -22597,7 +22540,7 @@ export const data = {
     },
     {
       "codigo": "9142-CURSO: 1",
-      "docentes": "BILELLO, MIGUEL ANGEL - MOLINA, WALTER RAUL - OTERO RODRIGUEZ, MARIA MARGARITA - CRISTOBAL, MARIO - MARTINEZ, VERONICA ESTHER",
+      "docentes": "BILELLO, MIGUEL ANGEL - OTERO RODRIGUEZ, MARIA MARGARITA - CRISTOBAL, MARIO - MOLINA, WALTER RAUL - MARTINEZ, VERONICA ESTHER",
       "clases": [
         {
           "dia": 2,
@@ -22694,7 +22637,7 @@ export const data = {
     },
     {
       "codigo": "9202-CURSO: 2",
-      "docentes": "NICOLINI, JORGE VICTOR - BARRIONUEVO, JUAN CARLOS AUDELINO - MORDEGLIA, PEDRO - SAEZ DE ARREGUI, MERCEDES - KOHN, SEBASTIAN",
+      "docentes": "NICOLINI, JORGE VICTOR - BARRIONUEVO, JUAN CARLOS AUDELINO - SAEZ DE ARREGUI, MERCEDES - MORDEGLIA, PEDRO - KOHN, SEBASTIAN",
       "clases": [
         {
           "dia": 3,
@@ -22710,7 +22653,7 @@ export const data = {
     },
     {
       "codigo": "9203-CURSO: 1",
-      "docentes": "PINCHETE, LUIS ALBERTO - RICKERT, CARLOS - LOPEZ CONDE, MARIA EUGENIA - FERNANDEZ, HERNAN ALVARO - ROSSELLO, LUCIA MARIA",
+      "docentes": "RICKERT, CARLOS - PINCHETE, LUIS ALBERTO - LOPEZ CONDE, MARIA EUGENIA - FERNANDEZ, HERNAN ALVARO - ROSSELLO, LUCIA MARIA",
       "clases": [
         {
           "dia": 1,
@@ -22764,7 +22707,7 @@ export const data = {
     },
     {
       "codigo": "9205-CURSO: 1",
-      "docentes": "DIEGO, ROSA ANGELA - AZZOLLINI, MARIANO MARTIN - GAYOSO, MARCELA ANDREA - SALAGARAY, JULIETA - MONTI, FABIAN ARMANDO - AZCARATE, CINTIA - CARMONA, DANIELA",
+      "docentes": "DIEGO, ROSA ANGELA - AZZOLLINI, MARIANO MARTIN - GAYOSO, MARCELA ANDREA - AZCARATE, CINTIA - MONTI, FABIAN ARMANDO - SALAGARAY, JULIETA - CARMONA, DANIELA",
       "clases": [
         {
           "dia": 1,
@@ -22796,7 +22739,7 @@ export const data = {
     },
     {
       "codigo": "9206-CURSO: 2",
-      "docentes": "NITTI, ALEJANDRO LEONARDO - GRECO, ANTONIO - ORLANDELLI, CARLOS GABRIE",
+      "docentes": "NITTI, ALEJANDRO LEONARDO - ORLANDELLI, CARLOS GABRIE - GRECO, ANTONIO",
       "clases": [
         {
           "dia": 2,
@@ -22812,7 +22755,7 @@ export const data = {
     },
     {
       "codigo": "9206-CURSO: 3",
-      "docentes": "NITTI, ALEJANDRO LEONARDO - ALVAREZ, HERNAN GERARDO - CUNEO, MARIA FLORENCIA",
+      "docentes": "NITTI, ALEJANDRO LEONARDO - CUNEO, MARIA FLORENCIA - ALVAREZ, HERNAN GERARDO",
       "clases": [
         {
           "dia": 2,
@@ -22844,7 +22787,7 @@ export const data = {
     },
     {
       "codigo": "9207-CURSO: 1",
-      "docentes": "SABELLI, ALFREDO JORGE - GALBUSERA, SEBASTIAN - MARTINI, DARíO OSCAR - CARMINATTI, NICOLAS - CIARFAGLIA, MARTIN - LUCHINI, AGUSTINA - LEGUIZA, JULIA ALEJANDRA - BREA, NICOLAS MARTIN - VILLANUEVA, LUCIANA - GONZALO JUARROS, FELIPE LORENZO - CIFUENTES, CAMILA SOFIA",
+      "docentes": "SABELLI, ALFREDO JORGE - GALBUSERA, SEBASTIAN - MARTINI, DARíO OSCAR - CARMINATTI, NICOLAS - BREA, NICOLAS MARTIN - LUCHINI, AGUSTINA - LEGUIZA, JULIA ALEJANDRA - CIARFAGLIA, MARTIN - CIFUENTES, CAMILA SOFIA - VILLANUEVA, LUCIANA - GONZALO JUARROS, FELIPE LORENZO",
       "clases": [
         {
           "dia": 2,
@@ -22860,7 +22803,7 @@ export const data = {
     },
     {
       "codigo": "9207-CURSO: 2",
-      "docentes": "SABELLI, ALFREDO JORGE - MARTINI, DARíO OSCAR - GALBUSERA, SEBASTIAN - CARMINATTI, NICOLAS - CIARFAGLIA, MARTIN - LEGUIZA, JULIA ALEJANDRA - LUCHINI, AGUSTINA - BREA, NICOLAS MARTIN - VILLANUEVA, LUCIANA - CIFUENTES, CAMILA SOFIA - GONZALO JUARROS, FELIPE LORENZO",
+      "docentes": "SABELLI, ALFREDO JORGE - GALBUSERA, SEBASTIAN - MARTINI, DARíO OSCAR - CARMINATTI, NICOLAS - LEGUIZA, JULIA ALEJANDRA - BREA, NICOLAS MARTIN - CIARFAGLIA, MARTIN - LUCHINI, AGUSTINA - VILLANUEVA, LUCIANA - GONZALO JUARROS, FELIPE LORENZO - CIFUENTES, CAMILA SOFIA",
       "clases": [
         {
           "dia": 2,
@@ -22876,7 +22819,7 @@ export const data = {
     },
     {
       "codigo": "9208-CURSO: 1",
-      "docentes": "ARCAGNI, ADOLFO ALBERTO - ALONSO, ANDRES EZEQUIEL - TURCO GRECO, MARIA TERESA - VIERA, ANA DANIELA - FORNARI, CECILIA - VALENTINI, LEANDRO LUIS",
+      "docentes": "ARCAGNI, ADOLFO ALBERTO - ALONSO, ANDRES EZEQUIEL - FORNARI, CECILIA - VALENTINI, LEANDRO LUIS - VIERA, ANA DANIELA - TURCO GRECO, MARIA TERESA",
       "clases": [
         {
           "dia": 2,
@@ -23017,7 +22960,7 @@ export const data = {
     },
     {
       "codigo": "9226-CURSO: Industrias X, Transformación Digital",
-      "docentes": "SABELLI, ALFREDO JORGE - SAEZ DE ARREGUI, MERCEDES - FASAN, FRANCISCO - KOHN, SEBASTIAN - DURAN, MANUEL PABLO - GARRIDO DALVIT, SOFIA - LUQUER, MARCO",
+      "docentes": "SABELLI, ALFREDO JORGE - SAEZ DE ARREGUI, MERCEDES - FASAN, FRANCISCO - GARRIDO DALVIT, SOFIA - LUQUER, MARCO - KOHN, SEBASTIAN - DURAN, MANUEL PABLO",
       "clases": [
         {
           "dia": 1,
@@ -23028,7 +22971,7 @@ export const data = {
     },
     {
       "codigo": "9299-CURSO: 1",
-      "docentes": "COFONE, ANIBAL EDGARDO - MIGLIORINO, DIEGO FERNANDO - CORNES, MARTIN DIEGO - LOPEZ CONDE, MARIA EUGENIA - VILARIÑO, RAMIRO MARTIN - MARINO RODRIGUEZ, VANESA GISELLE - BIANCO, GUILLERMO ERNESTO",
+      "docentes": "COFONE, ANIBAL EDGARDO - CORNES, MARTIN DIEGO - MIGLIORINO, DIEGO FERNANDO - LOPEZ CONDE, MARIA EUGENIA - VILARIÑO, RAMIRO MARTIN - MARINO RODRIGUEZ, VANESA GISELLE - BIANCO, GUILLERMO ERNESTO",
       "clases": [
         {
           "dia": 1,
@@ -23039,7 +22982,7 @@ export const data = {
     },
     {
       "codigo": "9299-CURSO: 2",
-      "docentes": "COFONE, ANIBAL EDGARDO - CORNES, MARTIN DIEGO - MIGLIORINO, DIEGO FERNANDO - ARANDA, MODESTO MANUEL - LEYBOVICH, PABLO DANIEL - CELANO GOMEZ, BRUNO ALEJANDRO - ORTEGA, MARIANO - VERA, JOSE ERNESTO - VITA SANCHEZ, MATíAS ALEJANDRO",
+      "docentes": "COFONE, ANIBAL EDGARDO - MIGLIORINO, DIEGO FERNANDO - CORNES, MARTIN DIEGO - ARANDA, MODESTO MANUEL - LEYBOVICH, PABLO DANIEL - ORTEGA, MARIANO - CELANO GOMEZ, BRUNO ALEJANDRO - VITA SANCHEZ, MATíAS ALEJANDRO - VERA, JOSE ERNESTO",
       "clases": [
         {
           "dia": 2,
@@ -23050,7 +22993,7 @@ export const data = {
     },
     {
       "codigo": "9299-CURSO: 3",
-      "docentes": "COFONE, ANIBAL EDGARDO - CORNES, MARTIN DIEGO - MIGLIORINO, DIEGO FERNANDO - RATTEL, PABLO HORACIO - SAROKA, ALEJANDRO MARTIN - SOLANA, ROMINA SOLEDAD - GUIM, SEBASTIAN ROBERTO - FERNANDEZ, HERNAN ALVARO - SIMONELLI, JULIAN",
+      "docentes": "COFONE, ANIBAL EDGARDO - CORNES, MARTIN DIEGO - MIGLIORINO, DIEGO FERNANDO - RATTEL, PABLO HORACIO - GUIM, SEBASTIAN ROBERTO - FERNANDEZ, HERNAN ALVARO - SAROKA, ALEJANDRO MARTIN - SOLANA, ROMINA SOLEDAD - SIMONELLI, JULIAN",
       "clases": [
         {
           "dia": 3,
@@ -23061,7 +23004,7 @@ export const data = {
     },
     {
       "codigo": "9299-CURSO: 4",
-      "docentes": "COFONE, ANIBAL EDGARDO - CORNES, MARTIN DIEGO - MIGLIORINO, DIEGO FERNANDO - TERZOLO, HERNAN JAVIER - LOSINO, DANIELA - SPIAZZI, JORGE JOAQUIN - PRANDI, PATRICIO RAUL",
+      "docentes": "COFONE, ANIBAL EDGARDO - CORNES, MARTIN DIEGO - MIGLIORINO, DIEGO FERNANDO - SPIAZZI, JORGE JOAQUIN - LOSINO, DANIELA - PRANDI, PATRICIO RAUL - TERZOLO, HERNAN JAVIER",
       "clases": [
         {
           "dia": 4,
@@ -23072,7 +23015,7 @@ export const data = {
     },
     {
       "codigo": "9299-CURSO: 5",
-      "docentes": "COFONE, ANIBAL EDGARDO - MIGLIORINO, DIEGO FERNANDO - CORNES, MARTIN DIEGO - RODRIGUEZ, HERNAN ALBERTO - JUDAS, MARTIN ENRIQUE - ALMANZA, MARIANO ANDRES",
+      "docentes": "COFONE, ANIBAL EDGARDO - CORNES, MARTIN DIEGO - MIGLIORINO, DIEGO FERNANDO - RODRIGUEZ, HERNAN ALBERTO - ALMANZA, MARIANO ANDRES - JUDAS, MARTIN ENRIQUE",
       "clases": [
         {
           "dia": 5,
@@ -23083,7 +23026,7 @@ export const data = {
     },
     {
       "codigo": "9401-CURSO: 001",
-      "docentes": "FOLINO, PAULA CECILIA - TRAIBER, CLAUDIA MABEL - GUTIERREZ, BEATRIZ NILDA - MAYO, PABLO ANIBAL",
+      "docentes": "FOLINO, PAULA CECILIA - TRAIBER, CLAUDIA MABEL - MAYO, PABLO ANIBAL - GUTIERREZ, BEATRIZ NILDA",
       "clases": [
         {
           "dia": 1,
@@ -23157,7 +23100,7 @@ export const data = {
     },
     {
       "codigo": "9403-CURSO: 001",
-      "docentes": "RISSETTO, CLAUDIO SILVIO - SARUBBI, ALEJANDRO JUAN - ARISTU, JULIO GUSTAVO - LEGORBURU GONZALEZ, JOSE G",
+      "docentes": "RISSETTO, CLAUDIO SILVIO - SARUBBI, ALEJANDRO JUAN - LEGORBURU GONZALEZ, JOSE G - ARISTU, JULIO GUSTAVO",
       "clases": [
         {
           "dia": 4,
@@ -23285,7 +23228,7 @@ export const data = {
     },
     {
       "codigo": "9410-CURSO: 001",
-      "docentes": "LEJBOWICZ ABATE, EDUARDO CARLOS - DARIN, GUSTAVO ERNESTO - CRISTO, RUBEN ALBERTO",
+      "docentes": "DARIN, GUSTAVO ERNESTO - LEJBOWICZ ABATE, EDUARDO CARLOS - CRISTO, RUBEN ALBERTO",
       "clases": [
         {
           "dia": 5,
@@ -23301,7 +23244,7 @@ export const data = {
     },
     {
       "codigo": "9410-CURSO: 002",
-      "docentes": "LEJBOWICZ ABATE, EDUARDO CARLOS - DARIN, GUSTAVO ERNESTO - CRISTO, RUBEN ALBERTO",
+      "docentes": "DARIN, GUSTAVO ERNESTO - LEJBOWICZ ABATE, EDUARDO CARLOS - CRISTO, RUBEN ALBERTO",
       "clases": [
         {
           "dia": 5,
@@ -23333,7 +23276,7 @@ export const data = {
     },
     {
       "codigo": "9412-CURSO: 001",
-      "docentes": "FAVA, CARLOS ALBERTO PABLO - BALZAMO, HUMBERTO MARCELO - FORNASIER, GASTON LUIS",
+      "docentes": "FAVA, CARLOS ALBERTO PABLO - FORNASIER, GASTON LUIS - BALZAMO, HUMBERTO MARCELO",
       "clases": [
         {
           "dia": 2,
@@ -23474,7 +23417,7 @@ export const data = {
     },
     {
       "codigo": "9501-CURSO: 06-Servetto",
-      "docentes": "SERVETTO, ARTURO CARLOS - NAON, MARCELO CARLOS - GARCIA JAIME, DIEGO",
+      "docentes": "SERVETTO, ARTURO CARLOS - GARCIA JAIME, DIEGO - NAON, MARCELO CARLOS",
       "clases": [
         {
           "dia": 2,
@@ -23485,7 +23428,7 @@ export const data = {
     },
     {
       "codigo": "9501-CURSO: 07-Cabrera",
-      "docentes": "CABRERA, JOSE LUIS - HID, CARLOS ENRIQUE - MAYOR, PATRICIA CRISTINA - ECHEVARRIA, PABLO",
+      "docentes": "CABRERA, JOSE LUIS - ECHEVARRIA, PABLO - HID, CARLOS ENRIQUE - MAYOR, PATRICIA CRISTINA",
       "clases": [
         {
           "dia": 3,
@@ -23545,7 +23488,7 @@ export const data = {
     },
     {
       "codigo": "9502-CURSO: 01-Suarez",
-      "docentes": "SUAREZ, JOSE PABLO - YOLIS, EUGENIO - SANCHEZ, DIEGO - BUSTAMANTE, JORGE TOMAS - FERNÁNDEZ THEILLET, NICOLÁS PABLO - RODRÍGUEZ MASSUH, PABLO MATÍAS - JUSTO NARCIZO, EDSON EDER",
+      "docentes": "SUAREZ, JOSE PABLO - SANCHEZ, DIEGO - YOLIS, EUGENIO - JUSTO NARCIZO, EDSON EDER - RODRÍGUEZ MASSUH, PABLO MATÍAS - BUSTAMANTE, JORGE TOMAS - FERNÁNDEZ THEILLET, NICOLÁS PABLO",
       "clases": [
         {
           "dia": 2,
@@ -23609,7 +23552,7 @@ export const data = {
     },
     {
       "codigo": "9504-CURSO: 01-Menendez",
-      "docentes": "MENENDEZ, ANGEL NICOLAS - RE, MARIANO - GARCIA, PABLO EZEQUIEL - BADANO, NICOLAS DIEGO",
+      "docentes": "MENENDEZ, ANGEL NICOLAS - RE, MARIANO - BADANO, NICOLAS DIEGO - GARCIA, PABLO EZEQUIEL",
       "clases": [
         {
           "dia": 2,
@@ -23673,7 +23616,7 @@ export const data = {
     },
     {
       "codigo": "9504-CURSO: 05-Sassano",
-      "docentes": "SASSANO, MIRYAM PATRICIA - HUSAIN CERRUTI, IGNACIO SANTIAGO - GARCIA, EZEQUIEL - TURANO, MARIA AGUSTINA - VERA GUZMAN, RAMIRO AUGUSTO",
+      "docentes": "SASSANO, MIRYAM PATRICIA - GARCIA, EZEQUIEL - VERA GUZMAN, RAMIRO AUGUSTO - TURANO, MARIA AGUSTINA - HUSAIN CERRUTI, IGNACIO SANTIAGO",
       "clases": [
         {
           "dia": 3,
@@ -23705,7 +23648,7 @@ export const data = {
     },
     {
       "codigo": "9504-CURSO: 07-Cavaliere Practica Martes",
-      "docentes": "CAVALIERE, MIGUEL ANGEL - MASTROPIETRO, GABRIEL MARCELO - EZCURRA, DIEGO MARTIN - BALZAROTTI, FEDERICO - KOWAL, ADRIAN MARCELO",
+      "docentes": "CAVALIERE, MIGUEL ANGEL - MASTROPIETRO, GABRIEL MARCELO - BALZAROTTI, FEDERICO - EZCURRA, DIEGO MARTIN - KOWAL, ADRIAN MARCELO",
       "clases": [
         {
           "dia": 2,
@@ -23737,7 +23680,7 @@ export const data = {
     },
     {
       "codigo": "9505-CURSO: 01-Beiro",
-      "docentes": "BEIRO, MARIANO GASTON - DEJEAN, GUSTAVO ADOLFO - ROMAN, LUCAS ALEJANDRO - ZHANG, YICHENG - FASCE, ALBERTO ARMANDO",
+      "docentes": "BEIRO, MARIANO GASTON - DEJEAN, GUSTAVO ADOLFO - ROMAN, LUCAS ALEJANDRO - FASCE, ALBERTO ARMANDO - ZHANG, YICHENG",
       "clases": [
         {
           "dia": 2,
@@ -23780,7 +23723,7 @@ export const data = {
     },
     {
       "codigo": "9508-CURSO: 01-Veiga",
-      "docentes": "VEIGA, ANDRES ARTURO - DI PAOLA, MARTIN PABLO - WERNER, EZEQUIEL MAXIMILIANO - LAFROCE, MATÍAS EZEQUIEL",
+      "docentes": "VEIGA, ANDRES ARTURO - DI PAOLA, MARTIN PABLO - LAFROCE, MATÍAS EZEQUIEL - WERNER, EZEQUIEL MAXIMILIANO",
       "clases": [
         {
           "dia": 2,
@@ -23898,7 +23841,7 @@ export const data = {
     },
     {
       "codigo": "9512-CURSO: 02-Buchwald",
-      "docentes": "BUCHWALD, MARTÍN EZEQUIEL - SELLA FAENA, JASMINA - COLLINET, JORGE FRANCISCO - SIMÓ PIQUERES, ADEODATO - GONZALEZ LISELLA, FIONA CARLA - GENENDER PEÑA, EZEQUIEL DAVID",
+      "docentes": "BUCHWALD, MARTÍN EZEQUIEL - SELLA FAENA, JASMINA - COLLINET, JORGE FRANCISCO - SIMÓ PIQUERES, ADEODATO - GENENDER PEÑA, EZEQUIEL DAVID - GONZALEZ LISELLA, FIONA CARLA",
       "clases": [
         {
           "dia": 1,
@@ -23924,7 +23867,7 @@ export const data = {
     },
     {
       "codigo": "9512-CURSO: 03-Juarez",
-      "docentes": "JUAREZ, ANDRÉS ALBERTO - CIARALLO, CRISTIAN ADRIAN - PISTILLO, CAROLINA ROCIO - MARIANETTI, NICOLAS GABRIEL",
+      "docentes": "JUAREZ, ANDRÉS ALBERTO - CIARALLO, CRISTIAN ADRIAN - MARIANETTI, NICOLAS GABRIEL - PISTILLO, CAROLINA ROCIO",
       "clases": [
         {
           "dia": 2,
@@ -23940,7 +23883,7 @@ export const data = {
     },
     {
       "codigo": "9512-CURSO: 04-Mendez",
-      "docentes": "MENDEZ, MARIANO - CAMEJO, MANUEL - PANDOLFO, LUCAS HERNAN - TOSCANO GONNELLA, MAURO FABRICIO",
+      "docentes": "MENDEZ, MARIANO - TOSCANO GONNELLA, MAURO FABRICIO - PANDOLFO, LUCAS HERNAN",
       "clases": [
         {
           "dia": 2,
@@ -23988,7 +23931,7 @@ export const data = {
     },
     {
       "codigo": "9513-CURSO: 02-Cavaliere Practica Lunes",
-      "docentes": "CAVALIERE, MIGUEL ANGEL - BALZAROTTI, FEDERICO - GARCIA, EZEQUIEL - PORTOCARRERO MIRANDA, MICHAEL",
+      "docentes": "CAVALIERE, MIGUEL ANGEL - BALZAROTTI, FEDERICO - PORTOCARRERO MIRANDA, MICHAEL - GARCIA, EZEQUIEL",
       "clases": [
         {
           "dia": 1,
@@ -24068,7 +24011,7 @@ export const data = {
     },
     {
       "codigo": "9513-CURSO: 07-Sassano",
-      "docentes": "SASSANO, MIRYAM PATRICIA - HUSAIN CERRUTI, IGNACIO SANTIAGO - VERA GUZMAN, RAMIRO AUGUSTO - GARCIA, EZEQUIEL - TURANO, MARIA AGUSTINA",
+      "docentes": "SASSANO, MIRYAM PATRICIA - GARCIA, EZEQUIEL - TURANO, MARIA AGUSTINA - VERA GUZMAN, RAMIRO AUGUSTO - HUSAIN CERRUTI, IGNACIO SANTIAGO",
       "clases": [
         {
           "dia": 3,
@@ -24206,7 +24149,7 @@ export const data = {
     },
     {
       "codigo": "9515-CURSO: 02-Buchwald",
-      "docentes": "BUCHWALD, MARTÍN EZEQUIEL - SELLA FAENA, JASMINA - COLLINET, JORGE FRANCISCO - GONZALEZ LISELLA, FIONA CARLA - GENENDER PEÑA, EZEQUIEL DAVID",
+      "docentes": "BUCHWALD, MARTÍN EZEQUIEL - SELLA FAENA, JASMINA - COLLINET, JORGE FRANCISCO - GENENDER PEÑA, EZEQUIEL DAVID - GONZALEZ LISELLA, FIONA CARLA",
       "clases": [
         {
           "dia": 1,
@@ -24232,7 +24175,7 @@ export const data = {
     },
     {
       "codigo": "9515-CURSO: 03-Juarez",
-      "docentes": "JUAREZ, ANDRÉS ALBERTO - CIARALLO, CRISTIAN ADRIAN - MARIANETTI, NICOLAS GABRIEL - PISTILLO, CAROLINA ROCIO",
+      "docentes": "JUAREZ, ANDRÉS ALBERTO - CIARALLO, CRISTIAN ADRIAN - PISTILLO, CAROLINA ROCIO - MARIANETTI, NICOLAS GABRIEL",
       "clases": [
         {
           "dia": 2,
@@ -24296,7 +24239,7 @@ export const data = {
     },
     {
       "codigo": "9520-CURSO: 01-Villagra",
-      "docentes": "VILLAGRA, SERGIO GUSTAVO - FERNANDEZ, LEONARDO DANIEL - BRUNO, TOMAS - DE BENEDETTI, GUIDO RUBEN",
+      "docentes": "VILLAGRA, SERGIO GUSTAVO - BRUNO, TOMAS - FERNANDEZ, LEONARDO DANIEL - DE BENEDETTI, GUIDO RUBEN",
       "clases": [
         {
           "dia": 1,
@@ -24387,7 +24330,7 @@ export const data = {
     },
     {
       "codigo": "9557-CURSO: 01-Benitez",
-      "docentes": "BENITEZ, CARLOS EDUARDO - MANSILLA, MARIANO CLAUDIO - RADUCCI, DARIO MARTIN - BERRUEZO, RAMIRO NICOLÁS - PAN, YEN CHANG",
+      "docentes": "BENITEZ, CARLOS EDUARDO - MANSILLA, MARIANO CLAUDIO - BERRUEZO, RAMIRO NICOLÁS - PAN, YEN CHANG - RADUCCI, DARIO MARTIN",
       "clases": [
         {
           "dia": 2,
@@ -24419,7 +24362,7 @@ export const data = {
     },
     {
       "codigo": "9558-CURSO: 01-Argerich",
-      "docentes": "ARGERICH, LUIS RICARDO - GOLMAR, NATALIA - MARTINELLI, DAMIAN ARIEL - RAMOS MEJIA, MARTÍN GABRIEL - TORRÉ ZAFFARONI, JOAQUIN",
+      "docentes": "ARGERICH, LUIS RICARDO - GOLMAR, NATALIA - RAMOS MEJIA, MARTÍN GABRIEL - MARTINELLI, DAMIAN ARIEL - TORRÉ ZAFFARONI, JOAQUIN",
       "clases": [
         {
           "dia": 1,

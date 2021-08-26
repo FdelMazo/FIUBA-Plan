@@ -155,7 +155,7 @@ const useData = () => {
             id: `${curso.codigo}${inicio}`,
             title: curso.docentes,
             color: colorHash.hex(curso.codigo + curso.docentes),
-            materia: curso.materia.nombre,
+            materia: `[${curso.materia.codigo}] ${curso.materia.nombre}`,
           };
         })
       )

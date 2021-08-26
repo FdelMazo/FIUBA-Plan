@@ -79,7 +79,9 @@ const MateriasDrawer = (props) => {
         initialFocusRef={buscarMateriaRef}
       >
         <DrawerOverlay />
-        <DrawerContent bg={useColorModeValue("drawerbg", "drawerbgdark")}>
+        <DrawerContent
+          bg={useColorModeValue("drawerbgalpha", "drawerbgdarkalpha")}
+        >
           <DrawerBody
             style={{
               overflowY: "auto",

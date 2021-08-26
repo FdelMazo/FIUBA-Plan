@@ -27,6 +27,8 @@ const customTheme = extendTheme({
     },
     drawerbg: "#222d38",
     drawerbgdark: "#3c4042",
+    drawerbgalpha: "#222d38CC",
+    drawerbgdarkalpha: "#3c4042CC",
     agendabgdark: "#323f56",
     calendarbg: "#f7f9fa",
     calendarbgdark: "#222d38",

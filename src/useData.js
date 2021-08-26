@@ -16,8 +16,8 @@ const toggler = (arr, setArr, item) => {
   setArr(newArr);
 };
 
-const ValidCurso = (codigo) => {
-  return !!jsonData.cursos.find((curso) => curso.codigo === codigo);
+const ValidCurso = (curso) => {
+  return !!jsonData.cursos.find((c) => c.codigo === curso.codigo);
 };
 
 const ValidMateria = (codigo) => {
@@ -25,7 +25,9 @@ const ValidMateria = (codigo) => {
     (materia) => materia.codigo === codigo
   );
   if (!materia) return false;
-  return materia.cursos.filter(ValidCurso).length;
+  return materia.cursos.filter(
+    (codigo) => !!jsonData.cursos.find((c) => c.codigo === codigo)
+  ).length;
 };
 
 const useData = () => {

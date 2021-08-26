@@ -68,9 +68,16 @@ const MateriasDrawer = (props) => {
   const bugToast = React.useRef();
   const [showGracias, setShowGracias] = React.useState(false);
 
+  const buscarMateriaRef = React.useRef();
+
   return (
     <LightMode>
-      <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
+      <Drawer
+        isOpen={isOpen}
+        placement="right"
+        onClose={onClose}
+        initialFocusRef={buscarMateriaRef}
+      >
         <DrawerOverlay />
         <DrawerContent bg={useColorModeValue("drawerbg", "drawerbgdark")}>
           <DrawerBody
@@ -81,7 +88,9 @@ const MateriasDrawer = (props) => {
           >
             <Box my={8}>
               <SelectCarreras />
-              {!!materiasToShow.length && <SelectMateria />}
+              {!!materiasToShow.length && (
+                <SelectMateria inputRef={buscarMateriaRef} />
+              )}
 
               <Flex row justifyContent="space-around">
                 {!!selectedMaterias.length && (

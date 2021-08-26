@@ -15,6 +15,7 @@ const SelectMateria = (props) => {
     React.useContext(DataContext);
   const allMaterias = React.useMemo(() => materiasToShow, [materiasToShow]);
   const [inputItems, setInputItems] = React.useState([]);
+  const { inputRef } = props;
 
   React.useEffect(() => {
     setInputItems(allMaterias);
@@ -51,6 +52,7 @@ const SelectMateria = (props) => {
           {...getToggleButtonProps()}
           {...getInputProps()}
           {...getComboboxProps()}
+          ref={inputRef}
           colorScheme="primary"
           variant="outline"
           borderColor="primary"

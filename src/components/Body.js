@@ -23,6 +23,23 @@ const Body = () => {
   const { isOpen, onToggle, onClose } = useDisclosure();
   const toast = useToast();
 
+  const escKey = React.useCallback(
+    (event) => {
+      if (event.keyCode === 27) {
+        onToggle();
+      }
+    },
+    [onToggle]
+  );
+
+  React.useEffect(() => {
+    document.addEventListener("keydown", escKey, false);
+
+    return () => {
+      document.removeEventListener("keydown", escKey, false);
+    };
+  }, [escKey]);
+
   React.useEffect(() => {
     toast({
       position: "bottom-right",

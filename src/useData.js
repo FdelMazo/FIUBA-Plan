@@ -46,10 +46,10 @@ const useData = () => {
     select("selectedCarreras") || []
   );
   const [selectedMaterias, setSelectedMaterias] = React.useState(
-    select("selectedMaterias").filter(ValidMateria) || []
+    select("selectedMaterias")?.filter(ValidMateria) || []
   );
   const [selectedCursos, setSelectedCursos] = React.useState(
-    select("selectedCursos").filter(ValidCurso) || []
+    select("selectedCursos")?.filter(ValidCurso) || []
   );
   const [events, setEvents] = React.useState([]);
   const [noCursar, setNoCursar] = React.useState(select("noCursar") || []);

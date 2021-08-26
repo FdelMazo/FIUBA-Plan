@@ -48,6 +48,8 @@ const Body = () => {
         <Alert
           borderColor="drawerbg"
           borderWidth={2}
+          bottom={20}
+          right={5}
           borderRadius={5}
           status="success"
           color="drawerbg"

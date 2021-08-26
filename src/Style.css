@@ -110,6 +110,7 @@
 .rbc-agenda-event-cell,
 .rbc-agenda-time-cell {
   font-size: small;
+  line-height: 120%;
 }
 
 .rbc-agenda-time-cell {

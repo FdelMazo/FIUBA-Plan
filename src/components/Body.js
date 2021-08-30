@@ -1,9 +1,9 @@
 import { AddIcon } from "@chakra-ui/icons";
 import {
   Alert,
-  AlertIcon,
   Box,
   IconButton,
+  Text,
   useColorModeValue,
   useDisclosure,
   useToast,
@@ -43,7 +43,7 @@ const Body = () => {
   React.useEffect(() => {
     toast({
       position: "bottom-right",
-      duration: 2000,
+      duration: 3000,
       render: () => (
         <Alert
           borderColor="drawerbg"
@@ -53,9 +53,14 @@ const Body = () => {
           borderRadius={5}
           status="success"
           color="drawerbg"
+          flexDirection="column"
         >
-          <AlertIcon />
-          Actualizado al {actualizacion.cuatrimestre}
+          <Box>
+            <Text>Actualizado al {actualizacion.cuatrimestre}</Text>
+          </Box>
+          <Box>
+            <Text fontSize="sm">({actualizacion.timestamp})</Text>
+          </Box>
         </Alert>
       ),
     });

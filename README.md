@@ -25,7 +25,7 @@ De todas formas, si algún día cambia el código del ofertahoraria y se hace m�
 ```jsonc
 {
   "cuatrimestre": "2020C2", // Nombre de Cuatrimestre, para la notificación al entrar al sitio ("Actualizado al 2020C2")
-  "timestamp": "2020-09-22 00:24:11.950205", // Un timestamp que se usa como identificador del json. Esto sirve para que, si el ultimo json almacenado en el cache del usuario no matchea con el json en prod, entonces se borra el cache (para evitar que alguien vea horarios desactualizados solo porque no limpio su historial del browser)
+  "timestamp": "2020-09-22 00:24:11.950205", // Un timestamp que se usa como identificador del json. Esto sirve para comparar contra la última actualización de horarios.
   "materias": [ // Array de todas las materias de todas las carreras
     {
       "codigo": "7641", // Código de la materia, que es por el cual se la identifica para decidir qué carrera la contiene

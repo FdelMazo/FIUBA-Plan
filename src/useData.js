@@ -76,6 +76,7 @@ const useData = () => {
   const actualizacion = React.useMemo(
     () => ({
       cuatrimestre: jsonData.cuatrimestre,
+      timestamp: jsonData.timestamp,
     }),
     []
   );

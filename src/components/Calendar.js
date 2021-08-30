@@ -128,6 +128,7 @@ const MyCalendar = (props) => {
       }}
       showSabado={showSabado}
       dayLayoutAlgorithm="no-overlap"
+      tooltipAccessor="tooltip"
     />
   );
 };

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap");
 
 .rbc-calendar {
   background: var(--chakra-colors-calendarbg);
@@ -16,7 +16,7 @@
 .rbc-label,
 .rbc-agenda-date-cell,
 .rbc-agenda-time-cell {
-  font-family: "Noto Serif JP", serif;
+  font-family: "Source Serif Pro", serif;
 }
 
 .rbc-time-view {

@@ -1,5 +1,5 @@
 import { ChakraProvider, CSSReset, Flex } from "@chakra-ui/react";
-import "@fontsource/noto-sans-jp/400.css";
+import "@fontsource/source-sans-pro/400.css";
 import React from "react";
 import ReactDOM from "react-dom";
 import Body from "./components/Body";

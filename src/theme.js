@@ -8,7 +8,7 @@ const config = {
 
 const customTheme = extendTheme({
   fonts: {
-    body: "Noto Sans JP",
+    body: "Source Sans Pro",
     heading: "Georgia, serif",
     mono: "Menlo, monospace",
   },

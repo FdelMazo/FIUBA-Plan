@@ -42,6 +42,12 @@ const useData = () => {
   const colorHash = new ColorHash({ lightness: 0.7, saturation: 0.7 });
 
   const [showSabado, setShowSabado] = React.useState(false);
+
+  const [activeTabId, setActiveTabId] = React.useState(0);
+  const [tabs, setTabs] = React.useState(
+    select("tabs") || [{ title: "", id: 0 }]
+  );
+
   const [selectedCarreras, setSelectedCarreras] = React.useState(
     select("selectedCarreras") || []
   );
@@ -64,9 +70,10 @@ const useData = () => {
         selectedMaterias,
         selectedCursos,
         noCursar,
+        tabs,
       })
     );
-  }, [selectedCarreras, selectedMaterias, selectedCursos, noCursar]);
+  }, [selectedCarreras, selectedMaterias, selectedCursos, tabs, noCursar]);
 
   const carreras = React.useMemo(
     () => jsonCarreras.map((c) => c.nombre).sort(),
@@ -131,6 +138,7 @@ const useData = () => {
         codigo: curso.codigo,
         docentes: curso.docentes,
         materia: getMateria(codigo).nombre,
+        tabId: activeTabId,
       }));
   };
 
@@ -139,6 +147,7 @@ const useData = () => {
       .map((curso) => ({
         ...jsonData.cursos.find((c) => c.codigo === curso.codigo),
         materia: curso.materia,
+        tabId: curso.tabId,
       }))
       .filter((curso) => !!curso.codigo)
       .map((curso) =>
@@ -156,6 +165,7 @@ const useData = () => {
             id: `${curso.codigo}${inicio}`,
             title: curso.docentes,
             tooltip: `\n[${curso.materia.codigo}] ${curso.materia.nombre}\n${curso.docentes}`,
+            tabId: curso.tabId,
             color: colorHash.hex(curso.codigo + curso.docentes),
             materia: `[${curso.materia.codigo}] ${curso.materia.nombre}`,
           };
@@ -194,7 +204,11 @@ const useData = () => {
 
   const toggleCurso = (curso, materia) => {
     let newSelectedCursos = [];
-    if (selectedCursos.find((item) => item.codigo === curso.codigo)) {
+    if (
+      selectedCursos.find(
+        (item) => item.codigo === curso.codigo && item.tabId === activeTabId
+      )
+    ) {
       newSelectedCursos = selectedCursos.filter(
         (item) => !!item && item.codigo !== curso.codigo
       );
@@ -208,6 +222,7 @@ const useData = () => {
           codigo: curso.codigo,
           color: colorHash.hex(curso.codigo + curso.docentes),
           materia,
+          tabId: activeTabId,
         },
       ];
     }
@@ -228,6 +243,36 @@ const useData = () => {
     toggler(noCursar, setNoCursar, id);
   };
 
+  const addTab = () => {
+    const ids = tabs.map((t) => t.id);
+    let id = 0;
+    while (ids.includes(id)) {
+      id += 1;
+    }
+    setTabs([...tabs, { id, title: "" }]);
+  };
+
+  const selectTab = (id) => {
+    setActiveTabId(id);
+  };
+
+  const renameTab = (id, newtitle) => {
+    let newTabs = [...tabs];
+    newTabs.find((t) => t.id === id).title = newtitle;
+    setTabs(newTabs);
+  };
+
+  const removeTab = (id) => {
+    selectedCursos
+      .filter((c) => c.tabId === id)
+      .forEach((c) => {
+        toggleCurso(c, c.materia);
+      });
+
+    setTabs(tabs.filter((t) => t.id !== id));
+    setActiveTabId(0);
+  };
+
   return {
     toggleCarrera,
     toggleMateria,
@@ -246,6 +291,12 @@ const useData = () => {
     showSabado,
     toggleCurso,
     toggleNoCursar,
+    addTab,
+    selectTab,
+    renameTab,
+    removeTab,
+    tabs,
+    activeTabId,
   };
 };
 

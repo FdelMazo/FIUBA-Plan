@@ -10,8 +10,14 @@ import React from "react";
 import { DataContext } from "../Context";
 
 const SelectCurso = (props) => {
-  const { toggleCurso, selectedCursos, getMateria, toggleMateria, getCursos } =
-    React.useContext(DataContext);
+  const {
+    toggleCurso,
+    activeTabId,
+    selectedCursos,
+    getMateria,
+    toggleMateria,
+    getCursos,
+  } = React.useContext(DataContext);
   const { codigo } = props;
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const items = React.useMemo(() => getCursos(codigo), []);
@@ -73,7 +79,9 @@ const SelectCurso = (props) => {
               borderRadius={5}
               _hover={{ bg: "gray.500" }}
               color={
-                selectedCursos.find((i) => i.codigo === item.codigo)
+                selectedCursos.find(
+                  (i) => i.codigo === item.codigo && i.tabId === activeTabId
+                )
                   ? selectedCursos.find((i) => i.codigo === item.codigo).color
                   : "primary.500"
               }
@@ -87,7 +95,9 @@ const SelectCurso = (props) => {
                 })}
                 key={item.codigo}
               >
-                {selectedCursos.find((i) => i.codigo === item.codigo) && (
+                {selectedCursos.find(
+                  (i) => i.codigo === item.codigo && i.tabId === activeTabId
+                ) && (
                   <ViewIcon
                     mr={2}
                     color={

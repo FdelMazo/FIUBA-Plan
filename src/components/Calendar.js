@@ -1,5 +1,22 @@
-import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
-import { Box, IconButton, Text } from "@chakra-ui/react";
+import {
+  AddIcon,
+  SmallCloseIcon,
+  ViewIcon,
+  ViewOffIcon,
+} from "@chakra-ui/icons";
+import {
+  Box,
+  chakra,
+  Editable,
+  EditableInput,
+  EditablePreview,
+  Flex,
+  IconButton,
+  Tabs,
+  Text,
+  useStyles,
+  useTab,
+} from "@chakra-ui/react";
 import moment from "moment";
 import "moment/locale/es";
 import React from "react";
@@ -12,8 +29,16 @@ import CalendarWeek from "./CalendarWeek";
 
 const MyCalendar = (props) => {
   const { events, useAgenda } = props;
-  const { toggleNoCursar, noCursar, showSabado } =
-    React.useContext(DataContext);
+
+  const {
+    toggleNoCursar,
+    noCursar,
+    showSabado,
+    activeTabId,
+    tabs,
+    selectTab,
+    addTab,
+  } = React.useContext(DataContext);
   const localizer = momentLocalizer(moment);
   const { width } = useWindowSize();
   const formats = {
@@ -108,10 +133,38 @@ const MyCalendar = (props) => {
     );
   };
 
+  const TabSystem = (props) => {
+    return (
+      <Tabs
+        index={tabs.map((t) => t.id).indexOf(activeTabId)}
+        key={tabs.length}
+        colorScheme="purple"
+        onChange={(index) => {
+          selectTab(tabs[index]?.id || 0);
+        }}
+      >
+        <Box borderBottom="2px solid" borderColor="inherit">
+          {tabs.map((tab, index) => (
+            <CustomTab tab={tab} index={index} />
+          ))}
+
+          {tabs.length < 10 && (
+            <IconButton
+              alignSelf="center"
+              variant="ghost"
+              colorScheme="purple"
+              onClick={() => addTab()}
+              icon={<AddIcon />}
+            />
+          )}
+        </Box>
+      </Tabs>
+    );
+  };
+
   return (
     <Calendar
       formats={formats}
-      toolbar={false}
       view={useAgenda ? "calendarAgenda" : "calendarWeek"}
       views={{ calendarAgenda: CalendarAgenda, calendarWeek: CalendarWeek }}
       localizer={localizer}
@@ -122,6 +175,7 @@ const MyCalendar = (props) => {
       eventPropGetter={eventPropsGetter}
       components={{
         event: MateriaEvent,
+        toolbar: TabSystem,
       }}
       onSelectEvent={(e) => {
         toggleNoCursar(e.id);
@@ -132,5 +186,47 @@ const MyCalendar = (props) => {
     />
   );
 };
+
+const CustomTab = React.forwardRef((props, ref) => {
+  const { renameTab, removeTab } = React.useContext(DataContext);
+  const StyledTab = chakra("button", { themeKey: "Tabs.Tab" });
+  const tabProps = useTab({ ...props, ref });
+  const isSelected = !!tabProps["aria-selected"];
+  const styles = useStyles();
+
+  return (
+    <StyledTab __css={styles.tab} {...tabProps} onClick={undefined}>
+      <Editable
+        defaultValue={
+          props.tab.title.trim() ? props.tab.title : `Plan #${props.index + 1}`
+        }
+        onSubmit={(str) => {
+          renameTab(props.tab.id, str);
+        }}
+      >
+        <Flex>
+          <EditablePreview maxW="12ch" />
+          <EditableInput
+            maxW="12ch"
+            _focus={{
+              boxShadow: "0 0 0 3px rgba(183,148,244, 0.6)",
+            }}
+          />
+          {props.tab.id !== 0 && isSelected && (
+            <SmallCloseIcon
+              _hover={{ color: "primary.900" }}
+              boxSize="20px"
+              ml="5px"
+              color="primary.600"
+              onClick={() => {
+                removeTab(props.tab.id);
+              }}
+            />
+          )}
+        </Flex>
+      </Editable>
+    </StyledTab>
+  );
+});
 
 export default MyCalendar;

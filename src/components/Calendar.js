@@ -164,6 +164,7 @@ const MyCalendar = (props) => {
 
   return (
     <Calendar
+      toolbar={false}
       formats={formats}
       view={useAgenda ? "calendarAgenda" : "calendarWeek"}
       views={{ calendarAgenda: CalendarAgenda, calendarWeek: CalendarWeek }}

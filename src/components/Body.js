@@ -73,6 +73,7 @@ const Body = () => {
   const { width } = useWindowSize();
   const { isOpen, onToggle, onClose } = useDisclosure();
   const toast = useToast();
+  const toastIdRef = React.useRef();
 
   const escKey = React.useCallback(
     (event) => {
@@ -92,7 +93,7 @@ const Body = () => {
   }, [escKey]);
 
   React.useEffect(() => {
-    toast({
+    toastIdRef.current = toast({
       position: "top-right",
       duration: 3000,
       render: () => (
@@ -105,6 +106,17 @@ const Body = () => {
           color="drawerbg"
           flexDirection="column"
         >
+          <SmallCloseIcon
+            alignSelf="flex-end"
+            cursor="pointer"
+            onClick={() => {
+              if (toastIdRef.current) {
+                toast.close(toastIdRef.current);
+              }
+            }}
+            m="-8px"
+          />
+
           <Box>
             <Text>Actualizado al {actualizacion.cuatrimestre}</Text>
           </Box>

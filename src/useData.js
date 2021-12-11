@@ -39,7 +39,10 @@ const useData = () => {
       return null;
     return JSON.parse(window.localStorage.getItem("fiubaplan"))?.[key];
   };
-  const colorHash = new ColorHash({ lightness: 0.7, saturation: 0.7 });
+  const colorHash = new ColorHash({
+    lightness: [0.6, 0.65, 0.7, 0.75, 0.8, 0.85],
+    saturation: [0.6, 0.65, 0.7, 0.75, 0.8, 0.85],
+  });
 
   const [showSabado, setShowSabado] = React.useState(false);
 

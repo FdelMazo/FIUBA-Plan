@@ -44,8 +44,6 @@ const useData = () => {
     saturation: [0.6, 0.65, 0.7, 0.75, 0.8, 0.85],
   });
 
-  const [showSabado, setShowSabado] = React.useState(false);
-
   const [activeTabId, setActiveTabId] = React.useState(0);
   const [tabs, setTabs] = React.useState(
     select("tabs") || [{ title: "", id: 0 }]
@@ -91,16 +89,7 @@ const useData = () => {
     []
   );
 
-  React.useEffect(() => {
-    let sabado = false;
-    for (const e of events) {
-      if (e.end.getDay() === 6) {
-        sabado = true;
-        break;
-      }
-    }
-    setShowSabado(sabado);
-  }, [events]);
+  React.useEffect(() => {}, [events]);
 
   React.useEffect(() => {
     let codigos = [];
@@ -291,7 +280,6 @@ const useData = () => {
     getCursos,
     getMateria,
     events,
-    showSabado,
     toggleCurso,
     toggleNoCursar,
     addTab,

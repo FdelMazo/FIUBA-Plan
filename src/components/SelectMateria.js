@@ -16,7 +16,6 @@ const SelectMateria = (props) => {
   const allMaterias = React.useMemo(() => materiasToShow, [materiasToShow]);
   const [inputItems, setInputItems] = React.useState([]);
   const { inputRef } = props;
-
   React.useEffect(() => {
     setInputItems(allMaterias);
   }, [allMaterias]);
@@ -85,6 +84,7 @@ const SelectMateria = (props) => {
                   _hover={{ bg: "gray.500" }}
                   color="primary.500"
                   fontSize="sm"
+                  cursor="pointer"
                   onClick={() => toggleMateria(materia.codigo)}
                 >
                   <li key={materia.codigo}>

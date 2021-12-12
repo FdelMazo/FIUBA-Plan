@@ -85,6 +85,7 @@ const SelectCurso = (props) => {
                   ? selectedCursos.find((i) => i.codigo === item.codigo).color
                   : "primary.500"
               }
+              cursor="pointer"
               fontSize="xs"
               onClick={() => toggleCurso(item, materia)}
             >

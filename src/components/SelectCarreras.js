@@ -41,6 +41,7 @@ const SelectCarreras = () => {
                 borderRadius={5}
                 _hover={{ bg: "gray.500" }}
                 color="primary.500"
+                cursor="pointer"
                 onClick={() => toggleCarrera(c)}
               >
                 <li

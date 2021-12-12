@@ -49,6 +49,10 @@
   margin: 0;
 }
 
+.rbc-time-column:last-child * {
+  border-right: none;
+}
+
 .rbc-timeslot-group {
   display: flex;
   flex-direction: row;

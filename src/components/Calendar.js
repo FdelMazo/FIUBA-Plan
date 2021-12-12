@@ -14,6 +14,7 @@ import {
   Tab,
   Tabs,
   Text,
+  Tooltip,
   useTab,
 } from "@chakra-ui/react";
 import moment from "moment";
@@ -191,41 +192,50 @@ const MyCalendar = (props) => {
 };
 
 const CustomTab = React.forwardRef((props, ref) => {
-  const { renameTab, removeTab } = React.useContext(DataContext);
+  const { renameTab, getNHoras, removeTab } = React.useContext(DataContext);
   const tabProps = useTab({ ...props, ref });
   const isSelected = !!tabProps["aria-selected"];
 
   return (
     <Tab {...tabProps} pr={isSelected ? 2 : 4}>
-      <Editable
-        defaultValue={
-          props.tab.title?.trim() ? props.tab.title : `Plan #${props.index + 1}`
-        }
-        onSubmit={(str) => {
-          renameTab(props.tab.id, str);
-        }}
+      <Tooltip
+        placement="bottom"
+        label={`${
+          Math.round(getNHoras(props.tab.id) * 100) / 100
+        } horas de cursada`}
       >
-        <Flex>
-          <EditablePreview maxW="12ch" />
-          <EditableInput
-            maxW="12ch"
-            _focus={{
-              boxShadow: "0 0 0 3px rgba(183,148,244, 0.6)",
-            }}
-          />
-          {props.tab.id !== 0 && isSelected && (
-            <SmallCloseIcon
-              _hover={{ color: "primary.900" }}
-              boxSize="20px"
-              ml="5px"
-              color="primary.600"
-              onClick={() => {
-                removeTab(props.tab.id);
+        <Editable
+          defaultValue={
+            props.tab.title?.trim()
+              ? props.tab.title
+              : `Plan #${props.index + 1}`
+          }
+          onSubmit={(str) => {
+            renameTab(props.tab.id, str);
+          }}
+        >
+          <Flex>
+            <EditablePreview maxW="12ch" />
+            <EditableInput
+              maxW="12ch"
+              _focus={{
+                boxShadow: "0 0 0 3px rgba(183,148,244, 0.6)",
               }}
             />
-          )}
-        </Flex>
-      </Editable>
+            {props.tab.id !== 0 && isSelected && (
+              <SmallCloseIcon
+                _hover={{ color: "primary.900" }}
+                boxSize="20px"
+                ml="5px"
+                color="primary.600"
+                onClick={() => {
+                  removeTab(props.tab.id);
+                }}
+              />
+            )}
+          </Flex>
+        </Editable>
+      </Tooltip>
     </Tab>
   );
 });

@@ -134,7 +134,7 @@ const useData = () => {
             end: fin,
             id: `${curso.codigo}-${inicio}`,
             title: curso.docentes,
-            tooltip: `\n[${materia.codigo}] ${materia.nombre}\n${curso.docentes}`,
+            tooltip: `[${materia.codigo}] ${materia.nombre}\n${curso.docentes}`,
             materia: `[${materia.codigo}] ${materia.nombre}`,
             curso,
           };
@@ -261,6 +261,22 @@ const useData = () => {
     return colorHash.hex(curso.codigo + curso.docentes);
   };
 
+  const getNHoras = (tabId) => {
+    return selectedCursos
+      .filter((c) => c.tabId === tabId)
+      .flatMap((c) => getCurso(c.codigo).clases)
+      .map((clase) => {
+        const inicio = new Date(2018, 0, clase.dia);
+        const [inicioHora, inicioMinutos] = clase.inicio.split(":");
+        inicio.setHours(inicioHora, inicioMinutos);
+        const fin = new Date(2018, 0, clase.dia);
+        const [finHora, finMinutos] = clase.fin.split(":");
+        fin.setHours(finHora, finMinutos);
+        return Math.abs(fin - inicio) / 36e5;
+      })
+      .reduce((a, b) => a + b, 0);
+  };
+
   const testAll = () => {
     const allMaterias = jsonData.materias.map((m) => m.codigo);
     setSelectedMaterias(allMaterias);
@@ -295,6 +311,7 @@ const useData = () => {
     activeTabId,
     getCursosMateria,
     getColor,
+    getNHoras,
   };
 };
 

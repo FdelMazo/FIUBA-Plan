@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/FIUBA-Plan/static/css/main.68cefb78.chunk.css",
-    "main.js": "/FIUBA-Plan/static/js/main.451826bc.chunk.js",
-    "main.js.map": "/FIUBA-Plan/static/js/main.451826bc.chunk.js.map",
+    "main.css": "/FIUBA-Plan/static/css/main.f7d13664.chunk.css",
+    "main.js": "/FIUBA-Plan/static/js/main.f16cebc2.chunk.js",
+    "main.js.map": "/FIUBA-Plan/static/js/main.f16cebc2.chunk.js.map",
     "runtime-main.js": "/FIUBA-Plan/static/js/runtime-main.10d873af.js",
     "runtime-main.js.map": "/FIUBA-Plan/static/js/runtime-main.10d873af.js.map",
     "static/css/2.97c47a0e.chunk.css": "/FIUBA-Plan/static/css/2.97c47a0e.chunk.css",
-    "static/js/2.0c205a1f.chunk.js": "/FIUBA-Plan/static/js/2.0c205a1f.chunk.js",
-    "static/js/2.0c205a1f.chunk.js.map": "/FIUBA-Plan/static/js/2.0c205a1f.chunk.js.map",
+    "static/js/2.1a721faf.chunk.js": "/FIUBA-Plan/static/js/2.1a721faf.chunk.js",
+    "static/js/2.1a721faf.chunk.js.map": "/FIUBA-Plan/static/js/2.1a721faf.chunk.js.map",
     "index.html": "/FIUBA-Plan/index.html",
-    "precache-manifest.d03ae6535b817a84aa203f4f7e8c3aa6.js": "/FIUBA-Plan/precache-manifest.d03ae6535b817a84aa203f4f7e8c3aa6.js",
+    "precache-manifest.d841c1bf2fdc71ce6580b2f027972ed6.js": "/FIUBA-Plan/precache-manifest.d841c1bf2fdc71ce6580b2f027972ed6.js",
     "service-worker.js": "/FIUBA-Plan/service-worker.js",
     "static/css/2.97c47a0e.chunk.css.map": "/FIUBA-Plan/static/css/2.97c47a0e.chunk.css.map",
-    "static/css/main.68cefb78.chunk.css.map": "/FIUBA-Plan/static/css/main.68cefb78.chunk.css.map",
-    "static/js/2.0c205a1f.chunk.js.LICENSE.txt": "/FIUBA-Plan/static/js/2.0c205a1f.chunk.js.LICENSE.txt",
+    "static/css/main.f7d13664.chunk.css.map": "/FIUBA-Plan/static/css/main.f7d13664.chunk.css.map",
+    "static/js/2.1a721faf.chunk.js.LICENSE.txt": "/FIUBA-Plan/static/js/2.1a721faf.chunk.js.LICENSE.txt",
     "static/media/400.css": "/FIUBA-Plan/static/media/source-sans-pro-vietnamese-400-normal.52acf6f0.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.10d873af.js",
     "static/css/2.97c47a0e.chunk.css",
-    "static/js/2.0c205a1f.chunk.js",
-    "static/css/main.68cefb78.chunk.css",
-    "static/js/main.451826bc.chunk.js"
+    "static/js/2.1a721faf.chunk.js",
+    "static/css/main.f7d13664.chunk.css",
+    "static/js/main.f16cebc2.chunk.js"
   ]
 }

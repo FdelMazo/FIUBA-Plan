@@ -16,8 +16,8 @@ const toggler = (arr, setArr, item) => {
   setArr(newArr);
 };
 
-const ValidCurso = (curso) => {
-  return !!jsonData.cursos.find((c) => c.codigo === curso.codigo);
+const ValidCurso = (codigo) => {
+  return !!jsonData.cursos.find((c) => c.codigo === codigo)?.clases?.length;
 };
 
 const ValidMateria = (codigo) => {
@@ -25,9 +25,26 @@ const ValidMateria = (codigo) => {
     (materia) => materia.codigo === codigo
   );
   if (!materia) return false;
-  return materia.cursos.filter(
-    (codigo) => !!jsonData.cursos.find((c) => c.codigo === codigo)
-  ).length;
+  return !!materia.cursos.filter(ValidCurso).length;
+};
+
+const getMateria = (codigo) => {
+  return jsonData.materias.find((m) => m.codigo === codigo);
+};
+
+const getCurso = (codigo) => {
+  return jsonData.cursos.find((c) => c.codigo === codigo);
+};
+
+const getCarrera = (nombre) => {
+  return jsonCarreras.find((c) => c.nombre === nombre);
+};
+
+const getCursosMateria = (codigoMateria) => {
+  const cursos = jsonData.materias.find(
+    (m) => m.codigo === codigoMateria
+  ).cursos;
+  return cursos.filter(ValidCurso).map(getCurso);
 };
 
 const useData = () => {
@@ -39,15 +56,6 @@ const useData = () => {
       return null;
     return JSON.parse(window.localStorage.getItem("fiubaplan"))?.[key];
   };
-  const colorHash = new ColorHash({
-    lightness: [0.6, 0.65, 0.7, 0.75, 0.8, 0.85],
-    saturation: [0.6, 0.65, 0.7, 0.75, 0.8, 0.85],
-  });
-
-  const [activeTabId, setActiveTabId] = React.useState(0);
-  const [tabs, setTabs] = React.useState(
-    select("tabs") || [{ title: "", id: 0 }]
-  );
 
   const [selectedCarreras, setSelectedCarreras] = React.useState(
     select("selectedCarreras") || []
@@ -56,11 +64,14 @@ const useData = () => {
     select("selectedMaterias")?.filter(ValidMateria) || []
   );
   const [selectedCursos, setSelectedCursos] = React.useState(
-    select("selectedCursos")?.filter(ValidCurso) || []
+    select("selectedCursos")?.filter((c) => ValidCurso(c.codigo)) || []
   );
   const [events, setEvents] = React.useState([]);
   const [noCursar, setNoCursar] = React.useState(select("noCursar") || []);
   const [materiasToShow, setMateriasToShow] = React.useState([]);
+
+  const [activeTabId, setActiveTabId] = React.useState(0);
+  const [tabs, setTabs] = React.useState(select("tabs") || [{ id: 0 }]);
 
   React.useEffect(() => {
     window.localStorage.setItem(
@@ -89,61 +100,29 @@ const useData = () => {
     []
   );
 
-  React.useEffect(() => {}, [events]);
-
   React.useEffect(() => {
     let codigos = [];
     if (!selectedCarreras.length) {
       codigos = jsonData.materias.map((m) => m.codigo);
     } else {
       codigos = selectedCarreras
-        .map((nombre) => jsonCarreras.find((c) => c.nombre === nombre))
-        .filter((carrera) => !!carrera)
+        .map(getCarrera)
         .reduce((arr, c) => arr.concat(...c.materias), []);
     }
     const codigosUnicos = [...new Set(codigos)].sort();
-    let materias = codigosUnicos
-      .map((c) => jsonData.materias.find((m) => m.codigo === c))
-      .filter((materia) => !!materia)
-      .map((m) => {
-        return { codigo: m.codigo, nombre: m.nombre };
-      });
+    let materias = codigosUnicos.filter(ValidMateria).map(getMateria);
     setMateriasToShow(materias);
   }, [carreras, selectedCarreras]);
 
-  const getMateria = (codigo) => {
-    const materia = jsonData.materias.find((m) => m.codigo === codigo);
-    return {
-      codigo: materia.codigo,
-      nombre: materia.nombre,
-    };
-  };
-
-  const getCursos = (codigo) => {
-    const comisiones = jsonData.materias.find(
-      (m) => m.codigo === codigo
-    ).cursos;
-    return comisiones
-      .map((codigo) => jsonData.cursos.find((c) => c.codigo === codigo))
-      .filter((curso) => !!curso)
-      .map((curso) => ({
-        codigo: curso.codigo,
-        docentes: curso.docentes,
-        materia: getMateria(codigo).nombre,
-        tabId: activeTabId,
-      }));
-  };
-
   React.useEffect(() => {
     let eventos = selectedCursos
-      .map((curso) => ({
-        ...jsonData.cursos.find((c) => c.codigo === curso.codigo),
-        materia: curso.materia,
-        tabId: curso.tabId,
+      .map((c) => ({
+        ...c,
+        ...getCurso(c.codigo),
       }))
-      .filter((curso) => !!curso.codigo)
-      .map((curso) =>
-        curso.clases.map((clase) => {
+      .map((curso) => {
+        let materia = getMateria(curso.materia);
+        return curso.clases.map((clase) => {
           const inicio = new Date(2018, 0, clase.dia);
           const [inicioHora, inicioMinutos] = clase.inicio.split(":");
           inicio.setHours(inicioHora, inicioMinutos);
@@ -153,16 +132,14 @@ const useData = () => {
           return {
             start: inicio,
             end: fin,
-            codigo: curso.codigo,
-            id: `${curso.codigo}${inicio}`,
+            id: `${curso.codigo}-${inicio}`,
             title: curso.docentes,
-            tooltip: `\n[${curso.materia.codigo}] ${curso.materia.nombre}\n${curso.docentes}`,
-            tabId: curso.tabId,
-            color: colorHash.hex(curso.codigo + curso.docentes),
-            materia: `[${curso.materia.codigo}] ${curso.materia.nombre}`,
+            tooltip: `\n[${materia.codigo}] ${materia.nombre}\n${curso.docentes}`,
+            materia: `[${materia.codigo}] ${materia.nombre}`,
+            curso,
           };
-        })
-      )
+        });
+      })
       .reduce((arr, e) => arr.concat(...e), []);
     setEvents(eventos);
   }, [selectedCursos]);
@@ -171,30 +148,29 @@ const useData = () => {
     toggler(selectedCarreras, setSelectedCarreras, nombre);
   };
   const toggleMateria = (codigo) => {
-    const materia = getMateria(codigo);
     if (selectedMaterias.includes(codigo)) {
-      const remover = getCursos(codigo).filter((curso) =>
+      const remover = getCursosMateria(codigo).filter((curso) =>
         selectedCursos.find((c) => c.codigo === curso.codigo)
       );
-      removerCursos(remover);
+      removerCursosDeTodosLosTabs(remover);
     } else {
-      toggleCurso(getCursos(codigo)[0], materia);
+      toggleCurso(getCursosMateria(codigo)[0]);
     }
     toggler(selectedMaterias, setSelectedMaterias, codigo);
   };
 
-  const removerCursos = (cursos) => {
+  const removerCursosDeTodosLosTabs = (cursos) => {
     let newSelectedCursos = selectedCursos.filter(
-      (item) => !!item && !cursos.map((c) => c.codigo).includes(item.codigo)
+      (item) => !cursos.map((c) => c.codigo).includes(item.codigo)
     );
     let newNoCursar = noCursar.filter(
-      (id) => !!id && !cursos.some((c) => id.startsWith(c.codigo))
+      (nc) => !cursos.some((c) => nc.id.startsWith(c.codigo))
     );
     setNoCursar(newNoCursar);
     setSelectedCursos(newSelectedCursos);
   };
 
-  const toggleCurso = (curso, materia) => {
+  const toggleCurso = (curso) => {
     let newSelectedCursos = [];
     if (
       selectedCursos.find(
@@ -202,18 +178,22 @@ const useData = () => {
       )
     ) {
       newSelectedCursos = selectedCursos.filter(
-        (item) => !!item && item.codigo !== curso.codigo
+        (item) =>
+          item.codigo !== curso.codigo ||
+          (item.codigo === curso.codigo && item.tabId !== activeTabId)
       );
       setNoCursar(
-        noCursar.filter((id) => !!id && !id.startsWith(curso.codigo))
+        noCursar.filter(
+          (item) =>
+            !item.id.startsWith(curso.codigo) ||
+            (item.id.startsWith(curso.codigo) && item.tabId !== activeTabId)
+        )
       );
     } else {
       newSelectedCursos = [
         ...selectedCursos,
         {
           codigo: curso.codigo,
-          color: colorHash.hex(curso.codigo + curso.docentes),
-          materia,
           tabId: activeTabId,
         },
       ];
@@ -221,18 +201,30 @@ const useData = () => {
     setSelectedCursos(newSelectedCursos);
   };
 
-  const limpiarCursos = () => {
-    setSelectedCursos([]);
-    setNoCursar([]);
-  };
-
-  const limpiarMaterias = () => {
-    limpiarCursos();
-    setSelectedMaterias([]);
+  const limpiarCursos = (tabId) => {
+    let newSelectedCursos = selectedCursos.filter((i) => i.tabId !== tabId);
+    setSelectedCursos(newSelectedCursos);
+    let newNoCursar = noCursar.filter((i) => i.tabId !== tabId);
+    setNoCursar(newNoCursar);
   };
 
   const toggleNoCursar = (id) => {
-    toggler(noCursar, setNoCursar, id);
+    let newNoCursar = [];
+    if (noCursar.find((item) => item.id === id && item.tabId === activeTabId)) {
+      newNoCursar = noCursar.filter(
+        (item) =>
+          item.id !== id || (item.id !== id && item.tabId !== activeTabId)
+      );
+    } else {
+      newNoCursar = [
+        ...noCursar,
+        {
+          id,
+          tabId: activeTabId,
+        },
+      ];
+    }
+    setNoCursar(newNoCursar);
   };
 
   const addTab = () => {
@@ -241,7 +233,7 @@ const useData = () => {
     while (ids.includes(id)) {
       id += 1;
     }
-    setTabs([...tabs, { id, title: "" }]);
+    setTabs([...tabs, { id }]);
   };
 
   const selectTab = (id) => {
@@ -255,29 +247,42 @@ const useData = () => {
   };
 
   const removeTab = (id) => {
-    selectedCursos
-      .filter((c) => c.tabId === id)
-      .forEach((c) => {
-        toggleCurso(c, c.materia);
-      });
-
+    limpiarCursos(id);
     setTabs(tabs.filter((t) => t.id !== id));
     setActiveTabId(0);
   };
 
+  const getColor = (codigo) => {
+    let curso = getCurso(codigo);
+    const colorHash = new ColorHash({
+      lightness: [0.6, 0.65, 0.7, 0.75, 0.8, 0.85],
+      saturation: [0.6, 0.65, 0.7, 0.75, 0.8, 0.85],
+    });
+    return colorHash.hex(curso.codigo + curso.docentes);
+  };
+
+  const testAll = () => {
+    const allMaterias = jsonData.materias.map((m) => m.codigo);
+    setSelectedMaterias(allMaterias);
+    const allCursos = jsonData.cursos.map((c) => ({
+      codigo: c.codigo,
+      tabId: activeTabId,
+    }));
+    setSelectedCursos(allCursos);
+  };
+
   return {
     toggleCarrera,
+    testAll,
     toggleMateria,
-    noCursar,
     selectedMaterias,
     carreras,
+    noCursar,
     selectedCarreras,
     materiasToShow,
     actualizacion,
     selectedCursos,
     limpiarCursos,
-    limpiarMaterias,
-    getCursos,
     getMateria,
     events,
     toggleCurso,
@@ -288,6 +293,8 @@ const useData = () => {
     removeTab,
     tabs,
     activeTabId,
+    getCursosMateria,
+    getColor,
   };
 };
 

@@ -6,15 +6,14 @@ import {
 } from "@chakra-ui/icons";
 import {
   Box,
-  chakra,
   Editable,
   EditableInput,
   EditablePreview,
   Flex,
   IconButton,
+  Tab,
   Tabs,
   Text,
-  useStyles,
   useTab,
 } from "@chakra-ui/react";
 import moment from "moment";
@@ -30,8 +29,15 @@ import CalendarWeek from "./CalendarWeek";
 const MyCalendar = (props) => {
   const { events, useAgenda } = props;
 
-  const { toggleNoCursar, noCursar, activeTabId, tabs, selectTab, addTab } =
-    React.useContext(DataContext);
+  const {
+    toggleNoCursar,
+    activeTabId,
+    tabs,
+    selectTab,
+    addTab,
+    noCursar,
+    getColor,
+  } = React.useContext(DataContext);
   const localizer = momentLocalizer(moment);
   const { width } = useWindowSize();
   const formats = {
@@ -58,16 +64,19 @@ const MyCalendar = (props) => {
   const max = new Date();
   max.setHours(23, 30, 0);
 
-  function eventPropsGetter(event, start, end, isSelected) {
+  function eventPropsGetter(event) {
+    let color = event.id ? getColor(event.curso.codigo) : "inherit";
     const style = {
       borderWidth: "thin thin thin thick",
       borderRightColor: "#d2adf4", //primary.300
       borderBottomColor: "#d2adf4", //primary.300
       borderTopColor: "#d2adf4", //primary.300
-      borderLeftColor: event.color,
+      borderLeftColor: color,
       color: "#1f1f1f",
       cursor: "default",
-      backgroundImage: noCursar.includes(event.id)
+      backgroundImage: noCursar.find(
+        (nc) => nc.id === event.id && nc.tabId === activeTabId
+      )
         ? `repeating-linear-gradient(135deg, #ededed, #ededed 10px, transparent 10px, transparent 30px)`
         : undefined,
     };
@@ -77,7 +86,7 @@ const MyCalendar = (props) => {
       borderRightColor: "#0000",
       borderBottomColor: "#0000",
       borderTopColor: "#0000",
-      boxShadow: "inset 0 0 0 1000px " + event.color + "44",
+      boxShadow: "inset 0 0 0 1000px " + color + "44",
     };
     return {
       style: useAgenda ? style : { ...style, ...calendarWeekStyle },
@@ -100,10 +109,12 @@ const MyCalendar = (props) => {
             <IconButton
               variant="ghost"
               icon={
-                noCursar.includes(props.event.id) ? (
-                  <ViewIcon color={props.event.color} />
+                noCursar.find(
+                  (nc) => nc.id === props.event.id && nc.tabId === activeTabId
+                ) ? (
+                  <ViewIcon color={getColor(props.event.curso.codigo)} />
                 ) : (
-                  <ViewOffIcon color={props.event.color} />
+                  <ViewOffIcon color={getColor(props.event.curso.codigo)} />
                 )
               }
               onClick={() => toggleNoCursar(props.event.id)}
@@ -136,7 +147,7 @@ const MyCalendar = (props) => {
           selectTab(tabs[index]?.id || 0);
         }}
       >
-        <Box borderBottom="2px solid" borderColor="inherit">
+        <Flex flexWrap="wrap" borderBottom="2px solid" borderColor="inherit">
           {tabs.map((tab, index) => (
             <CustomTab tab={tab} index={index} />
           ))}
@@ -150,14 +161,13 @@ const MyCalendar = (props) => {
               icon={<AddIcon />}
             />
           )}
-        </Box>
+        </Flex>
       </Tabs>
     );
   };
 
   return (
     <Calendar
-      toolbar={false}
       formats={formats}
       view={useAgenda ? "calendarAgenda" : "calendarWeek"}
       views={{ calendarAgenda: CalendarAgenda, calendarWeek: CalendarWeek }}
@@ -182,16 +192,14 @@ const MyCalendar = (props) => {
 
 const CustomTab = React.forwardRef((props, ref) => {
   const { renameTab, removeTab } = React.useContext(DataContext);
-  const StyledTab = chakra("button", { themeKey: "Tabs.Tab" });
   const tabProps = useTab({ ...props, ref });
   const isSelected = !!tabProps["aria-selected"];
-  const styles = useStyles();
 
   return (
-    <StyledTab __css={styles.tab} {...tabProps} onClick={undefined}>
+    <Tab {...tabProps} pr={isSelected ? 2 : 4}>
       <Editable
         defaultValue={
-          props.tab.title.trim() ? props.tab.title : `Plan #${props.index + 1}`
+          props.tab.title?.trim() ? props.tab.title : `Plan #${props.index + 1}`
         }
         onSubmit={(str) => {
           renameTab(props.tab.id, str);
@@ -218,7 +226,7 @@ const CustomTab = React.forwardRef((props, ref) => {
           )}
         </Flex>
       </Editable>
-    </StyledTab>
+    </Tab>
   );
 });
 

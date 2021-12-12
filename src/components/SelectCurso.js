@@ -16,11 +16,12 @@ const SelectCurso = (props) => {
     selectedCursos,
     getMateria,
     toggleMateria,
-    getCursos,
+    getColor,
+    getCursosMateria,
   } = React.useContext(DataContext);
   const { codigo } = props;
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  const items = React.useMemo(() => getCursos(codigo), []);
+  const items = React.useMemo(() => getCursosMateria(codigo), []);
   const materia = React.useMemo(() => getMateria(codigo), [codigo, getMateria]);
 
   const { isOpen, getItemProps, getToggleButtonProps, getMenuProps } =
@@ -48,18 +49,20 @@ const SelectCurso = (props) => {
           </Tooltip>
         </Box>
 
-        <IconButton
-          my={2}
-          ml={2}
-          colorScheme="primary"
-          variant="outline"
-          borderColor="primary"
-          color="primary.500"
-          icon={<MinusIcon />}
-          onClick={() => {
-            toggleMateria(materia.codigo);
-          }}
-        />
+        <Tooltip placement="top" label="Remover de todos los planes">
+          <IconButton
+            my={2}
+            ml={2}
+            colorScheme="primary"
+            variant="outline"
+            borderColor="primary"
+            color="primary.500"
+            icon={<MinusIcon />}
+            onClick={() => {
+              toggleMateria(materia.codigo);
+            }}
+          />
+        </Tooltip>
       </Flex>
 
       {isOpen && (
@@ -82,12 +85,15 @@ const SelectCurso = (props) => {
                 selectedCursos.find(
                   (i) => i.codigo === item.codigo && i.tabId === activeTabId
                 )
-                  ? selectedCursos.find((i) => i.codigo === item.codigo).color
+                  ? getColor(
+                      selectedCursos.find((i) => i.codigo === item.codigo)
+                        .codigo
+                    )
                   : "primary.500"
               }
               cursor="pointer"
               fontSize="xs"
-              onClick={() => toggleCurso(item, materia)}
+              onClick={() => toggleCurso(item)}
             >
               <li
                 {...getItemProps({
@@ -101,9 +107,10 @@ const SelectCurso = (props) => {
                 ) && (
                   <ViewIcon
                     mr={2}
-                    color={
-                      selectedCursos.find((i) => i.codigo === item.codigo).color
-                    }
+                    color={getColor(
+                      selectedCursos.find((i) => i.codigo === item.codigo)
+                        .codigo
+                    )}
                   />
                 )}
                 {item.docentes}

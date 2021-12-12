@@ -25,7 +25,7 @@ class CalendarWeek extends WorkWeek {
 
   render() {
     let { date, ...props } = this.props;
-    let events = this.props.events ?? [];
+    let events = this.props.events || [];
     let range = this.range(date, events, this.props);
 
     return <TimeGrid {...props} range={range} eventOffset={15} />;

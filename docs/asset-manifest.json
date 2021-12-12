@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/FIUBA-Plan/static/css/main.f7d13664.chunk.css",
-    "main.js": "/FIUBA-Plan/static/js/main.f16cebc2.chunk.js",
-    "main.js.map": "/FIUBA-Plan/static/js/main.f16cebc2.chunk.js.map",
+    "main.js": "/FIUBA-Plan/static/js/main.e6a18dfe.chunk.js",
+    "main.js.map": "/FIUBA-Plan/static/js/main.e6a18dfe.chunk.js.map",
     "runtime-main.js": "/FIUBA-Plan/static/js/runtime-main.10d873af.js",
     "runtime-main.js.map": "/FIUBA-Plan/static/js/runtime-main.10d873af.js.map",
     "static/css/2.97c47a0e.chunk.css": "/FIUBA-Plan/static/css/2.97c47a0e.chunk.css",
-    "static/js/2.1a721faf.chunk.js": "/FIUBA-Plan/static/js/2.1a721faf.chunk.js",
-    "static/js/2.1a721faf.chunk.js.map": "/FIUBA-Plan/static/js/2.1a721faf.chunk.js.map",
+    "static/js/2.02c135c1.chunk.js": "/FIUBA-Plan/static/js/2.02c135c1.chunk.js",
+    "static/js/2.02c135c1.chunk.js.map": "/FIUBA-Plan/static/js/2.02c135c1.chunk.js.map",
     "index.html": "/FIUBA-Plan/index.html",
-    "precache-manifest.d841c1bf2fdc71ce6580b2f027972ed6.js": "/FIUBA-Plan/precache-manifest.d841c1bf2fdc71ce6580b2f027972ed6.js",
+    "precache-manifest.9defd8513b0bc7b44201d16214ba9a02.js": "/FIUBA-Plan/precache-manifest.9defd8513b0bc7b44201d16214ba9a02.js",
     "service-worker.js": "/FIUBA-Plan/service-worker.js",
     "static/css/2.97c47a0e.chunk.css.map": "/FIUBA-Plan/static/css/2.97c47a0e.chunk.css.map",
     "static/css/main.f7d13664.chunk.css.map": "/FIUBA-Plan/static/css/main.f7d13664.chunk.css.map",
-    "static/js/2.1a721faf.chunk.js.LICENSE.txt": "/FIUBA-Plan/static/js/2.1a721faf.chunk.js.LICENSE.txt",
+    "static/js/2.02c135c1.chunk.js.LICENSE.txt": "/FIUBA-Plan/static/js/2.02c135c1.chunk.js.LICENSE.txt",
     "static/media/400.css": "/FIUBA-Plan/static/media/source-sans-pro-vietnamese-400-normal.52acf6f0.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.10d873af.js",
     "static/css/2.97c47a0e.chunk.css",
-    "static/js/2.1a721faf.chunk.js",
+    "static/js/2.02c135c1.chunk.js",
     "static/css/main.f7d13664.chunk.css",
-    "static/js/main.f16cebc2.chunk.js"
+    "static/js/main.e6a18dfe.chunk.js"
   ]
 }

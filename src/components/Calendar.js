@@ -210,6 +210,9 @@ const CustomTab = React.forwardRef((props, ref) => {
               ? props.tab.title
               : `Plan #${props.index + 1}`
           }
+          onClick={(ev) => {
+            ev.stopPropagation();
+          }}
           onSubmit={(str) => {
             renameTab(props.tab.id, str);
           }}

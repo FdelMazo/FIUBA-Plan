@@ -200,9 +200,13 @@ const CustomTab = React.forwardRef((props, ref) => {
     <Tab {...tabProps} pr={isSelected ? 2 : 4}>
       <Tooltip
         placement="bottom"
-        label={`${
-          Math.round(getNHoras(props.tab.id) * 100) / 100
-        } horas de cursada`}
+        label={
+          getNHoras(props.tab.id) > 0
+            ? `${
+                Math.round(getNHoras(props.tab.id) * 100) / 100
+              } horas de cursada`
+            : undefined
+        }
       >
         <Editable
           defaultValue={

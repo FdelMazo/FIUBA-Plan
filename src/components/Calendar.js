@@ -150,7 +150,7 @@ const MyCalendar = (props) => {
       >
         <Flex flexWrap="wrap" borderBottom="2px solid" borderColor="inherit">
           {tabs.map((tab, index) => (
-            <CustomTab tab={tab} index={index} />
+            <CustomTab key={tab.id} tab={tab} index={index} />
           ))}
 
           {tabs.length < 10 && (
@@ -170,6 +170,7 @@ const MyCalendar = (props) => {
   return (
     <Calendar
       formats={formats}
+      onView={() => {}}
       view={useAgenda ? "calendarAgenda" : "calendarWeek"}
       views={{ calendarAgenda: CalendarAgenda, calendarWeek: CalendarWeek }}
       localizer={localizer}

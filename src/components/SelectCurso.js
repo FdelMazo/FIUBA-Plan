@@ -2,7 +2,7 @@ import {
   ChevronDownIcon,
   ChevronUpIcon,
   MinusIcon,
-  ViewIcon,
+  CheckIcon,
 } from "@chakra-ui/icons";
 import { Box, Button, Flex, IconButton, List, Tooltip } from "@chakra-ui/react";
 import { useSelect } from "downshift";
@@ -105,7 +105,7 @@ const SelectCurso = (props) => {
                 {selectedCursos.find(
                   (i) => i.codigo === item.codigo && i.tabId === activeTabId
                 ) && (
-                  <ViewIcon
+                  <CheckIcon
                     mr={2}
                     color={getColor(
                       selectedCursos.find((i) => i.codigo === item.codigo)

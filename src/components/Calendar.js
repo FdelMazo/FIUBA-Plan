@@ -38,6 +38,7 @@ const MyCalendar = (props) => {
     addTab,
     noCursar,
     getColor,
+    addHorarioExtra,
   } = React.useContext(DataContext);
   const localizer = momentLocalizer(moment);
   const { width } = useWindowSize();
@@ -66,7 +67,8 @@ const MyCalendar = (props) => {
   max.setHours(23, 30, 0);
 
   function eventPropsGetter(event) {
-    let color = event.id ? getColor(event.curso.codigo) : "inherit";
+    let color =
+      event.color || (event.id ? getColor(event.curso.codigo) : "inherit");
     const style = {
       borderWidth: "thin thin thin thick",
       borderRightColor: "#d2adf4", //primary.300
@@ -113,9 +115,17 @@ const MyCalendar = (props) => {
                 noCursar.find(
                   (nc) => nc.id === props.event.id && nc.tabId === activeTabId
                 ) ? (
-                  <ViewIcon color={getColor(props.event.curso.codigo)} />
+                  <ViewIcon
+                    color={
+                      props.event.color || getColor(props.event.curso.codigo)
+                    }
+                  />
                 ) : (
-                  <ViewOffIcon color={getColor(props.event.curso.codigo)} />
+                  <ViewOffIcon
+                    color={
+                      props.event.color || getColor(props.event.curso.codigo)
+                    }
+                  />
                 )
               }
               onClick={() => toggleNoCursar(props.event.id)}
@@ -169,6 +179,7 @@ const MyCalendar = (props) => {
 
   return (
     <Calendar
+      selectable
       formats={formats}
       onView={() => {}}
       view={useAgenda ? "calendarAgenda" : "calendarWeek"}
@@ -186,6 +197,7 @@ const MyCalendar = (props) => {
       onSelectEvent={(e) => {
         toggleNoCursar(e.id);
       }}
+      onSelectSlot={addHorarioExtra}
       dayLayoutAlgorithm="no-overlap"
       tooltipAccessor="tooltip"
     />

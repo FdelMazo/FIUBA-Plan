@@ -66,12 +66,20 @@ const useData = () => {
   const [selectedCursos, setSelectedCursos] = React.useState(
     select("selectedCursos")?.filter((c) => ValidCurso(c.codigo)) || []
   );
+  const [extraEvents, setExtraEvents] = React.useState(
+    select("extraEvents") || []
+  );
   const [events, setEvents] = React.useState([]);
   const [noCursar, setNoCursar] = React.useState(select("noCursar") || []);
   const [materiasToShow, setMateriasToShow] = React.useState([]);
 
   const [activeTabId, setActiveTabId] = React.useState(0);
   const [tabs, setTabs] = React.useState(select("tabs") || [{ id: 0 }]);
+
+  const colorHash = new ColorHash({
+    lightness: [0.6, 0.65, 0.7, 0.75, 0.8, 0.85],
+    saturation: [0.6, 0.65, 0.7, 0.75, 0.8, 0.85],
+  });
 
   React.useEffect(() => {
     window.localStorage.setItem(
@@ -83,9 +91,17 @@ const useData = () => {
         selectedCursos,
         noCursar,
         tabs,
+        extraEvents,
       })
     );
-  }, [selectedCarreras, selectedMaterias, selectedCursos, tabs, noCursar]);
+  }, [
+    selectedCarreras,
+    selectedMaterias,
+    selectedCursos,
+    tabs,
+    noCursar,
+    extraEvents,
+  ]);
 
   const carreras = React.useMemo(
     () => jsonCarreras.map((c) => c.nombre).sort(),
@@ -141,8 +157,8 @@ const useData = () => {
         });
       })
       .reduce((arr, e) => arr.concat(...e), []);
-    setEvents(eventos);
-  }, [selectedCursos]);
+    setEvents([...eventos, ...extraEvents]);
+  }, [selectedCursos, extraEvents]);
 
   const toggleCarrera = (nombre) => {
     toggler(selectedCarreras, setSelectedCarreras, nombre);
@@ -254,10 +270,6 @@ const useData = () => {
 
   const getColor = (codigo) => {
     let curso = getCurso(codigo);
-    const colorHash = new ColorHash({
-      lightness: [0.6, 0.65, 0.7, 0.75, 0.8, 0.85],
-      saturation: [0.6, 0.65, 0.7, 0.75, 0.8, 0.85],
-    });
     return colorHash.hex(curso.codigo + curso.docentes);
   };
 
@@ -287,6 +299,40 @@ const useData = () => {
     setSelectedCursos(allCursos);
   };
 
+  const addHorarioExtra = ({ start, end }) => {
+    const id = start.getTime() + end.getTime();
+    const randomLetter = String.fromCharCode(
+      65 + Math.floor(id % 23) + Math.floor(id % 3)
+    );
+    setExtraEvents([
+      ...extraEvents,
+      {
+        start,
+        end,
+        id,
+        materia: "[EXTRA] ACTIVIDAD " + randomLetter,
+        curso: { tabId: activeTabId },
+        color: colorHash.hex(start + end),
+        tooltip: "Actividad Extracurricular",
+      },
+    ]);
+  };
+
+  const removerHorarioExtra = (evento) => {
+    const newExtras = extraEvents.filter((e) => e.id !== evento.id);
+    setExtraEvents(newExtras);
+  };
+
+  const renombrarHorarioExtra = (evento, str) => {
+    let nuevoNombre = str.trim() ? str.trim() : "EXTRA";
+    let newExtras = [...extraEvents];
+    newExtras.find((e) => e.id === evento.id).materia = nuevoNombre;
+    setExtraEvents(newExtras);
+  };
+  const removerHorariosExtra = () => {
+    setExtraEvents([]);
+  };
+
   return {
     toggleCarrera,
     testAll,
@@ -312,6 +358,11 @@ const useData = () => {
     getCursosMateria,
     getColor,
     getNHoras,
+    extraEvents,
+    addHorarioExtra,
+    removerHorarioExtra,
+    removerHorariosExtra,
+    renombrarHorarioExtra,
   };
 };
 

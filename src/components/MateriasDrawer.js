@@ -39,6 +39,7 @@ import { DataContext } from "../Context";
 import SelectCarreras from "./SelectCarreras";
 import SelectCurso from "./SelectCurso";
 import SelectMateria from "./SelectMateria";
+import SelectExtra from "./SelectExtra";
 
 const submitBug = (bug) => {
   if (!bug) return;
@@ -63,6 +64,7 @@ const MateriasDrawer = (props) => {
     limpiarCursos,
     activeTabId,
     selectedCursos,
+    extraEvents,
   } = React.useContext(DataContext);
   const { toggleColorMode } = useColorMode();
   const toast = useToast();
@@ -100,6 +102,7 @@ const MateriasDrawer = (props) => {
             {selectedMaterias.map((m) => (
               <SelectCurso codigo={m} key={m} />
             ))}
+            {!!extraEvents.length && <SelectExtra />}
           </DrawerBody>
 
           <Flex row justifyContent="space-around">

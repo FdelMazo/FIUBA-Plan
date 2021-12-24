@@ -45,6 +45,11 @@
   border-color: var(--chakra-colors-primary-300);
 }
 
+.rbc-day-slot .rbc-event-label {
+  width: 100%;
+  text-align: left;
+}
+
 .rbc-day-slot .rbc-events-container {
   margin: 0;
 }

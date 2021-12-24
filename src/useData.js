@@ -67,7 +67,11 @@ const useData = () => {
     select("selectedCursos")?.filter((c) => ValidCurso(c.codigo)) || []
   );
   const [extraEvents, setExtraEvents] = React.useState(
-    select("extraEvents") || []
+    select("extraEvents")?.map((e) => ({
+      ...e,
+      start: new Date(e.start),
+      end: new Date(e.end),
+    })) || []
   );
   const [events, setEvents] = React.useState([]);
   const [noCursar, setNoCursar] = React.useState(select("noCursar") || []);
@@ -309,11 +313,12 @@ const useData = () => {
       {
         start,
         end,
-        id,
-        materia: "[EXTRA] ACTIVIDAD " + randomLetter,
+        id: id.toString(),
+        title: "ACTIVIDAD EXTRACURRICULAR",
+        materia: "ACTIVIDAD " + randomLetter,
+        tooltip: "ACTIVIDAD " + randomLetter,
         curso: { tabId: activeTabId },
         color: colorHash.hex(start + end),
-        tooltip: "Actividad Extracurricular",
       },
     ]);
   };
@@ -327,6 +332,7 @@ const useData = () => {
     let nuevoNombre = str.trim() ? str.trim() : "EXTRA";
     let newExtras = [...extraEvents];
     newExtras.find((e) => e.id === evento.id).materia = nuevoNombre;
+    newExtras.find((e) => e.id === evento.id).tooltip = nuevoNombre;
     setExtraEvents(newExtras);
   };
   const removerHorariosExtra = () => {

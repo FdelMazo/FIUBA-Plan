@@ -326,6 +326,12 @@ const useData = () => {
   const removerHorarioExtra = (evento) => {
     const newExtras = extraEvents.filter((e) => e.id !== evento.id);
     setExtraEvents(newExtras);
+    const newNoCursar = noCursar.filter(
+      (item) =>
+        item.id !== evento.id ||
+        (item.id === evento.id && item.tabId !== evento.curso.tabId)
+    );
+    setNoCursar(newNoCursar);
   };
 
   const renombrarHorarioExtra = (evento, str) => {
@@ -336,6 +342,11 @@ const useData = () => {
     setExtraEvents(newExtras);
   };
   const removerHorariosExtra = () => {
+    const extraEventsIds = extraEvents.map((e) => e.id);
+    const newNoCursar = noCursar.filter(
+      (nc) => !extraEventsIds.includes(nc.id)
+    );
+    setNoCursar(newNoCursar);
     setExtraEvents([]);
   };
 

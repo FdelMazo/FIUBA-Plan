@@ -316,7 +316,7 @@ const useData = () => {
         id: id.toString(),
         title: "ACTIVIDAD EXTRACURRICULAR",
         materia: "ACTIVIDAD " + randomLetter,
-        tooltip: "ACTIVIDAD " + randomLetter,
+        tooltip: `ACTIVIDAD ${randomLetter}\nACTIVIDAD EXTRACURRICULAR`,
         curso: { tabId: activeTabId },
         color: colorHash.hex(start + end),
       },
@@ -338,7 +338,9 @@ const useData = () => {
     let nuevoNombre = str.trim() ? str.trim() : "EXTRA";
     let newExtras = [...extraEvents];
     newExtras.find((e) => e.id === evento.id).materia = nuevoNombre;
-    newExtras.find((e) => e.id === evento.id).tooltip = nuevoNombre;
+    newExtras.find(
+      (e) => e.id === evento.id
+    ).tooltip = `${nuevoNombre}\nACTIVIDAD EXTRACURRICULAR`;
     setExtraEvents(newExtras);
   };
   const removerHorariosExtra = () => {

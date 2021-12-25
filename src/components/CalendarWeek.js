@@ -17,12 +17,6 @@ class CalendarWeek extends WorkWeek {
     return Week.range(date, options).filter((d) => DAYS.includes(d.getDay()));
   }
 
-  title(date, { localizer }) {
-    let [start, ...rest] = this.range(date, { localizer });
-
-    return localizer.format({ start, end: rest.pop() }, "dayRangeHeaderFormat");
-  }
-
   render() {
     let { date, ...props } = this.props;
     let events = this.props.events || [];

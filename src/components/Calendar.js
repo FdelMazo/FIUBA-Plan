@@ -30,6 +30,16 @@ import CalendarWeek from "./CalendarWeek";
 const MyCalendar = (props) => {
   const { events, useAgenda } = props;
 
+  const coveredDays = events.map((e) => e.start.getDay());
+  const notCoveredDays = [1, 2, 3, 4, 5].filter(
+    (d) => !coveredDays.includes(d)
+  );
+  const dummyEvents = notCoveredDays.map((i) => ({
+    start: new Date(2018, 0, i, 7),
+    end: new Date(2018, 0, i, 23, 30),
+    title: "",
+  }));
+
   const {
     toggleNoCursar,
     activeTabId,
@@ -188,7 +198,7 @@ const MyCalendar = (props) => {
       min={min}
       max={max}
       defaultDate={new Date(2018, 0, 1)} // Monday
-      events={events}
+      events={useAgenda ? [...events, ...dummyEvents] : events}
       eventPropGetter={eventPropsGetter}
       components={{
         event: MateriaEvent,

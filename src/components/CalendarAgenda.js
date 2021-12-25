@@ -18,17 +18,6 @@ function Agenda({
   const contentRef = useRef(null)
   const tbodyRef = useRef(null)
 
-  const coveredDays = events.map((e) => e.start.getDay());
-  const notCoveredDays = [1, 2, 3, 4, 5].filter(
-    (d) => !coveredDays.includes(d)
-  );
-  const dummyEvents = notCoveredDays.map((i) => ({
-    start: new Date(2018, 0, i, 7),
-    end: new Date(2018, 0, i, 23, 30),
-    title: "",
-  }));
-  events = [...events, ...dummyEvents];
-
   const renderDay = (day, events, dayKey) => {
     const { event: Event, date: AgendaDate } = components
 

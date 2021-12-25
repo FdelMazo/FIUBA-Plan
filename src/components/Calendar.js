@@ -1,9 +1,4 @@
-import {
-  AddIcon,
-  SmallCloseIcon,
-  ViewIcon,
-  ViewOffIcon,
-} from "@chakra-ui/icons";
+import { AddIcon, SmallCloseIcon } from "@chakra-ui/icons";
 import {
   Box,
   Editable,
@@ -118,29 +113,6 @@ const MyCalendar = (props) => {
           <Text noOfLines={[1, 2, 3]} className="rbc-agenda-event-cell" mb={2}>
             {props.event.materia}
           </Text>
-          {props.event.id && (
-            <IconButton
-              variant="ghost"
-              icon={
-                noCursar.find(
-                  (nc) => nc.id === props.event.id && nc.tabId === activeTabId
-                ) ? (
-                  <ViewIcon
-                    color={
-                      props.event.color || getColor(props.event.curso.codigo)
-                    }
-                  />
-                ) : (
-                  <ViewOffIcon
-                    color={
-                      props.event.color || getColor(props.event.curso.codigo)
-                    }
-                  />
-                )
-              }
-              onClick={() => toggleNoCursar(props.event.id)}
-            />
-          )}
         </Box>
         <Text noOfLines={[1, 3, 5]} className="rbc-agenda-event-cell-sub">
           {props.event.title}

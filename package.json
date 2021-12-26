@@ -15,7 +15,8 @@
     "react": "^16.13.1",
     "react-big-calendar": "^0.27.0",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.3"
+    "react-scripts": "^3.4.3",
+    "react-snowfall": "^1.1.1"
   },
   "homepage": "https://fede.dm/FIUBA-Plan",
   "scripts": {

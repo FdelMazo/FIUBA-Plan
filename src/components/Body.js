@@ -11,6 +11,7 @@ import {
 import "moment/locale/es";
 import React from "react";
 import "react-big-calendar/lib/css/react-big-calendar.css";
+import Snowfall from "react-snowfall";
 import { DataContext } from "../Context";
 import useWindowSize from "../utils/useWindowSize";
 import Calendar from "./Calendar";
@@ -82,6 +83,13 @@ const Body = () => {
     setUseAgenda(width < 1000);
   }, [width]);
 
+  const isChristmasTime = () => {
+    const today = new Date();
+    const start = new Date(today.getFullYear(), 11, 20);
+    const end = new Date(today.getFullYear(), 11, 31);
+    return today >= start && today <= end;
+  };
+
   return (
     <Box id={useColorModeValue(undefined, "dark")} flexGrow={1}>
       <MateriasDrawer
@@ -90,6 +98,7 @@ const Body = () => {
         useAgenda={useAgenda}
         setUseAgenda={setUseAgenda}
       />
+      {isChristmasTime() && <Snowfall color="lavender" />}
       <Calendar
         events={events.filter((e) => e.curso.tabId === activeTabId)}
         useAgenda={useAgenda}

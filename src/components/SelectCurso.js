@@ -1,10 +1,19 @@
 import {
+  CheckIcon,
   ChevronDownIcon,
   ChevronUpIcon,
   MinusIcon,
-  CheckIcon,
+  WarningTwoIcon,
 } from "@chakra-ui/icons";
-import { Box, Button, Flex, IconButton, List, Tooltip } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  IconButton,
+  List,
+  Text,
+  Tooltip,
+} from "@chakra-ui/react";
 import { useSelect } from "downshift";
 import React from "react";
 import { DataContext } from "../Context";
@@ -17,6 +26,7 @@ const SelectCurso = (props) => {
     getMateria,
     toggleMateria,
     getColor,
+    isBlocked,
     getCursosMateria,
   } = React.useContext(DataContext);
   const { codigo } = props;
@@ -77,46 +87,57 @@ const SelectCurso = (props) => {
             overflowY: "scroll",
           }}
         >
-          {items.map((item, index) => (
-            <Box
-              borderRadius={5}
-              _hover={{ bg: "gray.500" }}
-              color={
-                selectedCursos.find(
-                  (i) => i.codigo === item.codigo && i.tabId === activeTabId
-                )
-                  ? getColor(
-                      selectedCursos.find((i) => i.codigo === item.codigo)
-                        .codigo
-                    )
-                  : "primary.500"
-              }
-              cursor="pointer"
-              fontSize="xs"
-              onClick={() => toggleCurso(item)}
-            >
-              <li
-                {...getItemProps({
-                  item,
-                  index,
-                })}
-                key={item.codigo}
+          {items.map((item, index) => {
+            const isActive = selectedCursos.find(
+              (i) => i.codigo === item.codigo && i.tabId === activeTabId
+            );
+            const color = getColor(
+              selectedCursos.find((i) => i.codigo === item.codigo)?.codigo
+            );
+            const isItemBlocked = isBlocked(item.codigo);
+            return (
+              <Tooltip
+                placement="left"
+                hasArrow
+                fontSize="xs"
+                label={
+                  isItemBlocked ? (
+                    <>
+                      <Text>Este curso se solapa</Text>
+                      <Text>con el resto del plan</Text>
+                    </>
+                  ) : undefined
+                }
               >
-                {selectedCursos.find(
-                  (i) => i.codigo === item.codigo && i.tabId === activeTabId
-                ) && (
-                  <CheckIcon
-                    mr={2}
-                    color={getColor(
-                      selectedCursos.find((i) => i.codigo === item.codigo)
-                        .codigo
+                <Box
+                  borderRadius={5}
+                  _hover={{ bg: "gray.500" }}
+                  color={isActive ? color : "primary.500"}
+                  cursor="pointer"
+                  fontSize="xs"
+                  px={2}
+                  onClick={() => toggleCurso(item)}
+                >
+                  <li
+                    {...getItemProps({
+                      item,
+                      index,
+                    })}
+                    key={item.codigo}
+                  >
+                    {isActive && <CheckIcon mr={1} color={color} />}
+                    {isItemBlocked && (
+                      <WarningTwoIcon
+                        mr={1}
+                        color={isActive ? color : "primary.500"}
+                      />
                     )}
-                  />
-                )}
-                {item.docentes}
-              </li>
-            </Box>
-          ))}
+                    {item.docentes}
+                  </li>
+                </Box>
+              </Tooltip>
+            );
+          })}
         </List>
       )}
     </>

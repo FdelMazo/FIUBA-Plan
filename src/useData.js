@@ -274,6 +274,7 @@ const useData = () => {
 
   const getColor = (codigo) => {
     let curso = getCurso(codigo);
+    if (!curso) return null;
     return colorHash.hex(curso.codigo + curso.docentes);
   };
 
@@ -352,6 +353,26 @@ const useData = () => {
     setExtraEvents([]);
   };
 
+  const isBlocked = (codigo) => {
+    const curso = getCurso(codigo);
+    const eventos = events.filter((e) => e.curso.materia !== curso.materia);
+    for (const clase of curso.clases) {
+      const inicio = new Date(2018, 0, clase.dia);
+      const [inicioHora, inicioMinutos] = clase.inicio.split(":");
+      inicio.setHours(inicioHora, inicioMinutos);
+      const fin = new Date(2018, 0, clase.dia);
+      const [finHora, finMinutos] = clase.fin.split(":");
+      fin.setHours(finHora, finMinutos);
+
+      for (const evento of eventos) {
+        if (inicio < evento.end && fin > evento.start) {
+          return true;
+        }
+      }
+    }
+    return false;
+  };
+
   return {
     toggleCarrera,
     testAll,
@@ -382,6 +403,7 @@ const useData = () => {
     removerHorarioExtra,
     removerHorariosExtra,
     renombrarHorarioExtra,
+    isBlocked,
   };
 };
 

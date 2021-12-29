@@ -25,39 +25,38 @@ const SelectCarreras = () => {
         Carreras
       </Button>
 
-      {isOpen && (
-        <List
-          {...getMenuProps()}
-          p={1}
-          mt={4}
-          borderWidth={1}
-          borderRadius={5}
-          borderColor="primary.500"
-        >
-          {carreras
-            .sort((a, b) => a.nombre > b.nombre)
-            .map((c, index) => (
-              <Box
-                borderRadius={5}
-                _hover={{ bg: "gray.500" }}
-                color="primary.500"
-                cursor="pointer"
-                onClick={() => toggleCarrera(c)}
+      <List
+        display={isOpen ? "block" : "none"}
+        {...getMenuProps()}
+        p={1}
+        mt={4}
+        borderWidth={1}
+        borderRadius={5}
+        borderColor="primary.500"
+      >
+        {carreras
+          .sort((a, b) => a.nombre > b.nombre)
+          .map((c, index) => (
+            <Box
+              borderRadius={5}
+              _hover={{ bg: "gray.500" }}
+              color="primary.500"
+              cursor="pointer"
+              onClick={() => toggleCarrera(c)}
+              key={c}
+            >
+              <li
+                {...getItemProps({
+                  c,
+                  index,
+                })}
               >
-                <li
-                  {...getItemProps({
-                    c,
-                    index,
-                  })}
-                  key={c}
-                >
-                  {c}
-                  {selectedCarreras.includes(c) && <CheckIcon ml={2} />}
-                </li>
-              </Box>
-            ))}
-        </List>
-      )}
+                {c}
+                {selectedCarreras.includes(c) && <CheckIcon ml={2} />}
+              </li>
+            </Box>
+          ))}
+      </List>
     </Box>
   );
 };

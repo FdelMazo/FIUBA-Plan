@@ -75,9 +75,9 @@ const SelectCurso = (props) => {
         </Tooltip>
       </Flex>
 
-      {isOpen && (
         <List
           {...getMenuProps()}
+          display={isOpen ? "block" : "none"}
           p={1}
           borderWidth={1}
           borderRadius={5}
@@ -108,6 +108,7 @@ const SelectCurso = (props) => {
                     </>
                   ) : undefined
                 }
+                key={item.codigo}
               >
                 <Box
                   borderRadius={5}
@@ -139,7 +140,6 @@ const SelectCurso = (props) => {
             );
           })}
         </List>
-      )}
     </>
   );
 };

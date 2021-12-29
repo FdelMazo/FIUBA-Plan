@@ -49,8 +49,8 @@ const SelectMateria = (props) => {
       <InputGroup w="100%" fontFamily="general" mt={4} mb={2}>
         <Input
           {...getToggleButtonProps()}
-          {...getInputProps()}
-          {...getComboboxProps()}
+          {...getInputProps({}, { suppressRefError: true })}
+          {...getComboboxProps({}, { suppressRefError: true })}
           ref={inputRef}
           colorScheme="primary"
           variant="outline"
@@ -61,49 +61,50 @@ const SelectMateria = (props) => {
         />
         <InputRightElement children={<SearchIcon color="primary.500" />} />
       </InputGroup>
-      {isOpen && (
-        <List
-          {...getMenuProps()}
-          p={1}
-          mt={4}
-          mb={2}
-          borderWidth={1}
-          borderRadius={5}
-          borderColor="primary.500"
-          style={{
-            maxHeight: "20em",
-            overflowY: "scroll",
-          }}
-        >
-          {inputItems.length ? (
-            inputItems
-              .sort((a, b) => a.codigo > b.codigo)
-              .map((materia) => (
-                <Box
-                  borderRadius={5}
-                  _hover={{ bg: "gray.500" }}
-                  color="primary.500"
-                  fontSize="sm"
-                  cursor="pointer"
-                  onClick={() => toggleMateria(materia.codigo)}
-                >
-                  <li key={materia.codigo}>
-                    {selectedMaterias.includes(materia.codigo) ? (
-                      <CheckIcon mr={2} />
-                    ) : (
-                      <ChevronRightIcon mr={2} />
-                    )}
-                    ({materia.codigo}) {materia.nombre}
-                  </li>
-                </Box>
-              ))
-          ) : (
-            <Box borderRadius={5} color="primary.500" fontSize="sm">
-              <li>No se encontraron materias.</li>
-            </Box>
-          )}
-        </List>
-      )}
+
+      <List
+        {...getMenuProps()}
+        display={isOpen ? "block" : "none"}
+        p={1}
+        mt={4}
+        mb={2}
+        borderWidth={1}
+        borderRadius={5}
+        borderColor="primary.500"
+        style={{
+          maxHeight: "20em",
+          overflowY: "scroll",
+        }}
+      >
+        {inputItems.length ? (
+          inputItems
+            .sort((a, b) => a.codigo > b.codigo)
+            .map((materia) => (
+              <Box
+                borderRadius={5}
+                _hover={{ bg: "gray.500" }}
+                color="primary.500"
+                fontSize="sm"
+                cursor="pointer"
+                onClick={() => toggleMateria(materia.codigo)}
+                key={materia.codigo}
+              >
+                <li>
+                  {selectedMaterias.includes(materia.codigo) ? (
+                    <CheckIcon mr={2} />
+                  ) : (
+                    <ChevronRightIcon mr={2} />
+                  )}
+                  ({materia.codigo}) {materia.nombre}
+                </li>
+              </Box>
+            ))
+        ) : (
+          <Box borderRadius={5} color="primary.500" fontSize="sm">
+            <li>No se encontraron materias.</li>
+          </Box>
+        )}
+      </List>
     </>
   );
 };

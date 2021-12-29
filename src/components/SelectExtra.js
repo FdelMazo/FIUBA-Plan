@@ -66,64 +66,63 @@ const SelectCurso = () => {
           />
         </Tooltip>
       </Flex>
-      {isOpen && (
-        <List
-          {...getMenuProps()}
-          onKeyDown={undefined}
-          p={1}
-          borderWidth={1}
-          borderRadius={5}
-          borderColor="primary.500"
-          style={{
-            maxHeight: "10em",
-            overflowY: "scroll",
-          }}
-        >
-          {items.map((item, index) => (
-            <Box borderRadius={5} color={item.color}>
-              <li
-                {...getItemProps({
-                  item,
-                  index,
-                })}
-                key={item.id}
+
+      <List
+        {...getMenuProps()}
+        display={isOpen ? "block" : "none"}
+        onKeyDown={undefined}
+        p={1}
+        borderWidth={1}
+        borderRadius={5}
+        borderColor="primary.500"
+        style={{
+          maxHeight: "10em",
+          overflowY: "scroll",
+        }}
+      >
+        {items.map((item, index) => (
+          <Box borderRadius={5} color={item.color} key={item.id}>
+            <li
+              {...getItemProps({
+                item,
+                index,
+              })}
+            >
+              <Editable
+                placeholder="EXTRA"
+                fontSize="small"
+                defaultValue={item.materia}
+                onSubmit={(nombre) => {
+                  renombrarHorarioExtra(item, nombre);
+                }}
+                onClick={(ev) => {
+                  ev.stopPropagation();
+                }}
               >
-                <Editable
-                  placeholder="EXTRA"
-                  fontSize="small"
-                  defaultValue={item.materia}
-                  onSubmit={(nombre) => {
-                    renombrarHorarioExtra(item, nombre);
-                  }}
-                  onClick={(ev) => {
-                    ev.stopPropagation();
-                  }}
-                >
-                  <Flex justifyContent="space-between">
-                    <EditablePreview />
-                    <EditableInput
-                      _focus={{
-                        boxShadow: "0 0 0 1px rgba(183,148,244, 0.6)",
-                      }}
-                    />
-                    <IconButton
-                      size="xs"
-                      borderColor={item.color}
-                      _hover={{
-                        bg: "initial",
-                        border: "1px solid",
-                      }}
-                      variant="ghost"
-                      onClick={() => removerHorarioExtra(item)}
-                      icon={<MinusIcon />}
-                    />
-                  </Flex>
-                </Editable>
-              </li>
-            </Box>
-          ))}
-        </List>
-      )}
+                <Flex justifyContent="space-between">
+                  <EditablePreview />
+                  <EditableInput
+                    _focus={{
+                      boxShadow: "0 0 0 1px rgba(183,148,244, 0.6)",
+                    }}
+                  />
+                  <IconButton
+                    size="xs"
+                    borderColor={item.color}
+                    _hover={{
+                      bg: "initial",
+                      border: "1px solid",
+                    }}
+                    variant="ghost"
+                    onClick={() => removerHorarioExtra(item)}
+                    icon={<MinusIcon />}
+                  />
+                </Flex>
+              </Editable>
+            </li>
+          </Box>
+        ))}
+      </List>
     </>
   );
 };

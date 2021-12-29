@@ -105,7 +105,7 @@ const MateriasDrawer = (props) => {
             {!!extraEvents.length && <SelectExtra />}
           </DrawerBody>
 
-          <Flex row justifyContent="space-around">
+          <Flex justifyContent="space-around">
             {!!selectedCursos.length && (
               <Button
                 borderColor="primary.300"
@@ -130,7 +130,7 @@ const MateriasDrawer = (props) => {
             )}
           </Flex>
 
-          <DrawerFooter p={4} flex row justifyContent="space-between">
+          <DrawerFooter p={4} flex justifyContent="space-between">
             <Tooltip label="Cambiar vista" placement="top">
               <IconButton
                 variant="outline"
@@ -167,7 +167,6 @@ const MateriasDrawer = (props) => {
 
               <Tooltip label="FdelMazo/FIUBA-Plan" placement="top">
                 <Link
-                  Link
                   color="primary.600"
                   isExternal
                   href="https://github.com/fdelmazo/FIUBA-Plan"
@@ -183,7 +182,6 @@ const MateriasDrawer = (props) => {
 
               <Tooltip label="Invitame un Cafecito" placement="top">
                 <Link
-                  Link
                   color="primary.600"
                   isExternal
                   href="https://cafecito.app/fdelmazo"

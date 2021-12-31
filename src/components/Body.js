@@ -85,8 +85,8 @@ const Body = () => {
 
   const isChristmasTime = () => {
     const today = new Date();
-    const start = new Date(today.getFullYear(), 11, 20);
-    const end = new Date(today.getFullYear(), 11, 31);
+    const start = new Date(today.getFullYear(), 11, 19);
+    const end = new Date(today.getFullYear() + 1, 0, 1);
     return today >= start && today <= end;
   };
 

@@ -24,10 +24,7 @@ jobs:
         commit-message: Update horarios [auto]
         delete-branch: true
         title: Actualizar Horarios [auto]
-        body: |
-          Este PR automático se fijó que los horarios de `ofertahoraria.fi.uba.ar/` cambiaron.
-
-          Ojo, hay un problema con los PRs automáticos: no triggerean otros workflows. Entonces si se mergea este PR así sin más, la página no se va a volver a compilar. El truco? [cerrar y abrir el PR antes de mergearlo](https://github.com/peter-evans/create-pull-request/blob/main/docs/concepts-guidelines.md#triggering-further-workflow-runs)
+        body: Este PR automático se fijó que los horarios de `ofertahoraria.fi.uba.ar/` cambiaron y los actualizá a la última versión.
         reviewers: FdelMazo, JDSanto
         draft: true
 

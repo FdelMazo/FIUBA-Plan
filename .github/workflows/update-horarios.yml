@@ -15,7 +15,7 @@ jobs:
     - run: pip install jupyter
     - run: pip install nbconvert==6.0.0rc0
     - name: Run Jupy
-      run: jupyter nbconvert --execute get_cursos.ipynb
+      run: jupyter nbconvert --to python --execute get_cursos.ipynb
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with: 

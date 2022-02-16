@@ -3,7 +3,7 @@ name: Update Horarios
 on:
   schedule:
     # Every day at 00:00 GMT-3
-    - cron:  "* * * * *"
+    - cron:  "0 3 * * *"
 
 jobs:
   build:

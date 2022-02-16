@@ -20,9 +20,10 @@ Todos los cuatrimestres hay que actualizar los horarios de la aplicación. Para 
 
 ---
 
-De todas formas, si algún día cambia el código del ofertahoraria y se hace más difícil de llamra a la API, o se cae el servicio, o lo que sea, no importa cómo se consigan los datos, lo único importante es llegar a tener el `horarios.js` en sí, el cual tiene el siguiente formato:
+De todas formas, si algún día cambia el código del ofertahoraria y se hace más difícil de llamra a la API, o se cae el servicio, o lo que sea, no importa cómo se consigan los datos, lo único importante es llegar a tener el `horarios.js` en sí, el cual exporta un json que tiene el siguiente formato:
 
 ```jsonc
+// Este json tiene que estar ordenado por claves, (logrado con el método de python `json.dumps(DATA, indent=2, ensure_ascii=False, sort_keys=True)`), de esta manéra los diffs van a ser mucho más legibles 
 {
   "cuatrimestre": "2020C2", // Nombre de Cuatrimestre, para la notificación al entrar al sitio ("Actualizado al 2020C2")
   "timestamp": "2020-09-22 00:24:11.950205", // Un timestamp que se usa como identificador del json. Esto sirve para comparar contra la última actualización de horarios.

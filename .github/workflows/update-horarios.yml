@@ -1,0 +1,31 @@
+name: Update Horarios
+
+on:
+  schedule:
+    # Every day at 00:00
+    - cron:  "0 0 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - run: pip install jupyter
+    - name: Run Jupy
+      run: jupyter nbconvert --execute get_cursos.ipynb
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
+      add-paths: src/data/horarios
+      commit-message: Update horarios [auto]
+      delete-branch: true
+      title: Actualizar Horarios [auto]
+      body: |
+        Este PR automático se fijó que los horarios de `ofertahoraria.fi.uba.ar/` cambiaron.
+
+        Ojo, hay un problema con los PRs automáticos: no triggerean otros workflows. Entonces si se mergea este PR así sin más, la página no se va a volver a compilar. El truco? [cerrar y abrir el PR antes de mergearlo](https://github.com/peter-evans/create-pull-request/blob/main/docs/concepts-guidelines.md#triggering-further-workflow-runs)
+      reviewers: FdelMazo, JDSanto
+      draft: true
+
+
+

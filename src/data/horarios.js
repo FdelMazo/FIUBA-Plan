@@ -1,4 +1,5 @@
-export const data = {
+export const data = 
+{
   "cuatrimestre": "2021C2 ",
   "timestamp": "28/10/2021 12:05:26",
   "materias": [

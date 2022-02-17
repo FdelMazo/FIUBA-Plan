@@ -25,7 +25,7 @@ jobs:
             echo "::set-output name=modified::false"
           fi
     - name: Create Pull Request
-      if: ${{ steps.check.outputs.modified == 'true'}
+      if: ${{ steps.check.outputs.modified == 'true'}}
       uses: peter-evans/create-pull-request@v3
       with: 
         add-paths: src/data/horarios.js

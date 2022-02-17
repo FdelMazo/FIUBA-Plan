@@ -16,17 +16,19 @@ Una vez terminados los cambios, con solo hacer un PR basta (porque la aplicació
 
 ## Actualización cuatrimestral de horarios
 
-Todos los cuatrimestres hay que actualizar los horarios de la aplicación. Para esto, se utiliza el notebook [`get_cursos.ipynb`](get_cursos.ipynb), que es un script en Python que llama a la API de [https://ofertahoraria.fi.uba.ar](https://ofertahoraria.fi.uba.ar) y consigue todos los horarios y los pone en `src/data/horarios.js`. La lista de materias por carrera se encuentra en `src/data/carreras.js` y esta hecha 'a mano' (no sale de ningun lado, más que de registros de cuatris anteriores). Esta lista es algo que no debería cambiar cuatrimestre a cuatrimestre, pero si una materia fuese a cambiar de código en el SIU o en ofertahoraria entonces habría que actualizar el archivo.
+Todos los cuatrimestres hay que actualizar los horarios de la aplicación (siempre teniendo en cuenta que los primeros horarios publicados suelen cambiar bastante porque se encuentran errores o hay modificaciones en la semana de inscripcion). Este proceso esta automatizado con github actions: todas las noches a las 12 de la noche el script [`get_cursos.ipynb`](get_cursos.ipynb) llama a la API de [https://ofertahoraria.fi.uba.ar](https://ofertahoraria.fi.uba.ar) y vierte los horarios nuevos en `src/data/horarios.js`. 
+
+Por otro lado, la lista de materias por carrera se encuentra en `src/data/carreras.js` y esta hecha 'a mano' (porque no sale de ningun lado, más que de registros de cuatris anteriores). Esta lista es algo que no debería cambiar cuatrimestre a cuatrimestre, pero si una materia fuese a cambiar de código entonces habría que actualizar ese archivo.
 
 ---
 
-De todas formas, si algún día cambia el código del ofertahoraria y se hace más difícil de llamra a la API, o se cae el servicio, o lo que sea, no importa cómo se consigan los datos, lo único importante es llegar a tener el `horarios.js` en sí, el cual exporta un json que tiene el siguiente formato:
+De todas formas, si algún día falla github actions, falla la API de ofertahoraria, el mantenedor se recibe y deja de prestarle atención a FIUBA, o cualquier otro inconveniente sucede, lo único que importa es mantener `src/data/horarios.js` actualizado. No importa cómo se consigan los datos hay que llegar a un json del siguiente formato:
 
 ```jsonc
 // Este json tiene que estar ordenado por claves, (logrado con el método de python `json.dumps(DATA, indent=2, ensure_ascii=False, sort_keys=True)`), de esta manéra los diffs van a ser mucho más legibles 
 {
   "cuatrimestre": "2020C2", // Nombre de Cuatrimestre, para la notificación al entrar al sitio ("Actualizado al 2020C2")
-  "timestamp": "2020-09-22 00:24:11.950205", // Un timestamp que se usa como identificador del json. Esto sirve para comparar contra la última actualización de horarios.
+  "timestamp": "28/10/2021 12:05:25", // Un timestamp que se usa como identificador del json. Esto sirve para comparar contra la última actualización de horarios.
   "materias": [ // Array de todas las materias de todas las carreras
     {
       "codigo": "7641", // Código de la materia, que es por el cual se la identifica para decidir qué carrera la contiene
@@ -40,7 +42,7 @@ De todas formas, si algún día cambia el código del ofertahoraria y se hace m�
   ],
   "cursos": [ // Array de todos los cursos de todas las materias de todas las carreras
     {
-      "docentes": "FERNANDEZ MARIA VERONICA, MARIÑO FERNANDO JAVIER, LOPEZ JOVE MARTIN, RUQUET JUAN ANDRES", // Lista de docentes. Esto es lo que más le sirve al alumno. (A nadie le sirve decir "Me anote al curso 3", todos quieren decir "Me anote con Acero")
+      "docentes": "XXX YYY, ZZZ", // Lista de docentes. Esto es lo que más le sirve al alumno. (A nadie le sirve decir "Me anote al curso 3", todos quieren decir "Me anote con Acero")
       "codigo": "29811", // Código del curso. Este código es único, y es como se lo identifica al curso, para poder meterlo dentro de cada materia
       "clases": [ // Array de cada clase del curso. Este es el dato que termina plasmado sobre el calendario en forma de 'event'. En un futuro, se puede agregar metadata de cada clase (en qué aula se cursa, en que sede, si es teórica/práctica, etc), pero por ahora optamos por el minimalismo
         {

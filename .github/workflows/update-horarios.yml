@@ -1,8 +1,9 @@
 name: Update Horarios
 
 on:
-  push:
-    branches: [ master ]
+  schedule:
+    # Every day at 00:00 GMT-3
+    - cron:  "0 3 * * *"
 
 jobs:
   build:

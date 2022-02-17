@@ -36,6 +36,7 @@ jobs:
         body: Este PR automático se fijó que los horarios de `ofertahoraria.fi.uba.ar/` cambiaron y los actualizá a la última versión.
         reviewers: FdelMazo, JDSanto
         draft: true
+        branch: actualizar-horarios-auto
 
 
 

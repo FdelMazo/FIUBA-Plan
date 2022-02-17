@@ -17,12 +17,20 @@ jobs:
     - run: pip install nbconvert==6.0.0rc0
     - name: Run Jupy
       run: jupyter nbconvert --to python --execute get_cursos.ipynb
+    - name: Check if there were modifications
+      id: check
+      run: |
+          if git status --porcelain | grep 'src/data/horarios.js'; then
+            echo "::set-output name=modified::true"
+          else
+            echo "::set-output name=modified::false"
+          fi
     - name: Create Pull Request
+      if: ${{ steps.check.outputs.modified == 'true'}
       uses: peter-evans/create-pull-request@v3
       with: 
         add-paths: src/data/horarios.js
         commit-message: Update horarios [auto]
-        delete-branch: true
         title: Actualizar Horarios [auto]
         author: GitHub <noreply@github.com>
         body: Este PR automático se fijó que los horarios de `ofertahoraria.fi.uba.ar/` cambiaron y los actualizá a la última versión.

@@ -219,51 +219,12 @@ const MateriasDrawer = (props) => {
                             <AlertTitle>Hola!</AlertTitle>
                             <AlertDescription px={5} display="block">
                               <Text>
-                                Este es el primo feo del
-                                <Link
-                                  isExternal
-                                  _hover={{
-                                    color: "primary.500",
-                                  }}
-                                  href="https://fede.dm/FIUBA-Map/"
-                                >
-                                  {" "}
-                                  FIUBA-Map{" "}
-                                  <ExternalLinkIcon
-                                    color="primary.500"
-                                    mx="2px"
-                                  />
-                                </Link>
-                                , y la verdad es que nunca me gusta como queda.
+                                Si encontrás algo feo, incorrecto, lento, erroneo...
+                                me decís?
                               </Text>
                               <Text>
-                                Si encontrás algo incorrecto o que no funciona,
-                                me avisas?
-                              </Text>
-                              <Text>
-                                Todos los horarios salen del
-                                <Link
-                                  isExternal
-                                  _hover={{
-                                    color: "primary.500",
-                                  }}
-                                  href="https://ofertahoraria.fi.uba.ar/"
-                                >
-                                  {" "}
-                                  sistema de FIUBA{" "}
-                                  <ExternalLinkIcon
-                                    color="primary.500"
-                                    mx="2px"
-                                  />
-                                </Link>
-                                , así que los comentarios del estilo 'ese
-                                profesor empieza una hora antes' los voy a
-                                ignorar.
-                              </Text>
-                              <Text>
-                                Pero, los comentarios de 'este horario figura en
-                                el SIU pero no en el FIUBA-Plan' me ayudan un
-                                montón.
+                                Si ves algo que te gustó, o tenes alguna sugerencia,
+                                también!
                               </Text>
                               <Text>
                                 Si querés que te responda, escribí tu

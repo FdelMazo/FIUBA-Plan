@@ -39,8 +39,8 @@ const SelectCarreras = () => {
           .map((c, index) => (
             <Box
               borderRadius={5}
-              _hover={{ bg: "gray.500" }}
-              color="primary.500"
+              _hover={{ bg: "hovercolor" }}
+              color={selectedCarreras.includes(c) ? "primary.500" : "gray.200"}
               cursor="pointer"
               onClick={() => toggleCarrera(c)}
               key={c}

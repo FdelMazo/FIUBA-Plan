@@ -58,6 +58,7 @@ const SelectMateria = (props) => {
           color="primary.500"
           fontFamily="body"
           placeholder="Buscar Materia..."
+          _placeholder={{ color: 'gray.200' }} 
         />
         <InputRightElement children={<SearchIcon color="primary.500" />} />
       </InputGroup>
@@ -82,8 +83,8 @@ const SelectMateria = (props) => {
             .map((materia) => (
               <Box
                 borderRadius={5}
-                _hover={{ bg: "gray.500" }}
-                color="primary.500"
+                _hover={{ bg: "hovercolor" }}
+                color={selectedMaterias.includes(materia.codigo) ? "primary.500" : "gray.200"}
                 fontSize="sm"
                 cursor="pointer"
                 onClick={() => toggleMateria(materia.codigo)}

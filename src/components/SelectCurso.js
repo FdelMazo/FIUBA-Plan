@@ -112,8 +112,8 @@ const SelectCurso = (props) => {
               >
                 <Box
                   borderRadius={5}
-                  _hover={{ bg: "gray.500" }}
-                  color={isActive ? color : "primary.500"}
+                  _hover={{ bg: "hovercolor" }}
+                  color={isActive ? color : "gray.200"}
                   cursor="pointer"
                   fontSize="xs"
                   px={2}
@@ -126,11 +126,10 @@ const SelectCurso = (props) => {
                     })}
                     key={item.codigo}
                   >
-                    {isActive && <CheckIcon mr={1} color={color} />}
+                    {isActive && <CheckIcon mr={1} />}
                     {isItemBlocked && (
                       <WarningTwoIcon
                         mr={1}
-                        color={isActive ? color : "primary.500"}
                       />
                     )}
                     {item.docentes}

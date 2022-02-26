@@ -33,6 +33,7 @@ const customTheme = extendTheme({
     calendarbg: "#f7f9fa",
     calendarbgdark: "#222d38",
     calendarbggrey: "#ededed",
+    hovercolor: "#e2e8f033",
   },
   config,
 });

@@ -305,6 +305,11 @@ const useData = () => {
   };
 
   const addHorarioExtra = ({ start, end }) => {
+    // We don't want simple clicks to trigger the creation of an event
+    // Limiting the time event to at least 60 minutes means the user dragged the mouse, instead of just clicking
+    const minutes = Math.floor(((end - start) / 1000) / 60);
+    if (minutes < 60) return
+
     const id = start.getTime() + end.getTime();
     const randomLetter = String.fromCharCode(
       65 + Math.floor(id % 23) + Math.floor(id % 3)

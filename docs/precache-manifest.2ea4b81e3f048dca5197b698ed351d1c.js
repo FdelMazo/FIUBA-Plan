@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7744b3c81ca72b30d4d26d52669e6a2b",
+    "revision": "454b356c65700a8591758eb219d9f157",
     "url": "/FIUBA-Plan/index.html"
   },
   {
-    "revision": "37b6a4317a559797db21",
+    "revision": "3002f2392e869e04f806",
     "url": "/FIUBA-Plan/static/css/2.97c47a0e.chunk.css"
   },
   {
-    "revision": "8627002e2f7fcdac7411",
+    "revision": "012e745a519d4f62f68c",
     "url": "/FIUBA-Plan/static/css/main.17294fb1.chunk.css"
   },
   {
-    "revision": "37b6a4317a559797db21",
-    "url": "/FIUBA-Plan/static/js/2.028022f3.chunk.js"
+    "revision": "3002f2392e869e04f806",
+    "url": "/FIUBA-Plan/static/js/2.ab46f5e3.chunk.js"
   },
   {
     "revision": "7ec473223f170a46f05a2cb4db6fe9ef",
-    "url": "/FIUBA-Plan/static/js/2.028022f3.chunk.js.LICENSE.txt"
+    "url": "/FIUBA-Plan/static/js/2.ab46f5e3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8627002e2f7fcdac7411",
-    "url": "/FIUBA-Plan/static/js/main.ef4f3740.chunk.js"
+    "revision": "012e745a519d4f62f68c",
+    "url": "/FIUBA-Plan/static/js/main.01a6b4f2.chunk.js"
   },
   {
     "revision": "eb83ed3fcff50053604e",

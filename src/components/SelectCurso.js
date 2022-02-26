@@ -33,6 +33,7 @@ const SelectCurso = (props) => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const items = React.useMemo(() => getCursosMateria(codigo), []);
   const materia = React.useMemo(() => getMateria(codigo), [codigo, getMateria]);
+  const allItemsBlocked = items.every((item) => isBlocked(item.codigo));
 
   const { isOpen, getItemProps, getToggleButtonProps, getMenuProps } =
     useSelect({
@@ -43,7 +44,20 @@ const SelectCurso = (props) => {
 
   return (
     <>
-      <Flex direction="row" justify="flex-end">
+      <Flex direction="row" justify="flex-end" alignItems="center">
+        {allItemsBlocked && (
+          <Tooltip placement="left" hasArrow label={
+            <>
+              <Text>Todos los cursos de esta materia</Text>
+              <Text>se solapan con el resto del plan</Text>
+            </>
+          }>
+            <WarningTwoIcon
+              color="primary.500"
+              mr={2}
+            />
+          </Tooltip>
+        )}
         <Box {...getToggleButtonProps()}>
           <Tooltip placement="left" hasArrow label={materia.nombre}>
             <Button

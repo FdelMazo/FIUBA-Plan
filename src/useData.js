@@ -378,6 +378,21 @@ const useData = () => {
     return false;
   };
 
+  // Función para imprimir todas las materias sin carrera
+  // React.useEffect(() => {
+  //   const allMateriasInCarreras = [];
+  //   const materiasSinCasa = [];
+  //   jsonCarreras.forEach((c) => {
+  //     allMateriasInCarreras.push(...c.materias);
+  //   });
+  //   jsonData.materias.forEach((m) => {
+  //     if (!allMateriasInCarreras.includes(m.codigo)) {
+  //       materiasSinCasa.push(m.codigo)
+  //     }
+  //   });
+  //   console.log(materiasSinCasa)
+  // }, []);
+
   return {
     toggleCarrera,
     testAll,

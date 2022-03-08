@@ -343,9 +343,9 @@ const useData = () => {
   const renombrarHorarioExtra = (evento, str) => {
     let nuevoNombre = str.trim() ? str.trim() : "EXTRA";
     let newExtras = [...extraEvents];
-    newExtras.find((e) => e.id === evento.id).materia = nuevoNombre;
+    newExtras.find((e) => e.id === evento.id && e.materia === evento.materia).materia = nuevoNombre;
     newExtras.find(
-      (e) => e.id === evento.id
+      (e) => e.id === evento.id && e.tooltip === evento.tooltip
     ).tooltip = `${nuevoNombre}\nACTIVIDAD EXTRACURRICULAR`;
     setExtraEvents(newExtras);
   };

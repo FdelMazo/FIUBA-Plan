@@ -360,7 +360,7 @@ const useData = () => {
 
   const isBlocked = (codigo) => {
     const curso = getCurso(codigo);
-    const eventos = events.filter((e) => e.curso.materia !== curso.materia);
+    const eventos = events.filter((e) => e.curso.materia !== curso.materia && e.curso.tabId === activeTabId);
     for (const clase of curso.clases) {
       const inicio = new Date(2018, 0, clase.dia);
       const [inicioHora, inicioMinutos] = clase.inicio.split(":");

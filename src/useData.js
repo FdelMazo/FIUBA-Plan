@@ -330,7 +330,7 @@ const useData = () => {
   };
 
   const removerHorarioExtra = (evento) => {
-    const newExtras = extraEvents.filter((e) => e.id !== evento.id);
+    const newExtras = extraEvents.filter((e) => e.id !== evento.id || e.materia !== evento.materia);
     setExtraEvents(newExtras);
     const newNoCursar = noCursar.filter(
       (item) =>

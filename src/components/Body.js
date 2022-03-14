@@ -3,6 +3,7 @@ import {
   Alert,
   Box,
   IconButton,
+  Link,
   Text,
   useColorModeValue,
   useDisclosure,
@@ -47,33 +48,40 @@ const Body = () => {
       position: "top-right",
       duration: 3000,
       render: () => (
-        <Alert
-          borderColor="drawerbg"
-          borderWidth={2}
-          borderRadius={5}
-          right={2}
-          status="success"
-          color="drawerbg"
-          flexDirection="column"
+        <Link
+          isExternal
+          _hover={{ border: "none" }}
+          href="https://ofertahoraria.fi.uba.ar//"
         >
-          <SmallCloseIcon
-            alignSelf="flex-end"
-            cursor="pointer"
-            onClick={() => {
-              if (toastIdRef.current) {
-                toast.close(toastIdRef.current);
-              }
-            }}
-            m="-8px"
-          />
+          <Alert
+            borderColor="drawerbg"
+            borderWidth={2}
+            borderRadius={5}
+            right={2}
+            status="success"
+            color="drawerbg"
+            flexDirection="column"
+          >
+            <SmallCloseIcon
+              alignSelf="flex-end"
+              cursor="pointer"
+              onClick={(e) => {
+                e.preventDefault()
+                if (toastIdRef.current) {
+                  toast.close(toastIdRef.current);
+                }
+              }}
+              m="-8px"
+            />
 
-          <Box>
-            <Text>Actualizado al {actualizacion.cuatrimestre}</Text>
-          </Box>
-          <Box>
-            <Text fontSize="sm">({actualizacion.timestamp})</Text>
-          </Box>
-        </Alert>
+            <Box>
+              <Text>Actualizado al {actualizacion.cuatrimestre}</Text>
+            </Box>
+            <Box>
+              <Text fontSize="sm">({actualizacion.timestamp})</Text>
+            </Box>
+          </Alert>
+        </Link>
       ),
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps

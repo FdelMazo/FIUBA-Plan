@@ -20,8 +20,9 @@ const SelectCurso = () => {
     removerHorariosExtra,
     removerHorarioExtra,
     renombrarHorarioExtra,
+    activeTabId
   } = React.useContext(DataContext);
-  const items = extraEvents;
+  const items = extraEvents.filter(e => e.curso.tabId === activeTabId);
   const { isOpen, getItemProps, getToggleButtonProps, getMenuProps } =
     useSelect({
       stateReducer,
@@ -87,6 +88,9 @@ const SelectCurso = () => {
                 item,
                 index,
               })}
+              onClick={(ev) => {
+                ev.stopPropagation();
+              }}
             >
               <Editable
                 placeholder="EXTRA"

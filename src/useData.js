@@ -254,6 +254,26 @@ const useData = () => {
       id += 1;
     }
     setTabs([...tabs, { id }]);
+    const clonedSelectedCursos = selectedCursos.filter(c => c.tabId === activeTabId).map(c => {
+      const newC = JSON.parse(JSON.stringify(c))
+      newC.tabId = id
+      return newC
+    });
+    const clonedNoCursar = noCursar.filter(c => c.tabId === activeTabId).map(c => {
+      const newC = JSON.parse(JSON.stringify(c))
+      newC.tabId = id
+      return newC
+    });
+    const clonedExtraEvents = extraEvents.filter(e => e.curso.tabId === activeTabId).map(e => {
+      const newE = JSON.parse(JSON.stringify(e))
+      newE.curso.tabId = id
+      newE.start = new Date(e.start)
+      newE.end = new Date(e.end)
+      return newE
+    });
+    setSelectedCursos([...selectedCursos, ...clonedSelectedCursos]);
+    setNoCursar([...noCursar, ...clonedNoCursar]);
+    setExtraEvents([...extraEvents, ...clonedExtraEvents]);
   };
 
   const selectTab = (id) => {
@@ -310,7 +330,7 @@ const useData = () => {
     const minutes = Math.floor(((end - start) / 1000) / 60);
     if (minutes < 60) return
 
-    const id = start.getTime() + end.getTime();
+    const id = start.getTime() + end.getTime() + (Math.random() * 100);
     const randomLetter = String.fromCharCode(
       65 + Math.floor(id % 23) + Math.floor(id % 3)
     );
@@ -324,13 +344,13 @@ const useData = () => {
         materia: "ACTIVIDAD " + randomLetter,
         tooltip: `ACTIVIDAD ${randomLetter}\nACTIVIDAD EXTRACURRICULAR`,
         curso: { tabId: activeTabId },
-        color: colorHash.hex(start + end),
+        color: colorHash.hex(id.toString()),
       },
     ]);
   };
 
   const removerHorarioExtra = (evento) => {
-    const newExtras = extraEvents.filter((e) => e.id !== evento.id || e.materia !== evento.materia);
+    const newExtras = extraEvents.filter((e) => e.id !== evento.id || e.materia !== evento.materia || (e.id === evento.id && e.curso.tabId !== activeTabId));
     setExtraEvents(newExtras);
     const newNoCursar = noCursar.filter(
       (item) =>
@@ -343,7 +363,7 @@ const useData = () => {
   const renombrarHorarioExtra = (evento, str) => {
     let nuevoNombre = str.trim() ? str.trim() : "EXTRA";
     let newExtras = [...extraEvents];
-    newExtras.find((e) => e.id === evento.id && e.materia === evento.materia).materia = nuevoNombre;
+    newExtras.find((e) => e.id === evento.id && e.materia === evento.materia && e.curso.tabId === activeTabId).materia = nuevoNombre;
     newExtras.find(
       (e) => e.id === evento.id && e.tooltip === evento.tooltip
     ).tooltip = `${nuevoNombre}\nACTIVIDAD EXTRACURRICULAR`;

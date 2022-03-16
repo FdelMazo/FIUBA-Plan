@@ -1,4 +1,4 @@
-import { CheckIcon, ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
+import { CheckIcon, ChevronDownIcon, ChevronRightIcon, ChevronUpIcon } from "@chakra-ui/icons";
 import { Box, Button, List } from "@chakra-ui/react";
 import { useSelect } from "downshift";
 import React from "react";
@@ -51,8 +51,12 @@ const SelectCarreras = () => {
                   index,
                 })}
               >
+                {selectedCarreras.includes(c) ? (
+                  <CheckIcon mr={1} />
+                ) : (
+                  <ChevronRightIcon mr={1} />
+                )}
                 {c}
-                {selectedCarreras.includes(c) && <CheckIcon ml={2} />}
               </li>
             </Box>
           ))}

@@ -132,6 +132,9 @@ const SelectCurso = (props) => {
                   fontSize="xs"
                   px={2}
                   onClick={() => toggleCurso(item)}
+                  _notLast={{
+                    borderBottom: "1px dashed violet",
+                  }}
                 >
                   <li
                     {...getItemProps({

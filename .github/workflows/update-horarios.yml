@@ -12,9 +12,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - run: pip install markupsafe==2.0.1
+    - run: pip install nbconvert==6.0.0rc0
     - run: pip install requests
     - run: pip install jupyter
-    - run: pip install nbconvert==6.0.0rc0
     - name: Run Jupy
       run: jupyter nbconvert --to python --execute get_cursos.ipynb
     - name: Check if there were modifications

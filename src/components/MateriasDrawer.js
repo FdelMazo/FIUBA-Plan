@@ -223,11 +223,11 @@ const MateriasDrawer = (props) => {
                                 me decís?
                               </Text>
                               <Text>
-                                Si ves algo que te gustó, o tenes alguna sugerencia,
+                                Si ves algo que te gustó, o tenes alguna idea,
                                 también!
                               </Text>
                               <Text>
-                                Estas sugerencias son *anonimas*, si querés que te responda, escribime tu
+                                Estas sugerencias son *anónimas*. Si querés que te responda, escribime tu
                                 mail o telegram!
                               </Text>
                               <form

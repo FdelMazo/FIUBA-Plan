@@ -227,8 +227,8 @@ const MateriasDrawer = (props) => {
                                 también!
                               </Text>
                               <Text>
-                                Si querés que te responda, escribí tu
-                                mail/telegram/algo.
+                                Estas sugerencias son *anonimas*, si querés que te responda, escribime tu
+                                mail o telegram!
                               </Text>
                               <form
                                 onSubmit={(t) => {

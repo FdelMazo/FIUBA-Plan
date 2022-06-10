@@ -38,6 +38,6 @@ jobs:
         reviewers: FdelMazo, JDSanto
         draft: true
         branch: actualizar-horarios-auto
-
+    - uses: gautamkrishnar/keepalive-workflow@master
 
 

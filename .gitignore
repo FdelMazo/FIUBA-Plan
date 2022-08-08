@@ -3,3 +3,4 @@ build/
 .ipynb_checkpoints
 data/clean/
 data/horarios.js
+.venv

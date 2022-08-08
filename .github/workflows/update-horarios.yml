@@ -1,6 +1,7 @@
 name: Update Horarios
 
 on:
+  workflow_dispatch:
   schedule:
     # Every day at 00:00 GMT-3
     - cron:  "0 3 * * *"
@@ -36,5 +37,3 @@ jobs:
         draft: true
         branch: actualizar-horarios-auto
     - uses: gautamkrishnar/keepalive-workflow@master
-
-

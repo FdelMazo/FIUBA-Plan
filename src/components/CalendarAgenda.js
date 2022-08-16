@@ -23,7 +23,7 @@ function Agenda({
     const { event: Event, date: AgendaDate } = components;
 
     events = events.filter((e) =>
-      inRange(e, dates.startOf(day, "day"), dates.endOf(day, "day"), accessors)
+      inRange(e, dates.startOf(day, "day"), dates.endOf(day, "day"), accessors, localizer)
     );
 
     return events.map((event, idx) => {
@@ -116,7 +116,7 @@ function Agenda({
 
   let range = dates.range(date, end, "day");
 
-  events = events.filter((event) => inRange(event, date, end, accessors));
+  events = events.filter((event) => inRange(event, date, end, accessors, localizer));
 
   events.sort((a, b) => +accessors.start(a) - +accessors.start(b));
 

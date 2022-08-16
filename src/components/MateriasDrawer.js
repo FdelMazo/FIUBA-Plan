@@ -223,7 +223,7 @@ const MateriasDrawer = (props) => {
                                 me decís?
                               </Text>
                               <Text>
-                                Si ves algo que te gustó, o tenes alguna idea,
+                                Si ves algo que te gustó, o tenés alguna idea,
                                 también!
                               </Text>
                               <Text>
@@ -258,7 +258,7 @@ const MateriasDrawer = (props) => {
                                 </Flex>
                               </form>
                               <Text fontSize="sm" mt={2}>
-                                ¿Usás Github? me ayudás mucho más levantando un
+                                ¿Usás Github? Me ayudás mucho más levantando un
                                 issue{" "}
                                 <Link
                                   isExternal

@@ -97,7 +97,7 @@ const SelectCurso = (props) => {
           borderRadius={5}
           borderColor="primary.500"
           style={{
-            maxHeight: "10em",
+            maxHeight: "18em",
             overflowY: "scroll",
           }}
         >
@@ -125,7 +125,7 @@ const SelectCurso = (props) => {
                 key={item.codigo}
               >
                 <Box
-                  borderRadius={5}
+                  py={1}
                   _hover={{ bg: "hovercolor" }}
                   color={isActive ? color : "gray.200"}
                   cursor="pointer"

@@ -295,7 +295,7 @@ const useData = () => {
   const getColor = (codigo) => {
     let curso = getCurso(codigo);
     if (!curso) return null;
-    return colorHash.hex(curso.codigo + curso.docentes);
+    return colorHash.hex(curso.clases + curso.codigo + curso.docentes);
   };
 
   const getNHoras = (tabId) => {

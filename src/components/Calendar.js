@@ -6,6 +6,12 @@ import {
   EditablePreview,
   Flex,
   IconButton,
+  Link,
+  Popover,
+  PopoverArrow,
+  PopoverBody,
+  PopoverContent,
+  PopoverTrigger,
   Tab,
   Tabs,
   Text,
@@ -44,6 +50,7 @@ const MyCalendar = (props) => {
     noCursar,
     getColor,
     addHorarioExtra,
+    actualizacion,
   } = React.useContext(DataContext);
   const localizer = momentLocalizer(moment);
   const { width } = useWindowSize();
@@ -132,30 +139,53 @@ const MyCalendar = (props) => {
 
   const TabSystem = (props) => {
     return (
-      <Tabs
-        index={tabs.map((t) => t.id).indexOf(activeTabId)}
-        key={tabs.length}
-        colorScheme="purple"
-        onChange={(index) => {
-          selectTab(tabs[index]?.id || 0);
-        }}
-      >
-        <Flex flexWrap="wrap" borderBottom="2px solid" borderColor="inherit">
-          {tabs.map((tab, index) => (
-            <CustomTab key={tab.id} tab={tab} index={index} />
-          ))}
+      <Flex borderBottom="2px solid" borderColor="inherit" justifyContent="space-between">
+        <Tabs
+          index={tabs.map((t) => t.id).indexOf(activeTabId)}
+          key={tabs.length}
+          colorScheme="purple"
+          onChange={(index) => {
+            selectTab(tabs[index]?.id || 0);
+          }}
+        >
+          <Flex flexWrap="wrap">
+            {tabs.map((tab, index) => (
+              <CustomTab key={tab.id} tab={tab} index={index} />
+            ))}
 
-          {tabs.length < 10 && (
-            <IconButton
-              alignSelf="center"
-              variant="ghost"
-              colorScheme="purple"
-              onClick={() => addTab()}
-              icon={<AddIcon />}
-            />
-          )}
-        </Flex>
-      </Tabs>
+            {tabs.length < 5 && (
+              <IconButton
+                alignSelf="center"
+                variant="ghost"
+                colorScheme="purple"
+                onClick={() => addTab()}
+                icon={<AddIcon />}
+              />
+            )}
+          </Flex>
+        </Tabs>
+        <Link
+          alignSelf="center"
+          px={4}
+          isExternal
+          _hover={{ border: "none" }}
+          href="https://ofertahoraria.fi.uba.ar/"
+        >
+          <Popover placement="bottom" trigger="hover">
+            <PopoverTrigger>
+              <Text>Actualizado al: <strong>{actualizacion.cuatrimestre}</strong></Text>
+            </PopoverTrigger>
+            <PopoverContent borderColor="primary.500" mr={2}>
+              <PopoverArrow bg="primary.500" />
+              <PopoverBody>
+                <Text>El <strong>FIUBA-Plan</strong> actualiza sus horarios desde <strong>ofertahoraria</strong>, un servicio hecho por FIUBA que puede no estar siempre actualizado frente a los horarios canónicos, que se ven en el SIU.</Text>
+                <br />
+                <Text>Última Actualización: <strong>{actualizacion.timestamp}</strong></Text>
+              </PopoverBody>
+            </PopoverContent>
+          </Popover>
+        </Link>
+      </Flex>
     );
   };
 

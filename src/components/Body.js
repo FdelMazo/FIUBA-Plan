@@ -1,13 +1,9 @@
-import { AddIcon, SmallCloseIcon } from "@chakra-ui/icons";
+import { AddIcon } from "@chakra-ui/icons";
 import {
-  Alert,
   Box,
   IconButton,
-  Link,
-  Text,
   useColorModeValue,
   useDisclosure,
-  useToast,
 } from "@chakra-ui/react";
 import "moment/locale/es";
 import React from "react";
@@ -19,12 +15,10 @@ import Calendar from "./Calendar";
 import MateriasDrawer from "./MateriasDrawer";
 
 const Body = () => {
-  const { actualizacion, activeTabId, events } = React.useContext(DataContext);
+  const { activeTabId, events } = React.useContext(DataContext);
   const [useAgenda, setUseAgenda] = React.useState(false);
   const { width } = useWindowSize();
   const { isOpen, onToggle, onClose } = useDisclosure();
-  const toast = useToast();
-  const toastIdRef = React.useRef();
 
   const escKey = React.useCallback(
     (event) => {
@@ -42,50 +36,6 @@ const Body = () => {
       document.removeEventListener("keydown", escKey, false);
     };
   }, [escKey]);
-
-  React.useEffect(() => {
-    toastIdRef.current = toast({
-      position: "top-right",
-      duration: 3000,
-      render: () => (
-        <Link
-          isExternal
-          _hover={{ border: "none" }}
-          href="https://ofertahoraria.fi.uba.ar//"
-        >
-          <Alert
-            borderColor="drawerbg"
-            borderWidth={2}
-            borderRadius={5}
-            right={2}
-            status="success"
-            color="drawerbg"
-            flexDirection="column"
-          >
-            <SmallCloseIcon
-              alignSelf="flex-end"
-              cursor="pointer"
-              onClick={(e) => {
-                e.preventDefault()
-                if (toastIdRef.current) {
-                  toast.close(toastIdRef.current);
-                }
-              }}
-              m="-8px"
-            />
-
-            <Box>
-              <Text>Actualizado al {actualizacion.cuatrimestre}</Text>
-            </Box>
-            <Box>
-              <Text fontSize="sm">({actualizacion.timestamp})</Text>
-            </Box>
-          </Alert>
-        </Link>
-      ),
-    });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   React.useEffect(() => {
     setUseAgenda(width < 1000);

@@ -13,7 +13,7 @@
     "framer-motion": "^4.1.17",
     "moment": "^2.29.4",
     "react": "^16.13.1",
-    "react-big-calendar": "^1.5.0",
+    "react-big-calendar": "1.0.0",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.3",
     "react-snowfall": "^1.1.1"

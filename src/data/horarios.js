@@ -802,7 +802,7 @@ export const data =
         }
       ],
       "codigo": "6106-CURSO: 29 ESPECIAL PARA RECURSANTES",
-      "docentes": "GARCIA, JEMINA MARÍA (Profesor/a Adjunto/a) - ALBERT, RAYMUNDO JOSE (Ayudante 1ro/a) - DELLA VALLE, EUGENIO ANDRÉS (Ayudante 2do/a)",
+      "docentes": "GARCIA, JEMINA MARÍA (Profesor/a Adjunto/a) - ALBERT, RAYMUNDO JOSE (Ayudante 1ro/a) - DELLA VALLE, EUGENIO ANDRÉS (Ayudante 2do/a) - DELLA VALLE, EUGENIO ANDRÉS (Ayudante 2do/a)",
       "materia": "6106"
     },
     {
@@ -1559,7 +1559,7 @@ export const data =
         }
       ],
       "codigo": "6109-CURSO: 29 ESPECIAL PARA RECURSANTES",
-      "docentes": "GARCIA, JEMINA MARÍA (Profesor/a Adjunto/a) - ALBERT, RAYMUNDO JOSE (Ayudante 1ro/a) - DELLA VALLE, EUGENIO ANDRÉS (Ayudante 2do/a)",
+      "docentes": "GARCIA, JEMINA MARÍA (Profesor/a Adjunto/a) - ALBERT, RAYMUNDO JOSE (Ayudante 1ro/a) - DELLA VALLE, EUGENIO ANDRÉS (Ayudante 2do/a) - DELLA VALLE, EUGENIO ANDRÉS (Ayudante 2do/a)",
       "materia": "6109"
     },
     {
@@ -11227,7 +11227,7 @@ export const data =
         }
       ],
       "codigo": "8103-CURSO: 29 ESPECIAL PARA RECURSANTES",
-      "docentes": "GARCIA, JEMINA MARÍA (Profesor/a Adjunto/a) - ALBERT, RAYMUNDO JOSE (Ayudante 1ro/a) - DELLA VALLE, EUGENIO ANDRÉS (Ayudante 2do/a)",
+      "docentes": "GARCIA, JEMINA MARÍA (Profesor/a Adjunto/a) - ALBERT, RAYMUNDO JOSE (Ayudante 1ro/a) - DELLA VALLE, EUGENIO ANDRÉS (Ayudante 2do/a) - DELLA VALLE, EUGENIO ANDRÉS (Ayudante 2do/a)",
       "materia": "8103"
     },
     {
@@ -11295,7 +11295,7 @@ export const data =
         }
       ],
       "codigo": "8104-CURSO: 29 ESPECIAL PARA RECURSANTES",
-      "docentes": "GARCIA, JEMINA MARÍA (Profesor/a Adjunto/a) - ALBERT, RAYMUNDO JOSE (Ayudante 1ro/a) - DELLA VALLE, EUGENIO ANDRÉS (Ayudante 2do/a)",
+      "docentes": "GARCIA, JEMINA MARÍA (Profesor/a Adjunto/a) - ALBERT, RAYMUNDO JOSE (Ayudante 1ro/a) - DELLA VALLE, EUGENIO ANDRÉS (Ayudante 2do/a) - DELLA VALLE, EUGENIO ANDRÉS (Ayudante 2do/a)",
       "materia": "8104"
     },
     {
@@ -11701,7 +11701,7 @@ export const data =
         }
       ],
       "codigo": "8116-CURSO: 29 ESPECIAL PARA RECURSANTES",
-      "docentes": "GARCIA, JEMINA MARÍA (Profesor/a Adjunto/a) - ALBERT, RAYMUNDO JOSE (Ayudante 1ro/a) - DELLA VALLE, EUGENIO ANDRÉS (Ayudante 2do/a)",
+      "docentes": "GARCIA, JEMINA MARÍA (Profesor/a Adjunto/a) - ALBERT, RAYMUNDO JOSE (Ayudante 1ro/a) - DELLA VALLE, EUGENIO ANDRÉS (Ayudante 2do/a) - DELLA VALLE, EUGENIO ANDRÉS (Ayudante 2do/a)",
       "materia": "8116"
     },
     {
@@ -12321,7 +12321,7 @@ export const data =
         }
       ],
       "codigo": "8203-CURSO: 01 - Ozols",
-      "docentes": "OZOLS, ANDRES (Profesor/a Adjunto/a) - PUCEIRO, ALEJANDRO JOSE LUIS (Ayudante 1ro/a) - MALMORIA, MARIANO ESTEBAN NOÉ (Ayudante 1ro/a) - FREIRE, FACUNDO (Ayudante 2do/a) - DELLA VALLE, EUGENIO ANDRÉS (Ayudante 2do/a)",
+      "docentes": "OZOLS, ANDRES (Profesor/a Adjunto/a) - PUCEIRO, ALEJANDRO JOSE LUIS (Ayudante 1ro/a) - MALMORIA, MARIANO ESTEBAN NOÉ (Ayudante 1ro/a) - DELLA VALLE, EUGENIO ANDRÉS (Ayudante 2do/a) - FREIRE, FACUNDO (Ayudante 2do/a) - DELLA VALLE, EUGENIO ANDRÉS (Ayudante 2do/a)",
       "materia": "8203"
     },
     {

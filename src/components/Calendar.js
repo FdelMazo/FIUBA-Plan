@@ -207,6 +207,7 @@ const MyCalendar = (props) => {
         toolbar: TabSystem,
       }}
       onSelectEvent={(e) => {
+        if (!e.title) return;
         toggleNoCursar(e.id);
       }}
       onSelectSlot={addHorarioExtra}

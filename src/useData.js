@@ -345,6 +345,7 @@ const useData = () => {
         tooltip: `ACTIVIDAD ${randomLetter}\nACTIVIDAD EXTRACURRICULAR`,
         curso: { tabId: activeTabId },
         color: colorHash.hex(id.toString()),
+        isExtra: true,
       },
     ]);
   };

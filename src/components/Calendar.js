@@ -15,6 +15,7 @@ import {
   Tab,
   Tabs,
   Text,
+  CloseButton,
   Tooltip,
   useTab,
 } from "@chakra-ui/react";
@@ -50,6 +51,7 @@ const MyCalendar = (props) => {
     noCursar,
     getColor,
     addHorarioExtra,
+    removerHorarioExtra,
     actualizacion,
   } = React.useContext(DataContext);
   const localizer = momentLocalizer(moment);
@@ -126,14 +128,23 @@ const MyCalendar = (props) => {
         </Text>
       </Box>
     ) : (
-      <Box>
-        <Text noOfLines={[1, 2, 3]} className="rbc-agenda-event-cell" mb={2}>
-          {props.event.materia}
-        </Text>
-        <Text noOfLines={[1, 3, 5]} className="rbc-agenda-event-cell-sub">
-          {props.event.title}
-        </Text>
-      </Box>
+        <>
+          {props.event.isExtra &&
+            <CloseButton float="right" mt="-20px" size="sm" onClick={(ev) => {
+              ev.stopPropagation();
+              removerHorarioExtra(props.event)
+            }} />
+          }
+
+          <Box>
+            <Text noOfLines={[1, 2, 3]} className="rbc-agenda-event-cell" mb={2}>
+              {props.event.materia}
+            </Text>
+            <Text noOfLines={[1, 3, 5]} className="rbc-agenda-event-cell-sub">
+              {props.event.title}
+            </Text>
+          </Box>
+        </>
     );
   };
 

@@ -6,8 +6,6 @@ Organizador de horarios de la Facultad de Ingenieria
 
 ![](public/fplan.png)
 
-Esta aplicación está hecha en React y todo su código fuente está en `src` (y dos archivos sueltos en `public`), y para la interfaz usa [Chakra](https://chakra-ui.com/). El sitio compilado en sí está en el directorio `docs`, y esto es lo que se sirve con github pages.
-
 ## Desarrollo
 
 Para agregar un feature o fixear un issue hay que clonar el repositorio, instalar las dependencias con `npm install` y después correr la aplicación con `npm start`. En `localhost:3000/` va a estar corriendo la aplicación constantemente, y toda modificación que se haga al código se va a ver reflejada en la página.

@@ -69,7 +69,9 @@ const SelectCurso = (props) => {
             width="200px"
             rightIcon={isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
           >
-            <Text fontSize="xs" isTruncated>{materia.nombre}</Text>
+            <Text fontSize="xs" isTruncated _hover={{ whiteSpace: "normal" }}>
+              {materia.nombre}
+            </Text>
           </Button>
         </Box>
 

@@ -45,6 +45,7 @@ const SelectCurso = () => {
               variant="outline"
               borderColor="primary"
               color="primary.500"
+              fontSize="xs"
               rightIcon={isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
             >
               EXTRA

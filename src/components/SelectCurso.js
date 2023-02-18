@@ -59,18 +59,18 @@ const SelectCurso = (props) => {
           </Tooltip>
         )}
         <Box {...getToggleButtonProps()}>
-          <Tooltip placement="left" hasArrow label={materia.nombre}>
-            <Button
-              my={2}
-              colorScheme="primary"
-              variant="outline"
-              borderColor="primary"
-              color="primary.500"
-              rightIcon={isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
-            >
-              {materia.codigo}
-            </Button>
-          </Tooltip>
+          <Button
+            justifyContent={"space-between"}
+            my={2}
+            colorScheme="primary"
+            variant="outline"
+            borderColor="primary"
+            color="primary.500"
+            width="200px"
+            rightIcon={isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
+          >
+            <Text fontSize="xs" isTruncated>{materia.nombre}</Text>
+          </Button>
         </Box>
 
         <Tooltip placement="top" label="Remover de todos los planes">

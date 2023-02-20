@@ -62,13 +62,14 @@ const SelectCurso = (props) => {
           <Button
             justifyContent={"space-between"}
             my={2}
+            px={2}
             colorScheme="primary"
             variant="outline"
             borderColor="primary"
             color="primary.500"
             width="200px"
             _hover={{ "&>p": { whiteSpace: "normal" }, bg: "var(--chakra-colors-primary-50)" }}
-            rightIcon={isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
+            rightIcon={isOpen ? <ChevronUpIcon /> : <><Text alignSelf="center" fontSize="x-small">({items.length})</Text><ChevronDownIcon /></>}
           >
             <Text fontSize="xs" isTruncated>
               {materia.nombre}

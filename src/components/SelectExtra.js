@@ -9,6 +9,7 @@ import {
   IconButton,
   List,
   Tooltip,
+  Text,
 } from "@chakra-ui/react";
 import { useSelect } from "downshift";
 import React from "react";
@@ -41,14 +42,14 @@ const SelectCurso = () => {
           >
             <Button
               my={2}
+              px={2}
               colorScheme="primary"
               variant="outline"
               borderColor="primary"
               color="primary.500"
-              fontSize="xs"
               rightIcon={isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
             >
-              EXTRA
+              <Text fontSize="xs">EXTRA</Text>
             </Button>
           </Tooltip>
         </Box>

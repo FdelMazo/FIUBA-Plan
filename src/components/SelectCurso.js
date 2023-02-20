@@ -67,9 +67,10 @@ const SelectCurso = (props) => {
             borderColor="primary"
             color="primary.500"
             width="200px"
+            _hover={{ "&>p": { whiteSpace: "normal" }, bg: "var(--chakra-colors-primary-50)" }}
             rightIcon={isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
           >
-            <Text fontSize="xs" isTruncated _hover={{ whiteSpace: "normal" }}>
+            <Text fontSize="xs" isTruncated>
               {materia.nombre}
             </Text>
           </Button>

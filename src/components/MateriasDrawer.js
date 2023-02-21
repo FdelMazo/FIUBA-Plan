@@ -5,6 +5,7 @@ import {
   ExternalLinkIcon,
   MoonIcon,
   SunIcon,
+  LinkIcon,
 } from "@chakra-ui/icons";
 import {
   Alert,
@@ -22,6 +23,7 @@ import {
   Flex,
   Icon,
   IconButton,
+  Input,
   LightMode,
   Link,
   Tag,
@@ -30,6 +32,7 @@ import {
   Text,
   Textarea,
   Tooltip,
+  useClipboard,
   useColorMode,
   useColorModeValue,
   useToast,
@@ -65,11 +68,14 @@ const MateriasDrawer = (props) => {
     activeTabId,
     selectedCursos,
     extraEvents,
+    permalink
   } = React.useContext(DataContext);
   const { toggleColorMode } = useColorMode();
   const toast = useToast();
   const bugToast = React.useRef();
+  const permalinkToast = React.useRef();
   const [showGracias, setShowGracias] = React.useState(false);
+  const { onCopy } = useClipboard(permalink);
 
   const buscarMateriaRef = React.useRef();
 
@@ -131,15 +137,83 @@ const MateriasDrawer = (props) => {
           </Flex>
 
           <DrawerFooter p={4} flex justifyContent="space-between">
-            <Tooltip label="Cambiar vista" placement="top">
-              <IconButton
-                variant="outline"
-                colorScheme="primary"
-                icon={<CalendarIcon />}
-                onClick={() => setUseAgenda(!useAgenda)}
-              />
-            </Tooltip>
+            <Box>
+              <Tooltip label="Cambiar vista" placement="top">
+                <IconButton
+                  mr={1}
+                  variant="outline"
+                  colorScheme="primary"
+                  icon={<CalendarIcon />}
+                  onClick={() => setUseAgenda(!useAgenda)}
+                />
+              </Tooltip>
 
+              <Tooltip label="Permalink" placement="top">
+                <IconButton
+                  variant="ghost"
+                  colorScheme="primary"
+                  size="sm"
+                  icon={<LinkIcon />}
+                  onClick={() => {
+                    onClose();
+                    toast.close(permalinkToast.current);
+                    return (permalinkToast.current = toast({
+                      render: (props) => (
+                        <Alert
+                          borderRadius={6}
+                          p={8}
+                          mb="4em"
+                          borderColor="primary.300"
+                          borderWidth={2}
+                          bg="drawerbg"
+                          color="white"
+                        >
+                          <Box flex="1">
+                            <AlertTitle>Permalink</AlertTitle>
+                            <AlertDescription px={5} display="block">
+                              <Text>
+                                Este es tu permalink. Entrando acá vas a poder ver <em>exactamente</em> lo que estas viendo ahora, desde cualquier celular o cualquier otra computadora.
+                              </Text>
+                              <Text>
+                                Eso sí, entrando acá <strong>se pisan todos los datos</strong> que tenes al momento de entrar al link.
+                              </Text>
+                              <Text>
+                                O sea, si se lo pasas a un compañero, avisale que entre en alguna ventana privada así no se le pisan los datos!
+                              </Text>
+                              <Text>
+                                Este feature es super experimental... si lo usaste, te ande o no te ande, me contás como te funcionó, que opinás, y desde que browser estás? Gracias!!
+                              </Text>
+
+                              <Flex alignItems="center" mt={1}>
+                                <Input
+                                  isReadOnly
+                                  value={permalink}
+                                  borderColor="primary.500"
+                                  cursor="copy"
+                                  title="Copiar Permalink"
+                                  onClick={() => { onCopy(); toast.close(props.id) }}
+                                />
+                              </Flex>
+                            </AlertDescription>
+                          </Box>
+                          <CloseButton
+                            color="primary.500"
+                            onClick={() => toast.close(props.id)}
+                            position="absolute"
+                            right="8px"
+                            top="8px"
+                          />
+                        </Alert>
+                      ),
+                      status: "info",
+                      position: "bottom",
+                      duration: null,
+                      isClosable: true,
+                    }));
+                  }}
+                />
+              </Tooltip>
+            </Box>
             <Box textAlign="right">
               <Tooltip
                 label={`${useColorModeValue("Dark", "Light")} theme`}

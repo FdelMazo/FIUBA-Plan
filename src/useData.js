@@ -3,7 +3,8 @@ import ColorHash from "color-hash";
 import React from "react";
 import { carreras as jsonCarreras } from "./data/carreras";
 import { data as jsonData } from "./data/horarios";
-
+import { Buffer } from 'buffer'
+import pako from 'pako'
 const toggler = (arr, setArr, item) => {
   let newArr = [];
 
@@ -79,6 +80,7 @@ const useData = () => {
 
   const [activeTabId, setActiveTabId] = React.useState(0);
   const [tabs, setTabs] = React.useState(select("tabs") || [{ id: 0 }]);
+  const [permalink, setPermalink] = React.useState("");
 
   const colorHash = new ColorHash({
     lightness: [0.6, 0.65, 0.7, 0.75, 0.8, 0.85],
@@ -86,18 +88,60 @@ const useData = () => {
   });
 
   React.useEffect(() => {
+    if (window.location.hash) {
+      // hash => b64 => pako => json
+      const savedataPako = Buffer.from(window.location.hash.slice(1), 'base64')
+      const savedata = JSON.parse(pako.ungzip(savedataPako, { to: 'string' }));
+
+      // El permalink no esta pensado para más de un uso => Pongo el url original
+      // eslint-disable-next-line no-restricted-globals
+      history.pushState("", document.title, window.location.pathname + window.location.search);
+
+      // Si me pasaron estado de otro cuatri, no hago nada
+      if (savedata.cuatrimestre !== jsonData.cuatrimestre) {
+        return
+      }
+
+      // Si no tengo cursos seleccionados, uso el link
+      // Si mis cursos seleccionados son los mismos que los del link, es como si entre dos veces seguidas a la pagina, uso el link
+      // Si tengo otros cursos seleccionados, pregunto
+      if (!selectedCursos.length ||
+        (selectedCursos.toString() === savedata.selectedCursos.toString()) ||
+        (window.confirm("Pisar tus datos con los del permalink ingresado?"))) {
+        setSelectedCarreras(savedata.selectedCarreras);
+        setSelectedMaterias(savedata.selectedMaterias);
+        setSelectedCursos(savedata.selectedCursos);
+        setNoCursar(savedata.noCursar);
+        setTabs(savedata.tabs);
+        setExtraEvents(savedata.extraEvents.map((e) => ({
+          ...e,
+          start: new Date(e.start),
+          end: new Date(e.end),
+        })))
+      }
+
+    }
+  }, [])
+
+  React.useEffect(() => {
+    const savedata = {
+      cuatrimestre: jsonData.cuatrimestre,
+      selectedCarreras,
+      selectedMaterias,
+      selectedCursos,
+      noCursar,
+      tabs,
+      extraEvents,
+    }
     window.localStorage.setItem(
       "fiubaplan",
-      JSON.stringify({
-        cuatrimestre: jsonData.cuatrimestre,
-        selectedCarreras,
-        selectedMaterias,
-        selectedCursos,
-        noCursar,
-        tabs,
-        extraEvents,
-      })
+      JSON.stringify(savedata)
     );
+
+    // json => pako => b64 => hash
+    const savedataPako = pako.gzip(JSON.stringify(savedata), { to: 'string' })
+    const savedatab64 = Buffer.from(savedataPako).toString('base64');
+    setPermalink(`https://fede.dm/FIUBA-Plan/#${savedatab64}`);
   }, [
     selectedCarreras,
     selectedMaterias,
@@ -445,6 +489,7 @@ const useData = () => {
     removerHorariosExtra,
     renombrarHorarioExtra,
     isBlocked,
+    permalink,
   };
 };
 

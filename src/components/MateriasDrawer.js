@@ -70,7 +70,7 @@ const MateriasDrawer = (props) => {
     extraEvents,
     permalink
   } = React.useContext(DataContext);
-  const { toggleColorMode } = useColorMode();
+  const { colorMode, toggleColorMode } = useColorMode();
   const toast = useToast();
   const bugToast = React.useRef();
   const permalinkToast = React.useRef();
@@ -163,10 +163,10 @@ const MateriasDrawer = (props) => {
                           borderRadius={6}
                           p={8}
                           mb="4em"
-                          borderColor="primary.300"
+                          borderColor="primary.400"
                           borderWidth={2}
-                          bg="drawerbg"
-                          color="white"
+                          bg={colorMode === "dark" ? "drawerbg" : "gray.50"}
+                          color={colorMode === "dark" ? "white" : "black"}
                         >
                           <Box flex="1">
                             <AlertTitle>Permalink</AlertTitle>
@@ -184,11 +184,12 @@ const MateriasDrawer = (props) => {
                                 Este feature es super experimental... si lo usaste, te ande o no te ande, me contás como te funcionó, que opinás, y desde que browser estás? Gracias!!
                               </Text>
 
-                              <Flex alignItems="center" mt={1}>
+                              <Flex alignItems="center" mt={2}>
                                 <Input
                                   isReadOnly
                                   value={permalink}
-                                  borderColor="primary.500"
+                                  bg="gray.200"
+                                  color="black"
                                   cursor="copy"
                                   title="Copiar Permalink"
                                   onClick={() => { onCopy(); toast.close(props.id) }}
@@ -197,7 +198,7 @@ const MateriasDrawer = (props) => {
                             </AlertDescription>
                           </Box>
                           <CloseButton
-                            color="primary.500"
+                            color="primary.700"
                             onClick={() => toast.close(props.id)}
                             position="absolute"
                             right="8px"
@@ -284,10 +285,10 @@ const MateriasDrawer = (props) => {
                           borderRadius={6}
                           p={8}
                           mb="4em"
-                          borderColor="primary.300"
+                          borderColor="primary.400"
                           borderWidth={2}
-                          bg="drawerbg"
-                          color="white"
+                          bg={colorMode === "dark" ? "drawerbg" : "gray.50"}
+                          color={colorMode === "dark" ? "white" : "black"}
                         >
                           <Box flex="1">
                             <AlertTitle>Hola!</AlertTitle>
@@ -315,8 +316,9 @@ const MateriasDrawer = (props) => {
                                 <Flex mt={3} alignItems="flex-end">
                                   <Textarea
                                     resize="none"
-                                    borderColor="white"
-                                    color="white"
+                                    borderColor={colorMode === "dark" ? "white" : "black"}
+                                    color={colorMode === "dark" ? "white" : "black"}
+                                    focusBorderColor="primary.500"
                                     size="sm"
                                     name="bug"
                                   />
@@ -351,7 +353,7 @@ const MateriasDrawer = (props) => {
                             </AlertDescription>
                           </Box>
                           <CloseButton
-                            color="primary.500"
+                            color="primary.700"
                             onClick={() => toast.close(props.id)}
                             position="absolute"
                             right="8px"

@@ -33,7 +33,7 @@ jobs:
         title: Actualizar Horarios [auto]
         author: GitHub <noreply@github.com>
         body: Este PR automático se fijó que los horarios de `ofertahoraria.fi.uba.ar/` cambiaron y los actualizá a la última versión.
-        reviewers: FdelMazo, JDSanto
+        reviewers: FdelMazo
         draft: true
         branch: actualizar-horarios-auto
     - uses: gautamkrishnar/keepalive-workflow@master

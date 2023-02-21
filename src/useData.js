@@ -88,6 +88,9 @@ const useData = () => {
   });
 
   React.useEffect(() => {
+    if (permalink === "") {
+      return
+    }
     if (window.location.hash) {
       // hash => b64 => pako => json
       const savedataPako = Buffer.from(window.location.hash.slice(1), 'base64')
@@ -107,7 +110,7 @@ const useData = () => {
       // Si tengo otros cursos seleccionados, pregunto
       if (!selectedCursos.length ||
         (selectedCursos.toString() === savedata.selectedCursos.toString()) ||
-        (window.confirm("Pisar tus datos con los del permalink ingresado?"))) {
+        (window.confirm(`Pisar tus datos con los del permalink ingresado?\n\nGuarda tu permalink actual por las dudas!!\n${permalink}`))) {
         setSelectedCarreras(savedata.selectedCarreras);
         setSelectedMaterias(savedata.selectedMaterias);
         setSelectedCursos(savedata.selectedCursos);
@@ -119,9 +122,8 @@ const useData = () => {
           end: new Date(e.end),
         })))
       }
-
     }
-  }, [])
+  }, [permalink])
 
   React.useEffect(() => {
     const savedata = {

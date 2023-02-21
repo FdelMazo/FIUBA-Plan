@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/FIUBA-Plan/static/css/main.2d60efc0.css",
-    "main.js": "/FIUBA-Plan/static/js/main.760139ae.js",
+    "main.js": "/FIUBA-Plan/static/js/main.7d3f37f2.js",
     "static/media/source-sans-pro-all-400-normal.woff": "/FIUBA-Plan/static/media/source-sans-pro-all-400-normal.75edd947f6589a81c465.woff",
     "static/media/source-sans-pro-latin-400-normal.woff2": "/FIUBA-Plan/static/media/source-sans-pro-latin-400-normal.16c0b7497e77742ecb85.woff2",
     "static/media/source-sans-pro-latin-ext-400-normal.woff2": "/FIUBA-Plan/static/media/source-sans-pro-latin-ext-400-normal.fbd4fe33a443c83e04f1.woff2",
@@ -12,10 +12,10 @@
     "static/media/source-sans-pro-vietnamese-400-normal.woff2": "/FIUBA-Plan/static/media/source-sans-pro-vietnamese-400-normal.e84a4369ad213f658ebb.woff2",
     "index.html": "/FIUBA-Plan/index.html",
     "main.2d60efc0.css.map": "/FIUBA-Plan/static/css/main.2d60efc0.css.map",
-    "main.760139ae.js.map": "/FIUBA-Plan/static/js/main.760139ae.js.map"
+    "main.7d3f37f2.js.map": "/FIUBA-Plan/static/js/main.7d3f37f2.js.map"
   },
   "entrypoints": [
     "static/css/main.2d60efc0.css",
-    "static/js/main.760139ae.js"
+    "static/js/main.7d3f37f2.js"
   ]
 }

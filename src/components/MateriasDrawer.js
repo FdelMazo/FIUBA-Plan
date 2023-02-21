@@ -178,7 +178,7 @@ const MateriasDrawer = (props) => {
                                 Eso sí, entrando acá <strong>se pisan todos los datos</strong> que tenes al momento de entrar al link.
                               </Text>
                               <Text>
-                                O sea, si se lo pasas a un compañero, avisale que entre en alguna ventana privada así no se le pisan los datos!
+                                O sea, si se lo pasas a un compañero, avisale que entre en alguna ventana privada así no se le pisa su plan!
                               </Text>
                               <Text>
                                 Este feature es super experimental... si lo usaste, te ande o no te ande, me contás como te funcionó, que opinás, y desde que browser estás? Gracias!!

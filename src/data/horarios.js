@@ -38,6 +38,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 2,
           "fin": "18:00",
           "inicio": "16:00"
         },
@@ -45,6 +55,16 @@ export const data =
           "dia": 4,
           "fin": "16:00",
           "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "18:00",
+          "inicio": "16:00"
         },
         {
           "dia": 4,
@@ -146,6 +166,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 2,
           "fin": "18:00",
           "inicio": "16:00"
         },
@@ -153,6 +183,16 @@ export const data =
           "dia": 4,
           "fin": "16:00",
           "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "18:00",
+          "inicio": "16:00"
         },
         {
           "dia": 4,
@@ -188,7 +228,7 @@ export const data =
         }
       ],
       "codigo": "6103-CURSO: 15B",
-      "docentes": "SASSANO, MIRYAM PATRICIA (Profesor/a Adjunto/a) - FAGES, LUCIANO RODOLFO (Ayudante 1ro/a) - VENTURIELLO, VERONICA LAURA (Ayudante 1ro/a)",
+      "docentes": "SASSANO, MIRYAM PATRICIA (Profesor/a Adjunto/a) - VENTURIELLO, VERONICA LAURA (Ayudante 1ro/a) - FAGES, LUCIANO RODOLFO (Ayudante 1ro/a)",
       "materia": "6103"
     },
     {
@@ -308,6 +348,16 @@ export const data =
         },
         {
           "dia": 1,
+          "fin": "19:00",
+          "inicio": "17:00"
+        },
+        {
+          "dia": 1,
+          "fin": "21:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 1,
           "fin": "21:00",
           "inicio": "19:00"
         },
@@ -315,6 +365,16 @@ export const data =
           "dia": 3,
           "fin": "19:00",
           "inicio": "17:00"
+        },
+        {
+          "dia": 3,
+          "fin": "19:00",
+          "inicio": "17:00"
+        },
+        {
+          "dia": 3,
+          "fin": "21:00",
+          "inicio": "19:00"
         },
         {
           "dia": 3,
@@ -362,6 +422,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "20:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 2,
+          "fin": "22:00",
+          "inicio": "20:00"
+        },
+        {
+          "dia": 2,
           "fin": "22:00",
           "inicio": "20:00"
         },
@@ -369,6 +439,16 @@ export const data =
           "dia": 4,
           "fin": "20:00",
           "inicio": "18:00"
+        },
+        {
+          "dia": 4,
+          "fin": "20:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 4,
+          "fin": "22:00",
+          "inicio": "20:00"
         },
         {
           "dia": 4,
@@ -416,6 +496,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "09:00",
+          "inicio": "07:00"
+        },
+        {
+          "dia": 2,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 2,
           "fin": "11:00",
           "inicio": "09:00"
         },
@@ -423,6 +513,16 @@ export const data =
           "dia": 4,
           "fin": "09:00",
           "inicio": "07:00"
+        },
+        {
+          "dia": 4,
+          "fin": "09:00",
+          "inicio": "07:00"
+        },
+        {
+          "dia": 4,
+          "fin": "11:00",
+          "inicio": "09:00"
         },
         {
           "dia": 4,
@@ -443,6 +543,16 @@ export const data =
         },
         {
           "dia": 1,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 1,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 1,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -450,6 +560,16 @@ export const data =
           "dia": 3,
           "fin": "11:00",
           "inicio": "09:00"
+        },
+        {
+          "dia": 3,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 3,
+          "fin": "13:00",
+          "inicio": "11:00"
         },
         {
           "dia": 3,
@@ -470,6 +590,16 @@ export const data =
         },
         {
           "dia": 1,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 1,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 1,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -477,6 +607,16 @@ export const data =
           "dia": 3,
           "fin": "11:00",
           "inicio": "09:00"
+        },
+        {
+          "dia": 3,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 3,
+          "fin": "13:00",
+          "inicio": "11:00"
         },
         {
           "dia": 3,
@@ -497,6 +637,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 2,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -504,6 +654,16 @@ export const data =
           "dia": 5,
           "fin": "11:00",
           "inicio": "09:00"
+        },
+        {
+          "dia": 5,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 5,
+          "fin": "13:00",
+          "inicio": "11:00"
         },
         {
           "dia": 5,
@@ -524,6 +684,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 2,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -531,6 +701,16 @@ export const data =
           "dia": 5,
           "fin": "11:00",
           "inicio": "09:00"
+        },
+        {
+          "dia": 5,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 5,
+          "fin": "13:00",
+          "inicio": "11:00"
         },
         {
           "dia": 5,
@@ -551,6 +731,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 2,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -558,6 +748,16 @@ export const data =
           "dia": 5,
           "fin": "11:00",
           "inicio": "09:00"
+        },
+        {
+          "dia": 5,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 5,
+          "fin": "13:00",
+          "inicio": "11:00"
         },
         {
           "dia": 5,
@@ -578,6 +778,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 2,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -585,6 +795,16 @@ export const data =
           "dia": 5,
           "fin": "11:00",
           "inicio": "09:00"
+        },
+        {
+          "dia": 5,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 5,
+          "fin": "13:00",
+          "inicio": "11:00"
         },
         {
           "dia": 5,
@@ -605,6 +825,16 @@ export const data =
         },
         {
           "dia": 1,
+          "fin": "15:00",
+          "inicio": "13:00"
+        },
+        {
+          "dia": 1,
+          "fin": "17:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 1,
           "fin": "17:00",
           "inicio": "15:00"
         },
@@ -612,6 +842,16 @@ export const data =
           "dia": 3,
           "fin": "15:00",
           "inicio": "13:00"
+        },
+        {
+          "dia": 3,
+          "fin": "15:00",
+          "inicio": "13:00"
+        },
+        {
+          "dia": 3,
+          "fin": "17:00",
+          "inicio": "15:00"
         },
         {
           "dia": 3,
@@ -674,7 +914,7 @@ export const data =
         }
       ],
       "codigo": "6103-CURSO: 7",
-      "docentes": "VERA, MATÍAS ALEJANDRO (Profesor/a Adjunto/a) - ORECCHIA, MONICA INES (Jefe/a Trabajos Practicos) - CATALDI, PEDRO ANSELMO (Ayudante 1ro/a) - ENDELLI, JORGE RODOLFO (Ayudante 1ro/a)",
+      "docentes": "VERA, MATÍAS ALEJANDRO (Profesor/a Adjunto/a) - ORECCHIA, MONICA INES (Jefe/a Trabajos Practicos) - ENDELLI, JORGE RODOLFO (Ayudante 1ro/a) - CATALDI, PEDRO ANSELMO (Ayudante 1ro/a)",
       "materia": "6103"
     },
     {
@@ -686,6 +926,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 2,
           "fin": "18:00",
           "inicio": "16:00"
         },
@@ -696,12 +946,22 @@ export const data =
         },
         {
           "dia": 4,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "18:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 4,
           "fin": "18:00",
           "inicio": "16:00"
         }
       ],
       "codigo": "6103-CURSO: 8",
-      "docentes": "DI IORIO Y LUCERO, MARIA EUGENIA (Profesor/a Adjunto/a) - ROZENWASSER, LAURA (Ayudante 1ro/a) - HERRMANN, GUILLERMO WALTER (Ayudante 1ro/a)",
+      "docentes": "DI IORIO Y LUCERO, MARIA EUGENIA (Profesor/a Adjunto/a) - HERRMANN, GUILLERMO WALTER (Ayudante 1ro/a) - ROZENWASSER, LAURA (Ayudante 1ro/a)",
       "materia": "6103"
     },
     {
@@ -728,7 +988,7 @@ export const data =
         }
       ],
       "codigo": "6103-CURSO: 9A",
-      "docentes": "PASTOR, VERONICA ESTELA (Profesor/a Adjunto/a) - CATALDI, PEDRO ANSELMO (Ayudante 1ro/a) - ROHDENBURG, ERICA ELISABET (Ayudante 1ro/a)",
+      "docentes": "PASTOR, VERONICA ESTELA (Profesor/a Adjunto/a) - ROHDENBURG, ERICA ELISABET (Ayudante 1ro/a) - CATALDI, PEDRO ANSELMO (Ayudante 1ro/a)",
       "materia": "6103"
     },
     {
@@ -740,6 +1000,26 @@ export const data =
         },
         {
           "dia": 1,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 1,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 1,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 1,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 1,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -747,6 +1027,26 @@ export const data =
           "dia": 3,
           "fin": "11:00",
           "inicio": "09:00"
+        },
+        {
+          "dia": 3,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 3,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 3,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 3,
+          "fin": "13:00",
+          "inicio": "11:00"
         },
         {
           "dia": 3,
@@ -796,7 +1096,7 @@ export const data =
         }
       ],
       "codigo": "6106-CURSO: 01",
-      "docentes": "LASANTA, TITO IGNACIO (Profesor/a Adjunto/a) - ALVAREZ PONTE, LUCIA INES (Ayudante 1ro/a) - GUTIERREZ, EDITH MABEL (Ayudante 1ro/a)",
+      "docentes": "LASANTA, TITO IGNACIO (Profesor/a Adjunto/a) - GUTIERREZ, EDITH MABEL (Ayudante 1ro/a) - ALVAREZ PONTE, LUCIA INES (Ayudante 1ro/a)",
       "materia": "6106"
     },
     {
@@ -832,7 +1132,7 @@ export const data =
         }
       ],
       "codigo": "6106-CURSO: 08",
-      "docentes": "BALIÑA, GUILLERMO ALBERTO (Profesor/a Adjunto/a) - COSATTO AMMANN, PEDRO CAMILO (Ayudante 1ro/a) - SOSA, MARINA (Ayudante 1ro/a)",
+      "docentes": "BALIÑA, GUILLERMO ALBERTO (Profesor/a Adjunto/a) - SOSA, MARINA (Ayudante 1ro/a) - COSATTO AMMANN, PEDRO CAMILO (Ayudante 1ro/a)",
       "materia": "6106"
     },
     {
@@ -840,6 +1140,16 @@ export const data =
         {
           "dia": 2,
           "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 2,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "18:00",
           "inicio": "14:00"
         },
         {
@@ -866,7 +1176,7 @@ export const data =
         }
       ],
       "codigo": "6106-CURSO: 15",
-      "docentes": "BOUZA, MAGDALENA (Profesor/a Adjunto/a) - A DESIGNAR, A DESIGNAR (Ayudante 1ro/a) - EDWARDS MOLINA, DIEGO JULIO (Ayudante 1ro/a)",
+      "docentes": "BOUZA, MAGDALENA (Profesor/a Adjunto/a) - EDWARDS MOLINA, DIEGO JULIO (Ayudante 1ro/a) - A DESIGNAR, A DESIGNAR (Ayudante 1ro/a)",
       "materia": "6106"
     },
     {
@@ -894,13 +1204,23 @@ export const data =
           "inicio": "08:00"
         },
         {
+          "dia": 1,
+          "fin": "11:00",
+          "inicio": "08:00"
+        },
+        {
+          "dia": 3,
+          "fin": "11:00",
+          "inicio": "08:00"
+        },
+        {
           "dia": 3,
           "fin": "11:00",
           "inicio": "08:00"
         }
       ],
       "codigo": "6107-CURSO: 1",
-      "docentes": "ACERO, FERNANDO RODOLFO (Profesor/a Adjunto/a) - BOLIVAR, MARIA JULIA (Jefe/a Trabajos Practicos) - MAULHARDT, MARTIN ENRIQUE (Jefe/a Trabajos Practicos) - HOLLISCH, GISELE (Ayudante 1ro/a)",
+      "docentes": "ACERO, FERNANDO RODOLFO (Profesor/a Adjunto/a) - MAULHARDT, MARTIN ENRIQUE (Jefe/a Trabajos Practicos) - BOLIVAR, MARIA JULIA (Jefe/a Trabajos Practicos) - HOLLISCH, GISELE (Ayudante 1ro/a)",
       "materia": "6107"
     },
     {
@@ -928,6 +1248,16 @@ export const data =
           "inicio": "14:00"
         },
         {
+          "dia": 1,
+          "fin": "17:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "15:00"
+        },
+        {
           "dia": 2,
           "fin": "18:00",
           "inicio": "15:00"
@@ -951,7 +1281,7 @@ export const data =
         }
       ],
       "codigo": "6108-CURSO REMOTO - SOLO PARA RECURSANTES",
-      "docentes": "PERALTA, NORA BEATRIZ (Profesor/a Adjunto/a) - A DESIGNAR, A DESIGNAR (Jefe/a Trabajos Practicos) - ORECCHIA, MONICA INES (Jefe/a Trabajos Practicos) - WAGENER, VICENTE MARÍA (Ayudante 2do/a) - WAGENER, VICENTE MARÍA (Ayudante 2do/a) - FANCIOTTI, TOMÁS (Ayudante 2do/a)",
+      "docentes": "PERALTA, NORA BEATRIZ (Profesor/a Adjunto/a) - ORECCHIA, MONICA INES (Jefe/a Trabajos Practicos) - A DESIGNAR, A DESIGNAR (Jefe/a Trabajos Practicos) - WAGENER, VICENTE MARÍA (Ayudante 2do/a) - FANCIOTTI, TOMÁS (Ayudante 2do/a) - WAGENER, VICENTE MARÍA (Ayudante 2do/a)",
       "materia": "6108"
     },
     {
@@ -990,6 +1320,16 @@ export const data =
         },
         {
           "dia": 3,
+          "fin": "15:00",
+          "inicio": "13:00"
+        },
+        {
+          "dia": 3,
+          "fin": "17:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 3,
           "fin": "17:00",
           "inicio": "15:00"
         },
@@ -997,6 +1337,16 @@ export const data =
           "dia": 5,
           "fin": "15:00",
           "inicio": "13:00"
+        },
+        {
+          "dia": 5,
+          "fin": "15:00",
+          "inicio": "13:00"
+        },
+        {
+          "dia": 5,
+          "fin": "17:00",
+          "inicio": "15:00"
         },
         {
           "dia": 5,
@@ -1044,6 +1394,16 @@ export const data =
         },
         {
           "dia": 1,
+          "fin": "19:00",
+          "inicio": "17:00"
+        },
+        {
+          "dia": 1,
+          "fin": "21:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 1,
           "fin": "21:00",
           "inicio": "19:00"
         },
@@ -1051,6 +1411,16 @@ export const data =
           "dia": 3,
           "fin": "19:00",
           "inicio": "17:00"
+        },
+        {
+          "dia": 3,
+          "fin": "19:00",
+          "inicio": "17:00"
+        },
+        {
+          "dia": 3,
+          "fin": "21:00",
+          "inicio": "19:00"
         },
         {
           "dia": 3,
@@ -1098,6 +1468,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "09:00",
+          "inicio": "07:00"
+        },
+        {
+          "dia": 2,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 2,
           "fin": "11:00",
           "inicio": "09:00"
         },
@@ -1105,6 +1485,16 @@ export const data =
           "dia": 4,
           "fin": "09:00",
           "inicio": "07:00"
+        },
+        {
+          "dia": 4,
+          "fin": "09:00",
+          "inicio": "07:00"
+        },
+        {
+          "dia": 4,
+          "fin": "11:00",
+          "inicio": "09:00"
         },
         {
           "dia": 4,
@@ -1179,6 +1569,16 @@ export const data =
         },
         {
           "dia": 1,
+          "fin": "09:00",
+          "inicio": "07:00"
+        },
+        {
+          "dia": 1,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 1,
           "fin": "11:00",
           "inicio": "09:00"
         },
@@ -1186,6 +1586,16 @@ export const data =
           "dia": 3,
           "fin": "09:00",
           "inicio": "07:00"
+        },
+        {
+          "dia": 3,
+          "fin": "09:00",
+          "inicio": "07:00"
+        },
+        {
+          "dia": 3,
+          "fin": "11:00",
+          "inicio": "09:00"
         },
         {
           "dia": 3,
@@ -1206,6 +1616,16 @@ export const data =
         },
         {
           "dia": 1,
+          "fin": "09:00",
+          "inicio": "07:00"
+        },
+        {
+          "dia": 1,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 1,
           "fin": "11:00",
           "inicio": "09:00"
         },
@@ -1213,6 +1633,16 @@ export const data =
           "dia": 3,
           "fin": "09:00",
           "inicio": "07:00"
+        },
+        {
+          "dia": 3,
+          "fin": "09:00",
+          "inicio": "07:00"
+        },
+        {
+          "dia": 3,
+          "fin": "11:00",
+          "inicio": "09:00"
         },
         {
           "dia": 3,
@@ -1275,7 +1705,7 @@ export const data =
         }
       ],
       "codigo": "6108-CURSO: 2A",
-      "docentes": "SARRIS, CLAUDIA MONICA (Profesor/a Adjunto/a) - GALVAN, MONICA BEATRIZ (Ayudante 1ro/a) - PRESENZA, JUAN FRANCISCO (Ayudante 1ro/a)",
+      "docentes": "SARRIS, CLAUDIA MONICA (Profesor/a Adjunto/a) - PRESENZA, JUAN FRANCISCO (Ayudante 1ro/a) - GALVAN, MONICA BEATRIZ (Ayudante 1ro/a)",
       "materia": "6108"
     },
     {
@@ -1302,7 +1732,7 @@ export const data =
         }
       ],
       "codigo": "6108-CURSO: 2B",
-      "docentes": "SARRIS, CLAUDIA MONICA (Profesor/a Adjunto/a) - CHARO, GISELA DANIELA (Ayudante 1ro/a) - HERRMANN, GUILLERMO WALTER (Ayudante 1ro/a)",
+      "docentes": "SARRIS, CLAUDIA MONICA (Profesor/a Adjunto/a) - HERRMANN, GUILLERMO WALTER (Ayudante 1ro/a) - CHARO, GISELA DANIELA (Ayudante 1ro/a)",
       "materia": "6108"
     },
     {
@@ -1341,6 +1771,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 2,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -1348,6 +1788,16 @@ export const data =
           "dia": 4,
           "fin": "11:00",
           "inicio": "09:00"
+        },
+        {
+          "dia": 4,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 4,
+          "fin": "13:00",
+          "inicio": "11:00"
         },
         {
           "dia": 4,
@@ -1449,6 +1899,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 2,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -1456,6 +1916,16 @@ export const data =
           "dia": 4,
           "fin": "11:00",
           "inicio": "09:00"
+        },
+        {
+          "dia": 4,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 4,
+          "fin": "13:00",
+          "inicio": "11:00"
         },
         {
           "dia": 4,
@@ -1476,6 +1946,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 2,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -1483,6 +1963,16 @@ export const data =
           "dia": 4,
           "fin": "11:00",
           "inicio": "09:00"
+        },
+        {
+          "dia": 4,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 4,
+          "fin": "13:00",
+          "inicio": "11:00"
         },
         {
           "dia": 4,
@@ -1536,6 +2026,16 @@ export const data =
           "inicio": "19:00"
         },
         {
+          "dia": 1,
+          "fin": "21:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 3,
+          "fin": "23:00",
+          "inicio": "19:00"
+        },
+        {
           "dia": 3,
           "fin": "23:00",
           "inicio": "19:00"
@@ -1550,6 +2050,16 @@ export const data =
         {
           "dia": 1,
           "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 1,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 3,
+          "fin": "13:00",
           "inicio": "09:00"
         },
         {
@@ -1571,6 +2081,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 2,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -1578,6 +2098,16 @@ export const data =
           "dia": 5,
           "fin": "11:00",
           "inicio": "09:00"
+        },
+        {
+          "dia": 5,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 5,
+          "fin": "13:00",
+          "inicio": "11:00"
         },
         {
           "dia": 5,
@@ -1625,6 +2155,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 2,
           "fin": "18:00",
           "inicio": "16:00"
         },
@@ -1635,12 +2175,22 @@ export const data =
         },
         {
           "dia": 4,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "18:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 4,
           "fin": "18:00",
           "inicio": "16:00"
         }
       ],
       "codigo": "6110-CURSO: 4",
-      "docentes": "GONZALEZ, GRACIELA ADRIANA (Profesor/a Asociado/a) - MONZON, NELSON (Ayudante 1ro/a) - ALBERT, RAYMUNDO JOSE (Ayudante 1ro/a)",
+      "docentes": "GONZALEZ, GRACIELA ADRIANA (Profesor/a Asociado/a) - ALBERT, RAYMUNDO JOSE (Ayudante 1ro/a) - MONZON, NELSON (Ayudante 1ro/a)",
       "materia": "6110"
     },
     {
@@ -1652,6 +2202,26 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 2,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 2,
           "fin": "18:00",
           "inicio": "16:00"
         },
@@ -1662,12 +2232,32 @@ export const data =
         },
         {
           "dia": 4,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "18:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 4,
+          "fin": "18:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 4,
           "fin": "18:00",
           "inicio": "16:00"
         }
       ],
       "codigo": "6110-CURSO: 5",
-      "docentes": "CACHILE, MARIO ANDRES (Profesor/a Adjunto/a) - CALZON, MIGUEL ANGEL (Jefe/a Trabajos Practicos) - PEÑA, NELLY HAYDEE (Jefe/a Trabajos Practicos)",
+      "docentes": "CACHILE, MARIO ANDRES (Profesor/a Adjunto/a) - PEÑA, NELLY HAYDEE (Jefe/a Trabajos Practicos) - CALZON, MIGUEL ANGEL (Jefe/a Trabajos Practicos)",
       "materia": "6110"
     },
     {
@@ -1787,7 +2377,7 @@ export const data =
         }
       ],
       "codigo": "6114-CURSO: 5",
-      "docentes": "CACHILE, MARIO ANDRES (Profesor/a Adjunto/a) - PEÑA, NELLY HAYDEE (Jefe/a Trabajos Practicos) - CALZON, MIGUEL ANGEL (Jefe/a Trabajos Practicos)",
+      "docentes": "CACHILE, MARIO ANDRES (Profesor/a Adjunto/a) - CALZON, MIGUEL ANGEL (Jefe/a Trabajos Practicos) - PEÑA, NELLY HAYDEE (Jefe/a Trabajos Practicos)",
       "materia": "6114"
     },
     {
@@ -1929,16 +2519,33 @@ export const data =
       "clases": [
         {
           "dia": 1,
-          "fin": "13:00",
-          "inicio": "09:00"
+          "fin": "12:00",
+          "inicio": "08:00"
         },
         {
           "dia": 1,
-          "fin": "13:00",
-          "inicio": "09:00"
+          "fin": "12:00",
+          "inicio": "08:00"
         },
         {
           "dia": 3,
+          "fin": "12:00",
+          "inicio": "08:00"
+        },
+        {
+          "dia": 3,
+          "fin": "12:00",
+          "inicio": "08:00"
+        }
+      ],
+      "codigo": "6201-CURSO: 01",
+      "docentes": "CORSINI, ALICIA BEATRIZ (Profesor/a Adjunto/a) - DANERI, CLAUDIO ESTEBAN MA (Jefe/a Trabajos Practicos) - ROUX, PATRICIA NOEMI (Ayudante 1ro/a) - NUÑEZ, NATALIA ELENA (Ayudante 1ro/a)",
+      "materia": "6201"
+    },
+    {
+      "clases": [
+        {
+          "dia": 1,
           "fin": "13:00",
           "inicio": "09:00"
         },
@@ -1949,7 +2556,7 @@ export const data =
         }
       ],
       "codigo": "6201-CURSO: 02",
-      "docentes": "AGUIRRE, MARIA ALEJANDRA (Profesor/a Adjunto/a) - MIRALLES, MONICA TERESITA (Jefe/a Trabajos Practicos) - FALCIONI, SEBASTIAN ARIEL (Ayudante 1ro/a) - AULIEL, MARIA INES (Ayudante 1ro/a) - FALCIONI, SEBASTIAN ARIEL (Ayudante 1ro/a)",
+      "docentes": "AGUIRRE, MARIA ALEJANDRA (Profesor/a Adjunto/a) - MIRALLES, MONICA TERESITA (Jefe/a Trabajos Practicos) - FALCIONI, SEBASTIAN ARIEL (Ayudante 1ro/a) - FALCIONI, SEBASTIAN ARIEL (Ayudante 1ro/a) - AULIEL, MARIA INES (Ayudante 1ro/a)",
       "materia": "6201"
     },
     {
@@ -1976,7 +2583,7 @@ export const data =
         }
       ],
       "codigo": "6201-CURSO: 03",
-      "docentes": "REPETTO, VIVIANA CRISTINA (Profesor/a Adjunto/a) - REBOREDO, GRACIELA BEATRI (Jefe/a Trabajos Practicos) - MUÑOZ, MARCOS ALFREDO SEBASTIAN (Ayudante 1ro/a) - VAZQUEZ, PATRICIA MARÍA ELENA (Ayudante 1ro/a)",
+      "docentes": "REPETTO, VIVIANA CRISTINA (Profesor/a Adjunto/a) - REBOREDO, GRACIELA BEATRI (Jefe/a Trabajos Practicos) - VAZQUEZ, PATRICIA MARÍA ELENA (Ayudante 1ro/a) - MUÑOZ, MARCOS ALFREDO SEBASTIAN (Ayudante 1ro/a)",
       "materia": "6201"
     },
     {
@@ -1993,7 +2600,7 @@ export const data =
         }
       ],
       "codigo": "6201-CURSO: 04",
-      "docentes": "BOSCHAN, ALEJANDRO (Profesor/a Adjunto/a) - CEBREIRO, JOSE PABLO (Jefe/a Trabajos Practicos) - DURIEZ, THOMAS PIERRE COMIL (Ayudante 1ro/a) - BANEGAS, Agustin (Ayudante 1ro/a)",
+      "docentes": "BOSCHAN, ALEJANDRO (Profesor/a Adjunto/a) - CEBREIRO, JOSE PABLO (Jefe/a Trabajos Practicos) - BANEGAS, Agustin (Ayudante 1ro/a) - DURIEZ, THOMAS PIERRE COMIL (Ayudante 1ro/a)",
       "materia": "6201"
     },
     {
@@ -2011,6 +2618,23 @@ export const data =
       ],
       "codigo": "6201-CURSO: 05",
       "docentes": "CORACH, JULIÁN (Profesor/a Adjunto/a) - SOLA, MARCOS OSCAR (Jefe/a Trabajos Practicos) - MENDIETA, JULIO ANTONIO (Ayudante 1ro/a) - CARO, GERMAN (Ayudante 1ro/a)",
+      "materia": "6201"
+    },
+    {
+      "clases": [
+        {
+          "dia": 2,
+          "fin": "13:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 4,
+          "fin": "13:00",
+          "inicio": "09:00"
+        }
+      ],
+      "codigo": "6201-CURSO: 06",
+      "docentes": "CONDE GARRIDO, JUAN MANUEL (Profesor/a Adjunto/a) - A DESIGNAR, A DESIGNAR (Jefe/a Trabajos Practicos) - ROCCA, JAVIER ALEJANDRO (Jefe/a Trabajos Practicos) - FERRARI, SERGIO (Ayudante 1ro/a)",
       "materia": "6201"
     },
     {
@@ -2044,7 +2668,7 @@ export const data =
         }
       ],
       "codigo": "6201-CURSO: 08",
-      "docentes": "FERRINI, ADRIAN (Profesor/a Asociado/a) - VIÑALES, ANGEL DANIEL (Jefe/a Trabajos Practicos) - PIÑERA, EDUARDO ERNESTO (Ayudante 1ro/a) - GARCIA, ALEJANDRO (Ayudante 1ro/a)",
+      "docentes": "FERRINI, ADRIAN (Profesor/a Asociado/a) - VIÑALES, ANGEL DANIEL (Jefe/a Trabajos Practicos) - GARCIA, ALEJANDRO (Ayudante 1ro/a) - PIÑERA, EDUARDO ERNESTO (Ayudante 1ro/a)",
       "materia": "6201"
     },
     {
@@ -2071,7 +2695,7 @@ export const data =
         }
       ],
       "codigo": "6201-CURSO: 09",
-      "docentes": "CORNEJO, JORGE NORBERTO (Profesor/a Adjunto/a) - ROBLE, MARIA BEATRIZ (Jefe/a Trabajos Practicos) - PAPA, HERNAN ALDO (Ayudante 1ro/a) - NUÑEZ, NATALIA ELENA (Ayudante 1ro/a)",
+      "docentes": "CORNEJO, JORGE NORBERTO (Profesor/a Adjunto/a) - ROBLE, MARIA BEATRIZ (Jefe/a Trabajos Practicos) - NUÑEZ, NATALIA ELENA (Ayudante 1ro/a) - PAPA, HERNAN ALDO (Ayudante 1ro/a)",
       "materia": "6201"
     },
     {
@@ -2082,23 +2706,13 @@ export const data =
           "inicio": "13:00"
         },
         {
-          "dia": 1,
-          "fin": "17:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 3,
-          "fin": "17:00",
-          "inicio": "13:00"
-        },
-        {
           "dia": 3,
           "fin": "17:00",
           "inicio": "13:00"
         }
       ],
       "codigo": "6201-CURSO: 10",
-      "docentes": "REPETTO, VIVIANA CRISTINA (Profesor/a Adjunto/a) - INDELICATO, EVANGELINA LAURA (Jefe/a Trabajos Practicos) - REBOREDO, GRACIELA BEATRI (Ayudante 1ro/a) - A DESIGNAR, A DESIGNAR (Ayudante 1ro/a)",
+      "docentes": "REPETTO, VIVIANA CRISTINA (Profesor/a Adjunto/a) - INDELICATO, EVANGELINA LAURA (Jefe/a Trabajos Practicos) - A DESIGNAR, A DESIGNAR (Ayudante 1ro/a) - REBOREDO, GRACIELA BEATRI (Ayudante 1ro/a)",
       "materia": "6201"
     },
     {
@@ -2143,16 +2757,6 @@ export const data =
           "inicio": "17:00"
         },
         {
-          "dia": 1,
-          "fin": "21:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 3,
-          "fin": "21:00",
-          "inicio": "17:00"
-        },
-        {
           "dia": 3,
           "fin": "21:00",
           "inicio": "17:00"
@@ -2170,23 +2774,13 @@ export const data =
           "inicio": "17:00"
         },
         {
-          "dia": 1,
-          "fin": "21:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 3,
-          "fin": "21:00",
-          "inicio": "17:00"
-        },
-        {
           "dia": 3,
           "fin": "21:00",
           "inicio": "17:00"
         }
       ],
       "codigo": "6201-CURSO: 16",
-      "docentes": "SACCONE, FABIO DANIEL (Profesor/a Adjunto/a) - BELLOCQ, ELISABET CRISTINA (Jefe/a Trabajos Practicos) - TOSCANI, MARIANA (Ayudante 1ro/a) - PRARIO, IGOR SEBASTIAN (Ayudante 1ro/a)",
+      "docentes": "SACCONE, FABIO DANIEL (Profesor/a Adjunto/a) - BELLOCQ, ELISABET CRISTINA (Jefe/a Trabajos Practicos) - PRARIO, IGOR SEBASTIAN (Ayudante 1ro/a) - TOSCANI, MARIANA (Ayudante 1ro/a)",
       "materia": "6201"
     },
     {
@@ -2232,7 +2826,7 @@ export const data =
         }
       ],
       "codigo": "6201-CURSO: SP1",
-      "docentes": "DADAMIA, DANILO JOSE (Profesor/a Adjunto/a) - ROSSI, SERGIO (Jefe/a Trabajos Practicos) - ROBLEDO, FABIANA ELIZABETH (Ayudante 1ro/a) - STRUSIAT, PAMELA IVANA (Ayudante 1ro/a)",
+      "docentes": "DADAMIA, DANILO JOSE (Profesor/a Adjunto/a) - ROSSI, SERGIO (Jefe/a Trabajos Practicos) - STRUSIAT, PAMELA IVANA (Ayudante 1ro/a) - ROBLEDO, FABIANA ELIZABETH (Ayudante 1ro/a)",
       "materia": "6201"
     },
     {
@@ -2244,7 +2838,7 @@ export const data =
         }
       ],
       "codigo": "6201-CURSO: SP2",
-      "docentes": "RACERO, DIEGO ADRIÁN (Profesor/a Adjunto/a) - VILASECA, DIEGO MARTIN (Ayudante 1ro/a) - GONZALEZ, PABLO MARTIN (Ayudante 1ro/a) - BALBI, MARIA DEL PILAR (Ayudante 1ro/a)",
+      "docentes": "RACERO, DIEGO ADRIÁN (Profesor/a Adjunto/a) - VILASECA, DIEGO MARTIN (Ayudante 1ro/a) - BALBI, MARIA DEL PILAR (Ayudante 1ro/a) - GONZALEZ, PABLO MARTIN (Ayudante 1ro/a)",
       "materia": "6201"
     },
     {
@@ -2271,7 +2865,7 @@ export const data =
         }
       ],
       "codigo": "6203-CURSO: 01",
-      "docentes": "FONTANA, MARCELO RAUL (Profesor/a Titular/a) - VIÑALES, ANGEL DANIEL (Jefe/a Trabajos Practicos) - OVIEDO, CARLA GABRIELA (Ayudante 1ro/a) - ALTUNA, LUZ (Ayudante 1ro/a)",
+      "docentes": "FONTANA, MARCELO RAUL (Profesor/a Titular/a) - VIÑALES, ANGEL DANIEL (Jefe/a Trabajos Practicos) - ALTUNA, LUZ (Ayudante 1ro/a) - OVIEDO, CARLA GABRIELA (Ayudante 1ro/a)",
       "materia": "6203"
     },
     {
@@ -2283,16 +2877,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 2,
-          "fin": "15:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 2,
           "fin": "15:00",
           "inicio": "13:00"
         },
@@ -2300,16 +2884,6 @@ export const data =
           "dia": 4,
           "fin": "13:00",
           "inicio": "11:00"
-        },
-        {
-          "dia": 4,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 4,
-          "fin": "15:00",
-          "inicio": "13:00"
         },
         {
           "dia": 4,
@@ -2330,16 +2904,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "15:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 2,
-          "fin": "17:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 2,
           "fin": "17:00",
           "inicio": "15:00"
         },
@@ -2347,16 +2911,6 @@ export const data =
           "dia": 4,
           "fin": "15:00",
           "inicio": "13:00"
-        },
-        {
-          "dia": 4,
-          "fin": "15:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 4,
-          "fin": "17:00",
-          "inicio": "15:00"
         },
         {
           "dia": 4,
@@ -2377,16 +2931,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "17:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 2,
-          "fin": "19:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 2,
           "fin": "19:00",
           "inicio": "17:00"
         },
@@ -2394,16 +2938,6 @@ export const data =
           "dia": 4,
           "fin": "17:00",
           "inicio": "15:00"
-        },
-        {
-          "dia": 4,
-          "fin": "17:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 4,
-          "fin": "19:00",
-          "inicio": "17:00"
         },
         {
           "dia": 4,
@@ -2451,16 +2985,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "19:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 2,
-          "fin": "21:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 2,
           "fin": "21:00",
           "inicio": "19:00"
         },
@@ -2468,16 +2992,6 @@ export const data =
           "dia": 4,
           "fin": "19:00",
           "inicio": "17:00"
-        },
-        {
-          "dia": 4,
-          "fin": "19:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 4,
-          "fin": "21:00",
-          "inicio": "19:00"
         },
         {
           "dia": 4,
@@ -2486,7 +3000,7 @@ export const data =
         }
       ],
       "codigo": "6203-CURSO: 06",
-      "docentes": "REDIN, EDUARDO GABRIEL (Profesor/a Adjunto/a) - JAN, LUIS EMILIANO (Jefe/a Trabajos Practicos) - BERTOLINI, LUANA DANIELA (Ayudante 1ro/a) - DANERI, MARIA FLORENCIA (Ayudante 1ro/a)",
+      "docentes": "REDIN, EDUARDO GABRIEL (Profesor/a Adjunto/a) - JAN, LUIS EMILIANO (Jefe/a Trabajos Practicos) - DANERI, MARIA FLORENCIA (Ayudante 1ro/a) - BERTOLINI, LUANA DANIELA (Ayudante 1ro/a)",
       "materia": "6203"
     },
     {
@@ -2498,16 +3012,6 @@ export const data =
         },
         {
           "dia": 3,
-          "fin": "10:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 3,
-          "fin": "12:00",
-          "inicio": "10:00"
-        },
-        {
-          "dia": 3,
           "fin": "12:00",
           "inicio": "10:00"
         },
@@ -2515,16 +3019,6 @@ export const data =
           "dia": 5,
           "fin": "10:00",
           "inicio": "08:00"
-        },
-        {
-          "dia": 5,
-          "fin": "10:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 5,
-          "fin": "12:00",
-          "inicio": "10:00"
         },
         {
           "dia": 5,
@@ -2533,7 +3027,7 @@ export const data =
         }
       ],
       "codigo": "6203-CURSO: 07",
-      "docentes": "SILVEYRA, JOSEFINA MARIA (Profesor/a Adjunto/a) - BINDA, Leonardo David (Jefe/a Trabajos Practicos) - FERNANDEZ, FABRICIO ERIC (Ayudante 1ro/a) - OJEDA ALVIS, JORGE LUIS (Ayudante 1ro/a)",
+      "docentes": "SILVEYRA, JOSEFINA MARIA (Profesor/a Adjunto/a) - BINDA, Leonardo David (Jefe/a Trabajos Practicos) - OJEDA ALVIS, JORGE LUIS (Ayudante 1ro/a) - FERNANDEZ, FABRICIO ERIC (Ayudante 1ro/a)",
       "materia": "6203"
     },
     {
@@ -2545,16 +3039,6 @@ export const data =
         },
         {
           "dia": 3,
-          "fin": "12:00",
-          "inicio": "10:00"
-        },
-        {
-          "dia": 3,
-          "fin": "14:00",
-          "inicio": "12:00"
-        },
-        {
-          "dia": 3,
           "fin": "14:00",
           "inicio": "12:00"
         },
@@ -2562,16 +3046,6 @@ export const data =
           "dia": 5,
           "fin": "12:00",
           "inicio": "10:00"
-        },
-        {
-          "dia": 5,
-          "fin": "12:00",
-          "inicio": "10:00"
-        },
-        {
-          "dia": 5,
-          "fin": "14:00",
-          "inicio": "12:00"
         },
         {
           "dia": 5,
@@ -2607,7 +3081,7 @@ export const data =
         }
       ],
       "codigo": "6203-CURSO: 09",
-      "docentes": "ROHT, YANINA LUCRECIA (Profesor/a Adjunto/a) - NAHAS, ALEXIS ERNESTO (Jefe/a Trabajos Practicos) - GALLOSO, VERONICA VIVIANA (Ayudante 1ro/a) - APARICIO, RODOLFO RUBEN (Ayudante 1ro/a)",
+      "docentes": "ROHT, YANINA LUCRECIA (Profesor/a Adjunto/a) - NAHAS, ALEXIS ERNESTO (Jefe/a Trabajos Practicos) - APARICIO, RODOLFO RUBEN (Ayudante 1ro/a) - GALLOSO, VERONICA VIVIANA (Ayudante 1ro/a)",
       "materia": "6203"
     },
     {
@@ -2661,7 +3135,7 @@ export const data =
         }
       ],
       "codigo": "6203-CURSO: 11",
-      "docentes": "FERRINI, ADRIAN (Profesor/a Adjunto/a) - ROSCARDI, JAVIER EDUARDO (Jefe/a Trabajos Practicos) - BATTOCCHIO, DIEGO JAVIER (Ayudante 1ro/a) - ZALCMAN, ALEXIS LEÓN (Ayudante 1ro/a)",
+      "docentes": "FERRINI, ADRIAN (Profesor/a Adjunto/a) - ROSCARDI, JAVIER EDUARDO (Jefe/a Trabajos Practicos) - ZALCMAN, ALEXIS LEÓN (Ayudante 1ro/a) - BATTOCCHIO, DIEGO JAVIER (Ayudante 1ro/a)",
       "materia": "6203"
     },
     {
@@ -2700,16 +3174,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 2,
-          "fin": "15:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 2,
           "fin": "15:00",
           "inicio": "13:00"
         },
@@ -2717,16 +3181,6 @@ export const data =
           "dia": 4,
           "fin": "13:00",
           "inicio": "11:00"
-        },
-        {
-          "dia": 4,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 4,
-          "fin": "15:00",
-          "inicio": "13:00"
         },
         {
           "dia": 4,
@@ -2747,16 +3201,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "15:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 2,
-          "fin": "17:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 2,
           "fin": "17:00",
           "inicio": "15:00"
         },
@@ -2764,16 +3208,6 @@ export const data =
           "dia": 4,
           "fin": "15:00",
           "inicio": "13:00"
-        },
-        {
-          "dia": 4,
-          "fin": "15:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 4,
-          "fin": "17:00",
-          "inicio": "15:00"
         },
         {
           "dia": 4,
@@ -2794,16 +3228,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "17:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 2,
-          "fin": "19:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 2,
           "fin": "19:00",
           "inicio": "17:00"
         },
@@ -2811,16 +3235,6 @@ export const data =
           "dia": 4,
           "fin": "17:00",
           "inicio": "15:00"
-        },
-        {
-          "dia": 4,
-          "fin": "17:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 4,
-          "fin": "19:00",
-          "inicio": "17:00"
         },
         {
           "dia": 4,
@@ -2868,16 +3282,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "19:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 2,
-          "fin": "21:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 2,
           "fin": "21:00",
           "inicio": "19:00"
         },
@@ -2885,16 +3289,6 @@ export const data =
           "dia": 4,
           "fin": "19:00",
           "inicio": "17:00"
-        },
-        {
-          "dia": 4,
-          "fin": "19:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 4,
-          "fin": "21:00",
-          "inicio": "19:00"
         },
         {
           "dia": 4,
@@ -2915,16 +3309,6 @@ export const data =
         },
         {
           "dia": 3,
-          "fin": "10:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 3,
-          "fin": "12:00",
-          "inicio": "10:00"
-        },
-        {
-          "dia": 3,
           "fin": "12:00",
           "inicio": "10:00"
         },
@@ -2932,16 +3316,6 @@ export const data =
           "dia": 5,
           "fin": "10:00",
           "inicio": "08:00"
-        },
-        {
-          "dia": 5,
-          "fin": "10:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 5,
-          "fin": "12:00",
-          "inicio": "10:00"
         },
         {
           "dia": 5,
@@ -2950,7 +3324,7 @@ export const data =
         }
       ],
       "codigo": "6204-CURSO: 07",
-      "docentes": "SILVEYRA, JOSEFINA MARIA (Profesor/a Adjunto/a) - BINDA, Leonardo David (Jefe/a Trabajos Practicos) - OJEDA ALVIS, JORGE LUIS (Ayudante 1ro/a) - FERNANDEZ, FABRICIO ERIC (Ayudante 1ro/a)",
+      "docentes": "SILVEYRA, JOSEFINA MARIA (Profesor/a Adjunto/a) - BINDA, Leonardo David (Jefe/a Trabajos Practicos) - FERNANDEZ, FABRICIO ERIC (Ayudante 1ro/a) - OJEDA ALVIS, JORGE LUIS (Ayudante 1ro/a)",
       "materia": "6204"
     },
     {
@@ -2962,16 +3336,6 @@ export const data =
         },
         {
           "dia": 3,
-          "fin": "12:00",
-          "inicio": "10:00"
-        },
-        {
-          "dia": 3,
-          "fin": "14:00",
-          "inicio": "12:00"
-        },
-        {
-          "dia": 3,
           "fin": "14:00",
           "inicio": "12:00"
         },
@@ -2979,16 +3343,6 @@ export const data =
           "dia": 5,
           "fin": "12:00",
           "inicio": "10:00"
-        },
-        {
-          "dia": 5,
-          "fin": "12:00",
-          "inicio": "10:00"
-        },
-        {
-          "dia": 5,
-          "fin": "14:00",
-          "inicio": "12:00"
         },
         {
           "dia": 5,
@@ -3024,7 +3378,7 @@ export const data =
         }
       ],
       "codigo": "6204-CURSO: 09",
-      "docentes": "ROHT, YANINA LUCRECIA (Profesor/a Adjunto/a) - NAHAS, ALEXIS ERNESTO (Jefe/a Trabajos Practicos) - GALLOSO, VERONICA VIVIANA (Ayudante 1ro/a) - APARICIO, RODOLFO RUBEN (Ayudante 1ro/a)",
+      "docentes": "ROHT, YANINA LUCRECIA (Profesor/a Adjunto/a) - NAHAS, ALEXIS ERNESTO (Jefe/a Trabajos Practicos) - APARICIO, RODOLFO RUBEN (Ayudante 1ro/a) - GALLOSO, VERONICA VIVIANA (Ayudante 1ro/a)",
       "materia": "6204"
     },
     {
@@ -3124,7 +3478,7 @@ export const data =
         }
       ],
       "codigo": "6301-CURSO: 01",
-      "docentes": "RUIZ, MARIA SOL (Jefe/a Trabajos Practicos) - MACRI, DANIEL AGUSTÍN (Ayudante 1ro/a) - CHAMORRO, ESTEFANIA (Ayudante 2do/a) - CRESPO, ELISEO (Ayudante 2do/a ad-honorem) - CRESPO, ELISEO (Ayudante 2do/a ad-honorem) - SGROMO, MARIA CATERINA (Ayudante 2do/a ad-honorem) - SGROMO, MARIA CATERINA (Ayudante 2do/a ad-honorem) - UREÑA, MARIA ANDREA (Coordinador/a) - BOEYKENS, SUSANA PATRICIA (Responsable asignatura)",
+      "docentes": "RUIZ, MARIA SOL (Jefe/a Trabajos Practicos) - MACRI, DANIEL AGUSTÍN (Ayudante 1ro/a) - CHAMORRO, ESTEFANIA (Ayudante 2do/a) - CRESPO, ELISEO (Ayudante 2do/a ad-honorem) - SGROMO, MARIA CATERINA (Ayudante 2do/a ad-honorem) - SGROMO, MARIA CATERINA (Ayudante 2do/a ad-honorem) - CRESPO, ELISEO (Ayudante 2do/a ad-honorem) - UREÑA, MARIA ANDREA (Coordinador/a) - BOEYKENS, SUSANA PATRICIA (Responsable asignatura)",
       "materia": "6301"
     },
     {
@@ -3141,7 +3495,7 @@ export const data =
         }
       ],
       "codigo": "6301-CURSO: 02",
-      "docentes": "UREÑA, MARIA ANDREA (Profesor/a Adjunto/a) - ROMERO, ADRIANA MARCELA (Jefe/a Trabajos Practicos) - TANCREDI GENTILI, PABLO (Jefe/a Trabajos Practicos) - MONTAÑO HEREDIA, GABRIELA GRISEL (Ayudante 1ro/a) - BOEYKENS, SUSANA PATRICIA (Responsable asignatura)",
+      "docentes": "UREÑA, MARIA ANDREA (Profesor/a Adjunto/a) - TANCREDI GENTILI, PABLO (Jefe/a Trabajos Practicos) - ROMERO, ADRIANA MARCELA (Jefe/a Trabajos Practicos) - MONTAÑO HEREDIA, GABRIELA GRISEL (Ayudante 1ro/a) - BOEYKENS, SUSANA PATRICIA (Responsable asignatura)",
       "materia": "6301"
     },
     {
@@ -3167,6 +3521,16 @@ export const data =
           "dia": 4,
           "fin": "13:00",
           "inicio": "09:00"
+        },
+        {
+          "dia": 4,
+          "fin": "13:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 5,
+          "fin": "20:00",
+          "inicio": "18:00"
         },
         {
           "dia": 5,
@@ -3209,7 +3573,7 @@ export const data =
         }
       ],
       "codigo": "6301-CURSO: 07",
-      "docentes": "MELAJ, MARIANA ANDREA (Jefe/a Trabajos Practicos) - GOBBI MIÑONES, ALEJANDRO RICARDO (Jefe/a Trabajos Practicos) - ANDRONIKOV, ANDRES (Ayudante 2do/a) - MAKOVEC, JUAN MANUEL (Ayudante 2do/a ad-honorem) - MAKOVEC, JUAN MANUEL (Ayudante 2do/a ad-honorem) - UREÑA, MARIA ANDREA (Coordinador/a) - BOEYKENS, SUSANA PATRICIA (Responsable asignatura)",
+      "docentes": "GOBBI MIÑONES, ALEJANDRO RICARDO (Jefe/a Trabajos Practicos) - MELAJ, MARIANA ANDREA (Jefe/a Trabajos Practicos) - ANDRONIKOV, ANDRES (Ayudante 2do/a) - MAKOVEC, JUAN MANUEL (Ayudante 2do/a ad-honorem) - MAKOVEC, JUAN MANUEL (Ayudante 2do/a ad-honorem) - UREÑA, MARIA ANDREA (Coordinador/a) - BOEYKENS, SUSANA PATRICIA (Responsable asignatura)",
       "materia": "6301"
     },
     {
@@ -3260,7 +3624,7 @@ export const data =
         }
       ],
       "codigo": "6301-CURSO: 11",
-      "docentes": "IRIANNI, JORGE LUIS (Profesor/a Adjunto/a) - PUTRINO, DANIELA SOLEDAD (Ayudante 1ro/a) - MACRI, DANIEL AGUSTÍN (Ayudante 1ro/a) - LOPEZ, TOMÁS (Ayudante 2do/a) - UREÑA, MARIA ANDREA (Coordinador/a) - BOEYKENS, SUSANA PATRICIA (Responsable asignatura)",
+      "docentes": "IRIANNI, JORGE LUIS (Profesor/a Adjunto/a) - MACRI, DANIEL AGUSTÍN (Ayudante 1ro/a) - PUTRINO, DANIELA SOLEDAD (Ayudante 1ro/a) - LOPEZ, TOMÁS (Ayudante 2do/a) - UREÑA, MARIA ANDREA (Coordinador/a) - BOEYKENS, SUSANA PATRICIA (Responsable asignatura)",
       "materia": "6301"
     },
     {
@@ -3294,7 +3658,7 @@ export const data =
         }
       ],
       "codigo": "6301-CURSO: 13",
-      "docentes": "PORTA, GUSTAVO ROBERTO (Profesor/a Adjunto/a) - RUIZ VAZQUEZ, MARÍA MACARENA (Ayudante 1ro/a) - PINTOS, GASTÓN HERNÁN (Ayudante 2do/a) - LUNATI, CAROLINA SOLEDAD (Ayudante 2do/a) - UREÑA, MARIA ANDREA (Coordinador/a) - BOEYKENS, SUSANA PATRICIA (Responsable asignatura)",
+      "docentes": "PORTA, GUSTAVO ROBERTO (Profesor/a Adjunto/a) - RUIZ VAZQUEZ, MARÍA MACARENA (Ayudante 1ro/a) - LUNATI, CAROLINA SOLEDAD (Ayudante 2do/a) - PINTOS, GASTÓN HERNÁN (Ayudante 2do/a) - UREÑA, MARIA ANDREA (Coordinador/a) - BOEYKENS, SUSANA PATRICIA (Responsable asignatura)",
       "materia": "6301"
     },
     {
@@ -3311,11 +3675,26 @@ export const data =
         }
       ],
       "codigo": "6301-CURSO: 14",
-      "docentes": "ROMERO, ADRIANA MARCELA (Profesor/a Adjunto/a) - TESTA, FERNANDEZ JUAN JOSE (Jefe/a Trabajos Practicos) - LAVALLE, MYRIAM BEATRIZ (Ayudante 1ro/a) - SANCHEZ, ALEJANDRO DARÍO (Ayudante 1ro/a) - UREÑA, MARIA ANDREA (Coordinador/a) - BOEYKENS, SUSANA PATRICIA (Responsable asignatura)",
+      "docentes": "ROMERO, ADRIANA MARCELA (Profesor/a Adjunto/a) - TESTA, FERNANDEZ JUAN JOSE (Jefe/a Trabajos Practicos) - SANCHEZ, ALEJANDRO DARÍO (Ayudante 1ro/a) - LAVALLE, MYRIAM BEATRIZ (Ayudante 1ro/a) - UREÑA, MARIA ANDREA (Coordinador/a) - BOEYKENS, SUSANA PATRICIA (Responsable asignatura)",
       "materia": "6301"
     },
     {
       "clases": [
+        {
+          "dia": 1,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 1,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 1,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
         {
           "dia": 1,
           "fin": "11:00",
@@ -3327,9 +3706,54 @@ export const data =
           "inicio": "15:30"
         },
         {
+          "dia": 2,
+          "fin": "17:00",
+          "inicio": "15:30"
+        },
+        {
+          "dia": 2,
+          "fin": "17:00",
+          "inicio": "15:30"
+        },
+        {
+          "dia": 2,
+          "fin": "17:00",
+          "inicio": "15:30"
+        },
+        {
           "dia": 3,
           "fin": "12:00",
           "inicio": "09:00"
+        },
+        {
+          "dia": 3,
+          "fin": "12:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 3,
+          "fin": "12:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 3,
+          "fin": "12:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 3,
+          "fin": "16:30",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 3,
+          "fin": "16:30",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 3,
+          "fin": "16:30",
+          "inicio": "15:00"
         },
         {
           "dia": 3,
@@ -3349,6 +3773,16 @@ export const data =
           "inicio": "15:30"
         },
         {
+          "dia": 2,
+          "fin": "17:00",
+          "inicio": "15:30"
+        },
+        {
+          "dia": 3,
+          "fin": "16:30",
+          "inicio": "15:00"
+        },
+        {
           "dia": 3,
           "fin": "16:30",
           "inicio": "15:00"
@@ -3359,13 +3793,23 @@ export const data =
           "inicio": "18:30"
         },
         {
+          "dia": 3,
+          "fin": "21:30",
+          "inicio": "18:30"
+        },
+        {
+          "dia": 4,
+          "fin": "20:30",
+          "inicio": "18:30"
+        },
+        {
           "dia": 4,
           "fin": "20:30",
           "inicio": "18:30"
         }
       ],
       "codigo": "6302-CURSO: 02",
-      "docentes": "RUSSO, ANALIA VERONICA (Profesor/a Adjunto/a) - APHESTEGUY, JUAN CARLOS (Profesor/a Adjunto/a) - VIOLA, FEDERICO LUIS (Jefe/a Trabajos Practicos) - MASURSKI, ANDRES (Ayudante 1ro/a) - MERLO, BRAIAN GABRIEL (Ayudante 2do/a)",
+      "docentes": "APHESTEGUY, JUAN CARLOS (Profesor/a Adjunto/a) - RUSSO, ANALIA VERONICA (Profesor/a Adjunto/a) - VIOLA, FEDERICO LUIS (Jefe/a Trabajos Practicos) - MASURSKI, ANDRES (Ayudante 1ro/a) - MERLO, BRAIAN GABRIEL (Ayudante 2do/a)",
       "materia": "6302"
     },
     {
@@ -3377,26 +3821,14 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "15:00",
+          "inicio": "12:00"
+        },
+        {
+          "dia": 2,
           "fin": "17:00",
           "inicio": "15:30"
         },
-        {
-          "dia": 3,
-          "fin": "16:30",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 4,
-          "fin": "15:00",
-          "inicio": "13:00"
-        }
-      ],
-      "codigo": "6302-CURSO: 03",
-      "docentes": "RUSSO, ANALIA VERONICA (Profesor/a Adjunto/a) - APHESTEGUY, JUAN CARLOS (Profesor/a Adjunto/a) - GAVIOLI, NATALIA (Jefe/a Trabajos Practicos) - ACOSTA, NICOLAS ALBERTO (Ayudante de 2da) - NUÑEZ, NATALIA ELENA (Ayudante 1ro/a)",
-      "materia": "6302"
-    },
-    {
-      "clases": [
         {
           "dia": 2,
           "fin": "17:00",
@@ -3408,9 +3840,101 @@ export const data =
           "inicio": "15:00"
         },
         {
+          "dia": 3,
+          "fin": "16:30",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 4,
+          "fin": "15:00",
+          "inicio": "13:00"
+        },
+        {
+          "dia": 4,
+          "fin": "15:00",
+          "inicio": "13:00"
+        }
+      ],
+      "codigo": "6302-CURSO: 03",
+      "docentes": "APHESTEGUY, JUAN CARLOS (Profesor/a Adjunto/a) - RUSSO, ANALIA VERONICA (Profesor/a Adjunto/a) - GAVIOLI, NATALIA (Jefe/a Trabajos Practicos) - ACOSTA, NICOLAS ALBERTO (Ayudante de 2da) - NUÑEZ, NATALIA ELENA (Ayudante 1ro/a)",
+      "materia": "6302"
+    },
+    {
+      "clases": [
+        {
+          "dia": 2,
+          "fin": "17:00",
+          "inicio": "15:30"
+        },
+        {
+          "dia": 2,
+          "fin": "17:00",
+          "inicio": "15:30"
+        },
+        {
+          "dia": 2,
+          "fin": "17:00",
+          "inicio": "15:30"
+        },
+        {
+          "dia": 2,
+          "fin": "17:00",
+          "inicio": "15:30"
+        },
+        {
+          "dia": 3,
+          "fin": "16:30",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 3,
+          "fin": "16:30",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 3,
+          "fin": "16:30",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 3,
+          "fin": "16:30",
+          "inicio": "15:00"
+        },
+        {
           "dia": 4,
           "fin": "14:30",
           "inicio": "12:30"
+        },
+        {
+          "dia": 4,
+          "fin": "14:30",
+          "inicio": "12:30"
+        },
+        {
+          "dia": 4,
+          "fin": "14:30",
+          "inicio": "12:30"
+        },
+        {
+          "dia": 4,
+          "fin": "14:30",
+          "inicio": "12:30"
+        },
+        {
+          "dia": 4,
+          "fin": "18:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 4,
+          "fin": "18:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 4,
+          "fin": "18:00",
+          "inicio": "15:00"
         },
         {
           "dia": 4,
@@ -3431,8 +3955,38 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "12:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 2,
+          "fin": "12:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 2,
           "fin": "17:00",
           "inicio": "15:30"
+        },
+        {
+          "dia": 2,
+          "fin": "17:00",
+          "inicio": "15:30"
+        },
+        {
+          "dia": 2,
+          "fin": "17:00",
+          "inicio": "15:30"
+        },
+        {
+          "dia": 3,
+          "fin": "16:30",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 3,
+          "fin": "16:30",
+          "inicio": "15:00"
         },
         {
           "dia": 3,
@@ -3443,10 +3997,20 @@ export const data =
           "dia": 4,
           "fin": "11:00",
           "inicio": "09:00"
+        },
+        {
+          "dia": 4,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 4,
+          "fin": "11:00",
+          "inicio": "09:00"
         }
       ],
       "codigo": "6302-CURSO: 05",
-      "docentes": "APHESTEGUY, JUAN CARLOS (Profesor/a Adjunto/a) - RUSSO, ANALIA VERONICA (Profesor/a Adjunto/a) - FANCHIOTTI, SANDRA GABRIEL (Jefe/a Trabajos Practicos) - ORONA, GISELA CECILIA (Ayudante 1ro/a) - KIRNE, CECILIA ANA (Ayudante 2do/a)",
+      "docentes": "RUSSO, ANALIA VERONICA (Profesor/a Adjunto/a) - APHESTEGUY, JUAN CARLOS (Profesor/a Adjunto/a) - FANCHIOTTI, SANDRA GABRIEL (Jefe/a Trabajos Practicos) - ORONA, GISELA CECILIA (Ayudante 1ro/a) - KIRNE, CECILIA ANA (Ayudante 2do/a)",
       "materia": "6302"
     },
     {
@@ -3593,6 +4157,26 @@ export const data =
           "inicio": "10:00"
         },
         {
+          "dia": 1,
+          "fin": "13:00",
+          "inicio": "10:00"
+        },
+        {
+          "dia": 1,
+          "fin": "13:00",
+          "inicio": "10:00"
+        },
+        {
+          "dia": 2,
+          "fin": "17:00",
+          "inicio": "15:30"
+        },
+        {
+          "dia": 2,
+          "fin": "17:00",
+          "inicio": "15:30"
+        },
+        {
           "dia": 2,
           "fin": "17:00",
           "inicio": "15:30"
@@ -3601,6 +4185,26 @@ export const data =
           "dia": 3,
           "fin": "13:00",
           "inicio": "11:00"
+        },
+        {
+          "dia": 3,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 3,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 3,
+          "fin": "17:00",
+          "inicio": "15:30"
+        },
+        {
+          "dia": 3,
+          "fin": "17:00",
+          "inicio": "15:30"
         },
         {
           "dia": 3,
@@ -3621,6 +4225,26 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "15:00",
+          "inicio": "13:00"
+        },
+        {
+          "dia": 2,
+          "fin": "15:00",
+          "inicio": "13:00"
+        },
+        {
+          "dia": 2,
+          "fin": "17:00",
+          "inicio": "15:30"
+        },
+        {
+          "dia": 2,
+          "fin": "17:00",
+          "inicio": "15:30"
+        },
+        {
+          "dia": 2,
           "fin": "17:00",
           "inicio": "15:30"
         },
@@ -3628,6 +4252,26 @@ export const data =
           "dia": 3,
           "fin": "17:00",
           "inicio": "15:30"
+        },
+        {
+          "dia": 3,
+          "fin": "17:00",
+          "inicio": "15:30"
+        },
+        {
+          "dia": 3,
+          "fin": "17:00",
+          "inicio": "15:30"
+        },
+        {
+          "dia": 4,
+          "fin": "15:00",
+          "inicio": "12:00"
+        },
+        {
+          "dia": 4,
+          "fin": "15:00",
+          "inicio": "12:00"
         },
         {
           "dia": 4,
@@ -3648,6 +4292,26 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "17:00",
+          "inicio": "15:30"
+        },
+        {
+          "dia": 2,
+          "fin": "17:00",
+          "inicio": "15:30"
+        },
+        {
+          "dia": 2,
+          "fin": "20:30",
+          "inicio": "17:30"
+        },
+        {
+          "dia": 2,
+          "fin": "20:30",
+          "inicio": "17:30"
+        },
+        {
+          "dia": 2,
           "fin": "20:30",
           "inicio": "17:30"
         },
@@ -3655,6 +4319,26 @@ export const data =
           "dia": 3,
           "fin": "17:00",
           "inicio": "15:30"
+        },
+        {
+          "dia": 3,
+          "fin": "17:00",
+          "inicio": "15:30"
+        },
+        {
+          "dia": 3,
+          "fin": "17:00",
+          "inicio": "15:30"
+        },
+        {
+          "dia": 4,
+          "fin": "18:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 4,
+          "fin": "18:00",
+          "inicio": "16:00"
         },
         {
           "dia": 4,
@@ -3695,7 +4379,7 @@ export const data =
         }
       ],
       "codigo": "6314-CURSO: 01",
-      "docentes": "MARTINS ALHO, MIRIAM (Profesor/a Adjunto/a) - LUENGO, JOSEFINA (Jefe/a Trabajos Practicos) - POZZOLI, ANGEL VALERIA (Jefe/a Trabajos Practicos) - SIMMS, MARIA CRISTINA (Ayudante 1ro/a) - SANCHEZ, MARTÍN FEDERICO (Ayudante 2do/a)",
+      "docentes": "MARTINS ALHO, MIRIAM (Profesor/a Adjunto/a) - POZZOLI, ANGEL VALERIA (Jefe/a Trabajos Practicos) - LUENGO, JOSEFINA (Jefe/a Trabajos Practicos) - SIMMS, MARIA CRISTINA (Ayudante 1ro/a) - SANCHEZ, MARTÍN FEDERICO (Ayudante 2do/a)",
       "materia": "6314"
     },
     {
@@ -3759,7 +4443,7 @@ export const data =
         }
       ],
       "codigo": "6314-CURSO: 03",
-      "docentes": "MARTINS ALHO, MIRIAM (Profesor/a Adjunto/a) - ARANDA, MARIO ARIEL (Jefe/a Trabajos Practicos) - FIGUEROA, MARIA AMALIA (Jefe/a Trabajos Practicos) - ANGHILERI, AGUSTIN EZEQUIEL (Ayudante 2do/a ad-honorem) - ANGHILERI, AGUSTIN EZEQUIEL (Ayudante 2do/a ad-honorem) - URBANO MARCHESSI, MAXIMO FRANCO (Ayudante 2do/a ad-honorem)",
+      "docentes": "MARTINS ALHO, MIRIAM (Profesor/a Adjunto/a) - FIGUEROA, MARIA AMALIA (Jefe/a Trabajos Practicos) - ARANDA, MARIO ARIEL (Jefe/a Trabajos Practicos) - ANGHILERI, AGUSTIN EZEQUIEL (Ayudante 2do/a ad-honorem) - ANGHILERI, AGUSTIN EZEQUIEL (Ayudante 2do/a ad-honorem) - URBANO MARCHESSI, MAXIMO FRANCO (Ayudante 2do/a ad-honorem)",
       "materia": "6314"
     },
     {
@@ -3929,7 +4613,7 @@ export const data =
         }
       ],
       "codigo": "6411-CURSO: 2",
-      "docentes": "TOSCANO, RITA GENOVEVA (Profesor/a Titular/a) - SCAZZUSO, GERMAN ARIEL (Ayudante 1ro/a) - FABRE, JORGE ADRIAN (Ayudante 1ro/a)",
+      "docentes": "TOSCANO, RITA GENOVEVA (Profesor/a Titular/a) - FABRE, JORGE ADRIAN (Ayudante 1ro/a) - SCAZZUSO, GERMAN ARIEL (Ayudante 1ro/a)",
       "materia": "6411"
     },
     {
@@ -3980,7 +4664,7 @@ export const data =
         }
       ],
       "codigo": "6411-CURSO: 5",
-      "docentes": "CARNICER, ROBERTO SERGIO (Profesor/a Titular/a) - TOSCANO, RITA GENOVEVA (Profesor/a Titular/a) - AAB, PATRICIA LUCIA (Jefe/a Trabajos Practicos) - MARTIN, ANA LAURA (Ayudante 1ro/a)",
+      "docentes": "TOSCANO, RITA GENOVEVA (Profesor/a Titular/a) - CARNICER, ROBERTO SERGIO (Profesor/a Titular/a) - AAB, PATRICIA LUCIA (Jefe/a Trabajos Practicos) - MARTIN, ANA LAURA (Ayudante 1ro/a)",
       "materia": "6411"
     },
     {
@@ -4049,45 +4733,6 @@ export const data =
     {
       "clases": [
         {
-          "dia": 1,
-          "fin": "16:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 1,
-          "fin": "16:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 1,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 1,
-          "fin": "18:00",
-          "inicio": "16:00"
-        }
-      ],
-      "codigo": "6416-CURSO: 1",
-      "docentes": "BERTERO, AGUSTÍN (Profesor/a Adjunto/a) - CASTAGNOLA, PEDRO DANTE (Jefe/a Trabajos Practicos) - NET, MARCELO MANUEL (Jefe/a Trabajos Practicos) - GUZMAN, CARLOS ALBERTO (Ayudante 1ro/a)",
-      "materia": "6416"
-    },
-    {
-      "clases": [
-        {
-          "dia": 1,
-          "fin": "19:00",
-          "inicio": "15:00"
-        }
-      ],
-      "codigo": "6418-CURSO 1",
-      "docentes": "BERTERO, RAUL DOMINGO (Profesor/a Titular/a) - LEHMANN, ALEJANDRO NICOLAS (Ayudante 1ro/a)",
-      "materia": "6418"
-    },
-    {
-      "clases": [
-        {
           "dia": 2,
           "fin": "16:00",
           "inicio": "14:00"
@@ -4108,6 +4753,16 @@ export const data =
           "dia": 1,
           "fin": "21:00",
           "inicio": "18:00"
+        },
+        {
+          "dia": 1,
+          "fin": "21:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 3,
+          "fin": "22:00",
+          "inicio": "19:00"
         },
         {
           "dia": 3,
@@ -4388,7 +5043,7 @@ export const data =
         }
       ],
       "codigo": "6602-CURSO: 2",
-      "docentes": "ROSA, ADRIÁN DARÍO (Profesor/a Adjunto/a) - NICORA, LAURA IRENE (Ayudante 1ro/a) - FANEGO, DIEGO ALBERTO (Ayudante 1ro/a)",
+      "docentes": "ROSA, ADRIÁN DARÍO (Profesor/a Adjunto/a) - FANEGO, DIEGO ALBERTO (Ayudante 1ro/a) - NICORA, LAURA IRENE (Ayudante 1ro/a)",
       "materia": "6602"
     },
     {
@@ -4573,7 +5228,7 @@ export const data =
         }
       ],
       "codigo": "6609-Curso 3",
-      "docentes": "RATTO, GRACIELA SUSANA (Profesor/a Adjunto/a) - CAMPIGLIO, GUILLERMO CARLOS (Profesor/a Adjunto/a) - GAVINOWICH, GABRIEL HUGO (Ayudante 1ro/a)",
+      "docentes": "CAMPIGLIO, GUILLERMO CARLOS (Profesor/a Adjunto/a) - RATTO, GRACIELA SUSANA (Profesor/a Adjunto/a) - GAVINOWICH, GABRIEL HUGO (Ayudante 1ro/a)",
       "materia": "6609"
     },
     {
@@ -4641,7 +5296,7 @@ export const data =
         }
       ],
       "codigo": "6632-Curso 1",
-      "docentes": "GONZALEZ, PABLO SEBASTIAN (Profesor/a Adjunto/a) - LISTE, VICTOR MARIANO (Ayudante 1ro/a) - CARTELLI, CARLOS JOSÉ (Ayudante 1ro/a)",
+      "docentes": "GONZALEZ, PABLO SEBASTIAN (Profesor/a Adjunto/a) - CARTELLI, CARLOS JOSÉ (Ayudante 1ro/a) - LISTE, VICTOR MARIANO (Ayudante 1ro/a)",
       "materia": "6632"
     },
     {
@@ -4709,7 +5364,7 @@ export const data =
         }
       ],
       "codigo": "6670-CURSO: 3",
-      "docentes": "MAZZEO, JORGE RAUL (Profesor/a Adjunto/a) - BURIN, ABRAHAM ALBERTO DA (Jefe/a Trabajos Practicos) - NOVODVORETZ, OSCAR DARIO (Ayudante 1ro/a) - GUTIERREZ, NESTOR SERGIO (Ayudante 1ro/a)",
+      "docentes": "MAZZEO, JORGE RAUL (Profesor/a Adjunto/a) - BURIN, ABRAHAM ALBERTO DA (Jefe/a Trabajos Practicos) - GUTIERREZ, NESTOR SERGIO (Ayudante 1ro/a) - NOVODVORETZ, OSCAR DARIO (Ayudante 1ro/a)",
       "materia": "6670"
     },
     {
@@ -4777,8 +5432,25 @@ export const data =
         }
       ],
       "codigo": "6674-CURSO: 3",
-      "docentes": "TORRES, HUMBERTO MAXIMILIANO (Profesor/a Adjunto/a) - PÉREZ, SEBASTIÁN GABRIEL (Ayudante 1ro/a) - SAR, JUAN FEDERICO (Ayudante 1ro/a)",
+      "docentes": "TORRES, HUMBERTO MAXIMILIANO (Profesor/a Adjunto/a) - SAR, JUAN FEDERICO (Ayudante 1ro/a) - PÉREZ, SEBASTIÁN GABRIEL (Ayudante 1ro/a)",
       "materia": "6674"
+    },
+    {
+      "clases": [
+        {
+          "dia": 2,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 3,
+          "fin": "19:00",
+          "inicio": "16:00"
+        }
+      ],
+      "codigo": "6675-CURSO 1",
+      "docentes": "GIRIBET, JUAN IGNACIO (Profesor/a Asociado/a) - PFEFFERMAN, JONAS DAMIAN (Jefe/a Trabajos Practicos) - LUPI, CLAUDIO ALBERTO (Ayudante 1ro/a) - JOURDAN, IVAN (Ayudante 1ro/a)",
+      "materia": "6675"
     },
     {
       "clases": [
@@ -4806,7 +5478,7 @@ export const data =
         }
       ],
       "codigo": "6702-CURSO: 1",
-      "docentes": "FERNANDEZ, PABLO OSVALDO (Profesor/a Adjunto/a) - SCOPPA, SANTIAGO (Ayudante 2do/a) - SCOPPA, SANTIAGO (Ayudante 2do/a) - CRESCENTINI, GUSTAVO DANIEL (Ayudante 2do/a) - DEVOTO, JUAN CRUZ (Ayudante 2do/a ad-honorem)",
+      "docentes": "FERNANDEZ, PABLO OSVALDO (Profesor/a Adjunto/a) - SCOPPA, SANTIAGO (Ayudante 2do/a) - CRESCENTINI, GUSTAVO DANIEL (Ayudante 2do/a) - SCOPPA, SANTIAGO (Ayudante 2do/a) - DEVOTO, JUAN CRUZ (Ayudante 2do/a ad-honorem)",
       "materia": "6702"
     },
     {
@@ -4935,9 +5607,24 @@ export const data =
           "inicio": "15:00"
         },
         {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "15:00"
+        },
+        {
           "dia": 3,
           "fin": "17:00",
           "inicio": "14:00"
+        },
+        {
+          "dia": 3,
+          "fin": "17:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 3,
+          "fin": "20:00",
+          "inicio": "17:00"
         },
         {
           "dia": 3,
@@ -4958,8 +5645,38 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "08:00"
+        },
+        {
+          "dia": 2,
+          "fin": "11:00",
+          "inicio": "08:00"
+        },
+        {
+          "dia": 2,
           "fin": "18:00",
           "inicio": "15:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 5,
+          "fin": "21:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 5,
+          "fin": "21:00",
+          "inicio": "18:00"
         },
         {
           "dia": 5,
@@ -4980,8 +5697,23 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "08:00"
+        },
+        {
+          "dia": 2,
           "fin": "15:00",
           "inicio": "12:00"
+        },
+        {
+          "dia": 2,
+          "fin": "15:00",
+          "inicio": "12:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "15:00"
         },
         {
           "dia": 2,
@@ -5001,9 +5733,24 @@ export const data =
           "inicio": "15:00"
         },
         {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "15:00"
+        },
+        {
           "dia": 3,
           "fin": "17:00",
           "inicio": "14:00"
+        },
+        {
+          "dia": 3,
+          "fin": "17:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "21:00",
+          "inicio": "18:00"
         },
         {
           "dia": 4,
@@ -5024,6 +5771,21 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "08:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 4,
           "fin": "18:00",
           "inicio": "15:00"
         },
@@ -5045,6 +5807,16 @@ export const data =
           "inicio": "15:00"
         },
         {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 3,
+          "fin": "17:00",
+          "inicio": "14:00"
+        },
+        {
           "dia": 3,
           "fin": "17:00",
           "inicio": "14:00"
@@ -5053,10 +5825,15 @@ export const data =
           "dia": 4,
           "fin": "21:00",
           "inicio": "18:00"
+        },
+        {
+          "dia": 4,
+          "fin": "21:00",
+          "inicio": "18:00"
         }
       ],
       "codigo": "6712-CURSO: 6",
-      "docentes": "di IORIO, JOSÉ MARÍA (Profesor/a Adjunto/a) - GEREZ, CARLOS JULIO (Profesor/a Adjunto/a) - CHAGUAYO YANGALI, JUAN CARLOS (Ayudante 2do/a) - CHAGUAYO YANGALI, JUAN CARLOS (Ayudante 2do/a)",
+      "docentes": "GEREZ, CARLOS JULIO (Profesor/a Adjunto/a) - di IORIO, JOSÉ MARÍA (Profesor/a Adjunto/a) - CHAGUAYO YANGALI, JUAN CARLOS (Ayudante 2do/a) - CHAGUAYO YANGALI, JUAN CARLOS (Ayudante 2do/a)",
       "materia": "6712"
     },
     {
@@ -5065,6 +5842,16 @@ export const data =
           "dia": 1,
           "fin": "17:00",
           "inicio": "14:00"
+        },
+        {
+          "dia": 1,
+          "fin": "17:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:30",
+          "inicio": "15:30"
         },
         {
           "dia": 2,
@@ -5090,7 +5877,7 @@ export const data =
         }
       ],
       "codigo": "6713-CURSO: 1B",
-      "docentes": "LAUFGANG, SERGIO GUSTAVO (Profesor/a Titular/a) - SALAS, ENRIQUE GUSTAVO (Profesor/a Adjunto/a) - DIAZ PERDIGUERO, LORENA REBECA DEL HUERTO (Ayudante 1ro/a) - LORUSSO, HERNAN NORBERTO (Ayudante 1ro/a) - DE LA CONCEPCIÓN MARÍA, VALERIA LUJÁN (Ayudante 2do/a)",
+      "docentes": "LAUFGANG, SERGIO GUSTAVO (Profesor/a Titular/a) - SALAS, ENRIQUE GUSTAVO (Profesor/a Adjunto/a) - LORUSSO, HERNAN NORBERTO (Ayudante 1ro/a) - DIAZ PERDIGUERO, LORENA REBECA DEL HUERTO (Ayudante 1ro/a) - DE LA CONCEPCIÓN MARÍA, VALERIA LUJÁN (Ayudante 2do/a)",
       "materia": "6713"
     },
     {
@@ -5141,7 +5928,7 @@ export const data =
         }
       ],
       "codigo": "6713-CURSO: 3A",
-      "docentes": "LAUFGANG, SERGIO GUSTAVO (Profesor/a Titular/a) - SALAS, ENRIQUE GUSTAVO (Profesor/a Adjunto/a) - PICHIPIL HUIRCAPAN, MARCELA FRANCISCA (Jefe/a Trabajos Practicos) - FRANCO, MARIA DE LAS MERCEDES (Ayudante 2do/a) - RULL, PABLO MARCELO (Ayudante 2do/a)",
+      "docentes": "LAUFGANG, SERGIO GUSTAVO (Profesor/a Titular/a) - SALAS, ENRIQUE GUSTAVO (Profesor/a Adjunto/a) - PICHIPIL HUIRCAPAN, MARCELA FRANCISCA (Jefe/a Trabajos Practicos) - RULL, PABLO MARCELO (Ayudante 2do/a) - FRANCO, MARIA DE LAS MERCEDES (Ayudante 2do/a)",
       "materia": "6713"
     },
     {
@@ -5158,7 +5945,7 @@ export const data =
         }
       ],
       "codigo": "6713-CURSO: 3B",
-      "docentes": "LAUFGANG, SERGIO GUSTAVO (Profesor/a Titular/a) - SALAS, ENRIQUE GUSTAVO (Jefe/a Trabajos Practicos) - PICHIPIL HUIRCAPAN, MARCELA FRANCISCA (Jefe/a Trabajos Practicos) - RULL, PABLO MARCELO (Ayudante 2do/a) - FRANCO, MARIA DE LAS MERCEDES (Ayudante 2do/a)",
+      "docentes": "LAUFGANG, SERGIO GUSTAVO (Profesor/a Titular/a) - PICHIPIL HUIRCAPAN, MARCELA FRANCISCA (Jefe/a Trabajos Practicos) - SALAS, ENRIQUE GUSTAVO (Jefe/a Trabajos Practicos) - FRANCO, MARIA DE LAS MERCEDES (Ayudante 2do/a) - RULL, PABLO MARCELO (Ayudante 2do/a)",
       "materia": "6713"
     },
     {
@@ -5250,7 +6037,7 @@ export const data =
         }
       ],
       "codigo": "6717-CURSO: 4A",
-      "docentes": "SCHENKEL, CHRISTIAN DAVID (Profesor/a Adjunto/a) - CAGEAO, SEBASTIAN (Ayudante 1ro/a) - ALVAREZ, FACUNDO EMANUEL (Ayudante 1ro/a)",
+      "docentes": "SCHENKEL, CHRISTIAN DAVID (Profesor/a Adjunto/a) - ALVAREZ, FACUNDO EMANUEL (Ayudante 1ro/a) - CAGEAO, SEBASTIAN (Ayudante 1ro/a)",
       "materia": "6717"
     },
     {
@@ -5274,7 +6061,7 @@ export const data =
         }
       ],
       "codigo": "6717-CURSO: 6A",
-      "docentes": "SCHENKEL, CHRISTIAN DAVID (Profesor/a Adjunto/a) - ANTEZANA LOPEZ, JAVIER ARMANDO (Jefe/a Trabajos Practicos) - SPERONI, JORGE ANDRÉS (Ayudante 2do/a) - GUARINIELLO, ESTEBAN (Ayudante 2do/a)",
+      "docentes": "SCHENKEL, CHRISTIAN DAVID (Profesor/a Adjunto/a) - ANTEZANA LOPEZ, JAVIER ARMANDO (Jefe/a Trabajos Practicos) - GUARINIELLO, ESTEBAN (Ayudante 2do/a) - SPERONI, JORGE ANDRÉS (Ayudante 2do/a)",
       "materia": "6717"
     },
     {
@@ -5286,7 +6073,7 @@ export const data =
         }
       ],
       "codigo": "6717-CURSO: 6B",
-      "docentes": "SCHENKEL, CHRISTIAN DAVID (Profesor/a Adjunto/a) - ANTEZANA LOPEZ, JAVIER ARMANDO (Jefe/a Trabajos Practicos) - SPERONI, JORGE ANDRÉS (Ayudante 2do/a) - GUARINIELLO, ESTEBAN (Ayudante 2do/a)",
+      "docentes": "SCHENKEL, CHRISTIAN DAVID (Profesor/a Adjunto/a) - ANTEZANA LOPEZ, JAVIER ARMANDO (Jefe/a Trabajos Practicos) - GUARINIELLO, ESTEBAN (Ayudante 2do/a) - SPERONI, JORGE ANDRÉS (Ayudante 2do/a)",
       "materia": "6717"
     },
     {
@@ -5309,9 +6096,24 @@ export const data =
           "inicio": "16:00"
         },
         {
+          "dia": 3,
+          "fin": "19:00",
+          "inicio": "16:00"
+        },
+        {
           "dia": 5,
           "fin": "19:00",
           "inicio": "16:00"
+        },
+        {
+          "dia": 5,
+          "fin": "19:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 5,
+          "fin": "21:00",
+          "inicio": "19:00"
         },
         {
           "dia": 5,
@@ -5348,6 +6150,16 @@ export const data =
           "inicio": "18:00"
         },
         {
+          "dia": 4,
+          "fin": "20:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 5,
+          "fin": "23:00",
+          "inicio": "19:00"
+        },
+        {
           "dia": 5,
           "fin": "23:00",
           "inicio": "19:00"
@@ -5363,6 +6175,16 @@ export const data =
           "dia": 3,
           "fin": "23:00",
           "inicio": "19:00"
+        },
+        {
+          "dia": 3,
+          "fin": "23:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 6,
+          "fin": "13:00",
+          "inicio": "09:00"
         },
         {
           "dia": 6,
@@ -5406,19 +6228,39 @@ export const data =
           "inicio": "16:00"
         },
         {
+          "dia": 3,
+          "fin": "19:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 5,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
           "dia": 5,
           "fin": "22:00",
           "inicio": "19:00"
         }
       ],
       "codigo": "6724-CURSO: 1",
-      "docentes": "ERRAZQUIN, JORGE (Profesor/a Adjunto/a) - GÓMEZ, FERNANDO GABRIEL (Jefe/a Trabajos Practicos) - MALM MORGAN, MARCOS TOMÁS (Ayudante 1ro/a) - ILUNDAIN, IGNACIO HUGO (Ayudante 1ro/a) - MARTIN ABAD, JAVIER FERNANDO TOMAS (Ayudante 2do/a ad-honorem)",
+      "docentes": "ERRAZQUIN, JORGE (Profesor/a Adjunto/a) - GÓMEZ, FERNANDO GABRIEL (Jefe/a Trabajos Practicos) - ILUNDAIN, IGNACIO HUGO (Ayudante 1ro/a) - MALM MORGAN, MARCOS TOMÁS (Ayudante 1ro/a) - MARTIN ABAD, JAVIER FERNANDO TOMAS (Ayudante 2do/a ad-honorem)",
       "materia": "6724"
     },
     {
       "clases": [
         {
           "dia": 1,
+          "fin": "19:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 1,
+          "fin": "19:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 3,
           "fin": "19:00",
           "inicio": "15:00"
         },
@@ -5436,6 +6278,16 @@ export const data =
       "clases": [
         {
           "dia": 1,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 1,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 3,
           "fin": "22:00",
           "inicio": "19:00"
         },
@@ -5463,7 +6315,7 @@ export const data =
         }
       ],
       "codigo": "6727-CURSO: 1",
-      "docentes": "LAGUZZI, SERGIO DANIEL (Profesor/a Adjunto/a) - ANDRETTA, FERNANDO ARIEL (Jefe/a Trabajos Practicos) - CORO, LUIS ERNESTO (Jefe/a Trabajos Practicos) - TORROGLOSA, JUAN MANUEL (Ayudante 1ro/a)",
+      "docentes": "LAGUZZI, SERGIO DANIEL (Profesor/a Adjunto/a) - CORO, LUIS ERNESTO (Jefe/a Trabajos Practicos) - ANDRETTA, FERNANDO ARIEL (Jefe/a Trabajos Practicos) - TORROGLOSA, JUAN MANUEL (Ayudante 1ro/a)",
       "materia": "6727"
     },
     {
@@ -5484,6 +6336,16 @@ export const data =
           "dia": 4,
           "fin": "22:00",
           "inicio": "18:00"
+        },
+        {
+          "dia": 4,
+          "fin": "22:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 5,
+          "fin": "21:00",
+          "inicio": "19:00"
         },
         {
           "dia": 5,
@@ -5523,6 +6385,16 @@ export const data =
       "clases": [
         {
           "dia": 2,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 2,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 3,
           "fin": "22:00",
           "inicio": "19:00"
         },
@@ -5613,6 +6485,16 @@ export const data =
         },
         {
           "dia": 4,
+          "fin": "19:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 4,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 4,
           "fin": "22:00",
           "inicio": "19:00"
         }
@@ -5627,6 +6509,16 @@ export const data =
           "dia": 2,
           "fin": "22:00",
           "inicio": "18:00"
+        },
+        {
+          "dia": 2,
+          "fin": "22:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 5,
+          "fin": "19:00",
+          "inicio": "17:00"
         },
         {
           "dia": 5,
@@ -5652,7 +6544,7 @@ export const data =
         }
       ],
       "codigo": "6743-CURSO: 1",
-      "docentes": "BRUMOVSKY, ANDRES FRANCISCO (Profesor/a Adjunto/a) - GONZALEZ, PABLO SEBASTIAN (Profesor/a Adjunto/a) - ARAMENDIA, JOAQUIN IGNACIO (Ayudante 1ro/a)",
+      "docentes": "GONZALEZ, PABLO SEBASTIAN (Profesor/a Adjunto/a) - BRUMOVSKY, ANDRES FRANCISCO (Profesor/a Adjunto/a) - ARAMENDIA, JOAQUIN IGNACIO (Ayudante 1ro/a)",
       "materia": "6743"
     },
     {
@@ -5722,7 +6614,7 @@ export const data =
         }
       ],
       "codigo": "6750-CURSO: 1",
-      "docentes": "NIECO, HORACIO LUIS (Jefe/a Trabajos Practicos) - SALAS, ENRIQUE GUSTAVO (Ayudante 1ro/a) - GUTIERREZ, RUBEN OMAR (Ayudante 1ro/a)",
+      "docentes": "NIECO, HORACIO LUIS (Jefe/a Trabajos Practicos) - GUTIERREZ, RUBEN OMAR (Ayudante 1ro/a) - SALAS, ENRIQUE GUSTAVO (Ayudante 1ro/a)",
       "materia": "6750"
     },
     {
@@ -5731,6 +6623,16 @@ export const data =
           "dia": 4,
           "fin": "21:00",
           "inicio": "19:00"
+        },
+        {
+          "dia": 4,
+          "fin": "21:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 5,
+          "fin": "18:00",
+          "inicio": "16:00"
         },
         {
           "dia": 5,
@@ -5748,6 +6650,16 @@ export const data =
           "dia": 5,
           "fin": "18:00",
           "inicio": "16:00"
+        },
+        {
+          "dia": 5,
+          "fin": "18:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 5,
+          "fin": "21:00",
+          "inicio": "19:00"
         },
         {
           "dia": 5,
@@ -6243,7 +7155,7 @@ export const data =
         }
       ],
       "codigo": "7102-Curso 1",
-      "docentes": "MENDEZ CASARIEGO, JUAN CARLOS (Profesor/a Adjunto/a) - PONZO, SANDRA VERONICA (Jefe/a Trabajos Practicos) - QUINTERNO, NICOLÁS (Ayudante 1ro/a) - PONZO, NADIA SILVANA (Ayudante 1ro/a)",
+      "docentes": "MENDEZ CASARIEGO, JUAN CARLOS (Profesor/a Adjunto/a) - PONZO, SANDRA VERONICA (Jefe/a Trabajos Practicos) - PONZO, NADIA SILVANA (Ayudante 1ro/a) - QUINTERNO, NICOLÁS (Ayudante 1ro/a)",
       "materia": "7102"
     },
     {
@@ -6260,7 +7172,7 @@ export const data =
         }
       ],
       "codigo": "7103-CURSO: 1",
-      "docentes": "BONOLI ESCOBAR, MARIANO FELIPE (Profesor/a Adjunto/a) - BURSKY, JORGE CESAR CARLOS (Profesor/a Adjunto/a) - GIL, JAVIER LUIS (Jefe/a Trabajos Practicos) - STEWART HARRIS, MARIA FERNANDA (Jefe/a Trabajos Practicos) - PARDIEUX, ANA VALERIA TAMARA (Ayudante 1ro/a) - SARQUIS, MARIA DE LOS ANGELES (Ayudante 1ro/a)",
+      "docentes": "BONOLI ESCOBAR, MARIANO FELIPE (Profesor/a Adjunto/a) - BURSKY, JORGE CESAR CARLOS (Profesor/a Adjunto/a) - STEWART HARRIS, MARIA FERNANDA (Jefe/a Trabajos Practicos) - GIL, JAVIER LUIS (Jefe/a Trabajos Practicos) - PARDIEUX, ANA VALERIA TAMARA (Ayudante 1ro/a) - SARQUIS, MARIA DE LOS ANGELES (Ayudante 1ro/a)",
       "materia": "7103"
     },
     {
@@ -6272,7 +7184,7 @@ export const data =
         }
       ],
       "codigo": "7105-CURSO: 1",
-      "docentes": "LEITER, ALFREDO (Profesor/a Titular/a) - SOTO, MARCELA FABIANA (Jefe/a Trabajos Practicos) - SPECTOR, HUGO RODOLFO (Jefe/a Trabajos Practicos) - VISINTINI JAIME, MARIA BELÉN (Ayudante 1ro/a) - LUCIOLI, MONICA (Ayudante 1ro/a) - MAYO, GUSTAVO RAUL (Ayudante 1ro/a) - REITKLING, LAURA INES (Ayudante 1ro/a) - NOCETI, NELSON FABIAN (Ayudante 1ro/a) - MIRANDA, OSVALDO JAVIER (Ayudante 1ro/a) - BARMACK, NORBERTO BENJAMIN (Ayudante 1ro/a) - ALVAREZ FARIÑA, MARIA AGUSTINA (Ayudante 1ro/a) - de GONGORA, F",
+      "docentes": "LEITER, ALFREDO (Profesor/a Titular/a) - SPECTOR, HUGO RODOLFO (Jefe/a Trabajos Practicos) - SOTO, MARCELA FABIANA (Jefe/a Trabajos Practicos) - LUCIOLI, MONICA (Ayudante 1ro/a) - REITKLING, LAURA INES (Ayudante 1ro/a) - de GONGORA, FRANCISCO (Ayudante 1ro/a) - MIRANDA, OSVALDO JAVIER (Ayudante 1ro/a) - BARMACK, NORBERTO BENJAMIN (Ayudante 1ro/a) - ALVAREZ FARIÑA, MARIA AGUSTINA (Ayudante 1ro/a) - VISINTINI JAIME, MARIA BELÉN (Ayudante 1ro/a) - NOCETI, NELSON FABIAN (Ayudante 1ro/a) - MAYO, GUST",
       "materia": "7105"
     },
     {
@@ -6289,7 +7201,7 @@ export const data =
         }
       ],
       "codigo": "7106-CURSO: 1",
-      "docentes": "SURACE, PABLO ESTEBAN (Profesor/a Adjunto/a) - LEPERA, PABLO ADRIAN (Jefe/a Trabajos Practicos) - CAGNASSO, DARIO ALBERTO (Ayudante 1ro/a) - NACUCCHIO, IVO LUCIANO (Ayudante 1ro/a) - PEREDNIK, FRANCISCO (Ayudante 2do/a) - ALVAREZ DE TOLEDO, ANGELES (Ayudante 2do/a) - ALVAREZ DE TOLEDO, ANGELES (Ayudante 2do/a) - GODOY, ANDRÉS ALEJANDRO (Ayudante 2do/a) - PEREDNIK, FRANCISCO (Ayudante 2do/a) - CIANCI, LUCIANO JULIÁN (Ayudante 1ro/a ad-honorem) - LERMAN REY, RAMIRO (Ayudante 2do/a ad-honorem)",
+      "docentes": "SURACE, PABLO ESTEBAN (Profesor/a Adjunto/a) - LEPERA, PABLO ADRIAN (Jefe/a Trabajos Practicos) - NACUCCHIO, IVO LUCIANO (Ayudante 1ro/a) - CAGNASSO, DARIO ALBERTO (Ayudante 1ro/a) - PEREDNIK, FRANCISCO (Ayudante 2do/a) - ALVAREZ DE TOLEDO, ANGELES (Ayudante 2do/a) - ALVAREZ DE TOLEDO, ANGELES (Ayudante 2do/a) - PEREDNIK, FRANCISCO (Ayudante 2do/a) - GODOY, ANDRÉS ALEJANDRO (Ayudante 2do/a) - CIANCI, LUCIANO JULIÁN (Ayudante 1ro/a ad-honorem) - LERMAN REY, RAMIRO (Ayudante 2do/a ad-honorem)",
       "materia": "7106"
     },
     {
@@ -6306,7 +7218,7 @@ export const data =
         }
       ],
       "codigo": "7107-CURSO: 1",
-      "docentes": "GONZALEZ, XAVIER IGNACIO (Profesor/a Adjunto/a) - RIGOU, DANIEL FRANCISCO (Profesor/a Adjunto/a) - PATRIZI, MARIA JOSE (Jefe/a Trabajos Practicos) - GUALA, MARIA VIRGINIA (Jefe/a Trabajos Practicos) - MURADIAN, FEDERICO (Jefe/a Trabajos Practicos) - MATLAK, ROMINA AYELEN (Ayudante 1ro/a) - GRUNSTEIN ARZUAGA, EUGENIA (Ayudante 2do/a) - GRUNSTEIN ARZUAGA, EUGENIA (Ayudante 2do/a)",
+      "docentes": "RIGOU, DANIEL FRANCISCO (Profesor/a Adjunto/a) - GONZALEZ, XAVIER IGNACIO (Profesor/a Adjunto/a) - MURADIAN, FEDERICO (Jefe/a Trabajos Practicos) - PATRIZI, MARIA JOSE (Jefe/a Trabajos Practicos) - GUALA, MARIA VIRGINIA (Jefe/a Trabajos Practicos) - MATLAK, ROMINA AYELEN (Ayudante 1ro/a) - GRUNSTEIN ARZUAGA, EUGENIA (Ayudante 2do/a) - GRUNSTEIN ARZUAGA, EUGENIA (Ayudante 2do/a)",
       "materia": "7107"
     },
     {
@@ -6323,7 +7235,7 @@ export const data =
         }
       ],
       "codigo": "7108-CURSO: 1",
-      "docentes": "CONDE, MARIA EUGENIA (Profesor/a Adjunto/a) - MONROY, GUILLERMO EDUARDO (Ayudante 1ro/a) - BEAUMARIE, CARLOS FABIAN (Ayudante 1ro/a) - ROMERO, YESICA ANA (Ayudante 2do/a)",
+      "docentes": "CONDE, MARIA EUGENIA (Profesor/a Adjunto/a) - BEAUMARIE, CARLOS FABIAN (Ayudante 1ro/a) - MONROY, GUILLERMO EDUARDO (Ayudante 1ro/a) - ROMERO, YESICA ANA (Ayudante 2do/a)",
       "materia": "7108"
     },
     {
@@ -6357,7 +7269,7 @@ export const data =
         }
       ],
       "codigo": "7108-CURSO: 3",
-      "docentes": "CONDE, MARIA EUGENIA (Profesor/a Adjunto/a) - LOPEZ, GABRIEL ADRIAN (Ayudante 1ro/a) - MOREY RIOS, BORIS (Ayudante 1ro/a)",
+      "docentes": "CONDE, MARIA EUGENIA (Profesor/a Adjunto/a) - MOREY RIOS, BORIS (Ayudante 1ro/a) - LOPEZ, GABRIEL ADRIAN (Ayudante 1ro/a)",
       "materia": "7108"
     },
     {
@@ -6379,7 +7291,7 @@ export const data =
         }
       ],
       "codigo": "7112-CURSO: 1",
-      "docentes": "ZAMMARANO, JOSE SALVADOR (Profesor/a Adjunto/a) - FRUTOS, JUAN DIEGO (Jefe/a Trabajos Practicos) - BARMACK, NORBERTO BENJAMIN (Jefe/a Trabajos Practicos) - VASSALLO, JUAN RAMON (Ayudante 1ro/a) - VEVER, MARIA ELENA (Ayudante 1ro/a)",
+      "docentes": "ZAMMARANO, JOSE SALVADOR (Profesor/a Adjunto/a) - FRUTOS, JUAN DIEGO (Jefe/a Trabajos Practicos) - BARMACK, NORBERTO BENJAMIN (Jefe/a Trabajos Practicos) - VEVER, MARIA ELENA (Ayudante 1ro/a) - VASSALLO, JUAN RAMON (Ayudante 1ro/a)",
       "materia": "7112"
     },
     {
@@ -6418,7 +7330,7 @@ export const data =
         }
       ],
       "codigo": "7114-CURSO 2",
-      "docentes": "ECHEVARRIA, PABLO (Profesor/a Adjunto/a) - RAMOS, SILVIA ADRIANA (Profesor/a Adjunto/a) - OITANA, DIEGO MARTIN (Jefe/a Trabajos Practicos)",
+      "docentes": "RAMOS, SILVIA ADRIANA (Profesor/a Adjunto/a) - ECHEVARRIA, PABLO (Profesor/a Adjunto/a) - OITANA, DIEGO MARTIN (Jefe/a Trabajos Practicos)",
       "materia": "7114"
     },
     {
@@ -6435,7 +7347,7 @@ export const data =
         }
       ],
       "codigo": "7114-CURSO 3",
-      "docentes": "RAMOS, SILVIA ADRIANA (Profesor/a Adjunto/a) - ECHEVARRIA, PABLO (Profesor/a Adjunto/a) - NAVARRO, CARLOS ALBERTO (Jefe/a Trabajos Practicos) - LEVY, JONATHAN (Ayudante 1ro/a) - LESCANO MAIER, ALDANA ROCIO (Ayudante 2do/a ad-honorem) - LESCANO MAIER, ALDANA ROCIO (Ayudante 2do/a ad-honorem)",
+      "docentes": "ECHEVARRIA, PABLO (Profesor/a Adjunto/a) - RAMOS, SILVIA ADRIANA (Profesor/a Adjunto/a) - NAVARRO, CARLOS ALBERTO (Jefe/a Trabajos Practicos) - LEVY, JONATHAN (Ayudante 1ro/a) - LESCANO MAIER, ALDANA ROCIO (Ayudante 2do/a ad-honorem) - LESCANO MAIER, ALDANA ROCIO (Ayudante 2do/a ad-honorem)",
       "materia": "7114"
     },
     {
@@ -6514,6 +7426,16 @@ export const data =
           "dia": 2,
           "fin": "19:00",
           "inicio": "18:00"
+        },
+        {
+          "dia": 2,
+          "fin": "19:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 2,
+          "fin": "23:00",
+          "inicio": "19:00"
         },
         {
           "dia": 2,
@@ -6652,7 +7574,7 @@ export const data =
         }
       ],
       "codigo": "7140-CURSO: 1",
-      "docentes": "NOREMBERG, ADRIAN (Profesor/a Adjunto/a) - D´ACCORSO, JAVIER HERNAN (Jefe/a Trabajos Practicos) - PAGANI, NESTOR DARIO (Jefe/a Trabajos Practicos) - IRANZI, MARTIN (Ayudante 2do/a)",
+      "docentes": "NOREMBERG, ADRIAN (Profesor/a Adjunto/a) - PAGANI, NESTOR DARIO (Jefe/a Trabajos Practicos) - D´ACCORSO, JAVIER HERNAN (Jefe/a Trabajos Practicos) - IRANZI, MARTIN (Ayudante 2do/a)",
       "materia": "7140"
     },
     {
@@ -6788,7 +7710,7 @@ export const data =
         }
       ],
       "codigo": "7151-CURSO: 1",
-      "docentes": "LELIC, RIFAT (Profesor/a Asociado/a) - PALANDELLA, MAURICIO GUILLERMO (Jefe/a Trabajos Practicos) - YLLAÑEZ, VALERIA (Jefe/a Trabajos Practicos) - YAÑEZ, MATIAS ANTONIO (Ayudante 1ro/a) - LAPIDUS, PABLO ANDRES (Ayudante 1ro/a) - SEGAL, MAXIMILIANO (Ayudante 1ro/a) - LALANNE, SANTIAGO (Ayudante 1ro/a) - CASSINELLI, JUAN IGNACIO (Ayudante 2do/a ad-honorem) - SAFRANCHIK, DAN (Ayudante 2do/a ad-honorem)",
+      "docentes": "LELIC, RIFAT (Profesor/a Asociado/a) - YLLAÑEZ, VALERIA (Jefe/a Trabajos Practicos) - PALANDELLA, MAURICIO GUILLERMO (Jefe/a Trabajos Practicos) - LALANNE, SANTIAGO (Ayudante 1ro/a) - LAPIDUS, PABLO ANDRES (Ayudante 1ro/a) - YAÑEZ, MATIAS ANTONIO (Ayudante 1ro/a) - SEGAL, MAXIMILIANO (Ayudante 1ro/a) - SAFRANCHIK, DAN (Ayudante 2do/a ad-honorem) - CASSINELLI, JUAN IGNACIO (Ayudante 2do/a ad-honorem)",
       "materia": "7151"
     },
     {
@@ -6800,7 +7722,7 @@ export const data =
         }
       ],
       "codigo": "7153-CURSO: 1",
-      "docentes": "MEDINA, JUAN PABLO (Profesor/a Adjunto/a) - CIANCIO, SOFIA CARLA (Ayudante 1ro/a) - QUINTEROS, SERGIO ANDRES (Ayudante 2do/a ad-honorem) - GOBBI, ALEJANDRO IVAN (Ayudante 2do/a ad-honorem) - PERCZYK, MARTINA (Ayudante 2do/a ad-honorem)",
+      "docentes": "MEDINA, JUAN PABLO (Profesor/a Adjunto/a) - CIANCIO, SOFIA CARLA (Ayudante 1ro/a) - PERCZYK, MARTINA (Ayudante 2do/a ad-honorem) - GOBBI, ALEJANDRO IVAN (Ayudante 2do/a ad-honorem) - QUINTEROS, SERGIO ANDRES (Ayudante 2do/a ad-honorem)",
       "materia": "7153"
     },
     {
@@ -6829,7 +7751,7 @@ export const data =
         }
       ],
       "codigo": "7156-CURSO: 1",
-      "docentes": "NOREMBERG, ADRIAN (Profesor/a Adjunto/a) - D´ACCORSO, JAVIER HERNAN (Ayudante 1ro/a) - PAGANI, NESTOR DARIO (Ayudante 1ro/a)",
+      "docentes": "NOREMBERG, ADRIAN (Profesor/a Adjunto/a) - PAGANI, NESTOR DARIO (Ayudante 1ro/a) - D´ACCORSO, JAVIER HERNAN (Ayudante 1ro/a)",
       "materia": "7156"
     },
     {
@@ -6919,7 +7841,7 @@ export const data =
         }
       ],
       "codigo": "7205-CURSO: 1",
-      "docentes": "DIEGO, ROSA ANGELA (Profesor/a Asociado/a) - GAYOSO, MARCELA ANDREA (Jefe/a Trabajos Practicos) - AZZOLLINI, MARIANO MARTIN (Jefe/a Trabajos Practicos) - AZCARATE, CINTIA (Ayudante 1ro/a) - SALAGARAY, JULIETA (Ayudante 1ro/a) - MONTI, FABIAN ARMANDO (Ayudante 1ro/a) - CARMONA, DANIELA (Ayudante 2do/a)",
+      "docentes": "DIEGO, ROSA ANGELA (Profesor/a Asociado/a) - GAYOSO, MARCELA ANDREA (Jefe/a Trabajos Practicos) - AZZOLLINI, MARIANO MARTIN (Jefe/a Trabajos Practicos) - MONTI, FABIAN ARMANDO (Ayudante 1ro/a) - SALAGARAY, JULIETA (Ayudante 1ro/a) - AZCARATE, CINTIA (Ayudante 1ro/a) - CARMONA, DANIELA (Ayudante 2do/a)",
       "materia": "7205"
     },
     {
@@ -6953,7 +7875,7 @@ export const data =
         }
       ],
       "codigo": "7206-CURSO: 2",
-      "docentes": "NITTI, ALEJANDRO LEONARDO (Profesor/a Adjunto/a) - ALONSO, ANDRES EZEQUIEL (Ayudante 1ro/a) - CONTI, AGUSTIN ALEJANDRO (Ayudante 1ro/a)",
+      "docentes": "NITTI, ALEJANDRO LEONARDO (Profesor/a Adjunto/a) - CONTI, AGUSTIN ALEJANDRO (Ayudante 1ro/a) - ALONSO, ANDRES EZEQUIEL (Ayudante 1ro/a)",
       "materia": "7206"
     },
     {
@@ -7004,7 +7926,7 @@ export const data =
         }
       ],
       "codigo": "7207-CURSO: 1",
-      "docentes": "SABELLI, ALFREDO JORGE (Profesor/a Adjunto/a) - MARTINI, DARíO OSCAR (Jefe/a Trabajos Practicos) - GALBUSERA, SEBASTIAN (Jefe/a Trabajos Practicos) - CARMINATTI, NICOLAS (Ayudante 1ro/a) - LEGUIZA, JULIA ALEJANDRA (Ayudante 2do/a) - CIARFAGLIA, MARTIN (Ayudante 2do/a) - BREA, NICOLAS MARTIN (Ayudante 2do/a) - GALIGNIANA, LUCAS OMAR (Ayudante 2do/a ad-honorem) - GONZALO JUARROS, FELIPE LORENZO (Ayudante 2do/a ad-honorem) - CIFUENTES, CAMILA SOFIA (Ayudante 2do/a ad-honorem) - CIFUENTES, CAMILA SO",
+      "docentes": "SABELLI, ALFREDO JORGE (Profesor/a Adjunto/a) - MARTINI, DARíO OSCAR (Jefe/a Trabajos Practicos) - GALBUSERA, SEBASTIAN (Jefe/a Trabajos Practicos) - CARMINATTI, NICOLAS (Ayudante 1ro/a) - LEGUIZA, JULIA ALEJANDRA (Ayudante 2do/a) - CIARFAGLIA, MARTIN (Ayudante 2do/a) - BREA, NICOLAS MARTIN (Ayudante 2do/a) - GONZALO JUARROS, FELIPE LORENZO (Ayudante 2do/a ad-honorem) - CIFUENTES, CAMILA SOFIA (Ayudante 2do/a ad-honorem) - CIFUENTES, CAMILA SOFIA (Ayudante 2do/a ad-honorem) - GONZALO JUARROS, FE",
       "materia": "7207"
     },
     {
@@ -7021,7 +7943,7 @@ export const data =
         }
       ],
       "codigo": "7207-CURSO: 2",
-      "docentes": "SABELLI, ALFREDO JORGE (Profesor/a Adjunto/a) - GALBUSERA, SEBASTIAN (Jefe/a Trabajos Practicos) - MARTINI, DARíO OSCAR (Jefe/a Trabajos Practicos) - CARMINATTI, NICOLAS (Ayudante 1ro/a) - CIARFAGLIA, MARTIN (Ayudante 2do/a) - BREA, NICOLAS MARTIN (Ayudante 2do/a) - LEGUIZA, JULIA ALEJANDRA (Ayudante 2do/a) - GALIGNIANA, LUCAS OMAR (Ayudante 2do/a ad-honorem) - CIFUENTES, CAMILA SOFIA (Ayudante 2do/a ad-honorem) - GONZALO JUARROS, FELIPE LORENZO (Ayudante 2do/a ad-honorem) - GONZALO JUARROS, FEL",
+      "docentes": "SABELLI, ALFREDO JORGE (Profesor/a Adjunto/a) - MARTINI, DARíO OSCAR (Jefe/a Trabajos Practicos) - GALBUSERA, SEBASTIAN (Jefe/a Trabajos Practicos) - CARMINATTI, NICOLAS (Ayudante 1ro/a) - BREA, NICOLAS MARTIN (Ayudante 2do/a) - CIARFAGLIA, MARTIN (Ayudante 2do/a) - LEGUIZA, JULIA ALEJANDRA (Ayudante 2do/a) - CIFUENTES, CAMILA SOFIA (Ayudante 2do/a ad-honorem) - GONZALO JUARROS, FELIPE LORENZO (Ayudante 2do/a ad-honorem) - GALIGNIANA, LUCAS OMAR (Ayudante 2do/a ad-honorem) - CIFUENTES, CAMILA SO",
       "materia": "7207"
     },
     {
@@ -7096,7 +8018,7 @@ export const data =
         }
       ],
       "codigo": "7214-CURSO: 1",
-      "docentes": "ARCAGNI, ADOLFO ALBERTO (Profesor/a Adjunto/a) - ALONSO, ANDRES EZEQUIEL (Jefe/a Trabajos Practicos) - TURCO GRECO, MARIA TERESA (Ayudante 1ro/a) - VIERA, ANA DANIELA (Ayudante 1ro/a) - VALENTINI, LEANDRO LUIS (Ayudante 1ro/a) - FORNARI, CECILIA (Ayudante 1ro/a)",
+      "docentes": "ARCAGNI, ADOLFO ALBERTO (Profesor/a Adjunto/a) - ALONSO, ANDRES EZEQUIEL (Jefe/a Trabajos Practicos) - VALENTINI, LEANDRO LUIS (Ayudante 1ro/a) - TURCO GRECO, MARIA TERESA (Ayudante 1ro/a) - FORNARI, CECILIA (Ayudante 1ro/a) - VIERA, ANA DANIELA (Ayudante 1ro/a)",
       "materia": "7214"
     },
     {
@@ -7137,7 +8059,7 @@ export const data =
         }
       ],
       "codigo": "7218-CURSO: 1",
-      "docentes": "DAMIANO, AUGUSTO ALEJANDRO (Profesor/a Adjunto/a) - AMAYA, MYRIAN ANABELLA (Jefe/a Trabajos Practicos) - SAPUPPO, ANABELA (Ayudante 1ro/a) - ETCHEBEHERE, INES (Ayudante 1ro/a) - LANA, ROSANA PATRICIA (Ayudante 1ro/a) - A DESIGNAR, A DESIGNAR (Ayudante 2do/a)",
+      "docentes": "DAMIANO, AUGUSTO ALEJANDRO (Profesor/a Adjunto/a) - AMAYA, MYRIAN ANABELLA (Jefe/a Trabajos Practicos) - ETCHEBEHERE, INES (Ayudante 1ro/a) - LANA, ROSANA PATRICIA (Ayudante 1ro/a) - SAPUPPO, ANABELA (Ayudante 1ro/a) - A DESIGNAR, A DESIGNAR (Ayudante 2do/a)",
       "materia": "7218"
     },
     {
@@ -7149,7 +8071,7 @@ export const data =
         }
       ],
       "codigo": "7299-CURSO: 1",
-      "docentes": "COFONE, ANIBAL EDGARDO (Profesor/a Titular/a) - MIGLIORINO, DIEGO FERNANDO (Profesor/a Adjunto/a) - CORNES, MARTIN DIEGO (Profesor/a Adjunto/a) - LOPEZ CONDE, MARIA EUGENIA (Jefe/a Trabajos Practicos) - A DESIGNAR, A DESIGNAR (Ayudante 1ro/a) - MARINO RODRIGUEZ, VANESA GISELLE (Ayudante 1ro/a) - VILARIÑO, RAMIRO MARTIN (Ayudante 1ro/a) - BIANCO, GUILLERMO ERNESTO (Ayudante 1ro/a) - CANZIANI, SEBASTIAN DANIEL (Ayudante 2do/a)",
+      "docentes": "COFONE, ANIBAL EDGARDO (Profesor/a Titular/a) - CORNES, MARTIN DIEGO (Profesor/a Adjunto/a) - MIGLIORINO, DIEGO FERNANDO (Profesor/a Adjunto/a) - LOPEZ CONDE, MARIA EUGENIA (Jefe/a Trabajos Practicos) - A DESIGNAR, A DESIGNAR (Ayudante 1ro/a) - MARINO RODRIGUEZ, VANESA GISELLE (Ayudante 1ro/a) - VILARIÑO, RAMIRO MARTIN (Ayudante 1ro/a) - BIANCO, GUILLERMO ERNESTO (Ayudante 1ro/a) - CANZIANI, SEBASTIAN DANIEL (Ayudante 2do/a)",
       "materia": "7299"
     },
     {
@@ -7161,7 +8083,7 @@ export const data =
         }
       ],
       "codigo": "7299-CURSO: 2",
-      "docentes": "COFONE, ANIBAL EDGARDO (Profesor/a Titular/a) - MIGLIORINO, DIEGO FERNANDO (Profesor/a Adjunto/a) - CORNES, MARTIN DIEGO (Profesor/a Adjunto/a) - ARANDA, MODESTO MANUEL (Jefe/a Trabajos Practicos) - LEYBOVICH, PABLO DANIEL (Jefe/a Trabajos Practicos) - ORTEGA, MARIANO (Ayudante 1ro/a) - CELANO GOMEZ, BRUNO ALEJANDRO (Ayudante 1ro/a) - VERA, JOSE ERNESTO (Ayudante 1ro/a) - VITA SANCHEZ, MATíAS ALEJANDRO (Ayudante 2do/a)",
+      "docentes": "COFONE, ANIBAL EDGARDO (Profesor/a Titular/a) - MIGLIORINO, DIEGO FERNANDO (Profesor/a Adjunto/a) - CORNES, MARTIN DIEGO (Profesor/a Adjunto/a) - ARANDA, MODESTO MANUEL (Jefe/a Trabajos Practicos) - LEYBOVICH, PABLO DANIEL (Jefe/a Trabajos Practicos) - VERA, JOSE ERNESTO (Ayudante 1ro/a) - ORTEGA, MARIANO (Ayudante 1ro/a) - CELANO GOMEZ, BRUNO ALEJANDRO (Ayudante 1ro/a) - VITA SANCHEZ, MATíAS ALEJANDRO (Ayudante 2do/a)",
       "materia": "7299"
     },
     {
@@ -7173,7 +8095,7 @@ export const data =
         }
       ],
       "codigo": "7299-CURSO: 3",
-      "docentes": "COFONE, ANIBAL EDGARDO (Profesor/a Titular/a) - CORNES, MARTIN DIEGO (Profesor/a Adjunto/a) - MIGLIORINO, DIEGO FERNANDO (Profesor/a Adjunto/a) - RATTEL, PABLO HORACIO (Jefe/a Trabajos Practicos) - SAROKA, ALEJANDRO MARTIN (Ayudante 1ro/a) - GUIM, SEBASTIAN ROBERTO (Ayudante 1ro/a) - FERNANDEZ, HERNAN ALVARO (Ayudante 1ro/a) - SOLANA, ROMINA SOLEDAD (Ayudante 1ro/a) - SIMONELLI, JULIAN (Ayudante 2do/a ad-honorem)",
+      "docentes": "COFONE, ANIBAL EDGARDO (Profesor/a Titular/a) - MIGLIORINO, DIEGO FERNANDO (Profesor/a Adjunto/a) - CORNES, MARTIN DIEGO (Profesor/a Adjunto/a) - RATTEL, PABLO HORACIO (Jefe/a Trabajos Practicos) - GUIM, SEBASTIAN ROBERTO (Ayudante 1ro/a) - SOLANA, ROMINA SOLEDAD (Ayudante 1ro/a) - SAROKA, ALEJANDRO MARTIN (Ayudante 1ro/a) - FERNANDEZ, HERNAN ALVARO (Ayudante 1ro/a) - SIMONELLI, JULIAN (Ayudante 2do/a ad-honorem)",
       "materia": "7299"
     },
     {
@@ -7185,7 +8107,7 @@ export const data =
         }
       ],
       "codigo": "7299-CURSO: 4",
-      "docentes": "COFONE, ANIBAL EDGARDO (Profesor/a Titular/a) - CORNES, MARTIN DIEGO (Profesor/a Adjunto/a) - MIGLIORINO, DIEGO FERNANDO (Profesor/a Adjunto/a) - CATALANO, CRISTIAN MARTIN (Jefe/a Trabajos Practicos) - TERZOLO, HERNAN JAVIER (Ayudante 1ro/a) - SPIAZZI, JORGE JOAQUIN (Ayudante 1ro/a) - PRANDI, PATRICIO RAUL (Ayudante 1ro/a) - LOSINO, DANIELA (Ayudante 1ro/a)",
+      "docentes": "COFONE, ANIBAL EDGARDO (Profesor/a Titular/a) - MIGLIORINO, DIEGO FERNANDO (Profesor/a Adjunto/a) - CORNES, MARTIN DIEGO (Profesor/a Adjunto/a) - CATALANO, CRISTIAN MARTIN (Jefe/a Trabajos Practicos) - LOSINO, DANIELA (Ayudante 1ro/a) - TERZOLO, HERNAN JAVIER (Ayudante 1ro/a) - PRANDI, PATRICIO RAUL (Ayudante 1ro/a) - SPIAZZI, JORGE JOAQUIN (Ayudante 1ro/a)",
       "materia": "7299"
     },
     {
@@ -7197,7 +8119,7 @@ export const data =
         }
       ],
       "codigo": "7299-CURSO: 5",
-      "docentes": "COFONE, ANIBAL EDGARDO (Profesor/a Titular/a) - MIGLIORINO, DIEGO FERNANDO (Profesor/a Adjunto/a) - CORNES, MARTIN DIEGO (Profesor/a Adjunto/a) - RODRIGUEZ, HERNAN ALBERTO (Jefe/a Trabajos Practicos) - JUDAS, MARTIN ENRIQUE (Ayudante 1ro/a) - ALMANZA, MARIANO ANDRES (Ayudante 1ro/a)",
+      "docentes": "COFONE, ANIBAL EDGARDO (Profesor/a Titular/a) - CORNES, MARTIN DIEGO (Profesor/a Adjunto/a) - MIGLIORINO, DIEGO FERNANDO (Profesor/a Adjunto/a) - RODRIGUEZ, HERNAN ALBERTO (Jefe/a Trabajos Practicos) - JUDAS, MARTIN ENRIQUE (Ayudante 1ro/a) - ALMANZA, MARIANO ANDRES (Ayudante 1ro/a)",
       "materia": "7299"
     },
     {
@@ -7252,16 +8174,6 @@ export const data =
           "inicio": "15:00"
         },
         {
-          "dia": 1,
-          "fin": "18:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 3,
-          "fin": "21:00",
-          "inicio": "17:00"
-        },
-        {
           "dia": 3,
           "fin": "21:00",
           "inicio": "17:00"
@@ -7304,16 +8216,6 @@ export const data =
           "dia": 1,
           "fin": "22:00",
           "inicio": "18:00"
-        },
-        {
-          "dia": 1,
-          "fin": "22:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 3,
-          "fin": "21:00",
-          "inicio": "19:00"
         },
         {
           "dia": 3,
@@ -7487,16 +8389,6 @@ export const data =
           "inicio": "20:00"
         },
         {
-          "dia": 3,
-          "fin": "22:00",
-          "inicio": "20:00"
-        },
-        {
-          "dia": 5,
-          "fin": "21:00",
-          "inicio": "19:00"
-        },
-        {
           "dia": 5,
           "fin": "21:00",
           "inicio": "19:00"
@@ -7637,6 +8529,16 @@ export const data =
           "inicio": "16:00"
         },
         {
+          "dia": 1,
+          "fin": "18:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 3,
+          "fin": "19:00",
+          "inicio": "17:00"
+        },
+        {
           "dia": 3,
           "fin": "19:00",
           "inicio": "17:00"
@@ -7666,19 +8568,39 @@ export const data =
           "inicio": "19:00"
         },
         {
+          "dia": 1,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 4,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
           "dia": 4,
           "fin": "22:00",
           "inicio": "19:00"
         }
       ],
       "codigo": "7506-CURSO: 01-Argerich",
-      "docentes": "ARGERICH, LUIS RICARDO (Profesor/a Adjunto/a) - GOLMAR, NATALIA (Jefe/a Trabajos Practicos) - MARTINELLI, DAMIAN ARIEL (Ayudante 1ro/a) - RAMOS MEJIA, MARTÍN GABRIEL (Ayudante 1ro/a)",
+      "docentes": "ARGERICH, LUIS RICARDO (Profesor/a Adjunto/a) - GOLMAR, NATALIA (Jefe/a Trabajos Practicos) - RAMOS MEJIA, MARTÍN GABRIEL (Ayudante 1ro/a) - MARTINELLI, DAMIAN ARIEL (Ayudante 1ro/a)",
       "materia": "7506"
     },
     {
       "clases": [
         {
           "dia": 2,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 2,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 4,
           "fin": "22:00",
           "inicio": "19:00"
         },
@@ -7700,13 +8622,23 @@ export const data =
           "inicio": "19:00"
         },
         {
+          "dia": 2,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 4,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
           "dia": 4,
           "fin": "22:00",
           "inicio": "19:00"
         }
       ],
       "codigo": "7507-CURSO: 01-Sanchez",
-      "docentes": "SANCHEZ, DIEGO (Jefe/a Trabajos Practicos) - YOLIS, EUGENIO (Jefe/a Trabajos Practicos) - FERNÁNDEZ THEILLET, NICOLÁS PABLO (Ayudante 2do/a) - RODRIGUEZ MASSUH, PABLO MATIAS (Ayudante 2do/a) - JUSTO NARCIZO, EDSON EDER (Ayudante 2do/a) - BLAZQUEZ OLIVERA, SEBASTIAN ALEJANDRO (Ayudante 2do/a)",
+      "docentes": "SANCHEZ, DIEGO (Jefe/a Trabajos Practicos) - YOLIS, EUGENIO (Jefe/a Trabajos Practicos) - BLAZQUEZ OLIVERA, SEBASTIAN ALEJANDRO (Ayudante 2do/a) - JUSTO NARCIZO, EDSON EDER (Ayudante 2do/a) - FERNÁNDEZ THEILLET, NICOLÁS PABLO (Ayudante 2do/a) - RODRIGUEZ MASSUH, PABLO MATIAS (Ayudante 2do/a)",
       "materia": "7507"
     },
     {
@@ -7734,6 +8666,16 @@ export const data =
           "inicio": "14:00"
         },
         {
+          "dia": 1,
+          "fin": "17:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "17:00",
+          "inicio": "14:00"
+        },
+        {
           "dia": 4,
           "fin": "17:00",
           "inicio": "14:00"
@@ -7751,6 +8693,16 @@ export const data =
           "inicio": "19:00"
         },
         {
+          "dia": 3,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 5,
+          "fin": "21:00",
+          "inicio": "18:00"
+        },
+        {
           "dia": 5,
           "fin": "21:00",
           "inicio": "18:00"
@@ -7764,6 +8716,16 @@ export const data =
       "clases": [
         {
           "dia": 1,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 1,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 3,
           "fin": "22:00",
           "inicio": "19:00"
         },
@@ -7802,6 +8764,16 @@ export const data =
           "inicio": "08:00"
         },
         {
+          "dia": 1,
+          "fin": "11:00",
+          "inicio": "08:00"
+        },
+        {
+          "dia": 4,
+          "fin": "11:00",
+          "inicio": "08:00"
+        },
+        {
           "dia": 4,
           "fin": "11:00",
           "inicio": "08:00"
@@ -7836,6 +8808,16 @@ export const data =
           "inicio": "18:00"
         },
         {
+          "dia": 1,
+          "fin": "21:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 3,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
           "dia": 3,
           "fin": "22:00",
           "inicio": "19:00"
@@ -7851,6 +8833,16 @@ export const data =
           "dia": 1,
           "fin": "22:00",
           "inicio": "19:00"
+        },
+        {
+          "dia": 1,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 3,
+          "fin": "22:00",
+          "inicio": "18:00"
         },
         {
           "dia": 3,
@@ -7893,7 +8885,7 @@ export const data =
         }
       ],
       "codigo": "7512-CURSO: 05-Sassano",
-      "docentes": "SASSANO, MIRYAM PATRICIA (Profesor/a Adjunto/a) - GARCIA, EZEQUIEL (Ayudante 2do/a) - VERA GUZMAN, RAMIRO AUGUSTO (Ayudante 2do/a) - TURANO, MARIA AGUSTINA (Ayudante 2do/a) - TURANO, MARIA AGUSTINA (Ayudante 2do/a) - HUSAIN CERRUTI, IGNACIO SANTIAGO (Ayudante 2do/a)",
+      "docentes": "SASSANO, MIRYAM PATRICIA (Profesor/a Adjunto/a) - HUSAIN CERRUTI, IGNACIO SANTIAGO (Ayudante 2do/a) - TURANO, MARIA AGUSTINA (Ayudante 2do/a) - VERA GUZMAN, RAMIRO AUGUSTO (Ayudante 2do/a) - GARCIA, EZEQUIEL (Ayudante 2do/a) - TURANO, MARIA AGUSTINA (Ayudante 2do/a)",
       "materia": "7512"
     },
     {
@@ -7921,13 +8913,23 @@ export const data =
           "inicio": "19:00"
         },
         {
+          "dia": 2,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 4,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
           "dia": 4,
           "fin": "22:00",
           "inicio": "19:00"
         }
       ],
       "codigo": "7512-CURSO: 07-Cavaliere Práctica Martes",
-      "docentes": "CAVALIERE, MIGUEL ANGEL (Profesor/a Adjunto/a) - MASTROPIETRO, GABRIEL MARCELO (Jefe/a Trabajos Practicos) - EZCURRA, DIEGO MARTIN (Ayudante 1ro/a) - BALZAROTTI, FEDERICO (Ayudante 1ro/a) - KOWAL, ADRIAN MARCELO (Ayudante 1ro/a)",
+      "docentes": "CAVALIERE, MIGUEL ANGEL (Profesor/a Adjunto/a) - MASTROPIETRO, GABRIEL MARCELO (Jefe/a Trabajos Practicos) - KOWAL, ADRIAN MARCELO (Ayudante 1ro/a) - EZCURRA, DIEGO MARTIN (Ayudante 1ro/a) - BALZAROTTI, FEDERICO (Ayudante 1ro/a)",
       "materia": "7512"
     },
     {
@@ -7944,7 +8946,7 @@ export const data =
         }
       ],
       "codigo": "7512-CURSO: 08-Cavaliere Práctica Lunes",
-      "docentes": "CAVALIERE, MIGUEL ANGEL (Profesor/a Adjunto/a) - BALZAROTTI, FEDERICO (Ayudante 1ro/a) - GARCIA, EZEQUIEL (Ayudante 2do/a) - PORTOCARRERO MIRANDA, MICHAEL (Ayudante 2do/a)",
+      "docentes": "CAVALIERE, MIGUEL ANGEL (Profesor/a Adjunto/a) - BALZAROTTI, FEDERICO (Ayudante 1ro/a) - PORTOCARRERO MIRANDA, MICHAEL (Ayudante 2do/a) - GARCIA, EZEQUIEL (Ayudante 2do/a)",
       "materia": "7512"
     },
     {
@@ -7972,6 +8974,16 @@ export const data =
           "inicio": "16:00"
         },
         {
+          "dia": 2,
+          "fin": "19:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 3,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
           "dia": 3,
           "fin": "22:00",
           "inicio": "19:00"
@@ -7985,6 +8997,16 @@ export const data =
       "clases": [
         {
           "dia": 1,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 1,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 3,
           "fin": "22:00",
           "inicio": "19:00"
         },
@@ -8023,6 +9045,16 @@ export const data =
           "inicio": "19:00"
         },
         {
+          "dia": 1,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 5,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
           "dia": 5,
           "fin": "22:00",
           "inicio": "19:00"
@@ -8052,13 +9084,23 @@ export const data =
           "inicio": "19:00"
         },
         {
+          "dia": 2,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 4,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
           "dia": 4,
           "fin": "22:00",
           "inicio": "19:00"
         }
       ],
       "codigo": "7540-CURSO: 01-Guarna",
-      "docentes": "GUARNA, PABLO FRANCISCO (Profesor/a Adjunto/a) - JUAREZ, ANDRÉS ALBERTO (Jefe/a Trabajos Practicos) - BIANCHI, GUSTAVO OSCAR (Jefe/a Trabajos Practicos) - GARCIA JAIME, DIEGO (Ayudante 1ro/a) - GONZÁLEZ BUSQUIN, EZEQUIEL MARTÍN (Ayudante 1ro/a) - MARIANETTI, NICOLAS GABRIEL (Ayudante 2do/a) - MARIANETTI, NICOLAS GABRIEL (Ayudante 2do/a)",
+      "docentes": "GUARNA, PABLO FRANCISCO (Profesor/a Adjunto/a) - JUAREZ, ANDRÉS ALBERTO (Jefe/a Trabajos Practicos) - BIANCHI, GUSTAVO OSCAR (Jefe/a Trabajos Practicos) - GONZÁLEZ BUSQUIN, EZEQUIEL MARTÍN (Ayudante 1ro/a) - GARCIA JAIME, DIEGO (Ayudante 1ro/a) - MARIANETTI, NICOLAS GABRIEL (Ayudante 2do/a) - MARIANETTI, NICOLAS GABRIEL (Ayudante 2do/a)",
       "materia": "7540"
     },
     {
@@ -8086,6 +9128,16 @@ export const data =
           "inicio": "08:00"
         },
         {
+          "dia": 2,
+          "fin": "11:00",
+          "inicio": "08:00"
+        },
+        {
+          "dia": 4,
+          "fin": "11:00",
+          "inicio": "08:00"
+        },
+        {
           "dia": 4,
           "fin": "11:00",
           "inicio": "08:00"
@@ -8103,6 +9155,16 @@ export const data =
           "inicio": "17:30"
         },
         {
+          "dia": 1,
+          "fin": "20:30",
+          "inicio": "17:30"
+        },
+        {
+          "dia": 5,
+          "fin": "20:30",
+          "inicio": "17:30"
+        },
+        {
           "dia": 5,
           "fin": "20:30",
           "inicio": "17:30"
@@ -8116,6 +9178,16 @@ export const data =
       "clases": [
         {
           "dia": 2,
+          "fin": "21:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 2,
+          "fin": "21:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 4,
           "fin": "21:00",
           "inicio": "18:00"
         },
@@ -8154,13 +9226,23 @@ export const data =
           "inicio": "17:30"
         },
         {
+          "dia": 1,
+          "fin": "20:30",
+          "inicio": "17:30"
+        },
+        {
+          "dia": 5,
+          "fin": "20:30",
+          "inicio": "17:30"
+        },
+        {
           "dia": 5,
           "fin": "20:30",
           "inicio": "17:30"
         }
       ],
       "codigo": "7541-CURSO: 02-Buchwald",
-      "docentes": "BUCHWALD, MARTÍN EZEQUIEL (Profesor/a Adjunto/a) - SELLA FAENA, JASMINA (Ayudante 1ro/a) - GONZALEZ LISELLA, FIONA CARLA (Ayudante 2do/a) - GENENDER PEÑA, EZEQUIEL DAVID (Ayudante 2do/a) - ESTEBAN, FEDERICO MARTÍN (Ayudante 2do/a)",
+      "docentes": "BUCHWALD, MARTÍN EZEQUIEL (Profesor/a Adjunto/a) - SELLA FAENA, JASMINA (Ayudante 1ro/a) - ESTEBAN, FEDERICO MARTÍN (Ayudante 2do/a) - GONZALEZ LISELLA, FIONA CARLA (Ayudante 2do/a) - GENENDER PEÑA, EZEQUIEL DAVID (Ayudante 2do/a)",
       "materia": "7541"
     },
     {
@@ -8171,19 +9253,39 @@ export const data =
           "inicio": "17:00"
         },
         {
+          "dia": 2,
+          "fin": "20:00",
+          "inicio": "17:00"
+        },
+        {
+          "dia": 4,
+          "fin": "20:00",
+          "inicio": "17:00"
+        },
+        {
           "dia": 4,
           "fin": "20:00",
           "inicio": "17:00"
         }
       ],
       "codigo": "7541-CURSO: 03-Juarez",
-      "docentes": "JUAREZ, ANDRÉS ALBERTO (Profesor/a Adjunto/a) - CIARALLO, CRISTIAN ADRIAN (Ayudante 1ro/a) - MARIANETTI, NICOLAS GABRIEL (Ayudante 2do/a) - PISTILLO, CAROLINA ROCIO (Ayudante 2do/a) - PISTILLO, CAROLINA ROCIO (Ayudante 2do/a) - MARIANETTI, NICOLAS GABRIEL (Ayudante 2do/a)",
+      "docentes": "JUAREZ, ANDRÉS ALBERTO (Profesor/a Adjunto/a) - CIARALLO, CRISTIAN ADRIAN (Ayudante 1ro/a) - PISTILLO, CAROLINA ROCIO (Ayudante 2do/a) - MARIANETTI, NICOLAS GABRIEL (Ayudante 2do/a) - PISTILLO, CAROLINA ROCIO (Ayudante 2do/a) - MARIANETTI, NICOLAS GABRIEL (Ayudante 2do/a)",
       "materia": "7541"
     },
     {
       "clases": [
         {
           "dia": 2,
+          "fin": "21:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 2,
+          "fin": "21:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 4,
           "fin": "21:00",
           "inicio": "18:00"
         },
@@ -8203,6 +9305,16 @@ export const data =
           "dia": 1,
           "fin": "21:00",
           "inicio": "18:00"
+        },
+        {
+          "dia": 1,
+          "fin": "21:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 4,
+          "fin": "22:00",
+          "inicio": "19:00"
         },
         {
           "dia": 4,
@@ -8246,6 +9358,16 @@ export const data =
           "inicio": "19:00"
         },
         {
+          "dia": 2,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 5,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
           "dia": 5,
           "fin": "22:00",
           "inicio": "19:00"
@@ -8264,6 +9386,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "19:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 2,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 2,
           "fin": "22:00",
           "inicio": "19:00"
         }
@@ -8276,6 +9408,16 @@ export const data =
       "clases": [
         {
           "dia": 2,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 2,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 4,
           "fin": "22:00",
           "inicio": "19:00"
         },
@@ -8312,6 +9454,16 @@ export const data =
           "dia": 1,
           "fin": "19:00",
           "inicio": "17:00"
+        },
+        {
+          "dia": 1,
+          "fin": "19:00",
+          "inicio": "17:00"
+        },
+        {
+          "dia": 1,
+          "fin": "23:00",
+          "inicio": "19:00"
         },
         {
           "dia": 1,
@@ -8384,6 +9536,16 @@ export const data =
           "inicio": "19:00"
         },
         {
+          "dia": 1,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 3,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
           "dia": 3,
           "fin": "22:00",
           "inicio": "19:00"
@@ -8431,8 +9593,23 @@ export const data =
         },
         {
           "dia": 1,
+          "fin": "17:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 1,
           "fin": "19:00",
           "inicio": "17:00"
+        },
+        {
+          "dia": 1,
+          "fin": "19:00",
+          "inicio": "17:00"
+        },
+        {
+          "dia": 4,
+          "fin": "22:00",
+          "inicio": "19:00"
         },
         {
           "dia": 4,
@@ -8558,6 +9735,16 @@ export const data =
           "inicio": "19:00"
         },
         {
+          "dia": 2,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 4,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
           "dia": 4,
           "fin": "22:00",
           "inicio": "19:00"
@@ -8603,7 +9790,7 @@ export const data =
         }
       ],
       "codigo": "7604-CURSO 01",
-      "docentes": "MARTUCCI, JOSE FERNANDO (Profesor/a Adjunto/a) - MIGUEZ, PABLO JOSE (Jefe/a Trabajos Practicos) - CUTINI, FLORENCIA BELÉN (Ayudante 1ro/a) - FRUTIS, EMANUEL ALEJANDRO (Ayudante 1ro/a) - ROSSINI, LUCAS (Ayudante 2do/a) - PAVON, NATHALIE DENISE (Ayudante 2do/a) - ROSSINI, LUCAS (Ayudante 2do/a)",
+      "docentes": "MARTUCCI, JOSE FERNANDO (Profesor/a Adjunto/a) - MIGUEZ, PABLO JOSE (Jefe/a Trabajos Practicos) - CUTINI, FLORENCIA BELÉN (Ayudante 1ro/a) - FRUTIS, EMANUEL ALEJANDRO (Ayudante 1ro/a) - ROSSINI, LUCAS (Ayudante 2do/a) - ROSSINI, LUCAS (Ayudante 2do/a) - PAVON, NATHALIE DENISE (Ayudante 2do/a)",
       "materia": "7604"
     },
     {
@@ -8615,17 +9802,17 @@ export const data =
         },
         {
           "dia": 3,
-          "fin": "20:00",
+          "fin": "22:00",
           "inicio": "18:00"
         },
         {
-          "dia": 5,
-          "fin": "22:00",
+          "dia": 4,
+          "fin": "20:00",
           "inicio": "18:00"
         }
       ],
       "codigo": "7605-CURSO 01",
-      "docentes": "GONZALEZ, CONRADO (Profesor/a Adjunto/a) - MEDINA, JULIETA (Ayudante 1ro/a) - MOLINA CUELI, ERNESTO (Ayudante 2do/a) - MOLINA CUELI, ERNESTO (Ayudante 2do/a) - PEREZ GOLDSTEIN, IGNACIO (Ayudante 2do/a)",
+      "docentes": "GONZALEZ, CONRADO (Profesor/a Adjunto/a) - MEDINA, JULIETA (Ayudante 1ro/a) - MOLINA CUELI, ERNESTO (Ayudante 2do/a) - PEREZ GOLDSTEIN, IGNACIO (Ayudante 2do/a) - MOLINA CUELI, ERNESTO (Ayudante 2do/a)",
       "materia": "7605"
     },
     {
@@ -8652,7 +9839,7 @@ export const data =
         }
       ],
       "codigo": "7608-CURSO 01",
-      "docentes": "AMADEO, NORMA ELVIRA (Profesor/a Asociado/a) - DIEUZEIDE, MARIA LAURA (Profesor/a Adjunto/a) - SUAREZ ANZORENA, MARIA DEL ROSARIO (Ayudante 1ro/a) - GUADAGNINI, SIMÓN (Ayudante 1ro/a) - MACKINNON, CAMILA (Ayudante 1ro/a)",
+      "docentes": "AMADEO, NORMA ELVIRA (Profesor/a Asociado/a) - DIEUZEIDE, MARIA LAURA (Profesor/a Adjunto/a) - GUADAGNINI, SIMÓN (Ayudante 1ro/a) - SUAREZ ANZORENA, MARIA DEL ROSARIO (Ayudante 1ro/a) - MACKINNON, CAMILA (Ayudante 1ro/a)",
       "materia": "7608"
     },
     {
@@ -8669,7 +9856,7 @@ export const data =
         }
       ],
       "codigo": "7612-CURSO 01",
-      "docentes": "CERRUTTI, PATRICIA (Profesor/a Adjunto/a) - GONZALEZ, HECTOR HORACIO L (Jefe/a Trabajos Practicos) - TUPA VALENCIA, MARIBEL VICTORIA (Jefe/a Trabajos Practicos) - ROMERO BERNAL, ANGELA ROCIO (Ayudante 1ro/a)",
+      "docentes": "CERRUTTI, PATRICIA (Profesor/a Adjunto/a) - TUPA VALENCIA, MARIBEL VICTORIA (Jefe/a Trabajos Practicos) - GONZALEZ, HECTOR HORACIO L (Jefe/a Trabajos Practicos) - ROMERO BERNAL, ANGELA ROCIO (Ayudante 1ro/a)",
       "materia": "7612"
     },
     {
@@ -8688,13 +9875,13 @@ export const data =
       "clases": [
         {
           "dia": 2,
-          "fin": "21:00",
-          "inicio": "16:00"
+          "fin": "18:00",
+          "inicio": "15:00"
         },
         {
           "dia": 4,
-          "fin": "21:00",
-          "inicio": "18:00"
+          "fin": "22:00",
+          "inicio": "17:00"
         }
       ],
       "codigo": "7622-CURSO 01",
@@ -8712,23 +9899,6 @@ export const data =
       "codigo": "7623-CURSO 01",
       "docentes": "D'ANGELO, MARÍA VERÓNICA (Profesor/a Adjunto/a)",
       "materia": "7623"
-    },
-    {
-      "clases": [
-        {
-          "dia": 2,
-          "fin": "21:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 4,
-          "fin": "21:00",
-          "inicio": "18:00"
-        }
-      ],
-      "codigo": "7624-Curso 1",
-      "docentes": "SAVIOLI, GABRIELA BEATRIZ (Profesor/a Titular/a)",
-      "materia": "7624"
     },
     {
       "clases": [
@@ -8902,7 +10072,7 @@ export const data =
         }
       ],
       "codigo": "7645-CURSO 01",
-      "docentes": "IRIGOYEN, BEATRIZ DEL LUJAN (Profesor/a Asociado/a) - EUGENIO RUSSMANN, JUAN IGNACIO (Profesor/a Adjunto/a) - SALCEDO, AGUSTIN (Jefe/a Trabajos Practicos) - SERRANO HERRERA, LUZ ANGELA (Ayudante 1ro/a) - SERRANO HERRERA, LUZ ANGELA (Ayudante 1ro/a) - ROZENBLIT, ABIGAIL (Ayudante 1ro/a) - LOPEZ TORRES, LUCIANO (Ayudante 1ro/a) - CLOZZA, BRUNO JOSE GUILLERMO (Ayudante 2do/a)",
+      "docentes": "IRIGOYEN, BEATRIZ DEL LUJAN (Profesor/a Asociado/a) - EUGENIO RUSSMANN, JUAN IGNACIO (Profesor/a Adjunto/a) - SALCEDO, AGUSTIN (Jefe/a Trabajos Practicos) - SERRANO HERRERA, LUZ ANGELA (Ayudante 1ro/a) - LOPEZ TORRES, LUCIANO (Ayudante 1ro/a) - SERRANO HERRERA, LUZ ANGELA (Ayudante 1ro/a) - ROZENBLIT, ABIGAIL (Ayudante 1ro/a) - CLOZZA, BRUNO JOSE GUILLERMO (Ayudante 2do/a)",
       "materia": "7645"
     },
     {
@@ -8919,7 +10089,7 @@ export const data =
         }
       ],
       "codigo": "7646-CURSO 01",
-      "docentes": "ALMA, EDGARDO OSCAR (Profesor/a Adjunto/a) - CURYK, PABLO ANDRES (Jefe/a Trabajos Practicos) - MADDALENA, EZEQUIEL MARTIN (Ayudante 1ro/a) - IRIGARAY, MARTIN (Ayudante 1ro/a) - MADDALENA, EZEQUIEL MARTIN (Ayudante 1ro/a) - MAZALI, JULIETA (Ayudante 2do/a)",
+      "docentes": "ALMA, EDGARDO OSCAR (Profesor/a Adjunto/a) - CURYK, PABLO ANDRES (Jefe/a Trabajos Practicos) - IRIGARAY, MARTIN (Ayudante 1ro/a) - MADDALENA, EZEQUIEL MARTIN (Ayudante 1ro/a) - MADDALENA, EZEQUIEL MARTIN (Ayudante 1ro/a) - MAZALI, JULIETA (Ayudante 2do/a)",
       "materia": "7646"
     },
     {
@@ -8946,7 +10116,7 @@ export const data =
         }
       ],
       "codigo": "7647-CURSO 01",
-      "docentes": "CHOCRON, MAURICIO (Profesor/a Titular/a) - AGALIOTIS, ELIANA MABEL (Jefe/a Trabajos Practicos) - FORTUNATO, NICOLAS (Ayudante 1ro/a) - de GREGORIO, CLAUDIA ESTELA (Ayudante 1ro/a) - LUSTIG, SONIA (Ayudante 1ro/a)",
+      "docentes": "CHOCRON, MAURICIO (Profesor/a Titular/a) - AGALIOTIS, ELIANA MABEL (Jefe/a Trabajos Practicos) - de GREGORIO, CLAUDIA ESTELA (Ayudante 1ro/a) - FORTUNATO, NICOLAS (Ayudante 1ro/a) - LUSTIG, SONIA (Ayudante 1ro/a)",
       "materia": "7647"
     },
     {
@@ -8985,7 +10155,7 @@ export const data =
         }
       ],
       "codigo": "7649-CURSO 01",
-      "docentes": "MARTUCCI, JOSE FERNANDO (Profesor/a Adjunto/a) - CUTINI, FLORENCIA BELÉN (Jefe/a Trabajos Practicos) - FRUTIS, EMANUEL ALEJANDRO (Ayudante 1ro/a) - ZANETTE, FERNANDO ESTEBAN (Ayudante 1ro/a) - PAVON, NATHALIE DENISE (Ayudante 2do/a) - ROSSINI, LUCAS (Ayudante 2do/a) - ROSSINI, LUCAS (Ayudante 2do/a)",
+      "docentes": "MARTUCCI, JOSE FERNANDO (Profesor/a Adjunto/a) - CUTINI, FLORENCIA BELÉN (Jefe/a Trabajos Practicos) - FRUTIS, EMANUEL ALEJANDRO (Ayudante 1ro/a) - ZANETTE, FERNANDO ESTEBAN (Ayudante 1ro/a) - ROSSINI, LUCAS (Ayudante 2do/a) - PAVON, NATHALIE DENISE (Ayudante 2do/a) - ROSSINI, LUCAS (Ayudante 2do/a)",
       "materia": "7649"
     },
     {
@@ -9019,7 +10189,7 @@ export const data =
         }
       ],
       "codigo": "7652-CURSO 01",
-      "docentes": "GONZALEZ, CONRADO (Profesor/a Adjunto/a) - MEDINA, JULIETA (Jefe/a Trabajos Practicos) - MOLINA CUELI, ERNESTO (Ayudante 1ro/a) - PEREZ GOLDSTEIN, IGNACIO (Ayudante 1ro/a) - MOLINA CUELI, ERNESTO (Ayudante 1ro/a)",
+      "docentes": "GONZALEZ, CONRADO (Profesor/a Adjunto/a) - MEDINA, JULIETA (Jefe/a Trabajos Practicos) - PEREZ GOLDSTEIN, IGNACIO (Ayudante 1ro/a) - MOLINA CUELI, ERNESTO (Ayudante 1ro/a) - MOLINA CUELI, ERNESTO (Ayudante 1ro/a)",
       "materia": "7652"
     },
     {
@@ -9046,7 +10216,7 @@ export const data =
         }
       ],
       "codigo": "7653-CURSO 01",
-      "docentes": "MARIÑO, FERNANDO JAVIER (Profesor/a Asociado/a) - DIEUZEIDE, MARIA LAURA (Profesor/a Adjunto/a) - GUADAGNINI, SIMÓN (Ayudante 1ro/a) - MACKINNON, CAMILA (Ayudante 1ro/a) - SUAREZ ANZORENA, MARIA DEL ROSARIO (Ayudante 1ro/a) - CANESI, GERONIMO (Ayudante 2do/a) - CANESI, GERONIMO (Ayudante 2do/a) - A DESIGNAR, A DESIGNAR (Ayudante 2do/a)",
+      "docentes": "MARIÑO, FERNANDO JAVIER (Profesor/a Asociado/a) - DIEUZEIDE, MARIA LAURA (Profesor/a Adjunto/a) - MACKINNON, CAMILA (Ayudante 1ro/a) - GUADAGNINI, SIMÓN (Ayudante 1ro/a) - SUAREZ ANZORENA, MARIA DEL ROSARIO (Ayudante 1ro/a) - CANESI, GERONIMO (Ayudante 2do/a) - A DESIGNAR, A DESIGNAR (Ayudante 2do/a) - CANESI, GERONIMO (Ayudante 2do/a)",
       "materia": "7653"
     },
     {
@@ -9063,7 +10233,7 @@ export const data =
         }
       ],
       "codigo": "7654-CURSO 1",
-      "docentes": "GELSO, LAUTARO (Profesor/a Adjunto/a) - A DESIGNAR, A DESIGNAR (Ayudante 1ro/a) - ESPAÑOL, MIGUEL FERMIN (Ayudante 1ro/a)",
+      "docentes": "GELSO, LAUTARO (Profesor/a Adjunto/a) - ESPAÑOL, MIGUEL FERMIN (Ayudante 1ro/a) - A DESIGNAR, A DESIGNAR (Ayudante 1ro/a)",
       "materia": "7654"
     },
     {
@@ -9080,7 +10250,7 @@ export const data =
         }
       ],
       "codigo": "7655-CURSO 01",
-      "docentes": "CERRUTTI, PATRICIA (Profesor/a Adjunto/a) - ROMERO BERNAL, ANGELA ROCIO (Jefe/a Trabajos Practicos) - GONZALEZ, HECTOR HORACIO L (Jefe/a Trabajos Practicos) - TUPA VALENCIA, MARIBEL VICTORIA (Jefe/a Trabajos Practicos)",
+      "docentes": "CERRUTTI, PATRICIA (Profesor/a Adjunto/a) - GONZALEZ, HECTOR HORACIO L (Jefe/a Trabajos Practicos) - TUPA VALENCIA, MARIBEL VICTORIA (Jefe/a Trabajos Practicos) - ROMERO BERNAL, ANGELA ROCIO (Jefe/a Trabajos Practicos)",
       "materia": "7655"
     },
     {
@@ -9107,7 +10277,7 @@ export const data =
         }
       ],
       "codigo": "7656-CURSO 1",
-      "docentes": "ZANINI, ANIBAL JOSE ANTONIO (Profesor/a Titular/a) - BERRA, SEBASTIÁN (Profesor/a Adjunto/a) - HANELA, SERGIO DANIEL (Jefe/a Trabajos Practicos) - MORI, FEDERICO (Ayudante 1ro/a) - AKAUI, AXEL HERNÁN (Ayudante 1ro/a)",
+      "docentes": "ZANINI, ANIBAL JOSE ANTONIO (Profesor/a Titular/a) - BERRA, SEBASTIÁN (Profesor/a Adjunto/a) - HANELA, SERGIO DANIEL (Jefe/a Trabajos Practicos) - AKAUI, AXEL HERNÁN (Ayudante 1ro/a) - MORI, FEDERICO (Ayudante 1ro/a)",
       "materia": "7656"
     },
     {
@@ -9129,7 +10299,7 @@ export const data =
         }
       ],
       "codigo": "7657-CURSO 1",
-      "docentes": "FERNANDEZ, BEATRIZ ETHEL (Profesor/a Adjunto/a) - ZUKOWSKI, ENZO FERNANDO (Jefe/a Trabajos Practicos) - SCHULZE, BRUNO (Ayudante 1ro/a) - PEREZ CORREA, IGNACIO (Ayudante 1ro/a) - HERRERO, LEANDRO (Ayudante 1ro/a)",
+      "docentes": "FERNANDEZ, BEATRIZ ETHEL (Profesor/a Adjunto/a) - ZUKOWSKI, ENZO FERNANDO (Jefe/a Trabajos Practicos) - PEREZ CORREA, IGNACIO (Ayudante 1ro/a) - SCHULZE, BRUNO (Ayudante 1ro/a) - HERRERO, LEANDRO (Ayudante 1ro/a)",
       "materia": "7657"
     },
     {
@@ -9180,7 +10350,7 @@ export const data =
         }
       ],
       "codigo": "7660-CURSO 01",
-      "docentes": "CHOCRON, MAURICIO (Profesor/a Titular/a) - VILLAVERDE, MARIA SOLEDAD (Jefe/a Trabajos Practicos) - TORIGGIA, LEONARDO FABIÁN (Ayudante 1ro/a) - PELINSKI, ROMAN NICOLAS (Ayudante 1ro/a) - FERNANDEZ MALDONADO, ARIEL ALEJANDRO (Ayudante 1ro/a) - ALVARO, PAULO GONZALO (Ayudante 1ro/a)",
+      "docentes": "CHOCRON, MAURICIO (Profesor/a Titular/a) - VILLAVERDE, MARIA SOLEDAD (Jefe/a Trabajos Practicos) - ALVARO, PAULO GONZALO (Ayudante 1ro/a) - PELINSKI, ROMAN NICOLAS (Ayudante 1ro/a) - TORIGGIA, LEONARDO FABIÁN (Ayudante 1ro/a) - FERNANDEZ MALDONADO, ARIEL ALEJANDRO (Ayudante 1ro/a)",
       "materia": "7660"
     },
     {
@@ -9197,7 +10367,7 @@ export const data =
         }
       ],
       "codigo": "7661-CURSO 01",
-      "docentes": "MARIÑO, FERNANDO JAVIER (Profesor/a Asociado/a) - FERNANDEZ, MARÍA VERÓNICA (Jefe/a Trabajos Practicos) - LÓPEZ JOVÉ, MARTÍN (Ayudante 1ro/a) - RUQUET, JUAN ANDRÉS (Ayudante 1ro/a) - VIDAL, JULIETA PAULA (Ayudante 2do/a)",
+      "docentes": "MARIÑO, FERNANDO JAVIER (Profesor/a Asociado/a) - FERNANDEZ, MARÍA VERÓNICA (Jefe/a Trabajos Practicos) - RUQUET, JUAN ANDRÉS (Ayudante 1ro/a) - LÓPEZ JOVÉ, MARTÍN (Ayudante 1ro/a) - VIDAL, JULIETA PAULA (Ayudante 2do/a)",
       "materia": "7661"
     },
     {
@@ -9275,7 +10445,7 @@ export const data =
         }
       ],
       "codigo": "7701-CURSO: 02 BATTAN",
-      "docentes": "BATTAN, ZULEMA MARTA (Jefe/a Trabajos Practicos) - MARENSI, PATRICIO HECTOR (Jefe/a Trabajos Practicos) - D´ELIA, DANIEL OSVALDO (Ayudante 1ro/a)",
+      "docentes": "MARENSI, PATRICIO HECTOR (Jefe/a Trabajos Practicos) - BATTAN, ZULEMA MARTA (Jefe/a Trabajos Practicos) - D´ELIA, DANIEL OSVALDO (Ayudante 1ro/a)",
       "materia": "7701"
     },
     {
@@ -9427,16 +10597,6 @@ export const data =
           "dia": 2,
           "fin": "18:00",
           "inicio": "16:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 2,
-          "fin": "20:00",
-          "inicio": "18:00"
         },
         {
           "dia": 2,
@@ -9608,18 +10768,6 @@ export const data =
       "clases": [
         {
           "dia": 3,
-          "fin": "14:00",
-          "inicio": "10:00"
-        }
-      ],
-      "codigo": "7805-CURSO: 01",
-      "docentes": "REGINATTO, SIRLEI ISABEL (Profesor/a Adjunto/a)",
-      "materia": "7805"
-    },
-    {
-      "clases": [
-        {
-          "dia": 3,
           "fin": "18:00",
           "inicio": "16:00"
         }
@@ -9784,7 +10932,7 @@ export const data =
         }
       ],
       "codigo": "7913-CURSO 1",
-      "docentes": "VINSON, EDGARDO GUSTAVO (Profesor/a Adjunto/a)",
+      "docentes": "VINSON, EDGARDO GUSTAVO (Profesor/a Adjunto/a) - ARILLA, FERNANDO (Profesor/a Adjunto/a)",
       "materia": "7913"
     },
     {
@@ -9871,7 +11019,7 @@ export const data =
         }
       ],
       "codigo": "7923-CURSO 1",
-      "docentes": "CARRONE, EDUARDO JORGE (Profesor/a Adjunto/a) - CASARES, CARLOS ALBERTO MARIA (Profesor/a Adjunto/a)",
+      "docentes": "CASARES, CARLOS ALBERTO MARIA (Profesor/a Adjunto/a) - CARRONE, EDUARDO JORGE (Profesor/a Adjunto/a)",
       "materia": "7923"
     },
     {
@@ -9939,6 +11087,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 2,
           "fin": "18:00",
           "inicio": "16:00"
         },
@@ -9946,6 +11104,16 @@ export const data =
           "dia": 4,
           "fin": "16:00",
           "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "18:00",
+          "inicio": "16:00"
         },
         {
           "dia": 4,
@@ -9981,7 +11149,7 @@ export const data =
         }
       ],
       "codigo": "8101-CURSO: 12A",
-      "docentes": "LOPEZ, CLAUDIA ANDREA (Profesor/a Adjunto/a) - VOROBIOFF, NICOLAS (Ayudante 1ro/a) - SILVESTRE, DAMIAN ISMAEL (Ayudante 1ro/a)",
+      "docentes": "LOPEZ, CLAUDIA ANDREA (Profesor/a Adjunto/a) - SILVESTRE, DAMIAN ISMAEL (Ayudante 1ro/a) - VOROBIOFF, NICOLAS (Ayudante 1ro/a)",
       "materia": "8101"
     },
     {
@@ -10008,7 +11176,7 @@ export const data =
         }
       ],
       "codigo": "8101-CURSO: 12B",
-      "docentes": "LOPEZ, CLAUDIA ANDREA (Profesor/a Adjunto/a) - ZHANG, FAN (Ayudante 1ro/a) - VICEDO, JUAN PABLO (Ayudante 1ro/a)",
+      "docentes": "LOPEZ, CLAUDIA ANDREA (Profesor/a Adjunto/a) - VICEDO, JUAN PABLO (Ayudante 1ro/a) - ZHANG, FAN (Ayudante 1ro/a)",
       "materia": "8101"
     },
     {
@@ -10047,6 +11215,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 2,
           "fin": "18:00",
           "inicio": "16:00"
         },
@@ -10054,6 +11232,16 @@ export const data =
           "dia": 4,
           "fin": "16:00",
           "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "18:00",
+          "inicio": "16:00"
         },
         {
           "dia": 4,
@@ -10089,7 +11277,7 @@ export const data =
         }
       ],
       "codigo": "8101-CURSO: 15B",
-      "docentes": "SASSANO, MIRYAM PATRICIA (Profesor/a Adjunto/a) - VENTURIELLO, VERONICA LAURA (Ayudante 1ro/a) - FAGES, LUCIANO RODOLFO (Ayudante 1ro/a)",
+      "docentes": "SASSANO, MIRYAM PATRICIA (Profesor/a Adjunto/a) - FAGES, LUCIANO RODOLFO (Ayudante 1ro/a) - VENTURIELLO, VERONICA LAURA (Ayudante 1ro/a)",
       "materia": "8101"
     },
     {
@@ -10128,6 +11316,16 @@ export const data =
         },
         {
           "dia": 1,
+          "fin": "15:00",
+          "inicio": "13:00"
+        },
+        {
+          "dia": 1,
+          "fin": "17:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 1,
           "fin": "17:00",
           "inicio": "15:00"
         },
@@ -10135,6 +11333,16 @@ export const data =
           "dia": 3,
           "fin": "15:00",
           "inicio": "13:00"
+        },
+        {
+          "dia": 3,
+          "fin": "15:00",
+          "inicio": "13:00"
+        },
+        {
+          "dia": 3,
+          "fin": "17:00",
+          "inicio": "15:00"
         },
         {
           "dia": 3,
@@ -10224,7 +11432,7 @@ export const data =
         }
       ],
       "codigo": "8101-CURSO: 20A",
-      "docentes": "SEMINARA, SILVIA ALEJANDRA (Profesor/a Adjunto/a) - A DESIGNAR, A DESIGNAR (Ayudante 1ro/a) - OLIVA, CECILIA MARIEL (Ayudante 1ro/a)",
+      "docentes": "SEMINARA, SILVIA ALEJANDRA (Profesor/a Adjunto/a) - OLIVA, CECILIA MARIEL (Ayudante 1ro/a) - A DESIGNAR, A DESIGNAR (Ayudante 1ro/a)",
       "materia": "8101"
     },
     {
@@ -10236,6 +11444,16 @@ export const data =
         },
         {
           "dia": 1,
+          "fin": "19:00",
+          "inicio": "17:00"
+        },
+        {
+          "dia": 1,
+          "fin": "21:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 1,
           "fin": "21:00",
           "inicio": "19:00"
         },
@@ -10243,6 +11461,16 @@ export const data =
           "dia": 3,
           "fin": "19:00",
           "inicio": "17:00"
+        },
+        {
+          "dia": 3,
+          "fin": "19:00",
+          "inicio": "17:00"
+        },
+        {
+          "dia": 3,
+          "fin": "21:00",
+          "inicio": "19:00"
         },
         {
           "dia": 3,
@@ -10278,7 +11506,7 @@ export const data =
         }
       ],
       "codigo": "8101-CURSO: 22A",
-      "docentes": "MANCILLA AGUILAR, JOSE LUIS (Profesor/a Asociado/a) - AMOREO, ANIBAL (Jefe/a Trabajos Practicos) - CENTENO, HERNÁN DIEGO (Jefe/a Trabajos Practicos)",
+      "docentes": "MANCILLA AGUILAR, JOSE LUIS (Profesor/a Asociado/a) - CENTENO, HERNÁN DIEGO (Jefe/a Trabajos Practicos) - AMOREO, ANIBAL (Jefe/a Trabajos Practicos)",
       "materia": "8101"
     },
     {
@@ -10290,6 +11518,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "20:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 2,
+          "fin": "22:00",
+          "inicio": "20:00"
+        },
+        {
+          "dia": 2,
           "fin": "22:00",
           "inicio": "20:00"
         },
@@ -10297,6 +11535,16 @@ export const data =
           "dia": 4,
           "fin": "20:00",
           "inicio": "18:00"
+        },
+        {
+          "dia": 4,
+          "fin": "20:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 4,
+          "fin": "22:00",
+          "inicio": "20:00"
         },
         {
           "dia": 4,
@@ -10344,6 +11592,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "09:00",
+          "inicio": "07:00"
+        },
+        {
+          "dia": 2,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 2,
           "fin": "11:00",
           "inicio": "09:00"
         },
@@ -10351,6 +11609,16 @@ export const data =
           "dia": 4,
           "fin": "09:00",
           "inicio": "07:00"
+        },
+        {
+          "dia": 4,
+          "fin": "09:00",
+          "inicio": "07:00"
+        },
+        {
+          "dia": 4,
+          "fin": "11:00",
+          "inicio": "09:00"
         },
         {
           "dia": 4,
@@ -10371,6 +11639,16 @@ export const data =
         },
         {
           "dia": 1,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 1,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 1,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -10378,6 +11656,16 @@ export const data =
           "dia": 3,
           "fin": "11:00",
           "inicio": "09:00"
+        },
+        {
+          "dia": 3,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 3,
+          "fin": "13:00",
+          "inicio": "11:00"
         },
         {
           "dia": 3,
@@ -10398,6 +11686,16 @@ export const data =
         },
         {
           "dia": 1,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 1,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 1,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -10405,6 +11703,16 @@ export const data =
           "dia": 3,
           "fin": "11:00",
           "inicio": "09:00"
+        },
+        {
+          "dia": 3,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 3,
+          "fin": "13:00",
+          "inicio": "11:00"
         },
         {
           "dia": 3,
@@ -10425,6 +11733,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 2,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -10432,6 +11750,16 @@ export const data =
           "dia": 5,
           "fin": "11:00",
           "inicio": "09:00"
+        },
+        {
+          "dia": 5,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 5,
+          "fin": "13:00",
+          "inicio": "11:00"
         },
         {
           "dia": 5,
@@ -10452,6 +11780,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 2,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -10459,6 +11797,16 @@ export const data =
           "dia": 5,
           "fin": "11:00",
           "inicio": "09:00"
+        },
+        {
+          "dia": 5,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 5,
+          "fin": "13:00",
+          "inicio": "11:00"
         },
         {
           "dia": 5,
@@ -10479,6 +11827,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 2,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -10489,12 +11847,22 @@ export const data =
         },
         {
           "dia": 5,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 5,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 5,
           "fin": "13:00",
           "inicio": "11:00"
         }
       ],
       "codigo": "8101-CURSO: 5A",
-      "docentes": "MAULHARDT, MARTIN ENRIQUE (Profesor/a Adjunto/a) - RIZZO, ELISABETH AMALIA (Ayudante 1ro/a) - PUEBLA, MANUEL LEANDRO (Ayudante 1ro/a) - BLAZQUEZ, ROCIO AZUL (Ayudante 2do/a) - BLAZQUEZ, ROCIO AZUL (Ayudante 2do/a)",
+      "docentes": "MAULHARDT, MARTIN ENRIQUE (Profesor/a Adjunto/a) - PUEBLA, MANUEL LEANDRO (Ayudante 1ro/a) - RIZZO, ELISABETH AMALIA (Ayudante 1ro/a) - BLAZQUEZ, ROCIO AZUL (Ayudante 2do/a) - BLAZQUEZ, ROCIO AZUL (Ayudante 2do/a)",
       "materia": "8101"
     },
     {
@@ -10506,6 +11874,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 2,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -10513,6 +11891,16 @@ export const data =
           "dia": 5,
           "fin": "11:00",
           "inicio": "09:00"
+        },
+        {
+          "dia": 5,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 5,
+          "fin": "13:00",
+          "inicio": "11:00"
         },
         {
           "dia": 5,
@@ -10533,6 +11921,16 @@ export const data =
         },
         {
           "dia": 1,
+          "fin": "15:00",
+          "inicio": "13:00"
+        },
+        {
+          "dia": 1,
+          "fin": "17:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 1,
           "fin": "17:00",
           "inicio": "15:00"
         },
@@ -10540,6 +11938,16 @@ export const data =
           "dia": 3,
           "fin": "15:00",
           "inicio": "13:00"
+        },
+        {
+          "dia": 3,
+          "fin": "15:00",
+          "inicio": "13:00"
+        },
+        {
+          "dia": 3,
+          "fin": "17:00",
+          "inicio": "15:00"
         },
         {
           "dia": 3,
@@ -10575,7 +11983,7 @@ export const data =
         }
       ],
       "codigo": "8101-CURSO: 6B",
-      "docentes": "SOLA, MARCOS OSCAR (Profesor/a Adjunto/a) - GUALTIERI, SERGIO ALBERTO (Ayudante 1ro/a) - OLIVA, CARLA MARIANA (Ayudante 1ro/a)",
+      "docentes": "SOLA, MARCOS OSCAR (Profesor/a Adjunto/a) - OLIVA, CARLA MARIANA (Ayudante 1ro/a) - GUALTIERI, SERGIO ALBERTO (Ayudante 1ro/a)",
       "materia": "8101"
     },
     {
@@ -10602,7 +12010,7 @@ export const data =
         }
       ],
       "codigo": "8101-CURSO: 7",
-      "docentes": "VERA, MATÍAS ALEJANDRO (Profesor/a Adjunto/a) - ORECCHIA, MONICA INES (Jefe/a Trabajos Practicos) - ENDELLI, JORGE RODOLFO (Ayudante 1ro/a) - CATALDI, PEDRO ANSELMO (Ayudante 1ro/a)",
+      "docentes": "VERA, MATÍAS ALEJANDRO (Profesor/a Adjunto/a) - ORECCHIA, MONICA INES (Jefe/a Trabajos Practicos) - CATALDI, PEDRO ANSELMO (Ayudante 1ro/a) - ENDELLI, JORGE RODOLFO (Ayudante 1ro/a)",
       "materia": "8101"
     },
     {
@@ -10614,6 +12022,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 2,
           "fin": "18:00",
           "inicio": "16:00"
         },
@@ -10621,6 +12039,16 @@ export const data =
           "dia": 4,
           "fin": "16:00",
           "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "18:00",
+          "inicio": "16:00"
         },
         {
           "dia": 4,
@@ -10668,6 +12096,26 @@ export const data =
         },
         {
           "dia": 1,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 1,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 1,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 1,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 1,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -10675,6 +12123,26 @@ export const data =
           "dia": 3,
           "fin": "11:00",
           "inicio": "09:00"
+        },
+        {
+          "dia": 3,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 3,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 3,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 3,
+          "fin": "13:00",
+          "inicio": "11:00"
         },
         {
           "dia": 3,
@@ -10739,6 +12207,16 @@ export const data =
         },
         {
           "dia": 3,
+          "fin": "15:00",
+          "inicio": "13:00"
+        },
+        {
+          "dia": 3,
+          "fin": "17:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 3,
           "fin": "17:00",
           "inicio": "15:00"
         },
@@ -10746,6 +12224,16 @@ export const data =
           "dia": 5,
           "fin": "15:00",
           "inicio": "13:00"
+        },
+        {
+          "dia": 5,
+          "fin": "15:00",
+          "inicio": "13:00"
+        },
+        {
+          "dia": 5,
+          "fin": "17:00",
+          "inicio": "15:00"
         },
         {
           "dia": 5,
@@ -10793,6 +12281,16 @@ export const data =
         },
         {
           "dia": 1,
+          "fin": "19:00",
+          "inicio": "17:00"
+        },
+        {
+          "dia": 1,
+          "fin": "21:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 1,
           "fin": "21:00",
           "inicio": "19:00"
         },
@@ -10800,6 +12298,16 @@ export const data =
           "dia": 3,
           "fin": "19:00",
           "inicio": "17:00"
+        },
+        {
+          "dia": 3,
+          "fin": "19:00",
+          "inicio": "17:00"
+        },
+        {
+          "dia": 3,
+          "fin": "21:00",
+          "inicio": "19:00"
         },
         {
           "dia": 3,
@@ -10847,6 +12355,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "09:00",
+          "inicio": "07:00"
+        },
+        {
+          "dia": 2,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 2,
           "fin": "11:00",
           "inicio": "09:00"
         },
@@ -10854,6 +12372,16 @@ export const data =
           "dia": 4,
           "fin": "09:00",
           "inicio": "07:00"
+        },
+        {
+          "dia": 4,
+          "fin": "09:00",
+          "inicio": "07:00"
+        },
+        {
+          "dia": 4,
+          "fin": "11:00",
+          "inicio": "09:00"
         },
         {
           "dia": 4,
@@ -10901,6 +12429,16 @@ export const data =
         },
         {
           "dia": 1,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 1,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 1,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -10908,6 +12446,16 @@ export const data =
           "dia": 3,
           "fin": "11:00",
           "inicio": "09:00"
+        },
+        {
+          "dia": 3,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 3,
+          "fin": "13:00",
+          "inicio": "11:00"
         },
         {
           "dia": 3,
@@ -10928,6 +12476,16 @@ export const data =
         },
         {
           "dia": 1,
+          "fin": "09:00",
+          "inicio": "07:00"
+        },
+        {
+          "dia": 1,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 1,
           "fin": "11:00",
           "inicio": "09:00"
         },
@@ -10935,6 +12493,16 @@ export const data =
           "dia": 3,
           "fin": "09:00",
           "inicio": "07:00"
+        },
+        {
+          "dia": 3,
+          "fin": "09:00",
+          "inicio": "07:00"
+        },
+        {
+          "dia": 3,
+          "fin": "11:00",
+          "inicio": "09:00"
         },
         {
           "dia": 3,
@@ -10955,6 +12523,16 @@ export const data =
         },
         {
           "dia": 1,
+          "fin": "09:00",
+          "inicio": "07:00"
+        },
+        {
+          "dia": 1,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 1,
           "fin": "11:00",
           "inicio": "09:00"
         },
@@ -10962,6 +12540,16 @@ export const data =
           "dia": 3,
           "fin": "09:00",
           "inicio": "07:00"
+        },
+        {
+          "dia": 3,
+          "fin": "09:00",
+          "inicio": "07:00"
+        },
+        {
+          "dia": 3,
+          "fin": "11:00",
+          "inicio": "09:00"
         },
         {
           "dia": 3,
@@ -11024,7 +12612,7 @@ export const data =
         }
       ],
       "codigo": "8102-CURSO: 2A",
-      "docentes": "SARRIS, CLAUDIA MONICA (Profesor/a Adjunto/a) - GALVAN, MONICA BEATRIZ (Ayudante 1ro/a) - PRESENZA, JUAN FRANCISCO (Ayudante 1ro/a)",
+      "docentes": "SARRIS, CLAUDIA MONICA (Profesor/a Adjunto/a) - PRESENZA, JUAN FRANCISCO (Ayudante 1ro/a) - GALVAN, MONICA BEATRIZ (Ayudante 1ro/a)",
       "materia": "8102"
     },
     {
@@ -11090,6 +12678,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 2,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -11097,6 +12695,16 @@ export const data =
           "dia": 4,
           "fin": "11:00",
           "inicio": "09:00"
+        },
+        {
+          "dia": 4,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 4,
+          "fin": "13:00",
+          "inicio": "11:00"
         },
         {
           "dia": 4,
@@ -11198,6 +12806,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 2,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -11205,6 +12823,16 @@ export const data =
           "dia": 4,
           "fin": "11:00",
           "inicio": "09:00"
+        },
+        {
+          "dia": 4,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 4,
+          "fin": "13:00",
+          "inicio": "11:00"
         },
         {
           "dia": 4,
@@ -11225,6 +12853,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 2,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -11232,6 +12870,16 @@ export const data =
           "dia": 4,
           "fin": "11:00",
           "inicio": "09:00"
+        },
+        {
+          "dia": 4,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 4,
+          "fin": "13:00",
+          "inicio": "11:00"
         },
         {
           "dia": 4,
@@ -11269,7 +12917,7 @@ export const data =
         }
       ],
       "codigo": "8103-CURSO: 01",
-      "docentes": "LASANTA, TITO IGNACIO (Profesor/a Adjunto/a) - ALVAREZ PONTE, LUCIA INES (Ayudante 1ro/a) - GUTIERREZ, EDITH MABEL (Ayudante 1ro/a)",
+      "docentes": "LASANTA, TITO IGNACIO (Profesor/a Adjunto/a) - GUTIERREZ, EDITH MABEL (Ayudante 1ro/a) - ALVAREZ PONTE, LUCIA INES (Ayudante 1ro/a)",
       "materia": "8103"
     },
     {
@@ -11351,7 +12999,7 @@ export const data =
         }
       ],
       "codigo": "8104-CURSO: 21",
-      "docentes": "VERA, MATÍAS ALEJANDRO (Profesor/a Adjunto/a) - PUEBLA, MANUEL LEANDRO (Ayudante 1ro/a) - A DESIGNAR, A DESIGNAR (Ayudante 1ro/a)",
+      "docentes": "VERA, MATÍAS ALEJANDRO (Profesor/a Adjunto/a) - A DESIGNAR, A DESIGNAR (Ayudante 1ro/a) - PUEBLA, MANUEL LEANDRO (Ayudante 1ro/a)",
       "materia": "8104"
     },
     {
@@ -11359,6 +13007,16 @@ export const data =
         {
           "dia": 1,
           "fin": "21:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 1,
+          "fin": "21:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 3,
+          "fin": "23:00",
           "inicio": "19:00"
         },
         {
@@ -11376,6 +13034,16 @@ export const data =
         {
           "dia": 1,
           "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 1,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 3,
+          "fin": "13:00",
           "inicio": "09:00"
         },
         {
@@ -11397,6 +13065,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 2,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -11404,6 +13082,16 @@ export const data =
           "dia": 5,
           "fin": "11:00",
           "inicio": "09:00"
+        },
+        {
+          "dia": 5,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 5,
+          "fin": "13:00",
+          "inicio": "11:00"
         },
         {
           "dia": 5,
@@ -11451,6 +13139,26 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 2,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 2,
           "fin": "18:00",
           "inicio": "16:00"
         },
@@ -11458,6 +13166,26 @@ export const data =
           "dia": 4,
           "fin": "16:00",
           "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "18:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 4,
+          "fin": "18:00",
+          "inicio": "16:00"
         },
         {
           "dia": 4,
@@ -11478,6 +13206,26 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 2,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 2,
           "fin": "18:00",
           "inicio": "16:00"
         },
@@ -11485,6 +13233,26 @@ export const data =
           "dia": 4,
           "fin": "16:00",
           "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "18:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 4,
+          "fin": "18:00",
+          "inicio": "16:00"
         },
         {
           "dia": 4,
@@ -11505,6 +13273,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 2,
+          "fin": "13:00",
+          "inicio": "11:00"
+        },
+        {
+          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -11512,6 +13290,16 @@ export const data =
           "dia": 5,
           "fin": "11:00",
           "inicio": "09:00"
+        },
+        {
+          "dia": 5,
+          "fin": "11:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 5,
+          "fin": "13:00",
+          "inicio": "11:00"
         },
         {
           "dia": 5,
@@ -11532,6 +13320,16 @@ export const data =
         },
         {
           "dia": 1,
+          "fin": "20:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 1,
+          "fin": "22:00",
+          "inicio": "20:00"
+        },
+        {
+          "dia": 1,
           "fin": "22:00",
           "inicio": "20:00"
         },
@@ -11539,6 +13337,16 @@ export const data =
           "dia": 3,
           "fin": "20:00",
           "inicio": "18:00"
+        },
+        {
+          "dia": 3,
+          "fin": "20:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 3,
+          "fin": "22:00",
+          "inicio": "20:00"
         },
         {
           "dia": 3,
@@ -11559,6 +13367,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 2,
           "fin": "18:00",
           "inicio": "16:00"
         },
@@ -11569,12 +13387,22 @@ export const data =
         },
         {
           "dia": 4,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "18:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 4,
           "fin": "18:00",
           "inicio": "16:00"
         }
       ],
       "codigo": "8106-CURSO: 4",
-      "docentes": "GONZALEZ, GRACIELA ADRIANA (Profesor/a Asociado/a) - ALBERT, RAYMUNDO JOSE (Ayudante 1ro/a) - MONZON, NELSON (Ayudante 1ro/a)",
+      "docentes": "GONZALEZ, GRACIELA ADRIANA (Profesor/a Asociado/a) - MONZON, NELSON (Ayudante 1ro/a) - ALBERT, RAYMUNDO JOSE (Ayudante 1ro/a)",
       "materia": "8106"
     },
     {
@@ -11629,6 +13457,16 @@ export const data =
           "inicio": "08:00"
         },
         {
+          "dia": 1,
+          "fin": "11:00",
+          "inicio": "08:00"
+        },
+        {
+          "dia": 3,
+          "fin": "11:00",
+          "inicio": "08:00"
+        },
+        {
           "dia": 3,
           "fin": "11:00",
           "inicio": "08:00"
@@ -11663,6 +13501,16 @@ export const data =
           "inicio": "14:00"
         },
         {
+          "dia": 1,
+          "fin": "17:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "15:00"
+        },
+        {
           "dia": 2,
           "fin": "18:00",
           "inicio": "15:00"
@@ -11694,6 +13542,16 @@ export const data =
         {
           "dia": 2,
           "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 2,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "18:00",
           "inicio": "14:00"
         },
         {
@@ -11744,16 +13602,33 @@ export const data =
       "clases": [
         {
           "dia": 1,
-          "fin": "13:00",
-          "inicio": "09:00"
+          "fin": "12:00",
+          "inicio": "08:00"
         },
         {
           "dia": 1,
-          "fin": "13:00",
-          "inicio": "09:00"
+          "fin": "12:00",
+          "inicio": "08:00"
         },
         {
           "dia": 3,
+          "fin": "12:00",
+          "inicio": "08:00"
+        },
+        {
+          "dia": 3,
+          "fin": "12:00",
+          "inicio": "08:00"
+        }
+      ],
+      "codigo": "8201-CURSO: 01",
+      "docentes": "CORSINI, ALICIA BEATRIZ (Profesor/a Adjunto/a) - DANERI, CLAUDIO ESTEBAN MA (Jefe/a Trabajos Practicos) - NUÑEZ, NATALIA ELENA (Ayudante 1ro/a) - ROUX, PATRICIA NOEMI (Ayudante 1ra)",
+      "materia": "8201"
+    },
+    {
+      "clases": [
+        {
+          "dia": 1,
           "fin": "13:00",
           "inicio": "09:00"
         },
@@ -11764,7 +13639,7 @@ export const data =
         }
       ],
       "codigo": "8201-CURSO: 02",
-      "docentes": "AGUIRRE, MARIA ALEJANDRA (Profesor/a Adjunto/a) - MIRALLES, MONICA TERESITA (Jefe/a Trabajos Practicos) - FALCIONI, SEBASTIAN ARIEL (Ayudante 1ro/a) - AULIEL, MARIA INES (Ayudante 1ro/a) - FALCIONI, SEBASTIAN ARIEL (Ayudante 1ro/a)",
+      "docentes": "AGUIRRE, MARIA ALEJANDRA (Profesor/a Adjunto/a) - MIRALLES, MONICA TERESITA (Jefe/a Trabajos Practicos) - AULIEL, MARIA INES (Ayudante 1ro/a) - FALCIONI, SEBASTIAN ARIEL (Ayudante 1ro/a) - FALCIONI, SEBASTIAN ARIEL (Ayudante 1ro/a)",
       "materia": "8201"
     },
     {
@@ -11791,7 +13666,7 @@ export const data =
         }
       ],
       "codigo": "8201-CURSO: 03",
-      "docentes": "REPETTO, VIVIANA CRISTINA (Profesor/a Adjunto/a) - REBOREDO, GRACIELA BEATRI (Jefe/a Trabajos Practicos) - MUÑOZ, MARCOS ALFREDO SEBASTIAN (Ayudante 1ro/a) - VAZQUEZ, PATRICIA MARÍA ELENA (Ayudante 1ro/a)",
+      "docentes": "REPETTO, VIVIANA CRISTINA (Profesor/a Adjunto/a) - REBOREDO, GRACIELA BEATRI (Jefe/a Trabajos Practicos) - VAZQUEZ, PATRICIA MARÍA ELENA (Ayudante 1ro/a) - MUÑOZ, MARCOS ALFREDO SEBASTIAN (Ayudante 1ro/a)",
       "materia": "8201"
     },
     {
@@ -11831,6 +13706,23 @@ export const data =
     {
       "clases": [
         {
+          "dia": 2,
+          "fin": "13:00",
+          "inicio": "09:00"
+        },
+        {
+          "dia": 4,
+          "fin": "13:00",
+          "inicio": "09:00"
+        }
+      ],
+      "codigo": "8201-CURSO: 06",
+      "docentes": "CONDE GARRIDO, JUAN MANUEL (Profesor/a Adjunto/a) - ROCCA, JAVIER ALEJANDRO (Jefe/a Trabajos Practicos) - A DESIGNAR, A DESIGNAR (Jefe/a Trabajos Practicos) - FERRARI, SERGIO (Ayudante 1ro/a)",
+      "materia": "8201"
+    },
+    {
+      "clases": [
+        {
           "dia": 3,
           "fin": "12:00",
           "inicio": "08:00"
@@ -11842,7 +13734,7 @@ export const data =
         }
       ],
       "codigo": "8201-CURSO: 07",
-      "docentes": "CHIABRANDO, LAURA (Profesor/a Adjunto/a) - DUPLAA, MARIA CELESTE (Jefe/a Trabajos Practicos) - VALLESPI, ARTURO SEBASTIáN (Ayudante 1ro/a) - VALLESPI, ARTURO SEBASTIáN (Ayudante 1ro/a) - BARBER, MATIAS ERNESTO (Ayudante 1ro/a)",
+      "docentes": "CHIABRANDO, LAURA (Profesor/a Adjunto/a) - DUPLAA, MARIA CELESTE (Jefe/a Trabajos Practicos) - BARBER, MATIAS ERNESTO (Ayudante 1ro/a) - VALLESPI, ARTURO SEBASTIáN (Ayudante 1ro/a) - VALLESPI, ARTURO SEBASTIáN (Ayudante 1ro/a)",
       "materia": "8201"
     },
     {
@@ -11859,7 +13751,7 @@ export const data =
         }
       ],
       "codigo": "8201-CURSO: 08",
-      "docentes": "FERRINI, ADRIAN (Profesor/a Asociado/a) - VIÑALES, ANGEL DANIEL (Jefe/a Trabajos Practicos) - GARCIA, ALEJANDRO (Ayudante 1ro/a) - PIÑERA, EDUARDO ERNESTO (Ayudante 1ro/a)",
+      "docentes": "FERRINI, ADRIAN (Profesor/a Asociado/a) - VIÑALES, ANGEL DANIEL (Jefe/a Trabajos Practicos) - PIÑERA, EDUARDO ERNESTO (Ayudante 1ro/a) - GARCIA, ALEJANDRO (Ayudante 1ro/a)",
       "materia": "8201"
     },
     {
@@ -11897,23 +13789,13 @@ export const data =
           "inicio": "13:00"
         },
         {
-          "dia": 1,
-          "fin": "17:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 3,
-          "fin": "17:00",
-          "inicio": "13:00"
-        },
-        {
           "dia": 3,
           "fin": "17:00",
           "inicio": "13:00"
         }
       ],
       "codigo": "8201-CURSO: 10",
-      "docentes": "REPETTO, VIVIANA CRISTINA (Profesor/a Adjunto/a) - INDELICATO, EVANGELINA LAURA (Jefe/a Trabajos Practicos) - REBOREDO, GRACIELA BEATRI (Ayudante 1ro/a) - A DESIGNAR, A DESIGNAR (Ayudante 1ro/a)",
+      "docentes": "REPETTO, VIVIANA CRISTINA (Profesor/a Adjunto/a) - INDELICATO, EVANGELINA LAURA (Jefe/a Trabajos Practicos) - A DESIGNAR, A DESIGNAR (Ayudante 1ro/a) - REBOREDO, GRACIELA BEATRI (Ayudante 1ro/a)",
       "materia": "8201"
     },
     {
@@ -11930,7 +13812,7 @@ export const data =
         }
       ],
       "codigo": "8201-CURSO: 11",
-      "docentes": "MATTEO, CLAUDIA LEDA (Profesor/a Asociado/a) - TOSCANI, MICAELA (Jefe/a Trabajos Practicos) - PEREYRA, MARCELA ROSA (Ayudante 1ro/a) - BANEGAS, Agustin (Ayudante 1ro/a)",
+      "docentes": "MATTEO, CLAUDIA LEDA (Profesor/a Asociado/a) - TOSCANI, MICAELA (Jefe/a Trabajos Practicos) - BANEGAS, Agustin (Ayudante 1ro/a) - PEREYRA, MARCELA ROSA (Ayudante 1ro/a)",
       "materia": "8201"
     },
     {
@@ -11958,39 +13840,19 @@ export const data =
           "inicio": "17:00"
         },
         {
-          "dia": 1,
-          "fin": "21:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 3,
-          "fin": "21:00",
-          "inicio": "17:00"
-        },
-        {
           "dia": 3,
           "fin": "21:00",
           "inicio": "17:00"
         }
       ],
       "codigo": "8201-CURSO: 15",
-      "docentes": "CAMUYRANO, MARIO (Profesor/a Adjunto/a) - MARTÍNEZ STENGER, PABLO FRANCISCO (Jefe/a Trabajos Practicos) - A DESIGNAR, A DESIGNAR (Ayudante 1ro/a) - CANERO, ARMANDO TOMÁS (Ayudante 1ro/a)",
+      "docentes": "CAMUYRANO, MARIO (Profesor/a Adjunto/a) - MARTÍNEZ STENGER, PABLO FRANCISCO (Jefe/a Trabajos Practicos) - CANERO, ARMANDO TOMÁS (Ayudante 1ro/a) - A DESIGNAR, A DESIGNAR (Ayudante 1ro/a)",
       "materia": "8201"
     },
     {
       "clases": [
         {
           "dia": 1,
-          "fin": "21:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 1,
-          "fin": "21:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 3,
           "fin": "21:00",
           "inicio": "17:00"
         },
@@ -12018,7 +13880,7 @@ export const data =
         }
       ],
       "codigo": "8201-CURSO: 17",
-      "docentes": "FERRINI, ADRIAN (Profesor/a Asociado/a) - SUAREZ ANZORENA ROSASCO, JUAN IGNACIO (Jefe/a Trabajos Practicos) - CASCO, MARIA DE LOS ANGELES (Ayudante 1ro/a) - DANERI, CLAUDIO ESTEBAN MA (Ayudante 1ro/a)",
+      "docentes": "FERRINI, ADRIAN (Profesor/a Asociado/a) - SUAREZ ANZORENA ROSASCO, JUAN IGNACIO (Jefe/a Trabajos Practicos) - DANERI, CLAUDIO ESTEBAN MA (Ayudante 1ro/a) - CASCO, MARIA DE LOS ANGELES (Ayudante 1ro/a)",
       "materia": "8201"
     },
     {
@@ -12047,7 +13909,7 @@ export const data =
         }
       ],
       "codigo": "8201-CURSO: SP1",
-      "docentes": "DADAMIA, DANILO JOSE (Profesor/a Adjunto/a) - ROSSI, SERGIO (Jefe/a Trabajos Practicos) - STRUSIAT, PAMELA IVANA (Ayudante 1ro/a) - ROBLEDO, FABIANA ELIZABETH (Ayudante 1ro/a)",
+      "docentes": "DADAMIA, DANILO JOSE (Profesor/a Adjunto/a) - ROSSI, SERGIO (Jefe/a Trabajos Practicos) - ROBLEDO, FABIANA ELIZABETH (Ayudante 1ro/a) - STRUSIAT, PAMELA IVANA (Ayudante 1ro/a)",
       "materia": "8201"
     },
     {
@@ -12059,7 +13921,7 @@ export const data =
         }
       ],
       "codigo": "8201-CURSO: SP2",
-      "docentes": "RACERO, DIEGO ADRIÁN (Profesor/a Adjunto/a) - VILASECA, DIEGO MARTIN (Jefe/a Trabajos Practicos) - GONZALEZ, PABLO MARTIN (Ayudante 1ro/a) - BALBI, MARIA DEL PILAR (Ayudante 1ro/a)",
+      "docentes": "RACERO, DIEGO ADRIÁN (Profesor/a Adjunto/a) - VILASECA, DIEGO MARTIN (Jefe/a Trabajos Practicos) - BALBI, MARIA DEL PILAR (Ayudante 1ro/a) - GONZALEZ, PABLO MARTIN (Ayudante 1ro/a)",
       "materia": "8201"
     },
     {
@@ -12098,16 +13960,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 2,
-          "fin": "15:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 2,
           "fin": "15:00",
           "inicio": "13:00"
         },
@@ -12115,16 +13967,6 @@ export const data =
           "dia": 4,
           "fin": "13:00",
           "inicio": "11:00"
-        },
-        {
-          "dia": 4,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 4,
-          "fin": "15:00",
-          "inicio": "13:00"
         },
         {
           "dia": 4,
@@ -12145,16 +13987,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "15:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 2,
-          "fin": "17:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 2,
           "fin": "17:00",
           "inicio": "15:00"
         },
@@ -12162,16 +13994,6 @@ export const data =
           "dia": 4,
           "fin": "15:00",
           "inicio": "13:00"
-        },
-        {
-          "dia": 4,
-          "fin": "15:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 4,
-          "fin": "17:00",
-          "inicio": "15:00"
         },
         {
           "dia": 4,
@@ -12192,16 +14014,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "17:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 2,
-          "fin": "19:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 2,
           "fin": "19:00",
           "inicio": "17:00"
         },
@@ -12209,16 +14021,6 @@ export const data =
           "dia": 4,
           "fin": "17:00",
           "inicio": "15:00"
-        },
-        {
-          "dia": 4,
-          "fin": "17:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 4,
-          "fin": "19:00",
-          "inicio": "17:00"
         },
         {
           "dia": 4,
@@ -12266,16 +14068,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "19:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 2,
-          "fin": "21:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 2,
           "fin": "21:00",
           "inicio": "19:00"
         },
@@ -12283,16 +14075,6 @@ export const data =
           "dia": 4,
           "fin": "19:00",
           "inicio": "17:00"
-        },
-        {
-          "dia": 4,
-          "fin": "19:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 4,
-          "fin": "21:00",
-          "inicio": "19:00"
         },
         {
           "dia": 4,
@@ -12313,16 +14095,6 @@ export const data =
         },
         {
           "dia": 3,
-          "fin": "10:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 3,
-          "fin": "12:00",
-          "inicio": "10:00"
-        },
-        {
-          "dia": 3,
           "fin": "12:00",
           "inicio": "10:00"
         },
@@ -12330,16 +14102,6 @@ export const data =
           "dia": 5,
           "fin": "10:00",
           "inicio": "08:00"
-        },
-        {
-          "dia": 5,
-          "fin": "10:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 5,
-          "fin": "12:00",
-          "inicio": "10:00"
         },
         {
           "dia": 5,
@@ -12360,16 +14122,6 @@ export const data =
         },
         {
           "dia": 3,
-          "fin": "12:00",
-          "inicio": "10:00"
-        },
-        {
-          "dia": 3,
-          "fin": "14:00",
-          "inicio": "12:00"
-        },
-        {
-          "dia": 3,
           "fin": "14:00",
           "inicio": "12:00"
         },
@@ -12377,16 +14129,6 @@ export const data =
           "dia": 5,
           "fin": "12:00",
           "inicio": "10:00"
-        },
-        {
-          "dia": 5,
-          "fin": "12:00",
-          "inicio": "10:00"
-        },
-        {
-          "dia": 5,
-          "fin": "14:00",
-          "inicio": "12:00"
         },
         {
           "dia": 5,
@@ -12476,7 +14218,7 @@ export const data =
         }
       ],
       "codigo": "8202-CURSO: 11",
-      "docentes": "FERRINI, ADRIAN (Profesor/a Adjunto/a) - ROSCARDI, JAVIER EDUARDO (Jefe/a Trabajos Practicos) - BATTOCCHIO, DIEGO JAVIER (Ayudante 1ro/a) - ZALCMAN, ALEXIS LEÓN (Ayudante 1ro/a)",
+      "docentes": "FERRINI, ADRIAN (Profesor/a Adjunto/a) - ROSCARDI, JAVIER EDUARDO (Jefe/a Trabajos Practicos) - ZALCMAN, ALEXIS LEÓN (Ayudante 1ro/a) - BATTOCCHIO, DIEGO JAVIER (Ayudante 1ro/a)",
       "materia": "8202"
     },
     {
@@ -12624,7 +14366,7 @@ export const data =
         }
       ],
       "codigo": "8301-CURSO: 07",
-      "docentes": "MELAJ, MARIANA ANDREA (Jefe/a Trabajos Practicos) - GOBBI MIÑONES, ALEJANDRO RICARDO (Jefe/a Trabajos Practicos) - ANDRONIKOV, ANDRES (Ayudante 2do/a) - MAKOVEC, JUAN MANUEL (Ayudante 2do/a ad-honorem) - MAKOVEC, JUAN MANUEL (Ayudante 2do/a ad-honorem) - UREÑA, MARIA ANDREA (Coordinador/a) - BOEYKENS, SUSANA PATRICIA (Responsable asignatura)",
+      "docentes": "GOBBI MIÑONES, ALEJANDRO RICARDO (Jefe/a Trabajos Practicos) - MELAJ, MARIANA ANDREA (Jefe/a Trabajos Practicos) - ANDRONIKOV, ANDRES (Ayudante 2do/a) - MAKOVEC, JUAN MANUEL (Ayudante 2do/a ad-honorem) - MAKOVEC, JUAN MANUEL (Ayudante 2do/a ad-honorem) - UREÑA, MARIA ANDREA (Coordinador/a) - BOEYKENS, SUSANA PATRICIA (Responsable asignatura)",
       "materia": "8301"
     },
     {
@@ -12650,6 +14392,16 @@ export const data =
           "dia": 5,
           "fin": "18:00",
           "inicio": "14:00"
+        },
+        {
+          "dia": 5,
+          "fin": "18:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 5,
+          "fin": "20:00",
+          "inicio": "18:00"
         },
         {
           "dia": 5,
@@ -12683,6 +14435,16 @@ export const data =
         {
           "dia": 2,
           "fin": "22:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 2,
+          "fin": "22:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 5,
+          "fin": "20:00",
           "inicio": "18:00"
         },
         {
@@ -12726,7 +14488,7 @@ export const data =
         }
       ],
       "codigo": "8301-CURSO: 14",
-      "docentes": "ROMERO, ADRIANA MARCELA (Profesor/a Adjunto/a) - TESTA, FERNANDEZ JUAN JOSE (Jefe/a Trabajos Practicos) - LAVALLE, MYRIAM BEATRIZ (Ayudante 1ro/a) - SANCHEZ, ALEJANDRO DARÍO (Ayudante 1ro/a) - UREÑA, MARIA ANDREA (Coordinador/a) - BOEYKENS, SUSANA PATRICIA (Responsable asignatura)",
+      "docentes": "ROMERO, ADRIANA MARCELA (Profesor/a Adjunto/a) - TESTA, FERNANDEZ JUAN JOSE (Jefe/a Trabajos Practicos) - SANCHEZ, ALEJANDRO DARÍO (Ayudante 1ro/a) - LAVALLE, MYRIAM BEATRIZ (Ayudante 1ro/a) - UREÑA, MARIA ANDREA (Coordinador/a) - BOEYKENS, SUSANA PATRICIA (Responsable asignatura)",
       "materia": "8301"
     },
     {
@@ -12823,7 +14585,7 @@ export const data =
         }
       ],
       "codigo": "8401-CURSO: 1",
-      "docentes": "MARCHETTI, LEONEL HERNAN (Jefe/a Trabajos Practicos) - PEREZ TABOADA, CAROLINA MARCELA (Jefe/a Trabajos Practicos)",
+      "docentes": "PEREZ TABOADA, CAROLINA MARCELA (Jefe/a Trabajos Practicos) - MARCHETTI, LEONEL HERNAN (Jefe/a Trabajos Practicos)",
       "materia": "8401"
     },
     {
@@ -12964,7 +14726,7 @@ export const data =
         }
       ],
       "codigo": "8404-CURSO: 1",
-      "docentes": "FERNANDEZ LUCO, LUIS (Profesor/a Asociado/a) - BENITEZ, ALEJANDRA (Profesor/a Adjunto/a) - DOBEL, MARTIN ALEJANDRO (Jefe/a Trabajos Practicos) - ETCHEGORRY, ALEJANDRO (Jefe/a Trabajos Practicos) - RUIZ, ADRIAN ALEJANDRO (Jefe/a Trabajos Practicos) - MIHAILOVSCHI, GEORGINA ALEJANDRA (Ayudante 2do/a)",
+      "docentes": "FERNANDEZ LUCO, LUIS (Profesor/a Asociado/a) - BENITEZ, ALEJANDRA (Profesor/a Adjunto/a) - RUIZ, ADRIAN ALEJANDRO (Jefe/a Trabajos Practicos) - ETCHEGORRY, ALEJANDRO (Jefe/a Trabajos Practicos) - DOBEL, MARTIN ALEJANDRO (Jefe/a Trabajos Practicos) - MIHAILOVSCHI, GEORGINA ALEJANDRA (Ayudante 2do/a)",
       "materia": "8404"
     },
     {
@@ -13106,23 +14868,6 @@ export const data =
     {
       "clases": [
         {
-          "dia": 4,
-          "fin": "23:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 5,
-          "fin": "13:00",
-          "inicio": "09:00"
-        }
-      ],
-      "codigo": "8408-CURSO: 1",
-      "docentes": "FAZIO, JAVIER RODOLFO (Profesor/a Adjunto/a) - VAQUERO, SEBASTIAN FELIPE (Ayudante 1ro/a)",
-      "materia": "8408"
-    },
-    {
-      "clases": [
-        {
           "dia": 2,
           "fin": "19:00",
           "inicio": "15:00"
@@ -13247,6 +14992,16 @@ export const data =
           "inicio": "18:00"
         },
         {
+          "dia": 4,
+          "fin": "22:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 6,
+          "fin": "13:00",
+          "inicio": "08:30"
+        },
+        {
           "dia": 6,
           "fin": "13:00",
           "inicio": "08:30"
@@ -13270,7 +15025,7 @@ export const data =
         }
       ],
       "codigo": "8503-CURSO 1",
-      "docentes": "KISIELEWSKY, ADRIAN ERNESTO (Profesor/a Adjunto/a) - TRESOLS, MARÍA EUGENIA (Ayudante 2do/a) - ROSS, RENATO RAMÓN (Ayudante 2do/a)",
+      "docentes": "KISIELEWSKY, ADRIAN ERNESTO (Profesor/a Adjunto/a) - ROSS, RENATO RAMÓN (Ayudante 2do/a) - TRESOLS, MARÍA EUGENIA (Ayudante 2do/a)",
       "materia": "8503"
     },
     {
@@ -13298,6 +15053,16 @@ export const data =
           "inicio": "19:00"
         },
         {
+          "dia": 2,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 5,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
           "dia": 5,
           "fin": "22:00",
           "inicio": "19:00"
@@ -13315,9 +15080,39 @@ export const data =
           "inicio": "14:00"
         },
         {
+          "dia": 3,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 3,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
           "dia": 4,
           "fin": "16:00",
           "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "16:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 6,
+          "fin": "12:30",
+          "inicio": "08:30"
+        },
+        {
+          "dia": 6,
+          "fin": "12:30",
+          "inicio": "08:30"
         },
         {
           "dia": 6,
@@ -13463,6 +15258,16 @@ export const data =
           "inicio": "19:00"
         },
         {
+          "dia": 2,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 3,
+          "fin": "21:00",
+          "inicio": "18:00"
+        },
+        {
           "dia": 3,
           "fin": "21:00",
           "inicio": "18:00"
@@ -13478,6 +15283,16 @@ export const data =
           "dia": 1,
           "fin": "22:00",
           "inicio": "19:00"
+        },
+        {
+          "dia": 1,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 2,
+          "fin": "19:00",
+          "inicio": "16:00"
         },
         {
           "dia": 2,
@@ -13539,7 +15354,7 @@ export const data =
         }
       ],
       "codigo": "8525-CURSO 1",
-      "docentes": "WEISS, ALEJANDRO (Profesor/a Adjunto/a) - SECCHI, MARINO GASTON (Profesor/a Adjunto/a)",
+      "docentes": "SECCHI, MARINO GASTON (Profesor/a Adjunto/a) - WEISS, ALEJANDRO (Profesor/a Adjunto/a)",
       "materia": "8525"
     },
     {
@@ -13630,6 +15445,16 @@ export const data =
           "inicio": "18:00"
         },
         {
+          "dia": 1,
+          "fin": "21:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 3,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
           "dia": 3,
           "fin": "22:00",
           "inicio": "19:00"
@@ -13662,6 +15487,16 @@ export const data =
           "dia": 1,
           "fin": "19:00",
           "inicio": "15:00"
+        },
+        {
+          "dia": 1,
+          "fin": "19:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 1,
+          "fin": "23:00",
+          "inicio": "19:00"
         },
         {
           "dia": 1,
@@ -13716,6 +15551,16 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "08:00"
+        },
+        {
+          "dia": 2,
+          "fin": "23:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 2,
           "fin": "23:00",
           "inicio": "19:00"
         }
@@ -13730,6 +15575,16 @@ export const data =
           "dia": 3,
           "fin": "15:00",
           "inicio": "12:00"
+        },
+        {
+          "dia": 3,
+          "fin": "15:00",
+          "inicio": "12:00"
+        },
+        {
+          "dia": 5,
+          "fin": "23:00",
+          "inicio": "19:00"
         },
         {
           "dia": 5,
@@ -13925,7 +15780,7 @@ export const data =
         }
       ],
       "codigo": "8601-CURSO: 2",
-      "docentes": "CARAM, LEONIDAS FACUNDO (Profesor/a Adjunto/a) - FUCHS, JORGE HECTOR ANTONIO (Profesor/a Adjunto/a) - MARTINEZ, MIGUEL ANTONIO (Profesor/a Adjunto/a)",
+      "docentes": "MARTINEZ, MIGUEL ANTONIO (Profesor/a Adjunto/a) - FUCHS, JORGE HECTOR ANTONIO (Profesor/a Adjunto/a) - CARAM, LEONIDAS FACUNDO (Profesor/a Adjunto/a)",
       "materia": "8601"
     },
     {
@@ -13942,7 +15797,7 @@ export const data =
         }
       ],
       "codigo": "8601-CURSO: 3",
-      "docentes": "PERFETTO, JUAN CARLOS (Profesor/a Adjunto/a) - FUCHS, JORGE HECTOR ANTONIO (Profesor/a Adjunto/a)",
+      "docentes": "FUCHS, JORGE HECTOR ANTONIO (Profesor/a Adjunto/a) - PERFETTO, JUAN CARLOS (Profesor/a Adjunto/a)",
       "materia": "8601"
     },
     {
@@ -13983,23 +15838,6 @@ export const data =
       "clases": [
         {
           "dia": 1,
-          "fin": "19:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 4,
-          "fin": "19:00",
-          "inicio": "16:00"
-        }
-      ],
-      "codigo": "8602-CURSO: 1",
-      "docentes": "VEIGA, RICARDO ALFREDO (Profesor/a Asociado/a) - BONELLI, FERNANDO OSCAR (Profesor/a Adjunto/a) - MELLO TEGGIA, MARTÍN ALEJANDRO (Ayudante 1ro/a) - CARDUCCI, LEONARDO MARTIN (Ayudante 1ro/a) - LISMAN, IVÁN ALEJANDRO (Ayudante 2do/a) - PITTIDU, ORNELLA SOFIA (Ayudante 2do/a ad-honorem)",
-      "materia": "8602"
-    },
-    {
-      "clases": [
-        {
-          "dia": 1,
           "fin": "22:00",
           "inicio": "19:00"
         },
@@ -14027,7 +15865,7 @@ export const data =
         }
       ],
       "codigo": "8603-CURSO: 1",
-      "docentes": "CARBONETTO, SEBASTIÁN HORACIO (Profesor/a Adjunto/a) - GONZALEZ, MARTIN GERMAN (Profesor/a Adjunto/a) - ZACCHIGNA, FEDERICO GIORDANO (Jefe/a Trabajos Practicos) - FANEGO, DIEGO ALBERTO (Ayudante 1ro/a) - HIRSCH, LUCAS (Ayudante 2do/a) - GOYRET, JUAN PABLO (Ayudante 2do/a ad-honorem) - GOYRET, JUAN PABLO (Ayudante 2do/a ad-honorem)",
+      "docentes": "GONZALEZ, MARTIN GERMAN (Profesor/a Adjunto/a) - CARBONETTO, SEBASTIÁN HORACIO (Profesor/a Adjunto/a) - ZACCHIGNA, FEDERICO GIORDANO (Jefe/a Trabajos Practicos) - FANEGO, DIEGO ALBERTO (Ayudante 1ro/a) - HIRSCH, LUCAS (Ayudante 2do/a) - GOYRET, JUAN PABLO (Ayudante 2do/a ad-honorem) - GOYRET, JUAN PABLO (Ayudante 2do/a ad-honorem)",
       "materia": "8603"
     },
     {
@@ -14049,7 +15887,7 @@ export const data =
         }
       ],
       "codigo": "8604-CURSO: 1",
-      "docentes": "ZACCHIGNA, FEDERICO GIORDANO (Profesor/a Adjunto/a) - ECHARRI, MARTIN (Jefe/a Trabajos Practicos) - ULLOA, JOAQUIN GASPAR (Ayudante 1ro/a) - CONTIGIANI, BRUNO (Ayudante 1ro/a) - ROSSI, FRANCISCO (Ayudante 2do/a) - SOBICO, CARLA MARIEL (Ayudante 2do/a)",
+      "docentes": "ZACCHIGNA, FEDERICO GIORDANO (Profesor/a Adjunto/a) - ECHARRI, MARTIN (Jefe/a Trabajos Practicos) - CONTIGIANI, BRUNO (Ayudante 1ro/a) - ULLOA, JOAQUIN GASPAR (Ayudante 1ro/a) - SOBICO, CARLA MARIEL (Ayudante 2do/a) - ROSSI, FRANCISCO (Ayudante 2do/a)",
       "materia": "8604"
     },
     {
@@ -14105,7 +15943,7 @@ export const data =
         }
       ],
       "codigo": "8605-CURSO: 2",
-      "docentes": "TORRES, HUMBERTO MAXIMILIANO (Profesor/a Adjunto/a) - CALDENTEY, MARTA BEATRIZ (Jefe/a Trabajos Practicos) - CASAGLIA, DANIEL CLAUDIO (Jefe/a Trabajos Practicos)",
+      "docentes": "TORRES, HUMBERTO MAXIMILIANO (Profesor/a Adjunto/a) - CASAGLIA, DANIEL CLAUDIO (Jefe/a Trabajos Practicos) - CALDENTEY, MARTA BEATRIZ (Jefe/a Trabajos Practicos)",
       "materia": "8605"
     },
     {
@@ -14183,7 +16021,7 @@ export const data =
         }
       ],
       "codigo": "8607-CURSO: 1",
-      "docentes": "CAMPIGLIO, GUILLERMO CARLOS (Profesor/a Adjunto/a) - STOLA, GERARDO LUIS (Jefe/a Trabajos Practicos) - COFMAN, FERNANDO (Jefe/a Trabajos Practicos) - SALAYA VELAZQUEZ, JUAN GUIDO (Ayudante 1ro/a)",
+      "docentes": "CAMPIGLIO, GUILLERMO CARLOS (Profesor/a Adjunto/a) - COFMAN, FERNANDO (Jefe/a Trabajos Practicos) - STOLA, GERARDO LUIS (Jefe/a Trabajos Practicos) - SALAYA VELAZQUEZ, JUAN GUIDO (Ayudante 1ro/a)",
       "materia": "8607"
     },
     {
@@ -14239,7 +16077,7 @@ export const data =
         }
       ],
       "codigo": "8608-CURSO: 1",
-      "docentes": "GHERSIN, ALEJANDRO SIMON (Profesor/a Asociado/a) - SELLERIO, GUILLERMO CARLO (Profesor/a Adjunto/a) - POSE, CLAUDIO DANIEL (Jefe/a Trabajos Practicos) - BRUNO, MARCELO ADRIAN (Jefe/a Trabajos Practicos) - GONZALEZ, TOMAS ANDRES (Ayudante 1ro/a)",
+      "docentes": "GHERSIN, ALEJANDRO SIMON (Profesor/a Asociado/a) - SELLERIO, GUILLERMO CARLO (Profesor/a Adjunto/a) - BRUNO, MARCELO ADRIAN (Jefe/a Trabajos Practicos) - POSE, CLAUDIO DANIEL (Jefe/a Trabajos Practicos) - GONZALEZ, TOMAS ANDRES (Ayudante 1ro/a)",
       "materia": "8608"
     },
     {
@@ -14256,7 +16094,7 @@ export const data =
         }
       ],
       "codigo": "8609-CURSO: 1",
-      "docentes": "GIRIBET, JUAN IGNACIO (Profesor/a Asociado/a) - ZOLA, JULIO GUILLERMO (Profesor/a Asociado/a) - PFEFFERMAN, JONAS DAMIAN (Jefe/a Trabajos Practicos) - MESSINA, FRANCISCO JAVIER (Jefe/a Trabajos Practicos) - JOURDAN, IVAN (Ayudante 1ro/a) - LUPI, CLAUDIO ALBERTO (Ayudante 1ro/a)",
+      "docentes": "GIRIBET, JUAN IGNACIO (Profesor/a Asociado/a) - PFEFFERMAN, JONAS DAMIAN (Jefe/a Trabajos Practicos) - JOURDAN, IVAN (Ayudante 1ro/a) - LUPI, CLAUDIO ALBERTO (Ayudante 1ro/a)",
       "materia": "8609"
     },
     {
@@ -14273,7 +16111,7 @@ export const data =
         }
       ],
       "codigo": "8610-CURSO: 1",
-      "docentes": "MARCHI, EDGARDO JOSE (Profesor/a Adjunto/a) - BRUNO, MARCELO ADRIAN (Ayudante 1ro/a) - D´ANGIOLO, FEDERICO GABRIEL (Ayudante 1ro/a) - BULACIO, MATIAS FERNANDO (Ayudante 1ro/a) - MALMORIA, MARIANO ESTEBAN NOÉ (Ayudante 1ro/a) - ESTEVA, SANTIAGO (Ayudante 1ro/a)",
+      "docentes": "MARCHI, EDGARDO JOSE (Profesor/a Adjunto/a) - BRUNO, MARCELO ADRIAN (Ayudante 1ro/a) - D´ANGIOLO, FEDERICO GABRIEL (Ayudante 1ro/a) - ESTEVA, SANTIAGO (Ayudante 1ro/a) - BULACIO, MATIAS FERNANDO (Ayudante 1ro/a) - MALMORIA, MARIANO ESTEBAN NOÉ (Ayudante 1ro/a)",
       "materia": "8610"
     },
     {
@@ -14307,7 +16145,7 @@ export const data =
         }
       ],
       "codigo": "8612-CURSO: 1",
-      "docentes": "MARRONE, LUIS ARMANDO (Profesor/a Titular/a) - LOVATO, SILVIA BEATRIZ (Profesor/a Adjunto/a) - CATTANEO, JUAN MATIAS (Ayudante 1ro/a) - GARCIA, FEDERICO EZEQUIEL (Ayudante 1ro/a)",
+      "docentes": "MARRONE, LUIS ARMANDO (Profesor/a Titular/a) - LOVATO, SILVIA BEATRIZ (Profesor/a Adjunto/a) - GARCIA, FEDERICO EZEQUIEL (Ayudante 1ro/a) - CATTANEO, JUAN MATIAS (Ayudante 1ro/a)",
       "materia": "8612"
     },
     {
@@ -14409,7 +16247,7 @@ export const data =
         }
       ],
       "codigo": "8617-CURSO: 1",
-      "docentes": "ZANINI, ANIBAL JOSE ANTONIO (Profesor/a Titular/a) - BERRA, SEBASTIÁN (Jefe/a Trabajos Practicos) - PAZOS, FERNANDO AGUSTIN (Jefe/a Trabajos Practicos)",
+      "docentes": "ZANINI, ANIBAL JOSE ANTONIO (Profesor/a Titular/a) - PAZOS, FERNANDO AGUSTIN (Jefe/a Trabajos Practicos) - BERRA, SEBASTIÁN (Jefe/a Trabajos Practicos)",
       "materia": "8617"
     },
     {
@@ -14426,7 +16264,7 @@ export const data =
         }
       ],
       "codigo": "8624-CURSO: 1",
-      "docentes": "TACCA, HERNAN EMILIO (Profesor/a Titular/a) - BERTOLOTTI, FERNANDO NESTOR (Jefe/a Trabajos Practicos) - VEYRAT DURBEX, ALEJANDRO FABIO (Ayudante 1ro/a) - NACHAJON SCHWARTZ, YAKI (Ayudante 1ro/a)",
+      "docentes": "TACCA, HERNAN EMILIO (Profesor/a Titular/a) - BERTOLOTTI, FERNANDO NESTOR (Jefe/a Trabajos Practicos) - NACHAJON SCHWARTZ, YAKI (Ayudante 1ro/a) - VEYRAT DURBEX, ALEJANDRO FABIO (Ayudante 1ro/a)",
       "materia": "8624"
     },
     {
@@ -14579,7 +16417,7 @@ export const data =
         }
       ],
       "codigo": "8634-CURSO: 1",
-      "docentes": "ZOTHNER, ENRIQUE FELIX EDU (Profesor/a Adjunto/a) - CONTIGIANI, BRUNO (Jefe/a Trabajos Practicos) - SANCHEZ, DIEGO (Ayudante 1ro/a) - SANCHEZ, DIEGO GASPAR (Ayudante 1ro/a)",
+      "docentes": "ZOTHNER, ENRIQUE FELIX EDU (Profesor/a Adjunto/a) - CONTIGIANI, BRUNO (Jefe/a Trabajos Practicos) - SANCHEZ, DIEGO GASPAR (Ayudante 1ro/a) - SANCHEZ, DIEGO (Ayudante 1ro/a)",
       "materia": "8634"
     },
     {
@@ -14817,7 +16655,7 @@ export const data =
         }
       ],
       "codigo": "8648-CURSO: 3 - Performance de Sistemas de Softwar",
-      "docentes": "HEGUIABEHERE, JUAN MARTIN (Profesor/a Adjunto/a) - SANTI, LEANDRO EMILIO (Jefe/a Trabajos Practicos) - STAHL, MATIAS SEBASTIAN (Ayudante 1ro/a) - NATALE, LUCIANO CESAR (Ayudante 1ro/a) - PEREZ MASCI, HERNAN ANDRES (Ayudante 1ro/a)",
+      "docentes": "HEGUIABEHERE, JUAN MARTIN (Profesor/a Adjunto/a) - SANTI, LEANDRO EMILIO (Jefe/a Trabajos Practicos) - PEREZ MASCI, HERNAN ANDRES (Ayudante 1ro/a) - STAHL, MATIAS SEBASTIAN (Ayudante 1ro/a) - NATALE, LUCIANO CESAR (Ayudante 1ro/a)",
       "materia": "8648"
     },
     {
@@ -14919,7 +16757,7 @@ export const data =
         }
       ],
       "codigo": "8649-CURSO: 3 - Performance de Sistemas de Softwar",
-      "docentes": "HEGUIABEHERE, JUAN MARTIN (Profesor/a Adjunto/a) - SANTI, LEANDRO EMILIO (Jefe/a Trabajos Practicos) - PEREZ MASCI, HERNAN ANDRES (Ayudante 1ro/a) - STAHL, MATIAS SEBASTIAN (Ayudante 1ro/a) - NATALE, LUCIANO CESAR (Ayudante 1ro/a)",
+      "docentes": "HEGUIABEHERE, JUAN MARTIN (Profesor/a Adjunto/a) - SANTI, LEANDRO EMILIO (Jefe/a Trabajos Practicos) - STAHL, MATIAS SEBASTIAN (Ayudante 1ro/a) - PEREZ MASCI, HERNAN ANDRES (Ayudante 1ro/a) - NATALE, LUCIANO CESAR (Ayudante 1ro/a)",
       "materia": "8649"
     },
     {
@@ -15157,7 +16995,7 @@ export const data =
         }
       ],
       "codigo": "8665-CURSO: 1",
-      "docentes": "LUTENBERG, ARIEL (Profesor/a Adjunto/a) - CRUZ, JUAN MANUEL (Profesor/a Adjunto/a) - GRAÑA, JORGE EDUARDO (Jefe/a Trabajos Practicos)",
+      "docentes": "CRUZ, JUAN MANUEL (Profesor/a Adjunto/a) - LUTENBERG, ARIEL (Profesor/a Adjunto/a) - GRAÑA, JORGE EDUARDO (Jefe/a Trabajos Practicos)",
       "materia": "8665"
     },
     {
@@ -15191,7 +17029,7 @@ export const data =
         }
       ],
       "codigo": "8669-CURSO: 1",
-      "docentes": "BERTETTA, ADOLFO ANTONIO (Profesor/a Adjunto/a) - IUZZOLINO, RICARDO JAVIER (Profesor/a Adjunto/a) - D`ONOFRIO, ENRIQUE MARIO (Ayudante 1ro/a)",
+      "docentes": "IUZZOLINO, RICARDO JAVIER (Profesor/a Adjunto/a) - BERTETTA, ADOLFO ANTONIO (Profesor/a Adjunto/a) - D`ONOFRIO, ENRIQUE MARIO (Ayudante 1ro/a)",
       "materia": "8669"
     },
     {
@@ -15225,7 +17063,7 @@ export const data =
         }
       ],
       "codigo": "8669-CURSO: 3",
-      "docentes": "ZOTHNER, ENRIQUE FELIX EDU (Profesor/a Adjunto/a) - BERTETTA, ADOLFO ANTONIO (Profesor/a Adjunto/a) - CABIBBO, DANIEL HORACIO (Ayudante 1ro/a)",
+      "docentes": "BERTETTA, ADOLFO ANTONIO (Profesor/a Adjunto/a) - ZOTHNER, ENRIQUE FELIX EDU (Profesor/a Adjunto/a) - CABIBBO, DANIEL HORACIO (Ayudante 1ro/a)",
       "materia": "8669"
     },
     {
@@ -15287,6 +17125,16 @@ export const data =
           "inicio": "14:00"
         },
         {
+          "dia": 4,
+          "fin": "18:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 5,
+          "fin": "14:00",
+          "inicio": "10:00"
+        },
+        {
           "dia": 5,
           "fin": "14:00",
           "inicio": "10:00"
@@ -15316,6 +17164,16 @@ export const data =
           "inicio": "15:00"
         },
         {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 3,
+          "fin": "17:00",
+          "inicio": "14:00"
+        },
+        {
           "dia": 3,
           "fin": "17:00",
           "inicio": "14:00"
@@ -15324,10 +17182,15 @@ export const data =
           "dia": 3,
           "fin": "20:00",
           "inicio": "17:00"
+        },
+        {
+          "dia": 3,
+          "fin": "20:00",
+          "inicio": "17:00"
         }
       ],
       "codigo": "8706-CURSO: 1",
-      "docentes": "GEREZ, CARLOS JULIO (Profesor/a Adjunto/a) - di IORIO, JOSÉ MARÍA (Profesor/a Adjunto/a) - OUBIÑA de CASTRO, ROSARIO (Ayudante 2do/a) - OUBIÑA de CASTRO, ROSARIO (Ayudante 2do/a)",
+      "docentes": "di IORIO, JOSÉ MARÍA (Profesor/a Adjunto/a) - GEREZ, CARLOS JULIO (Profesor/a Adjunto/a) - OUBIÑA de CASTRO, ROSARIO (Ayudante 2do/a) - OUBIÑA de CASTRO, ROSARIO (Ayudante 2do/a)",
       "materia": "8706"
     },
     {
@@ -15339,8 +17202,38 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "08:00"
+        },
+        {
+          "dia": 2,
+          "fin": "11:00",
+          "inicio": "08:00"
+        },
+        {
+          "dia": 2,
           "fin": "18:00",
           "inicio": "15:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 5,
+          "fin": "21:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 5,
+          "fin": "21:00",
+          "inicio": "18:00"
         },
         {
           "dia": 5,
@@ -15361,8 +17254,23 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "08:00"
+        },
+        {
+          "dia": 2,
           "fin": "15:00",
           "inicio": "12:00"
+        },
+        {
+          "dia": 2,
+          "fin": "15:00",
+          "inicio": "12:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "15:00"
         },
         {
           "dia": 2,
@@ -15382,9 +17290,24 @@ export const data =
           "inicio": "15:00"
         },
         {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "15:00"
+        },
+        {
           "dia": 3,
           "fin": "17:00",
           "inicio": "14:00"
+        },
+        {
+          "dia": 3,
+          "fin": "17:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "21:00",
+          "inicio": "18:00"
         },
         {
           "dia": 4,
@@ -15405,6 +17328,21 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "08:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 4,
           "fin": "18:00",
           "inicio": "15:00"
         },
@@ -15426,9 +17364,24 @@ export const data =
           "inicio": "15:00"
         },
         {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "15:00"
+        },
+        {
           "dia": 3,
           "fin": "17:00",
           "inicio": "14:00"
+        },
+        {
+          "dia": 3,
+          "fin": "17:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "21:00",
+          "inicio": "18:00"
         },
         {
           "dia": 4,
@@ -15494,6 +17447,16 @@ export const data =
           "inicio": "08:00"
         },
         {
+          "dia": 1,
+          "fin": "12:00",
+          "inicio": "08:00"
+        },
+        {
+          "dia": 5,
+          "fin": "15:00",
+          "inicio": "13:00"
+        },
+        {
           "dia": 5,
           "fin": "15:00",
           "inicio": "13:00"
@@ -15517,7 +17480,7 @@ export const data =
         }
       ],
       "codigo": "8711-CURSO: 2",
-      "docentes": "MERLO, RUBEN OSVALDO (Profesor/a Asociado/a) - DE PIERO, MARIA INES (Jefe/a Trabajos Practicos) - RAIDEN, EMILIO AMADO (Jefe/a Trabajos Practicos) - AGÜERA, WALTER ALBERTO (Ayudante 2do/a)",
+      "docentes": "MERLO, RUBEN OSVALDO (Profesor/a Asociado/a) - RAIDEN, EMILIO AMADO (Jefe/a Trabajos Practicos) - DE PIERO, MARIA INES (Jefe/a Trabajos Practicos) - AGÜERA, WALTER ALBERTO (Ayudante 2do/a)",
       "materia": "8711"
     },
     {
@@ -15526,6 +17489,16 @@ export const data =
           "dia": 2,
           "fin": "17:00",
           "inicio": "15:00"
+        },
+        {
+          "dia": 2,
+          "fin": "17:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 3,
+          "fin": "22:00",
+          "inicio": "18:00"
         },
         {
           "dia": 3,
@@ -15546,12 +17519,22 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "17:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 2,
+          "fin": "21:00",
+          "inicio": "17:00"
+        },
+        {
+          "dia": 2,
           "fin": "21:00",
           "inicio": "17:00"
         }
       ],
       "codigo": "8711-CURSO: 4",
-      "docentes": "MERLO, RUBEN OSVALDO (Profesor/a Asociado/a) - PORCELLANA, JORGE ALBERTO (Jefe/a Trabajos Practicos) - AGÜERA, WALTER ALBERTO (Ayudante 2do/a) - CORTESE, JULIÁN EVARISTO (Ayudante 2do/a)",
+      "docentes": "MERLO, RUBEN OSVALDO (Profesor/a Asociado/a) - PORCELLANA, JORGE ALBERTO (Jefe/a Trabajos Practicos) - CORTESE, JULIÁN EVARISTO (Ayudante 2do/a) - AGÜERA, WALTER ALBERTO (Ayudante 2do/a)",
       "materia": "8711"
     },
     {
@@ -15562,9 +17545,24 @@ export const data =
           "inicio": "15:00"
         },
         {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "15:00"
+        },
+        {
           "dia": 3,
           "fin": "17:00",
           "inicio": "14:00"
+        },
+        {
+          "dia": 3,
+          "fin": "17:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 3,
+          "fin": "20:00",
+          "inicio": "17:00"
         },
         {
           "dia": 3,
@@ -15585,8 +17583,38 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "08:00"
+        },
+        {
+          "dia": 2,
+          "fin": "11:00",
+          "inicio": "08:00"
+        },
+        {
+          "dia": 2,
           "fin": "18:00",
           "inicio": "15:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 5,
+          "fin": "21:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 5,
+          "fin": "21:00",
+          "inicio": "18:00"
         },
         {
           "dia": 5,
@@ -15607,8 +17635,23 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "08:00"
+        },
+        {
+          "dia": 2,
           "fin": "15:00",
           "inicio": "12:00"
+        },
+        {
+          "dia": 2,
+          "fin": "15:00",
+          "inicio": "12:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "15:00"
         },
         {
           "dia": 2,
@@ -15628,6 +17671,16 @@ export const data =
           "inicio": "15:00"
         },
         {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 3,
+          "fin": "17:00",
+          "inicio": "14:00"
+        },
+        {
           "dia": 3,
           "fin": "17:00",
           "inicio": "14:00"
@@ -15636,10 +17689,15 @@ export const data =
           "dia": 4,
           "fin": "21:00",
           "inicio": "18:00"
+        },
+        {
+          "dia": 4,
+          "fin": "21:00",
+          "inicio": "18:00"
         }
       ],
       "codigo": "8712-CURSO: 4",
-      "docentes": "GEREZ, CARLOS JULIO (Profesor/a Adjunto/a) - di IORIO, JOSÉ MARÍA (Profesor/a Adjunto/a) - CALOIA, JORGE LUIS (Jefe/a Trabajos Practicos) - AITA, EZEQUIEL ALBERTO (Ayudante 2do/a)",
+      "docentes": "di IORIO, JOSÉ MARÍA (Profesor/a Adjunto/a) - GEREZ, CARLOS JULIO (Profesor/a Adjunto/a) - CALOIA, JORGE LUIS (Jefe/a Trabajos Practicos) - AITA, EZEQUIEL ALBERTO (Ayudante 2do/a)",
       "materia": "8712"
     },
     {
@@ -15651,6 +17709,21 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "11:00",
+          "inicio": "08:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "15:00"
+        },
+        {
+          "dia": 4,
           "fin": "18:00",
           "inicio": "15:00"
         },
@@ -15672,9 +17745,24 @@ export const data =
           "inicio": "15:00"
         },
         {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "15:00"
+        },
+        {
           "dia": 3,
           "fin": "17:00",
           "inicio": "14:00"
+        },
+        {
+          "dia": 3,
+          "fin": "17:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "21:00",
+          "inicio": "18:00"
         },
         {
           "dia": 4,
@@ -15719,7 +17807,7 @@ export const data =
         }
       ],
       "codigo": "8713-CURSO: 3",
-      "docentes": "MERLO, RUBEN OSVALDO (Profesor/a Asociado/a) - FERRARIO, GUILLERMO PABLO (Jefe/a Trabajos Practicos) - PEREZ, GUSTAVO JAVIER (Ayudante 1ro/a) - AMATO, MARÍA BELÉN (Ayudante 1ro/a) - RODRIGUEZ MOLARO, MARTÍN PATRICIO (Ayudante 1ro/a)",
+      "docentes": "MERLO, RUBEN OSVALDO (Profesor/a Asociado/a) - FERRARIO, GUILLERMO PABLO (Jefe/a Trabajos Practicos) - PEREZ, GUSTAVO JAVIER (Ayudante 1ro/a) - RODRIGUEZ MOLARO, MARTÍN PATRICIO (Ayudante 1ro/a) - AMATO, MARÍA BELÉN (Ayudante 1ro/a)",
       "materia": "8713"
     },
     {
@@ -15752,6 +17840,16 @@ export const data =
           "dia": 2,
           "fin": "10:00",
           "inicio": "08:00"
+        },
+        {
+          "dia": 2,
+          "fin": "10:00",
+          "inicio": "08:00"
+        },
+        {
+          "dia": 4,
+          "fin": "15:00",
+          "inicio": "13:00"
         },
         {
           "dia": 4,
@@ -15912,6 +18010,16 @@ export const data =
         },
         {
           "dia": 5,
+          "fin": "18:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 5,
+          "fin": "21:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 5,
           "fin": "21:00",
           "inicio": "19:00"
         }
@@ -15980,7 +18088,7 @@ export const data =
         }
       ],
       "codigo": "8803-CURSO: 1",
-      "docentes": "PALOMAR, ALBERTO GUSTAVO (Profesor/a Adjunto/a) - FARAH, GABRIEL HERNAN (Jefe/a Trabajos Practicos) - SIVORI, GISELA ROSANA (Jefe/a Trabajos Practicos)",
+      "docentes": "PALOMAR, ALBERTO GUSTAVO (Profesor/a Adjunto/a) - SIVORI, GISELA ROSANA (Jefe/a Trabajos Practicos) - FARAH, GABRIEL HERNAN (Jefe/a Trabajos Practicos)",
       "materia": "8803"
     },
     {
@@ -16127,7 +18235,7 @@ export const data =
         }
       ],
       "codigo": "8814-CURSO: 1",
-      "docentes": "BELENKY, LUIS PABLO (Profesor/a Adjunto/a) - PIAZZA, GUSTAVO RODOLFO (Jefe/a Trabajos Practicos) - PALOMAR, ALBERTO GUSTAVO (Jefe/a Trabajos Practicos)",
+      "docentes": "BELENKY, LUIS PABLO (Profesor/a Adjunto/a) - PALOMAR, ALBERTO GUSTAVO (Jefe/a Trabajos Practicos) - PIAZZA, GUSTAVO RODOLFO (Jefe/a Trabajos Practicos)",
       "materia": "8814"
     },
     {
@@ -16161,7 +18269,7 @@ export const data =
         }
       ],
       "codigo": "8901-CURSO 2 Schifini Fernando",
-      "docentes": "SCHIFINI GLADCHTEIN, FERNANDO (Profesor/a Adjunto/a) - ISI, MATÍAS RODRIGO (Ayudante 1ro/a) - PEREYRA YRAOLA, IGNACIO JOSÉ (Ayudante 1ro/a) - PEREZ MILLÁN, MARÍA BELÉN (Ayudante 2do/a ad-honorem) - CHU, JAVIER NICOLÁS (Ayudante 2do/a ad-honorem) - MILANOWSKI, MAIA SOFIA (Ayudante 2do/a ad-honorem) - GOLLUSCIO, DANIEL PABLO (Ayudante 2do/a ad-honorem)",
+      "docentes": "SCHIFINI GLADCHTEIN, FERNANDO (Profesor/a Adjunto/a) - ISI, MATÍAS RODRIGO (Ayudante 1ro/a) - PEREYRA YRAOLA, IGNACIO JOSÉ (Ayudante 1ro/a) - GOLLUSCIO, DANIEL PABLO (Ayudante 2do/a ad-honorem) - PEREZ MILLÁN, MARÍA BELÉN (Ayudante 2do/a ad-honorem) - MILANOWSKI, MAIA SOFIA (Ayudante 2do/a ad-honorem) - CHU, JAVIER NICOLÁS (Ayudante 2do/a ad-honorem)",
       "materia": "8901"
     },
     {
@@ -16190,7 +18298,7 @@ export const data =
         }
       ],
       "codigo": "8905-CURSO : Uriburu Quirno",
-      "docentes": "URIBURU QUIRNO, MARCELO (Profesor/a Adjunto/a) - LECERTUA, EMILIO ALEJANDRO (Jefe/a Trabajos Practicos) - GIACOSA, JUAN PABLO (Ayudante 1ro/a) - SUSNIK, TOMÁS (Ayudante 1ro/a) - SURIANO, MICAELA PAULA (Ayudante 1ro/a) - SCASSERRA, DAIANA CARLA (Ayudante 1ro/a ad-honorem) - MARCENARO, JUAN MARTÍN (Ayudante 2do/a ad-honorem) - DEVOTO, MARCOS TOMAS (Ayudante 2do/a ad-honorem) - DEVOTO, MARCOS TOMAS (Ayudante 2do/a ad-honorem)",
+      "docentes": "URIBURU QUIRNO, MARCELO (Profesor/a Adjunto/a) - LECERTUA, EMILIO ALEJANDRO (Jefe/a Trabajos Practicos) - SUSNIK, TOMÁS (Ayudante 1ro/a) - GIACOSA, JUAN PABLO (Ayudante 1ro/a) - SURIANO, MICAELA PAULA (Ayudante 1ro/a) - SCASSERRA, DAIANA CARLA (Ayudante 1ro/a ad-honorem) - DEVOTO, MARCOS TOMAS (Ayudante 2do/a ad-honorem) - MARCENARO, JUAN MARTÍN (Ayudante 2do/a ad-honorem) - DEVOTO, MARCOS TOMAS (Ayudante 2do/a ad-honorem)",
       "materia": "8905"
     },
     {
@@ -16219,7 +18327,7 @@ export const data =
         }
       ],
       "codigo": "8909-CURSO: Dalmati / Zanalda",
-      "docentes": "DALMATI, RODOLFO ENRIQUE (Profesor/a Titular/a) - ZANALDA, CARLOS EDUARDO E (Profesor/a Adjunto/a) - SCASSERRA, DAIANA CARLA (Jefe/a Trabajos Practicos) - VAZQUEZ, MIRYAM GABRIELA (Jefe/a Trabajos Practicos) - FRANCO, NICOLAS MANUEL (Ayudante 2do/a) - ALBERTSEN, ERIK (Ayudante 2do/a) - OSSORIO ARANA, ARTURO JOSE (Ayudante 2do/a) - SHOCRON, WANDA (Ayudante 2do/a) - MATHIEU, JUAN ESTEBAN (Ayudante 2do/a) - FRANCO, NICOLAS MANUEL (Ayudante 2do/a) - SHOCRON, WANDA (Ayudante 2do/a)",
+      "docentes": "DALMATI, RODOLFO ENRIQUE (Profesor/a Titular/a) - ZANALDA, CARLOS EDUARDO E (Profesor/a Adjunto/a) - SCASSERRA, DAIANA CARLA (Jefe/a Trabajos Practicos) - VAZQUEZ, MIRYAM GABRIELA (Jefe/a Trabajos Practicos) - OSSORIO ARANA, ARTURO JOSE (Ayudante 2do/a) - ALBERTSEN, ERIK (Ayudante 2do/a) - SHOCRON, WANDA (Ayudante 2do/a) - SHOCRON, WANDA (Ayudante 2do/a) - FRANCO, NICOLAS MANUEL (Ayudante 2do/a) - MATHIEU, JUAN ESTEBAN (Ayudante 2do/a) - FRANCO, NICOLAS MANUEL (Ayudante 2do/a)",
       "materia": "8909"
     },
     {
@@ -16248,7 +18356,7 @@ export const data =
         }
       ],
       "codigo": "8911-CURSO: BURGELL Veronica",
-      "docentes": "BURGELL, VERONICA (Profesor/a Adjunto/a) - BERRILIO, DANIEL AMERICO (Profesor/a Adjunto/a) - GAVAZZO, MARCELO EDUARDO (Jefe/a Trabajos Practicos) - ASIÁTICO, ANDRÉS ENRIQUE (Ayudante 1ro/a) - LUENGOS VIDAL, MARIA DE LOS ANGELES (Ayudante 1ro/a)",
+      "docentes": "BERRILIO, DANIEL AMERICO (Profesor/a Adjunto/a) - BURGELL, VERONICA (Profesor/a Adjunto/a) - GAVAZZO, MARCELO EDUARDO (Jefe/a Trabajos Practicos) - LUENGOS VIDAL, MARIA DE LOS ANGELES (Ayudante 1ro/a) - ASIÁTICO, ANDRÉS ENRIQUE (Ayudante 1ro/a)",
       "materia": "8911"
     },
     {
@@ -16260,7 +18368,7 @@ export const data =
         }
       ],
       "codigo": "8912-CURSO: Antunez / Bereciartua",
-      "docentes": "ANTUNEZ, NORA MABEL (Profesor/a Adjunto/a) - BERECIARTUA, PABLO JOSE (Profesor/a Adjunto/a) - GUIZZARDI, SANTIAGO (Ayudante 1ro/a) - VEREERTBRUGGHEN, DIEGO ALEJANDRO (Ayudante 2do/a) - PEREYRA SIBILLA, PEDRO JOSÉ (Ayudante 2do/a ad-honorem) - BRUGALETTA, ANDREINA SOL (Ayudante 2do/a ad-honorem) - FINNEMORE, VALERIA (Ayudante 2do/a ad-honorem) - VALGAÑON, ANA LAURA (Ayudante 2do/a ad-honorem) - BRUGALETTA, ANDREINA SOL (Ayudante 2do/a ad-honorem)",
+      "docentes": "BERECIARTUA, PABLO JOSE (Profesor/a Adjunto/a) - ANTUNEZ, NORA MABEL (Profesor/a Adjunto/a) - GUIZZARDI, SANTIAGO (Ayudante 1ro/a) - VEREERTBRUGGHEN, DIEGO ALEJANDRO (Ayudante 2do/a) - BRUGALETTA, ANDREINA SOL (Ayudante 2do/a ad-honorem) - VALGAÑON, ANA LAURA (Ayudante 2do/a ad-honorem) - PEREYRA SIBILLA, PEDRO JOSÉ (Ayudante 2do/a ad-honorem) - BRUGALETTA, ANDREINA SOL (Ayudante 2do/a ad-honorem) - FINNEMORE, VALERIA (Ayudante 2do/a ad-honorem)",
       "materia": "8912"
     },
     {
@@ -16323,7 +18431,7 @@ export const data =
         }
       ],
       "codigo": "8917-CURSO 3: CALZARETTO / Coronel",
-      "docentes": "CALZARETTO, RICARDO ALBERTO (Profesor/a Adjunto/a) - CORONEL, FERNANDO (Jefe/a Trabajos Practicos) - BERBERY, GUSTAVO FEDERICO (Ayudante 1ro/a) - RAMATI, PABLO JOSE (Ayudante 1ro/a)",
+      "docentes": "CALZARETTO, RICARDO ALBERTO (Profesor/a Adjunto/a) - CORONEL, FERNANDO (Jefe/a Trabajos Practicos) - RAMATI, PABLO JOSE (Ayudante 1ro/a) - BERBERY, GUSTAVO FEDERICO (Ayudante 1ro/a)",
       "materia": "8917"
     },
     {
@@ -16493,7 +18601,7 @@ export const data =
         }
       ],
       "codigo": "9102-CURSO: 1",
-      "docentes": "KOMPEL, LUIS JOSE (Profesor/a Adjunto/a) - FILIP, FRANCO (Ayudante 1ro/a) - MOLINA, CARLOS LUIS (Ayudante 1ro/a) - BRANCATO, GUSTAVO EMILIO (Ayudante 1ro/a) - APRILE, CARLOS JOSE (Ayudante 1ro/a) - IZARRA, LUCAS FERNANDO (Ayudante 1ro/a ad-honorem)",
+      "docentes": "KOMPEL, LUIS JOSE (Profesor/a Adjunto/a) - APRILE, CARLOS JOSE (Ayudante 1ro/a) - BRANCATO, GUSTAVO EMILIO (Ayudante 1ro/a) - MOLINA, CARLOS LUIS (Ayudante 1ro/a) - FILIP, FRANCO (Ayudante 1ro/a) - IZARRA, LUCAS FERNANDO (Ayudante 1ro/a ad-honorem)",
       "materia": "9102"
     },
     {
@@ -16510,7 +18618,7 @@ export const data =
         }
       ],
       "codigo": "9103-CURSO: 1",
-      "docentes": "BURSKY, JORGE CESAR CARLOS (Profesor/a Adjunto/a) - BONOLI ESCOBAR, MARIANO FELIPE (Profesor/a Adjunto/a) - GIL, JAVIER LUIS (Profesor/a Adjunto/a) - LIPARI, WALTER DANIEL (Ayudante 1ro/a) - COSATTO AMMANN, PEDRO CAMILO (Ayudante 1ro/a) - PARDIEUX, ANA VALERIA TAMARA (Ayudante 1ro/a) - WERTHEIN, MATIAS LEANDRO (Ayudante 2do/a)",
+      "docentes": "GIL, JAVIER LUIS (Profesor/a Adjunto/a) - BURSKY, JORGE CESAR CARLOS (Profesor/a Adjunto/a) - BONOLI ESCOBAR, MARIANO FELIPE (Profesor/a Adjunto/a) - PARDIEUX, ANA VALERIA TAMARA (Ayudante 1ro/a) - LIPARI, WALTER DANIEL (Ayudante 1ro/a) - COSATTO AMMANN, PEDRO CAMILO (Ayudante 1ro/a) - WERTHEIN, MATIAS LEANDRO (Ayudante 2do/a)",
       "materia": "9103"
     },
     {
@@ -16527,7 +18635,7 @@ export const data =
         }
       ],
       "codigo": "9103-CURSO: 2",
-      "docentes": "BURSKY, JORGE CESAR CARLOS (Profesor/a Adjunto/a) - BONOLI ESCOBAR, MARIANO FELIPE (Profesor/a Adjunto/a) - GIL, JAVIER LUIS (Profesor/a Adjunto/a) - LIPARI, WALTER DANIEL (Ayudante 1ro/a) - COSATTO AMMANN, PEDRO CAMILO (Ayudante 1ro/a) - PARDIEUX, ANA VALERIA TAMARA (Ayudante 1ro/a) - WERTHEIN, MATIAS LEANDRO (Ayudante 2do/a)",
+      "docentes": "BURSKY, JORGE CESAR CARLOS (Profesor/a Adjunto/a) - GIL, JAVIER LUIS (Profesor/a Adjunto/a) - BONOLI ESCOBAR, MARIANO FELIPE (Profesor/a Adjunto/a) - COSATTO AMMANN, PEDRO CAMILO (Ayudante 1ro/a) - LIPARI, WALTER DANIEL (Ayudante 1ro/a) - PARDIEUX, ANA VALERIA TAMARA (Ayudante 1ro/a) - WERTHEIN, MATIAS LEANDRO (Ayudante 2do/a)",
       "materia": "9103"
     },
     {
@@ -16578,7 +18686,7 @@ export const data =
         }
       ],
       "codigo": "9104-CURSO 4",
-      "docentes": "RAMOS, SILVIA ADRIANA (Profesor/a Adjunto/a) - ECHEVARRIA, PABLO (Profesor/a Adjunto/a) - COLOMBO, PABLO MARTIN (Jefe/a Trabajos Practicos) - TERZANO, IVAN GUILLERMO (Ayudante 1ro/a) - MARIN, EMILIO GERMAN (Ayudante 2do/a)",
+      "docentes": "ECHEVARRIA, PABLO (Profesor/a Adjunto/a) - RAMOS, SILVIA ADRIANA (Profesor/a Adjunto/a) - COLOMBO, PABLO MARTIN (Jefe/a Trabajos Practicos) - TERZANO, IVAN GUILLERMO (Ayudante 1ro/a) - MARIN, EMILIO GERMAN (Ayudante 2do/a)",
       "materia": "9104"
     },
     {
@@ -16619,7 +18727,7 @@ export const data =
         }
       ],
       "codigo": "9107-CURSO: 1",
-      "docentes": "GONZALEZ, XAVIER IGNACIO (Profesor/a Adjunto/a) - RIGOU, DANIEL FRANCISCO (Profesor/a Adjunto/a) - GUALA, MARIA VIRGINIA (Jefe/a Trabajos Practicos) - MURADIAN, FEDERICO (Jefe/a Trabajos Practicos) - PATRIZI, MARIA JOSE (Jefe/a Trabajos Practicos) - MATLAK, ROMINA AYELEN (Ayudante 1ro/a) - GRUNSTEIN ARZUAGA, EUGENIA (Ayudante 2do/a) - GRUNSTEIN ARZUAGA, EUGENIA (Ayudante 2do/a) - ROMANO, MARINA JULIA (Ayudante 2do/a ad-honorem)",
+      "docentes": "RIGOU, DANIEL FRANCISCO (Profesor/a Adjunto/a) - GONZALEZ, XAVIER IGNACIO (Profesor/a Adjunto/a) - PATRIZI, MARIA JOSE (Jefe/a Trabajos Practicos) - GUALA, MARIA VIRGINIA (Jefe/a Trabajos Practicos) - MURADIAN, FEDERICO (Jefe/a Trabajos Practicos) - MATLAK, ROMINA AYELEN (Ayudante 1ro/a) - GRUNSTEIN ARZUAGA, EUGENIA (Ayudante 2do/a) - GRUNSTEIN ARZUAGA, EUGENIA (Ayudante 2do/a) - ROMANO, MARINA JULIA (Ayudante 2do/a ad-honorem)",
       "materia": "9107"
     },
     {
@@ -16636,7 +18744,7 @@ export const data =
         }
       ],
       "codigo": "9108-CURSO 1 Beaumarie-Monroy",
-      "docentes": "CONDE, MARIA EUGENIA (Profesor/a Adjunto/a) - MONROY, GUILLERMO EDUARDO (Ayudante 1ro/a) - BEAUMARIE, CARLOS FABIAN (Ayudante 1ro/a) - ROMERO, YESICA ANA (Ayudante 2do/a)",
+      "docentes": "CONDE, MARIA EUGENIA (Profesor/a Adjunto/a) - BEAUMARIE, CARLOS FABIAN (Ayudante 1ro/a) - MONROY, GUILLERMO EDUARDO (Ayudante 1ro/a) - ROMERO, YESICA ANA (Ayudante 2do/a)",
       "materia": "9108"
     },
     {
@@ -16653,7 +18761,7 @@ export const data =
         }
       ],
       "codigo": "9108-CURSO 2 Libster",
-      "docentes": "CONDE, MARIA EUGENIA (Profesor/a Adjunto/a) - LIBSTER, JUAN DARIO (Jefe/a Trabajos Practicos) - ZUBIETA, JULIAN MARTIN (Ayudante 1ro/a) - SATYR, JULIO ARIEL (Ayudante 1ro/a) - QUIROGA PONCE, PATRICIO NICOLAS (Ayudante 2do/a ad-honorem)",
+      "docentes": "CONDE, MARIA EUGENIA (Profesor/a Adjunto/a) - LIBSTER, JUAN DARIO (Jefe/a Trabajos Practicos) - SATYR, JULIO ARIEL (Ayudante 1ro/a) - ZUBIETA, JULIAN MARTIN (Ayudante 1ro/a) - QUIROGA PONCE, PATRICIO NICOLAS (Ayudante 2do/a ad-honorem)",
       "materia": "9108"
     },
     {
@@ -16670,7 +18778,7 @@ export const data =
         }
       ],
       "codigo": "9108-CURSO 3 Lopez-Marotta",
-      "docentes": "CONDE, MARIA EUGENIA (Profesor/a Adjunto/a) - MOREY RIOS, BORIS (Ayudante 1ro/a) - LOPEZ, GABRIEL ADRIAN (Ayudante 1ro/a)",
+      "docentes": "CONDE, MARIA EUGENIA (Profesor/a Adjunto/a) - LOPEZ, GABRIEL ADRIAN (Ayudante 1ro/a) - MOREY RIOS, BORIS (Ayudante 1ro/a)",
       "materia": "9108"
     },
     {
@@ -16682,12 +18790,22 @@ export const data =
         },
         {
           "dia": 2,
+          "fin": "19:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 2,
+          "fin": "23:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 2,
           "fin": "23:00",
           "inicio": "19:00"
         }
       ],
       "codigo": "9109-CURSO: 1",
-      "docentes": "JAHN, LUIS GERMAN (Profesor/a Asociado/a) - HACHELIAS, LAURA ADELINA (Jefe/a Trabajos Practicos) - CHAVES, FEDERICO EZEQUIEL (Jefe/a Trabajos Practicos) - VASEN, GERMAN (Ayudante 1ro/a) - SCHERF, MAURO SEBASTIAN (Ayudante 2do/a) - SCHERF, MAURO SEBASTIAN (Ayudante 2do/a)",
+      "docentes": "JAHN, LUIS GERMAN (Profesor/a Asociado/a) - CHAVES, FEDERICO EZEQUIEL (Jefe/a Trabajos Practicos) - HACHELIAS, LAURA ADELINA (Jefe/a Trabajos Practicos) - VASEN, GERMAN (Ayudante 1ro/a) - SCHERF, MAURO SEBASTIAN (Ayudante 2do/a) - SCHERF, MAURO SEBASTIAN (Ayudante 2do/a)",
       "materia": "9109"
     },
     {
@@ -16716,7 +18834,7 @@ export const data =
         }
       ],
       "codigo": "9110-CURSO 1",
-      "docentes": "DIEHL, GERARDO ADRIAN (Profesor/a Adjunto/a) - GUIDA, PABLO OSVALDO (Profesor/a Adjunto/a) - ESTEVA, GONZALO CARLOS (Jefe/a Trabajos Practicos) - BRANCATO, GUSTAVO EMILIO (Ayudante 1ro/a) - PAGANI, NESTOR DARIO (Ayudante 1ro/a) - DI NATALE, ALEJANDRO CLAU (Ayudante 1ro/a) - MINAFRO SPINELLI, FERNANDO MIGUEL (Ayudante 1ro/a) - BRAGGIO, MARIANELA SABRINA (Ayudante 2do/a) - STEINER, MARIANO DANIEL (Ayudante 1ra)",
+      "docentes": "GUIDA, PABLO OSVALDO (Profesor/a Adjunto/a) - DIEHL, GERARDO ADRIAN (Profesor/a Adjunto/a) - ESTEVA, GONZALO CARLOS (Jefe/a Trabajos Practicos) - DI NATALE, ALEJANDRO CLAU (Ayudante 1ro/a) - MINAFRO SPINELLI, FERNANDO MIGUEL (Ayudante 1ro/a) - PAGANI, NESTOR DARIO (Ayudante 1ro/a) - BRANCATO, GUSTAVO EMILIO (Ayudante 1ro/a) - BRAGGIO, MARIANELA SABRINA (Ayudante 2do/a) - STEINER, MARIANO DANIEL (Ayudante 1ra)",
       "materia": "9110"
     },
     {
@@ -16733,7 +18851,7 @@ export const data =
         }
       ],
       "codigo": "9110-CURSO 2",
-      "docentes": "DIEHL, GERARDO ADRIAN (Profesor/a Adjunto/a) - GUIDA, PABLO OSVALDO (Profesor/a Adjunto/a)",
+      "docentes": "GUIDA, PABLO OSVALDO (Profesor/a Adjunto/a) - DIEHL, GERARDO ADRIAN (Profesor/a Adjunto/a)",
       "materia": "9110"
     },
     {
@@ -16750,7 +18868,7 @@ export const data =
         }
       ],
       "codigo": "9110-CURSO 3",
-      "docentes": "GUIDA, PABLO OSVALDO (Profesor/a Adjunto/a) - DIEHL, GERARDO ADRIAN (Profesor/a Adjunto/a)",
+      "docentes": "DIEHL, GERARDO ADRIAN (Profesor/a Adjunto/a) - GUIDA, PABLO OSVALDO (Profesor/a Adjunto/a)",
       "materia": "9110"
     },
     {
@@ -16813,7 +18931,7 @@ export const data =
         }
       ],
       "codigo": "9111-CURSO: 1",
-      "docentes": "NOREMBERG, ADRIAN (Profesor/a Adjunto/a) - PAGANI, NESTOR DARIO (Jefe/a Trabajos Practicos) - D´ACCORSO, JAVIER HERNAN (Jefe/a Trabajos Practicos) - IRANZI, MARTIN (Ayudante 2do/a)",
+      "docentes": "NOREMBERG, ADRIAN (Profesor/a Adjunto/a) - D´ACCORSO, JAVIER HERNAN (Jefe/a Trabajos Practicos) - PAGANI, NESTOR DARIO (Jefe/a Trabajos Practicos) - IRANZI, MARTIN (Ayudante 2do/a)",
       "materia": "9111"
     },
     {
@@ -16830,7 +18948,7 @@ export const data =
         }
       ],
       "codigo": "9112-CURSO 1",
-      "docentes": "LEITER, ALFREDO (Profesor/a Titular/a) - SOTO, MARCELA FABIANA (Jefe/a Trabajos Practicos) - SPECTOR, HUGO RODOLFO (Jefe/a Trabajos Practicos) - MIRANDA, OSVALDO JAVIER (Ayudante 1ro/a) - REITKLING, LAURA INES (Ayudante 1ro/a) - NOCETI, NELSON FABIAN (Ayudante 1ro/a) - de GONGORA, FRANCISCO (Ayudante 1ro/a) - VISINTINI JAIME, MARIA BELÉN (Ayudante 1ro/a) - MAYO, GUSTAVO RAUL (Ayudante 1ro/a) - BARMACK, NORBERTO BENJAMIN (Ayudante 1ro/a) - ALVAREZ FARIÑA, MARIA AGUSTINA (Ayudante 1ro/a) - LUCIOLI",
+      "docentes": "LEITER, ALFREDO (Profesor/a Titular/a) - SPECTOR, HUGO RODOLFO (Jefe/a Trabajos Practicos) - SOTO, MARCELA FABIANA (Jefe/a Trabajos Practicos) - NOCETI, NELSON FABIAN (Ayudante 1ro/a) - MIRANDA, OSVALDO JAVIER (Ayudante 1ro/a) - BARMACK, NORBERTO BENJAMIN (Ayudante 1ro/a) - LUCIOLI, MONICA (Ayudante 1ro/a) - REITKLING, LAURA INES (Ayudante 1ro/a) - ALVAREZ FARIÑA, MARIA AGUSTINA (Ayudante 1ro/a) - MAYO, GUSTAVO RAUL (Ayudante 1ro/a) - de GONGORA, FRANCISCO (Ayudante 1ro/a) - VISINTINI JAIME, MAR",
       "materia": "9112"
     },
     {
@@ -16895,7 +19013,7 @@ export const data =
         }
       ],
       "codigo": "9117-CURSO: 1",
-      "docentes": "RICKERT, CARLOS (Profesor/a Adjunto/a) - DOMINGUEZ, MARIA MERCEDES (Jefe/a Trabajos Practicos) - SABINO, LEANDRO OSCAR (Ayudante 1ro/a) - KLEIN, MARIA CAROLINA (Ayudante 1ro/a) - TURCO GRECO, MARIA CLARA (Ayudante 1ro/a) - SIRYI, MARÍA LUCILA (Ayudante 2do/a ad-honorem) - SIRYI, MARÍA LUCILA (Ayudante 2do/a ad-honorem)",
+      "docentes": "RICKERT, CARLOS (Profesor/a Adjunto/a) - DOMINGUEZ, MARIA MERCEDES (Jefe/a Trabajos Practicos) - SABINO, LEANDRO OSCAR (Ayudante 1ro/a) - TURCO GRECO, MARIA CLARA (Ayudante 1ro/a) - KLEIN, MARIA CAROLINA (Ayudante 1ro/a) - SIRYI, MARÍA LUCILA (Ayudante 2do/a ad-honorem) - SIRYI, MARÍA LUCILA (Ayudante 2do/a ad-honorem)",
       "materia": "9117"
     },
     {
@@ -16960,7 +19078,7 @@ export const data =
         }
       ],
       "codigo": "9124-CURSO: 1",
-      "docentes": "SURACE, PABLO ESTEBAN (Profesor/a Adjunto/a) - LEPERA, PABLO ADRIAN (Jefe/a Trabajos Practicos) - CAGNASSO, DARIO ALBERTO (Ayudante 1ro/a) - NACUCCHIO, IVO LUCIANO (Ayudante 1ro/a) - ALVAREZ DE TOLEDO, ANGELES (Ayudante 2do/a) - PEREDNIK, FRANCISCO (Ayudante 2do/a) - ALVAREZ DE TOLEDO, ANGELES (Ayudante 2do/a) - PEREDNIK, FRANCISCO (Ayudante 2do/a) - GODOY, ANDRÉS ALEJANDRO (Ayudante 2do/a) - CIANCI, LUCIANO JULIÁN (Ayudante 1ro/a ad-honorem) - LERMAN REY, RAMIRO (Ayudante 2do/a ad-honorem)",
+      "docentes": "SURACE, PABLO ESTEBAN (Profesor/a Adjunto/a) - LEPERA, PABLO ADRIAN (Jefe/a Trabajos Practicos) - CAGNASSO, DARIO ALBERTO (Ayudante 1ro/a) - NACUCCHIO, IVO LUCIANO (Ayudante 1ro/a) - PEREDNIK, FRANCISCO (Ayudante 2do/a) - GODOY, ANDRÉS ALEJANDRO (Ayudante 2do/a) - PEREDNIK, FRANCISCO (Ayudante 2do/a) - ALVAREZ DE TOLEDO, ANGELES (Ayudante 2do/a) - ALVAREZ DE TOLEDO, ANGELES (Ayudante 2do/a) - CIANCI, LUCIANO JULIÁN (Ayudante 1ro/a ad-honorem) - LERMAN REY, RAMIRO (Ayudante 2do/a ad-honorem)",
       "materia": "9124"
     },
     {
@@ -17006,7 +19124,7 @@ export const data =
         }
       ],
       "codigo": "9128-CURSO: 1",
-      "docentes": "ZANCHETTI, BEATRIZ SUSANA (Profesor/a Adjunto/a) - RENSIN, LUIS (Jefe/a Trabajos Practicos) - COUGNET, JORGE ALBERTO (Jefe/a Trabajos Practicos) - ALONSO, KARINA CECILIA (Ayudante 1ro/a) - GIACOPELLO, DANIEL (Ayudante 1ro/a) - ZOGBI, MARCELO MIGUEL (Ayudante 1ro/a) - VEGA, SERGIO ANDRES (Ayudante 1ro/a) - ARCIDIACONO, SALVADOR EUGENIO (Ayudante 1ro/a) - SCHVARCHMAN, GASTON EZEQUIEL (Ayudante 1ro/a)",
+      "docentes": "ZANCHETTI, BEATRIZ SUSANA (Profesor/a Adjunto/a) - RENSIN, LUIS (Jefe/a Trabajos Practicos) - COUGNET, JORGE ALBERTO (Jefe/a Trabajos Practicos) - ARCIDIACONO, SALVADOR EUGENIO (Ayudante 1ro/a) - ALONSO, KARINA CECILIA (Ayudante 1ro/a) - ZOGBI, MARCELO MIGUEL (Ayudante 1ro/a) - VEGA, SERGIO ANDRES (Ayudante 1ro/a) - SCHVARCHMAN, GASTON EZEQUIEL (Ayudante 1ro/a) - GIACOPELLO, DANIEL (Ayudante 1ro/a)",
       "materia": "9128"
     },
     {
@@ -17023,7 +19141,7 @@ export const data =
         }
       ],
       "codigo": "9128-CURSO: 2",
-      "docentes": "ZANCHETTI, BEATRIZ SUSANA (Profesor/a Adjunto/a) - RENSIN, LUIS (Jefe/a Trabajos Practicos) - COUGNET, JORGE ALBERTO (Jefe/a Trabajos Practicos) - SCHVARCHMAN, GASTON EZEQUIEL (Ayudante 1ro/a) - ZOGBI, MARCELO MIGUEL (Ayudante 1ro/a) - ARCIDIACONO, SALVADOR EUGENIO (Ayudante 1ro/a) - VEGA, SERGIO ANDRES (Ayudante 1ro/a) - ALONSO, KARINA CECILIA (Ayudante 1ro/a) - GIACOPELLO, DANIEL (Ayudante 1ro/a)",
+      "docentes": "ZANCHETTI, BEATRIZ SUSANA (Profesor/a Adjunto/a) - RENSIN, LUIS (Jefe/a Trabajos Practicos) - COUGNET, JORGE ALBERTO (Jefe/a Trabajos Practicos) - SCHVARCHMAN, GASTON EZEQUIEL (Ayudante 1ro/a) - ZOGBI, MARCELO MIGUEL (Ayudante 1ro/a) - VEGA, SERGIO ANDRES (Ayudante 1ro/a) - GIACOPELLO, DANIEL (Ayudante 1ro/a) - ALONSO, KARINA CECILIA (Ayudante 1ro/a) - ARCIDIACONO, SALVADOR EUGENIO (Ayudante 1ro/a)",
       "materia": "9128"
     },
     {
@@ -17040,7 +19158,7 @@ export const data =
         }
       ],
       "codigo": "9129-CURSO: 1",
-      "docentes": "LELIC, RIFAT (Profesor/a Asociado/a) - YLLAÑEZ, VALERIA (Jefe/a Trabajos Practicos) - PALANDELLA, MAURICIO GUILLERMO (Jefe/a Trabajos Practicos) - LALANNE, SANTIAGO (Ayudante 1ro/a) - YAÑEZ, ESTEBAN HERNAN (Ayudante 1ro/a) - LAPIDUS, PABLO ANDRES (Ayudante 1ro/a) - SEGAL, MAXIMILIANO (Ayudante 1ro/a) - SAFRANCHIK, DAN (Ayudante 2do/a ad-honorem) - CASSINELLI, JUAN IGNACIO (Ayudante 2do/a ad-honorem)",
+      "docentes": "LELIC, RIFAT (Profesor/a Asociado/a) - YLLAÑEZ, VALERIA (Jefe/a Trabajos Practicos) - PALANDELLA, MAURICIO GUILLERMO (Jefe/a Trabajos Practicos) - LALANNE, SANTIAGO (Ayudante 1ro/a) - YAÑEZ, ESTEBAN HERNAN (Ayudante 1ro/a) - SEGAL, MAXIMILIANO (Ayudante 1ro/a) - LAPIDUS, PABLO ANDRES (Ayudante 1ro/a) - SAFRANCHIK, DAN (Ayudante 2do/a ad-honorem) - CASSINELLI, JUAN IGNACIO (Ayudante 2do/a ad-honorem)",
       "materia": "9129"
     },
     {
@@ -17057,7 +19175,7 @@ export const data =
         }
       ],
       "codigo": "9130-CURSO: 1",
-      "docentes": "BONOLI ESCOBAR, MARIANO FELIPE (Profesor/a Asociado/a) - STEWART HARRIS, MARIA FERNANDA (Profesor/a Adjunto/a) - GIL, JAVIER LUIS (Jefe/a Trabajos Practicos) - SARQUIS, MARIA DE LOS ANGELES (Jefe/a Trabajos Practicos) - LIPARI, WALTER DANIEL (Jefe/a Trabajos Practicos) - MONTEMURRI, DAVID (Ayudante 1ro/a)",
+      "docentes": "BONOLI ESCOBAR, MARIANO FELIPE (Profesor/a Asociado/a) - STEWART HARRIS, MARIA FERNANDA (Profesor/a Adjunto/a) - SARQUIS, MARIA DE LOS ANGELES (Jefe/a Trabajos Practicos) - GIL, JAVIER LUIS (Jefe/a Trabajos Practicos) - LIPARI, WALTER DANIEL (Jefe/a Trabajos Practicos) - MONTEMURRI, DAVID (Ayudante 1ro/a)",
       "materia": "9130"
     },
     {
@@ -17074,7 +19192,7 @@ export const data =
         }
       ],
       "codigo": "9130-CURSO: 2",
-      "docentes": "BONOLI ESCOBAR, MARIANO FELIPE (Profesor/a Asociado/a) - GIL, JAVIER LUIS (Profesor/a Adjunto/a) - STEWART HARRIS, MARIA FERNANDA (Profesor/a Adjunto/a) - SARQUIS, MARIA DE LOS ANGELES (Jefe/a Trabajos Practicos) - LIPARI, WALTER DANIEL (Jefe/a Trabajos Practicos) - MONTEMURRI, DAVID (Ayudante 1ro/a)",
+      "docentes": "BONOLI ESCOBAR, MARIANO FELIPE (Profesor/a Asociado/a) - STEWART HARRIS, MARIA FERNANDA (Profesor/a Adjunto/a) - GIL, JAVIER LUIS (Profesor/a Adjunto/a) - SARQUIS, MARIA DE LOS ANGELES (Jefe/a Trabajos Practicos) - LIPARI, WALTER DANIEL (Jefe/a Trabajos Practicos) - MONTEMURRI, DAVID (Ayudante 1ro/a)",
       "materia": "9130"
     },
     {
@@ -17086,7 +19204,7 @@ export const data =
         }
       ],
       "codigo": "9131-CURSO: 1",
-      "docentes": "RIGOU, DANIEL FRANCISCO (Profesor/a Adjunto/a) - GONZALEZ, XAVIER IGNACIO (Profesor/a Adjunto/a) - GUALA, MARIA VIRGINIA (Jefe/a Trabajos Practicos) - MURADIAN, FEDERICO (Jefe/a Trabajos Practicos) - PATRIZI, MARIA JOSE (Jefe/a Trabajos Practicos) - MATLAK, ROMINA AYELEN (Ayudante 1ro/a) - ROMANO, MARINA JULIA (Ayudante 2do/a ad-honorem)",
+      "docentes": "RIGOU, DANIEL FRANCISCO (Profesor/a Adjunto/a) - GONZALEZ, XAVIER IGNACIO (Profesor/a Adjunto/a) - PATRIZI, MARIA JOSE (Jefe/a Trabajos Practicos) - MURADIAN, FEDERICO (Jefe/a Trabajos Practicos) - GUALA, MARIA VIRGINIA (Jefe/a Trabajos Practicos) - MATLAK, ROMINA AYELEN (Ayudante 1ro/a) - ROMANO, MARINA JULIA (Ayudante 2do/a ad-honorem)",
       "materia": "9131"
     },
     {
@@ -17127,7 +19245,7 @@ export const data =
         }
       ],
       "codigo": "9134-CURSO: 1",
-      "docentes": "DIEGO, ALEJANDRO OSCAR (Profesor/a Adjunto/a) - MARCH, JONATAN (Jefe/a Trabajos Practicos) - GARCIA, DIEGO EDUARDO (Jefe/a Trabajos Practicos) - BARRAL, PABLO DANIEL (Ayudante 1ro/a) - LEREA, GUIDO ALBERTO (Ayudante 1ro/a) - BRUNO, PABLO (Ayudante 2do/a) - ESPINOSA, SOL (Ayudante 2do/a) - GOGLINO, PEDRO (Ayudante 2do/a ad-honorem)",
+      "docentes": "DIEGO, ALEJANDRO OSCAR (Profesor/a Adjunto/a) - GARCIA, DIEGO EDUARDO (Jefe/a Trabajos Practicos) - MARCH, JONATAN (Jefe/a Trabajos Practicos) - BARRAL, PABLO DANIEL (Ayudante 1ro/a) - LEREA, GUIDO ALBERTO (Ayudante 1ro/a) - ESPINOSA, SOL (Ayudante 2do/a) - BRUNO, PABLO (Ayudante 2do/a) - GOGLINO, PEDRO (Ayudante 2do/a ad-honorem)",
       "materia": "9134"
     },
     {
@@ -17151,7 +19269,7 @@ export const data =
         }
       ],
       "codigo": "9136-CURSO 1",
-      "docentes": "KOLL, MARCELO HORACIO (Profesor/a Adjunto/a) - MARTINEZ, MARCELO ALEJANDRO (Jefe/a Trabajos Practicos) - CAROLA, LUIS FEDERICO JOSE (Ayudante 1ro/a) - PINTO, SARA ALICIA (Ayudante 1ro/a)",
+      "docentes": "KOLL, MARCELO HORACIO (Profesor/a Adjunto/a) - MARTINEZ, MARCELO ALEJANDRO (Jefe/a Trabajos Practicos) - PINTO, SARA ALICIA (Ayudante 1ro/a) - CAROLA, LUIS FEDERICO JOSE (Ayudante 1ro/a)",
       "materia": "9136"
     },
     {
@@ -17221,7 +19339,7 @@ export const data =
         }
       ],
       "codigo": "9142-CURSO: 1",
-      "docentes": "BILELLO, MIGUEL ANGEL (Profesor/a Adjunto/a) - CRISTOBAL, MARIO (Jefe/a Trabajos Practicos) - OTERO RODRIGUEZ, MARIA MARGARITA (Jefe/a Trabajos Practicos) - MOLINA, WALTER RAUL (Jefe/a Trabajos Practicos) - MARTINEZ, VERONICA ESTHER (Ayudante 1ro/a)",
+      "docentes": "BILELLO, MIGUEL ANGEL (Profesor/a Adjunto/a) - OTERO RODRIGUEZ, MARIA MARGARITA (Jefe/a Trabajos Practicos) - MOLINA, WALTER RAUL (Jefe/a Trabajos Practicos) - CRISTOBAL, MARIO (Jefe/a Trabajos Practicos) - MARTINEZ, VERONICA ESTHER (Ayudante 1ro/a)",
       "materia": "9142"
     },
     {
@@ -17286,7 +19404,7 @@ export const data =
         }
       ],
       "codigo": "9201-CURSO: 1",
-      "docentes": "PINCHETE, LUIS ALBERTO (Profesor/a Titular/a) - MONTOYA ROJO, URSULA MARIA (Jefe/a Trabajos Practicos) - PITA, MARIA MACARENA (Ayudante 1ro/a) - CHOWANCZAK, ANDRÉS MARCELO (Ayudante 1ro/a)",
+      "docentes": "PINCHETE, LUIS ALBERTO (Profesor/a Titular/a) - MONTOYA ROJO, URSULA MARIA (Jefe/a Trabajos Practicos) - CHOWANCZAK, ANDRÉS MARCELO (Ayudante 1ro/a) - PITA, MARIA MACARENA (Ayudante 1ro/a)",
       "materia": "9201"
     },
     {
@@ -17303,7 +19421,7 @@ export const data =
         }
       ],
       "codigo": "9201-CURSO: 2",
-      "docentes": "PINCHETE, LUIS ALBERTO (Profesor/a Titular/a) - DI LIBERO, ERNESTO (Jefe/a Trabajos Practicos) - SAEZ DE ARREGUI, MERCEDES (Ayudante 2do/a) - CRAVINO, CARLOS GUILLERMO MARTÍN (Ayudante 2do/a)",
+      "docentes": "PINCHETE, LUIS ALBERTO (Profesor/a Titular/a) - DI LIBERO, ERNESTO (Jefe/a Trabajos Practicos) - CRAVINO, CARLOS GUILLERMO MARTÍN (Ayudante 2do/a) - SAEZ DE ARREGUI, MERCEDES (Ayudante 2do/a)",
       "materia": "9201"
     },
     {
@@ -17320,7 +19438,7 @@ export const data =
         }
       ],
       "codigo": "9202-CURSO: 1",
-      "docentes": "LEGUIZAMON, CARLOS DANIEL (Profesor/a Asociado/a) - CELANO GOMEZ, BRUNO ALEJANDRO (Jefe/a Trabajos Practicos) - AZTIRIA, MARIANO LUIS (Ayudante 1ro/a) - ORTIZ, MAXIMILIANO (Ayudante 1ro/a) - TALENTON, JUAN ENRIQUE (Ayudante 2do/a) - de LUIS, JULIAN PABLO (Ayudante 2do/a)",
+      "docentes": "LEGUIZAMON, CARLOS DANIEL (Profesor/a Asociado/a) - CELANO GOMEZ, BRUNO ALEJANDRO (Jefe/a Trabajos Practicos) - AZTIRIA, MARIANO LUIS (Ayudante 1ro/a) - ORTIZ, MAXIMILIANO (Ayudante 1ro/a) - de LUIS, JULIAN PABLO (Ayudante 2do/a) - TALENTON, JUAN ENRIQUE (Ayudante 2do/a)",
       "materia": "9202"
     },
     {
@@ -17337,7 +19455,7 @@ export const data =
         }
       ],
       "codigo": "9202-CURSO: 2",
-      "docentes": "BARRIONUEVO, JUAN CARLOS AUDELINO (Profesor/a Adjunto/a) - SAEZ DE ARREGUI, MERCEDES (Ayudante 1ro/a) - MORDEGLIA, PEDRO (Ayudante 2do/a) - KOHN, SEBASTIAN (Ayudante 2do/a) - KOHN, SEBASTIAN (Ayudante 2do/a)",
+      "docentes": "BARRIONUEVO, JUAN CARLOS AUDELINO (Profesor/a Adjunto/a) - SAEZ DE ARREGUI, MERCEDES (Ayudante 1ro/a) - KOHN, SEBASTIAN (Ayudante 2do/a) - MORDEGLIA, PEDRO (Ayudante 2do/a) - KOHN, SEBASTIAN (Ayudante 2do/a)",
       "materia": "9202"
     },
     {
@@ -17439,7 +19557,7 @@ export const data =
         }
       ],
       "codigo": "9206-CURSO: 1",
-      "docentes": "NITTI, ALEJANDRO LEONARDO (Profesor/a Adjunto/a) - ORLANDELLI, CARLOS GABRIE (Jefe/a Trabajos Practicos) - GRECO, ANTONIO (Jefe/a Trabajos Practicos)",
+      "docentes": "NITTI, ALEJANDRO LEONARDO (Profesor/a Adjunto/a) - GRECO, ANTONIO (Jefe/a Trabajos Practicos) - ORLANDELLI, CARLOS GABRIE (Jefe/a Trabajos Practicos)",
       "materia": "9206"
     },
     {
@@ -17456,7 +19574,7 @@ export const data =
         }
       ],
       "codigo": "9206-CURSO: 2",
-      "docentes": "NITTI, ALEJANDRO LEONARDO (Profesor/a Adjunto/a) - CONTI, AGUSTIN ALEJANDRO (Ayudante 1ro/a) - ALONSO, ANDRES EZEQUIEL (Ayudante 1ro/a)",
+      "docentes": "NITTI, ALEJANDRO LEONARDO (Profesor/a Adjunto/a) - ALONSO, ANDRES EZEQUIEL (Ayudante 1ro/a) - CONTI, AGUSTIN ALEJANDRO (Ayudante 1ro/a)",
       "materia": "9206"
     },
     {
@@ -17507,7 +19625,7 @@ export const data =
         }
       ],
       "codigo": "9207-CURSO: 1",
-      "docentes": "SABELLI, ALFREDO JORGE (Profesor/a Adjunto/a) - MARTINI, DARíO OSCAR (Jefe/a Trabajos Practicos) - GALBUSERA, SEBASTIAN (Jefe/a Trabajos Practicos) - CARMINATTI, NICOLAS (Ayudante 1ro/a) - BREA, NICOLAS MARTIN (Ayudante 2do/a) - CIARFAGLIA, MARTIN (Ayudante 2do/a) - LEGUIZA, JULIA ALEJANDRA (Ayudante 2do/a) - GONZALO JUARROS, FELIPE LORENZO (Ayudante 2do/a ad-honorem) - GONZALO JUARROS, FELIPE LORENZO (Ayudante 2do/a ad-honorem) - CIFUENTES, CAMILA SOFIA (Ayudante 2do/a ad-honorem) - CIFUENTES, ",
+      "docentes": "SABELLI, ALFREDO JORGE (Profesor/a Adjunto/a) - MARTINI, DARíO OSCAR (Jefe/a Trabajos Practicos) - GALBUSERA, SEBASTIAN (Jefe/a Trabajos Practicos) - CARMINATTI, NICOLAS (Ayudante 1ro/a) - CIARFAGLIA, MARTIN (Ayudante 2do/a) - LEGUIZA, JULIA ALEJANDRA (Ayudante 2do/a) - BREA, NICOLAS MARTIN (Ayudante 2do/a) - CIFUENTES, CAMILA SOFIA (Ayudante 2do/a ad-honorem) - GALIGNIANA, LUCAS OMAR (Ayudante 2do/a ad-honorem) - GONZALO JUARROS, FELIPE LORENZO (Ayudante 2do/a ad-honorem) - GONZALO JUARROS, FEL",
       "materia": "9207"
     },
     {
@@ -17524,7 +19642,7 @@ export const data =
         }
       ],
       "codigo": "9207-CURSO: 2",
-      "docentes": "SABELLI, ALFREDO JORGE (Profesor/a Adjunto/a) - MARTINI, DARíO OSCAR (Jefe/a Trabajos Practicos) - GALBUSERA, SEBASTIAN (Jefe/a Trabajos Practicos) - CARMINATTI, NICOLAS (Ayudante 1ro/a) - BREA, NICOLAS MARTIN (Ayudante 2do/a) - LEGUIZA, JULIA ALEJANDRA (Ayudante 2do/a) - CIARFAGLIA, MARTIN (Ayudante 2do/a) - GALIGNIANA, LUCAS OMAR (Ayudante 2do/a ad-honorem) - GONZALO JUARROS, FELIPE LORENZO (Ayudante 2do/a ad-honorem) - CIFUENTES, CAMILA SOFIA (Ayudante 2do/a ad-honorem) - GONZALO JUARROS, FEL",
+      "docentes": "SABELLI, ALFREDO JORGE (Profesor/a Adjunto/a) - MARTINI, DARíO OSCAR (Jefe/a Trabajos Practicos) - GALBUSERA, SEBASTIAN (Jefe/a Trabajos Practicos) - CARMINATTI, NICOLAS (Ayudante 1ro/a) - BREA, NICOLAS MARTIN (Ayudante 2do/a) - CIARFAGLIA, MARTIN (Ayudante 2do/a) - LEGUIZA, JULIA ALEJANDRA (Ayudante 2do/a) - GALIGNIANA, LUCAS OMAR (Ayudante 2do/a ad-honorem) - GONZALO JUARROS, FELIPE LORENZO (Ayudante 2do/a ad-honorem) - CIFUENTES, CAMILA SOFIA (Ayudante 2do/a ad-honorem) - CIFUENTES, CAMILA SO",
       "materia": "9207"
     },
     {
@@ -17536,7 +19654,7 @@ export const data =
         }
       ],
       "codigo": "9208-CURSO: 1",
-      "docentes": "ARCAGNI, ADOLFO ALBERTO (Profesor/a Adjunto/a) - ALONSO, ANDRES EZEQUIEL (Jefe/a Trabajos Practicos) - VALENTINI, LEANDRO LUIS (Ayudante 1ro/a) - VIERA, ANA DANIELA (Ayudante 1ro/a) - TURCO GRECO, MARIA TERESA (Ayudante 1ro/a) - FORNARI, CECILIA (Ayudante 1ro/a)",
+      "docentes": "ARCAGNI, ADOLFO ALBERTO (Profesor/a Adjunto/a) - ALONSO, ANDRES EZEQUIEL (Jefe/a Trabajos Practicos) - VALENTINI, LEANDRO LUIS (Ayudante 1ro/a) - FORNARI, CECILIA (Ayudante 1ro/a) - VIERA, ANA DANIELA (Ayudante 1ro/a) - TURCO GRECO, MARIA TERESA (Ayudante 1ro/a)",
       "materia": "9208"
     },
     {
@@ -17664,7 +19782,7 @@ export const data =
         }
       ],
       "codigo": "9218-CURSO: 1",
-      "docentes": "DAMIANO, AUGUSTO ALEJANDRO (Profesor/a Adjunto/a) - AMAYA, MYRIAN ANABELLA (Jefe/a Trabajos Practicos) - SAPUPPO, ANABELA (Ayudante 1ro/a) - LANA, ROSANA PATRICIA (Ayudante 1ro/a) - ETCHEBEHERE, INES (Ayudante 1ro/a) - A DESIGNAR, A DESIGNAR (Ayudante 2do/a)",
+      "docentes": "DAMIANO, AUGUSTO ALEJANDRO (Profesor/a Adjunto/a) - AMAYA, MYRIAN ANABELLA (Jefe/a Trabajos Practicos) - LANA, ROSANA PATRICIA (Ayudante 1ro/a) - ETCHEBEHERE, INES (Ayudante 1ro/a) - SAPUPPO, ANABELA (Ayudante 1ro/a) - A DESIGNAR, A DESIGNAR (Ayudante 2do/a)",
       "materia": "9218"
     },
     {
@@ -17676,7 +19794,7 @@ export const data =
         }
       ],
       "codigo": "9219-CURSO: 1",
-      "docentes": "MAZZEO, SEBASTIAN (Profesor/a Adjunto/a) - RAFFO, ANA MARCELA (Jefe/a Trabajos Practicos) - CROSA, FRANCISCO JOSE (Ayudante 1ro/a) - KINAST, DENISE (Ayudante 1ro/a) - CATALDO, GUIDO EMILIANO (Ayudante 2do/a)",
+      "docentes": "MAZZEO, SEBASTIAN (Profesor/a Adjunto/a) - RAFFO, ANA MARCELA (Jefe/a Trabajos Practicos) - KINAST, DENISE (Ayudante 1ro/a) - CROSA, FRANCISCO JOSE (Ayudante 1ro/a) - CATALDO, GUIDO EMILIANO (Ayudante 2do/a)",
       "materia": "9219"
     },
     {
@@ -17724,7 +19842,7 @@ export const data =
         }
       ],
       "codigo": "9226-CURSO: Industrias X, Transformación Digital",
-      "docentes": "SABELLI, ALFREDO JORGE (Profesor/a Adjunto/a) - LUQUER, MARCO (Jefe/a Trabajos Practicos) - LUQUER, MARCO (Jefe/a Trabajos Practicos) - DURAN, MANUEL PABLO (Ayudante 2do/a ad-honorem) - KOHN, SEBASTIAN (Ayudante 2do/a ad-honorem) - KOHN, SEBASTIAN (Ayudante 2do/a ad-honorem) - FASAN, FRANCISCO (Ayudante 2do/a ad-honorem) - SAEZ DE ARREGUI, MERCEDES (Ayudante 2do/a ad-honorem) - DURAN, MANUEL PABLO (Ayudante 2do/a ad-honorem) - FASAN, FRANCISCO (Ayudante 2do/a ad-honorem)",
+      "docentes": "SABELLI, ALFREDO JORGE (Profesor/a Adjunto/a) - LUQUER, MARCO (Jefe/a Trabajos Practicos) - LUQUER, MARCO (Jefe/a Trabajos Practicos) - FASAN, FRANCISCO (Ayudante 2do/a ad-honorem) - DURAN, MANUEL PABLO (Ayudante 2do/a ad-honorem) - KOHN, SEBASTIAN (Ayudante 2do/a ad-honorem) - SAEZ DE ARREGUI, MERCEDES (Ayudante 2do/a ad-honorem) - DURAN, MANUEL PABLO (Ayudante 2do/a ad-honorem) - KOHN, SEBASTIAN (Ayudante 2do/a ad-honorem) - FASAN, FRANCISCO (Ayudante 2do/a ad-honorem)",
       "materia": "9226"
     },
     {
@@ -17736,7 +19854,7 @@ export const data =
         }
       ],
       "codigo": "9299-CURSO: 1",
-      "docentes": "COFONE, ANIBAL EDGARDO (Profesor/a Titular/a) - CORNES, MARTIN DIEGO (Profesor/a Adjunto/a) - MIGLIORINO, DIEGO FERNANDO (Profesor/a Adjunto/a) - LOPEZ CONDE, MARIA EUGENIA (Jefe/a Trabajos Practicos) - VILARIÑO, RAMIRO MARTIN (Ayudante 1ro/a) - BIANCO, GUILLERMO ERNESTO (Ayudante 1ro/a) - A DESIGNAR, A DESIGNAR (Ayudante 1ro/a) - MARINO RODRIGUEZ, VANESA GISELLE (Ayudante 1ro/a) - CANZIANI, SEBASTIAN DANIEL (Ayudante 2do/a)",
+      "docentes": "COFONE, ANIBAL EDGARDO (Profesor/a Titular/a) - MIGLIORINO, DIEGO FERNANDO (Profesor/a Adjunto/a) - CORNES, MARTIN DIEGO (Profesor/a Adjunto/a) - LOPEZ CONDE, MARIA EUGENIA (Jefe/a Trabajos Practicos) - VILARIÑO, RAMIRO MARTIN (Ayudante 1ro/a) - MARINO RODRIGUEZ, VANESA GISELLE (Ayudante 1ro/a) - A DESIGNAR, A DESIGNAR (Ayudante 1ro/a) - BIANCO, GUILLERMO ERNESTO (Ayudante 1ro/a) - CANZIANI, SEBASTIAN DANIEL (Ayudante 2do/a)",
       "materia": "9299"
     },
     {
@@ -17748,7 +19866,7 @@ export const data =
         }
       ],
       "codigo": "9299-CURSO: 2",
-      "docentes": "COFONE, ANIBAL EDGARDO (Profesor/a Titular/a) - CORNES, MARTIN DIEGO (Profesor/a Adjunto/a) - MIGLIORINO, DIEGO FERNANDO (Profesor/a Adjunto/a) - ARANDA, MODESTO MANUEL (Jefe/a Trabajos Practicos) - LEYBOVICH, PABLO DANIEL (Jefe/a Trabajos Practicos) - CELANO GOMEZ, BRUNO ALEJANDRO (Ayudante 1ro/a) - VERA, JOSE ERNESTO (Ayudante 1ro/a) - ORTEGA, MARIANO (Ayudante 1ro/a) - VITA SANCHEZ, MATíAS ALEJANDRO (Ayudante 2do/a)",
+      "docentes": "COFONE, ANIBAL EDGARDO (Profesor/a Titular/a) - MIGLIORINO, DIEGO FERNANDO (Profesor/a Adjunto/a) - CORNES, MARTIN DIEGO (Profesor/a Adjunto/a) - LEYBOVICH, PABLO DANIEL (Jefe/a Trabajos Practicos) - ARANDA, MODESTO MANUEL (Jefe/a Trabajos Practicos) - ORTEGA, MARIANO (Ayudante 1ro/a) - CELANO GOMEZ, BRUNO ALEJANDRO (Ayudante 1ro/a) - VERA, JOSE ERNESTO (Ayudante 1ro/a) - VITA SANCHEZ, MATíAS ALEJANDRO (Ayudante 2do/a)",
       "materia": "9299"
     },
     {
@@ -17760,7 +19878,7 @@ export const data =
         }
       ],
       "codigo": "9299-CURSO: 3",
-      "docentes": "COFONE, ANIBAL EDGARDO (Profesor/a Titular/a) - MIGLIORINO, DIEGO FERNANDO (Profesor/a Adjunto/a) - CORNES, MARTIN DIEGO (Profesor/a Adjunto/a) - RATTEL, PABLO HORACIO (Jefe/a Trabajos Practicos) - SOLANA, ROMINA SOLEDAD (Ayudante 1ro/a) - GUIM, SEBASTIAN ROBERTO (Ayudante 1ro/a) - FERNANDEZ, HERNAN ALVARO (Ayudante 1ro/a) - SAROKA, ALEJANDRO MARTIN (Ayudante 1ro/a) - SIMONELLI, JULIAN (Ayudante 2do/a ad-honorem)",
+      "docentes": "COFONE, ANIBAL EDGARDO (Profesor/a Titular/a) - CORNES, MARTIN DIEGO (Profesor/a Adjunto/a) - MIGLIORINO, DIEGO FERNANDO (Profesor/a Adjunto/a) - RATTEL, PABLO HORACIO (Jefe/a Trabajos Practicos) - SOLANA, ROMINA SOLEDAD (Ayudante 1ro/a) - SAROKA, ALEJANDRO MARTIN (Ayudante 1ro/a) - GUIM, SEBASTIAN ROBERTO (Ayudante 1ro/a) - FERNANDEZ, HERNAN ALVARO (Ayudante 1ro/a) - SIMONELLI, JULIAN (Ayudante 2do/a ad-honorem)",
       "materia": "9299"
     },
     {
@@ -17772,7 +19890,7 @@ export const data =
         }
       ],
       "codigo": "9299-CURSO: 4",
-      "docentes": "COFONE, ANIBAL EDGARDO (Profesor/a Titular/a) - MIGLIORINO, DIEGO FERNANDO (Profesor/a Adjunto/a) - CORNES, MARTIN DIEGO (Profesor/a Adjunto/a) - CATALANO, CRISTIAN MARTIN (Jefe/a Trabajos Practicos) - TERZOLO, HERNAN JAVIER (Ayudante 1ro/a) - PRANDI, PATRICIO RAUL (Ayudante 1ro/a) - SPIAZZI, JORGE JOAQUIN (Ayudante 1ro/a) - LOSINO, DANIELA (Ayudante 1ro/a)",
+      "docentes": "COFONE, ANIBAL EDGARDO (Profesor/a Titular/a) - CORNES, MARTIN DIEGO (Profesor/a Adjunto/a) - MIGLIORINO, DIEGO FERNANDO (Profesor/a Adjunto/a) - CATALANO, CRISTIAN MARTIN (Jefe/a Trabajos Practicos) - SPIAZZI, JORGE JOAQUIN (Ayudante 1ro/a) - PRANDI, PATRICIO RAUL (Ayudante 1ro/a) - LOSINO, DANIELA (Ayudante 1ro/a) - TERZOLO, HERNAN JAVIER (Ayudante 1ro/a)",
       "materia": "9299"
     },
     {
@@ -17784,7 +19902,7 @@ export const data =
         }
       ],
       "codigo": "9299-CURSO: 5",
-      "docentes": "COFONE, ANIBAL EDGARDO (Profesor/a Titular/a) - CORNES, MARTIN DIEGO (Profesor/a Adjunto/a) - MIGLIORINO, DIEGO FERNANDO (Profesor/a Adjunto/a) - RODRIGUEZ, HERNAN ALBERTO (Jefe/a Trabajos Practicos) - ALMANZA, MARIANO ANDRES (Ayudante 1ro/a) - JUDAS, MARTIN ENRIQUE (Ayudante 1ro/a)",
+      "docentes": "COFONE, ANIBAL EDGARDO (Profesor/a Titular/a) - MIGLIORINO, DIEGO FERNANDO (Profesor/a Adjunto/a) - CORNES, MARTIN DIEGO (Profesor/a Adjunto/a) - RODRIGUEZ, HERNAN ALBERTO (Jefe/a Trabajos Practicos) - ALMANZA, MARIANO ANDRES (Ayudante 1ro/a) - JUDAS, MARTIN ENRIQUE (Ayudante 1ro/a)",
       "materia": "9299"
     },
     {
@@ -17879,7 +19997,7 @@ export const data =
         }
       ],
       "codigo": "9403-CURSO: 001",
-      "docentes": "RISSETTO, CLAUDIO SILVIO (Profesor/a Titular/a) - SARUBBI, ALEJANDRO JUAN (Profesor/a Adjunto/a) - ARISTU, JULIO GUSTAVO (Jefe/a Trabajos Practicos) - LEGORBURU GONZALEZ, JOSE G (Jefe/a Trabajos Practicos)",
+      "docentes": "RISSETTO, CLAUDIO SILVIO (Profesor/a Titular/a) - SARUBBI, ALEJANDRO JUAN (Profesor/a Adjunto/a) - LEGORBURU GONZALEZ, JOSE G (Jefe/a Trabajos Practicos) - ARISTU, JULIO GUSTAVO (Jefe/a Trabajos Practicos)",
       "materia": "9403"
     },
     {
@@ -17896,7 +20014,7 @@ export const data =
         }
       ],
       "codigo": "9403-CURSO: 002",
-      "docentes": "RISSETTO, CLAUDIO SILVIO (Profesor/a Adjunto/a) - SARUBBI, ALEJANDRO JUAN (Profesor/a Adjunto/a) - ARISTU, JULIO GUSTAVO (Jefe/a Trabajos Practicos) - LEGORBURU GONZALEZ, JOSE G (Jefe/a Trabajos Practicos)",
+      "docentes": "RISSETTO, CLAUDIO SILVIO (Profesor/a Adjunto/a) - SARUBBI, ALEJANDRO JUAN (Profesor/a Adjunto/a) - LEGORBURU GONZALEZ, JOSE G (Jefe/a Trabajos Practicos) - ARISTU, JULIO GUSTAVO (Jefe/a Trabajos Practicos)",
       "materia": "9403"
     },
     {
@@ -17964,7 +20082,7 @@ export const data =
         }
       ],
       "codigo": "9405-CURSO: 002",
-      "docentes": "BARRENECHE, RAUL OSCAR (Profesor/a Adjunto/a) - ALAGIA, JUAN PABLO (Jefe/a Trabajos Practicos) - DI MARCO, MARTÍN (Jefe/a Trabajos Practicos)",
+      "docentes": "BARRENECHE, RAUL OSCAR (Profesor/a Adjunto/a) - DI MARCO, MARTÍN (Jefe/a Trabajos Practicos) - ALAGIA, JUAN PABLO (Jefe/a Trabajos Practicos)",
       "materia": "9405"
     },
     {
@@ -18044,7 +20162,7 @@ export const data =
         }
       ],
       "codigo": "9410-CURSO: 002",
-      "docentes": "LEJBOWICZ ABATE, EDUARDO CARLOS (Profesor/a Adjunto/a) - DARIN, GUSTAVO ERNESTO (Profesor/a Adjunto/a) - CRISTO, RUBEN ALBERTO (Jefe/a Trabajos Practicos)",
+      "docentes": "DARIN, GUSTAVO ERNESTO (Profesor/a Adjunto/a) - LEJBOWICZ ABATE, EDUARDO CARLOS (Profesor/a Adjunto/a) - CRISTO, RUBEN ALBERTO (Jefe/a Trabajos Practicos)",
       "materia": "9410"
     },
     {
@@ -18056,7 +20174,7 @@ export const data =
         }
       ],
       "codigo": "9411-CURSO 1",
-      "docentes": "DARIN, GUSTAVO ERNESTO (Profesor/a Adjunto/a) - LEJBOWICZ ABATE, EDUARDO CARLOS (Profesor/a Adjunto/a)",
+      "docentes": "LEJBOWICZ ABATE, EDUARDO CARLOS (Profesor/a Adjunto/a) - DARIN, GUSTAVO ERNESTO (Profesor/a Adjunto/a)",
       "materia": "9411"
     },
     {
@@ -18181,7 +20299,7 @@ export const data =
         }
       ],
       "codigo": "9501-CURSO: 05-Cabrera",
-      "docentes": "CABRERA, JOSE LUIS (Profesor/a Adjunto/a) - ECHEVARRIA, PABLO (Profesor/a Adjunto/a)",
+      "docentes": "ECHEVARRIA, PABLO (Profesor/a Adjunto/a) - CABRERA, JOSE LUIS (Profesor/a Adjunto/a)",
       "materia": "9501"
     },
     {
@@ -18202,6 +20320,16 @@ export const data =
           "dia": 1,
           "fin": "18:00",
           "inicio": "16:00"
+        },
+        {
+          "dia": 1,
+          "fin": "18:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 3,
+          "fin": "19:00",
+          "inicio": "17:00"
         },
         {
           "dia": 3,
@@ -18233,13 +20361,23 @@ export const data =
           "inicio": "19:00"
         },
         {
+          "dia": 2,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 4,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
           "dia": 4,
           "fin": "22:00",
           "inicio": "19:00"
         }
       ],
       "codigo": "9502-CURSO: 01-Sanchez",
-      "docentes": "YOLIS, EUGENIO (Jefe/a Trabajos Practicos) - SANCHEZ, DIEGO (Jefe/a Trabajos Practicos) - FERNÁNDEZ THEILLET, NICOLÁS PABLO (Ayudante 2do/a) - RODRIGUEZ MASSUH, PABLO MATIAS (Ayudante 2do/a)",
+      "docentes": "YOLIS, EUGENIO (Jefe/a Trabajos Practicos) - SANCHEZ, DIEGO (Jefe/a Trabajos Practicos) - RODRIGUEZ MASSUH, PABLO MATIAS (Ayudante 2do/a) - FERNÁNDEZ THEILLET, NICOLÁS PABLO (Ayudante 2do/a)",
       "materia": "9502"
     },
     {
@@ -18267,6 +20405,16 @@ export const data =
           "inicio": "14:00"
         },
         {
+          "dia": 1,
+          "fin": "17:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 4,
+          "fin": "17:00",
+          "inicio": "14:00"
+        },
+        {
           "dia": 4,
           "fin": "17:00",
           "inicio": "14:00"
@@ -18284,13 +20432,23 @@ export const data =
           "inicio": "19:00"
         },
         {
+          "dia": 3,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 5,
+          "fin": "21:00",
+          "inicio": "18:00"
+        },
+        {
           "dia": 5,
           "fin": "21:00",
           "inicio": "18:00"
         }
       ],
       "codigo": "9503-CURSO: 01-Mendez",
-      "docentes": "MENDEZ, MARIANO (Profesor/a Adjunto/a) - MUCCIO, ADRIAN (Jefe/a Trabajos Practicos) - FERNANDEZ, GUIDO ESTEBAN (Ayudante 1ro/a) - ABRAHAM, SANDRA AIDA (Ayudante 1ro/a)",
+      "docentes": "MENDEZ, MARIANO (Profesor/a Adjunto/a) - MUCCIO, ADRIAN (Jefe/a Trabajos Practicos) - ABRAHAM, SANDRA AIDA (Ayudante 1ro/a) - FERNANDEZ, GUIDO ESTEBAN (Ayudante 1ro/a)",
       "materia": "9503"
     },
     {
@@ -18318,6 +20476,16 @@ export const data =
           "inicio": "18:00"
         },
         {
+          "dia": 1,
+          "fin": "21:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 3,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
           "dia": 3,
           "fin": "22:00",
           "inicio": "19:00"
@@ -18333,6 +20501,16 @@ export const data =
           "dia": 1,
           "fin": "22:00",
           "inicio": "19:00"
+        },
+        {
+          "dia": 1,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 3,
+          "fin": "22:00",
+          "inicio": "18:00"
         },
         {
           "dia": 3,
@@ -18369,13 +20547,23 @@ export const data =
           "inicio": "16:00"
         },
         {
+          "dia": 3,
+          "fin": "19:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 4,
+          "fin": "19:00",
+          "inicio": "16:00"
+        },
+        {
           "dia": 4,
           "fin": "19:00",
           "inicio": "16:00"
         }
       ],
       "codigo": "9504-CURSO: 05-Sassano",
-      "docentes": "SASSANO, MIRYAM PATRICIA (Profesor/a Adjunto/a) - GARCIA, EZEQUIEL (Ayudante 2do/a) - TURANO, MARIA AGUSTINA (Ayudante 2do/a) - TURANO, MARIA AGUSTINA (Ayudante 2do/a) - VERA GUZMAN, RAMIRO AUGUSTO (Ayudante 2do/a) - HUSAIN CERRUTI, IGNACIO SANTIAGO (Ayudante 2do/a)",
+      "docentes": "SASSANO, MIRYAM PATRICIA (Profesor/a Adjunto/a) - TURANO, MARIA AGUSTINA (Ayudante 2do/a) - GARCIA, EZEQUIEL (Ayudante 2do/a) - HUSAIN CERRUTI, IGNACIO SANTIAGO (Ayudante 2do/a) - TURANO, MARIA AGUSTINA (Ayudante 2do/a) - VERA GUZMAN, RAMIRO AUGUSTO (Ayudante 2do/a)",
       "materia": "9504"
     },
     {
@@ -18409,7 +20597,7 @@ export const data =
         }
       ],
       "codigo": "9504-CURSO: 07-Cavaliere Practica Martes",
-      "docentes": "CAVALIERE, MIGUEL ANGEL (Profesor/a Adjunto/a) - MASTROPIETRO, GABRIEL MARCELO (Jefe/a Trabajos Practicos) - EZCURRA, DIEGO MARTIN (Ayudante 1ro/a) - KOWAL, ADRIAN MARCELO (Ayudante 1ro/a) - BALZAROTTI, FEDERICO (Ayudante 1ro/a)",
+      "docentes": "CAVALIERE, MIGUEL ANGEL (Profesor/a Adjunto/a) - MASTROPIETRO, GABRIEL MARCELO (Jefe/a Trabajos Practicos) - BALZAROTTI, FEDERICO (Ayudante 1ro/a) - EZCURRA, DIEGO MARTIN (Ayudante 1ro/a) - KOWAL, ADRIAN MARCELO (Ayudante 1ro/a)",
       "materia": "9504"
     },
     {
@@ -18435,6 +20623,16 @@ export const data =
           "dia": 2,
           "fin": "19:00",
           "inicio": "16:00"
+        },
+        {
+          "dia": 2,
+          "fin": "19:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 3,
+          "fin": "22:00",
+          "inicio": "19:00"
         },
         {
           "dia": 3,
@@ -18471,6 +20669,16 @@ export const data =
           "inicio": "19:00"
         },
         {
+          "dia": 1,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 5,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
           "dia": 5,
           "fin": "22:00",
           "inicio": "19:00"
@@ -18501,7 +20709,7 @@ export const data =
         }
       ],
       "codigo": "9508-CURSO: 01-Veiga",
-      "docentes": "VEIGA, ANDRES ARTURO (Profesor/a Adjunto/a) - DI PAOLA, MARTIN PABLO (Ayudante 2do/a) - WERNER, EZEQUIEL MAXIMILIANO (Ayudante 2do/a) - LAFROCE, MATÍAS EZEQUIEL (Ayudante 2do/a)",
+      "docentes": "VEIGA, ANDRES ARTURO (Profesor/a Adjunto/a) - LAFROCE, MATÍAS EZEQUIEL (Ayudante 2do/a) - WERNER, EZEQUIEL MAXIMILIANO (Ayudante 2do/a) - DI PAOLA, MARTIN PABLO (Ayudante 2do/a)",
       "materia": "9508"
     },
     {
@@ -18626,6 +20834,16 @@ export const data =
           "inicio": "17:30"
         },
         {
+          "dia": 1,
+          "fin": "20:30",
+          "inicio": "17:30"
+        },
+        {
+          "dia": 5,
+          "fin": "20:30",
+          "inicio": "17:30"
+        },
+        {
           "dia": 5,
           "fin": "20:30",
           "inicio": "17:30"
@@ -18639,6 +20857,16 @@ export const data =
       "clases": [
         {
           "dia": 2,
+          "fin": "20:00",
+          "inicio": "17:00"
+        },
+        {
+          "dia": 2,
+          "fin": "20:00",
+          "inicio": "17:00"
+        },
+        {
+          "dia": 4,
           "fin": "20:00",
           "inicio": "17:00"
         },
@@ -18660,13 +20888,23 @@ export const data =
           "inicio": "18:00"
         },
         {
+          "dia": 2,
+          "fin": "21:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 4,
+          "fin": "21:00",
+          "inicio": "18:00"
+        },
+        {
           "dia": 4,
           "fin": "21:00",
           "inicio": "18:00"
         }
       ],
       "codigo": "9512-CURSO: 04-Mendez/Pandolfo",
-      "docentes": "MENDEZ, MARIANO (Profesor/a Adjunto/a) - TOSCANO GONNELLA, MAURO FABRICIO (Ayudante 2do/a) - PANDOLFO, LUCAS HERNAN (Ayudante 2do/a) - TOSCANO GONNELLA, MAURO FABRICIO (Ayudante 2do/a)",
+      "docentes": "MENDEZ, MARIANO (Profesor/a Adjunto/a) - PANDOLFO, LUCAS HERNAN (Ayudante 2do/a) - TOSCANO GONNELLA, MAURO FABRICIO (Ayudante 2do/a) - TOSCANO GONNELLA, MAURO FABRICIO (Ayudante 2do/a)",
       "materia": "9512"
     },
     {
@@ -18675,6 +20913,16 @@ export const data =
           "dia": 1,
           "fin": "21:00",
           "inicio": "18:00"
+        },
+        {
+          "dia": 1,
+          "fin": "21:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 4,
+          "fin": "22:00",
+          "inicio": "19:00"
         },
         {
           "dia": 4,
@@ -18717,7 +20965,7 @@ export const data =
         }
       ],
       "codigo": "9513-CURSO: 02-Cavaliere Practica Lunes",
-      "docentes": "CAVALIERE, MIGUEL ANGEL (Profesor/a Adjunto/a) - BALZAROTTI, FEDERICO (Ayudante 1ro/a) - PORTOCARRERO MIRANDA, MICHAEL (Ayudante 2do/a) - GARCIA, EZEQUIEL (Ayudante 2do/a)",
+      "docentes": "CAVALIERE, MIGUEL ANGEL (Profesor/a Adjunto/a) - BALZAROTTI, FEDERICO (Ayudante 1ro/a) - GARCIA, EZEQUIEL (Ayudante 2do/a) - PORTOCARRERO MIRANDA, MICHAEL (Ayudante 2do/a)",
       "materia": "9513"
     },
     {
@@ -18745,6 +20993,16 @@ export const data =
           "inicio": "18:00"
         },
         {
+          "dia": 1,
+          "fin": "21:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 3,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
           "dia": 3,
           "fin": "22:00",
           "inicio": "19:00"
@@ -18760,6 +21018,16 @@ export const data =
           "dia": 1,
           "fin": "22:00",
           "inicio": "19:00"
+        },
+        {
+          "dia": 1,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 3,
+          "fin": "22:00",
+          "inicio": "18:00"
         },
         {
           "dia": 3,
@@ -18802,7 +21070,7 @@ export const data =
         }
       ],
       "codigo": "9513-CURSO: 07-Sassano",
-      "docentes": "SASSANO, MIRYAM PATRICIA (Profesor/a Adjunto/a) - TURANO, MARIA AGUSTINA (Ayudante 2do/a) - TURANO, MARIA AGUSTINA (Ayudante 2do/a) - HUSAIN CERRUTI, IGNACIO SANTIAGO (Ayudante 2do/a) - VERA GUZMAN, RAMIRO AUGUSTO (Ayudante 2do/a) - GARCIA, EZEQUIEL (Ayudante 2do/a)",
+      "docentes": "SASSANO, MIRYAM PATRICIA (Profesor/a Adjunto/a) - GARCIA, EZEQUIEL (Ayudante 2do/a) - TURANO, MARIA AGUSTINA (Ayudante 2do/a) - HUSAIN CERRUTI, IGNACIO SANTIAGO (Ayudante 2do/a) - VERA GUZMAN, RAMIRO AUGUSTO (Ayudante 2do/a) - TURANO, MARIA AGUSTINA (Ayudante 2do/a)",
       "materia": "9513"
     },
     {
@@ -18830,13 +21098,23 @@ export const data =
           "inicio": "19:00"
         },
         {
+          "dia": 2,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 4,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
           "dia": 4,
           "fin": "22:00",
           "inicio": "19:00"
         }
       ],
       "codigo": "9514-CURSO: 01-Guarna",
-      "docentes": "GUARNA, PABLO FRANCISCO (Profesor/a Adjunto/a) - JUAREZ, ANDRÉS ALBERTO (Jefe/a Trabajos Practicos) - BIANCHI, GUSTAVO OSCAR (Jefe/a Trabajos Practicos) - GONZÁLEZ BUSQUIN, EZEQUIEL MARTÍN (Ayudante 1ro/a) - MARIANETTI, NICOLAS GABRIEL (Ayudante 2do/a) - MARIANETTI, NICOLAS GABRIEL (Ayudante 2do/a)",
+      "docentes": "GUARNA, PABLO FRANCISCO (Profesor/a Adjunto/a) - BIANCHI, GUSTAVO OSCAR (Jefe/a Trabajos Practicos) - JUAREZ, ANDRÉS ALBERTO (Jefe/a Trabajos Practicos) - GONZÁLEZ BUSQUIN, EZEQUIEL MARTÍN (Ayudante 1ro/a) - MARIANETTI, NICOLAS GABRIEL (Ayudante 2do/a) - MARIANETTI, NICOLAS GABRIEL (Ayudante 2do/a)",
       "materia": "9514"
     },
     {
@@ -18864,6 +21142,16 @@ export const data =
           "inicio": "08:00"
         },
         {
+          "dia": 2,
+          "fin": "11:00",
+          "inicio": "08:00"
+        },
+        {
+          "dia": 4,
+          "fin": "11:00",
+          "inicio": "08:00"
+        },
+        {
           "dia": 4,
           "fin": "11:00",
           "inicio": "08:00"
@@ -18881,19 +21169,39 @@ export const data =
           "inicio": "17:30"
         },
         {
+          "dia": 1,
+          "fin": "20:30",
+          "inicio": "17:30"
+        },
+        {
+          "dia": 5,
+          "fin": "20:30",
+          "inicio": "17:30"
+        },
+        {
           "dia": 5,
           "fin": "20:30",
           "inicio": "17:30"
         }
       ],
       "codigo": "9514-CURSO: 04-Essaya",
-      "docentes": "ESSAYA, DIEGO NICOLAS (Profesor/a Adjunto/a) - SPORTELLI CASTRO, LUCIANO (Ayudante 2do/a) - KRISTAL, JUAN IGNACIO (Ayudante 2do/a) - SPORTELLI CASTRO, LUCIANO (Ayudante 2do/a) - ESTEBAN, FEDERICO MARTÍN (Ayudante 2do/a)",
+      "docentes": "ESSAYA, DIEGO NICOLAS (Profesor/a Adjunto/a) - SPORTELLI CASTRO, LUCIANO (Ayudante 2do/a) - KRISTAL, JUAN IGNACIO (Ayudante 2do/a) - ESTEBAN, FEDERICO MARTÍN (Ayudante 2do/a) - SPORTELLI CASTRO, LUCIANO (Ayudante 2do/a)",
       "materia": "9514"
     },
     {
       "clases": [
         {
           "dia": 2,
+          "fin": "21:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 2,
+          "fin": "21:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 4,
           "fin": "21:00",
           "inicio": "18:00"
         },
@@ -18949,6 +21257,16 @@ export const data =
           "inicio": "17:00"
         },
         {
+          "dia": 2,
+          "fin": "20:00",
+          "inicio": "17:00"
+        },
+        {
+          "dia": 4,
+          "fin": "20:00",
+          "inicio": "17:00"
+        },
+        {
           "dia": 4,
           "fin": "20:00",
           "inicio": "17:00"
@@ -18966,13 +21284,23 @@ export const data =
           "inicio": "18:00"
         },
         {
+          "dia": 2,
+          "fin": "21:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 4,
+          "fin": "21:00",
+          "inicio": "18:00"
+        },
+        {
           "dia": 4,
           "fin": "21:00",
           "inicio": "18:00"
         }
       ],
       "codigo": "9515-CURSO: 04-Mendez/Pandolfo",
-      "docentes": "MENDEZ, MARIANO (Profesor/a Adjunto/a) - TOSCANO GONNELLA, MAURO FABRICIO (Ayudante 2do/a) - TOSCANO GONNELLA, MAURO FABRICIO (Ayudante 2do/a) - PANDOLFO, LUCAS HERNAN (Ayudante 2do/a)",
+      "docentes": "MENDEZ, MARIANO (Profesor/a Adjunto/a) - PANDOLFO, LUCAS HERNAN (Ayudante 2do/a) - TOSCANO GONNELLA, MAURO FABRICIO (Ayudante 2do/a) - TOSCANO GONNELLA, MAURO FABRICIO (Ayudante 2do/a)",
       "materia": "9515"
     },
     {
@@ -18981,6 +21309,16 @@ export const data =
           "dia": 1,
           "fin": "21:00",
           "inicio": "18:00"
+        },
+        {
+          "dia": 1,
+          "fin": "21:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 4,
+          "fin": "22:00",
+          "inicio": "19:00"
         },
         {
           "dia": 4,
@@ -18996,6 +21334,16 @@ export const data =
       "clases": [
         {
           "dia": 1,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 1,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 3,
           "fin": "22:00",
           "inicio": "19:00"
         },
@@ -19017,19 +21365,39 @@ export const data =
           "inicio": "18:30"
         },
         {
+          "dia": 1,
+          "fin": "21:30",
+          "inicio": "18:30"
+        },
+        {
+          "dia": 4,
+          "fin": "21:30",
+          "inicio": "18:30"
+        },
+        {
           "dia": 4,
           "fin": "21:30",
           "inicio": "18:30"
         }
       ],
       "codigo": "9520-CURSO: 01-Villagra",
-      "docentes": "VILLAGRA, SERGIO GUSTAVO (Profesor/a Adjunto/a) - FERNANDEZ, LEONARDO DANIEL (Ayudante 1ro/a) - BRUNO, TOMAS (Ayudante 1ro/a) - DE BENEDETTI, GUIDO RUBEN (Ayudante 2do/a)",
+      "docentes": "VILLAGRA, SERGIO GUSTAVO (Profesor/a Adjunto/a) - BRUNO, TOMAS (Ayudante 1ro/a) - FERNANDEZ, LEONARDO DANIEL (Ayudante 1ro/a) - DE BENEDETTI, GUIDO RUBEN (Ayudante 2do/a)",
       "materia": "9520"
     },
     {
       "clases": [
         {
           "dia": 1,
+          "fin": "11:00",
+          "inicio": "08:00"
+        },
+        {
+          "dia": 1,
+          "fin": "11:00",
+          "inicio": "08:00"
+        },
+        {
+          "dia": 4,
           "fin": "11:00",
           "inicio": "08:00"
         },
@@ -19049,6 +21417,16 @@ export const data =
           "dia": 2,
           "fin": "19:00",
           "inicio": "16:00"
+        },
+        {
+          "dia": 2,
+          "fin": "19:00",
+          "inicio": "16:00"
+        },
+        {
+          "dia": 2,
+          "fin": "22:00",
+          "inicio": "19:00"
         },
         {
           "dia": 2,
@@ -19177,6 +21555,16 @@ export const data =
           "inicio": "19:00"
         },
         {
+          "dia": 2,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 4,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
           "dia": 4,
           "fin": "22:00",
           "inicio": "19:00"
@@ -19202,6 +21590,16 @@ export const data =
       "clases": [
         {
           "dia": 2,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 2,
+          "fin": "22:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 5,
           "fin": "22:00",
           "inicio": "19:00"
         },
@@ -19326,16 +21724,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 2,
           "fin": "18:00",
           "inicio": "16:00"
         }
@@ -19353,22 +21741,12 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 2,
           "fin": "18:00",
           "inicio": "16:00"
         }
       ],
       "codigo": "9703-CURSO: 01 BATTAN",
-      "docentes": "PATARO, MARIO FRANCISCO (Jefe/a Trabajos Practicos) - BATTAN, ZULEMA MARTA (Jefe/a Trabajos Practicos) - BELTRAMINI, PATRICIA GRACIELA (Ayudante 1ro/a) - DI MEGLIO, Mauro (Ayudante 1ro/a ad-honorem)",
+      "docentes": "BATTAN, ZULEMA MARTA (Jefe/a Trabajos Practicos) - PATARO, MARIO FRANCISCO (Jefe/a Trabajos Practicos) - BELTRAMINI, PATRICIA GRACIELA (Ayudante 1ro/a) - DI MEGLIO, Mauro (Ayudante 1ro/a ad-honorem)",
       "materia": "9703"
     },
     {
@@ -19490,18 +21868,6 @@ export const data =
       "codigo": "9804-CURSO: 01-SEDE PASEO COLON",
       "docentes": "BERTAGNOLI, PABLO FABIÁN (Profesor/a Adjunto/a)",
       "materia": "9804"
-    },
-    {
-      "clases": [
-        {
-          "dia": 3,
-          "fin": "14:00",
-          "inicio": "10:00"
-        }
-      ],
-      "codigo": "9805-CURSO: 01",
-      "docentes": ",  ()",
-      "materia": "9805"
     }
   ],
   "materias": [
@@ -19647,10 +22013,12 @@ export const data =
     {
       "codigo": "6201",
       "cursos": [
+        "6201-CURSO: 01",
         "6201-CURSO: 02",
         "6201-CURSO: 03",
         "6201-CURSO: 04",
         "6201-CURSO: 05",
+        "6201-CURSO: 06",
         "6201-CURSO: 07",
         "6201-CURSO: 08",
         "6201-CURSO: 09",
@@ -19853,20 +22221,6 @@ export const data =
       "nombre": "METODO DE  LOS ELEMENTOS FINITOS"
     },
     {
-      "codigo": "6416",
-      "cursos": [
-        "6416-CURSO: 1"
-      ],
-      "nombre": "ANALISIS EXPERIMENTAL DE TENSIONES"
-    },
-    {
-      "codigo": "6418",
-      "cursos": [
-        "6418-CURSO 1"
-      ],
-      "nombre": "DINAMICA DE LAS ESTRUCTURAS"
-    },
-    {
       "codigo": "6504",
       "cursos": [
         "6504-CURSO 1"
@@ -20013,6 +22367,13 @@ export const data =
         "6674-CURSO: 3"
       ],
       "nombre": "SEÑALES Y SISTEMAS"
+    },
+    {
+      "codigo": "6675",
+      "cursos": [
+        "6675-CURSO 1"
+      ],
+      "nombre": "PROCESOS ESTOCÁSTICOS"
     },
     {
       "codigo": "6700",
@@ -21350,13 +23711,6 @@ export const data =
       "nombre": "RECUPERACION ASISTIDA DE PETROLEO"
     },
     {
-      "codigo": "7624",
-      "cursos": [
-        "7624-Curso 1"
-      ],
-      "nombre": "FUND. DE LA SIM. NUMERICA DE RESERVORIOS"
-    },
-    {
       "codigo": "7627",
       "cursos": [
         "7627-CURSO 1"
@@ -21617,13 +23971,6 @@ export const data =
         "7804-CURSO: 01-SEDE PASEO COLON"
       ],
       "nombre": "IDIOMA ITALIANO"
-    },
-    {
-      "codigo": "7805",
-      "cursos": [
-        "7805-CURSO: 01"
-      ],
-      "nombre": "IDIOMA PORTUGUES"
     },
     {
       "codigo": "7900",
@@ -21905,10 +24252,12 @@ export const data =
     {
       "codigo": "8201",
       "cursos": [
+        "8201-CURSO: 01",
         "8201-CURSO: 02",
         "8201-CURSO: 03",
         "8201-CURSO: 04",
         "8201-CURSO: 05",
+        "8201-CURSO: 06",
         "8201-CURSO: 07",
         "8201-CURSO: 08",
         "8201-CURSO: 09",
@@ -22055,13 +24404,6 @@ export const data =
         "8407-CURSO: 1"
       ],
       "nombre": "MECÁNICA DE SUELOS Y GEOLOGÍA"
-    },
-    {
-      "codigo": "8408",
-      "cursos": [
-        "8408-CURSO: 1"
-      ],
-      "nombre": "ESTABILIDAD IV"
     },
     {
       "codigo": "8409",
@@ -22328,7 +24670,6 @@ export const data =
     {
       "codigo": "8602",
       "cursos": [
-        "8602-CURSO: 1",
         "8602-CURSO: 2"
       ],
       "nombre": "INTRODUCCIÓN A LA INGENIERÍA ELECTRÓNICA"
@@ -23912,14 +26253,7 @@ export const data =
         "9804-CURSO: 01-SEDE PASEO COLON"
       ],
       "nombre": "IDIOMA ITALIANO"
-    },
-    {
-      "codigo": "9805",
-      "cursos": [
-        "9805-CURSO: 01"
-      ],
-      "nombre": "IDIOMA PORTUGUÉS"
     }
   ],
-  "timestamp": "19/02/2023 15:47:18"
+  "timestamp": "26/02/2023 10:28:07"
 }

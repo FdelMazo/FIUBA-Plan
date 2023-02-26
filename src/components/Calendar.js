@@ -149,9 +149,16 @@ const MyCalendar = (props) => {
   };
 
   const TabSystem = (props) => {
+    const inputref = React.useRef(null)
     return (
       <Flex borderBottom="2px solid" borderColor="inherit" justifyContent="space-between">
         <Tabs
+          onKeyDown={(e) => {
+            if (e.keyCode === 32) {
+              e.preventDefault()
+              inputref.current.value += " ";
+            }
+          }}
           index={tabs.map((t) => t.id).indexOf(activeTabId)}
           key={tabs.length}
           colorScheme="purple"
@@ -161,7 +168,7 @@ const MyCalendar = (props) => {
         >
           <Flex flexWrap="wrap">
             {tabs.map((tab, index) => (
-              <CustomTab key={tab.id} tab={tab} index={index} />
+              <CustomTab key={tab.id} tab={tab} index={index} inputref={tabs[index]?.id === activeTabId ? inputref : undefined} />
             ))}
 
             {tabs.length < 5 && (
@@ -261,6 +268,7 @@ const CustomTab = React.forwardRef((props, ref) => {
           <Flex>
             <EditablePreview maxW="12ch" />
             <EditableInput
+              {...props.inputref ? { ref: props.inputref } : {}}
               maxW="12ch"
               _focus={{
                 boxShadow: "0 0 0 3px rgba(183,148,244, 0.6)",

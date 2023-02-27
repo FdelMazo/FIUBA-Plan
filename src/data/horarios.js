@@ -38,16 +38,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 2,
           "fin": "18:00",
           "inicio": "16:00"
         },
@@ -55,16 +45,6 @@ export const data =
           "dia": 4,
           "fin": "16:00",
           "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "18:00",
-          "inicio": "16:00"
         },
         {
           "dia": 4,
@@ -166,16 +146,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 2,
           "fin": "18:00",
           "inicio": "16:00"
         },
@@ -183,16 +153,6 @@ export const data =
           "dia": 4,
           "fin": "16:00",
           "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "18:00",
-          "inicio": "16:00"
         },
         {
           "dia": 4,
@@ -348,16 +308,6 @@ export const data =
         },
         {
           "dia": 1,
-          "fin": "19:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 1,
-          "fin": "21:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 1,
           "fin": "21:00",
           "inicio": "19:00"
         },
@@ -365,16 +315,6 @@ export const data =
           "dia": 3,
           "fin": "19:00",
           "inicio": "17:00"
-        },
-        {
-          "dia": 3,
-          "fin": "19:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 3,
-          "fin": "21:00",
-          "inicio": "19:00"
         },
         {
           "dia": 3,
@@ -422,16 +362,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "20:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 2,
-          "fin": "22:00",
-          "inicio": "20:00"
-        },
-        {
-          "dia": 2,
           "fin": "22:00",
           "inicio": "20:00"
         },
@@ -439,16 +369,6 @@ export const data =
           "dia": 4,
           "fin": "20:00",
           "inicio": "18:00"
-        },
-        {
-          "dia": 4,
-          "fin": "20:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 4,
-          "fin": "22:00",
-          "inicio": "20:00"
         },
         {
           "dia": 4,
@@ -496,16 +416,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "09:00",
-          "inicio": "07:00"
-        },
-        {
-          "dia": 2,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 2,
           "fin": "11:00",
           "inicio": "09:00"
         },
@@ -513,16 +423,6 @@ export const data =
           "dia": 4,
           "fin": "09:00",
           "inicio": "07:00"
-        },
-        {
-          "dia": 4,
-          "fin": "09:00",
-          "inicio": "07:00"
-        },
-        {
-          "dia": 4,
-          "fin": "11:00",
-          "inicio": "09:00"
         },
         {
           "dia": 4,
@@ -543,16 +443,6 @@ export const data =
         },
         {
           "dia": 1,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 1,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 1,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -560,16 +450,6 @@ export const data =
           "dia": 3,
           "fin": "11:00",
           "inicio": "09:00"
-        },
-        {
-          "dia": 3,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 3,
-          "fin": "13:00",
-          "inicio": "11:00"
         },
         {
           "dia": 3,
@@ -590,16 +470,6 @@ export const data =
         },
         {
           "dia": 1,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 1,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 1,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -607,16 +477,6 @@ export const data =
           "dia": 3,
           "fin": "11:00",
           "inicio": "09:00"
-        },
-        {
-          "dia": 3,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 3,
-          "fin": "13:00",
-          "inicio": "11:00"
         },
         {
           "dia": 3,
@@ -637,16 +497,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 2,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -654,16 +504,6 @@ export const data =
           "dia": 5,
           "fin": "11:00",
           "inicio": "09:00"
-        },
-        {
-          "dia": 5,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 5,
-          "fin": "13:00",
-          "inicio": "11:00"
         },
         {
           "dia": 5,
@@ -684,16 +524,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 2,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -701,16 +531,6 @@ export const data =
           "dia": 5,
           "fin": "11:00",
           "inicio": "09:00"
-        },
-        {
-          "dia": 5,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 5,
-          "fin": "13:00",
-          "inicio": "11:00"
         },
         {
           "dia": 5,
@@ -731,16 +551,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 2,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -748,16 +558,6 @@ export const data =
           "dia": 5,
           "fin": "11:00",
           "inicio": "09:00"
-        },
-        {
-          "dia": 5,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 5,
-          "fin": "13:00",
-          "inicio": "11:00"
         },
         {
           "dia": 5,
@@ -778,16 +578,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 2,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -795,16 +585,6 @@ export const data =
           "dia": 5,
           "fin": "11:00",
           "inicio": "09:00"
-        },
-        {
-          "dia": 5,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 5,
-          "fin": "13:00",
-          "inicio": "11:00"
         },
         {
           "dia": 5,
@@ -825,16 +605,6 @@ export const data =
         },
         {
           "dia": 1,
-          "fin": "15:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 1,
-          "fin": "17:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 1,
           "fin": "17:00",
           "inicio": "15:00"
         },
@@ -842,16 +612,6 @@ export const data =
           "dia": 3,
           "fin": "15:00",
           "inicio": "13:00"
-        },
-        {
-          "dia": 3,
-          "fin": "15:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 3,
-          "fin": "17:00",
-          "inicio": "15:00"
         },
         {
           "dia": 3,
@@ -926,16 +686,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 2,
           "fin": "18:00",
           "inicio": "16:00"
         },
@@ -943,16 +693,6 @@ export const data =
           "dia": 4,
           "fin": "16:00",
           "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "18:00",
-          "inicio": "16:00"
         },
         {
           "dia": 4,
@@ -1000,26 +740,6 @@ export const data =
         },
         {
           "dia": 1,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 1,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 1,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 1,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 1,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -1027,26 +747,6 @@ export const data =
           "dia": 3,
           "fin": "11:00",
           "inicio": "09:00"
-        },
-        {
-          "dia": 3,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 3,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 3,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 3,
-          "fin": "13:00",
-          "inicio": "11:00"
         },
         {
           "dia": 3,
@@ -1143,16 +843,6 @@ export const data =
           "inicio": "14:00"
         },
         {
-          "dia": 2,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "18:00",
-          "inicio": "14:00"
-        },
-        {
           "dia": 4,
           "fin": "18:00",
           "inicio": "14:00"
@@ -1204,16 +894,6 @@ export const data =
           "inicio": "08:00"
         },
         {
-          "dia": 1,
-          "fin": "11:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 3,
-          "fin": "11:00",
-          "inicio": "08:00"
-        },
-        {
           "dia": 3,
           "fin": "11:00",
           "inicio": "08:00"
@@ -1246,16 +926,6 @@ export const data =
           "dia": 1,
           "fin": "17:00",
           "inicio": "14:00"
-        },
-        {
-          "dia": 1,
-          "fin": "17:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "15:00"
         },
         {
           "dia": 2,
@@ -1320,16 +990,6 @@ export const data =
         },
         {
           "dia": 3,
-          "fin": "15:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 3,
-          "fin": "17:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 3,
           "fin": "17:00",
           "inicio": "15:00"
         },
@@ -1337,16 +997,6 @@ export const data =
           "dia": 5,
           "fin": "15:00",
           "inicio": "13:00"
-        },
-        {
-          "dia": 5,
-          "fin": "15:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 5,
-          "fin": "17:00",
-          "inicio": "15:00"
         },
         {
           "dia": 5,
@@ -1394,16 +1044,6 @@ export const data =
         },
         {
           "dia": 1,
-          "fin": "19:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 1,
-          "fin": "21:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 1,
           "fin": "21:00",
           "inicio": "19:00"
         },
@@ -1411,16 +1051,6 @@ export const data =
           "dia": 3,
           "fin": "19:00",
           "inicio": "17:00"
-        },
-        {
-          "dia": 3,
-          "fin": "19:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 3,
-          "fin": "21:00",
-          "inicio": "19:00"
         },
         {
           "dia": 3,
@@ -1468,16 +1098,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "09:00",
-          "inicio": "07:00"
-        },
-        {
-          "dia": 2,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 2,
           "fin": "11:00",
           "inicio": "09:00"
         },
@@ -1485,16 +1105,6 @@ export const data =
           "dia": 4,
           "fin": "09:00",
           "inicio": "07:00"
-        },
-        {
-          "dia": 4,
-          "fin": "09:00",
-          "inicio": "07:00"
-        },
-        {
-          "dia": 4,
-          "fin": "11:00",
-          "inicio": "09:00"
         },
         {
           "dia": 4,
@@ -1569,16 +1179,6 @@ export const data =
         },
         {
           "dia": 1,
-          "fin": "09:00",
-          "inicio": "07:00"
-        },
-        {
-          "dia": 1,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 1,
           "fin": "11:00",
           "inicio": "09:00"
         },
@@ -1586,16 +1186,6 @@ export const data =
           "dia": 3,
           "fin": "09:00",
           "inicio": "07:00"
-        },
-        {
-          "dia": 3,
-          "fin": "09:00",
-          "inicio": "07:00"
-        },
-        {
-          "dia": 3,
-          "fin": "11:00",
-          "inicio": "09:00"
         },
         {
           "dia": 3,
@@ -1616,16 +1206,6 @@ export const data =
         },
         {
           "dia": 1,
-          "fin": "09:00",
-          "inicio": "07:00"
-        },
-        {
-          "dia": 1,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 1,
           "fin": "11:00",
           "inicio": "09:00"
         },
@@ -1633,16 +1213,6 @@ export const data =
           "dia": 3,
           "fin": "09:00",
           "inicio": "07:00"
-        },
-        {
-          "dia": 3,
-          "fin": "09:00",
-          "inicio": "07:00"
-        },
-        {
-          "dia": 3,
-          "fin": "11:00",
-          "inicio": "09:00"
         },
         {
           "dia": 3,
@@ -1771,16 +1341,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 2,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -1788,16 +1348,6 @@ export const data =
           "dia": 4,
           "fin": "11:00",
           "inicio": "09:00"
-        },
-        {
-          "dia": 4,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 4,
-          "fin": "13:00",
-          "inicio": "11:00"
         },
         {
           "dia": 4,
@@ -1899,16 +1449,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 2,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -1916,16 +1456,6 @@ export const data =
           "dia": 4,
           "fin": "11:00",
           "inicio": "09:00"
-        },
-        {
-          "dia": 4,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 4,
-          "fin": "13:00",
-          "inicio": "11:00"
         },
         {
           "dia": 4,
@@ -1946,16 +1476,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 2,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -1963,16 +1483,6 @@ export const data =
           "dia": 4,
           "fin": "11:00",
           "inicio": "09:00"
-        },
-        {
-          "dia": 4,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 4,
-          "fin": "13:00",
-          "inicio": "11:00"
         },
         {
           "dia": 4,
@@ -2026,16 +1536,6 @@ export const data =
           "inicio": "19:00"
         },
         {
-          "dia": 1,
-          "fin": "21:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 3,
-          "fin": "23:00",
-          "inicio": "19:00"
-        },
-        {
           "dia": 3,
           "fin": "23:00",
           "inicio": "19:00"
@@ -2050,16 +1550,6 @@ export const data =
         {
           "dia": 1,
           "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 1,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 3,
-          "fin": "13:00",
           "inicio": "09:00"
         },
         {
@@ -2081,16 +1571,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 2,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -2098,16 +1578,6 @@ export const data =
           "dia": 5,
           "fin": "11:00",
           "inicio": "09:00"
-        },
-        {
-          "dia": 5,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 5,
-          "fin": "13:00",
-          "inicio": "11:00"
         },
         {
           "dia": 5,
@@ -2155,16 +1625,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 2,
           "fin": "18:00",
           "inicio": "16:00"
         },
@@ -2172,16 +1632,6 @@ export const data =
           "dia": 4,
           "fin": "16:00",
           "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "18:00",
-          "inicio": "16:00"
         },
         {
           "dia": 4,
@@ -2202,26 +1652,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 2,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 2,
           "fin": "18:00",
           "inicio": "16:00"
         },
@@ -2229,26 +1659,6 @@ export const data =
           "dia": 4,
           "fin": "16:00",
           "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 4,
-          "fin": "18:00",
-          "inicio": "16:00"
         },
         {
           "dia": 4,
@@ -2523,16 +1933,6 @@ export const data =
           "inicio": "08:00"
         },
         {
-          "dia": 1,
-          "fin": "12:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 3,
-          "fin": "12:00",
-          "inicio": "08:00"
-        },
-        {
           "dia": 3,
           "fin": "12:00",
           "inicio": "08:00"
@@ -2563,16 +1963,6 @@ export const data =
       "clases": [
         {
           "dia": 1,
-          "fin": "12:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 1,
-          "fin": "12:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 3,
           "fin": "12:00",
           "inicio": "08:00"
         },
@@ -2675,16 +2065,6 @@ export const data =
       "clases": [
         {
           "dia": 1,
-          "fin": "17:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 1,
-          "fin": "17:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 3,
           "fin": "17:00",
           "inicio": "13:00"
         },
@@ -3523,16 +2903,6 @@ export const data =
           "inicio": "09:00"
         },
         {
-          "dia": 4,
-          "fin": "13:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 5,
-          "fin": "20:00",
-          "inicio": "18:00"
-        },
-        {
           "dia": 5,
           "fin": "20:00",
           "inicio": "18:00"
@@ -3686,36 +3056,6 @@ export const data =
           "inicio": "09:00"
         },
         {
-          "dia": 1,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 1,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 1,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 2,
-          "fin": "17:00",
-          "inicio": "15:30"
-        },
-        {
-          "dia": 2,
-          "fin": "17:00",
-          "inicio": "15:30"
-        },
-        {
-          "dia": 2,
-          "fin": "17:00",
-          "inicio": "15:30"
-        },
-        {
           "dia": 2,
           "fin": "17:00",
           "inicio": "15:30"
@@ -3724,36 +3064,6 @@ export const data =
           "dia": 3,
           "fin": "12:00",
           "inicio": "09:00"
-        },
-        {
-          "dia": 3,
-          "fin": "12:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 3,
-          "fin": "12:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 3,
-          "fin": "12:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 3,
-          "fin": "16:30",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 3,
-          "fin": "16:30",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 3,
-          "fin": "16:30",
-          "inicio": "15:00"
         },
         {
           "dia": 3,
@@ -3773,16 +3083,6 @@ export const data =
           "inicio": "15:30"
         },
         {
-          "dia": 2,
-          "fin": "17:00",
-          "inicio": "15:30"
-        },
-        {
-          "dia": 3,
-          "fin": "16:30",
-          "inicio": "15:00"
-        },
-        {
           "dia": 3,
           "fin": "16:30",
           "inicio": "15:00"
@@ -3790,16 +3090,6 @@ export const data =
         {
           "dia": 3,
           "fin": "21:30",
-          "inicio": "18:30"
-        },
-        {
-          "dia": 3,
-          "fin": "21:30",
-          "inicio": "18:30"
-        },
-        {
-          "dia": 4,
-          "fin": "20:30",
           "inicio": "18:30"
         },
         {
@@ -3821,16 +3111,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "15:00",
-          "inicio": "12:00"
-        },
-        {
-          "dia": 2,
-          "fin": "17:00",
-          "inicio": "15:30"
-        },
-        {
-          "dia": 2,
           "fin": "17:00",
           "inicio": "15:30"
         },
@@ -3838,16 +3118,6 @@ export const data =
           "dia": 3,
           "fin": "16:30",
           "inicio": "15:00"
-        },
-        {
-          "dia": 3,
-          "fin": "16:30",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 4,
-          "fin": "15:00",
-          "inicio": "13:00"
         },
         {
           "dia": 4,
@@ -3867,36 +3137,6 @@ export const data =
           "inicio": "15:30"
         },
         {
-          "dia": 2,
-          "fin": "17:00",
-          "inicio": "15:30"
-        },
-        {
-          "dia": 2,
-          "fin": "17:00",
-          "inicio": "15:30"
-        },
-        {
-          "dia": 2,
-          "fin": "17:00",
-          "inicio": "15:30"
-        },
-        {
-          "dia": 3,
-          "fin": "16:30",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 3,
-          "fin": "16:30",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 3,
-          "fin": "16:30",
-          "inicio": "15:00"
-        },
-        {
           "dia": 3,
           "fin": "16:30",
           "inicio": "15:00"
@@ -3905,36 +3145,6 @@ export const data =
           "dia": 4,
           "fin": "14:30",
           "inicio": "12:30"
-        },
-        {
-          "dia": 4,
-          "fin": "14:30",
-          "inicio": "12:30"
-        },
-        {
-          "dia": 4,
-          "fin": "14:30",
-          "inicio": "12:30"
-        },
-        {
-          "dia": 4,
-          "fin": "14:30",
-          "inicio": "12:30"
-        },
-        {
-          "dia": 4,
-          "fin": "18:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 4,
-          "fin": "18:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 4,
-          "fin": "18:00",
-          "inicio": "15:00"
         },
         {
           "dia": 4,
@@ -3955,26 +3165,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "12:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 2,
-          "fin": "12:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 2,
-          "fin": "17:00",
-          "inicio": "15:30"
-        },
-        {
-          "dia": 2,
-          "fin": "17:00",
-          "inicio": "15:30"
-        },
-        {
-          "dia": 2,
           "fin": "17:00",
           "inicio": "15:30"
         },
@@ -3982,26 +3172,6 @@ export const data =
           "dia": 3,
           "fin": "16:30",
           "inicio": "15:00"
-        },
-        {
-          "dia": 3,
-          "fin": "16:30",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 3,
-          "fin": "16:30",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 4,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 4,
-          "fin": "11:00",
-          "inicio": "09:00"
         },
         {
           "dia": 4,
@@ -4157,26 +3327,6 @@ export const data =
           "inicio": "10:00"
         },
         {
-          "dia": 1,
-          "fin": "13:00",
-          "inicio": "10:00"
-        },
-        {
-          "dia": 1,
-          "fin": "13:00",
-          "inicio": "10:00"
-        },
-        {
-          "dia": 2,
-          "fin": "17:00",
-          "inicio": "15:30"
-        },
-        {
-          "dia": 2,
-          "fin": "17:00",
-          "inicio": "15:30"
-        },
-        {
           "dia": 2,
           "fin": "17:00",
           "inicio": "15:30"
@@ -4185,26 +3335,6 @@ export const data =
           "dia": 3,
           "fin": "13:00",
           "inicio": "11:00"
-        },
-        {
-          "dia": 3,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 3,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 3,
-          "fin": "17:00",
-          "inicio": "15:30"
-        },
-        {
-          "dia": 3,
-          "fin": "17:00",
-          "inicio": "15:30"
         },
         {
           "dia": 3,
@@ -4225,26 +3355,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "15:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 2,
-          "fin": "15:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 2,
-          "fin": "17:00",
-          "inicio": "15:30"
-        },
-        {
-          "dia": 2,
-          "fin": "17:00",
-          "inicio": "15:30"
-        },
-        {
-          "dia": 2,
           "fin": "17:00",
           "inicio": "15:30"
         },
@@ -4252,26 +3362,6 @@ export const data =
           "dia": 3,
           "fin": "17:00",
           "inicio": "15:30"
-        },
-        {
-          "dia": 3,
-          "fin": "17:00",
-          "inicio": "15:30"
-        },
-        {
-          "dia": 3,
-          "fin": "17:00",
-          "inicio": "15:30"
-        },
-        {
-          "dia": 4,
-          "fin": "15:00",
-          "inicio": "12:00"
-        },
-        {
-          "dia": 4,
-          "fin": "15:00",
-          "inicio": "12:00"
         },
         {
           "dia": 4,
@@ -4292,26 +3382,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "17:00",
-          "inicio": "15:30"
-        },
-        {
-          "dia": 2,
-          "fin": "17:00",
-          "inicio": "15:30"
-        },
-        {
-          "dia": 2,
-          "fin": "20:30",
-          "inicio": "17:30"
-        },
-        {
-          "dia": 2,
-          "fin": "20:30",
-          "inicio": "17:30"
-        },
-        {
-          "dia": 2,
           "fin": "20:30",
           "inicio": "17:30"
         },
@@ -4319,26 +3389,6 @@ export const data =
           "dia": 3,
           "fin": "17:00",
           "inicio": "15:30"
-        },
-        {
-          "dia": 3,
-          "fin": "17:00",
-          "inicio": "15:30"
-        },
-        {
-          "dia": 3,
-          "fin": "17:00",
-          "inicio": "15:30"
-        },
-        {
-          "dia": 4,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 4,
-          "fin": "18:00",
-          "inicio": "16:00"
         },
         {
           "dia": 4,
@@ -4753,16 +3803,6 @@ export const data =
           "dia": 1,
           "fin": "21:00",
           "inicio": "18:00"
-        },
-        {
-          "dia": 1,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 3,
-          "fin": "22:00",
-          "inicio": "19:00"
         },
         {
           "dia": 3,
@@ -5607,24 +4647,9 @@ export const data =
           "inicio": "15:00"
         },
         {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "15:00"
-        },
-        {
           "dia": 3,
           "fin": "17:00",
           "inicio": "14:00"
-        },
-        {
-          "dia": 3,
-          "fin": "17:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 3,
-          "fin": "20:00",
-          "inicio": "17:00"
         },
         {
           "dia": 3,
@@ -5645,38 +4670,8 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 2,
-          "fin": "11:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 2,
           "fin": "18:00",
           "inicio": "15:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 5,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 5,
-          "fin": "21:00",
-          "inicio": "18:00"
         },
         {
           "dia": 5,
@@ -5697,23 +4692,8 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 2,
           "fin": "15:00",
           "inicio": "12:00"
-        },
-        {
-          "dia": 2,
-          "fin": "15:00",
-          "inicio": "12:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "15:00"
         },
         {
           "dia": 2,
@@ -5733,24 +4713,9 @@ export const data =
           "inicio": "15:00"
         },
         {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "15:00"
-        },
-        {
           "dia": 3,
           "fin": "17:00",
           "inicio": "14:00"
-        },
-        {
-          "dia": 3,
-          "fin": "17:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "21:00",
-          "inicio": "18:00"
         },
         {
           "dia": 4,
@@ -5771,21 +4736,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 4,
           "fin": "18:00",
           "inicio": "15:00"
         },
@@ -5807,24 +4757,9 @@ export const data =
           "inicio": "15:00"
         },
         {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "15:00"
-        },
-        {
           "dia": 3,
           "fin": "17:00",
           "inicio": "14:00"
-        },
-        {
-          "dia": 3,
-          "fin": "17:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "21:00",
-          "inicio": "18:00"
         },
         {
           "dia": 4,
@@ -5842,16 +4777,6 @@ export const data =
           "dia": 1,
           "fin": "17:00",
           "inicio": "14:00"
-        },
-        {
-          "dia": 1,
-          "fin": "17:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:30",
-          "inicio": "15:30"
         },
         {
           "dia": 2,
@@ -6096,24 +5021,9 @@ export const data =
           "inicio": "16:00"
         },
         {
-          "dia": 3,
-          "fin": "19:00",
-          "inicio": "16:00"
-        },
-        {
           "dia": 5,
           "fin": "19:00",
           "inicio": "16:00"
-        },
-        {
-          "dia": 5,
-          "fin": "19:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 5,
-          "fin": "21:00",
-          "inicio": "19:00"
         },
         {
           "dia": 5,
@@ -6150,16 +5060,6 @@ export const data =
           "inicio": "18:00"
         },
         {
-          "dia": 4,
-          "fin": "20:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 5,
-          "fin": "23:00",
-          "inicio": "19:00"
-        },
-        {
           "dia": 5,
           "fin": "23:00",
           "inicio": "19:00"
@@ -6175,16 +5075,6 @@ export const data =
           "dia": 3,
           "fin": "23:00",
           "inicio": "19:00"
-        },
-        {
-          "dia": 3,
-          "fin": "23:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 6,
-          "fin": "13:00",
-          "inicio": "09:00"
         },
         {
           "dia": 6,
@@ -6228,16 +5118,6 @@ export const data =
           "inicio": "16:00"
         },
         {
-          "dia": 3,
-          "fin": "19:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 5,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
           "dia": 5,
           "fin": "22:00",
           "inicio": "19:00"
@@ -6255,16 +5135,6 @@ export const data =
           "inicio": "15:00"
         },
         {
-          "dia": 1,
-          "fin": "19:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 3,
-          "fin": "19:00",
-          "inicio": "15:00"
-        },
-        {
           "dia": 3,
           "fin": "19:00",
           "inicio": "15:00"
@@ -6278,16 +5148,6 @@ export const data =
       "clases": [
         {
           "dia": 1,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 1,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 3,
           "fin": "22:00",
           "inicio": "19:00"
         },
@@ -6338,16 +5198,6 @@ export const data =
           "inicio": "18:00"
         },
         {
-          "dia": 4,
-          "fin": "22:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 5,
-          "fin": "21:00",
-          "inicio": "19:00"
-        },
-        {
           "dia": 5,
           "fin": "21:00",
           "inicio": "19:00"
@@ -6385,16 +5235,6 @@ export const data =
       "clases": [
         {
           "dia": 2,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 2,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 3,
           "fin": "22:00",
           "inicio": "19:00"
         },
@@ -6485,16 +5325,6 @@ export const data =
         },
         {
           "dia": 4,
-          "fin": "19:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 4,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 4,
           "fin": "22:00",
           "inicio": "19:00"
         }
@@ -6509,16 +5339,6 @@ export const data =
           "dia": 2,
           "fin": "22:00",
           "inicio": "18:00"
-        },
-        {
-          "dia": 2,
-          "fin": "22:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 5,
-          "fin": "19:00",
-          "inicio": "17:00"
         },
         {
           "dia": 5,
@@ -6625,16 +5445,6 @@ export const data =
           "inicio": "19:00"
         },
         {
-          "dia": 4,
-          "fin": "21:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 5,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
           "dia": 5,
           "fin": "18:00",
           "inicio": "16:00"
@@ -6650,16 +5460,6 @@ export const data =
           "dia": 5,
           "fin": "18:00",
           "inicio": "16:00"
-        },
-        {
-          "dia": 5,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 5,
-          "fin": "21:00",
-          "inicio": "19:00"
         },
         {
           "dia": 5,
@@ -7429,16 +6229,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "19:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 2,
-          "fin": "23:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 2,
           "fin": "23:00",
           "inicio": "19:00"
         }
@@ -7826,16 +6616,6 @@ export const data =
         },
         {
           "dia": 1,
-          "fin": "19:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 1,
-          "fin": "23:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 1,
           "fin": "23:00",
           "inicio": "19:00"
         }
@@ -8130,16 +6910,6 @@ export const data =
           "inicio": "15:00"
         },
         {
-          "dia": 1,
-          "fin": "18:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 3,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
           "dia": 3,
           "fin": "21:00",
           "inicio": "18:00"
@@ -8191,16 +6961,6 @@ export const data =
           "inicio": "18:00"
         },
         {
-          "dia": 2,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 3,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
           "dia": 3,
           "fin": "21:00",
           "inicio": "18:00"
@@ -8235,16 +6995,6 @@ export const data =
           "inicio": "17:00"
         },
         {
-          "dia": 1,
-          "fin": "20:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 3,
-          "fin": "19:00",
-          "inicio": "16:00"
-        },
-        {
           "dia": 3,
           "fin": "19:00",
           "inicio": "16:00"
@@ -8262,16 +7012,6 @@ export const data =
           "inicio": "18:00"
         },
         {
-          "dia": 3,
-          "fin": "20:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 5,
-          "fin": "21:00",
-          "inicio": "19:00"
-        },
-        {
           "dia": 5,
           "fin": "21:00",
           "inicio": "19:00"
@@ -8285,16 +7025,6 @@ export const data =
       "clases": [
         {
           "dia": 1,
-          "fin": "19:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 1,
-          "fin": "19:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 4,
           "fin": "19:00",
           "inicio": "16:00"
         },
@@ -8329,16 +7059,6 @@ export const data =
       "clases": [
         {
           "dia": 2,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 2,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 4,
           "fin": "21:00",
           "inicio": "18:00"
         },
@@ -8402,16 +7122,6 @@ export const data =
       "clases": [
         {
           "dia": 1,
-          "fin": "20:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 1,
-          "fin": "20:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 3,
           "fin": "20:00",
           "inicio": "17:00"
         },
@@ -8529,16 +7239,6 @@ export const data =
           "inicio": "16:00"
         },
         {
-          "dia": 1,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 3,
-          "fin": "19:00",
-          "inicio": "17:00"
-        },
-        {
           "dia": 3,
           "fin": "19:00",
           "inicio": "17:00"
@@ -8568,16 +7268,6 @@ export const data =
           "inicio": "19:00"
         },
         {
-          "dia": 1,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 4,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
           "dia": 4,
           "fin": "22:00",
           "inicio": "19:00"
@@ -8595,16 +7285,6 @@ export const data =
           "inicio": "19:00"
         },
         {
-          "dia": 2,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 4,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
           "dia": 4,
           "fin": "22:00",
           "inicio": "19:00"
@@ -8618,16 +7298,6 @@ export const data =
       "clases": [
         {
           "dia": 2,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 2,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 4,
           "fin": "22:00",
           "inicio": "19:00"
         },
@@ -8666,16 +7336,6 @@ export const data =
           "inicio": "14:00"
         },
         {
-          "dia": 1,
-          "fin": "17:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "17:00",
-          "inicio": "14:00"
-        },
-        {
           "dia": 4,
           "fin": "17:00",
           "inicio": "14:00"
@@ -8693,16 +7353,6 @@ export const data =
           "inicio": "19:00"
         },
         {
-          "dia": 3,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 5,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
           "dia": 5,
           "fin": "21:00",
           "inicio": "18:00"
@@ -8716,16 +7366,6 @@ export const data =
       "clases": [
         {
           "dia": 1,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 1,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 3,
           "fin": "22:00",
           "inicio": "19:00"
         },
@@ -8764,16 +7404,6 @@ export const data =
           "inicio": "08:00"
         },
         {
-          "dia": 1,
-          "fin": "11:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 4,
-          "fin": "11:00",
-          "inicio": "08:00"
-        },
-        {
           "dia": 4,
           "fin": "11:00",
           "inicio": "08:00"
@@ -8808,16 +7438,6 @@ export const data =
           "inicio": "18:00"
         },
         {
-          "dia": 1,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 3,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
           "dia": 3,
           "fin": "22:00",
           "inicio": "19:00"
@@ -8833,16 +7453,6 @@ export const data =
           "dia": 1,
           "fin": "22:00",
           "inicio": "19:00"
-        },
-        {
-          "dia": 1,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 3,
-          "fin": "22:00",
-          "inicio": "18:00"
         },
         {
           "dia": 3,
@@ -8913,16 +7523,6 @@ export const data =
           "inicio": "19:00"
         },
         {
-          "dia": 2,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 4,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
           "dia": 4,
           "fin": "22:00",
           "inicio": "19:00"
@@ -8974,16 +7574,6 @@ export const data =
           "inicio": "16:00"
         },
         {
-          "dia": 2,
-          "fin": "19:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 3,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
           "dia": 3,
           "fin": "22:00",
           "inicio": "19:00"
@@ -8997,16 +7587,6 @@ export const data =
       "clases": [
         {
           "dia": 1,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 1,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 3,
           "fin": "22:00",
           "inicio": "19:00"
         },
@@ -9045,16 +7625,6 @@ export const data =
           "inicio": "19:00"
         },
         {
-          "dia": 1,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 5,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
           "dia": 5,
           "fin": "22:00",
           "inicio": "19:00"
@@ -9080,16 +7650,6 @@ export const data =
       "clases": [
         {
           "dia": 2,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 2,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 4,
           "fin": "22:00",
           "inicio": "19:00"
         },
@@ -9128,16 +7688,6 @@ export const data =
           "inicio": "08:00"
         },
         {
-          "dia": 2,
-          "fin": "11:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 4,
-          "fin": "11:00",
-          "inicio": "08:00"
-        },
-        {
           "dia": 4,
           "fin": "11:00",
           "inicio": "08:00"
@@ -9155,16 +7705,6 @@ export const data =
           "inicio": "17:30"
         },
         {
-          "dia": 1,
-          "fin": "20:30",
-          "inicio": "17:30"
-        },
-        {
-          "dia": 5,
-          "fin": "20:30",
-          "inicio": "17:30"
-        },
-        {
           "dia": 5,
           "fin": "20:30",
           "inicio": "17:30"
@@ -9178,16 +7718,6 @@ export const data =
       "clases": [
         {
           "dia": 2,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 2,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 4,
           "fin": "21:00",
           "inicio": "18:00"
         },
@@ -9226,16 +7756,6 @@ export const data =
           "inicio": "17:30"
         },
         {
-          "dia": 1,
-          "fin": "20:30",
-          "inicio": "17:30"
-        },
-        {
-          "dia": 5,
-          "fin": "20:30",
-          "inicio": "17:30"
-        },
-        {
           "dia": 5,
           "fin": "20:30",
           "inicio": "17:30"
@@ -9249,16 +7769,6 @@ export const data =
       "clases": [
         {
           "dia": 2,
-          "fin": "20:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 2,
-          "fin": "20:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 4,
           "fin": "20:00",
           "inicio": "17:00"
         },
@@ -9280,16 +7790,6 @@ export const data =
           "inicio": "18:00"
         },
         {
-          "dia": 2,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 4,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
           "dia": 4,
           "fin": "21:00",
           "inicio": "18:00"
@@ -9305,16 +7805,6 @@ export const data =
           "dia": 1,
           "fin": "21:00",
           "inicio": "18:00"
-        },
-        {
-          "dia": 1,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 4,
-          "fin": "22:00",
-          "inicio": "19:00"
         },
         {
           "dia": 4,
@@ -9358,16 +7848,6 @@ export const data =
           "inicio": "19:00"
         },
         {
-          "dia": 2,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 5,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
           "dia": 5,
           "fin": "22:00",
           "inicio": "19:00"
@@ -9386,16 +7866,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "19:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 2,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 2,
           "fin": "22:00",
           "inicio": "19:00"
         }
@@ -9408,16 +7878,6 @@ export const data =
       "clases": [
         {
           "dia": 2,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 2,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 4,
           "fin": "22:00",
           "inicio": "19:00"
         },
@@ -9454,16 +7914,6 @@ export const data =
           "dia": 1,
           "fin": "19:00",
           "inicio": "17:00"
-        },
-        {
-          "dia": 1,
-          "fin": "19:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 1,
-          "fin": "23:00",
-          "inicio": "19:00"
         },
         {
           "dia": 1,
@@ -9536,16 +7986,6 @@ export const data =
           "inicio": "19:00"
         },
         {
-          "dia": 1,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 3,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
           "dia": 3,
           "fin": "22:00",
           "inicio": "19:00"
@@ -9593,23 +8033,8 @@ export const data =
         },
         {
           "dia": 1,
-          "fin": "17:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 1,
           "fin": "19:00",
           "inicio": "17:00"
-        },
-        {
-          "dia": 1,
-          "fin": "19:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 4,
-          "fin": "22:00",
-          "inicio": "19:00"
         },
         {
           "dia": 4,
@@ -9731,16 +8156,6 @@ export const data =
       "clases": [
         {
           "dia": 2,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 2,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 4,
           "fin": "22:00",
           "inicio": "19:00"
         },
@@ -10396,16 +8811,6 @@ export const data =
         },
         {
           "dia": 3,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 3,
-          "fin": "20:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 3,
           "fin": "20:00",
           "inicio": "18:00"
         }
@@ -10546,16 +8951,6 @@ export const data =
         },
         {
           "dia": 1,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 1,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 1,
           "fin": "22:00",
           "inicio": "19:00"
         }
@@ -10570,16 +8965,6 @@ export const data =
           "dia": 1,
           "fin": "18:00",
           "inicio": "16:00"
-        },
-        {
-          "dia": 1,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 3,
-          "fin": "21:00",
-          "inicio": "18:00"
         },
         {
           "dia": 3,
@@ -11087,16 +9472,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 2,
           "fin": "18:00",
           "inicio": "16:00"
         },
@@ -11104,16 +9479,6 @@ export const data =
           "dia": 4,
           "fin": "16:00",
           "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "18:00",
-          "inicio": "16:00"
         },
         {
           "dia": 4,
@@ -11215,16 +9580,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 2,
           "fin": "18:00",
           "inicio": "16:00"
         },
@@ -11232,16 +9587,6 @@ export const data =
           "dia": 4,
           "fin": "16:00",
           "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "18:00",
-          "inicio": "16:00"
         },
         {
           "dia": 4,
@@ -11316,16 +9661,6 @@ export const data =
         },
         {
           "dia": 1,
-          "fin": "15:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 1,
-          "fin": "17:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 1,
           "fin": "17:00",
           "inicio": "15:00"
         },
@@ -11333,16 +9668,6 @@ export const data =
           "dia": 3,
           "fin": "15:00",
           "inicio": "13:00"
-        },
-        {
-          "dia": 3,
-          "fin": "15:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 3,
-          "fin": "17:00",
-          "inicio": "15:00"
         },
         {
           "dia": 3,
@@ -11444,16 +9769,6 @@ export const data =
         },
         {
           "dia": 1,
-          "fin": "19:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 1,
-          "fin": "21:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 1,
           "fin": "21:00",
           "inicio": "19:00"
         },
@@ -11461,16 +9776,6 @@ export const data =
           "dia": 3,
           "fin": "19:00",
           "inicio": "17:00"
-        },
-        {
-          "dia": 3,
-          "fin": "19:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 3,
-          "fin": "21:00",
-          "inicio": "19:00"
         },
         {
           "dia": 3,
@@ -11518,16 +9823,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "20:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 2,
-          "fin": "22:00",
-          "inicio": "20:00"
-        },
-        {
-          "dia": 2,
           "fin": "22:00",
           "inicio": "20:00"
         },
@@ -11535,16 +9830,6 @@ export const data =
           "dia": 4,
           "fin": "20:00",
           "inicio": "18:00"
-        },
-        {
-          "dia": 4,
-          "fin": "20:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 4,
-          "fin": "22:00",
-          "inicio": "20:00"
         },
         {
           "dia": 4,
@@ -11592,16 +9877,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "09:00",
-          "inicio": "07:00"
-        },
-        {
-          "dia": 2,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 2,
           "fin": "11:00",
           "inicio": "09:00"
         },
@@ -11609,16 +9884,6 @@ export const data =
           "dia": 4,
           "fin": "09:00",
           "inicio": "07:00"
-        },
-        {
-          "dia": 4,
-          "fin": "09:00",
-          "inicio": "07:00"
-        },
-        {
-          "dia": 4,
-          "fin": "11:00",
-          "inicio": "09:00"
         },
         {
           "dia": 4,
@@ -11639,16 +9904,6 @@ export const data =
         },
         {
           "dia": 1,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 1,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 1,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -11656,16 +9911,6 @@ export const data =
           "dia": 3,
           "fin": "11:00",
           "inicio": "09:00"
-        },
-        {
-          "dia": 3,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 3,
-          "fin": "13:00",
-          "inicio": "11:00"
         },
         {
           "dia": 3,
@@ -11686,16 +9931,6 @@ export const data =
         },
         {
           "dia": 1,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 1,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 1,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -11703,16 +9938,6 @@ export const data =
           "dia": 3,
           "fin": "11:00",
           "inicio": "09:00"
-        },
-        {
-          "dia": 3,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 3,
-          "fin": "13:00",
-          "inicio": "11:00"
         },
         {
           "dia": 3,
@@ -11733,16 +9958,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 2,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -11750,16 +9965,6 @@ export const data =
           "dia": 5,
           "fin": "11:00",
           "inicio": "09:00"
-        },
-        {
-          "dia": 5,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 5,
-          "fin": "13:00",
-          "inicio": "11:00"
         },
         {
           "dia": 5,
@@ -11780,16 +9985,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 2,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -11797,16 +9992,6 @@ export const data =
           "dia": 5,
           "fin": "11:00",
           "inicio": "09:00"
-        },
-        {
-          "dia": 5,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 5,
-          "fin": "13:00",
-          "inicio": "11:00"
         },
         {
           "dia": 5,
@@ -11827,16 +10012,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 2,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -11844,16 +10019,6 @@ export const data =
           "dia": 5,
           "fin": "11:00",
           "inicio": "09:00"
-        },
-        {
-          "dia": 5,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 5,
-          "fin": "13:00",
-          "inicio": "11:00"
         },
         {
           "dia": 5,
@@ -11874,16 +10039,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 2,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -11891,16 +10046,6 @@ export const data =
           "dia": 5,
           "fin": "11:00",
           "inicio": "09:00"
-        },
-        {
-          "dia": 5,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 5,
-          "fin": "13:00",
-          "inicio": "11:00"
         },
         {
           "dia": 5,
@@ -11921,16 +10066,6 @@ export const data =
         },
         {
           "dia": 1,
-          "fin": "15:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 1,
-          "fin": "17:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 1,
           "fin": "17:00",
           "inicio": "15:00"
         },
@@ -11938,16 +10073,6 @@ export const data =
           "dia": 3,
           "fin": "15:00",
           "inicio": "13:00"
-        },
-        {
-          "dia": 3,
-          "fin": "15:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 3,
-          "fin": "17:00",
-          "inicio": "15:00"
         },
         {
           "dia": 3,
@@ -12022,16 +10147,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 2,
           "fin": "18:00",
           "inicio": "16:00"
         },
@@ -12039,16 +10154,6 @@ export const data =
           "dia": 4,
           "fin": "16:00",
           "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "18:00",
-          "inicio": "16:00"
         },
         {
           "dia": 4,
@@ -12096,26 +10201,6 @@ export const data =
         },
         {
           "dia": 1,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 1,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 1,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 1,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 1,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -12123,26 +10208,6 @@ export const data =
           "dia": 3,
           "fin": "11:00",
           "inicio": "09:00"
-        },
-        {
-          "dia": 3,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 3,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 3,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 3,
-          "fin": "13:00",
-          "inicio": "11:00"
         },
         {
           "dia": 3,
@@ -12207,16 +10272,6 @@ export const data =
         },
         {
           "dia": 3,
-          "fin": "15:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 3,
-          "fin": "17:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 3,
           "fin": "17:00",
           "inicio": "15:00"
         },
@@ -12224,16 +10279,6 @@ export const data =
           "dia": 5,
           "fin": "15:00",
           "inicio": "13:00"
-        },
-        {
-          "dia": 5,
-          "fin": "15:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 5,
-          "fin": "17:00",
-          "inicio": "15:00"
         },
         {
           "dia": 5,
@@ -12281,16 +10326,6 @@ export const data =
         },
         {
           "dia": 1,
-          "fin": "19:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 1,
-          "fin": "21:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 1,
           "fin": "21:00",
           "inicio": "19:00"
         },
@@ -12298,16 +10333,6 @@ export const data =
           "dia": 3,
           "fin": "19:00",
           "inicio": "17:00"
-        },
-        {
-          "dia": 3,
-          "fin": "19:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 3,
-          "fin": "21:00",
-          "inicio": "19:00"
         },
         {
           "dia": 3,
@@ -12355,16 +10380,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "09:00",
-          "inicio": "07:00"
-        },
-        {
-          "dia": 2,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 2,
           "fin": "11:00",
           "inicio": "09:00"
         },
@@ -12372,16 +10387,6 @@ export const data =
           "dia": 4,
           "fin": "09:00",
           "inicio": "07:00"
-        },
-        {
-          "dia": 4,
-          "fin": "09:00",
-          "inicio": "07:00"
-        },
-        {
-          "dia": 4,
-          "fin": "11:00",
-          "inicio": "09:00"
         },
         {
           "dia": 4,
@@ -12429,16 +10434,6 @@ export const data =
         },
         {
           "dia": 1,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 1,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 1,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -12446,16 +10441,6 @@ export const data =
           "dia": 3,
           "fin": "11:00",
           "inicio": "09:00"
-        },
-        {
-          "dia": 3,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 3,
-          "fin": "13:00",
-          "inicio": "11:00"
         },
         {
           "dia": 3,
@@ -12476,16 +10461,6 @@ export const data =
         },
         {
           "dia": 1,
-          "fin": "09:00",
-          "inicio": "07:00"
-        },
-        {
-          "dia": 1,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 1,
           "fin": "11:00",
           "inicio": "09:00"
         },
@@ -12493,16 +10468,6 @@ export const data =
           "dia": 3,
           "fin": "09:00",
           "inicio": "07:00"
-        },
-        {
-          "dia": 3,
-          "fin": "09:00",
-          "inicio": "07:00"
-        },
-        {
-          "dia": 3,
-          "fin": "11:00",
-          "inicio": "09:00"
         },
         {
           "dia": 3,
@@ -12523,16 +10488,6 @@ export const data =
         },
         {
           "dia": 1,
-          "fin": "09:00",
-          "inicio": "07:00"
-        },
-        {
-          "dia": 1,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 1,
           "fin": "11:00",
           "inicio": "09:00"
         },
@@ -12540,16 +10495,6 @@ export const data =
           "dia": 3,
           "fin": "09:00",
           "inicio": "07:00"
-        },
-        {
-          "dia": 3,
-          "fin": "09:00",
-          "inicio": "07:00"
-        },
-        {
-          "dia": 3,
-          "fin": "11:00",
-          "inicio": "09:00"
         },
         {
           "dia": 3,
@@ -12678,16 +10623,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 2,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -12695,16 +10630,6 @@ export const data =
           "dia": 4,
           "fin": "11:00",
           "inicio": "09:00"
-        },
-        {
-          "dia": 4,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 4,
-          "fin": "13:00",
-          "inicio": "11:00"
         },
         {
           "dia": 4,
@@ -12806,16 +10731,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 2,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -12823,16 +10738,6 @@ export const data =
           "dia": 4,
           "fin": "11:00",
           "inicio": "09:00"
-        },
-        {
-          "dia": 4,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 4,
-          "fin": "13:00",
-          "inicio": "11:00"
         },
         {
           "dia": 4,
@@ -12853,16 +10758,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 2,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -12870,16 +10765,6 @@ export const data =
           "dia": 4,
           "fin": "11:00",
           "inicio": "09:00"
-        },
-        {
-          "dia": 4,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 4,
-          "fin": "13:00",
-          "inicio": "11:00"
         },
         {
           "dia": 4,
@@ -13010,16 +10895,6 @@ export const data =
           "inicio": "19:00"
         },
         {
-          "dia": 1,
-          "fin": "21:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 3,
-          "fin": "23:00",
-          "inicio": "19:00"
-        },
-        {
           "dia": 3,
           "fin": "23:00",
           "inicio": "19:00"
@@ -13034,16 +10909,6 @@ export const data =
         {
           "dia": 1,
           "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 1,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 3,
-          "fin": "13:00",
           "inicio": "09:00"
         },
         {
@@ -13065,16 +10930,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 2,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -13082,16 +10937,6 @@ export const data =
           "dia": 5,
           "fin": "11:00",
           "inicio": "09:00"
-        },
-        {
-          "dia": 5,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 5,
-          "fin": "13:00",
-          "inicio": "11:00"
         },
         {
           "dia": 5,
@@ -13139,26 +10984,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 2,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 2,
           "fin": "18:00",
           "inicio": "16:00"
         },
@@ -13166,26 +10991,6 @@ export const data =
           "dia": 4,
           "fin": "16:00",
           "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 4,
-          "fin": "18:00",
-          "inicio": "16:00"
         },
         {
           "dia": 4,
@@ -13206,26 +11011,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 2,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 2,
           "fin": "18:00",
           "inicio": "16:00"
         },
@@ -13233,26 +11018,6 @@ export const data =
           "dia": 4,
           "fin": "16:00",
           "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 4,
-          "fin": "18:00",
-          "inicio": "16:00"
         },
         {
           "dia": 4,
@@ -13273,16 +11038,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 2,
-          "fin": "13:00",
-          "inicio": "11:00"
-        },
-        {
-          "dia": 2,
           "fin": "13:00",
           "inicio": "11:00"
         },
@@ -13290,16 +11045,6 @@ export const data =
           "dia": 5,
           "fin": "11:00",
           "inicio": "09:00"
-        },
-        {
-          "dia": 5,
-          "fin": "11:00",
-          "inicio": "09:00"
-        },
-        {
-          "dia": 5,
-          "fin": "13:00",
-          "inicio": "11:00"
         },
         {
           "dia": 5,
@@ -13320,16 +11065,6 @@ export const data =
         },
         {
           "dia": 1,
-          "fin": "20:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 1,
-          "fin": "22:00",
-          "inicio": "20:00"
-        },
-        {
-          "dia": 1,
           "fin": "22:00",
           "inicio": "20:00"
         },
@@ -13337,16 +11072,6 @@ export const data =
           "dia": 3,
           "fin": "20:00",
           "inicio": "18:00"
-        },
-        {
-          "dia": 3,
-          "fin": "20:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 3,
-          "fin": "22:00",
-          "inicio": "20:00"
         },
         {
           "dia": 3,
@@ -13367,16 +11092,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 2,
           "fin": "18:00",
           "inicio": "16:00"
         },
@@ -13384,16 +11099,6 @@ export const data =
           "dia": 4,
           "fin": "16:00",
           "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "18:00",
-          "inicio": "16:00"
         },
         {
           "dia": 4,
@@ -13457,16 +11162,6 @@ export const data =
           "inicio": "08:00"
         },
         {
-          "dia": 1,
-          "fin": "11:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 3,
-          "fin": "11:00",
-          "inicio": "08:00"
-        },
-        {
           "dia": 3,
           "fin": "11:00",
           "inicio": "08:00"
@@ -13501,16 +11196,6 @@ export const data =
           "inicio": "14:00"
         },
         {
-          "dia": 1,
-          "fin": "17:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "15:00"
-        },
-        {
           "dia": 2,
           "fin": "18:00",
           "inicio": "15:00"
@@ -13542,16 +11227,6 @@ export const data =
         {
           "dia": 2,
           "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 2,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "18:00",
           "inicio": "14:00"
         },
         {
@@ -13606,16 +11281,6 @@ export const data =
           "inicio": "08:00"
         },
         {
-          "dia": 1,
-          "fin": "12:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 3,
-          "fin": "12:00",
-          "inicio": "08:00"
-        },
-        {
           "dia": 3,
           "fin": "12:00",
           "inicio": "08:00"
@@ -13646,16 +11311,6 @@ export const data =
       "clases": [
         {
           "dia": 1,
-          "fin": "12:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 1,
-          "fin": "12:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 3,
           "fin": "12:00",
           "inicio": "08:00"
         },
@@ -13758,16 +11413,6 @@ export const data =
       "clases": [
         {
           "dia": 1,
-          "fin": "17:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 1,
-          "fin": "17:00",
-          "inicio": "13:00"
-        },
-        {
-          "dia": 3,
           "fin": "17:00",
           "inicio": "13:00"
         },
@@ -14395,16 +12040,6 @@ export const data =
         },
         {
           "dia": 5,
-          "fin": "18:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 5,
-          "fin": "20:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 5,
           "fin": "20:00",
           "inicio": "18:00"
         }
@@ -14435,16 +12070,6 @@ export const data =
         {
           "dia": 2,
           "fin": "22:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 2,
-          "fin": "22:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 5,
-          "fin": "20:00",
           "inicio": "18:00"
         },
         {
@@ -14886,16 +12511,6 @@ export const data =
         },
         {
           "dia": 1,
-          "fin": "16:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 1,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 1,
           "fin": "18:00",
           "inicio": "16:00"
         }
@@ -14992,16 +12607,6 @@ export const data =
           "inicio": "18:00"
         },
         {
-          "dia": 4,
-          "fin": "22:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 6,
-          "fin": "13:00",
-          "inicio": "08:30"
-        },
-        {
           "dia": 6,
           "fin": "13:00",
           "inicio": "08:30"
@@ -15053,16 +12658,6 @@ export const data =
           "inicio": "19:00"
         },
         {
-          "dia": 2,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 5,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
           "dia": 5,
           "fin": "22:00",
           "inicio": "19:00"
@@ -15080,39 +12675,9 @@ export const data =
           "inicio": "14:00"
         },
         {
-          "dia": 3,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 3,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
           "dia": 4,
           "fin": "16:00",
           "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "16:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 6,
-          "fin": "12:30",
-          "inicio": "08:30"
-        },
-        {
-          "dia": 6,
-          "fin": "12:30",
-          "inicio": "08:30"
         },
         {
           "dia": 6,
@@ -15258,16 +12823,6 @@ export const data =
           "inicio": "19:00"
         },
         {
-          "dia": 2,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 3,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
           "dia": 3,
           "fin": "21:00",
           "inicio": "18:00"
@@ -15283,16 +12838,6 @@ export const data =
           "dia": 1,
           "fin": "22:00",
           "inicio": "19:00"
-        },
-        {
-          "dia": 1,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 2,
-          "fin": "19:00",
-          "inicio": "16:00"
         },
         {
           "dia": 2,
@@ -15445,16 +12990,6 @@ export const data =
           "inicio": "18:00"
         },
         {
-          "dia": 1,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 3,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
           "dia": 3,
           "fin": "22:00",
           "inicio": "19:00"
@@ -15487,16 +13022,6 @@ export const data =
           "dia": 1,
           "fin": "19:00",
           "inicio": "15:00"
-        },
-        {
-          "dia": 1,
-          "fin": "19:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 1,
-          "fin": "23:00",
-          "inicio": "19:00"
         },
         {
           "dia": 1,
@@ -15551,16 +13076,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 2,
-          "fin": "23:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 2,
           "fin": "23:00",
           "inicio": "19:00"
         }
@@ -15575,16 +13090,6 @@ export const data =
           "dia": 3,
           "fin": "15:00",
           "inicio": "12:00"
-        },
-        {
-          "dia": 3,
-          "fin": "15:00",
-          "inicio": "12:00"
-        },
-        {
-          "dia": 5,
-          "fin": "23:00",
-          "inicio": "19:00"
         },
         {
           "dia": 5,
@@ -17125,16 +14630,6 @@ export const data =
           "inicio": "14:00"
         },
         {
-          "dia": 4,
-          "fin": "18:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 5,
-          "fin": "14:00",
-          "inicio": "10:00"
-        },
-        {
           "dia": 5,
           "fin": "14:00",
           "inicio": "10:00"
@@ -17164,24 +14659,9 @@ export const data =
           "inicio": "15:00"
         },
         {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "15:00"
-        },
-        {
           "dia": 3,
           "fin": "17:00",
           "inicio": "14:00"
-        },
-        {
-          "dia": 3,
-          "fin": "17:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 3,
-          "fin": "20:00",
-          "inicio": "17:00"
         },
         {
           "dia": 3,
@@ -17202,38 +14682,8 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 2,
-          "fin": "11:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 2,
           "fin": "18:00",
           "inicio": "15:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 5,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 5,
-          "fin": "21:00",
-          "inicio": "18:00"
         },
         {
           "dia": 5,
@@ -17254,23 +14704,8 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 2,
           "fin": "15:00",
           "inicio": "12:00"
-        },
-        {
-          "dia": 2,
-          "fin": "15:00",
-          "inicio": "12:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "15:00"
         },
         {
           "dia": 2,
@@ -17290,24 +14725,9 @@ export const data =
           "inicio": "15:00"
         },
         {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "15:00"
-        },
-        {
           "dia": 3,
           "fin": "17:00",
           "inicio": "14:00"
-        },
-        {
-          "dia": 3,
-          "fin": "17:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "21:00",
-          "inicio": "18:00"
         },
         {
           "dia": 4,
@@ -17328,21 +14748,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 4,
           "fin": "18:00",
           "inicio": "15:00"
         },
@@ -17364,24 +14769,9 @@ export const data =
           "inicio": "15:00"
         },
         {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "15:00"
-        },
-        {
           "dia": 3,
           "fin": "17:00",
           "inicio": "14:00"
-        },
-        {
-          "dia": 3,
-          "fin": "17:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "21:00",
-          "inicio": "18:00"
         },
         {
           "dia": 4,
@@ -17447,16 +14837,6 @@ export const data =
           "inicio": "08:00"
         },
         {
-          "dia": 1,
-          "fin": "12:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 5,
-          "fin": "15:00",
-          "inicio": "13:00"
-        },
-        {
           "dia": 5,
           "fin": "15:00",
           "inicio": "13:00"
@@ -17491,16 +14871,6 @@ export const data =
           "inicio": "15:00"
         },
         {
-          "dia": 2,
-          "fin": "17:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 3,
-          "fin": "22:00",
-          "inicio": "18:00"
-        },
-        {
           "dia": 3,
           "fin": "22:00",
           "inicio": "18:00"
@@ -17516,16 +14886,6 @@ export const data =
           "dia": 2,
           "fin": "17:00",
           "inicio": "15:00"
-        },
-        {
-          "dia": 2,
-          "fin": "17:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 2,
-          "fin": "21:00",
-          "inicio": "17:00"
         },
         {
           "dia": 2,
@@ -17545,24 +14905,9 @@ export const data =
           "inicio": "15:00"
         },
         {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "15:00"
-        },
-        {
           "dia": 3,
           "fin": "17:00",
           "inicio": "14:00"
-        },
-        {
-          "dia": 3,
-          "fin": "17:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 3,
-          "fin": "20:00",
-          "inicio": "17:00"
         },
         {
           "dia": 3,
@@ -17583,38 +14928,8 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 2,
-          "fin": "11:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 2,
           "fin": "18:00",
           "inicio": "15:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 5,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 5,
-          "fin": "21:00",
-          "inicio": "18:00"
         },
         {
           "dia": 5,
@@ -17635,23 +14950,8 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 2,
           "fin": "15:00",
           "inicio": "12:00"
-        },
-        {
-          "dia": 2,
-          "fin": "15:00",
-          "inicio": "12:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "15:00"
         },
         {
           "dia": 2,
@@ -17671,24 +14971,9 @@ export const data =
           "inicio": "15:00"
         },
         {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "15:00"
-        },
-        {
           "dia": 3,
           "fin": "17:00",
           "inicio": "14:00"
-        },
-        {
-          "dia": 3,
-          "fin": "17:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "21:00",
-          "inicio": "18:00"
         },
         {
           "dia": 4,
@@ -17709,21 +14994,6 @@ export const data =
         },
         {
           "dia": 2,
-          "fin": "11:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "15:00"
-        },
-        {
-          "dia": 4,
           "fin": "18:00",
           "inicio": "15:00"
         },
@@ -17745,24 +15015,9 @@ export const data =
           "inicio": "15:00"
         },
         {
-          "dia": 2,
-          "fin": "18:00",
-          "inicio": "15:00"
-        },
-        {
           "dia": 3,
           "fin": "17:00",
           "inicio": "14:00"
-        },
-        {
-          "dia": 3,
-          "fin": "17:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "21:00",
-          "inicio": "18:00"
         },
         {
           "dia": 4,
@@ -17840,16 +15095,6 @@ export const data =
           "dia": 2,
           "fin": "10:00",
           "inicio": "08:00"
-        },
-        {
-          "dia": 2,
-          "fin": "10:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 4,
-          "fin": "15:00",
-          "inicio": "13:00"
         },
         {
           "dia": 4,
@@ -18007,16 +15252,6 @@ export const data =
           "dia": 5,
           "fin": "18:00",
           "inicio": "16:00"
-        },
-        {
-          "dia": 5,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 5,
-          "fin": "21:00",
-          "inicio": "19:00"
         },
         {
           "dia": 5,
@@ -18586,16 +15821,6 @@ export const data =
         },
         {
           "dia": 1,
-          "fin": "21:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 1,
-          "fin": "23:00",
-          "inicio": "21:00"
-        },
-        {
-          "dia": 1,
           "fin": "23:00",
           "inicio": "21:00"
         }
@@ -18787,16 +16012,6 @@ export const data =
           "dia": 2,
           "fin": "19:00",
           "inicio": "18:00"
-        },
-        {
-          "dia": 2,
-          "fin": "19:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 2,
-          "fin": "23:00",
-          "inicio": "19:00"
         },
         {
           "dia": 2,
@@ -19522,16 +16737,6 @@ export const data =
           "dia": 1,
           "fin": "19:00",
           "inicio": "17:00"
-        },
-        {
-          "dia": 1,
-          "fin": "19:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 1,
-          "fin": "23:00",
-          "inicio": "19:00"
         },
         {
           "dia": 1,
@@ -20322,16 +17527,6 @@ export const data =
           "inicio": "16:00"
         },
         {
-          "dia": 1,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 3,
-          "fin": "19:00",
-          "inicio": "17:00"
-        },
-        {
           "dia": 3,
           "fin": "19:00",
           "inicio": "17:00"
@@ -20357,16 +17552,6 @@ export const data =
       "clases": [
         {
           "dia": 2,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 2,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 4,
           "fin": "22:00",
           "inicio": "19:00"
         },
@@ -20405,16 +17590,6 @@ export const data =
           "inicio": "14:00"
         },
         {
-          "dia": 1,
-          "fin": "17:00",
-          "inicio": "14:00"
-        },
-        {
-          "dia": 4,
-          "fin": "17:00",
-          "inicio": "14:00"
-        },
-        {
           "dia": 4,
           "fin": "17:00",
           "inicio": "14:00"
@@ -20430,16 +17605,6 @@ export const data =
           "dia": 3,
           "fin": "22:00",
           "inicio": "19:00"
-        },
-        {
-          "dia": 3,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 5,
-          "fin": "21:00",
-          "inicio": "18:00"
         },
         {
           "dia": 5,
@@ -20476,16 +17641,6 @@ export const data =
           "inicio": "18:00"
         },
         {
-          "dia": 1,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 3,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
           "dia": 3,
           "fin": "22:00",
           "inicio": "19:00"
@@ -20501,16 +17656,6 @@ export const data =
           "dia": 1,
           "fin": "22:00",
           "inicio": "19:00"
-        },
-        {
-          "dia": 1,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 3,
-          "fin": "22:00",
-          "inicio": "18:00"
         },
         {
           "dia": 3,
@@ -20543,16 +17688,6 @@ export const data =
       "clases": [
         {
           "dia": 3,
-          "fin": "19:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 3,
-          "fin": "19:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 4,
           "fin": "19:00",
           "inicio": "16:00"
         },
@@ -20625,16 +17760,6 @@ export const data =
           "inicio": "16:00"
         },
         {
-          "dia": 2,
-          "fin": "19:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 3,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
           "dia": 3,
           "fin": "22:00",
           "inicio": "19:00"
@@ -20665,16 +17790,6 @@ export const data =
       "clases": [
         {
           "dia": 1,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 1,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 5,
           "fin": "22:00",
           "inicio": "19:00"
         },
@@ -20834,16 +17949,6 @@ export const data =
           "inicio": "17:30"
         },
         {
-          "dia": 1,
-          "fin": "20:30",
-          "inicio": "17:30"
-        },
-        {
-          "dia": 5,
-          "fin": "20:30",
-          "inicio": "17:30"
-        },
-        {
           "dia": 5,
           "fin": "20:30",
           "inicio": "17:30"
@@ -20857,16 +17962,6 @@ export const data =
       "clases": [
         {
           "dia": 2,
-          "fin": "20:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 2,
-          "fin": "20:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 4,
           "fin": "20:00",
           "inicio": "17:00"
         },
@@ -20888,16 +17983,6 @@ export const data =
           "inicio": "18:00"
         },
         {
-          "dia": 2,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 4,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
           "dia": 4,
           "fin": "21:00",
           "inicio": "18:00"
@@ -20913,16 +17998,6 @@ export const data =
           "dia": 1,
           "fin": "21:00",
           "inicio": "18:00"
-        },
-        {
-          "dia": 1,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 4,
-          "fin": "22:00",
-          "inicio": "19:00"
         },
         {
           "dia": 4,
@@ -20993,16 +18068,6 @@ export const data =
           "inicio": "18:00"
         },
         {
-          "dia": 1,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 3,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
           "dia": 3,
           "fin": "22:00",
           "inicio": "19:00"
@@ -21018,16 +18083,6 @@ export const data =
           "dia": 1,
           "fin": "22:00",
           "inicio": "19:00"
-        },
-        {
-          "dia": 1,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 3,
-          "fin": "22:00",
-          "inicio": "18:00"
         },
         {
           "dia": 3,
@@ -21098,16 +18153,6 @@ export const data =
           "inicio": "19:00"
         },
         {
-          "dia": 2,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 4,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
           "dia": 4,
           "fin": "22:00",
           "inicio": "19:00"
@@ -21142,16 +18187,6 @@ export const data =
           "inicio": "08:00"
         },
         {
-          "dia": 2,
-          "fin": "11:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 4,
-          "fin": "11:00",
-          "inicio": "08:00"
-        },
-        {
           "dia": 4,
           "fin": "11:00",
           "inicio": "08:00"
@@ -21169,16 +18204,6 @@ export const data =
           "inicio": "17:30"
         },
         {
-          "dia": 1,
-          "fin": "20:30",
-          "inicio": "17:30"
-        },
-        {
-          "dia": 5,
-          "fin": "20:30",
-          "inicio": "17:30"
-        },
-        {
           "dia": 5,
           "fin": "20:30",
           "inicio": "17:30"
@@ -21192,16 +18217,6 @@ export const data =
       "clases": [
         {
           "dia": 2,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 2,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 4,
           "fin": "21:00",
           "inicio": "18:00"
         },
@@ -21257,16 +18272,6 @@ export const data =
           "inicio": "17:00"
         },
         {
-          "dia": 2,
-          "fin": "20:00",
-          "inicio": "17:00"
-        },
-        {
-          "dia": 4,
-          "fin": "20:00",
-          "inicio": "17:00"
-        },
-        {
           "dia": 4,
           "fin": "20:00",
           "inicio": "17:00"
@@ -21280,16 +18285,6 @@ export const data =
       "clases": [
         {
           "dia": 2,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 2,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 4,
           "fin": "21:00",
           "inicio": "18:00"
         },
@@ -21311,16 +18306,6 @@ export const data =
           "inicio": "18:00"
         },
         {
-          "dia": 1,
-          "fin": "21:00",
-          "inicio": "18:00"
-        },
-        {
-          "dia": 4,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
           "dia": 4,
           "fin": "22:00",
           "inicio": "19:00"
@@ -21334,16 +18319,6 @@ export const data =
       "clases": [
         {
           "dia": 1,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 1,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 3,
           "fin": "22:00",
           "inicio": "19:00"
         },
@@ -21365,16 +18340,6 @@ export const data =
           "inicio": "18:30"
         },
         {
-          "dia": 1,
-          "fin": "21:30",
-          "inicio": "18:30"
-        },
-        {
-          "dia": 4,
-          "fin": "21:30",
-          "inicio": "18:30"
-        },
-        {
           "dia": 4,
           "fin": "21:30",
           "inicio": "18:30"
@@ -21388,16 +18353,6 @@ export const data =
       "clases": [
         {
           "dia": 1,
-          "fin": "11:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 1,
-          "fin": "11:00",
-          "inicio": "08:00"
-        },
-        {
-          "dia": 4,
           "fin": "11:00",
           "inicio": "08:00"
         },
@@ -21417,16 +18372,6 @@ export const data =
           "dia": 2,
           "fin": "19:00",
           "inicio": "16:00"
-        },
-        {
-          "dia": 2,
-          "fin": "19:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 2,
-          "fin": "22:00",
-          "inicio": "19:00"
         },
         {
           "dia": 2,
@@ -21555,16 +18500,6 @@ export const data =
           "inicio": "19:00"
         },
         {
-          "dia": 2,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 4,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
           "dia": 4,
           "fin": "22:00",
           "inicio": "19:00"
@@ -21590,16 +18525,6 @@ export const data =
       "clases": [
         {
           "dia": 2,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 2,
-          "fin": "22:00",
-          "inicio": "19:00"
-        },
-        {
-          "dia": 5,
           "fin": "22:00",
           "inicio": "19:00"
         },
@@ -21677,16 +18602,6 @@ export const data =
           "dia": 3,
           "fin": "18:00",
           "inicio": "16:00"
-        },
-        {
-          "dia": 3,
-          "fin": "18:00",
-          "inicio": "16:00"
-        },
-        {
-          "dia": 3,
-          "fin": "20:00",
-          "inicio": "18:00"
         },
         {
           "dia": 3,
@@ -26255,5 +23170,5 @@ export const data =
       "nombre": "IDIOMA ITALIANO"
     }
   ],
-  "timestamp": "26/02/2023 10:28:07"
+  "timestamp": "26/02/2023 15:13:34"
 }

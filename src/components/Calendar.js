@@ -29,19 +29,13 @@ import useWindowSize from "../utils/useWindowSize";
 import CalendarAgenda from "./CalendarAgenda";
 import CalendarWeek from "./CalendarWeek";
 
+const localizer = momentLocalizer(moment);
+const min = (new Date()).setHours(7, 0, 0);
+const max = (new Date()).setHours(23, 30, 0);
+
 const MyCalendar = (props) => {
   const { events, useAgenda } = props;
-
-  const coveredDays = events.map((e) => e.start.getDay());
-  const notCoveredDays = [1, 2, 3, 4, 5].filter(
-    (d) => !coveredDays.includes(d)
-  );
-  const dummyEvents = notCoveredDays.map((i) => ({
-    start: new Date(2018, 0, i, 7),
-    end: new Date(2018, 0, i, 23, 30),
-    title: "",
-  }));
-
+  const { width } = useWindowSize();
   const {
     toggleNoCursar,
     activeTabId,
@@ -54,8 +48,17 @@ const MyCalendar = (props) => {
     removerHorarioExtra,
     actualizacion,
   } = React.useContext(DataContext);
-  const localizer = momentLocalizer(moment);
-  const { width } = useWindowSize();
+
+  const coveredDays = events.map((e) => e.start.getDay());
+  const notCoveredDays = [1, 2, 3, 4, 5].filter(
+    (d) => !coveredDays.includes(d)
+  );
+  const dummyEvents = notCoveredDays.map((i) => ({
+    start: new Date(2018, 0, i, 7),
+    end: new Date(2018, 0, i, 23, 30),
+    title: "",
+  }));
+
   const formats = {
     dayFormat: (d) => {
       const f = d
@@ -75,12 +78,7 @@ const MyCalendar = (props) => {
     timeGutterFormat: "HH:mm",
   };
 
-  const min = new Date();
-  min.setHours(7, 0, 0);
-  const max = new Date();
-  max.setHours(23, 30, 0);
-
-  function eventPropsGetter(event) {
+  const eventPropsGetter = React.useCallback((event) => {
     let color =
       event.color || (event.id ? getColor(event.curso.codigo) : "inherit");
     const style = {
@@ -108,7 +106,7 @@ const MyCalendar = (props) => {
     return {
       style: useAgenda ? style : { ...style, ...calendarWeekStyle },
     };
-  }
+  }, [activeTabId, getColor, noCursar, useAgenda]);
 
   const MateriaEvent = (props) => {
     return useAgenda ? (

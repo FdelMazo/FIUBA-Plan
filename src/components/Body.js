@@ -15,6 +15,11 @@ import Calendar from "./Calendar";
 import MateriasDrawer from "./MateriasDrawer";
 import { useHotkeys } from "react-hotkeys-hook";
 
+const today = new Date();
+const start = new Date(today.getFullYear(), 11, 19);
+const end = new Date(today.getFullYear() + 1, 0, 1);
+const isChristmasTime = today >= start && today <= end;
+
 const Body = () => {
   const { activeTabId, events } = React.useContext(DataContext);
   const [useAgenda, setUseAgenda] = React.useState(false);
@@ -26,12 +31,10 @@ const Body = () => {
     setUseAgenda(width < 1000);
   }, [width]);
 
-  const isChristmasTime = () => {
-    const today = new Date();
-    const start = new Date(today.getFullYear(), 11, 19);
-    const end = new Date(today.getFullYear() + 1, 0, 1);
-    return today >= start && today <= end;
-  };
+  const eventsShown = React.useMemo(() =>
+    events.filter((e) => e.curso.tabId === activeTabId),
+    [events, activeTabId]
+  );
 
   return (
     <Box id={useColorModeValue(undefined, "dark")} flexGrow={1}>
@@ -41,9 +44,9 @@ const Body = () => {
         useAgenda={useAgenda}
         setUseAgenda={setUseAgenda}
       />
-      {isChristmasTime() && <Snowfall color="lavender" />}
+      {isChristmasTime && <Snowfall color="lavender" />}
       <Calendar
-        events={events.filter((e) => e.curso.tabId === activeTabId)}
+        events={eventsShown}
         useAgenda={useAgenda}
       />
       <IconButton

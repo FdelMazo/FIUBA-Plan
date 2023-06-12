@@ -5,14 +5,7 @@ import WorkWeek from "react-big-calendar/lib/WorkWeek";
 
 class CalendarWeek extends WorkWeek {
   range(date, events, options) {
-    let showSabado = false;
-    for (const e of events) {
-      if (e.end.getDay() === 6) {
-        showSabado = true;
-        break;
-      }
-    }
-
+    const showSabado = !!events.find((e) => e.end.getDay() === 6);
     const DAYS = showSabado ? [1, 2, 3, 4, 5, 6] : [1, 2, 3, 4, 5];
     return Week.range(date, options).filter((d) => DAYS.includes(d.getDay()));
   }

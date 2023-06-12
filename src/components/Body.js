@@ -13,29 +13,14 @@ import { DataContext } from "../Context";
 import useWindowSize from "../utils/useWindowSize";
 import Calendar from "./Calendar";
 import MateriasDrawer from "./MateriasDrawer";
+import { useHotkeys } from "react-hotkeys-hook";
 
 const Body = () => {
   const { activeTabId, events } = React.useContext(DataContext);
   const [useAgenda, setUseAgenda] = React.useState(false);
   const { width } = useWindowSize();
   const { isOpen, onToggle, onClose } = useDisclosure();
-
-  const escKey = React.useCallback(
-    (event) => {
-      if (event.keyCode === 27) {
-        onToggle();
-      }
-    },
-    [onToggle]
-  );
-
-  React.useEffect(() => {
-    document.addEventListener("keydown", escKey, false);
-
-    return () => {
-      document.removeEventListener("keydown", escKey, false);
-    };
-  }, [escKey]);
+  useHotkeys('esc', onToggle)
 
   React.useEffect(() => {
     setUseAgenda(width < 1000);

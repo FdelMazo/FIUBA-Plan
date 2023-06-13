@@ -76,16 +76,32 @@ const useData = () => {
   );
   const [events, setEvents] = React.useState([]);
   const [noCursar, setNoCursar] = React.useState(select("noCursar") || []);
-  const [materiasToShow, setMateriasToShow] = React.useState([]);
 
   const [activeTabId, setActiveTabId] = React.useState(0);
   const [tabs, setTabs] = React.useState(select("tabs") || [{ id: 0 }]);
-  const [permalink, setPermalink] = React.useState("");
 
   const colorHash = new ColorHash({
     lightness: [0.6, 0.65, 0.7, 0.75, 0.8, 0.85],
     saturation: [0.6, 0.65, 0.7, 0.75, 0.8, 0.85],
   });
+
+  const permalink = React.useMemo(() => {
+    const savedata = {
+      cuatrimestre: jsonData.cuatrimestre,
+      selectedCarreras,
+      selectedMaterias,
+      selectedCursos,
+      noCursar,
+      tabs,
+      extraEvents,
+    }
+
+    // json => pako => b64 => hash
+    const savedataPako = pako.gzip(JSON.stringify(savedata), { to: 'string' })
+    const savedatab64 = Buffer.from(savedataPako).toString('base64');
+    return `https://fede.dm/FIUBA-Plan/#${savedatab64}`
+  }, [selectedCarreras, selectedMaterias, selectedCursos, noCursar, tabs, extraEvents])
+
 
   React.useEffect(() => {
     if (permalink === "") {
@@ -139,11 +155,6 @@ const useData = () => {
       "fiubaplan",
       JSON.stringify(savedata)
     );
-
-    // json => pako => b64 => hash
-    const savedataPako = pako.gzip(JSON.stringify(savedata), { to: 'string' })
-    const savedatab64 = Buffer.from(savedataPako).toString('base64');
-    setPermalink(`https://fede.dm/FIUBA-Plan/#${savedatab64}`);
   }, [
     selectedCarreras,
     selectedMaterias,
@@ -166,7 +177,7 @@ const useData = () => {
     []
   );
 
-  React.useEffect(() => {
+  const materiasToShow = React.useMemo(() => {
     let codigos = [];
     if (!selectedCarreras.length) {
       codigos = jsonData.materias.map((m) => m.codigo);
@@ -176,8 +187,7 @@ const useData = () => {
         .reduce((arr, c) => arr.concat(...c.materias), []);
     }
     const codigosUnicos = [...new Set(codigos)].sort();
-    let materias = codigosUnicos.filter(ValidMateria).map(getMateria);
-    setMateriasToShow(materias);
+    return codigosUnicos.filter(ValidMateria).map(getMateria);
   }, [carreras, selectedCarreras]);
 
   React.useEffect(() => {

@@ -36,7 +36,10 @@ const TabSystem = (props) => {
                 onKeyDown={(e) => {
                     if (e.keyCode === 32) {
                         e.preventDefault()
-                        inputref.current.value += " ";
+                        const ch = e.target.selectionStart;
+                        inputref.current.value = e.target.value.slice(0, ch) + " " + e.target.value.slice(ch);
+                        e.target.selectionStart = ch + 1
+                        e.target.selectionEnd = ch + 1
                     }
                 }}
                 index={tabs.map((t) => t.id).indexOf(activeTabId)}

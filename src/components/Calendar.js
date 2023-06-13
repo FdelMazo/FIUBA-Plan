@@ -64,9 +64,6 @@ const MyCalendar = (props) => {
   const { events, useAgenda } = props;
   const { width } = useWindowSize();
   const {
-    toggleNoCursar,
-    activeTabId,
-    noCursar,
     getColor,
     addHorarioExtra,
   } = React.useContext(DataContext);
@@ -83,11 +80,6 @@ const MyCalendar = (props) => {
       borderLeftColor: color,
       color: "#1f1f1f",
       cursor: "default",
-      backgroundImage: noCursar.find(
-        (nc) => nc.id === event.id && nc.tabId === activeTabId
-      )
-        ? `repeating-linear-gradient(135deg, #ededed, #ededed 10px, transparent 10px, transparent 30px)`
-        : undefined,
     };
     const calendarWeekStyle = {
       textAlign: "right",
@@ -100,7 +92,7 @@ const MyCalendar = (props) => {
     return {
       style: useAgenda ? style : { ...style, ...calendarWeekStyle },
     };
-  }, [activeTabId, getColor, noCursar, useAgenda]);
+  }, [getColor, useAgenda]);
 
   const coveredDays = events.map((e) => e.start.getDay());
   const notCoveredDays = [1, 2, 3, 4, 5].filter(
@@ -147,10 +139,6 @@ const MyCalendar = (props) => {
       components={{
         event: useAgenda ? MateriaEventAgenda : MateriaEvent,
         toolbar: TabSystem,
-      }}
-      onSelectEvent={(e) => {
-        if (!e.title) return;
-        toggleNoCursar(e.id);
       }}
       onSelectSlot={addHorarioExtra}
       dayLayoutAlgorithm="no-overlap"

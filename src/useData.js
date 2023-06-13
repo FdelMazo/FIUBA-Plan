@@ -93,7 +93,6 @@ const useData = () => {
     getFromStorage("extraEvents")?.map(coerceExtraEvent) || []
   );
   const [events, setEvents] = React.useState([]);
-  const [noCursar, setNoCursar] = React.useState(getFromStorage("noCursar") || []);
 
   const [activeTabId, setActiveTabId] = React.useState(0);
   const [tabs, setTabs] = React.useState(getFromStorage("tabs") || [{ id: 0 }]);
@@ -103,7 +102,6 @@ const useData = () => {
       cuatrimestre: jsonData.cuatrimestre,
       selections,
       selectedCursos,
-      noCursar,
       tabs,
       extraEvents,
     }
@@ -115,7 +113,7 @@ const useData = () => {
     // We want to track the selections object
     // https://github.com/facebook/react/issues/14476#issuecomment-471199055
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [JSON.stringify(selections), selectedCursos, noCursar, tabs, extraEvents])
+  }, [JSON.stringify(selections), selectedCursos, tabs, extraEvents])
 
 
   React.useEffect(() => {
@@ -145,7 +143,6 @@ const useData = () => {
         overrideSelections('carreras', savedata.selections.carreras);
         overrideSelections('materias', savedata.selections.materias);
         setSelectedCursos(savedata.selectedCursos);
-        setNoCursar(savedata.noCursar);
         setTabs(savedata.tabs);
         setExtraEvents(savedata.extraEvents.map((e) => ({
           ...e,
@@ -163,7 +160,6 @@ const useData = () => {
       cuatrimestre: jsonData.cuatrimestre,
       selections,
       selectedCursos,
-      noCursar,
       tabs,
       extraEvents,
     }
@@ -174,7 +170,7 @@ const useData = () => {
     // We want to track the selections object
     // https://github.com/facebook/react/issues/14476#issuecomment-471199055
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [JSON.stringify(selections), selectedCursos, tabs, noCursar, extraEvents]);
+  }, [JSON.stringify(selections), selectedCursos, tabs, extraEvents]);
 
   const materiasToShow = React.useMemo(() => {
     let codigos = [];
@@ -238,10 +234,6 @@ const useData = () => {
     let newSelectedCursos = selectedCursos.filter(
       (item) => !cursos.map((c) => c.codigo).includes(item.codigo)
     );
-    let newNoCursar = noCursar.filter(
-      (nc) => !cursos.some((c) => nc.id.startsWith(c.codigo))
-    );
-    setNoCursar(newNoCursar);
     setSelectedCursos(newSelectedCursos);
   };
 
@@ -256,13 +248,6 @@ const useData = () => {
         (item) =>
           item.codigo !== curso.codigo ||
           (item.codigo === curso.codigo && item.tabId !== activeTabId)
-      );
-      setNoCursar(
-        noCursar.filter(
-          (item) =>
-            !item.id.startsWith(curso.codigo) ||
-            (item.id.startsWith(curso.codigo) && item.tabId !== activeTabId)
-        )
       );
     } else {
       newSelectedCursos = [
@@ -279,27 +264,6 @@ const useData = () => {
   const limpiarCursos = (tabId) => {
     let newSelectedCursos = selectedCursos.filter((i) => i.tabId !== tabId);
     setSelectedCursos(newSelectedCursos);
-    let newNoCursar = noCursar.filter((i) => i.tabId !== tabId);
-    setNoCursar(newNoCursar);
-  };
-
-  const toggleNoCursar = (id) => {
-    let newNoCursar = [];
-    if (noCursar.find((item) => item.id === id && item.tabId === activeTabId)) {
-      newNoCursar = noCursar.filter(
-        (item) =>
-          item.id !== id || (item.id !== id && item.tabId !== activeTabId)
-      );
-    } else {
-      newNoCursar = [
-        ...noCursar,
-        {
-          id,
-          tabId: activeTabId,
-        },
-      ];
-    }
-    setNoCursar(newNoCursar);
   };
 
   const addTab = () => {
@@ -314,11 +278,6 @@ const useData = () => {
       newC.tabId = id
       return newC
     });
-    const clonedNoCursar = noCursar.filter(c => c.tabId === activeTabId).map(c => {
-      const newC = JSON.parse(JSON.stringify(c))
-      newC.tabId = id
-      return newC
-    });
     const clonedExtraEvents = extraEvents.filter(e => e.curso.tabId === activeTabId).map(e => {
       const newE = JSON.parse(JSON.stringify(e))
       newE.curso.tabId = id
@@ -327,7 +286,6 @@ const useData = () => {
       return newE
     });
     setSelectedCursos([...selectedCursos, ...clonedSelectedCursos]);
-    setNoCursar([...noCursar, ...clonedNoCursar]);
     setExtraEvents([...extraEvents, ...clonedExtraEvents]);
   };
 
@@ -408,12 +366,6 @@ const useData = () => {
   const removerHorarioExtra = (evento) => {
     const newExtras = extraEvents.filter((e) => e.id !== evento.id || e.materia !== evento.materia || (e.id === evento.id && e.curso.tabId !== activeTabId));
     setExtraEvents(newExtras);
-    const newNoCursar = noCursar.filter(
-      (item) =>
-        item.id !== evento.id ||
-        (item.id === evento.id && item.tabId !== evento.curso.tabId)
-    );
-    setNoCursar(newNoCursar);
   };
 
   const renombrarHorarioExtra = (evento, str) => {
@@ -426,11 +378,6 @@ const useData = () => {
     setExtraEvents(newExtras);
   };
   const removerHorariosExtra = () => {
-    const extraEventsIds = extraEvents.map((e) => e.id);
-    const newNoCursar = noCursar.filter(
-      (nc) => !extraEventsIds.includes(nc.id)
-    );
-    setNoCursar(newNoCursar);
     setExtraEvents([]);
   };
 
@@ -474,7 +421,6 @@ const useData = () => {
     testAll,
     toggleMateria,
     carreras,
-    noCursar,
     materiasToShow,
     actualizacion,
     selectedCursos,
@@ -482,7 +428,6 @@ const useData = () => {
     getMateria,
     events,
     toggleCurso,
-    toggleNoCursar,
     addTab,
     selectTab,
     renameTab,

@@ -273,20 +273,6 @@ const useData = () => {
       id += 1;
     }
     setTabs([...tabs, { id }]);
-    const clonedSelectedCursos = selectedCursos.filter(c => c.tabId === activeTabId).map(c => {
-      const newC = JSON.parse(JSON.stringify(c))
-      newC.tabId = id
-      return newC
-    });
-    const clonedExtraEvents = extraEvents.filter(e => e.curso.tabId === activeTabId).map(e => {
-      const newE = JSON.parse(JSON.stringify(e))
-      newE.curso.tabId = id
-      newE.start = new Date(e.start)
-      newE.end = new Date(e.end)
-      return newE
-    });
-    setSelectedCursos([...selectedCursos, ...clonedSelectedCursos]);
-    setExtraEvents([...extraEvents, ...clonedExtraEvents]);
   };
 
   const selectTab = (id) => {

@@ -48,16 +48,32 @@ const getCursosMateria = (codigoMateria) => {
   return cursos.filter(ValidCurso).map(getCurso);
 };
 
-const useData = () => {
-  const select = (key) => {
-    if (
-      JSON.parse(window.localStorage.getItem("fiubaplan"))?.cuatrimestre !==
-      jsonData.cuatrimestre
-    )
-      return null;
-    return JSON.parse(window.localStorage.getItem("fiubaplan"))?.[key];
-  };
+const coerceExtraEvent = (e) => ({
+  ...e,
+  start: new Date(e.start),
+  end: new Date(e.end),
+})
 
+const select = (key) => {
+  const json = JSON.parse(window.localStorage.getItem("fiubaplan"))
+  if (json?.cuatrimestre !== jsonData.cuatrimestre)
+    return null;
+  return json?.[key];
+};
+
+const colorHash = new ColorHash({
+  lightness: [0.6, 0.65, 0.7, 0.75, 0.8, 0.85],
+  saturation: [0.6, 0.65, 0.7, 0.75, 0.8, 0.85],
+});
+
+const carreras = jsonCarreras.map((c) => c.nombre).sort()
+const actualizacion = {
+  cuatrimestre: jsonData.cuatrimestre,
+  timestamp: jsonData.timestamp,
+}
+
+
+const useData = () => {
   const [selectedCarreras, setSelectedCarreras] = React.useState(
     select("selectedCarreras") || []
   );
@@ -68,22 +84,13 @@ const useData = () => {
     select("selectedCursos")?.filter((c) => ValidCurso(c.codigo)) || []
   );
   const [extraEvents, setExtraEvents] = React.useState(
-    select("extraEvents")?.map((e) => ({
-      ...e,
-      start: new Date(e.start),
-      end: new Date(e.end),
-    })) || []
+    select("extraEvents")?.map(coerceExtraEvent) || []
   );
   const [events, setEvents] = React.useState([]);
   const [noCursar, setNoCursar] = React.useState(select("noCursar") || []);
 
   const [activeTabId, setActiveTabId] = React.useState(0);
   const [tabs, setTabs] = React.useState(select("tabs") || [{ id: 0 }]);
-
-  const colorHash = new ColorHash({
-    lightness: [0.6, 0.65, 0.7, 0.75, 0.8, 0.85],
-    saturation: [0.6, 0.65, 0.7, 0.75, 0.8, 0.85],
-  });
 
   const permalink = React.useMemo(() => {
     const savedata = {
@@ -163,19 +170,6 @@ const useData = () => {
     noCursar,
     extraEvents,
   ]);
-
-  const carreras = React.useMemo(
-    () => jsonCarreras.map((c) => c.nombre).sort(),
-    []
-  );
-
-  const actualizacion = React.useMemo(
-    () => ({
-      cuatrimestre: jsonData.cuatrimestre,
-      timestamp: jsonData.timestamp,
-    }),
-    []
-  );
 
   const materiasToShow = React.useMemo(() => {
     let codigos = [];

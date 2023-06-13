@@ -54,7 +54,7 @@ const coerceExtraEvent = (e) => ({
   end: new Date(e.end),
 })
 
-const select = (key) => {
+const getFromStorage = (key) => {
   const json = JSON.parse(window.localStorage.getItem("fiubaplan"))
   if (json?.cuatrimestre !== jsonData.cuatrimestre)
     return null;
@@ -75,22 +75,22 @@ const actualizacion = {
 
 const useData = () => {
   const [selectedCarreras, setSelectedCarreras] = React.useState(
-    select("selectedCarreras") || []
+    getFromStorage("selectedCarreras") || []
   );
   const [selectedMaterias, setSelectedMaterias] = React.useState(
-    select("selectedMaterias")?.filter(ValidMateria) || []
+    getFromStorage("selectedMaterias")?.filter(ValidMateria) || []
   );
   const [selectedCursos, setSelectedCursos] = React.useState(
-    select("selectedCursos")?.filter((c) => ValidCurso(c.codigo)) || []
+    getFromStorage("selectedCursos")?.filter((c) => ValidCurso(c.codigo)) || []
   );
   const [extraEvents, setExtraEvents] = React.useState(
-    select("extraEvents")?.map(coerceExtraEvent) || []
+    getFromStorage("extraEvents")?.map(coerceExtraEvent) || []
   );
   const [events, setEvents] = React.useState([]);
-  const [noCursar, setNoCursar] = React.useState(select("noCursar") || []);
+  const [noCursar, setNoCursar] = React.useState(getFromStorage("noCursar") || []);
 
   const [activeTabId, setActiveTabId] = React.useState(0);
-  const [tabs, setTabs] = React.useState(select("tabs") || [{ id: 0 }]);
+  const [tabs, setTabs] = React.useState(getFromStorage("tabs") || [{ id: 0 }]);
 
   const permalink = React.useMemo(() => {
     const savedata = {

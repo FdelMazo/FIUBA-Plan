@@ -11,7 +11,7 @@ import React from "react";
 import { DataContext } from "../Context";
 
 const SelectMateria = (props) => {
-  const { materiasToShow, toggleMateria, selectedMaterias } =
+  const { materiasToShow, toggleMateria, selections } =
     React.useContext(DataContext);
   const allMaterias = React.useMemo(() => materiasToShow, [materiasToShow]);
   const [inputItems, setInputItems] = React.useState([]);
@@ -58,7 +58,7 @@ const SelectMateria = (props) => {
           color="primary.500"
           fontFamily="body"
           placeholder="Buscar Materia..."
-          _placeholder={{ color: 'gray.200' }} 
+          _placeholder={{ color: 'gray.200' }}
         />
         <InputRightElement children={<SearchIcon color="primary.500" />} />
       </InputGroup>
@@ -84,14 +84,14 @@ const SelectMateria = (props) => {
               <Box
                 borderRadius={5}
                 _hover={{ bg: "hovercolor" }}
-                color={selectedMaterias.includes(materia.codigo) ? "primary.500" : "gray.200"}
+                color={selections.materias.includes(materia.codigo) ? "primary.500" : "gray.200"}
                 fontSize="sm"
                 cursor="pointer"
                 onClick={() => toggleMateria(materia.codigo)}
                 key={materia.codigo}
               >
                 <li>
-                  {selectedMaterias.includes(materia.codigo) ? (
+                  {selections.materias.includes(materia.codigo) ? (
                     <CheckIcon mr={2} />
                   ) : (
                     <ChevronRightIcon mr={2} />

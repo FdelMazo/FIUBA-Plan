@@ -77,7 +77,7 @@ const SelectCurso = (props) => {
           </Button>
         </Box>
 
-        <Tooltip placement="top" label="Remover de todos los planes">
+        <Tooltip placement="top" label="Remover materia">
           <IconButton
             my={2}
             ml={2}

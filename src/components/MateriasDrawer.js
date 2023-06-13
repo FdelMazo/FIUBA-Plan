@@ -63,7 +63,7 @@ const MateriasDrawer = (props) => {
   const {
     tabs,
     materiasToShow,
-    selectedMaterias,
+    selections,
     limpiarCursos,
     activeTabId,
     selectedCursos,
@@ -105,7 +105,7 @@ const MateriasDrawer = (props) => {
             }}
             my={4}
           >
-            {selectedMaterias.map((m) => (
+            {selections.materias.map((m) => (
               <SelectCurso codigo={m} key={m} />
             ))}
             {!!extraEvents.length && <SelectExtra />}

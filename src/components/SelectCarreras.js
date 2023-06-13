@@ -5,7 +5,7 @@ import React from "react";
 import { DataContext } from "../Context";
 
 const SelectCarreras = () => {
-  const { carreras, toggleCarrera, selectedCarreras } =
+  const { carreras, toggleCarrera, selections } =
     React.useContext(DataContext);
   const { isOpen, getItemProps, getToggleButtonProps, getMenuProps } =
     useSelect({
@@ -48,12 +48,11 @@ const SelectCarreras = () => {
         borderColor="primary.500"
       >
         {carreras
-          .sort((a, b) => a.nombre > b.nombre)
           .map((c, index) => (
             <Box
               borderRadius={5}
               _hover={{ bg: "hovercolor" }}
-              color={selectedCarreras.includes(c) ? "primary.500" : "gray.200"}
+              color={selections.carreras.includes(c) ? "primary.500" : "gray.200"}
               cursor="pointer"
               onClick={() => toggleCarrera(c)}
               key={c}
@@ -64,7 +63,7 @@ const SelectCarreras = () => {
                   index,
                 })}
               >
-                {selectedCarreras.includes(c) ? (
+                {selections.carreras.includes(c) ? (
                   <CheckIcon mr={1} />
                 ) : (
                   <ChevronRightIcon mr={1} />

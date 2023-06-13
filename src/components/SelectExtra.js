@@ -49,12 +49,12 @@ const SelectCurso = () => {
               color="primary.500"
               rightIcon={isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
             >
-              <Text fontSize="xs">EXTRA</Text>
+              <Text fontSize="xs">EXTRACURRICULAR</Text>
             </Button>
           </Tooltip>
         </Box>
 
-        <Tooltip placement="top" label="Remover de todos los planes">
+        <Tooltip placement="top" label="Remover">
           <IconButton
             my={2}
             ml={2}

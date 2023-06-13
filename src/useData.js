@@ -1,21 +1,10 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import ColorHash from "color-hash";
 import React from "react";
 import { carreras as jsonCarreras } from "./data/carreras";
 import { data as jsonData } from "./data/horarios";
 import { Buffer } from 'buffer'
 import pako from 'pako'
-const toggler = (arr, setArr, item) => {
-  let newArr = [];
-
-  if (arr.includes(item)) {
-    newArr = arr.filter((i) => !!i && i !== item);
-  } else {
-    newArr = [...arr, item];
-  }
-
-  setArr(newArr);
-};
+import { useImmer } from "use-immer";
 
 const ValidCurso = (codigo) => {
   return !!jsonData.cursos.find((c) => c.codigo === codigo)?.clases?.length;
@@ -54,11 +43,11 @@ const coerceExtraEvent = (e) => ({
   end: new Date(e.end),
 })
 
-const getFromStorage = (key) => {
+const getFromStorage = (key, group = undefined) => {
   const json = JSON.parse(window.localStorage.getItem("fiubaplan"))
   if (json?.cuatrimestre !== jsonData.cuatrimestre)
     return null;
-  return json?.[key];
+  return group ? json?.[group]?.[key] : json?.[key];
 };
 
 const colorHash = new ColorHash({
@@ -72,14 +61,31 @@ const actualizacion = {
   timestamp: jsonData.timestamp,
 }
 
+const initialSelections = () => {
+  return {
+    carreras: getFromStorage("carreras", "selections") || [],
+    materias: getFromStorage("materias", "selections")?.filter(ValidMateria) || [],
+  }
+}
 
 const useData = () => {
-  const [selectedCarreras, setSelectedCarreras] = React.useState(
-    getFromStorage("selectedCarreras") || []
-  );
-  const [selectedMaterias, setSelectedMaterias] = React.useState(
-    getFromStorage("selectedMaterias")?.filter(ValidMateria) || []
-  );
+  const [selections, setSelections] = useImmer(initialSelections)
+  const select = (type, item) => {
+    setSelections((draft) => {
+      const arr = draft[type]
+      if (arr.includes(item)) {
+        draft[type] = draft[type].filter((i) => i && i !== item);
+      } else {
+        arr.push(item)
+      }
+    })
+  }
+  const overrideSelections = (type, newSelections) => {
+    setSelections((draft) => {
+      draft[type] = newSelections
+    })
+  }
+
   const [selectedCursos, setSelectedCursos] = React.useState(
     getFromStorage("selectedCursos")?.filter((c) => ValidCurso(c.codigo)) || []
   );
@@ -95,8 +101,7 @@ const useData = () => {
   const permalink = React.useMemo(() => {
     const savedata = {
       cuatrimestre: jsonData.cuatrimestre,
-      selectedCarreras,
-      selectedMaterias,
+      selections,
       selectedCursos,
       noCursar,
       tabs,
@@ -107,7 +112,10 @@ const useData = () => {
     const savedataPako = pako.gzip(JSON.stringify(savedata), { to: 'string' })
     const savedatab64 = Buffer.from(savedataPako).toString('base64');
     return `https://fede.dm/FIUBA-Plan/#${savedatab64}`
-  }, [selectedCarreras, selectedMaterias, selectedCursos, noCursar, tabs, extraEvents])
+    // We want to track the selections object
+    // https://github.com/facebook/react/issues/14476#issuecomment-471199055
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [JSON.stringify(selections), selectedCursos, noCursar, tabs, extraEvents])
 
 
   React.useEffect(() => {
@@ -134,8 +142,8 @@ const useData = () => {
       if (!selectedCursos.length ||
         (selectedCursos.toString() === savedata.selectedCursos.toString()) ||
         (window.confirm(`Pisar tus datos con los del permalink ingresado?\n\nGuarda tu permalink actual por las dudas!!\n${permalink}`))) {
-        setSelectedCarreras(savedata.selectedCarreras);
-        setSelectedMaterias(savedata.selectedMaterias);
+        overrideSelections('carreras', savedata.selections.carreras);
+        overrideSelections('materias', savedata.selections.materias);
         setSelectedCursos(savedata.selectedCursos);
         setNoCursar(savedata.noCursar);
         setTabs(savedata.tabs);
@@ -146,13 +154,14 @@ const useData = () => {
         })))
       }
     }
+    // Repensar para que esto no sea un hook
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [permalink])
 
   React.useEffect(() => {
     const savedata = {
       cuatrimestre: jsonData.cuatrimestre,
-      selectedCarreras,
-      selectedMaterias,
+      selections,
       selectedCursos,
       noCursar,
       tabs,
@@ -162,27 +171,23 @@ const useData = () => {
       "fiubaplan",
       JSON.stringify(savedata)
     );
-  }, [
-    selectedCarreras,
-    selectedMaterias,
-    selectedCursos,
-    tabs,
-    noCursar,
-    extraEvents,
-  ]);
+    // We want to track the selections object
+    // https://github.com/facebook/react/issues/14476#issuecomment-471199055
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [JSON.stringify(selections), selectedCursos, tabs, noCursar, extraEvents]);
 
   const materiasToShow = React.useMemo(() => {
     let codigos = [];
-    if (!selectedCarreras.length) {
+    if (!selections.carreras.length) {
       codigos = jsonData.materias.map((m) => m.codigo);
     } else {
-      codigos = selectedCarreras
+      codigos = selections.carreras
         .map(getCarrera)
         .reduce((arr, c) => arr.concat(...c.materias), []);
     }
     const codigosUnicos = [...new Set(codigos)].sort();
     return codigosUnicos.filter(ValidMateria).map(getMateria);
-  }, [carreras, selectedCarreras]);
+  }, [selections.carreras]);
 
   React.useEffect(() => {
     let eventos = selectedCursos
@@ -215,10 +220,10 @@ const useData = () => {
   }, [selectedCursos, extraEvents]);
 
   const toggleCarrera = (nombre) => {
-    toggler(selectedCarreras, setSelectedCarreras, nombre);
+    select('carreras', nombre)
   };
   const toggleMateria = (codigo) => {
-    if (selectedMaterias.includes(codigo)) {
+    if (selections.materias.includes(codigo)) {
       const remover = getCursosMateria(codigo).filter((curso) =>
         selectedCursos.find((c) => c.codigo === curso.codigo)
       );
@@ -226,7 +231,7 @@ const useData = () => {
     } else {
       toggleCurso(getCursosMateria(codigo)[0]);
     }
-    toggler(selectedMaterias, setSelectedMaterias, codigo);
+    select('materias', codigo)
   };
 
   const removerCursosDeTodosLosTabs = (cursos) => {
@@ -366,7 +371,7 @@ const useData = () => {
 
   const testAll = () => {
     const allMaterias = jsonData.materias.map((m) => m.codigo);
-    setSelectedMaterias(allMaterias);
+    overrideSelections('materias', allMaterias);
     const allCursos = jsonData.cursos.map((c) => ({
       codigo: c.codigo,
       tabId: activeTabId,
@@ -468,10 +473,8 @@ const useData = () => {
     toggleCarrera,
     testAll,
     toggleMateria,
-    selectedMaterias,
     carreras,
     noCursar,
-    selectedCarreras,
     materiasToShow,
     actualizacion,
     selectedCursos,
@@ -496,6 +499,7 @@ const useData = () => {
     renombrarHorarioExtra,
     isBlocked,
     permalink,
+    selections
   };
 };
 

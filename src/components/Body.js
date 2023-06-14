@@ -60,16 +60,6 @@ const Body = () => {
         colorScheme="primary"
         aria-label="Agregar Materia"
       />
-      {/*  <IconButton
-           position="absolute"
-           right={100}
-           bottom={10}
-           borderColor="drawerbg"
-           borderWidth={2}
-           icon={<WarningTwoIcon fontWeight="bold" color="drawerbg" />}
-           onClick={testAll}
-           colorScheme="primary"
-         /> */}
     </Box>
   );
 };

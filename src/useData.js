@@ -96,12 +96,6 @@ const useData = () => {
       }
     })
   }
-  const overrideSelections = (type, newSelections) => {
-    setSelections((draft) => {
-      draft[type] = newSelections
-    })
-  }
-
   const [selectedCursos, setSelectedCursos] = React.useState(
     permalinksavedata?.selectedCursos || getFromStorage("selectedCursos")?.filter((c) => ValidCurso(c.codigo)) || []
   );
@@ -296,16 +290,6 @@ const useData = () => {
       .reduce((a, b) => a + b, 0);
   };
 
-  const testAll = () => {
-    const allMaterias = jsonData.materias.map((m) => m.codigo);
-    overrideSelections('materias', allMaterias);
-    const allCursos = jsonData.cursos.map((c) => ({
-      codigo: c.codigo,
-      tabId: activeTabId,
-    }));
-    setSelectedCursos(allCursos);
-  };
-
   const addHorarioExtra = ({ start, end }) => {
     // We don't want simple clicks to trigger the creation of an event
     // Limiting the time event to at least 60 minutes means the user dragged the mouse, instead of just clicking
@@ -370,24 +354,8 @@ const useData = () => {
     return false;
   };
 
-  // Función para imprimir todas las materias sin carrera
-  // React.useEffect(() => {
-  //   const allMateriasInCarreras = [];
-  //   const materiasSinCasa = [];
-  //   jsonCarreras.forEach((c) => {
-  //     allMateriasInCarreras.push(...c.materias);
-  //   });
-  //   jsonData.materias.forEach((m) => {
-  //     if (!allMateriasInCarreras.includes(m.codigo)) {
-  //       materiasSinCasa.push(m.codigo)
-  //     }
-  //   });
-  //   console.log(materiasSinCasa)
-  // }, []);
-
   return {
     toggleCarrera,
-    testAll,
     toggleMateria,
     carreras,
     materiasToShow,

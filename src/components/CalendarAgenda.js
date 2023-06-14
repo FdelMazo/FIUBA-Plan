@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import React, { useRef } from "react";
+import React from "react";
 import * as dates from "react-big-calendar/lib/utils/dates";
 import { navigate } from "react-big-calendar/lib/utils/constants";
 import { inRange } from "react-big-calendar/lib/utils/eventLevels";
@@ -16,8 +16,8 @@ function Agenda({
   events,
   onSelectEvent,
 }) {
-  const contentRef = useRef(null);
-  const tbodyRef = useRef(null);
+  const contentRef = React.useRef(null);
+  const tbodyRef = React.useRef(null);
 
   const renderDay = (day, events, dayKey) => {
     const { event: Event, date: AgendaDate } = components;

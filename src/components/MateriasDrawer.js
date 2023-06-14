@@ -94,7 +94,7 @@ const MateriasDrawer = (props) => {
           <Box pt={6} px={6}>
             <SelectCarreras />
             {!!materiasToShow.length && (
-              <SelectMateria inputRef={buscarMateriaRef} />
+              <SelectMateria ref={buscarMateriaRef} />
             )}
           </Box>
 

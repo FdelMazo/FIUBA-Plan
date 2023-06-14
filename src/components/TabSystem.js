@@ -89,7 +89,7 @@ const TabSystem = (props) => {
             >
                 <Flex flexWrap="wrap">
                     {tabs.map((tab, index) => (
-                        <CustomTab key={tab.id} tab={tab} index={index} inputref={tabs[index]?.id === activeTabId ? inputref : undefined} />
+                        <CustomTab key={tab.id} tab={tab} index={index} ref={tabs[index]?.id === activeTabId ? inputref : undefined} />
                     ))}
 
                     {tabs.length < 5 && (
@@ -160,7 +160,7 @@ const CustomTab = React.forwardRef((props, ref) => {
                     <Flex>
                         <EditablePreview maxW="12ch" />
                         <EditableInput
-                            {...props.inputref ? { ref: props.inputref } : {}}
+                            ref={ref}
                             maxW="12ch"
                             _focus={{
                                 boxShadow: "0 0 0 3px rgba(183,148,244, 0.6)",

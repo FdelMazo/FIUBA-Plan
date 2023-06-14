@@ -10,15 +10,21 @@ import { useCombobox } from "downshift";
 import React from "react";
 import { DataContext } from "../Context";
 
-const SelectMateria = (props) => {
+const SelectMateria = React.forwardRef((props, ref) => {
   const { materiasToShow, toggleMateria, selections } =
     React.useContext(DataContext);
-  const allMaterias = React.useMemo(() => materiasToShow, [materiasToShow]);
-  const [inputItems, setInputItems] = React.useState([]);
-  const { inputRef } = props;
-  React.useEffect(() => {
-    setInputItems(allMaterias);
-  }, [allMaterias]);
+  const [search, setSearch] = React.useState("");
+
+  const inputItems = React.useMemo(() => {
+    return materiasToShow.filter(
+      (item) =>
+        item.nombre
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .includes(search) || item.codigo.includes(search)
+    );
+  }, [materiasToShow, search]);
 
   const {
     isOpen,
@@ -29,18 +35,7 @@ const SelectMateria = (props) => {
   } = useCombobox({
     items: inputItems,
     onInputValueChange: ({ inputValue }) => {
-      let toSearch = inputValue.toLowerCase();
-      toSearch = toSearch.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-      setInputItems(
-        allMaterias.filter(
-          (item) =>
-            item.nombre
-              .toLowerCase()
-              .normalize("NFD")
-              .replace(/[\u0300-\u036f]/g, "")
-              .includes(toSearch) || item.codigo.includes(toSearch)
-        )
-      );
+      setSearch(inputValue.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""))
     },
   });
 
@@ -51,7 +46,7 @@ const SelectMateria = (props) => {
           {...getToggleButtonProps()}
           {...getInputProps({}, { suppressRefError: true })}
           {...getComboboxProps({}, { suppressRefError: true })}
-          ref={inputRef}
+          ref={ref}
           colorScheme="primary"
           variant="outline"
           borderColor="primary"
@@ -108,6 +103,6 @@ const SelectMateria = (props) => {
       </List>
     </>
   );
-};
+});
 
 export default SelectMateria;

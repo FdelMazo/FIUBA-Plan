@@ -1,10 +1,16 @@
 import { AddIcon, SmallCloseIcon } from "@chakra-ui/icons";
 import {
+    Alert,
+    AlertDescription,
+    AlertTitle,
+    Box,
+    Button,
     Editable,
     EditableInput,
     EditablePreview,
     Flex,
     IconButton,
+    LightMode,
     Link,
     Popover,
     PopoverArrow,
@@ -16,6 +22,7 @@ import {
     Text,
     Tooltip,
     useTab,
+    useToast,
 } from "@chakra-ui/react";
 import "moment/locale/es";
 import React from "react";
@@ -28,8 +35,39 @@ const TabSystem = (props) => {
         selectTab,
         addTab,
         actualizacion,
+        readOnly,
+        setReadOnly
     } = React.useContext(DataContext);
+    const toast = useToast();
     const inputref = React.useRef(null)
+
+    if (readOnly && !toast.isActive('readonly')) {
+        toast({
+            id: 'readonly',
+            duration: null,
+            isClosable: false,
+            position: 'top',
+            render: () => (
+                <LightMode>
+                    <Alert borderRadius="md" p={5} colorScheme="purple">
+                        <Box color="gray.800">
+                            <AlertTitle>Estás navegando desde un permalink.</AlertTitle>
+                            <AlertDescription fontSize={"sm"}>
+                                Nada de lo que hagas se guarda en esta sesión.
+                                <br />
+                                No se pierden tus datos anteriores.
+                            </AlertDescription>
+                        </Box>
+                        <Button mx={2} size="sm" colorScheme="purple" variant="outline" onClick={() => {
+                            setReadOnly(false)
+                            toast.closeAll()
+                        }}>Guardar estos datos</Button>
+                    </Alert>
+                </LightMode>
+            ),
+        })
+    }
+
     return (
         <Flex borderBottom="2px solid" borderColor="inherit" justifyContent="space-between">
             <Tabs

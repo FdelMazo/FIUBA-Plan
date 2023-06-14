@@ -10,6 +10,7 @@ import {
 import {
   Alert,
   AlertDescription,
+  AlertIcon,
   AlertTitle,
   Box,
   Button,
@@ -23,7 +24,6 @@ import {
   Flex,
   Icon,
   IconButton,
-  Input,
   LightMode,
   Link,
   Tag,
@@ -148,7 +148,7 @@ const MateriasDrawer = (props) => {
                 />
               </Tooltip>
 
-              <Tooltip label="Permalink" placement="top">
+              <Tooltip label="Copiar Permalink" placement="top">
                 <IconButton
                   variant="ghost"
                   colorScheme="primary"
@@ -156,60 +156,19 @@ const MateriasDrawer = (props) => {
                   icon={<LinkIcon />}
                   onClick={() => {
                     onClose();
+                    onCopy();
                     toast.close(permalinkToast.current);
                     return (permalinkToast.current = toast({
-                      render: (props) => (
-                        <Alert
-                          borderRadius={6}
-                          p={8}
-                          mb="4em"
-                          borderColor="primary.400"
-                          borderWidth={2}
-                          bg={colorMode === "dark" ? "drawerbg" : "gray.50"}
-                          color={colorMode === "dark" ? "white" : "black"}
-                        >
-                          <Box flex="1">
-                            <AlertTitle>Permalink</AlertTitle>
-                            <AlertDescription px={5} display="block">
-                              <Text>
-                                Este es tu permalink. Entrando acá vas a poder ver <em>exactamente</em> lo que estas viendo ahora, desde cualquier celular o cualquier otra computadora.
-                              </Text>
-                              <Text>
-                                Eso sí, entrando acá <strong>se pisan todos los datos</strong> que tenes al momento de entrar al link.
-                              </Text>
-                              <Text>
-                                O sea, si se lo pasas a un compañero, avisale que entre en alguna ventana privada así no se le pisa su plan!
-                              </Text>
-                              <Text>
-                                Este feature es super experimental... si lo usaste, te ande o no te ande, me contás como te funcionó, que opinás, y desde que browser estás? Gracias!!
-                              </Text>
-
-                              <Flex alignItems="center" mt={2}>
-                                <Input
-                                  isReadOnly
-                                  value={permalink}
-                                  bg="gray.200"
-                                  color="black"
-                                  cursor="copy"
-                                  title="Copiar Permalink"
-                                  onClick={() => { onCopy(); toast.close(props.id) }}
-                                />
-                              </Flex>
-                            </AlertDescription>
-                          </Box>
-                          <CloseButton
-                            color="primary.700"
-                            onClick={() => toast.close(props.id)}
-                            position="absolute"
-                            right="8px"
-                            top="8px"
-                          />
-                        </Alert>
-                      ),
-                      status: "info",
                       position: "bottom",
-                      duration: null,
-                      isClosable: true,
+                      duration: 1500,
+                      render: () => (
+                        <LightMode>
+                          <Alert borderRadius="md" colorScheme="purple" color="gray.800">
+                            <AlertIcon as={LinkIcon} />
+                            <AlertTitle>Permalink copiado!</AlertTitle>
+                          </Alert>
+                        </LightMode>
+                      ),
                     }));
                   }}
                 />

@@ -6,6 +6,22 @@ import { Buffer } from 'buffer'
 import pako from 'pako'
 import { useImmer } from "use-immer";
 
+let permalinksavedata = null;
+if (window.location.hash) {
+  // hash => b64 => pako => json
+  const savedataPako = Buffer.from(window.location.hash.slice(1), 'base64')
+  const savedata = JSON.parse(pako.ungzip(savedataPako, { to: 'string' }));
+
+  // El permalink no esta pensado para más de un uso => Pongo el url original
+  // eslint-disable-next-line no-restricted-globals
+  history.pushState("", document.title, window.location.pathname + window.location.search);
+
+  // Solo tomo el estado del permalink si estamos en el mismo cuatrimestre
+  if (savedata.cuatrimestre === jsonData.cuatrimestre) {
+    permalinksavedata = savedata
+  }
+}
+
 const ValidCurso = (codigo) => {
   return !!jsonData.cursos.find((c) => c.codigo === codigo)?.clases?.length;
 };
@@ -63,8 +79,8 @@ const actualizacion = {
 
 const initialSelections = () => {
   return {
-    carreras: getFromStorage("carreras", "selections") || [],
-    materias: getFromStorage("materias", "selections")?.filter(ValidMateria) || [],
+    carreras: permalinksavedata?.selections.carreras || getFromStorage("carreras", "selections") || [],
+    materias: permalinksavedata?.selections.materias?.filter(ValidMateria) || getFromStorage("materias", "selections")?.filter(ValidMateria) || [],
   }
 }
 
@@ -87,15 +103,18 @@ const useData = () => {
   }
 
   const [selectedCursos, setSelectedCursos] = React.useState(
-    getFromStorage("selectedCursos")?.filter((c) => ValidCurso(c.codigo)) || []
+    permalinksavedata?.selectedCursos || getFromStorage("selectedCursos")?.filter((c) => ValidCurso(c.codigo)) || []
   );
   const [extraEvents, setExtraEvents] = React.useState(
-    getFromStorage("extraEvents")?.map(coerceExtraEvent) || []
+    permalinksavedata?.extraEvents?.map(coerceExtraEvent) || getFromStorage("extraEvents")?.map(coerceExtraEvent) || []
   );
   const [events, setEvents] = React.useState([]);
 
   const [activeTabId, setActiveTabId] = React.useState(0);
-  const [tabs, setTabs] = React.useState(getFromStorage("tabs") || [{ id: 0 }]);
+  const [tabs, setTabs] = React.useState(
+    permalinksavedata?.tabs || getFromStorage("tabs") || [{ id: 0 }]
+  );
+  const [readOnly, setReadOnly] = React.useState(!!permalinksavedata);
 
   const permalink = React.useMemo(() => {
     const savedata = {
@@ -117,45 +136,9 @@ const useData = () => {
 
 
   React.useEffect(() => {
-    if (permalink === "") {
+    if (readOnly) {
       return
     }
-    if (window.location.hash) {
-      // hash => b64 => pako => json
-      const savedataPako = Buffer.from(window.location.hash.slice(1), 'base64')
-      const savedata = JSON.parse(pako.ungzip(savedataPako, { to: 'string' }));
-
-      // El permalink no esta pensado para más de un uso => Pongo el url original
-      // eslint-disable-next-line no-restricted-globals
-      history.pushState("", document.title, window.location.pathname + window.location.search);
-
-      // Si me pasaron estado de otro cuatri, no hago nada
-      if (savedata.cuatrimestre !== jsonData.cuatrimestre) {
-        return
-      }
-
-      // Si no tengo cursos seleccionados, uso el link
-      // Si mis cursos seleccionados son los mismos que los del link, es como si entre dos veces seguidas a la pagina, uso el link
-      // Si tengo otros cursos seleccionados, pregunto
-      if (!selectedCursos.length ||
-        (selectedCursos.toString() === savedata.selectedCursos.toString()) ||
-        (window.confirm(`Pisar tus datos con los del permalink ingresado?\n\nGuarda tu permalink actual por las dudas!!\n${permalink}`))) {
-        overrideSelections('carreras', savedata.selections.carreras);
-        overrideSelections('materias', savedata.selections.materias);
-        setSelectedCursos(savedata.selectedCursos);
-        setTabs(savedata.tabs);
-        setExtraEvents(savedata.extraEvents.map((e) => ({
-          ...e,
-          start: new Date(e.start),
-          end: new Date(e.end),
-        })))
-      }
-    }
-    // Repensar para que esto no sea un hook
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [permalink])
-
-  React.useEffect(() => {
     const savedata = {
       cuatrimestre: jsonData.cuatrimestre,
       selections,
@@ -170,7 +153,7 @@ const useData = () => {
     // We want to track the selections object
     // https://github.com/facebook/react/issues/14476#issuecomment-471199055
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [JSON.stringify(selections), selectedCursos, tabs, extraEvents]);
+  }, [JSON.stringify(selections), readOnly, selectedCursos, tabs, extraEvents]);
 
   const materiasToShow = React.useMemo(() => {
     let codigos = [];
@@ -430,7 +413,9 @@ const useData = () => {
     renombrarHorarioExtra,
     isBlocked,
     permalink,
-    selections
+    selections,
+    readOnly,
+    setReadOnly
   };
 };
 

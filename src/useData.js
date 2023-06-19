@@ -1,10 +1,21 @@
-import ColorHash from "color-hash";
 import React from "react";
 import { carreras as jsonCarreras } from "./data/carreras";
 import { data as jsonData } from "./data/horarios";
 import { Buffer } from 'buffer'
 import pako from 'pako'
 import { useImmer } from "use-immer";
+import {
+  colorHash,
+  ValidCurso,
+  ValidMateria,
+  getMateria,
+  getCurso,
+  getCarrera,
+  getCursosMateria,
+  getColor,
+  getFromStorage,
+  coerceExtraEvent,
+} from "./utils";
 
 let permalinksavedata = null;
 if (window.location.hash) {
@@ -21,55 +32,6 @@ if (window.location.hash) {
     permalinksavedata = savedata
   }
 }
-
-const ValidCurso = (codigo) => {
-  return !!jsonData.cursos.find((c) => c.codigo === codigo)?.clases?.length;
-};
-
-const ValidMateria = (codigo) => {
-  const materia = jsonData.materias.find(
-    (materia) => materia.codigo === codigo
-  );
-  if (!materia) return false;
-  return !!materia.cursos.filter(ValidCurso).length;
-};
-
-const getMateria = (codigo) => {
-  return jsonData.materias.find((m) => m.codigo === codigo);
-};
-
-const getCurso = (codigo) => {
-  return jsonData.cursos.find((c) => c.codigo === codigo);
-};
-
-const getCarrera = (nombre) => {
-  return jsonCarreras.find((c) => c.nombre === nombre);
-};
-
-const getCursosMateria = (codigoMateria) => {
-  const cursos = jsonData.materias.find(
-    (m) => m.codigo === codigoMateria
-  ).cursos;
-  return cursos.filter(ValidCurso).map(getCurso);
-};
-
-const coerceExtraEvent = (e) => ({
-  ...e,
-  start: new Date(e.start),
-  end: new Date(e.end),
-})
-
-const getFromStorage = (key, group = undefined) => {
-  const json = JSON.parse(window.localStorage.getItem("fiubaplan"))
-  if (json?.cuatrimestre !== jsonData.cuatrimestre)
-    return null;
-  return group ? json?.[group]?.[key] : json?.[key];
-};
-
-const colorHash = new ColorHash({
-  lightness: [0.6, 0.65, 0.7, 0.75, 0.8, 0.85],
-  saturation: [0.6, 0.65, 0.7, 0.75, 0.8, 0.85],
-});
 
 const carreras = jsonCarreras.map((c) => c.nombre).sort()
 const actualizacion = {
@@ -266,12 +228,6 @@ const useData = () => {
     limpiarCursos(id);
     setTabs(tabs.filter((t) => t.id !== id));
     setActiveTabId(0);
-  };
-
-  const getColor = (codigo) => {
-    let curso = getCurso(codigo);
-    if (!curso) return null;
-    return colorHash.hex(curso.clases + curso.codigo + curso.docentes);
   };
 
   const getNHoras = (tabId) => {

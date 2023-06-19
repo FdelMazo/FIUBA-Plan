@@ -20,7 +20,6 @@ import {
     Tab,
     Tabs,
     Text,
-    Tooltip,
     useTab,
     useToast,
 } from "@chakra-ui/react";
@@ -129,57 +128,47 @@ const TabSystem = (props) => {
 };
 
 const CustomTab = React.forwardRef((props, ref) => {
-    const { renameTab, getNHoras, removeTab } = React.useContext(DataContext);
+    const { renameTab, removeTab } = React.useContext(DataContext);
     const tabProps = useTab({ ...props, ref });
     const isSelected = !!tabProps["aria-selected"];
 
     return (
         <Tab {...tabProps} pr={isSelected ? 2 : 4}>
-            <Tooltip
-                placement="bottom"
-                label={
-                    getNHoras(props.tab.id) > 0
-                        ? `${Math.round(getNHoras(props.tab.id) * 100) / 100
-                        } horas de cursada`
-                        : undefined
+            <Editable
+                defaultValue={
+                    props.tab.title?.trim()
+                        ? props.tab.title
+                        : `Plan #${props.index + 1}`
                 }
+                onClick={(ev) => {
+                    ev.stopPropagation();
+                }}
+                onSubmit={(str) => {
+                    renameTab(props.tab.id, str);
+                }}
             >
-                <Editable
-                    defaultValue={
-                        props.tab.title?.trim()
-                            ? props.tab.title
-                            : `Plan #${props.index + 1}`
-                    }
-                    onClick={(ev) => {
-                        ev.stopPropagation();
-                    }}
-                    onSubmit={(str) => {
-                        renameTab(props.tab.id, str);
-                    }}
-                >
-                    <Flex>
-                        <EditablePreview maxW="12ch" />
-                        <EditableInput
-                            ref={ref}
-                            maxW="12ch"
-                            _focus={{
-                                boxShadow: "0 0 0 3px rgba(183,148,244, 0.6)",
+                <Flex>
+                    <EditablePreview maxW="12ch" />
+                    <EditableInput
+                        ref={ref}
+                        maxW="12ch"
+                        _focus={{
+                            boxShadow: "0 0 0 3px rgba(183,148,244, 0.6)",
+                        }}
+                    />
+                    {props.tab.id !== 0 && isSelected && (
+                        <SmallCloseIcon
+                            _hover={{ color: "primary.900" }}
+                            boxSize="20px"
+                            ml="5px"
+                            color="primary.600"
+                            onClick={() => {
+                                removeTab(props.tab.id);
                             }}
                         />
-                        {props.tab.id !== 0 && isSelected && (
-                            <SmallCloseIcon
-                                _hover={{ color: "primary.900" }}
-                                boxSize="20px"
-                                ml="5px"
-                                color="primary.600"
-                                onClick={() => {
-                                    removeTab(props.tab.id);
-                                }}
-                            />
-                        )}
-                    </Flex>
-                </Editable>
-            </Tooltip>
+                    )}
+                </Flex>
+            </Editable>
         </Tab>
     );
 });

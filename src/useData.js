@@ -3,7 +3,7 @@ import { carreras as jsonCarreras } from "./data/carreras";
 import { data as jsonData } from "./data/horarios";
 import { Buffer } from 'buffer'
 import pako from 'pako'
-import { useImmer } from "use-immer";
+import { useImmer, useImmerReducer } from "use-immer";
 import {
   colorHash,
   ValidCurso,
@@ -54,8 +54,8 @@ const initialExtraEvents = () => {
   return permalinksavedata?.extraEvents?.map(coerceExtraEvent) || getFromStorage("extraEvents")?.map(coerceExtraEvent) || []
 }
 
-const initialTabs = () => {
-  return permalinksavedata?.tabs || getFromStorage("tabs") || [{ id: 0 }]
+const initialTabs = (defvalue) => {
+  return permalinksavedata?.tabs || getFromStorage("tabs") || defvalue
 }
 
 
@@ -75,8 +75,27 @@ const useData = () => {
   const [selectedCursos, setSelectedCursos] = React.useState(initialSelectedCursos);
   const [extraEvents, setExtraEvents] = React.useState(initialExtraEvents);
   const [events, setEvents] = React.useState([]);
+
+  const tabsReducer = (draft, action) => {
+    // eslint-disable-next-line default-case
+    switch (action.type) {
+      case "add":
+        const ids = draft.map((t) => t.id);
+        let id = 0;
+        while (ids.includes(id)) {
+          id += 1;
+        }
+        return void draft.push({ id });
+      case "rename":
+        return void (draft.find((t) => t.id === action.id).title = action.title);
+      case "remove":
+        // limpiarCursos(action.id);
+        return draft.filter((t) => t.id !== action.id);
+    }
+  }
+
+  const [tabs, tabsDispatch] = useImmerReducer(tabsReducer, [{ id: 0 }], initialTabs);
   const [activeTabId, setActiveTabId] = React.useState(0);
-  const [tabs, setTabs] = React.useState(initialTabs);
   const [readOnly, setReadOnly] = React.useState(!!permalinksavedata);
 
   const permalink = React.useMemo(() => {
@@ -212,29 +231,8 @@ const useData = () => {
     setSelectedCursos(newSelectedCursos);
   };
 
-  const addTab = () => {
-    const ids = tabs.map((t) => t.id);
-    let id = 0;
-    while (ids.includes(id)) {
-      id += 1;
-    }
-    setTabs([...tabs, { id }]);
-  };
-
   const selectTab = (id) => {
     setActiveTabId(id);
-  };
-
-  const renameTab = (id, newtitle) => {
-    let newTabs = [...tabs];
-    newTabs.find((t) => t.id === id).title = newtitle;
-    setTabs(newTabs);
-  };
-
-  const removeTab = (id) => {
-    limpiarCursos(id);
-    setTabs(tabs.filter((t) => t.id !== id));
-    setActiveTabId(0);
   };
 
   const addHorarioExtra = ({ start, end }) => {
@@ -312,10 +310,8 @@ const useData = () => {
     getMateria,
     events,
     toggleCurso,
-    addTab,
     selectTab,
-    renameTab,
-    removeTab,
+    tabsDispatch,
     tabs,
     activeTabId,
     getCursosMateria,

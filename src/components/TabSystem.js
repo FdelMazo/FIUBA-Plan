@@ -135,6 +135,7 @@ const CustomTab = React.forwardRef((props, ref) => {
     return (
         <Tab {...tabProps} pr={isSelected ? 2 : 4}>
             <Editable
+                isPreviewFocusable={isSelected}
                 defaultValue={
                     props.tab.title?.trim()
                         ? props.tab.title

@@ -46,6 +46,19 @@ const initialSelections = () => {
   }
 }
 
+const initialSelectedCursos = () => {
+  return permalinksavedata?.selectedCursos?.filter((c) => ValidCurso(c.codigo)) || getFromStorage("selectedCursos")?.filter((c) => ValidCurso(c.codigo)) || []
+}
+
+const initialExtraEvents = () => {
+  return permalinksavedata?.extraEvents?.map(coerceExtraEvent) || getFromStorage("extraEvents")?.map(coerceExtraEvent) || []
+}
+
+const initialTabs = () => {
+  return permalinksavedata?.tabs || getFromStorage("tabs") || [{ id: 0 }]
+}
+
+
 const useData = () => {
   const [selections, setSelections] = useImmer(initialSelections)
   const select = (type, item) => {
@@ -58,18 +71,12 @@ const useData = () => {
       }
     })
   }
-  const [selectedCursos, setSelectedCursos] = React.useState(
-    permalinksavedata?.selectedCursos || getFromStorage("selectedCursos")?.filter((c) => ValidCurso(c.codigo)) || []
-  );
-  const [extraEvents, setExtraEvents] = React.useState(
-    permalinksavedata?.extraEvents?.map(coerceExtraEvent) || getFromStorage("extraEvents")?.map(coerceExtraEvent) || []
-  );
-  const [events, setEvents] = React.useState([]);
 
+  const [selectedCursos, setSelectedCursos] = React.useState(initialSelectedCursos);
+  const [extraEvents, setExtraEvents] = React.useState(initialExtraEvents);
+  const [events, setEvents] = React.useState([]);
   const [activeTabId, setActiveTabId] = React.useState(0);
-  const [tabs, setTabs] = React.useState(
-    permalinksavedata?.tabs || getFromStorage("tabs") || [{ id: 0 }]
-  );
+  const [tabs, setTabs] = React.useState(initialTabs);
   const [readOnly, setReadOnly] = React.useState(!!permalinksavedata);
 
   const permalink = React.useMemo(() => {

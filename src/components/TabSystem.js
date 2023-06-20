@@ -38,7 +38,7 @@ const TabSystem = (props) => {
         activeTabId,
         tabs,
         selectTab,
-        tabsDispatch,
+        addTab,
         readOnly,
         setReadOnly
     } = React.useContext(DataContext);
@@ -101,7 +101,9 @@ const TabSystem = (props) => {
                             alignSelf="center"
                             variant="ghost"
                             colorScheme="purple"
-                            onClick={() => tabsDispatch({ type: "add" })}
+                            onClick={() => {
+                                addTab()
+                            }}
                             icon={<AddIcon />}
                         />
                     )}
@@ -133,7 +135,7 @@ const TabSystem = (props) => {
 };
 
 const CustomTab = React.forwardRef((props, ref) => {
-    const { tabsDispatch, selectTab } = React.useContext(DataContext);
+    const { renameTab, removeTab } = React.useContext(DataContext);
     const tabProps = useTab({ ...props, ref });
     const isSelected = !!tabProps["aria-selected"];
 
@@ -150,7 +152,7 @@ const CustomTab = React.forwardRef((props, ref) => {
                     ev.stopPropagation();
                 }}
                 onSubmit={(str) => {
-                    tabsDispatch({ type: 'rename', id: props.tab.id, title: str })
+                    renameTab(props.tab.id, str)
                 }}
             >
                 <Flex>
@@ -169,8 +171,7 @@ const CustomTab = React.forwardRef((props, ref) => {
                             ml="5px"
                             color="primary.600"
                             onClick={() => {
-                                selectTab(0)
-                                tabsDispatch({ type: 'remove', id: props.tab.id })
+                                removeTab(props.tab.id)
                             }}
                         />
                     )}

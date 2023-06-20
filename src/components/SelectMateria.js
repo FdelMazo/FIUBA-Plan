@@ -10,9 +10,8 @@ import { useCombobox } from "downshift";
 import React from "react";
 import { DataContext } from "../Context";
 
-const SelectMateria = React.forwardRef((props, ref) => {
-  const { materiasToShow, toggleMateria, selections } =
-    React.useContext(DataContext);
+const SelectMateria = React.forwardRef(({ materiasToShow }, ref) => {
+  const { toggleMateria, selections } = React.useContext(DataContext);
   const [search, setSearch] = React.useState("");
 
   const inputItems = React.useMemo(() => {

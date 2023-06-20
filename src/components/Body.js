@@ -21,7 +21,7 @@ const end = new Date(today.getFullYear() + 1, 0, 1);
 const isChristmasTime = today >= start && today <= end;
 
 const Body = () => {
-  const { activeTabId, events } = React.useContext(DataContext);
+  const { events } = React.useContext(DataContext);
   const [useAgenda, setUseAgenda] = React.useState(false);
   const { width } = useWindowSize();
   const { isOpen, onToggle, onClose } = useDisclosure();
@@ -30,11 +30,6 @@ const Body = () => {
   React.useEffect(() => {
     setUseAgenda(width < 1000);
   }, [width]);
-
-  const eventsShown = React.useMemo(() =>
-    events.filter((e) => e.curso.tabId === activeTabId),
-    [events, activeTabId]
-  );
 
   return (
     <Box id={useColorModeValue(undefined, "dark")} flexGrow={1}>
@@ -46,7 +41,7 @@ const Body = () => {
       />
       {isChristmasTime && <Snowfall color="lavender" />}
       <Calendar
-        events={eventsShown}
+        events={events}
         useAgenda={useAgenda}
       />
       <IconButton

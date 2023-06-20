@@ -17,22 +17,43 @@ import {
 import { useSelect } from "downshift";
 import React from "react";
 import { DataContext } from "../Context";
+import { getColor, getCurso, getCursosMateria, getMateria } from "../utils";
 
 const SelectCurso = (props) => {
   const {
     toggleCurso,
-    activeTabId,
-    selectedCursos,
-    getMateria,
+    events,
     toggleMateria,
-    getColor,
-    isBlocked,
-    getCursosMateria,
   } = React.useContext(DataContext);
   const { codigo } = props;
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const items = React.useMemo(() => getCursosMateria(codigo), []);
-  const materia = React.useMemo(() => getMateria(codigo), [codigo, getMateria]);
+  const materia = React.useMemo(() => getMateria(codigo), [codigo]);
+
+  const isBlocked = (codigo) => {
+    const curso = getCurso(codigo);
+    const eventos = events.filter((e) => {
+      const anotherCurso = getCurso(e.curso);
+      if (!anotherCurso) return false;
+      return anotherCurso.materia !== curso.materia
+    });
+    for (const clase of curso.clases) {
+      const inicio = new Date(2018, 0, clase.dia);
+      const [inicioHora, inicioMinutos] = clase.inicio.split(":");
+      inicio.setHours(inicioHora, inicioMinutos);
+      const fin = new Date(2018, 0, clase.dia);
+      const [finHora, finMinutos] = clase.fin.split(":");
+      fin.setHours(finHora, finMinutos);
+
+      for (const evento of eventos) {
+        if (inicio < evento.end && fin > evento.start) {
+          return true;
+        }
+      }
+    }
+    return false;
+  };
+
   const allItemsBlocked = items.every((item) => isBlocked(item.codigo));
 
   const { isOpen, getItemProps, getToggleButtonProps, getMenuProps } =
@@ -49,7 +70,7 @@ const SelectCurso = (props) => {
           <Tooltip placement="left" hasArrow label={
             <>
               <Text>Todos los cursos de esta materia</Text>
-              <Text>se solapan con el resto del plan</Text>
+              <Text>se solapan con otros cursos</Text>
             </>
           }>
             <WarningTwoIcon
@@ -105,12 +126,10 @@ const SelectCurso = (props) => {
             overflowY: "scroll",
           }}
         >
-          {items.map((item, index) => {
-            const isActive = selectedCursos.find(
-              (i) => i.codigo === item.codigo && i.tabId === activeTabId
-            );
-            const color = getColor(
-              selectedCursos.find((i) => i.codigo === item.codigo)?.codigo
+        {items.map((item, index) => {
+          const isActive = events.find((i) => i.curso === item.codigo);
+          const color = getColor(
+            events.find((i) => i.curso === item.codigo)
             );
             const isItemBlocked = isBlocked(item.codigo);
             return (
@@ -122,7 +141,7 @@ const SelectCurso = (props) => {
                   isItemBlocked ? (
                     <>
                       <Text>Este curso se solapa</Text>
-                      <Text>con el resto del plan</Text>
+                      <Text>con otros cursos</Text>
                     </>
                   ) : undefined
                 }
@@ -135,7 +154,7 @@ const SelectCurso = (props) => {
                   cursor="pointer"
                   fontSize="xs"
                   px={2}
-                  onClick={() => toggleCurso(item)}
+                  onClick={() => toggleCurso(item.codigo)}
                   _notLast={{
                     borderBottom: "1px dashed violet",
                   }}

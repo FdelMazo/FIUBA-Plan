@@ -38,10 +38,9 @@ export const getCursosMateria = (codigoMateria) => {
   return cursos.filter(ValidCurso).map(getCurso);
 };
 
-export const getColor = (codigo) => {
-  let curso = getCurso(codigo);
-  if (!curso) return null;
-  return colorHash.hex(curso.clases + curso.codigo + curso.docentes);
+export const getColor = (event) => {
+  if (!event) return null
+  return colorHash.hex(event.id.toString());
 };
 
 export const getFromStorage = (key, group = undefined) => {

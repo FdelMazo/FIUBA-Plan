@@ -4,25 +4,22 @@ import { Buffer } from 'buffer'
 import pako from 'pako'
 import { useImmer, useImmerReducer } from "use-immer";
 import {
-  colorHash,
   ValidCurso,
   ValidMateria,
   getMateria,
   getCurso,
-  getCarrera,
   getCursosMateria,
-  getColor,
   getFromStorage,
   coerceExtraEvent,
 } from "./utils";
 
+// Si tengo un permalink, parseo su info y reseteo la URL
 let permalinksavedata = null;
 if (window.location.hash) {
   // hash => b64 => pako => json
   const savedataPako = Buffer.from(window.location.hash.slice(1), 'base64')
   const savedata = JSON.parse(pako.ungzip(savedataPako, { to: 'string' }));
 
-  // El permalink no esta pensado para más de un uso => Pongo el url original
   // eslint-disable-next-line no-restricted-globals
   history.pushState("", document.title, window.location.pathname + window.location.search);
 
@@ -32,29 +29,120 @@ if (window.location.hash) {
   }
 }
 
-
-const initialSelections = () => {
-  return {
-    carreras: permalinksavedata?.selections.carreras || getFromStorage("carreras", "selections") || [],
-    materias: permalinksavedata?.selections.materias?.filter(ValidMateria) || getFromStorage("materias", "selections")?.filter(ValidMateria) || [],
-  }
-}
-
-const initialSelectedCursos = () => {
-  return permalinksavedata?.selectedCursos?.filter((c) => ValidCurso(c.codigo)) || getFromStorage("selectedCursos")?.filter((c) => ValidCurso(c.codigo)) || []
-}
-
-const initialExtraEvents = () => {
-  return permalinksavedata?.extraEvents?.map(coerceExtraEvent) || getFromStorage("extraEvents")?.map(coerceExtraEvent) || []
-}
-
-const initialTabs = (defvalue) => {
-  return permalinksavedata?.tabs || getFromStorage("tabs") || defvalue
-}
-
-
 const useData = () => {
+  // ESTADO 1: Las carreras y materias tickeadas por el usuario para verlas en el drawer
   const [selections, setSelections] = useImmer(initialSelections)
+
+  // ESTADO 2: Las tabs y el nombre que el usuario les puso
+  const [activeTabId, setActiveTabId] = React.useState(0);
+
+  const tabsReducer = (draft, action) => {
+    // eslint-disable-next-line default-case
+    switch (action.type) {
+      case "add":
+        return void draft.push({ id: action.id });
+      case "rename":
+        return void (draft.find((t) => t.id === action.id).title = action.title);
+      case "remove":
+        return draft.filter((t) => t.id !== action.id);
+    }
+  }
+
+  const [tabs, tabsDispatch] = useImmerReducer(tabsReducer, [{ id: 0 }], initialTabs);
+
+  // ESTADO 3, el mas importante: Todos los eventos que hay en cada tab
+  const tabEventsReducer = (draft, action) => {
+    // eslint-disable-next-line default-case
+    switch (action.type) {
+      case "select":
+        if (getCurso(action.id)) {
+          if (!draft[activeTabId].cursos.includes(action.id)) {
+            draft[activeTabId].cursos.push(action.id);
+          } else {
+            draft[activeTabId].cursos = draft[activeTabId].cursos.filter((i) => i !== action.id);
+          }
+        } else {
+          if (!draft[activeTabId].extra.includes(action.id)) {
+            draft[activeTabId].extra.push(action.id);
+          } else {
+            draft[activeTabId].extra = draft[activeTabId].extra.filter((i) => i !== action.id);
+          }
+        }
+        return
+      case "resetTab":
+        draft[action.tabId] = { cursos: [], extra: [] };
+        return
+      case "removeMateria":
+        const codigos = getCursosMateria(action.materia).map((c) => c.codigo);
+        return Object.fromEntries(
+          Object.entries(draft).map(([tabId, { cursos, extra }]) => [
+            tabId, { cursos: cursos.filter((i) => !codigos.includes(i)), extra },
+          ]))
+      case "removeTab":
+        delete draft[activeTabId];
+        return
+      case "removeExtra":
+        return Object.fromEntries(
+          Object.entries(draft).map(([tabId, { cursos, _extra }]) => [
+            tabId, { cursos, extra: [] },
+          ]))
+    }
+  }
+
+  const [tabEvents, tabEventsDispatch] = useImmerReducer(tabEventsReducer, { 0: { cursos: [], extra: [] } }, initialTabEvents);
+
+  // ESTADO 4: Los horarios extracurriculares que agrega el usuario, y el nombre que les puso
+  const extraEventsReducer = (draft, action) => {
+    // eslint-disable-next-line default-case
+    switch (action.type) {
+      case "add":
+        return void draft.push({ id: action.event.id, start: action.event.start, end: action.event.end, title: action.event.title })
+      case "rename":
+        return void (draft.find((t) => t.id === action.id).title = action.title);
+      case "remove":
+        return draft.filter((t) => t.id !== action.id);
+      case "reset":
+        return [];
+    }
+  }
+
+  const [extraEvents, extraEventsDispatch] = useImmerReducer(extraEventsReducer, [], initialExtraEvents);
+
+  // El estado que se guarda y determina el permalink es el `savedata` del usuario
+  const savedata = React.useMemo(() => {
+    return {
+      cuatrimestre: jsonData.cuatrimestre,
+      selections,
+      tabEvents,
+      tabs,
+      extraEvents
+    }
+    // https://github.com/facebook/react/issues/14476#issuecomment-471199055
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [JSON.stringify(selections), JSON.stringify(tabEvents), JSON.stringify(tabs), JSON.stringify(extraEvents)])
+
+  // Si venimos de un permalink, estamos en una sesion de read - only hasta que el usuario quiera pisar los datos
+  const [readOnly, setReadOnly] = React.useState(!!permalinksavedata);
+
+  const permalink = React.useMemo(() => {
+    // json => pako => b64 => hash
+    const savedataPako = pako.gzip(JSON.stringify(savedata), { to: 'string' })
+    const savedatab64 = Buffer.from(savedataPako).toString('base64');
+    return `https://fede.dm/FIUBA-Plan/#${savedatab64}`
+    // https://github.com/facebook/react/issues/14476#issuecomment-471199055
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [JSON.stringify(savedata)])
+
+  React.useEffect(() => {
+    if (readOnly) return
+    window.localStorage.setItem("fiubaplan", JSON.stringify(savedata));
+    // https://github.com/facebook/react/issues/14476#issuecomment-471199055
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [JSON.stringify(savedata), readOnly])
+
+  // INTERFACES DE CADA ESTADO
+
+  // Tildar/destildar cursos, carreras y materias
   const select = (type, item) => {
     setSelections((draft) => {
       const arr = draft[type]
@@ -66,170 +154,28 @@ const useData = () => {
     })
   }
 
-  const [selectedCursos, setSelectedCursos] = React.useState(initialSelectedCursos);
-  const [extraEvents, setExtraEvents] = React.useState(initialExtraEvents);
-  const [events, setEvents] = React.useState([]);
-
-  const tabsReducer = (draft, action) => {
-    // eslint-disable-next-line default-case
-    switch (action.type) {
-      case "add":
-        const ids = draft.map((t) => t.id);
-        let id = 0;
-        while (ids.includes(id)) {
-          id += 1;
-        }
-        return void draft.push({ id });
-      case "rename":
-        return void (draft.find((t) => t.id === action.id).title = action.title);
-      case "remove":
-        // limpiarCursos(action.id);
-        return draft.filter((t) => t.id !== action.id);
-    }
-  }
-
-  const [tabs, tabsDispatch] = useImmerReducer(tabsReducer, [{ id: 0 }], initialTabs);
-  const [activeTabId, setActiveTabId] = React.useState(0);
-  const [readOnly, setReadOnly] = React.useState(!!permalinksavedata);
-
-  const permalink = React.useMemo(() => {
-    const savedata = {
-      cuatrimestre: jsonData.cuatrimestre,
-      selections,
-      selectedCursos,
-      tabs,
-      extraEvents,
-    }
-
-    // json => pako => b64 => hash
-    const savedataPako = pako.gzip(JSON.stringify(savedata), { to: 'string' })
-    const savedatab64 = Buffer.from(savedataPako).toString('base64');
-    return `https://fede.dm/FIUBA-Plan/#${savedatab64}`
-    // We want to track the selections object
-    // https://github.com/facebook/react/issues/14476#issuecomment-471199055
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [JSON.stringify(selections), selectedCursos, tabs, extraEvents])
-
-
-  React.useEffect(() => {
-    if (readOnly) {
-      return
-    }
-    const savedata = {
-      cuatrimestre: jsonData.cuatrimestre,
-      selections,
-      selectedCursos,
-      tabs,
-      extraEvents,
-    }
-    window.localStorage.setItem(
-      "fiubaplan",
-      JSON.stringify(savedata)
-    );
-    // We want to track the selections object
-    // https://github.com/facebook/react/issues/14476#issuecomment-471199055
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [JSON.stringify(selections), readOnly, selectedCursos, tabs, extraEvents]);
-
-  const materiasToShow = React.useMemo(() => {
-    let codigos = [];
-    if (!selections.carreras.length) {
-      codigos = jsonData.materias.map((m) => m.codigo);
-    } else {
-      codigos = selections.carreras
-        .map(getCarrera)
-        .reduce((arr, c) => arr.concat(...c.materias), []);
-    }
-    const codigosUnicos = [...new Set(codigos)].sort();
-    return codigosUnicos.filter(ValidMateria).map(getMateria);
-  }, [selections.carreras]);
-
-  React.useEffect(() => {
-    let eventos = selectedCursos
-      .map((c) => ({
-        ...c,
-        ...getCurso(c.codigo),
-      }))
-      .map((curso) => {
-        let materia = getMateria(curso.materia);
-        return curso.clases.map((clase) => {
-          const inicio = new Date(2018, 0, clase.dia);
-          const [inicioHora, inicioMinutos] = clase.inicio.split(":");
-          inicio.setHours(inicioHora, inicioMinutos);
-          const fin = new Date(2018, 0, clase.dia);
-          const [finHora, finMinutos] = clase.fin.split(":");
-          fin.setHours(finHora, finMinutos);
-          return {
-            start: inicio,
-            end: fin,
-            id: `${curso.codigo}-${inicio}`,
-            title: curso.docentes,
-            tooltip: `[${materia.codigo}] ${materia.nombre}\n${curso.docentes}`,
-            materia: `[${materia.codigo}] ${materia.nombre}`,
-            curso,
-          };
-        });
-      })
-      .reduce((arr, e) => arr.concat(...e), []);
-    setEvents([...eventos, ...extraEvents]);
-  }, [selectedCursos, extraEvents]);
-
   const toggleCarrera = (nombre) => {
     select('carreras', nombre)
   };
+
   const toggleMateria = (codigo) => {
     if (selections.materias.includes(codigo)) {
-      const remover = getCursosMateria(codigo).filter((curso) =>
-        selectedCursos.find((c) => c.codigo === curso.codigo)
-      );
-      removerCursosDeTodosLosTabs(remover);
+      // Si destildamos una materia, removemos todos sus eventos
+      tabEventsDispatch({ type: "removeMateria", materia: codigo });
     } else {
-      toggleCurso(getCursosMateria(codigo)[0]);
+      // Si tildamos una materia, agregamos el primer curso
+      toggleCurso(getCursosMateria(codigo)[0].codigo);
     }
     select('materias', codigo)
   };
 
-  const removerCursosDeTodosLosTabs = (cursos) => {
-    let newSelectedCursos = selectedCursos.filter(
-      (item) => !cursos.map((c) => c.codigo).includes(item.codigo)
-    );
-    setSelectedCursos(newSelectedCursos);
+  const toggleCurso = (codigo) => {
+    tabEventsDispatch({ type: "select", id: codigo, tabId: activeTabId });
   };
 
-  const toggleCurso = (curso) => {
-    let newSelectedCursos = [];
-    if (
-      selectedCursos.find(
-        (item) => item.codigo === curso.codigo && item.tabId === activeTabId
-      )
-    ) {
-      newSelectedCursos = selectedCursos.filter(
-        (item) =>
-          item.codigo !== curso.codigo ||
-          (item.codigo === curso.codigo && item.tabId !== activeTabId)
-      );
-    } else {
-      newSelectedCursos = [
-        ...selectedCursos,
-        {
-          codigo: curso.codigo,
-          tabId: activeTabId,
-        },
-      ];
-    }
-    setSelectedCursos(newSelectedCursos);
-  };
 
-  const limpiarCursos = (tabId) => {
-    let newSelectedCursos = selectedCursos.filter((i) => i.tabId !== tabId);
-    setSelectedCursos(newSelectedCursos);
-  };
-
-  const selectTab = (id) => {
-    setActiveTabId(id);
-  };
-
-  const addHorarioExtra = ({ start, end }) => {
+  // Agregar, eliminar, renombrar horarios extras
+  const addExtra = ({ start, end }) => {
     // We don't want simple clicks to trigger the creation of an event
     // Limiting the time event to at least 60 minutes means the user dragged the mouse, instead of just clicking
     const minutes = Math.floor(((end - start) / 1000) / 60);
@@ -239,86 +185,157 @@ const useData = () => {
     const randomLetter = String.fromCharCode(
       65 + Math.floor(id % 23) + Math.floor(id % 3)
     );
-    setExtraEvents([
-      ...extraEvents,
-      {
-        start,
-        end,
-        id: id.toString(),
-        title: "ACTIVIDAD EXTRACURRICULAR",
-        materia: "ACTIVIDAD " + randomLetter,
-        tooltip: `ACTIVIDAD ${randomLetter}\nACTIVIDAD EXTRACURRICULAR`,
-        curso: { tabId: activeTabId },
-        color: colorHash.hex(id.toString()),
-        isExtra: true,
-      },
-    ]);
+    const title = `ACTIVIDAD ${randomLetter}`
+
+    extraEventsDispatch({ type: 'add', event: { start, end, id, title } })
+    toggleExtra(id)
   };
 
-  const removerHorarioExtra = (evento) => {
-    const newExtras = extraEvents.filter((e) => e.id !== evento.id || e.materia !== evento.materia || (e.id === evento.id && e.curso.tabId !== activeTabId));
-    setExtraEvents(newExtras);
+  const toggleExtra = (id) => {
+    tabEventsDispatch({ type: "select", id });
+    // Si no esta solo un tabevent, llamar a removeextra
   };
 
-  const renombrarHorarioExtra = (evento, str) => {
-    let nuevoNombre = str.trim() ? str.trim() : "EXTRA";
-    let newExtras = [...extraEvents];
-    newExtras.find((e) => e.id === evento.id && e.materia === evento.materia && e.curso.tabId === activeTabId).materia = nuevoNombre;
-    newExtras.find(
-      (e) => e.id === evento.id && e.tooltip === evento.tooltip
-    ).tooltip = `${nuevoNombre}\nACTIVIDAD EXTRACURRICULAR`;
-    setExtraEvents(newExtras);
-  };
-  const removerHorariosExtra = () => {
-    setExtraEvents([]);
+  const removeExtra = (id) => {
+    // si esta en tabEvents, removerlo
+    extraEventsDispatch({ type: 'remove', id })
   };
 
-  const isBlocked = (codigo) => {
-    const curso = getCurso(codigo);
-    const eventos = events.filter((e) => e.curso.materia !== curso.materia && e.curso.tabId === activeTabId);
-    for (const clase of curso.clases) {
-      const inicio = new Date(2018, 0, clase.dia);
-      const [inicioHora, inicioMinutos] = clase.inicio.split(":");
-      inicio.setHours(inicioHora, inicioMinutos);
-      const fin = new Date(2018, 0, clase.dia);
-      const [finHora, finMinutos] = clase.fin.split(":");
-      fin.setHours(finHora, finMinutos);
+  const renameExtra = (id, str) => {
+    extraEventsDispatch({ type: 'rename', id: id, title: str.trim() || "EXTRA" })
+  };
 
-      for (const evento of eventos) {
-        if (inicio < evento.end && fin > evento.start) {
-          return true;
-        }
-      }
+  const removeAllExtra = () => {
+    extraEventsDispatch({ type: 'reset' })
+  };
+
+  // Agregar, eliminar, renombrar tabs
+  const limpiarTab = (tabId) => {
+    tabEventsDispatch({ type: "resetTab", tabId });
+  };
+
+  const selectTab = (id) => {
+    setActiveTabId(id);
+  };
+
+  const addTab = () => {
+    const ids = tabs.map((t) => t.id);
+    let id = 0;
+    while (ids.includes(id)) {
+      id += 1;
     }
-    return false;
-  };
+    tabsDispatch({ type: "add", id })
+    tabEventsDispatch({ type: "resetTab", tabId: id })
+  }
+
+  const renameTab = (id, title) => {
+    tabsDispatch({ type: 'rename', id, title })
+  }
+
+  const removeTab = (id) => {
+    selectTab(0)
+    tabsDispatch({ type: 'remove', id })
+  }
+
+  // Los eventos a mostrar en el calendario son todos los cursos seleccionados por el usuario
+  // y los horarios extracurriculares que esten presentes en la tab actual
+  const events = React.useMemo(() => {
+    const extraevents = tabEvents[activeTabId].extra.map(ev => {
+      const event = extraEvents.find(e => e.id === ev)
+      const title = event.title
+      const subtitle = "ACTIVIDAD EXTRACURRICULAR"
+      const tooltip = `${title}\n${subtitle}`
+
+      return {
+        start: event.start,
+        end: event.end,
+        id: event.id,
+        title,
+        subtitle,
+        tooltip,
+        curso: null,
+      }
+    })
+
+    const clases = tabEvents[activeTabId].cursos.map(getCurso).map((curso) => {
+      const materia = getMateria(curso.materia);
+      return curso.clases.map((clase) => {
+        const inicio = new Date(2018, 0, clase.dia);
+        const [inicioHora, inicioMinutos] = clase.inicio.split(":");
+        inicio.setHours(inicioHora, inicioMinutos);
+        const fin = new Date(2018, 0, clase.dia);
+        const [finHora, finMinutos] = clase.fin.split(":");
+        fin.setHours(finHora, finMinutos);
+        const title = `[${materia.codigo}] ${materia.nombre}`
+        const subtitle = curso.docentes
+        const tooltip = `[${materia.codigo}] ${materia.nombre}\n${curso.docentes}`
+
+        return {
+          start: inicio,
+          end: fin,
+          id: curso.clases + curso.codigo + curso.docentes,
+          title,
+          subtitle,
+          tooltip,
+          curso: curso.codigo,
+        };
+      })
+    }).reduce((arr, e) => arr.concat(...e), []);
+
+    if (extraEvents.length === 0) return clases
+    return [...clases, ...extraevents]
+    // https://github.com/facebook/react/issues/14476#issuecomment-471199055
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeTabId, extraEvents, JSON.stringify(tabEvents)])
+
+  console.log(tabEvents)
 
   return {
+    selections,
+    activeTabId,
+    tabs,
+    readOnly,
+    setReadOnly,
+    permalink,
     toggleCarrera,
     toggleMateria,
-    materiasToShow,
-    selectedCursos,
-    limpiarCursos,
-    getMateria,
-    events,
     toggleCurso,
+    addExtra,
+    toggleExtra,
+    removeExtra,
+    renameExtra,
+    removeAllExtra,
+    limpiarTab,
     selectTab,
-    tabsDispatch,
-    tabs,
-    activeTabId,
-    getCursosMateria,
-    getColor,
-    extraEvents,
-    addHorarioExtra,
-    removerHorarioExtra,
-    removerHorariosExtra,
-    renombrarHorarioExtra,
-    isBlocked,
-    permalink,
-    selections,
-    readOnly,
-    setReadOnly
+    addTab,
+    renameTab,
+    removeTab,
+    events,
   };
 };
 
 export default useData;
+
+// STATE INITIALIZERS: le pasamos una funcion a useState/useReducer/useImmer/useImmerReducer para evitar que se ejecuten en cada render
+const initialSelections = () => {
+  return {
+    carreras: permalinksavedata?.selections.carreras || getFromStorage("carreras", "selections") || [],
+    materias: permalinksavedata?.selections.materias?.filter(ValidMateria) || getFromStorage("materias", "selections")?.filter(ValidMateria) || [],
+  }
+}
+
+const initialTabs = (defvalue) => {
+  return permalinksavedata?.tabs || getFromStorage("tabs") || defvalue
+}
+
+const initialTabEvents = (defvalue) => {
+  const tabEvents = permalinksavedata?.tabEvents || getFromStorage("tabEvents") || defvalue
+  return Object.fromEntries(
+    Object.entries(tabEvents).map(([tabid, { cursos, extra }]) => [
+      tabid, { cursos: cursos.filter(ValidCurso), extra, },
+    ]))
+}
+
+const initialExtraEvents = (defvalue) => {
+  return permalinksavedata?.extraEvents?.map(coerceExtraEvent) || getFromStorage("extraEvents")?.map(coerceExtraEvent) || defvalue
+}

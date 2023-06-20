@@ -1,3 +1,4 @@
+import { data as jsonData } from "../data/horarios";
 import {
   CalendarIcon,
   ChatIcon,
@@ -43,6 +44,11 @@ import SelectCarreras from "./SelectCarreras";
 import SelectCurso from "./SelectCurso";
 import SelectMateria from "./SelectMateria";
 import SelectExtra from "./SelectExtra";
+import {
+  ValidMateria,
+  getMateria,
+  getCarrera,
+} from "../utils";
 
 const submitBug = (bug) => {
   if (!bug) return;
@@ -62,12 +68,10 @@ const MateriasDrawer = (props) => {
   const { useAgenda, setUseAgenda, isOpen, onClose } = props;
   const {
     tabs,
-    materiasToShow,
     selections,
-    limpiarCursos,
+    limpiarTab,
     activeTabId,
-    selectedCursos,
-    extraEvents,
+    events,
     permalink
   } = React.useContext(DataContext);
   const { colorMode, toggleColorMode } = useColorMode();
@@ -76,6 +80,19 @@ const MateriasDrawer = (props) => {
   const permalinkToast = React.useRef();
   const [showGracias, setShowGracias] = React.useState(false);
   const { onCopy } = useClipboard(permalink);
+
+  const materiasToShow = React.useMemo(() => {
+    let codigos = [];
+    if (!selections.carreras.length) {
+      codigos = jsonData.materias.map((m) => m.codigo);
+    } else {
+      codigos = selections.carreras
+        .map(getCarrera)
+        .reduce((arr, c) => arr.concat(...c.materias), []);
+    }
+    const codigosUnicos = [...new Set(codigos)].sort();
+    return codigosUnicos.filter(ValidMateria).map(getMateria);
+  }, [selections.carreras]);
 
   const buscarMateriaRef = React.useRef();
 
@@ -94,7 +111,7 @@ const MateriasDrawer = (props) => {
           <Box pt={6} px={6}>
             <SelectCarreras />
             {!!materiasToShow.length && (
-              <SelectMateria ref={buscarMateriaRef} />
+              <SelectMateria ref={buscarMateriaRef} materiasToShow={materiasToShow} />
             )}
           </Box>
 
@@ -108,11 +125,11 @@ const MateriasDrawer = (props) => {
             {selections.materias.map((m) => (
               <SelectCurso codigo={m} key={m} />
             ))}
-            {!!extraEvents.length && <SelectExtra />}
+            {/* {!!extraEvents.length && <SelectExtra />} */}
           </DrawerBody>
 
           <Flex justifyContent="space-around">
-            {!!selectedCursos.length && (
+            {!!events.length && (
               <Button
                 borderColor="primary.300"
                 borderWidth={1}
@@ -128,7 +145,7 @@ const MateriasDrawer = (props) => {
                 variant="ghost"
                 fontSize="sm"
                 onClick={() => {
-                  limpiarCursos(activeTabId);
+                  limpiarTab(activeTabId);
                 }}
               >
                 Limpiar {tabs.find((t) => t.id === activeTabId).title || "Plan"}

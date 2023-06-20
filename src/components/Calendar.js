@@ -13,29 +13,30 @@ import useWindowSize from "../useWindowSize";
 import CalendarAgenda from "./CalendarAgenda";
 import CalendarWeek from "./CalendarWeek";
 import TabSystem from "./TabSystem";
+import { getColor } from "../utils";
 
 const localizer = momentLocalizer(moment);
 const min = (new Date()).setHours(7, 0, 0);
 const max = (new Date()).setHours(23, 30, 0);
 
 const MateriaEvent = (props) => {
-  const {
-    removerHorarioExtra,
-  } = React.useContext(DataContext);
+  const { toggleExtra } = React.useContext(DataContext);
   return (<>
-    {props.event.isExtra &&
-      <CloseButton float="right" mt="-20px" size="sm" onClick={(ev) => {
+    {!props.event.curso &&
+      <CloseButton float="right" mt="-20px" size="sm"
+        onClick={(ev) => {
         ev.stopPropagation();
-        removerHorarioExtra(props.event)
-      }} />
+        toggleExtra(props.event.id);
+      }}
+    />
     }
 
     <Box>
       <Text noOfLines={[1, 2, 3]} className="rbc-agenda-event-cell" mb={2}>
-        {props.event.materia}
+        {props.event.title}
       </Text>
       <Text noOfLines={[1, 3, 5]} className="rbc-agenda-event-cell-sub">
-        {props.event.title}
+        {props.event.subtitle}
       </Text>
     </Box>
   </>)
@@ -50,11 +51,11 @@ const MateriaEventAgenda = (props) => {
       }}
     >
       <Text noOfLines={[1, 2, 3]} className="rbc-agenda-event-cell" mb={2}>
-        {props.event.materia}
+        {props.event.title}
       </Text>
     </Box>
     <Text noOfLines={[1, 3, 5]} className="rbc-agenda-event-cell-sub">
-      {props.event.title}
+      {props.event.subtitle}
     </Text>
   </Box>)
 };
@@ -63,15 +64,10 @@ const MateriaEventAgenda = (props) => {
 const MyCalendar = (props) => {
   const { events, useAgenda } = props;
   const { width } = useWindowSize();
-  const {
-    getColor,
-    addHorarioExtra,
-  } = React.useContext(DataContext);
-
+  const { addExtra } = React.useContext(DataContext);
 
   const eventPropsGetter = React.useCallback((event) => {
-    let color =
-      event.color || (event.id ? getColor(event.curso.codigo) : "inherit");
+    let color = (event.id ? getColor(event) : "inherit");
     const style = {
       borderWidth: "thin thin thin thick",
       borderRightColor: "#d2adf4", //primary.300
@@ -92,7 +88,7 @@ const MyCalendar = (props) => {
     return {
       style: useAgenda ? style : { ...style, ...calendarWeekStyle },
     };
-  }, [getColor, useAgenda]);
+  }, [useAgenda]);
 
   const coveredDays = events.map((e) => e.start.getDay());
   const notCoveredDays = [1, 2, 3, 4, 5].filter(
@@ -140,7 +136,7 @@ const MyCalendar = (props) => {
         event: useAgenda ? MateriaEventAgenda : MateriaEvent,
         toolbar: TabSystem,
       }}
-      onSelectSlot={addHorarioExtra}
+      onSelectSlot={addExtra}
       dayLayoutAlgorithm="no-overlap"
       tooltipAccessor="tooltip"
     />

@@ -9,7 +9,7 @@ import React from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import { DataContext } from "../Context";
-import useWindowSize from "../utils/useWindowSize";
+import useWindowSize from "../useWindowSize";
 import CalendarAgenda from "./CalendarAgenda";
 import CalendarWeek from "./CalendarWeek";
 import TabSystem from "./TabSystem";

@@ -13,9 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - run: pip install -r requirements.txt
+    - run: pip install -r py/requirements.txt
     - name: Run Jupy
-      run: jupyter nbconvert --to python --execute get_cursos.ipynb
+      run: jupyter nbconvert --to python --execute py/get_cursos.ipynb
     - name: Check if there were modifications
       id: check
       run: |

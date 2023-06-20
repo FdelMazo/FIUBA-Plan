@@ -1,3 +1,4 @@
+import { data as jsonData } from "../data/horarios";
 import { AddIcon, SmallCloseIcon } from "@chakra-ui/icons";
 import {
     Alert,
@@ -27,13 +28,17 @@ import "moment/locale/es";
 import React from "react";
 import { DataContext } from "../Context";
 
+const actualizacion = {
+    cuatrimestre: jsonData.cuatrimestre,
+    timestamp: jsonData.timestamp,
+}
+
 const TabSystem = (props) => {
     const {
         activeTabId,
         tabs,
         selectTab,
         tabsDispatch,
-        actualizacion,
         readOnly,
         setReadOnly
     } = React.useContext(DataContext);

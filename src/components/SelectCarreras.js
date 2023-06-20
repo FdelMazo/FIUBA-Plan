@@ -3,10 +3,12 @@ import { Box, Button, List, Flex, Tooltip, Link, Icon } from "@chakra-ui/react";
 import { useSelect } from "downshift";
 import React from "react";
 import { DataContext } from "../Context";
+import { carreras as jsonCarreras } from "../data/carreras";
+
+const carreras = jsonCarreras.map((c) => c.nombre).sort()
 
 const SelectCarreras = () => {
-  const { carreras, toggleCarrera, selections } =
-    React.useContext(DataContext);
+  const { toggleCarrera, selections } = React.useContext(DataContext);
   const { isOpen, getItemProps, getToggleButtonProps, getMenuProps } =
     useSelect({
       items: carreras,

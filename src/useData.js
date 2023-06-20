@@ -1,5 +1,4 @@
 import React from "react";
-import { carreras as jsonCarreras } from "./data/carreras";
 import { data as jsonData } from "./data/horarios";
 import { Buffer } from 'buffer'
 import pako from 'pako'
@@ -33,11 +32,6 @@ if (window.location.hash) {
   }
 }
 
-const carreras = jsonCarreras.map((c) => c.nombre).sort()
-const actualizacion = {
-  cuatrimestre: jsonData.cuatrimestre,
-  timestamp: jsonData.timestamp,
-}
 
 const initialSelections = () => {
   return {
@@ -302,9 +296,7 @@ const useData = () => {
   return {
     toggleCarrera,
     toggleMateria,
-    carreras,
     materiasToShow,
-    actualizacion,
     selectedCursos,
     limpiarCursos,
     getMateria,

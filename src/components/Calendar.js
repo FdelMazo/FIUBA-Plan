@@ -20,13 +20,13 @@ const min = (new Date()).setHours(7, 0, 0);
 const max = (new Date()).setHours(23, 30, 0);
 
 const MateriaEvent = (props) => {
-  const { toggleExtra } = React.useContext(DataContext);
+  const { removeExtraFromTab } = React.useContext(DataContext);
   return (<>
     {!props.event.curso &&
       <CloseButton float="right" mt="-20px" size="sm"
         onClick={(ev) => {
-        ev.stopPropagation();
-        toggleExtra(props.event.id);
+          ev.stopPropagation();
+          removeExtraFromTab(props.event.id);
       }}
     />
     }

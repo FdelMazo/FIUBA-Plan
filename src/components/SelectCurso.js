@@ -20,18 +20,16 @@ import { DataContext } from "../Context";
 import { getColor, getCurso, getCursosMateria, getMateria } from "../utils";
 import { stateReducer } from "../utils";
 
-const SelectCurso = (props) => {
+const SelectCurso = ({ codigo }) => {
   const {
     toggleCurso,
     events,
     toggleMateria,
   } = React.useContext(DataContext);
-  const { codigo } = props;
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const items = React.useMemo(() => getCursosMateria(codigo), []);
-  const materia = React.useMemo(() => getMateria(codigo), [codigo]);
+  const materia = getMateria(codigo);
+  const items = getCursosMateria(codigo)
 
-  const isBlocked = (codigo) => {
+  const isBlocked = React.useCallback((codigo) => {
     const curso = getCurso(codigo);
     const eventos = events.filter((e) => {
       const anotherCurso = getCurso(e.curso);
@@ -53,9 +51,9 @@ const SelectCurso = (props) => {
       }
     }
     return false;
-  };
+  }, [events]);
 
-  const allItemsBlocked = items.every((item) => isBlocked(item.codigo));
+  const allItemsBlocked = items.every((item) => isBlocked(item.codigo))
 
   const { isOpen, getItemProps, getToggleButtonProps, getMenuProps } =
     useSelect({
@@ -128,11 +126,10 @@ const SelectCurso = (props) => {
           }}
         >
         {items.map((item, index) => {
-          const isActive = events.find((i) => i.curso === item.codigo);
-          const color = getColor(
-            events.find((i) => i.curso === item.codigo)
-            );
-            const isItemBlocked = isBlocked(item.codigo);
+          const event = events.find((i) => i.curso === item.codigo);
+          const isActive = !!event;
+          const color = getColor(event);
+          const isItemBlocked = isBlocked(item.codigo);
             return (
               <Tooltip
                 placement="left"

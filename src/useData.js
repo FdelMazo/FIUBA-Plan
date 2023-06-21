@@ -193,13 +193,25 @@ const useData = () => {
 
   const toggleExtra = (id) => {
     tabEventsDispatch({ type: "select", id });
-    // Si no esta solo un tabevent, llamar a removeextra
   };
 
   const removeExtra = (id) => {
-    // si esta en tabEvents, removerlo
+    if (tabEvents[activeTabId].extra.includes(id)) {
+      toggleExtra(id)
+    }
     extraEventsDispatch({ type: 'remove', id })
   };
+
+  const removeExtraFromTab = (id) => {
+    const tabs = Object.values(tabEvents).filter(tab =>
+      tab.extra.includes(id)
+    )
+    if (tabs.length === 1) {
+      removeExtra(id)
+    } else {
+      toggleExtra(id)
+    }
+  }
 
   const renameExtra = (id, str) => {
     extraEventsDispatch({ type: 'rename', id: id, title: str.trim() || "EXTRA" })
@@ -288,12 +300,11 @@ const useData = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeTabId, extraEvents, JSON.stringify(tabEvents)])
 
-  console.log(tabEvents)
-
   return {
     selections,
     activeTabId,
     tabs,
+    extraEvents,
     readOnly,
     setReadOnly,
     permalink,
@@ -303,6 +314,7 @@ const useData = () => {
     addExtra,
     toggleExtra,
     removeExtra,
+    removeExtraFromTab,
     renameExtra,
     removeAllExtra,
     limpiarTab,

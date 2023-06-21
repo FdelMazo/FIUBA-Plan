@@ -4,6 +4,7 @@ import { useSelect } from "downshift";
 import React from "react";
 import { DataContext } from "../Context";
 import { carreras as jsonCarreras } from "../data/carreras";
+import { stateReducer } from "../utils";
 
 const carreras = jsonCarreras.map((c) => c.nombre).sort()
 
@@ -78,21 +79,5 @@ const SelectCarreras = () => {
     </Box>
   );
 };
-
-function stateReducer(state, actionAndChanges) {
-  const { changes, type } = actionAndChanges;
-  switch (type) {
-    case useSelect.stateChangeTypes.MenuKeyDownEnter:
-    case useSelect.stateChangeTypes.MenuKeyDownSpaceButton:
-    case useSelect.stateChangeTypes.ItemClick:
-      return {
-        ...changes,
-        isOpen: true,
-        highlightedIndex: state.highlightedIndex,
-      };
-    default:
-      return changes;
-  }
-}
 
 export default SelectCarreras;

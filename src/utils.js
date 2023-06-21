@@ -1,6 +1,7 @@
 import ColorHash from "color-hash";
 import { data as jsonData } from "./data/horarios";
 import { carreras as jsonCarreras } from "./data/carreras";
+import { useSelect } from 'downshift'
 
 export const colorHash = new ColorHash({
   lightness: [0.6, 0.65, 0.7, 0.75, 0.8, 0.85],
@@ -55,3 +56,17 @@ export const coerceExtraEvent = (e) => ({
   start: new Date(e.start),
   end: new Date(e.end),
 })
+
+export function stateReducer(state, actionAndChanges) {
+  const { changes, type } = actionAndChanges;
+  switch (type) {
+    case useSelect.stateChangeTypes.ItemClick:
+      return {
+        ...changes,
+        isOpen: true,
+        highlightedIndex: state.highlightedIndex,
+      };
+    default:
+      return changes;
+  }
+}

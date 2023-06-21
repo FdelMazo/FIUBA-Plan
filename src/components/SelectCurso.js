@@ -18,6 +18,7 @@ import { useSelect } from "downshift";
 import React from "react";
 import { DataContext } from "../Context";
 import { getColor, getCurso, getCursosMateria, getMateria } from "../utils";
+import { stateReducer } from "../utils";
 
 const SelectCurso = (props) => {
   const {
@@ -182,21 +183,5 @@ const SelectCurso = (props) => {
     </>
   );
 };
-
-function stateReducer(state, actionAndChanges) {
-  const { changes, type } = actionAndChanges;
-  switch (type) {
-    case useSelect.stateChangeTypes.MenuKeyDownEnter:
-    case useSelect.stateChangeTypes.MenuKeyDownSpaceButton:
-    case useSelect.stateChangeTypes.ItemClick:
-      return {
-        ...changes,
-        isOpen: true,
-        highlightedIndex: state.highlightedIndex,
-      };
-    default:
-      return changes;
-  }
-}
 
 export default SelectCurso;

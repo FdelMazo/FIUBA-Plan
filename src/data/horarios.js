@@ -1,6 +1,6 @@
 export const data = 
 {
-  "cuatrimestre": "2023C1",
+  "cuatrimestre": "2023C1 ",
   "cursos": [
     {
       "clases": [

@@ -145,7 +145,7 @@ const MateriasDrawer = (props) => {
                 variant="ghost"
                 fontSize="sm"
                 onClick={() => {
-                  limpiarTab(activeTabId);
+                  limpiarTab();
                 }}
               >
                 Limpiar {tabs.find((t) => t.id === activeTabId).title || "Plan"}

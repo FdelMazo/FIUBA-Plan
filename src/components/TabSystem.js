@@ -123,9 +123,11 @@ const TabSystem = (props) => {
                     <PopoverContent borderColor="primary.500" mr={2}>
                         <PopoverArrow bg="primary.500" />
                         <PopoverBody>
+                            <Text>Última Actualización: <strong>{actualizacion.timestamp}</strong></Text>
+                            <br />
                             <Text>El <strong>FIUBA-Plan</strong> actualiza sus horarios desde <strong>ofertahoraria</strong>, un servicio hecho por FIUBA que puede no estar siempre actualizado frente a los horarios canónicos, que se ven en el SIU.</Text>
                             <br />
-                            <Text>Última Actualización: <strong>{actualizacion.timestamp}</strong></Text>
+                            <Text>Si ya pasaron unos días desde que se publicaron los horarios de un cuatrimestre nuevo en el SIU y no están en el FIUBA-Plan, se puede mandar un mail a secretaría académica pidiendo actualizar el sitio de ofertahoraria.</Text>
                         </PopoverBody>
                     </PopoverContent>
                 </Popover>

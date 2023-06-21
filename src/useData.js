@@ -222,8 +222,8 @@ const useData = () => {
   };
 
   // Agregar, eliminar, renombrar tabs
-  const limpiarTab = (tabId) => {
-    tabEventsDispatch({ type: "resetTab", tabId });
+  const limpiarTab = () => {
+    tabEventsDispatch({ type: "resetTab", tabId: activeTabId });
   };
 
   const selectTab = (id) => {

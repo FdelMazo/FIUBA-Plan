@@ -218,6 +218,7 @@ const useData = () => {
   };
 
   const removeAllExtra = () => {
+    tabEventsDispatch({ type: "removeExtra" });
     extraEventsDispatch({ type: 'reset' })
   };
 

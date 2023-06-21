@@ -124,6 +124,9 @@ const SelectExtra = () => {
                       <EditableInput
                         px={1}
                         w="80%"
+                        onClick={(e) => {
+                          e.stopPropagation()
+                        }}
                         _focus={{
                           boxShadow: "0 0 0 1px rgba(183,148,244, 0.6)",
                         }}

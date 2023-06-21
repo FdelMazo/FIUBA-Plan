@@ -72,6 +72,7 @@ const MateriasDrawer = (props) => {
     limpiarTab,
     activeTabId,
     events,
+    extraEvents,
     permalink
   } = React.useContext(DataContext);
   const { colorMode, toggleColorMode } = useColorMode();
@@ -124,7 +125,7 @@ const MateriasDrawer = (props) => {
             {selections.materias.map((m) => (
               <SelectCurso codigo={m} key={m} />
             ))}
-            {/* {!!extraEvents.length && <SelectExtra />} */}
+            {!!extraEvents.length && <SelectExtra />}
           </DrawerBody>
 
           <Flex justifyContent="space-around">

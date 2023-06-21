@@ -1,4 +1,4 @@
-import { ChevronDownIcon, ChevronUpIcon, MinusIcon } from "@chakra-ui/icons";
+import { CheckIcon, ChevronDownIcon, ChevronUpIcon, EditIcon, MinusIcon, SmallCloseIcon } from "@chakra-ui/icons";
 import {
   Box,
   Button,
@@ -10,24 +10,26 @@ import {
   List,
   Tooltip,
   Text,
+  useEditableControls,
 } from "@chakra-ui/react";
 import { useSelect } from "downshift";
 import React from "react";
 import { DataContext } from "../Context";
+import { getColor, stateReducer } from "../utils";
 
-const SelectCurso = () => {
+const SelectExtra = () => {
   const {
+    events,
     extraEvents,
-    removerHorariosExtra,
-    removerHorarioExtra,
-    renombrarHorarioExtra,
-    activeTabId
+    renameExtra,
+    toggleExtra,
+    removeExtra,
+    removeAllExtra
   } = React.useContext(DataContext);
-  const items = extraEvents.filter(e => e.curso.tabId === activeTabId);
   const { isOpen, getItemProps, getToggleButtonProps, getMenuProps } =
     useSelect({
       stateReducer,
-      items,
+      items: extraEvents,
       selectedItem: null,
     });
 
@@ -35,26 +37,20 @@ const SelectCurso = () => {
     <>
       <Flex direction="row" justify="flex-end">
         <Box {...getToggleButtonProps()}>
-          <Tooltip
-            placement="left"
-            hasArrow
-            label="ACTIVIDADES EXTRACURRICULARES"
+          <Button
+            my={2}
+            px={2}
+            colorScheme="primary"
+            variant="outline"
+            borderColor="primary"
+            color="primary.500"
+            rightIcon={isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
           >
-            <Button
-              my={2}
-              px={2}
-              colorScheme="primary"
-              variant="outline"
-              borderColor="primary"
-              color="primary.500"
-              rightIcon={isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
-            >
-              <Text fontSize="xs">EXTRACURRICULAR</Text>
-            </Button>
-          </Tooltip>
+            <Text fontSize="xs">EXTRACURRICULAR</Text>
+          </Button>
         </Box>
 
-        <Tooltip placement="top" label="Remover">
+        <Tooltip placement="top" label="Remover horarios extracurriculares">
           <IconButton
             my={2}
             ml={2}
@@ -64,7 +60,7 @@ const SelectCurso = () => {
             color="primary.500"
             icon={<MinusIcon />}
             onClick={() => {
-              removerHorariosExtra();
+              removeAllExtra()
             }}
           />
         </Tooltip>
@@ -73,80 +69,140 @@ const SelectCurso = () => {
       <List
         {...getMenuProps()}
         display={isOpen ? "block" : "none"}
-        onKeyDown={undefined}
+        onKeyDown={undefined} // Allow spacebar inside editable
         p={1}
         borderWidth={1}
         borderRadius={5}
         borderColor="primary.500"
         style={{
-          maxHeight: "10em",
+          maxHeight: "18em",
           overflowY: "scroll",
         }}
       >
-        {items.map((item, index) => (
-          <Box borderRadius={5} color={item.color} key={item.id}>
-            <li
-              {...getItemProps({
-                item,
-                index,
-              })}
-              onClick={(ev) => {
-                ev.stopPropagation();
+        {extraEvents.map((item, index) => {
+          const event = events.find((i) => i.id === item.id);
+          const isActive = !!event;
+          const color = getColor(event);
+
+          return (
+            <Box
+              py={1}
+              _hover={{ bg: "hovercolor" }}
+              color={isActive ? color : "gray.200"}
+              cursor="pointer"
+              fontSize="xs"
+              px={2}
+              onClick={() => {
+                toggleExtra(item.id)
               }}
+              _notLast={{
+                borderBottom: "1px dashed violet",
+              }}
+              key={item.id}
             >
-              <Editable
-                placeholder="EXTRA"
-                fontSize="small"
-                defaultValue={item.materia}
-                onSubmit={(nombre) => {
-                  renombrarHorarioExtra(item, nombre);
-                }}
-                onClick={(ev) => {
-                  ev.stopPropagation();
-                }}
+              <li
+                {...getItemProps({
+                  item,
+                  index,
+                })}
               >
-                <Flex justifyContent="space-between">
-                  <EditablePreview />
-                  <EditableInput
-                    _focus={{
-                      boxShadow: "0 0 0 1px rgba(183,148,244, 0.6)",
-                    }}
-                  />
-                  <IconButton
-                    size="xs"
-                    borderColor={item.color}
-                    _hover={{
-                      bg: "initial",
-                      border: "1px solid",
-                    }}
-                    variant="ghost"
-                    onClick={() => removerHorarioExtra(item)}
-                    icon={<MinusIcon />}
-                  />
-                </Flex>
-              </Editable>
-            </li>
-          </Box>
-        ))}
+                <Editable
+                  placeholder="Actividad"
+                  fontSize="small"
+                  defaultValue={item.title}
+                  isPreviewFocusable={false}
+                  onSubmit={(str) => {
+                    renameExtra(item.id, str);
+                  }}
+                >
+                  <Flex justifyContent="space-between">
+                    <Box>
+                      {isActive && <CheckIcon mr={1} />}
+                      <EditablePreview
+                        cursor="pointer"
+                      />
+                      <EditableInput
+                        px={1}
+                        w="80%"
+                        _focus={{
+                          boxShadow: "0 0 0 1px rgba(183,148,244, 0.6)",
+                        }}
+                      />
+                    </Box>
+                    <Box>
+                      <EditableControls color={item.color} />
+
+                      <Tooltip placement="top" label="Remover">
+                        <IconButton
+                          size="xs"
+                          borderColor={item.color}
+                          _hover={{
+                            bg: "initial",
+                            border: "1px solid",
+                          }}
+                          variant="ghost"
+                          onClick={(e) => {
+                            removeExtra(item.id)
+                            e.stopPropagation()
+                          }}
+                          icon={<SmallCloseIcon />}
+                        />
+                      </Tooltip>
+                    </Box>
+                  </Flex>
+                </Editable>
+              </li>
+            </Box>
+          )
+        })}
       </List>
     </>
   );
 };
 
-function stateReducer(state, actionAndChanges) {
-  const { changes, type } = actionAndChanges;
-  switch (type) {
-    case useSelect.stateChangeTypes.MenuKeyDownEnter:
-    case useSelect.stateChangeTypes.MenuKeyDownSpaceButton:
-    case useSelect.stateChangeTypes.ItemClick:
-      return {
-        ...changes,
-        isOpen: true,
-        highlightedIndex: state.highlightedIndex,
-      };
-    default:
-      return changes;
-  }
+function EditableControls({ color }) {
+  const {
+    isEditing,
+    getSubmitButtonProps,
+    getEditButtonProps,
+  } = useEditableControls()
+
+  return isEditing ? (
+    <IconButton
+      size="xs"
+      borderColor={color}
+      _hover={{
+        bg: "initial",
+        border: "1px solid",
+      }}
+      variant="ghost"
+      icon={<CheckIcon />}
+      {...getSubmitButtonProps()}
+      onClick={(e) => {
+        getSubmitButtonProps().onClick(e)
+        e.stopPropagation()
+      }}
+    />
+  ) : (
+    <Tooltip placement="top" label="Renombrar">
+      <IconButton
+
+        size="xs"
+        borderColor={color}
+        _hover={{
+          bg: "initial",
+          border: "1px solid",
+        }}
+        variant="ghost"
+        icon={<EditIcon />}
+        {...getEditButtonProps()}
+        onClick={(e) => {
+          getEditButtonProps().onClick(e)
+          e.stopPropagation()
+        }}
+      />
+    </Tooltip>
+  )
 }
 
-export default SelectCurso;
+export default SelectExtra;

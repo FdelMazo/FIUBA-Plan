@@ -25,7 +25,9 @@ const Body = () => {
   const [useAgenda, setUseAgenda] = React.useState(false);
   const { width } = useWindowSize();
   const { isOpen, onToggle, onClose } = useDisclosure();
-  useHotkeys('esc', onToggle)
+  useHotkeys('esc', onToggle, {
+    enableOnFormTags: true,
+  })
 
   React.useEffect(() => {
     setUseAgenda(width < 1000);

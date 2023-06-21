@@ -103,6 +103,7 @@ const MateriasDrawer = (props) => {
         placement="right"
         onClose={onClose}
         initialFocusRef={buscarMateriaRef}
+        closeOnEsc={false}
       >
         <DrawerOverlay />
         <DrawerContent

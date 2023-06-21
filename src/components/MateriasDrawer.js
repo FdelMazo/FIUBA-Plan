@@ -87,8 +87,7 @@ const MateriasDrawer = (props) => {
       codigos = jsonData.materias.map((m) => m.codigo);
     } else {
       codigos = selections.carreras
-        .map(getCarrera)
-        .reduce((arr, c) => arr.concat(...c.materias), []);
+        .flatMap((c) => { return getCarrera(c).materias })
     }
     const codigosUnicos = [...new Set(codigos)].sort();
     return codigosUnicos.filter(ValidMateria).map(getMateria);

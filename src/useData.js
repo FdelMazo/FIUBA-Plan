@@ -257,7 +257,7 @@ const useData = () => {
       }
     })
 
-    const clases = tabEvents[activeTabId].cursos.map(getCurso).map((curso) => {
+    const clases = tabEvents[activeTabId].cursos.map(getCurso).flatMap((curso) => {
       const materia = getMateria(curso.materia);
       return curso.clases.map((clase) => {
         const inicio = new Date(2018, 0, clase.dia);
@@ -280,7 +280,7 @@ const useData = () => {
           curso: curso.codigo,
         };
       })
-    }).reduce((arr, e) => arr.concat(...e), []);
+    });
 
     if (extraEvents.length === 0) return clases
     return [...clases, ...extraevents]

@@ -72,19 +72,18 @@ const useData = () => {
       case "resetTab":
         draft[action.tabId] = { cursos: [], extra: [] };
         return
-      case "removeMateria":
-        const codigos = getCursosMateria(action.materia).map((c) => c.codigo);
-        return Object.fromEntries(
-          Object.entries(draft).map(([tabId, { cursos, extra }]) => [
-            tabId, { cursos: cursos.filter((i) => !codigos.includes(i)), extra },
-          ]))
       case "removeTab":
-        delete draft[activeTabId];
+        delete draft[action.tabId];
         return
       case "removeExtra":
         return Object.fromEntries(
           Object.entries(draft).map(([tabId, { cursos, extra }]) => [
             tabId, { cursos, extra: extra.filter((i) => i !== action.id), },
+          ]))
+      case "removeCursos":
+        return Object.fromEntries(
+          Object.entries(draft).map(([tabId, { cursos, extra }]) => [
+            tabId, { cursos: cursos.filter((i) => !action.ids.includes(i)), extra },
           ]))
       case "removeAllExtra":
         return Object.fromEntries(
@@ -166,7 +165,8 @@ const useData = () => {
   const toggleMateria = (codigo) => {
     if (selections.materias.includes(codigo)) {
       // Si destildamos una materia, removemos todos sus eventos
-      tabEventsDispatch({ type: "removeMateria", materia: codigo });
+      const ids = getCursosMateria(codigo).map((c) => c.codigo);
+      tabEventsDispatch({ type: "removeCursos", ids });
     } else {
       // Si tildamos una materia, agregamos el primer curso
       toggleCurso(getCursosMateria(codigo)[0].codigo);
@@ -254,6 +254,7 @@ const useData = () => {
   const removeTab = (id) => {
     selectTab(0)
     tabsDispatch({ type: 'remove', id })
+    tabEventsDispatch({ type: 'removeTab', tabId: id })
   }
 
   // Los eventos a mostrar en el calendario son todos los cursos seleccionados por el usuario

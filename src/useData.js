@@ -83,6 +83,11 @@ const useData = () => {
         return
       case "removeExtra":
         return Object.fromEntries(
+          Object.entries(draft).map(([tabId, { cursos, extra }]) => [
+            tabId, { cursos, extra: extra.filter((i) => i !== action.id), },
+          ]))
+      case "removeAllExtra":
+        return Object.fromEntries(
           Object.entries(draft).map(([tabId, { cursos, _extra }]) => [
             tabId, { cursos, extra: [] },
           ]))
@@ -199,6 +204,7 @@ const useData = () => {
     if (tabEvents[activeTabId].extra.includes(id)) {
       toggleExtra(id)
     }
+    tabEventsDispatch({ type: "removeExtra", id });
     extraEventsDispatch({ type: 'remove', id })
   };
 
@@ -218,7 +224,7 @@ const useData = () => {
   };
 
   const removeAllExtra = () => {
-    tabEventsDispatch({ type: "removeExtra" });
+    tabEventsDispatch({ type: "removeAllExtra" });
     extraEventsDispatch({ type: 'reset' })
   };
 

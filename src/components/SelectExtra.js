@@ -133,12 +133,11 @@ const SelectExtra = () => {
                       />
                     </Box>
                     <Box>
-                      <EditableControls color={item.color} />
-
+                      <EditableControls />
                       <Tooltip placement="top" label="Remover">
                         <IconButton
                           size="xs"
-                          borderColor={item.color}
+                          color="white"
                           _hover={{
                             bg: "initial",
                             border: "1px solid",
@@ -173,7 +172,7 @@ function EditableControls({ color }) {
   return isEditing ? (
     <IconButton
       size="xs"
-      borderColor={color}
+      color="white"
       _hover={{
         bg: "initial",
         border: "1px solid",
@@ -189,9 +188,8 @@ function EditableControls({ color }) {
   ) : (
     <Tooltip placement="top" label="Renombrar">
       <IconButton
-
         size="xs"
-        borderColor={color}
+        color="white"
         _hover={{
           bg: "initial",
           border: "1px solid",

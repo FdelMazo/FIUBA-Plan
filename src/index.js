@@ -1,11 +1,12 @@
-import { ChakraProvider, CSSReset, Flex } from "@chakra-ui/react";
+import { ChakraProvider, Flex } from "@chakra-ui/react";
 import "@fontsource/source-sans-pro/400.css";
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import Body from "./components/Body";
 import { DataContext } from "./Context";
 import customTheme from "./theme";
 import useData from "./useData";
+
 const App = () => {
   const dataHook = useData();
 
@@ -18,10 +19,11 @@ const App = () => {
   );
 };
 
-ReactDOM.render(
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container);
+
+root.render(
   <ChakraProvider theme={customTheme}>
-    <CSSReset />
     <App />
-  </ChakraProvider>,
-  document.getElementById("root")
+  </ChakraProvider>
 );

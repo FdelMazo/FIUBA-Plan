@@ -3,21 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@chakra-ui/icons": "^1.0.1",
-    "@chakra-ui/react": "^1.6.6",
-    "@emotion/react": "^11.0.0",
-    "@emotion/styled": "^11.0.27",
+    "@chakra-ui/icons": "^2.0.19",
+    "@chakra-ui/react": "^2.7.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@fontsource/source-sans-pro": "^4.5.1",
     "buffer": "^6.0.3",
-    "color-hash": "^2.0.1",
+    "color-hash": "^2.0.2",
     "downshift": "^6.0.6",
-    "framer-motion": "^4.1.17",
+    "framer-motion": "^6.5.1",
     "immer": "^10.0.2",
     "moment": "^2.29.4",
     "pako": "^2.1.0",
-    "react": "^16.13.1",
-    "react-big-calendar": "1.0.0",
-    "react-dom": "^16.13.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-big-calendar": "1.8.1",
     "react-hotkeys-hook": "^4.4.0",
     "react-scripts": "^5.0.1",
     "react-snowfall": "^1.1.1",
@@ -43,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }

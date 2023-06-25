@@ -98,7 +98,7 @@ const SelectExtra = () => {
               _notLast={{
                 borderBottom: "1px dashed violet",
               }}
-              key={item.id}
+              key={[item.id, isActive].join("-")}
             >
               <li
                 {...getItemProps({

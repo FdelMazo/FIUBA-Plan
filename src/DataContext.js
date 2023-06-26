@@ -9,8 +9,6 @@ import {
   getMateria,
   getCurso,
   getCursosMateria,
-  getFromStorage,
-  coerceExtraEvent,
 } from "./utils";
 
 // Si tengo un permalink, parseo su info y reseteo la URL
@@ -344,6 +342,13 @@ const Data = () => {
   };
 };
 
+const getFromStorage = (key, group = undefined) => {
+  const json = JSON.parse(window.localStorage.getItem("fiubaplan"))
+  if (json?.cuatrimestre !== jsonData.cuatrimestre)
+    return null;
+  return group ? json?.[group]?.[key] : json?.[key];
+};
+
 // STATE INITIALIZERS: le pasamos una funcion a useState/useReducer/useImmer/useImmerReducer para evitar que se ejecuten en cada render
 const initialSelections = () => {
   return {
@@ -365,5 +370,10 @@ const initialTabEvents = (defvalue) => {
 }
 
 const initialExtraEvents = (defvalue) => {
+  const coerceExtraEvent = (e) => ({
+    ...e,
+    start: new Date(e.start),
+    end: new Date(e.end),
+  })
   return permalinksavedata?.extraEvents?.map(coerceExtraEvent) || getFromStorage("extraEvents")?.map(coerceExtraEvent) || defvalue
 }

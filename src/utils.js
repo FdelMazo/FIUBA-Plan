@@ -8,6 +8,11 @@ export const colorHash = new ColorHash({
   saturation: [0.6, 0.65, 0.7, 0.75, 0.8, 0.85],
 });
 
+export const getColor = (event) => {
+  if (!event) return null
+  return colorHash.hex(event.id.toString());
+};
+
 export const ValidCurso = (codigo) => {
   return !!jsonData.cursos.find((c) => c.codigo === codigo)?.clases?.length;
 };
@@ -38,24 +43,6 @@ export const getCursosMateria = (codigoMateria) => {
   ).cursos;
   return cursos.filter(ValidCurso).map(getCurso);
 };
-
-export const getColor = (event) => {
-  if (!event) return null
-  return colorHash.hex(event.id.toString());
-};
-
-export const getFromStorage = (key, group = undefined) => {
-  const json = JSON.parse(window.localStorage.getItem("fiubaplan"))
-  if (json?.cuatrimestre !== jsonData.cuatrimestre)
-    return null;
-  return group ? json?.[group]?.[key] : json?.[key];
-};
-
-export const coerceExtraEvent = (e) => ({
-  ...e,
-  start: new Date(e.start),
-  end: new Date(e.end),
-})
 
 export function stateReducer(state, actionAndChanges) {
   const { changes, type } = actionAndChanges;

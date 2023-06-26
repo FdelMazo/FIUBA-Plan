@@ -8,7 +8,7 @@ import "moment/locale/es";
 import React from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import { DataContext } from "../Context";
+import { DataContext } from "../DataContext";
 import useWindowSize from "../useWindowSize";
 import CalendarAgenda from "./CalendarAgenda";
 import CalendarWeek from "./CalendarWeek";

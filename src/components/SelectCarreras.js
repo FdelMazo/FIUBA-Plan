@@ -2,7 +2,7 @@ import { CheckIcon, ChevronDownIcon, ChevronRightIcon, ChevronUpIcon } from "@ch
 import { Box, Button, List, Flex, Tooltip, Link, Icon } from "@chakra-ui/react";
 import { useSelect } from "downshift";
 import React from "react";
-import { DataContext } from "../Context";
+import { DataContext } from "../DataContext";
 import { carreras as jsonCarreras } from "../data/carreras";
 import { stateReducer } from "../utils";
 

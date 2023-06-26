@@ -14,7 +14,7 @@ import {
 } from "@chakra-ui/react";
 import { useSelect } from "downshift";
 import React from "react";
-import { DataContext } from "../Context";
+import { DataContext } from "../DataContext";
 import { getColor, stateReducer } from "../utils";
 
 const SelectExtra = () => {

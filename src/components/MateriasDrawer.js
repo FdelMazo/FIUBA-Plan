@@ -39,7 +39,7 @@ import {
   useToast,
 } from "@chakra-ui/react";
 import React from "react";
-import { DataContext } from "../Context";
+import { DataContext } from "../DataContext";
 import SelectCarreras from "./SelectCarreras";
 import SelectCurso from "./SelectCurso";
 import SelectMateria from "./SelectMateria";

@@ -16,7 +16,7 @@ import {
 } from "@chakra-ui/react";
 import { useSelect } from "downshift";
 import React from "react";
-import { DataContext } from "../Context";
+import { DataContext } from "../DataContext";
 import { getColor, getCurso, getCursosMateria, getMateria } from "../utils";
 import { stateReducer } from "../utils";
 

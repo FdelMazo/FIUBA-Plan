@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import { useCombobox } from "downshift";
 import React from "react";
-import { DataContext } from "../Context";
+import { DataContext } from "../DataContext";
 
 const SelectMateria = React.forwardRef(({ materiasToShow }, ref) => {
   const { toggleMateria, selections } = React.useContext(DataContext);

@@ -9,7 +9,7 @@ import "moment/locale/es";
 import React from "react";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import Snowfall from "react-snowfall";
-import { DataContext } from "../Context";
+import { DataContext } from "../DataContext";
 import useWindowSize from "../useWindowSize";
 import Calendar from "./Calendar";
 import MateriasDrawer from "./MateriasDrawer";

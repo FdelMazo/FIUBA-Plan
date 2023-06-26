@@ -26,7 +26,7 @@ import {
 } from "@chakra-ui/react";
 import "moment/locale/es";
 import React from "react";
-import { DataContext } from "../Context";
+import { DataContext } from "../DataContext";
 
 const actualizacion = {
     cuatrimestre: jsonData.cuatrimestre,

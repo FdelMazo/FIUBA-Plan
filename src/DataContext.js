@@ -29,7 +29,17 @@ if (window.location.hash) {
   }
 }
 
-const useData = () => {
+export const DataContext = React.createContext();
+
+export const DataProvider = ({ children }) => {
+  return (
+    <DataContext.Provider value={Data()}>
+      {children}
+    </DataContext.Provider>
+  );
+};
+
+const Data = () => {
   // ESTADO 1: Las carreras y materias tickeadas por el usuario para verlas en el drawer
   const [selections, setSelections] = useImmer(initialSelections)
 
@@ -333,8 +343,6 @@ const useData = () => {
     events,
   };
 };
-
-export default useData;
 
 // STATE INITIALIZERS: le pasamos una funcion a useState/useReducer/useImmer/useImmerReducer para evitar que se ejecuten en cada render
 const initialSelections = () => {

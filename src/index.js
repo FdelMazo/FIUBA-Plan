@@ -3,19 +3,16 @@ import "@fontsource/source-sans-pro/400.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Body from "./components/Body";
-import { DataContext } from "./Context";
 import customTheme from "./theme";
-import useData from "./useData";
+import { DataProvider } from "./DataContext";
 
 const App = () => {
-  const dataHook = useData();
-
   return (
-    <DataContext.Provider value={dataHook}>
+    <DataProvider>
       <Flex direction="columns" h="100vh">
         <Body />
       </Flex>
-    </DataContext.Provider>
+    </DataProvider>
   );
 };
 

@@ -30,8 +30,9 @@ if (window.location.hash) {
 export const DataContext = React.createContext();
 
 export const DataProvider = ({ children }) => {
+  const data = Data();
   return (
-    <DataContext.Provider value={Data()}>
+    <DataContext.Provider value={data}>
       {children}
     </DataContext.Provider>
   );

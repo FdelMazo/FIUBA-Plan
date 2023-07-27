@@ -10,11 +10,16 @@ const carreras = jsonCarreras.map((c) => c.nombre).sort()
 
 const SelectCarreras = () => {
   const { toggleCarrera, selections } = React.useContext(DataContext);
-  const { isOpen, getItemProps, getToggleButtonProps, getMenuProps } =
-    useSelect({
-      items: carreras,
-      stateReducer,
-    });
+
+  const {
+    isOpen,
+    getItemProps,
+    getToggleButtonProps,
+    getMenuProps
+  } = useSelect({
+    items: carreras,
+    stateReducer,
+  });
 
   return (
     <Box mb={4}>
@@ -62,7 +67,7 @@ const SelectCarreras = () => {
             >
               <li
                 {...getItemProps({
-                  c,
+                  item: c,
                   index,
                 })}
               >

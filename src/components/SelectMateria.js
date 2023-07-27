@@ -9,6 +9,7 @@ import {
 import { useCombobox } from "downshift";
 import React from "react";
 import { DataContext } from "../DataContext";
+import { stateReducer } from "../utils";
 
 const SelectMateria = React.forwardRef(({ materiasToShow }, ref) => {
   const { toggleMateria, selections } = React.useContext(DataContext);
@@ -30,12 +31,14 @@ const SelectMateria = React.forwardRef(({ materiasToShow }, ref) => {
     getToggleButtonProps,
     getMenuProps,
     getInputProps,
-    getComboboxProps,
+    getItemProps,
   } = useCombobox({
     items: inputItems,
+    itemToString: (item) => search,
     onInputValueChange: ({ inputValue }) => {
       setSearch(inputValue.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""))
     },
+    stateReducer,
   });
 
   return (
@@ -43,9 +46,7 @@ const SelectMateria = React.forwardRef(({ materiasToShow }, ref) => {
       <InputGroup w="100%" fontFamily="general" mt={4} mb={2}>
         <Input
           {...getToggleButtonProps()}
-          {...getInputProps({}, { suppressRefError: true })}
-          {...getComboboxProps({}, { suppressRefError: true })}
-          ref={ref}
+          {...getInputProps({ ref })}
           colorScheme="primary"
           variant="outline"
           borderColor="primary"
@@ -74,7 +75,7 @@ const SelectMateria = React.forwardRef(({ materiasToShow }, ref) => {
         {inputItems.length ? (
           inputItems
             .sort((a, b) => a.codigo > b.codigo)
-            .map((materia) => (
+            .map((materia, index) => (
               <Box
                 borderRadius={5}
                 _hover={{ bg: "hovercolor" }}
@@ -84,7 +85,12 @@ const SelectMateria = React.forwardRef(({ materiasToShow }, ref) => {
                 onClick={() => toggleMateria(materia.codigo)}
                 key={materia.codigo}
               >
-                <li>
+                <li
+                  {...getItemProps({
+                    item: materia,
+                    index,
+                  })}
+                >
                   {selections.materias.includes(materia.codigo) ? (
                     <CheckIcon mr={2} />
                   ) : (

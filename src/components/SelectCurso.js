@@ -55,12 +55,15 @@ const SelectCurso = ({ codigo }) => {
 
   const allItemsBlocked = items.every((item) => isBlocked(item.codigo))
 
-  const { isOpen, getItemProps, getToggleButtonProps, getMenuProps } =
-    useSelect({
-      stateReducer,
-      items,
-      selectedItem: null,
-    });
+  const {
+    isOpen,
+    getItemProps,
+    getToggleButtonProps,
+    getMenuProps
+  } = useSelect({
+    stateReducer,
+    items,
+  });
 
   return (
     <>
@@ -156,13 +159,13 @@ const SelectCurso = ({ codigo }) => {
                   _notLast={{
                     borderBottom: "1px dashed violet",
                   }}
+                  key={item.codigo}
                 >
                   <li
                     {...getItemProps({
                       item,
                       index,
                     })}
-                    key={item.codigo}
                   >
                     {isActive && <CheckIcon mr={1} />}
                     {isItemBlocked && (

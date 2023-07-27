@@ -1,7 +1,7 @@
 import ColorHash from "color-hash";
 import { data as jsonData } from "./data/horarios";
 import { carreras as jsonCarreras } from "./data/carreras";
-import { useSelect } from 'downshift'
+import { useCombobox, useSelect } from 'downshift'
 
 const colorHash = new ColorHash({
   lightness: [0.6, 0.65, 0.7, 0.75, 0.8, 0.85],
@@ -44,9 +44,14 @@ export const getCursosMateria = (codigoMateria) => {
   return cursos.filter(ValidCurso).map(getCurso);
 };
 
+// Downshift util to not close the menu on an item selection (with click, space or enter)
 export function stateReducer(state, actionAndChanges) {
   const { changes, type } = actionAndChanges;
   switch (type) {
+    case useCombobox.stateChangeTypes.InputKeyDownEnter:
+    case useCombobox.stateChangeTypes.ItemClick:
+    case useSelect.stateChangeTypes.ToggleButtonKeyDownEnter:
+    case useSelect.stateChangeTypes.ToggleButtonKeyDownSpaceButton:
     case useSelect.stateChangeTypes.ItemClick:
       return {
         ...changes,

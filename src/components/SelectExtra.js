@@ -26,12 +26,16 @@ const SelectExtra = () => {
     removeExtra,
     removeAllExtra
   } = React.useContext(DataContext);
-  const { isOpen, getItemProps, getToggleButtonProps, getMenuProps } =
-    useSelect({
-      stateReducer,
-      items: extraEvents,
-      selectedItem: null,
-    });
+
+  const {
+    isOpen,
+    getItemProps,
+    getToggleButtonProps,
+    getMenuProps,
+  } = useSelect({
+    stateReducer,
+    items: extraEvents,
+  });
 
   return (
     <>
@@ -69,7 +73,6 @@ const SelectExtra = () => {
       <List
         {...getMenuProps()}
         display={isOpen ? "block" : "none"}
-        onKeyDown={undefined} // Allow spacebar inside editable
         p={1}
         borderWidth={1}
         borderRadius={5}

@@ -6,6 +6,7 @@ import {
     AlertTitle,
     Box,
     Button,
+    CloseButton,
     Editable,
     EditableInput,
     EditablePreview,
@@ -45,27 +46,46 @@ const TabSystem = (props) => {
     const toast = useToast();
     const inputref = React.useRef(null)
 
-    if (readOnly && !toast.isActive('readonly')) {
+    const [readonlytoastclosed, setReadonlytoastclosed] = React.useState(false)
+    if (readOnly && !toast.isActive('readonly') && !readonlytoastclosed) {
         toast({
             id: 'readonly',
             duration: null,
             isClosable: false,
-            position: 'top',
+            position: 'bottom-start',
+            onCloseComplete: () => {
+                setReadonlytoastclosed(true)
+            },
             render: () => (
                 <LightMode>
-                    <Alert borderRadius="md" p={5} colorScheme="purple">
+                    <Alert flexDir="column" borderRadius="md" p={4} colorScheme="purple" borderWidth={1} borderColor="purple.400">
+                        <CloseButton
+                            color="gray.800"
+                            size="sm"
+                            onClick={() => { toast.closeAll() }}
+                            position="absolute"
+                            insetEnd={1}
+                            top={1}
+                        />
                         <Box color="gray.800">
-                            <AlertTitle>Estás navegando desde un permalink.</AlertTitle>
+                            <AlertTitle>Estás navegando desde un permalink</AlertTitle>
                             <AlertDescription fontSize={"sm"}>
-                                Nada de lo que hagas se guarda en esta sesión.
+                                Para volver a tu plan anterior, recarga la página.
                                 <br />
-                                No se pierden tus datos anteriores.
+                                Para utilizar este plan como tuyo, guardalo.
                             </AlertDescription>
                         </Box>
-                        <Button mx={2} size="sm" colorScheme="purple" variant="outline" onClick={() => {
-                            setReadOnly(false)
-                            toast.closeAll()
-                        }}>Guardar estos datos</Button>
+                        <Button
+                            mt={1}
+                            alignSelf="flex-start"
+                            size="sm"
+                            colorScheme="purple"
+                            variant="outline"
+                            onClick={() => {
+                                setReadOnly(false)
+                                toast.closeAll()
+                            }}
+                        >Guardar este plan</Button>
                     </Alert>
                 </LightMode>
             ),

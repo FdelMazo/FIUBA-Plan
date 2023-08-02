@@ -176,11 +176,11 @@ const MateriasDrawer = (props) => {
                     onCopy();
                     toast.close(permalinkToast.current);
                     return (permalinkToast.current = toast({
-                      position: "bottom",
+                      position: "bottom-start",
                       duration: 1500,
                       render: () => (
                         <LightMode>
-                          <Alert borderRadius="md" colorScheme="purple" color="gray.800">
+                          <Alert borderRadius="md" colorScheme="purple" borderWidth={1} borderColor="purple.400" color="gray.800">
                             <AlertIcon as={LinkIcon} />
                             <AlertTitle>Permalink copiado!</AlertTitle>
                           </Alert>

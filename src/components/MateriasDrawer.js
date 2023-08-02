@@ -277,6 +277,21 @@ const MateriasDrawer = (props) => {
                                 Si ves algo que te gustó, o tenés alguna idea,
                                 también!
                               </Text>
+                              <Text my={2}>
+                                Actualizar los horarios *no* depende de mí. Si falta algo o no están al día, el problema es que FIUBA no actualizó el sitio de <Link
+                                  isExternal
+                                  _hover={{
+                                    color: "primary.500",
+                                  }}
+                                  href="https://ofertahoraria.fi.uba.ar/"
+                                >
+                                  oferta horaria.
+                                  <ExternalLinkIcon
+                                    color="primary.500"
+                                    mx="2px"
+                                  />
+                                </Link>
+                              </Text>
                               <Text>
                                 Estas sugerencias son *anónimas*. Si querés que te responda, escribime tu
                                 mail o telegram!

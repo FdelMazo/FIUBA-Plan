@@ -38,7 +38,7 @@ const actualizacion = {
 }
 
 // Prender cuando FIUBA no actualiza ofertahoraria
-const malaonda = true
+const malaonda = false
 
 const TabSystem = (props) => {
     const {

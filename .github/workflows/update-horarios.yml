@@ -15,7 +15,9 @@ jobs:
     - uses: actions/checkout@v3
     - run: pip install -r py/requirements.txt
     - name: Run Jupy
-      run: jupyter nbconvert --to python --execute py/get_cursos.ipynb
+      run: |
+        jupyter nbconvert --to python py/get_cursos.ipynb
+        cd py && python get_cursos.py
     - name: Check if there were modifications
       id: check
       run: |

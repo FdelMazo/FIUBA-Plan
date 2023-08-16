@@ -17791,9 +17791,6 @@ export const data =
       "docentes": "BERTAGNOLI, PABLO FABIÁN (Profesor/a Adjunto/a)",
       "materia": "9804"
     },
-
-
-    //MATERIAS PLANES INFORMATICA 2023
     {
       "clases": [
         {
@@ -17840,8 +17837,6 @@ export const data =
       "docentes": "LEVERONI LUCIANO (Profesor/a Adjunto/a) - BURELLA JUAN MATIAS (Jefe/a Trabajos Practicos) - TARAS JULIETA BELÉN (Ayudante 2do/a)",
       "materia": "202303"
     },
-
-    //MATERIAS PLANES INDUSTRIAL 2023
     {
       "clases": [
         {
@@ -18001,8 +17996,7 @@ export const data =
       "codigo": "202312-CURSO: 01",
       "docentes": "MAZZEO SEBASTIAN (Profesor/a Adjunto/a)",
       "materia": "202312"
-    },
-
+    }
   ],
   "materias": [
     {
@@ -22352,8 +22346,6 @@ export const data =
       ],
       "nombre": "IDIOMA ITALIANO"
     },
-
-    //MATERIAS PLANES INFORMATICA 2023 
     {
       "codigo": "202301",
       "cursos": [
@@ -22375,9 +22367,6 @@ export const data =
       ],
       "nombre": "INGENIERÍA DE SOFTWARE"
     },
-
-
-    //MATERIAS PLANES INDUSTRIAL 2023
     {
       "codigo": "202304",
       "cursos": [
@@ -22431,7 +22420,7 @@ export const data =
     {
       "codigo": "202311",
       "cursos": [
-        "202311-CURSO: 01",
+        "202311-CURSO: 01"
       ],
       "nombre": "TRANSFORMACIÓN DE LA ENERGÍA"
     },
@@ -22441,7 +22430,7 @@ export const data =
         "202312-CURSO: 01"
       ],
       "nombre": "TRANSFORMACIÓN DE MATERIALES"
-    },
+    }
   ],
   "timestamp": "06/08/2023 09:44:31"
 }

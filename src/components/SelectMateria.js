@@ -11,7 +11,7 @@ import React from "react";
 import { DataContext } from "../DataContext";
 import { stateReducer } from "../utils";
 
-const SelectMateria = React.forwardRef(({ materiasToShow }, ref) => {
+const SelectMateria = ({ materiasToShow }) => {
   const { toggleMateria, selections } = React.useContext(DataContext);
   const [search, setSearch] = React.useState("");
 
@@ -46,7 +46,7 @@ const SelectMateria = React.forwardRef(({ materiasToShow }, ref) => {
       <InputGroup w="100%" fontFamily="general" mt={4} mb={2}>
         <Input
           {...getToggleButtonProps()}
-          {...getInputProps({ ref })}
+          {...getInputProps()}
           colorScheme="primary"
           variant="outline"
           borderColor="primary"
@@ -108,6 +108,6 @@ const SelectMateria = React.forwardRef(({ materiasToShow }, ref) => {
       </List>
     </>
   );
-});
+};
 
 export default SelectMateria;

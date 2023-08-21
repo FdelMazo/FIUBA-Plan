@@ -94,15 +94,12 @@ const MateriasDrawer = (props) => {
     return codigosUnicos.filter(ValidMateria).map(getMateria);
   }, [selections.carreras]);
 
-  const buscarMateriaRef = React.useRef();
-
   return (
     <LightMode>
       <Drawer
         isOpen={isOpen}
         placement="right"
         onClose={onClose}
-        initialFocusRef={buscarMateriaRef}
       >
         <DrawerOverlay bg="blackAlpha.300" />
         <DrawerContent
@@ -111,7 +108,7 @@ const MateriasDrawer = (props) => {
           <Box pt={6} px={6}>
             <SelectCarreras />
             {!!materiasToShow.length && (
-              <SelectMateria ref={buscarMateriaRef} materiasToShow={materiasToShow} />
+              <SelectMateria materiasToShow={materiasToShow} />
             )}
           </Box>
 

@@ -104,7 +104,7 @@ const MateriasDrawer = (props) => {
         onClose={onClose}
         initialFocusRef={buscarMateriaRef}
       >
-        <DrawerOverlay />
+        <DrawerOverlay bg="blackAlpha.300" />
         <DrawerContent
           bg={useColorModeValue("drawerbgalpha", "drawerbgdarkalpha")}
         >

@@ -54,7 +54,7 @@ export const getCursosMateria = (codigoMateria) => {
 };
 
 // Downshift util to not close the menu on an item selection (with click, space or enter)
-export const stateReducerFactory = (cb) => (state, actionAndChanges) => {
+export function stateReducer(state, actionAndChanges) {
   const { changes, type } = actionAndChanges;
   switch (type) {
     case useCombobox.stateChangeTypes.InputKeyDownEnter:
@@ -62,11 +62,9 @@ export const stateReducerFactory = (cb) => (state, actionAndChanges) => {
     case useSelect.stateChangeTypes.ToggleButtonKeyDownEnter:
     case useSelect.stateChangeTypes.ToggleButtonKeyDownSpaceButton:
     case useSelect.stateChangeTypes.ItemClick:
-      cb(changes.selectedItem);
       return {
         ...changes,
         isOpen: true,
-        inputValue: "",
         highlightedIndex: state.highlightedIndex,
       };
     default:

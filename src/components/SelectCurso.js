@@ -19,7 +19,7 @@ import { useSelect } from "downshift";
 import React from "react";
 import { DataContext } from "../DataContext";
 import { getColor, getCurso, getCursosMateria, getMateria } from "../utils";
-import { stateReducerFactory } from "../utils";
+import { stateReducer } from "../utils";
 
 const INICIALES_SEMANA = ["D", "L", "M", "X", "J", "V", "S"]
 
@@ -29,16 +29,6 @@ const SelectCurso = ({ codigo }) => {
     events,
     toggleMateria,
   } = React.useContext(DataContext);
-
-  // We do some macumbas to have keyboard support...
-  const [lastSelection, setLastSelection] = React.useState(null);
-  React.useEffect(() => {
-    if (lastSelection) {
-      toggleCurso(lastSelection.codigo);
-      setLastSelection(null);
-    }
-  }, [lastSelection, toggleCurso]);
-
   const materia = getMateria(codigo);
   const items = getCursosMateria(codigo)
 
@@ -72,10 +62,9 @@ const SelectCurso = ({ codigo }) => {
     isOpen,
     getItemProps,
     getToggleButtonProps,
-    getMenuProps,
-    highlightedIndex
+    getMenuProps
   } = useSelect({
-    stateReducer: stateReducerFactory(setLastSelection),
+    stateReducer,
     items,
   });
 
@@ -164,11 +153,12 @@ const SelectCurso = ({ codigo }) => {
               >
                 <Box
                   py={1}
-                  bg={highlightedIndex === index && "hovercolor"}
+                  _hover={{ bg: "hovercolor" }}
                   color={isActive ? color : "gray.200"}
                   cursor="pointer"
                   fontSize="xs"
                   px={2}
+                  onClick={() => toggleCurso(item.codigo)}
                   _notLast={{
                     borderBottom: "1px dashed violet",
                   }}

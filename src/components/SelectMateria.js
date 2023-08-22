@@ -9,20 +9,11 @@ import {
 import { useCombobox } from "downshift";
 import React from "react";
 import { DataContext } from "../DataContext";
-import { stateReducerFactory } from "../utils";
+import { stateReducer } from "../utils";
 
 const SelectMateria = ({ materiasToShow }) => {
   const { toggleMateria, selections } = React.useContext(DataContext);
   const [search, setSearch] = React.useState("");
-
-  // We do some macumbas to have keyboard support...
-  const [lastSelection, setLastSelection] = React.useState(null);
-  React.useEffect(() => {
-    if (lastSelection) {
-      toggleMateria(lastSelection.codigo);
-      setLastSelection(null);
-    }
-  }, [lastSelection, toggleMateria]);
 
   const inputItems = React.useMemo(() => {
     return materiasToShow.filter(
@@ -41,21 +32,21 @@ const SelectMateria = ({ materiasToShow }) => {
     getMenuProps,
     getInputProps,
     getItemProps,
-    highlightedIndex
   } = useCombobox({
     items: inputItems,
     itemToString: (item) => search,
     onInputValueChange: ({ inputValue }) => {
       setSearch(inputValue.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""))
     },
-    stateReducer: stateReducerFactory(setLastSelection)
+    stateReducer,
   });
 
   return (
     <>
       <InputGroup w="100%" fontFamily="general" mt={4} mb={2}>
         <Input
-          {...getInputProps(getToggleButtonProps)}
+          {...getToggleButtonProps()}
+          {...getInputProps()}
           colorScheme="primary"
           variant="outline"
           borderColor="primary"
@@ -87,10 +78,11 @@ const SelectMateria = ({ materiasToShow }) => {
             .map((materia, index) => (
               <Box
                 borderRadius={5}
-                bg={highlightedIndex === index && "hovercolor"}
+                _hover={{ bg: "hovercolor" }}
                 color={selections.materias.includes(materia.codigo) ? "primary.500" : "gray.200"}
                 fontSize="sm"
                 cursor="pointer"
+                onClick={() => toggleMateria(materia.codigo)}
                 key={materia.codigo}
               >
                 <li

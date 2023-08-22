@@ -15,7 +15,7 @@ import {
 import { useSelect } from "downshift";
 import React from "react";
 import { DataContext } from "../DataContext";
-import { getColor, stateReducerFactory } from "../utils";
+import { getColor, stateReducer } from "../utils";
 
 const SelectExtra = () => {
   const {
@@ -27,23 +27,13 @@ const SelectExtra = () => {
     removeAllExtra
   } = React.useContext(DataContext);
 
-  // We do some macumbas to have keyboard support...
-  const [lastSelection, setLastSelection] = React.useState(null);
-  React.useEffect(() => {
-    if (lastSelection) {
-      toggleExtra(lastSelection.id);
-      setLastSelection(null);
-    }
-  }, [lastSelection, toggleExtra]);
-
   const {
     isOpen,
     getItemProps,
     getToggleButtonProps,
     getMenuProps,
-    highlightedIndex,
   } = useSelect({
-    stateReducer: stateReducerFactory(setLastSelection),
+    stateReducer,
     items: extraEvents,
   });
 
@@ -100,11 +90,14 @@ const SelectExtra = () => {
           return (
             <Box
               py={1}
-              bg={highlightedIndex === index && "hovercolor"}
+              _hover={{ bg: "hovercolor" }}
               color={isActive ? color : "gray.200"}
               cursor="pointer"
               fontSize="xs"
               px={2}
+              onClick={() => {
+                toggleExtra(item.id)
+              }}
               _notLast={{
                 borderBottom: "1px dashed violet",
               }}

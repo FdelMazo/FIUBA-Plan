@@ -4,21 +4,31 @@ import { useSelect } from "downshift";
 import React from "react";
 import { DataContext } from "../DataContext";
 import { carreras as jsonCarreras } from "../data/carreras";
-import { stateReducer } from "../utils";
+import { stateReducerFactory } from "../utils";
 
 const carreras = jsonCarreras.map((c) => c.nombre).sort()
 
 const SelectCarreras = () => {
   const { toggleCarrera, selections } = React.useContext(DataContext);
 
+  // We do some macumbas to have keyboard support...
+  const [lastSelection, setLastSelection] = React.useState(null);
+  React.useEffect(() => {
+    if (lastSelection) {
+      toggleCarrera(lastSelection);
+      setLastSelection(null);
+    }
+  }, [lastSelection, toggleCarrera]);
+
   const {
     isOpen,
     getItemProps,
     getToggleButtonProps,
-    getMenuProps
+    getMenuProps,
+    highlightedIndex,
   } = useSelect({
     items: carreras,
-    stateReducer,
+    stateReducer: stateReducerFactory(setLastSelection)
   });
 
   return (
@@ -59,10 +69,9 @@ const SelectCarreras = () => {
           .map((c, index) => (
             <Box
               borderRadius={5}
-              _hover={{ bg: "hovercolor" }}
+              bg={highlightedIndex === index && "hovercolor"}
               color={selections.carreras.includes(c) ? "primary.500" : "gray.200"}
               cursor="pointer"
-              onClick={() => toggleCarrera(c)}
               key={c}
             >
               <li

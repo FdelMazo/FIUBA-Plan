@@ -6,6 +6,7 @@ import {
   WarningTwoIcon,
 } from "@chakra-ui/icons";
 import {
+  Badge,
   Box,
   Button,
   Flex,
@@ -19,6 +20,8 @@ import React from "react";
 import { DataContext } from "../DataContext";
 import { getColor, getCurso, getCursosMateria, getMateria } from "../utils";
 import { stateReducerFactory } from "../utils";
+
+const INICIALES_SEMANA = ["D", "L", "M", "X", "J", "V", "S"]
 
 const SelectCurso = ({ codigo }) => {
   const {
@@ -170,6 +173,7 @@ const SelectCurso = ({ codigo }) => {
                     borderBottom: "1px dashed violet",
                   }}
                   key={item.codigo}
+                  position="relative"
                 >
                   <li
                     {...getItemProps({
@@ -184,6 +188,14 @@ const SelectCurso = ({ codigo }) => {
                       />
                     )}
                     {item.docentes}
+                    <Badge
+                      fontSize="x-small"
+                      position="absolute"
+                      bottom="2px"
+                      right="0"
+                    >
+                      {[...new Set(item.clases.map(clase => INICIALES_SEMANA[clase.dia]))].join(" | ")}
+                    </Badge>
                   </li>
                 </Box>
               </Tooltip>

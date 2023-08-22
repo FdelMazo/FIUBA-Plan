@@ -17790,6 +17790,212 @@ export const data =
       "codigo": "9804-CURSO: 01-SEDE PASEO COLON",
       "docentes": "BERTAGNOLI, PABLO FABIÁN",
       "materia": "9804"
+    },
+    {
+      "clases": [
+        {
+          "dia": 3,
+          "fin": "22:00",
+          "inicio": "18:00"
+        }
+      ],
+      "codigo": "202301-CURSO: 01",
+      "docentes": "DEYMONNAZ PABLO ANDRES - KINGSTON DIEGO",
+      "materia": "202301"
+    },
+    {
+      "clases": [
+        {
+          "dia": 1,
+          "fin": "21:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 5,
+          "fin": "21:00",
+          "inicio": "18:00"
+        }
+      ],
+      "codigo": "202302-CURSO: 01",
+      "docentes": "GODOY ANDRES ALEJANDRO",
+      "materia": "202302"
+    },
+    {
+      "clases": [
+        {
+          "dia": 2,
+          "fin": "22:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 5,
+          "fin": "21:00",
+          "inicio": "17:00"
+        }
+      ],
+      "codigo": "202303-CURSO: 01",
+      "docentes": "LEVERONI LUCIANO - BURELLA JUAN MATIAS - TARAS JULIETA BELÉN",
+      "materia": "202303"
+    },
+    {
+      "clases": [
+        {
+          "dia": 2,
+          "fin": "20:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 4,
+          "fin": "22:00",
+          "inicio": "18:00"
+        }
+      ],
+      "codigo": "202304-CURSO: 01",
+      "docentes": "BOTTA JORGE BENJAMIN - MONTALBANO SILVIA RITA",
+      "materia": "202304"
+    },
+    {
+      "clases": [
+        {
+          "dia": 1,
+          "fin": "21:00",
+          "inicio": "17:00"
+        },
+        {
+          "dia": 3,
+          "fin": "21:00",
+          "inicio": "19:00"
+        }
+      ],
+      "codigo": "202305-CURSO: 01",
+      "docentes": "ALONSO ANDRES EZEQUIEL",
+      "materia": "202305"
+    },
+    {
+      "clases": [
+        {
+          "dia": 1,
+          "fin": "22:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 4,
+          "fin": "20:30",
+          "inicio": "16:30"
+        }
+      ],
+      "codigo": "202306-CURSO: 01",
+      "docentes": "BONOLI ESCOBAR MARIANO FELIPE - GIL JAVIER LUIS",
+      "materia": "202306"
+    },
+    {
+      "clases": [
+        {
+          "dia": 1,
+          "fin": "23:00",
+          "inicio": "19:00"
+        }
+      ],
+      "codigo": "202307-CURSO: 01",
+      "docentes": "SABELLI ALFREDO JORGE",
+      "materia": "202307"
+    },
+    {
+      "clases": [
+        {
+          "dia": 1,
+          "fin": "15:00",
+          "inicio": "21:00"
+        }
+      ],
+      "codigo": "202308-CURSO: 01",
+      "docentes": "Conde María Eugenia - ROMERO YESICA ANA",
+      "materia": "202308"
+    },
+    {
+      "clases": [
+        {
+          "dia": 2,
+          "fin": "18:00",
+          "inicio": "14:00"
+        },
+        {
+          "dia": 3,
+          "fin": "19:00",
+          "inicio": "17:00"
+        }
+      ],
+      "codigo": "202309-CURSO: 01",
+      "docentes": "ALONSO ANDRES EZEQUIEL",
+      "materia": "202309"
+    },
+    {
+      "clases": [
+        {
+          "dia": 2,
+          "fin": "23:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 3,
+          "fin": "23:00",
+          "inicio": "19:00"
+        }
+      ],
+      "codigo": "202310-CURSO: 01",
+      "docentes": "SABELLI ALFREDO JORGE",
+      "materia": "202310"
+    },
+    {
+      "clases": [
+        {
+          "dia": 2,
+          "fin": "23:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 3,
+          "fin": "23:00",
+          "inicio": "19:00"
+        }
+      ],
+      "codigo": "202310-CURSO: 02",
+      "docentes": "SABELLI ALFREDO JORGE",
+      "materia": "202310"
+    },
+    {
+      "clases": [
+        {
+          "dia": 4,
+          "fin": "23:00",
+          "inicio": "19:00"
+        },
+        {
+          "dia": 5,
+          "fin": "23:00",
+          "inicio": "19:00"
+        }
+      ],
+      "codigo": "202311-CURSO: 01",
+      "docentes": "SABELLI ALFREDO JORGE - COSSO NICOLAS FEDERICO - COSTA LUIS MARIA",
+      "materia": "202311"
+    },
+    {
+      "clases": [
+        {
+          "dia": 1,
+          "fin": "22:00",
+          "inicio": "18:00"
+        },
+        {
+          "dia": 4,
+          "fin": "22:00",
+          "inicio": "18:00"
+        }
+      ],
+      "codigo": "202312-CURSO: 01",
+      "docentes": "MAZZEO SEBASTIAN",
+      "materia": "202312"
     }
   ],
   "materias": [
@@ -22139,6 +22345,91 @@ export const data =
         "9804-CURSO: 01-SEDE PASEO COLON"
       ],
       "nombre": "IDIOMA ITALIANO"
+    },
+    {
+      "codigo": "202301",
+      "cursos": [
+        "202301-CURSO: 01"
+      ],
+      "nombre": "CRIPTOGRAFÍA 1"
+    },
+    {
+      "codigo": "202302",
+      "cursos": [
+        "202302-CURSO: 01"
+      ],
+      "nombre": "EMPRESAS DE BASES TECNOLÓGICAS"
+    },
+    {
+      "codigo": "202303",
+      "cursos": [
+        "202303-CURSO: 01"
+      ],
+      "nombre": "INGENIERÍA DE SOFTWARE"
+    },
+    {
+      "codigo": "202304",
+      "cursos": [
+        "202304-CURSO: 01"
+      ],
+      "nombre": "ECONOMÍA"
+    },
+    {
+      "codigo": "202305",
+      "cursos": [
+        "202305-CURSO: 01"
+      ],
+      "nombre": "EQUIPOS Y SISTEMAS PARA LA AUTOMATIZACIÓN INDUSTRIAL"
+    },
+    {
+      "codigo": "202306",
+      "cursos": [
+        "202306-CURSO: 01"
+      ],
+      "nombre": "ESTADÍSTICA APLICADA"
+    },
+    {
+      "codigo": "202307",
+      "cursos": [
+        "202307-CURSO: 01"
+      ],
+      "nombre": "INDUSTRIAS DIGITALES"
+    },
+    {
+      "codigo": "202308",
+      "cursos": [
+        "202308-CURSO: 01"
+      ],
+      "nombre": "ORGANIZACIÓN Y DIRECCIÓN EMPRESARIA"
+    },
+    {
+      "codigo": "202309",
+      "cursos": [
+        "202309-CURSO: 01"
+      ],
+      "nombre": "PRINCIPIOS DE INGENIERÍA INDUSTRIAL"
+    },
+    {
+      "codigo": "202310",
+      "cursos": [
+        "202310-CURSO: 01",
+        "202310-CURSO: 02"
+      ],
+      "nombre": "PROYECTOS INDUSTRIALES"
+    },
+    {
+      "codigo": "202311",
+      "cursos": [
+        "202311-CURSO: 01"
+      ],
+      "nombre": "TRANSFORMACIÓN DE LA ENERGÍA"
+    },
+    {
+      "codigo": "202312",
+      "cursos": [
+        "202312-CURSO: 01"
+      ],
+      "nombre": "TRANSFORMACIÓN DE MATERIALES"
     }
   ],
   "timestamp": "06/08/2023 09:44:31"

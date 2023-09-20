@@ -95,6 +95,7 @@ const SelectCurso = ({ codigo }) => {
             color="primary.500"
             width="200px"
             _hover={{ "&>p": { whiteSpace: "normal" }, bg: "var(--chakra-colors-whiteAlpha-400)" }}
+            _focus={{ "&>p": { whiteSpace: "normal" } }}
             rightIcon={isOpen ? <ChevronUpIcon /> : <><Text alignSelf="center" fontSize="x-small">({items.length})</Text><ChevronDownIcon /></>}
           >
             <Text fontSize="xs" isTruncated>

@@ -251,8 +251,15 @@ const MateriasDrawer = (props) => {
                   bg="primary.400"
                   onClick={() => {
                     onClose();
-                    toast.close(bugToast.current);
+                    if (toast.isActive(bugToast.current)) {
+                      toast.close(bugToast.current);
+                      return;
+                    }
                     return (bugToast.current = toast({
+                      status: "info",
+                      position: "bottom",
+                      duration: null,
+                      isClosable: true,
                       render: (props) => (
                         <Alert
                           borderRadius={6}
@@ -348,11 +355,7 @@ const MateriasDrawer = (props) => {
                             top="8px"
                           />
                         </Alert>
-                      ),
-                      status: "info",
-                      position: "bottom",
-                      duration: null,
-                      isClosable: true,
+                      )
                     }));
                   }}
                 >

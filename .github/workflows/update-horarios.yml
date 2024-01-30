@@ -4,38 +4,37 @@ on:
   workflow_dispatch:
   schedule:
     # Every day at 12:15 GMT-3
-    - cron:  "15 15 * * *"
+    - cron: "15 15 * * *"
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
-
     steps:
-    - uses: actions/checkout@v3
-    - run: pip install -r py/requirements.txt
-    - name: Run Jupy
-      run: |
-        jupyter nbconvert --to python py/get_cursos.ipynb
-        cd py && python get_cursos.py
-    - name: Check if there were modifications
-      id: check
-      run: |
+      - uses: actions/checkout@v3
+      - run: pip install -r py/requirements.txt
+      - name: Run Jupy
+        run: |
+          jupyter nbconvert --to python py/get_cursos.ipynb
+          cd py && python get_cursos.py
+      - name: Check if there were modifications
+        id: check
+        run: |
           if git status --porcelain | grep 'src/data/horarios.js'; then
             echo "modified=true" >> $GITHUB_OUTPUT
           else
             echo "modified=false" >> $GITHUB_OUTPUT
           fi
-    - name: Create Pull Request
-      if: ${{ steps.check.outputs.modified == 'true'}}
-      uses: peter-evans/create-pull-request@v4
-      with: 
-        add-paths: src/data/horarios.js
-        commit-message: Update horarios [auto]
-        title: Actualizar Horarios [auto]
-        author: GitHub <noreply@github.com>
-        body: Este PR automático se fijó que los horarios de `ofertahoraria.fi.uba.ar/` cambiaron y los actualizá a la última versión.
-        reviewers: FdelMazo
-        draft: true
-        branch: actualizar-horarios-auto
-    - uses: gautamkrishnar/keepalive-workflow@master
+      - name: Create Pull Request
+        if: ${{ steps.check.outputs.modified == 'true'}}
+        uses: peter-evans/create-pull-request@v4
+        with:
+          add-paths: src/data/horarios.js
+          commit-message: Update horarios [auto]
+          title: Actualizar Horarios [auto]
+          author: GitHub <noreply@github.com>
+          body: Este PR automático se fijó que los horarios de `ofertahoraria.fi.uba.ar/` cambiaron y los actualizá a la última versión.
+          reviewers: FdelMazo
+          draft: true
+          branch: actualizar-horarios-auto
+      - uses: gautamkrishnar/keepalive-workflow@master

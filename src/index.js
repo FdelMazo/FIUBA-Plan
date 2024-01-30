@@ -16,11 +16,11 @@ const App = () => {
   );
 };
 
-const container = document.getElementById('root');
+const container = document.getElementById("root");
 const root = ReactDOM.createRoot(container);
 
 root.render(
   <ChakraProvider theme={customTheme}>
     <App />
-  </ChakraProvider>
+  </ChakraProvider>,
 );

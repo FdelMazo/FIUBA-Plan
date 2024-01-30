@@ -1,4 +1,11 @@
-import { CheckIcon, ChevronDownIcon, ChevronUpIcon, EditIcon, MinusIcon, SmallCloseIcon } from "@chakra-ui/icons";
+import {
+  CheckIcon,
+  ChevronDownIcon,
+  ChevronUpIcon,
+  EditIcon,
+  MinusIcon,
+  SmallCloseIcon,
+} from "@chakra-ui/icons";
 import {
   Box,
   Button,
@@ -24,18 +31,14 @@ const SelectExtra = () => {
     renameExtra,
     toggleExtra,
     removeExtra,
-    removeAllExtra
+    removeAllExtra,
   } = React.useContext(DataContext);
 
-  const {
-    isOpen,
-    getItemProps,
-    getToggleButtonProps,
-    getMenuProps,
-  } = useSelect({
-    stateReducer,
-    items: extraEvents,
-  });
+  const { isOpen, getItemProps, getToggleButtonProps, getMenuProps } =
+    useSelect({
+      stateReducer,
+      items: extraEvents,
+    });
 
   return (
     <>
@@ -64,7 +67,7 @@ const SelectExtra = () => {
             color="primary.500"
             icon={<MinusIcon />}
             onClick={() => {
-              removeAllExtra()
+              removeAllExtra();
             }}
           />
         </Tooltip>
@@ -96,7 +99,7 @@ const SelectExtra = () => {
               fontSize="xs"
               px={2}
               onClick={() => {
-                toggleExtra(item.id)
+                toggleExtra(item.id);
               }}
               _notLast={{
                 borderBottom: "1px dashed violet",
@@ -121,14 +124,12 @@ const SelectExtra = () => {
                   <Flex justifyContent="space-between">
                     <Box>
                       {isActive && <CheckIcon mr={1} />}
-                      <EditablePreview
-                        cursor="pointer"
-                      />
+                      <EditablePreview cursor="pointer" />
                       <EditableInput
                         px={1}
                         w="80%"
                         onClick={(e) => {
-                          e.stopPropagation()
+                          e.stopPropagation();
                         }}
                         _focus={{
                           boxShadow: "0 0 0 1px rgba(183,148,244, 0.6)",
@@ -147,8 +148,8 @@ const SelectExtra = () => {
                           }}
                           variant="ghost"
                           onClick={(e) => {
-                            removeExtra(item.id)
-                            e.stopPropagation()
+                            removeExtra(item.id);
+                            e.stopPropagation();
                           }}
                           icon={<SmallCloseIcon />}
                         />
@@ -158,7 +159,7 @@ const SelectExtra = () => {
                 </Editable>
               </li>
             </Box>
-          )
+          );
         })}
       </List>
     </>
@@ -166,11 +167,8 @@ const SelectExtra = () => {
 };
 
 function EditableControls({ color }) {
-  const {
-    isEditing,
-    getSubmitButtonProps,
-    getEditButtonProps,
-  } = useEditableControls()
+  const { isEditing, getSubmitButtonProps, getEditButtonProps } =
+    useEditableControls();
 
   return isEditing ? (
     <IconButton
@@ -184,8 +182,8 @@ function EditableControls({ color }) {
       icon={<CheckIcon />}
       {...getSubmitButtonProps()}
       onClick={(e) => {
-        getSubmitButtonProps().onClick(e)
-        e.stopPropagation()
+        getSubmitButtonProps().onClick(e);
+        e.stopPropagation();
       }}
     />
   ) : (
@@ -201,12 +199,12 @@ function EditableControls({ color }) {
         icon={<EditIcon />}
         {...getEditButtonProps()}
         onClick={(e) => {
-          getEditButtonProps().onClick(e)
-          e.stopPropagation()
+          getEditButtonProps().onClick(e);
+          e.stopPropagation();
         }}
       />
     </Tooltip>
-  )
+  );
 }
 
 export default SelectExtra;

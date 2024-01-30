@@ -1,4 +1,9 @@
-import { CheckIcon, ChevronDownIcon, ChevronRightIcon, ChevronUpIcon } from "@chakra-ui/icons";
+import {
+  CheckIcon,
+  ChevronDownIcon,
+  ChevronRightIcon,
+  ChevronUpIcon,
+} from "@chakra-ui/icons";
 import { Box, Button, List, Flex, Tooltip, Link, Icon } from "@chakra-ui/react";
 import { useSelect } from "downshift";
 import React from "react";
@@ -6,20 +11,16 @@ import { DataContext } from "../DataContext";
 import { carreras as jsonCarreras } from "../data/carreras";
 import { stateReducer } from "../utils";
 
-const carreras = jsonCarreras.map((c) => c.nombre).sort()
+const carreras = jsonCarreras.map((c) => c.nombre).sort();
 
 const SelectCarreras = () => {
   const { toggleCarrera, selections } = React.useContext(DataContext);
 
-  const {
-    isOpen,
-    getItemProps,
-    getToggleButtonProps,
-    getMenuProps
-  } = useSelect({
-    items: carreras,
-    stateReducer,
-  });
+  const { isOpen, getItemProps, getToggleButtonProps, getMenuProps } =
+    useSelect({
+      items: carreras,
+      stateReducer,
+    });
 
   return (
     <Box mb={4}>
@@ -34,8 +35,17 @@ const SelectCarreras = () => {
           Carreras
         </Button>
 
-        <Tooltip closeOnClick hasArrow label="Calendario Académico" placement="bottom-start">
-          <Link color="primary.500" href={"https://www.fi.uba.ar/estudiantes/calendario-academico"} isExternal>
+        <Tooltip
+          closeOnClick
+          hasArrow
+          label="Calendario Académico"
+          placement="bottom-start"
+        >
+          <Link
+            color="primary.500"
+            href={"https://www.fi.uba.ar/estudiantes/calendario-academico"}
+            isExternal
+          >
             <Icon boxSize={5} mx={2} viewBox="0 0 512 512">
               <path
                 fill="currentColor"
@@ -55,31 +65,30 @@ const SelectCarreras = () => {
         borderRadius={5}
         borderColor="primary.500"
       >
-        {carreras
-          .map((c, index) => (
-            <Box
-              borderRadius={5}
-              _hover={{ bg: "hovercolor" }}
-              color={selections.carreras.includes(c) ? "primary.500" : "gray.200"}
-              cursor="pointer"
-              onClick={() => toggleCarrera(c)}
-              key={c}
+        {carreras.map((c, index) => (
+          <Box
+            borderRadius={5}
+            _hover={{ bg: "hovercolor" }}
+            color={selections.carreras.includes(c) ? "primary.500" : "gray.200"}
+            cursor="pointer"
+            onClick={() => toggleCarrera(c)}
+            key={c}
+          >
+            <li
+              {...getItemProps({
+                item: c,
+                index,
+              })}
             >
-              <li
-                {...getItemProps({
-                  item: c,
-                  index,
-                })}
-              >
-                {selections.carreras.includes(c) ? (
-                  <CheckIcon mr={1} />
-                ) : (
-                  <ChevronRightIcon mr={1} />
-                )}
-                {c}
-              </li>
-            </Box>
-          ))}
+              {selections.carreras.includes(c) ? (
+                <CheckIcon mr={1} />
+              ) : (
+                <ChevronRightIcon mr={1} />
+              )}
+              {c}
+            </li>
+          </Box>
+        ))}
       </List>
     </Box>
   );

@@ -44,11 +44,7 @@ import SelectCarreras from "./SelectCarreras";
 import SelectCurso from "./SelectCurso";
 import SelectMateria from "./SelectMateria";
 import SelectExtra from "./SelectExtra";
-import {
-  ValidMateria,
-  getMateria,
-  getCarrera,
-} from "../utils";
+import { ValidMateria, getMateria, getCarrera } from "../utils";
 
 const submitBug = (bug) => {
   if (!bug) return;
@@ -60,7 +56,7 @@ const submitBug = (bug) => {
     {
       body: formData,
       method: "POST",
-    }
+    },
   );
 };
 
@@ -73,7 +69,7 @@ const MateriasDrawer = (props) => {
     activeTabId,
     events,
     extraEvents,
-    permalink
+    permalink,
   } = React.useContext(DataContext);
   const { colorMode, toggleColorMode } = useColorMode();
   const toast = useToast();
@@ -87,8 +83,9 @@ const MateriasDrawer = (props) => {
     if (!selections.carreras.length) {
       codigos = jsonData.materias.map((m) => m.codigo);
     } else {
-      codigos = selections.carreras
-        .flatMap((c) => { return getCarrera(c).materias })
+      codigos = selections.carreras.flatMap((c) => {
+        return getCarrera(c).materias;
+      });
     }
     const codigosUnicos = [...new Set(codigos)].sort();
     return codigosUnicos.filter(ValidMateria).map(getMateria);
@@ -96,11 +93,7 @@ const MateriasDrawer = (props) => {
 
   return (
     <LightMode>
-      <Drawer
-        isOpen={isOpen}
-        placement="right"
-        onClose={onClose}
-      >
+      <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
         <DrawerOverlay bg="blackAlpha.300" />
         <DrawerContent
           bg={useColorModeValue("drawerbgalpha", "drawerbgdarkalpha")}
@@ -177,7 +170,13 @@ const MateriasDrawer = (props) => {
                       duration: 1500,
                       render: () => (
                         <LightMode>
-                          <Alert borderRadius="md" colorScheme="purple" borderWidth={1} borderColor="purple.400" color="gray.800">
+                          <Alert
+                            borderRadius="md"
+                            colorScheme="purple"
+                            borderWidth={1}
+                            borderColor="purple.400"
+                            color="gray.800"
+                          >
                             <AlertIcon as={LinkIcon} />
                             <AlertTitle>Permalink copiado!</AlertTitle>
                           </Alert>
@@ -274,15 +273,18 @@ const MateriasDrawer = (props) => {
                             <AlertTitle>Hola!</AlertTitle>
                             <AlertDescription px={5} display="block">
                               <Text>
-                                Si encontrás algo feo, incorrecto, lento, erroneo...
-                                me decís?
+                                Si encontrás algo feo, incorrecto, lento,
+                                erroneo... me decís?
                               </Text>
                               <Text>
                                 Si ves algo que te gustó, o tenés alguna idea,
                                 también!
                               </Text>
                               <Text my={2}>
-                                Actualizar los horarios *no* depende de mí. Si falta algo o no están al día, el problema es que FIUBA no actualizó el sitio de <Link
+                                Actualizar los horarios *no* depende de mí. Si
+                                falta algo o no están al día, el problema es que
+                                FIUBA no actualizó el sitio de{" "}
+                                <Link
                                   isExternal
                                   _hover={{
                                     color: "primary.500",
@@ -297,8 +299,8 @@ const MateriasDrawer = (props) => {
                                 </Link>
                               </Text>
                               <Text>
-                                Estas sugerencias son *anónimas*. Si querés que te responda, escribime tu
-                                mail o telegram!
+                                Estas sugerencias son *anónimas*. Si querés que
+                                te responda, escribime tu mail o telegram!
                               </Text>
                               <form
                                 onSubmit={(t) => {
@@ -311,8 +313,12 @@ const MateriasDrawer = (props) => {
                                 <Flex mt={3} alignItems="flex-end">
                                   <Textarea
                                     resize="none"
-                                    borderColor={colorMode === "dark" ? "white" : "black"}
-                                    color={colorMode === "dark" ? "white" : "black"}
+                                    borderColor={
+                                      colorMode === "dark" ? "white" : "black"
+                                    }
+                                    color={
+                                      colorMode === "dark" ? "white" : "black"
+                                    }
                                     focusBorderColor="primary.500"
                                     size="sm"
                                     name="bug"
@@ -355,7 +361,7 @@ const MateriasDrawer = (props) => {
                             top="8px"
                           />
                         </Alert>
-                      )
+                      ),
                     }));
                   }}
                 >

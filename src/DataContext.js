@@ -1,3 +1,6 @@
+/* https://github.com/facebook/react/issues/14476#issuecomment-471199055 */
+/* eslint-disable react-hooks/exhaustive-deps */
+
 import React from "react";
 import { data as jsonData } from "./data/horarios";
 import { Buffer } from "buffer";
@@ -159,8 +162,6 @@ const Data = () => {
       tabs,
       extraEvents,
     };
-    // https://github.com/facebook/react/issues/14476#issuecomment-471199055
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
     JSON.stringify(selections),
     JSON.stringify(tabEvents),
@@ -176,15 +177,11 @@ const Data = () => {
     const savedataPako = pako.gzip(JSON.stringify(savedata), { to: "string" });
     const savedatab64 = Buffer.from(savedataPako).toString("base64");
     return `https://fede.dm/FIUBA-Plan/#${savedatab64}`;
-    // https://github.com/facebook/react/issues/14476#issuecomment-471199055
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [JSON.stringify(savedata)]);
 
   React.useEffect(() => {
     if (readOnly) return;
     window.localStorage.setItem("fiubaplan", JSON.stringify(savedata));
-    // https://github.com/facebook/react/issues/14476#issuecomment-471199055
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [JSON.stringify(savedata), readOnly]);
 
   // INTERFACES DE CADA ESTADO
@@ -352,8 +349,6 @@ const Data = () => {
 
     if (extraEvents.length === 0) return clases;
     return [...clases, ...extraevents];
-    // https://github.com/facebook/react/issues/14476#issuecomment-471199055
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeTabId, extraEvents, JSON.stringify(tabEvents)]);
 
   return {

@@ -22,7 +22,7 @@ const SelectMateria = ({ materiasToShow }) => {
           .toLowerCase()
           .normalize("NFD")
           .replace(/[\u0300-\u036f]/g, "")
-          .includes(search) || item.codigo.includes(search)
+          .includes(search) || item.codigo.includes(search),
     );
   }, [materiasToShow, search]);
 
@@ -36,7 +36,12 @@ const SelectMateria = ({ materiasToShow }) => {
     items: inputItems,
     itemToString: (item) => search,
     onInputValueChange: ({ inputValue }) => {
-      setSearch(inputValue.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""))
+      setSearch(
+        inputValue
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, ""),
+      );
     },
     stateReducer,
   });
@@ -53,7 +58,7 @@ const SelectMateria = ({ materiasToShow }) => {
           color="primary.500"
           fontFamily="body"
           placeholder="Buscar Materia..."
-          _placeholder={{ color: 'gray.200' }}
+          _placeholder={{ color: "gray.200" }}
         />
         <InputRightElement children={<SearchIcon color="primary.500" />} />
       </InputGroup>
@@ -79,7 +84,11 @@ const SelectMateria = ({ materiasToShow }) => {
               <Box
                 borderRadius={5}
                 _hover={{ bg: "hovercolor" }}
-                color={selections.materias.includes(materia.codigo) ? "primary.500" : "gray.200"}
+                color={
+                  selections.materias.includes(materia.codigo)
+                    ? "primary.500"
+                    : "gray.200"
+                }
                 fontSize="sm"
                 cursor="pointer"
                 onClick={() => toggleMateria(materia.codigo)}

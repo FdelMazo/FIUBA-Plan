@@ -25,9 +25,9 @@ const Body = () => {
   const [useAgenda, setUseAgenda] = React.useState(false);
   const { width } = useWindowSize();
   const { isOpen, onToggle, onClose } = useDisclosure();
-  useHotkeys('esc', onToggle, {
+  useHotkeys("esc", onToggle, {
     enableOnFormTags: true,
-  })
+  });
 
   React.useEffect(() => {
     setUseAgenda(width < 1000);
@@ -42,10 +42,7 @@ const Body = () => {
         setUseAgenda={setUseAgenda}
       />
       {isChristmasTime && <Snowfall color="lavender" />}
-      <Calendar
-        events={events}
-        useAgenda={useAgenda}
-      />
+      <Calendar events={events} useAgenda={useAgenda} />
       <IconButton
         position="absolute"
         right={10}

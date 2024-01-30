@@ -1,7 +1,7 @@
 import ColorHash from "color-hash";
 import { data as jsonData } from "./data/horarios";
 import { carreras as jsonCarreras } from "./data/carreras";
-import { useCombobox, useSelect } from 'downshift'
+import { useCombobox, useSelect } from "downshift";
 
 const arr = (min, max, int) => {
   const arr = [];
@@ -14,11 +14,11 @@ const arr = (min, max, int) => {
 const colorHash = new ColorHash({
   lightness: arr(0.6, 0.85, 0.1),
   saturation: arr(0.6, 0.85, 0.1),
-  hash: "bkdr"
+  hash: "bkdr",
 });
 
 export const getColor = (event) => {
-  if (!event) return null
+  if (!event) return null;
   return colorHash.hex(event.id.toString());
 };
 
@@ -28,7 +28,7 @@ export const ValidCurso = (codigo) => {
 
 export const ValidMateria = (codigo) => {
   const materia = jsonData.materias.find(
-    (materia) => materia.codigo === codigo
+    (materia) => materia.codigo === codigo,
   );
   if (!materia) return false;
   return !!materia.cursos.filter(ValidCurso).length;
@@ -48,7 +48,7 @@ export const getCarrera = (nombre) => {
 
 export const getCursosMateria = (codigoMateria) => {
   const cursos = jsonData.materias.find(
-    (m) => m.codigo === codigoMateria
+    (m) => m.codigo === codigoMateria,
   ).cursos;
   return cursos.filter(ValidCurso).map(getCurso);
 };

@@ -2,7 +2,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 
 import React from "react";
-import { data as jsonData } from "./data/horarios";
+import jsonData from "./data/horarios";
 import { Buffer } from "buffer";
 import pako from "pako";
 import { useImmer, useImmerReducer } from "use-immer";

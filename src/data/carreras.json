@@ -1,7 +1,7 @@
-export const carreras = [
+[
   {
-    nombre: "Ingeniería Civil",
-    materias: [
+    "nombre": "Ingeniería Civil",
+    "materias": [
       "7801",
       "8101",
       "8102",
@@ -82,12 +82,12 @@ export const carreras = [
       "9420",
       "9504",
       "9510",
-      "9703",
-    ],
+      "9703"
+    ]
   },
   {
-    nombre: "Ingeniería Electricista",
-    materias: [
+    "nombre": "Ingeniería Electricista",
+    "materias": [
       "8101",
       "8102",
       "8103",
@@ -150,12 +150,12 @@ export const carreras = [
       "9136",
       "9501",
       "9504",
-      "9702",
-    ],
+      "9702"
+    ]
   },
   {
-    nombre: "Ingeniería Electrónica",
-    materias: [
+    "nombre": "Ingeniería Electrónica",
+    "materias": [
       "8101",
       "8102",
       "8104",
@@ -254,12 +254,12 @@ export const carreras = [
       "9509",
       "9511",
       "9512",
-      "9704",
-    ],
+      "9704"
+    ]
   },
   {
-    nombre: "Ingeniería Industrial",
-    materias: [
+    "nombre": "Ingeniería Industrial",
+    "materias": [
       "6213",
       "8101",
       "8102",
@@ -341,12 +341,12 @@ export const carreras = [
       "202309",
       "202310",
       "202311",
-      "202312",
-    ],
+      "202312"
+    ]
   },
   {
-    nombre: "Ingeniería Mecánica",
-    materias: [
+    "nombre": "Ingeniería Mecánica",
+    "materias": [
       "6103",
       "6106",
       "6108",
@@ -422,12 +422,12 @@ export const carreras = [
       "7802",
       "7803",
       "7804",
-      "7805",
-    ],
+      "7805"
+    ]
   },
   {
-    nombre: "Ingeniería Naval y Mecánica",
-    materias: [
+    "nombre": "Ingeniería Naval y Mecánica",
+    "materias": [
       "6103",
       "6106",
       "6108",
@@ -492,12 +492,12 @@ export const carreras = [
       "7802",
       "7803",
       "7804",
-      "7805",
-    ],
+      "7805"
+    ]
   },
   {
-    nombre: "Ingeniería Química",
-    materias: [
+    "nombre": "Ingeniería Química",
+    "materias": [
       "6103",
       "6106",
       "6108",
@@ -558,12 +558,12 @@ export const carreras = [
       "7802",
       "7803",
       "7804",
-      "7805",
-    ],
+      "7805"
+    ]
   },
   {
-    nombre: "Ingeniería de Alimentos",
-    materias: [
+    "nombre": "Ingeniería de Alimentos",
+    "materias": [
       "6103",
       "6106",
       "6108",
@@ -604,12 +604,12 @@ export const carreras = [
       "7802",
       "7803",
       "7804",
-      "7805",
-    ],
+      "7805"
+    ]
   },
   {
-    nombre: "Ingeniería en Agrimensura",
-    materias: [
+    "nombre": "Ingeniería en Agrimensura",
+    "materias": [
       "6103",
       "6106",
       "6122",
@@ -660,12 +660,12 @@ export const carreras = [
       "7802",
       "7803",
       "7804",
-      "7805",
-    ],
+      "7805"
+    ]
   },
   {
-    nombre: "Ingeniería en Informática",
-    materias: [
+    "nombre": "Ingeniería en Informática",
+    "materias": [
       "6103",
       "6107",
       "6108",
@@ -769,12 +769,12 @@ export const carreras = [
       "7805",
       "202301",
       "202302",
-      "202303",
-    ],
+      "202303"
+    ]
   },
   {
-    nombre: "Ingeniería en Petroleo",
-    materias: [
+    "nombre": "Ingeniería en Petroleo",
+    "materias": [
       "6204",
       "6758",
       "7040",
@@ -827,12 +827,12 @@ export const carreras = [
       "9201",
       "9501",
       "9513",
-      "9708",
-    ],
+      "9708"
+    ]
   },
   {
-    nombre: "Licenciatura en Análisis de Sistemas",
-    materias: [
+    "nombre": "Licenciatura en Análisis de Sistemas",
+    "materias": [
       "8101",
       "8102",
       "8104",
@@ -887,12 +887,12 @@ export const carreras = [
       "9802",
       "9803",
       "9804",
-      "9805",
-    ],
+      "9805"
+    ]
   },
   {
-    nombre: "Licenciatura en Análisis de Sistemas (1986)",
-    materias: [
+    "nombre": "Licenciatura en Análisis de Sistemas (1986)",
+    "materias": [
       "6103",
       "6107",
       "6108",
@@ -943,7 +943,7 @@ export const carreras = [
       "7802",
       "7803",
       "7804",
-      "7805",
-    ],
-  },
-];
+      "7805"
+    ]
+  }
+]

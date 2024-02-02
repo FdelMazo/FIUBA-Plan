@@ -20,7 +20,7 @@ jobs:
       - name: Check if there were modifications
         id: check
         run: |
-          if git status --porcelain | grep 'src/data/horarios.js'; then
+          if git status --porcelain | grep 'src/data/horarios.json'; then
             echo "modified=true" >> $GITHUB_OUTPUT
           else
             echo "modified=false" >> $GITHUB_OUTPUT
@@ -29,7 +29,7 @@ jobs:
         if: ${{ steps.check.outputs.modified == 'true'}}
         uses: peter-evans/create-pull-request@v4
         with:
-          add-paths: src/data/horarios.js
+          add-paths: src/data/horarios.json
           commit-message: Update horarios [auto]
           title: Actualizar Horarios [auto]
           author: GitHub <noreply@github.com>

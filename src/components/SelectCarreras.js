@@ -8,7 +8,7 @@ import { Box, Button, List, Flex, Tooltip, Link, Icon } from "@chakra-ui/react";
 import { useSelect } from "downshift";
 import React from "react";
 import { DataContext } from "../DataContext";
-import { carreras as jsonCarreras } from "../data/carreras";
+import jsonCarreras from "../data/carreras";
 import { stateReducer } from "../utils";
 
 const carreras = jsonCarreras.map((c) => c.nombre).sort();

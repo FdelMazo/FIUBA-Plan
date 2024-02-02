@@ -14,13 +14,13 @@ Una vez terminados los cambios, con solo hacer un PR basta (porque la aplicació
 
 ## Actualización cuatrimestral de horarios
 
-Todos los cuatrimestres hay que actualizar los horarios de la aplicación (siempre teniendo en cuenta que los primeros horarios publicados suelen cambiar bastante porque se encuentran errores o hay modificaciones en la semana de inscripcion). Este proceso esta automatizado con github actions: todas las noches a las 12 de la noche el script [`get_cursos.ipynb`](py/get_cursos.ipynb) llama a la API de [https://ofertahoraria.fi.uba.ar](https://ofertahoraria.fi.uba.ar) y vierte los horarios nuevos en `src/data/horarios.js`.
+Todos los cuatrimestres hay que actualizar los horarios de la aplicación (siempre teniendo en cuenta que los primeros horarios publicados suelen cambiar bastante porque se encuentran errores o hay modificaciones en la semana de inscripcion). Este proceso esta automatizado con github actions: todas las noches a las 12 de la noche el script [`get_cursos.ipynb`](py/get_cursos.ipynb) llama a la API de [https://ofertahoraria.fi.uba.ar](https://ofertahoraria.fi.uba.ar) y vierte los horarios nuevos en `src/data/horarios.json`.
 
-Por otro lado, la lista de materias por carrera se encuentra en `src/data/carreras.js` y esta hecha 'a mano' (porque no sale de ningun lado, más que de registros de cuatris anteriores). Esta lista es algo que no debería cambiar cuatrimestre a cuatrimestre, pero si una materia fuese a cambiar de código entonces habría que actualizar ese archivo.
+Por otro lado, la lista de materias por carrera se encuentra en `src/data/carreras.json` y esta hecha 'a mano' (porque no sale de ningun lado, más que de registros de cuatris anteriores). Esta lista es algo que no debería cambiar cuatrimestre a cuatrimestre, pero si una materia fuese a cambiar de código entonces habría que actualizar ese archivo.
 
 ---
 
-De todas formas, si algún día falla github actions, falla la API de ofertahoraria, el mantenedor se recibe y deja de prestarle atención a FIUBA, o cualquier otro inconveniente sucede, lo único que importa es mantener `src/data/horarios.js` actualizado. No importa cómo se consigan los datos hay que llegar a un json del siguiente formato:
+De todas formas, si algún día falla github actions, falla la API de ofertahoraria, el mantenedor se recibe y deja de prestarle atención a FIUBA, o cualquier otro inconveniente sucede, lo único que importa es mantener `src/data/horarios.json` actualizado. No importa cómo se consigan los datos hay que llegar a un json del siguiente formato:
 
 ```jsonc
 // Este json tiene que estar ordenado por claves, (logrado con el método de python `json.dumps(DATA, indent=2, ensure_ascii=False, sort_keys=True)`), de esta manéra los diffs van a ser mucho más legibles

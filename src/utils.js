@@ -1,6 +1,6 @@
 import ColorHash from "color-hash";
-import { data as jsonData } from "./data/horarios";
-import { carreras as jsonCarreras } from "./data/carreras";
+import jsonData from "./data/horarios";
+import jsonCarreras from "./data/carreras";
 import { useCombobox, useSelect } from "downshift";
 
 const arr = (min, max, int) => {

@@ -1,4 +1,4 @@
-import { data as jsonData } from "../data/horarios";
+import jsonData from "../data/horarios";
 import { AddIcon, ExternalLinkIcon, SmallCloseIcon } from "@chakra-ui/icons";
 import {
   Alert,

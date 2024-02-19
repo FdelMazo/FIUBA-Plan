@@ -43,7 +43,13 @@ const SelectExtra = () => {
   return (
     <>
       <Flex direction="row" justify="flex-end">
-        <Box {...getToggleButtonProps()}>
+        <Box
+          {...getToggleButtonProps({
+            onBlur: (event) => {
+              event.preventDownshiftDefault = true;
+            },
+          })}
+        >
           <Button
             my={2}
             px={2}

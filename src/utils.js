@@ -1,7 +1,7 @@
 import ColorHash from "color-hash";
-import jsonData from "./data/horarios";
-import jsonCarreras from "./data/carreras";
 import { useCombobox, useSelect } from "downshift";
+import jsonCarreras from "./data/carreras";
+import jsonData from "./data/horarios";
 
 const arr = (min, max, int) => {
   const arr = [];
@@ -70,4 +70,75 @@ export function stateReducer(state, actionAndChanges) {
     default:
       return changes;
   }
+}
+
+export async function parseSIU(rawData) {
+  // Temporalmente: solo hacer que haya dos cursos de AM2 que pisen todo el resto.
+  // TODO: agregar logica de verdad
+  return {
+    cursos: [
+      {
+        clases: [
+          {
+            dia: 2,
+            fin: "09:00",
+            inicio: "07:00",
+          },
+          {
+            dia: 2,
+            fin: "11:00",
+            inicio: "09:00",
+          },
+          {
+            dia: 4,
+            fin: "09:00",
+            inicio: "07:00",
+          },
+          {
+            dia: 4,
+            fin: "11:00",
+            inicio: "09:00",
+          },
+        ],
+        codigo: "6103-CURSO: 02A",
+        docentes:
+          "ACERO, FERNANDO RODOLFO - LOPEZ, CLAUDIA ANDREA - ENDELLI, JORGE RODOLFO",
+        materia: "6103",
+      },
+      {
+        clases: [
+          {
+            dia: 2,
+            fin: "09:00",
+            inicio: "07:00",
+          },
+          {
+            dia: 2,
+            fin: "11:00",
+            inicio: "09:00",
+          },
+          {
+            dia: 4,
+            fin: "09:00",
+            inicio: "07:00",
+          },
+          {
+            dia: 4,
+            fin: "11:00",
+            inicio: "09:00",
+          },
+        ],
+        codigo: "6103-CURSO: 02B",
+        docentes:
+          "ACERO, FERNANDO RODOLFO - GARCIA, ADRIANA EVA - PORTOCARRERO MIRANDA, MICHAEL",
+        materia: "6103",
+      },
+    ],
+    materias: [
+      {
+        codigo: "6103",
+        cursos: ["6103-CURSO: 02A", "6103-CURSO: 02B"],
+      },
+    ],
+  };
 }

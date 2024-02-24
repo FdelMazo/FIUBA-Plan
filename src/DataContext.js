@@ -1,17 +1,18 @@
 /* https://github.com/facebook/react/issues/14476#issuecomment-471199055 */
 /* eslint-disable react-hooks/exhaustive-deps */
 
-import React from "react";
-import jsonData from "./data/horarios";
 import { Buffer } from "buffer";
 import pako from "pako";
+import React from "react";
 import { useImmer, useImmerReducer } from "use-immer";
+import jsonData from "./data/horarios";
 import {
   ValidCurso,
   ValidMateria,
-  getMateria,
   getCurso,
   getCursosMateria,
+  getMateria,
+  parseSIU,
 } from "./utils";
 
 // Si tengo un permalink, parseo su info y reseteo la URL
@@ -145,6 +146,15 @@ const Data = () => {
       case "reset":
         return [];
     }
+  };
+
+  // TODO: documentar
+  const [horariosSIU, setHorariosSIU] = React.useState(null);
+
+  const applyHorariosSIU = async () => {
+    // TODO: error handling
+    const horarios = await parseSIU();
+    setHorariosSIU(horarios);
   };
 
   const [extraEvents, extraEventsDispatch] = useImmerReducer(
@@ -374,6 +384,8 @@ const Data = () => {
     renameTab,
     removeTab,
     events,
+    horariosSIU,
+    applyHorariosSIU,
   };
 };
 

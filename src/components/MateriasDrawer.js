@@ -25,6 +25,7 @@ import React from "react";
 import { DataContext } from "../DataContext";
 import jsonData from "../data/horarios";
 import { ValidMateria, getCarrera, getMateria } from "../utils";
+import ManualUploadToast from "./ManualUploadToast";
 import SelectCarreras from "./SelectCarreras";
 import SelectCurso from "./SelectCurso";
 import SelectExtra from "./SelectExtra";
@@ -68,6 +69,8 @@ const MateriasDrawer = (props) => {
           bg={useColorModeValue("drawerbgalpha", "drawerbgdarkalpha")}
         >
           <Box pt={6} px={6}>
+            <ManualUploadToast onClose={onClose} />
+            {/* TODO: mostrar "selectcarreras" solo si no hay horarios del SIU */}
             <SelectCarreras />
             {!!materiasToShow.length && (
               <SelectMateria materiasToShow={materiasToShow} />

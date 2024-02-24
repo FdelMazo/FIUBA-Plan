@@ -154,6 +154,7 @@ const TabSystem = (props) => {
         <Popover placement="bottom" trigger="hover" defaultIsOpen={malaonda}>
           <PopoverTrigger>
             <Text>
+              {/* TODO: "Usando horarios manuales del SIU" cuando esta prendido eso */}
               Actualizado al <strong>{actualizacion.cuatrimestre}</strong>
             </Text>
           </PopoverTrigger>

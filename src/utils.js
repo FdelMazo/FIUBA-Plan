@@ -57,7 +57,6 @@ export async function parseSIU(rawdata) {
   };
   for (const match of matches) {
     const actividad = match[0];
-    console.log(actividad);
     const materiaPattern = /Actividad:(.*?) \((.+?)\)/;
     const materiaMatch = actividad.match(materiaPattern);
     if (!materiaMatch) {

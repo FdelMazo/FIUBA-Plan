@@ -18,21 +18,22 @@ import {
 import { useSelect } from "downshift";
 import React from "react";
 import { DataContext } from "../DataContext";
-import { getColor, getCurso, getCursosMateria, getMateria } from "../utils";
+import { getColor } from "../utils";
 import { stateReducer } from "../utils";
 
 const INICIALES_SEMANA = ["D", "L", "M", "X", "J", "V", "S"];
 
 const SelectCurso = ({ codigo }) => {
-  const { toggleCurso, events, toggleMateria } = React.useContext(DataContext);
-  const materia = getMateria(codigo);
-  const items = getCursosMateria(codigo);
+  const { toggleCurso, events, toggleMateria, getters } =
+    React.useContext(DataContext);
+  const materia = getters.getMateria(codigo);
+  const items = getters.getCursosMateria(codigo);
 
   const isBlocked = React.useCallback(
     (codigo) => {
-      const curso = getCurso(codigo);
+      const curso = getters.getCurso(codigo);
       const eventos = events.filter((e) => {
-        const anotherCurso = getCurso(e.curso);
+        const anotherCurso = getters.getCurso(e.curso);
         if (!anotherCurso) return false;
         return anotherCurso.materia !== curso.materia;
       });
@@ -52,7 +53,7 @@ const SelectCurso = ({ codigo }) => {
       }
       return false;
     },
-    [events],
+    [events, getters],
   );
 
   const allItemsBlocked = items.every((item) => isBlocked(item.codigo));

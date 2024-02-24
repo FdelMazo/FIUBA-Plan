@@ -18,7 +18,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 
-const submitBug = (bug) => {
+const submitBug = async (bug) => {
   if (!bug) return;
   const formData = new FormData();
   formData.append(`entry.108884877`, "FIUBA-PLAN");

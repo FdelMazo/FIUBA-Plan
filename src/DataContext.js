@@ -202,6 +202,7 @@ const Data = () => {
     try {
       horarios = await parseSIU(rawdata);
     } catch (e) {
+      console.warn(e);
       throw new Error("Error al parsear los horarios del SIU");
     }
 

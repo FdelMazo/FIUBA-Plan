@@ -1,22 +1,10 @@
-import jsonData from "../data/horarios";
-import {
-  CalendarIcon,
-  ChatIcon,
-  CheckIcon,
-  ExternalLinkIcon,
-  MoonIcon,
-  SunIcon,
-  LinkIcon,
-} from "@chakra-ui/icons";
+import { CalendarIcon, LinkIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 import {
   Alert,
-  AlertDescription,
   AlertIcon,
   AlertTitle,
   Box,
   Button,
-  CloseButton,
-  DarkMode,
   Drawer,
   DrawerBody,
   DrawerContent,
@@ -27,11 +15,6 @@ import {
   IconButton,
   LightMode,
   Link,
-  Tag,
-  TagLabel,
-  TagRightIcon,
-  Text,
-  Textarea,
   Tooltip,
   useClipboard,
   useColorMode,
@@ -40,25 +23,13 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { DataContext } from "../DataContext";
+import jsonData from "../data/horarios";
+import { ValidMateria, getCarrera, getMateria } from "../utils";
 import SelectCarreras from "./SelectCarreras";
 import SelectCurso from "./SelectCurso";
-import SelectMateria from "./SelectMateria";
 import SelectExtra from "./SelectExtra";
-import { ValidMateria, getMateria, getCarrera } from "../utils";
-
-const submitBug = (bug) => {
-  if (!bug) return;
-  const formData = new FormData();
-  formData.append(`entry.108884877`, "FIUBA-PLAN");
-  formData.append(`entry.817568535`, bug || "");
-  fetch(
-    `https://docs.google.com/forms/d/1Mr4-4qWqZKaobjG3GI30aPvC5qlMsd6Eib3YGUbLd2k/formResponse`,
-    {
-      body: formData,
-      method: "POST",
-    },
-  );
-};
+import SelectMateria from "./SelectMateria";
+import Sugerencias from "./Sugerencias";
 
 const MateriasDrawer = (props) => {
   const { useAgenda, setUseAgenda, isOpen, onClose } = props;
@@ -71,11 +42,9 @@ const MateriasDrawer = (props) => {
     extraEvents,
     permalink,
   } = React.useContext(DataContext);
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { toggleColorMode } = useColorMode();
   const toast = useToast();
-  const bugToast = React.useRef();
   const permalinkToast = React.useRef();
-  const [showGracias, setShowGracias] = React.useState(false);
   const { onCopy } = useClipboard(permalink);
 
   const materiasToShow = React.useMemo(() => {
@@ -242,136 +211,7 @@ const MateriasDrawer = (props) => {
                 </Link>
               </Tooltip>
 
-              <Box>
-                <Tag
-                  mt={2}
-                  variant="subtle"
-                  cursor="pointer"
-                  bg="primary.400"
-                  onClick={() => {
-                    onClose();
-                    if (toast.isActive(bugToast.current)) {
-                      toast.close(bugToast.current);
-                      return;
-                    }
-                    return (bugToast.current = toast({
-                      status: "info",
-                      position: "bottom",
-                      duration: null,
-                      isClosable: true,
-                      render: (props) => (
-                        <Alert
-                          borderRadius={6}
-                          p={8}
-                          mb="4em"
-                          borderColor="primary.400"
-                          borderWidth={2}
-                          bg={colorMode === "dark" ? "drawerbg" : "gray.50"}
-                          color={colorMode === "dark" ? "white" : "black"}
-                        >
-                          <Box flex="1">
-                            <AlertTitle>Hola!</AlertTitle>
-                            <AlertDescription px={5} display="block">
-                              <Text>
-                                Si encontrás algo feo, incorrecto, lento,
-                                erroneo... me decís?
-                              </Text>
-                              <Text>
-                                Si ves algo que te gustó, o tenés alguna idea,
-                                también!
-                              </Text>
-                              <Text my={2}>
-                                Actualizar los horarios *no* depende de mí. Si
-                                falta algo o no están al día, el problema es que
-                                FIUBA no actualizó el sitio de{" "}
-                                <Link
-                                  isExternal
-                                  _hover={{
-                                    color: "primary.500",
-                                  }}
-                                  href="https://ofertahoraria.fi.uba.ar/"
-                                >
-                                  oferta horaria.
-                                  <ExternalLinkIcon
-                                    color="primary.500"
-                                    mx="2px"
-                                  />
-                                </Link>
-                              </Text>
-                              <Text>
-                                Estas sugerencias son *anónimas*. Si querés que
-                                te responda, escribime tu mail o telegram!
-                              </Text>
-                              <form
-                                onSubmit={(t) => {
-                                  t.preventDefault();
-                                  submitBug(t.target.elements["bug"].value);
-                                  setShowGracias(true);
-                                  toast.close(bugToast.current);
-                                }}
-                              >
-                                <Flex mt={3} alignItems="flex-end">
-                                  <Textarea
-                                    resize="none"
-                                    borderColor={
-                                      colorMode === "dark" ? "white" : "black"
-                                    }
-                                    color={
-                                      colorMode === "dark" ? "white" : "black"
-                                    }
-                                    focusBorderColor="primary.500"
-                                    size="sm"
-                                    name="bug"
-                                  />
-                                  <DarkMode>
-                                    <IconButton
-                                      ml={3}
-                                      colorScheme="purple"
-                                      size="sm"
-                                      type="submit"
-                                      icon={<ChatIcon />}
-                                    />
-                                  </DarkMode>
-                                </Flex>
-                              </form>
-                              <Text fontSize="sm" mt={2}>
-                                ¿Usás Github? Me ayudás mucho más levantando un
-                                issue{" "}
-                                <Link
-                                  isExternal
-                                  _hover={{
-                                    color: "primary.500",
-                                  }}
-                                  href="https://github.com/FdelMazo/FIUBA-Plan/issues/new"
-                                >
-                                  directamente{" "}
-                                  <ExternalLinkIcon
-                                    color="primary.500"
-                                    mx="2px"
-                                  />
-                                </Link>
-                              </Text>
-                            </AlertDescription>
-                          </Box>
-                          <CloseButton
-                            color="primary.700"
-                            onClick={() => toast.close(props.id)}
-                            position="absolute"
-                            right="8px"
-                            top="8px"
-                          />
-                        </Alert>
-                      ),
-                    }));
-                  }}
-                >
-                  <TagLabel lineHeight={2}>
-                    {showGracias ? "Gracias!" : "Sugerencias"}
-                  </TagLabel>
-
-                  <TagRightIcon as={showGracias ? CheckIcon : ChatIcon} />
-                </Tag>
-              </Box>
+              <Sugerencias onClose={onClose} />
             </Box>
           </DrawerFooter>
         </DrawerContent>

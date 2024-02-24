@@ -69,7 +69,7 @@ export async function parseSIU(rawdata) {
     };
 
     const cursosPattern =
-      /Comisión: (.*)[\s\S]*?Turno:.*Docentes: ([\s\S]*?)Tipo de clase\s+Día\s+Horario\s+Aula([\s\S]*?)(?=(Comisión: CURSO:|$))/g;
+      /Comisión: ([^\n]+)[\s\S]*?Docentes: ([^\n]+)[\s\S]*?Tipo de clase\s+Día\s+Horario\s+Aula([\s\S]*?)(?=(Comisión:|$))/g;
 
     let matchCurso;
     while ((matchCurso = cursosPattern.exec(actividad)) !== null) {

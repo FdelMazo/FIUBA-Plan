@@ -23,9 +23,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { DataContext } from "../DataContext";
-import jsonData from "../data/horarios";
-import { ValidMateria, getCarrera, getMateria } from "../utils";
-import ManualUploadToast from "./ManualUploadToast";
+import ManualUploadModal from "./ManualUploadModal";
 import SelectCarreras from "./SelectCarreras";
 import SelectCurso from "./SelectCurso";
 import SelectExtra from "./SelectExtra";
@@ -42,24 +40,13 @@ const MateriasDrawer = (props) => {
     events,
     extraEvents,
     permalink,
+    materiasToShow,
+    horariosSIU,
   } = React.useContext(DataContext);
   const { toggleColorMode } = useColorMode();
   const toast = useToast();
   const permalinkToast = React.useRef();
   const { onCopy } = useClipboard(permalink);
-
-  const materiasToShow = React.useMemo(() => {
-    let codigos = [];
-    if (!selections.carreras.length) {
-      codigos = jsonData.materias.map((m) => m.codigo);
-    } else {
-      codigos = selections.carreras.flatMap((c) => {
-        return getCarrera(c).materias;
-      });
-    }
-    const codigosUnicos = [...new Set(codigos)].sort();
-    return codigosUnicos.filter(ValidMateria).map(getMateria);
-  }, [selections.carreras]);
 
   return (
     <LightMode>
@@ -69,9 +56,8 @@ const MateriasDrawer = (props) => {
           bg={useColorModeValue("drawerbgalpha", "drawerbgdarkalpha")}
         >
           <Box pt={6} px={6}>
-            <ManualUploadToast onClose={onClose} />
-            {/* TODO: mostrar "selectcarreras" solo si no hay horarios del SIU */}
-            <SelectCarreras />
+            <ManualUploadModal />
+            {!horariosSIU && <SelectCarreras />}
             {!!materiasToShow.length && (
               <SelectMateria materiasToShow={materiasToShow} />
             )}

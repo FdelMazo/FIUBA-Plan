@@ -1,7 +1,5 @@
 import ColorHash from "color-hash";
 import { useCombobox, useSelect } from "downshift";
-import jsonCarreras from "./data/carreras";
-import jsonData from "./data/horarios";
 
 const arr = (min, max, int) => {
   const arr = [];
@@ -20,37 +18,6 @@ const colorHash = new ColorHash({
 export const getColor = (event) => {
   if (!event) return null;
   return colorHash.hex(event.id.toString());
-};
-
-export const ValidCurso = (codigo) => {
-  return !!jsonData.cursos.find((c) => c.codigo === codigo)?.clases?.length;
-};
-
-export const ValidMateria = (codigo) => {
-  const materia = jsonData.materias.find(
-    (materia) => materia.codigo === codigo,
-  );
-  if (!materia) return false;
-  return !!materia.cursos.filter(ValidCurso).length;
-};
-
-export const getMateria = (codigo) => {
-  return jsonData.materias.find((m) => m.codigo === codigo);
-};
-
-export const getCurso = (codigo) => {
-  return jsonData.cursos.find((c) => c.codigo === codigo);
-};
-
-export const getCarrera = (nombre) => {
-  return jsonCarreras.find((c) => c.nombre === nombre);
-};
-
-export const getCursosMateria = (codigoMateria) => {
-  const cursos = jsonData.materias.find(
-    (m) => m.codigo === codigoMateria,
-  ).cursos;
-  return cursos.filter(ValidCurso).map(getCurso);
 };
 
 // Downshift util to not close the menu on an item selection (with click, space or enter)
@@ -72,9 +39,7 @@ export function stateReducer(state, actionAndChanges) {
   }
 }
 
-export async function parseSIU(rawData) {
-  // Temporalmente: solo hacer que haya dos cursos de AM2 que pisen todo el resto.
-  // TODO: agregar logica de verdad
+export async function parseSIU(rawdata) {
   return {
     cursos: [
       {
@@ -138,6 +103,7 @@ export async function parseSIU(rawData) {
       {
         codigo: "6103",
         cursos: ["6103-CURSO: 02A", "6103-CURSO: 02B"],
+        nombre: "AnalisisSIU",
       },
     ],
   };

@@ -43,6 +43,7 @@ export async function parseSIU(rawdata) {
   const pattern = /Actividad:(.*?)(?=(Actividad:|$))/gs;
   const matches = rawdata.matchAll(pattern);
   const semana = [
+    "Domingo",
     "Lunes",
     "Martes",
     "Miércoles",

@@ -19,17 +19,16 @@ import {
 import React from "react";
 import { DataContext } from "../DataContext";
 
-const ManualUploadModal = () => {
-  const { applyHorariosSIU, horariosSIU, removeHorariosSIU } =
-    React.useContext(DataContext);
-
-  const { isOpen, onOpen, onClose } = useDisclosure();
+const ManualUploadModal = ({ defaultIsOpen = false }) => {
+  const { isOpen, onOpen, onClose } = useDisclosure({ defaultIsOpen });
   const toast = useToast();
   const [error, setError] = React.useState("");
   const [siuData, setSiuData] = React.useState("");
+  const { applyHorariosSIU, horariosSIU, removeHorariosSIU } =
+    React.useContext(DataContext);
 
   return (
-    <Box mb={4}>
+    <Box>
       <Button
         rightIcon={!horariosSIU && <StarIcon />}
         w="100%"
@@ -46,10 +45,7 @@ const ManualUploadModal = () => {
           <ModalHeader>Importar horarios del SIU</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <Text>
-              Si los horarios del FIUBA-Plan no están actualizados, podés
-              directamente usar los horarios que ves en el SIU.
-            </Text>
+            {/* Habria que agregar un texto explicando bien las cosas */}
             <Text my={2}>
               Andá a{" "}
               <Link

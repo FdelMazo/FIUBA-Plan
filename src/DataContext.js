@@ -454,7 +454,7 @@ const Data = () => {
 
 const getFromStorage = (key, group = undefined) => {
   const json = JSON.parse(window.localStorage.getItem("fiubaplan"));
-  // if (json?.cuatrimestre !== jsonData.cuatrimestre) return null;
+
   return group ? json?.[group]?.[key] : json?.[key];
 };
 

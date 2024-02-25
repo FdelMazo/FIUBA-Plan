@@ -9,11 +9,12 @@ import "moment/locale/es";
 import React from "react";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import Snowfall from "react-snowfall";
+import { useHotkeys } from "react-hotkeys-hook";
 import { DataContext } from "../DataContext";
 import useWindowSize from "../useWindowSize";
 import Calendar from "./Calendar";
 import MateriasDrawer from "./MateriasDrawer";
-import { useHotkeys } from "react-hotkeys-hook";
+import ManualUploadModal from "./ManualUploadModal";
 
 const today = new Date();
 const start = new Date(today.getFullYear(), 11, 19);
@@ -21,7 +22,7 @@ const end = new Date(today.getFullYear() + 1, 0, 1);
 const isChristmasTime = today >= start && today <= end;
 
 const Body = () => {
-  const { events } = React.useContext(DataContext);
+  const { events, horariosSIU } = React.useContext(DataContext);
   const [useAgenda, setUseAgenda] = React.useState(false);
   const { width } = useWindowSize();
   const { isOpen, onToggle, onClose } = useDisclosure();
@@ -42,6 +43,7 @@ const Body = () => {
         setUseAgenda={setUseAgenda}
       />
       {isChristmasTime && <Snowfall color="lavender" />}
+      {!horariosSIU && <ManualUploadModal defaultIsOpen={!horariosSIU} />}
       <Calendar events={events} useAgenda={useAgenda} />
       <IconButton
         position="absolute"

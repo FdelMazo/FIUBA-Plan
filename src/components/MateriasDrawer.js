@@ -40,7 +40,6 @@ const MateriasDrawer = (props) => {
     extraEvents,
     permalink,
     materiasToShow,
-    horariosSIU,
   } = React.useContext(DataContext);
   const { toggleColorMode } = useColorMode();
   const toast = useToast();
@@ -143,6 +142,7 @@ const MateriasDrawer = (props) => {
                 />
               </Tooltip>
             </Box>
+
             <Box textAlign="right">
               <Tooltip
                 label={`${useColorModeValue("Dark", "Light")} theme`}

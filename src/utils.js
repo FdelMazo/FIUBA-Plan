@@ -74,7 +74,7 @@ export async function parseSIU(rawdata) {
 
     let matchCurso;
     while ((matchCurso = cursosPattern.exec(actividad)) !== null) {
-      const codigo = matchCurso[1];
+      const codigo = `${materia.codigo}-${matchCurso[1]}`;
       let docentes = matchCurso[2].trim().replace(/\(.*?\)/g, "");
 
       const clases = [];

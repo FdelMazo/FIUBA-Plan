@@ -40,15 +40,14 @@ const Data = () => {
   // ESTADO 0: el usuario cargo a manopla los horarios de su propio SIU
   const [horariosSIU, setHorariosSIU] = React.useState(initialHorariosSIU);
 
-  // Getters que deciden si verificar contra el json, o contra el SIU del usuario
+  // Getters que verifican contra el SIU del usuario
   const getters = React.useMemo(() => {
-    const source = horariosSIU || jsonData;
     const ValidCurso = (codigo) => {
-      return !!source.cursos.find((c) => c.codigo === codigo)?.clases?.length;
+      return !!horariosSIU.cursos.find((c) => c.codigo === codigo)?.clases?.length;
     };
 
     const ValidMateria = (codigo) => {
-      const materia = source.materias.find(
+      const materia = horariosSIU.materias.find(
         (materia) => materia.codigo === codigo,
       );
       if (!materia) return false;
@@ -56,11 +55,11 @@ const Data = () => {
     };
 
     const getMateria = (codigo) => {
-      return source.materias.find((m) => m.codigo === codigo);
+      return horariosSIU.materias.find((m) => m.codigo === codigo);
     };
 
     const getCurso = (codigo) => {
-      return source.cursos.find((c) => c.codigo === codigo);
+      return horariosSIU.cursos.find((c) => c.codigo === codigo);
     };
 
     const getCarrera = (nombre) => {
@@ -68,7 +67,7 @@ const Data = () => {
     };
 
     const getCursosMateria = (codigoMateria) => {
-      const cursos = source.materias.find(
+      const cursos = horariosSIU.materias.find(
         (m) => m.codigo === codigoMateria,
       ).cursos;
       return cursos.filter(ValidCurso).map(getCurso);

@@ -24,7 +24,6 @@ import {
 import React from "react";
 import { DataContext } from "../DataContext";
 import ManualUploadModal from "./ManualUploadModal";
-import SelectCarreras from "./SelectCarreras";
 import SelectCurso from "./SelectCurso";
 import SelectExtra from "./SelectExtra";
 import SelectMateria from "./SelectMateria";
@@ -57,7 +56,6 @@ const MateriasDrawer = (props) => {
         >
           <Box pt={6} px={6}>
             <ManualUploadModal />
-            {!horariosSIU && <SelectCarreras />}
             {!!materiasToShow.length && (
               <SelectMateria materiasToShow={materiasToShow} />
             )}

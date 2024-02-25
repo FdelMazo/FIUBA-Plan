@@ -64,9 +64,10 @@ const ManualUploadModal = () => {
                   Reportes &gt; Oferta de comisiones
                 </Code>
               </Link>
-              , ahí seleccioná todo el contenido de la página (<Kbd>CTRL</Kbd> + <Kbd>A</Kbd>)
-              , copialo (<Kbd>CTRL</Kbd> + <Kbd>C</Kbd>)
-              , y pegalo en el siguiente cuadro de texto (<Kbd>CTRL</Kbd> + <Kbd>V</Kbd>).
+              , ahí seleccioná todo el contenido de la página (<Kbd>CTRL</Kbd> +{" "}
+              <Kbd>A</Kbd>) , copialo (<Kbd>CTRL</Kbd> + <Kbd>C</Kbd>) , y
+              pegalo en el siguiente cuadro de texto (<Kbd>CTRL</Kbd> +{" "}
+              <Kbd>V</Kbd>).
             </Text>
             <form
               onSubmit={async (t) => {

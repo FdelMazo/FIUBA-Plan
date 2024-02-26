@@ -14,7 +14,6 @@ import { DataContext } from "../DataContext";
 import useWindowSize from "../useWindowSize";
 import Calendar from "./Calendar";
 import MateriasDrawer from "./MateriasDrawer";
-import ManualUploadModal from "./ManualUploadModal";
 
 const today = new Date();
 const start = new Date(today.getFullYear(), 11, 19);
@@ -22,7 +21,7 @@ const end = new Date(today.getFullYear() + 1, 0, 1);
 const isChristmasTime = today >= start && today <= end;
 
 const Body = () => {
-  const { events, horariosSIU } = React.useContext(DataContext);
+  const { events } = React.useContext(DataContext);
   const [useAgenda, setUseAgenda] = React.useState(false);
   const { width } = useWindowSize();
   const { isOpen, onToggle, onClose } = useDisclosure();
@@ -43,7 +42,6 @@ const Body = () => {
         setUseAgenda={setUseAgenda}
       />
       {isChristmasTime && <Snowfall color="lavender" />}
-      {!horariosSIU && <ManualUploadModal defaultIsOpen={!horariosSIU} />}
       <Calendar events={events} useAgenda={useAgenda} />
       <IconButton
         position="absolute"

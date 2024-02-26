@@ -64,7 +64,12 @@ const ManualUploadModal = () => {
           <ModalCloseButton />
           <ModalBody>
             {/* Habria que agregar un texto explicando bien las cosas */}
-            <OrderedList mb={2}>
+            <Text mb={4}>
+              Esta aplicación funciona utilizando las ofertas de comisiones de las materias de la carrera a la que está inscripto el usuario.
+              <br/>Esa información está disponible en el SIU Guaraní del usuario.
+              <br/>Para conseguir esa información seguí los siguientes pasos:
+            </Text>
+            <OrderedList my={2}>
               <ListItem>
                 Andá a{" "}
                 <Link

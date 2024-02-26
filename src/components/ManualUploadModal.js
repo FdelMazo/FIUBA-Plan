@@ -1,4 +1,4 @@
-import { StarIcon } from "@chakra-ui/icons";
+import { DeleteIcon, StarIcon } from "@chakra-ui/icons";
 import {
   Box,
   Button,
@@ -32,9 +32,9 @@ const ManualUploadModal = () => {
   return (
     <Box>
       <Button
-        rightIcon={!horariosSIU && <StarIcon />}
+        rightIcon={horariosSIU ? <DeleteIcon /> : <StarIcon />}
         w="100%"
-        colorScheme="primary"
+        colorScheme={horariosSIU ? "red" : "primary"}
         variant="solid"
         onClick={horariosSIU ? removeHorariosSIU : onOpen}
       >

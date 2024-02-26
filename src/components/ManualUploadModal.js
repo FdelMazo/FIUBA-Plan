@@ -5,12 +5,14 @@ import {
   Code,
   Kbd,
   Link,
+  ListItem,
   Modal,
   ModalBody,
   ModalCloseButton,
   ModalContent,
   ModalHeader,
   ModalOverlay,
+  OrderedList,
   Text,
   Textarea,
   useDisclosure,
@@ -19,8 +21,8 @@ import {
 import React from "react";
 import { DataContext } from "../DataContext";
 
-const ManualUploadModal = ({ defaultIsOpen = false }) => {
-  const { isOpen, onOpen, onClose } = useDisclosure({ defaultIsOpen });
+const ManualUploadModal = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   const toast = useToast();
   const [error, setError] = React.useState("");
   const [siuData, setSiuData] = React.useState("");
@@ -46,25 +48,34 @@ const ManualUploadModal = ({ defaultIsOpen = false }) => {
           <ModalCloseButton />
           <ModalBody>
             {/* Habria que agregar un texto explicando bien las cosas */}
-            <Text my={2}>
-              Andá a{" "}
-              <Link
-                isExternal
-                href="https://guaraniautogestion.fi.uba.ar/g3w/oferta_comisiones"
-              >
-                <Code
-                  _hover={{
-                    bg: "primary.600",
-                  }}
+            <OrderedList mb={2}>
+              <ListItem>
+                Andá a{" "}
+                <Link
+                  isExternal
+                  href="https://guaraniautogestion.fi.uba.ar/g3w/oferta_comisiones"
                 >
-                  Reportes &gt; Oferta de comisiones
-                </Code>
-              </Link>
-              , ahí seleccioná todo el contenido de la página (<Kbd>CTRL</Kbd> +{" "}
-              <Kbd>A</Kbd>) , copialo (<Kbd>CTRL</Kbd> + <Kbd>C</Kbd>) , y
-              pegalo en el siguiente cuadro de texto (<Kbd>CTRL</Kbd> +{" "}
-              <Kbd>V</Kbd>).
-            </Text>
+                  <Code
+                    _hover={{
+                      bg: "primary.600",
+                    }}
+                  >
+                    Reportes &gt; Oferta de comisiones
+                  </Code>
+                </Link>
+              </ListItem>
+              <ListItem>
+                Ahí seleccioná todo el contenido de la página (<Kbd>CTRL</Kbd> +{" "}
+                <Kbd>A</Kbd>)
+              </ListItem>
+              <ListItem>
+                Copia todo (<Kbd>CTRL</Kbd> + <Kbd>C</Kbd>)
+              </ListItem>
+              <ListItem>
+                Pegalo en el siguiente cuadro de texto (<Kbd>CTRL</Kbd> +{" "}
+                <Kbd>V</Kbd>).
+              </ListItem>
+            </OrderedList>
             <form
               onSubmit={async (t) => {
                 t.preventDefault();

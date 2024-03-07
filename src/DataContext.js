@@ -5,7 +5,7 @@ import { Buffer } from "buffer";
 import pako from "pako";
 import React from "react";
 import { useImmer, useImmerReducer } from "use-immer";
-import { parseSIU } from "./utils";
+import { parseSIU } from "./siuparser";
 
 // Si tengo un permalink, parseo su info y reseteo la URL
 let permalinksavedata = null;

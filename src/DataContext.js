@@ -1,22 +1,17 @@
 /* https://github.com/facebook/react/issues/14476#issuecomment-471199055 */
 /* eslint-disable react-hooks/exhaustive-deps */
 
-import { Buffer } from "buffer";
-import pako from "pako";
 import React from "react";
 import { useImmer, useImmerReducer } from "use-immer";
 import { parseSIU } from "./siuparser";
+import { base64tojson, jsontobase64 } from "./utils";
 
 // Si tengo un permalink, parseo su info y reseteo la URL
 let permalinksavedata = null;
 if (window.location.hash) {
-  // hash => b64 => pako => json
-  const savedataPako = Buffer.from(window.location.hash.slice(1), "base64");
-  const savedata = JSON.parse(pako.ungzip(savedataPako, { to: "string" }));
-
+  permalinksavedata = base64tojson(window.location.hash.slice(1));
   // eslint-disable-next-line no-restricted-globals
   history.pushState("", "", window.location.pathname + window.location.search);
-  permalinksavedata = savedata;
 }
 
 export const DataContext = React.createContext();
@@ -231,9 +226,7 @@ const Data = () => {
   const [readOnly, setReadOnly] = React.useState(!!permalinksavedata);
 
   const permalink = React.useMemo(() => {
-    // json => pako => b64 => hash
-    const savedataPako = pako.gzip(JSON.stringify(savedata), { to: "string" });
-    const savedatab64 = Buffer.from(savedataPako).toString("base64");
+    const savedatab64 = jsontobase64(savedata);
     return `https://fede.dm/FIUBA-Plan/#${savedatab64}`;
   }, [JSON.stringify(savedata)]);
 

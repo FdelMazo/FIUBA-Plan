@@ -1,5 +1,7 @@
+import { Buffer } from "buffer";
 import ColorHash from "color-hash";
 import { useCombobox, useSelect } from "downshift";
+import pako from "pako";
 
 const arr = (min, max, int) => {
   const arr = [];
@@ -37,4 +39,16 @@ export function stateReducer(state, actionAndChanges) {
     default:
       return changes;
   }
+}
+
+export function base64tojson(data) {
+  // b64 => pako => json
+  const savedataPako = Buffer.from(data, "base64");
+  return JSON.parse(pako.ungzip(savedataPako, { to: "string" }));
+}
+
+export function jsontobase64(jsondata) {
+  // json => pako => b64
+  const savedataPako = pako.gzip(JSON.stringify(jsondata), { to: "string" });
+  return Buffer.from(savedataPako).toString("base64");
 }

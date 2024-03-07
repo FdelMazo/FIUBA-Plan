@@ -10,7 +10,7 @@
     "@fontsource/source-sans-pro": "^4.5.1",
     "buffer": "^6.0.3",
     "color-hash": "^2.0.2",
-    "downshift": "^8.0.0",
+    "downshift": "^8.4.0",
     "framer-motion": "^6.5.1",
     "immer": "^10.0.2",
     "moment": "^2.29.4",

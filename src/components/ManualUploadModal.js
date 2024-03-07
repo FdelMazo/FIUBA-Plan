@@ -18,7 +18,7 @@ import {
   useDisclosure,
   useToast,
 } from "@chakra-ui/react";
-import React, { useEffect } from "react";
+import React from "react";
 import { DataContext } from "../DataContext";
 
 const ManualUploadModal = () => {
@@ -28,22 +28,6 @@ const ManualUploadModal = () => {
   const [siuData, setSiuData] = React.useState("");
   const { applyHorariosSIU, horariosSIU, removeHorariosSIU } =
     React.useContext(DataContext);
-  const textareaRef = React.useRef(null);
-  const submitRef = React.useRef(null);
-
-  // Enviar formulario al presionar enter adentro del textarea
-  useEffect(() => {
-    const handleEnter = (e) => {
-      if (e.key === "Enter") {
-        e.preventDefault();
-        submitRef.current.click();
-      }
-    };
-    textareaRef.current?.addEventListener("keydown", handleEnter);
-
-    return () =>
-      textareaRef.current?.removeEventListener("keydown", handleEnter);
-  }, [textareaRef.current]);
 
   return (
     <Box>
@@ -115,7 +99,6 @@ const ManualUploadModal = () => {
               }}
             >
               <Textarea
-                ref={textareaRef}
                 my={1}
                 // resize="none"
                 size="sm"
@@ -124,7 +107,6 @@ const ManualUploadModal = () => {
                 value={siuData}
               />
               <Button
-                ref={submitRef}
                 w="100%"
                 colorScheme="primary"
                 type="submit"

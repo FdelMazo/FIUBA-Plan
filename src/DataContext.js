@@ -5,8 +5,6 @@ import { Buffer } from "buffer";
 import pako from "pako";
 import React from "react";
 import { useImmer, useImmerReducer } from "use-immer";
-import jsonCarreras from "./data/carreras";
-import jsonData from "./data/horarios";
 import { parseSIU } from "./utils";
 
 // Si tengo un permalink, parseo su info y reseteo la URL
@@ -17,22 +15,15 @@ if (window.location.hash) {
   const savedata = JSON.parse(pako.ungzip(savedataPako, { to: "string" }));
 
   // eslint-disable-next-line no-restricted-globals
-  history.pushState(
-    "",
-    document.title,
-    window.location.pathname + window.location.search,
-  );
-
-  // Solo tomo el estado del permalink si estamos en el mismo cuatrimestre
-  if (savedata.cuatrimestre === jsonData.cuatrimestre) {
-    permalinksavedata = savedata;
-  }
+  history.pushState("", "", window.location.pathname + window.location.search);
+  permalinksavedata = savedata;
 }
 
 export const DataContext = React.createContext();
 
 export const DataProvider = ({ children }) => {
   const data = Data();
+
   return <DataContext.Provider value={data}>{children}</DataContext.Provider>;
 };
 
@@ -40,15 +31,15 @@ const Data = () => {
   // ESTADO 0: el usuario cargo a manopla los horarios de su propio SIU
   const [horariosSIU, setHorariosSIU] = React.useState(initialHorariosSIU);
 
-  // Getters que deciden si verificar contra el json, o contra el SIU del usuario
+  // Getters que verifican contra el SIU del usuario
   const getters = React.useMemo(() => {
-    const source = horariosSIU || jsonData;
     const ValidCurso = (codigo) => {
-      return !!source.cursos.find((c) => c.codigo === codigo)?.clases?.length;
+      return !!horariosSIU.cursos.find((c) => c.codigo === codigo)?.clases
+        ?.length;
     };
 
     const ValidMateria = (codigo) => {
-      const materia = source.materias.find(
+      const materia = horariosSIU?.materias.find(
         (materia) => materia.codigo === codigo,
       );
       if (!materia) return false;
@@ -56,19 +47,15 @@ const Data = () => {
     };
 
     const getMateria = (codigo) => {
-      return source.materias.find((m) => m.codigo === codigo);
+      return horariosSIU.materias.find((m) => m.codigo === codigo);
     };
 
     const getCurso = (codigo) => {
-      return source.cursos.find((c) => c.codigo === codigo);
-    };
-
-    const getCarrera = (nombre) => {
-      return jsonCarreras.find((c) => c.nombre === nombre);
+      return horariosSIU.cursos.find((c) => c.codigo === codigo);
     };
 
     const getCursosMateria = (codigoMateria) => {
-      const cursos = source.materias.find(
+      const cursos = horariosSIU.materias.find(
         (m) => m.codigo === codigoMateria,
       ).cursos;
       return cursos.filter(ValidCurso).map(getCurso);
@@ -79,7 +66,6 @@ const Data = () => {
       ValidMateria,
       getMateria,
       getCurso,
-      getCarrera,
       getCursosMateria,
     };
   }, [horariosSIU]);
@@ -227,7 +213,6 @@ const Data = () => {
   // El estado que se guarda y determina el permalink es el `savedata` del usuario
   const savedata = React.useMemo(() => {
     return {
-      cuatrimestre: jsonData.cuatrimestre,
       selections,
       tabEvents,
       tabs,
@@ -426,21 +411,15 @@ const Data = () => {
 
   const materiasToShow = React.useMemo(() => {
     let codigos = [];
-    if (horariosSIU) {
-      codigos = horariosSIU.materias.map((m) => m.codigo);
-    } else if (!selections.carreras.length) {
-      codigos = jsonData.materias.map((m) => m.codigo);
-    } else {
-      codigos = selections.carreras.flatMap((c) => {
-        return getters.getCarrera(c).materias;
-      });
-    }
+
+    if (horariosSIU) codigos = horariosSIU.materias.map((m) => m.codigo);
     const codigosUnicos = [...new Set(codigos)].sort();
     const res = codigosUnicos
       .filter(getters.ValidMateria)
       .map(getters.getMateria);
+
     return res;
-  }, [selections.carreras, horariosSIU]);
+  }, [horariosSIU]);
 
   return {
     selections,
@@ -475,7 +454,7 @@ const Data = () => {
 
 const getFromStorage = (key, group = undefined) => {
   const json = JSON.parse(window.localStorage.getItem("fiubaplan"));
-  if (json?.cuatrimestre !== jsonData.cuatrimestre) return null;
+
   return group ? json?.[group]?.[key] : json?.[key];
 };
 

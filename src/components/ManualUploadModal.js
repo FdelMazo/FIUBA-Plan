@@ -1,16 +1,18 @@
-import { StarIcon } from "@chakra-ui/icons";
+import { DeleteIcon, StarIcon } from "@chakra-ui/icons";
 import {
   Box,
   Button,
   Code,
   Kbd,
   Link,
+  ListItem,
   Modal,
   ModalBody,
   ModalCloseButton,
   ModalContent,
   ModalHeader,
   ModalOverlay,
+  OrderedList,
   Text,
   Textarea,
   useDisclosure,
@@ -20,20 +22,19 @@ import React from "react";
 import { DataContext } from "../DataContext";
 
 const ManualUploadModal = () => {
-  const { applyHorariosSIU, horariosSIU, removeHorariosSIU } =
-    React.useContext(DataContext);
-
   const { isOpen, onOpen, onClose } = useDisclosure();
   const toast = useToast();
   const [error, setError] = React.useState("");
   const [siuData, setSiuData] = React.useState("");
+  const { applyHorariosSIU, horariosSIU, removeHorariosSIU } =
+    React.useContext(DataContext);
 
   return (
-    <Box mb={4}>
+    <Box>
       <Button
-        rightIcon={!horariosSIU && <StarIcon />}
+        rightIcon={horariosSIU ? <DeleteIcon /> : <StarIcon />}
         w="100%"
-        colorScheme="primary"
+        colorScheme={horariosSIU ? "red" : "primary"}
         variant="solid"
         onClick={horariosSIU ? removeHorariosSIU : onOpen}
       >
@@ -46,28 +47,40 @@ const ManualUploadModal = () => {
           <ModalHeader>Importar horarios del SIU</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <Text>
-              Si los horarios del FIUBA-Plan no están actualizados, podés
-              directamente usar los horarios que ves en el SIU.
+            {/* Habria que agregar un texto explicando bien las cosas */}
+            <Text mb={4}>
+              Esta aplicación funciona utilizando las ofertas de comisiones de las materias de la carrera a la que está inscripto el usuario.
+              <br/>Esa información está disponible en el SIU Guaraní del usuario.
+              <br/>Para conseguir esa información seguí los siguientes pasos:
             </Text>
-            <Text my={2}>
-              Andá a{" "}
-              <Link
-                isExternal
-                href="https://guaraniautogestion.fi.uba.ar/g3w/oferta_comisiones"
-              >
-                <Code
-                  _hover={{
-                    bg: "primary.600",
-                  }}
+            <OrderedList my={2}>
+              <ListItem>
+                Andá a{" "}
+                <Link
+                  isExternal
+                  href="https://guaraniautogestion.fi.uba.ar/g3w/oferta_comisiones"
                 >
-                  Reportes &gt; Oferta de comisiones
-                </Code>
-              </Link>
-              , ahí seleccioná todo el contenido de la página (<Kbd>CTRL</Kbd> + <Kbd>A</Kbd>)
-              , copialo (<Kbd>CTRL</Kbd> + <Kbd>C</Kbd>)
-              , y pegalo en el siguiente cuadro de texto (<Kbd>CTRL</Kbd> + <Kbd>V</Kbd>).
-            </Text>
+                  <Code
+                    _hover={{
+                      bg: "primary.600",
+                    }}
+                  >
+                    Reportes &gt; Oferta de comisiones
+                  </Code>
+                </Link>
+              </ListItem>
+              <ListItem>
+                Ahí seleccioná todo el contenido de la página (<Kbd>CTRL</Kbd> +{" "}
+                <Kbd>A</Kbd>)
+              </ListItem>
+              <ListItem>
+                Copia todo (<Kbd>CTRL</Kbd> + <Kbd>C</Kbd>)
+              </ListItem>
+              <ListItem>
+                Pegalo en el siguiente cuadro de texto (<Kbd>CTRL</Kbd> +{" "}
+                <Kbd>V</Kbd>).
+              </ListItem>
+            </OrderedList>
             <form
               onSubmit={async (t) => {
                 t.preventDefault();

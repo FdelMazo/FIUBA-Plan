@@ -24,7 +24,6 @@ import {
 import React from "react";
 import { DataContext } from "../DataContext";
 import ManualUploadModal from "./ManualUploadModal";
-import SelectCarreras from "./SelectCarreras";
 import SelectCurso from "./SelectCurso";
 import SelectExtra from "./SelectExtra";
 import SelectMateria from "./SelectMateria";
@@ -41,7 +40,6 @@ const MateriasDrawer = (props) => {
     extraEvents,
     permalink,
     materiasToShow,
-    horariosSIU,
   } = React.useContext(DataContext);
   const { toggleColorMode } = useColorMode();
   const toast = useToast();
@@ -57,7 +55,6 @@ const MateriasDrawer = (props) => {
         >
           <Box pt={6} px={6}>
             <ManualUploadModal />
-            {!horariosSIU && <SelectCarreras />}
             {!!materiasToShow.length && (
               <SelectMateria materiasToShow={materiasToShow} />
             )}
@@ -145,6 +142,7 @@ const MateriasDrawer = (props) => {
                 />
               </Tooltip>
             </Box>
+
             <Box textAlign="right">
               <Tooltip
                 label={`${useColorModeValue("Dark", "Light")} theme`}

@@ -387,16 +387,6 @@ const Data = () => {
     return [...clases, ...extraevents];
   }, [activeTabId, extraEvents, JSON.stringify(tabEvents)]);
 
-  const materiasToShow = React.useMemo(() => {
-    let codigos = [];
-
-    if (horariosSIU) codigos = horariosSIU.materias.map((m) => m.codigo);
-    const codigosUnicos = [...new Set(codigos)].sort();
-    const res = codigosUnicos.map(getters.getMateria);
-
-    return res;
-  }, [horariosSIU]);
-
   return {
     selections,
     activeTabId,
@@ -423,7 +413,6 @@ const Data = () => {
     horariosSIU,
     applyHorariosSIU,
     removeHorariosSIU,
-    materiasToShow,
     getters,
   };
 };

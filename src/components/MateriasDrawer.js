@@ -39,12 +39,23 @@ const MateriasDrawer = (props) => {
     events,
     extraEvents,
     permalink,
-    materiasToShow,
+    horariosSIU,
+    getters,
   } = React.useContext(DataContext);
   const { toggleColorMode } = useColorMode();
   const toast = useToast();
   const permalinkToast = React.useRef();
   const { onCopy } = useClipboard(permalink);
+
+  const materiasToShow = React.useMemo(() => {
+    if (!horariosSIU) return [];
+
+    const codigos = horariosSIU.materias.map((m) => m.codigo);
+    const codigosUnicos = [...new Set(codigos)].sort();
+    const materias = codigosUnicos.map(getters.getMateria);
+
+    return materias;
+  }, [getters.getMateria, horariosSIU]);
 
   return (
     <LightMode>

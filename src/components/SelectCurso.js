@@ -17,9 +17,9 @@ import {
 } from "@chakra-ui/react";
 import { useSelect } from "downshift";
 import React from "react";
+import { useHotkeys } from "react-hotkeys-hook";
 import { DataContext } from "../DataContext";
-import { getColor } from "../utils";
-import { stateReducer } from "../utils";
+import { getColor, stateReducer } from "../utils";
 
 const INICIALES_SEMANA = ["D", "L", "M", "X", "J", "V", "S"];
 
@@ -67,6 +67,12 @@ const SelectCurso = ({ codigo }) => {
   } = useSelect({
     stateReducer,
     items,
+  });
+
+  useHotkeys("space, enter", () => {
+    if (highlightedIndex === -1) return;
+    const curso = items[highlightedIndex];
+    toggleCurso(curso.codigo);
   });
 
   return (

@@ -8,6 +8,7 @@ import {
 } from "@chakra-ui/react";
 import { useCombobox } from "downshift";
 import React from "react";
+import { useHotkeys } from "react-hotkeys-hook";
 import { DataContext } from "../DataContext";
 import { stateReducer } from "../utils";
 
@@ -46,6 +47,16 @@ const SelectMateria = ({ materiasToShow }) => {
     },
     stateReducer,
   });
+
+  useHotkeys(
+    "enter",
+    () => {
+      if (highlightedIndex === -1) return;
+      const materia = inputItems[highlightedIndex];
+      toggleMateria(materia.codigo);
+    },
+    { enableOnFormTags: ["input"] },
+  );
 
   return (
     <>

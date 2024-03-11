@@ -58,11 +58,16 @@ const SelectCurso = ({ codigo }) => {
 
   const allItemsBlocked = items.every((item) => isBlocked(item.codigo));
 
-  const { isOpen, getItemProps, getToggleButtonProps, getMenuProps } =
-    useSelect({
-      stateReducer,
-      items,
-    });
+  const {
+    isOpen,
+    getItemProps,
+    getToggleButtonProps,
+    highlightedIndex,
+    getMenuProps,
+  } = useSelect({
+    stateReducer,
+    items,
+  });
 
   return (
     <>
@@ -165,7 +170,7 @@ const SelectCurso = ({ codigo }) => {
             >
               <Box
                 py={1}
-                _hover={{ bg: "hovercolor" }}
+                bg={highlightedIndex === index && "hovercolor"}
                 color={isActive ? color : "gray.200"}
                 cursor="pointer"
                 fontSize="xs"

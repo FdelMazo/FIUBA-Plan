@@ -34,11 +34,16 @@ const SelectExtra = () => {
     removeAllExtra,
   } = React.useContext(DataContext);
 
-  const { isOpen, getItemProps, getToggleButtonProps, getMenuProps } =
-    useSelect({
-      stateReducer,
-      items: extraEvents,
-    });
+  const {
+    isOpen,
+    getItemProps,
+    getToggleButtonProps,
+    getMenuProps,
+    highlightedIndex,
+  } = useSelect({
+    stateReducer,
+    items: extraEvents,
+  });
 
   return (
     <>
@@ -99,7 +104,7 @@ const SelectExtra = () => {
           return (
             <Box
               py={1}
-              _hover={{ bg: "hovercolor" }}
+              bg={highlightedIndex === index && "hovercolor"}
               color={isActive ? color : "gray.200"}
               cursor="pointer"
               fontSize="xs"

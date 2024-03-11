@@ -32,6 +32,7 @@ const SelectMateria = ({ materiasToShow }) => {
     getMenuProps,
     getInputProps,
     getItemProps,
+    highlightedIndex,
   } = useCombobox({
     items: inputItems,
     itemToString: (item) => search,
@@ -83,7 +84,7 @@ const SelectMateria = ({ materiasToShow }) => {
             .map((materia, index) => (
               <Box
                 borderRadius={5}
-                _hover={{ bg: "hovercolor" }}
+                bg={highlightedIndex === index && "hovercolor"}
                 color={
                   selectedMaterias.includes(materia.codigo)
                     ? "primary.500"

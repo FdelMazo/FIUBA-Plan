@@ -28,19 +28,6 @@ const Data = () => {
 
   // Getters que verifican contra el SIU del usuario
   const getters = React.useMemo(() => {
-    const ValidCurso = (codigo) => {
-      return !!horariosSIU.cursos.find((c) => c.codigo === codigo)?.clases
-        ?.length;
-    };
-
-    const ValidMateria = (codigo) => {
-      const materia = horariosSIU?.materias.find(
-        (materia) => materia.codigo === codigo,
-      );
-      if (!materia) return false;
-      return !!materia.cursos.filter(ValidCurso).length;
-    };
-
     const getMateria = (codigo) => {
       return horariosSIU.materias.find((m) => m.codigo === codigo);
     };
@@ -53,12 +40,10 @@ const Data = () => {
       const cursos = horariosSIU.materias.find(
         (m) => m.codigo === codigoMateria,
       ).cursos;
-      return cursos.filter(ValidCurso).map(getCurso);
+      return cursos.map(getCurso);
     };
 
     return {
-      ValidCurso,
-      ValidMateria,
       getMateria,
       getCurso,
       getCursosMateria,
@@ -407,9 +392,7 @@ const Data = () => {
 
     if (horariosSIU) codigos = horariosSIU.materias.map((m) => m.codigo);
     const codigosUnicos = [...new Set(codigos)].sort();
-    const res = codigosUnicos
-      .filter(getters.ValidMateria)
-      .map(getters.getMateria);
+    const res = codigosUnicos.map(getters.getMateria);
 
     return res;
   }, [horariosSIU]);
@@ -459,8 +442,8 @@ const initialSelections = (getters) => {
       getFromStorage("carreras", "selections") ||
       [],
     materias:
-      permalinksavedata?.selections.materias?.filter(getters.ValidMateria) ||
-      getFromStorage("materias", "selections")?.filter(getters.ValidMateria) ||
+      permalinksavedata?.selections.materias ||
+      getFromStorage("materias", "selections") ||
       [],
   };
 };
@@ -475,7 +458,7 @@ const initialTabEvents = (defvalue, getters) => {
   return Object.fromEntries(
     Object.entries(tabEvents).map(([tabid, { cursos, extra }]) => [
       tabid,
-      { cursos: cursos.filter(getters.ValidCurso), extra },
+      { cursos: cursos, extra },
     ]),
   );
 };

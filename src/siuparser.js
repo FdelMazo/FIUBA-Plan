@@ -1,4 +1,8 @@
 export async function parseSIU(rawdata) {
+  // Asegurarse:
+  // - no agregar ningun curso sin clases
+  // - no agregar ninguna materia sin cursos asociados
+
   const pattern = /Actividad:(.*?)(?=(Actividad:|$))/gs;
   const matches = rawdata.matchAll(pattern);
   const semana = [
@@ -65,6 +69,10 @@ export async function parseSIU(rawdata) {
       });
       materia.cursos.push(codigo);
     }
+    if (materia.cursos.length === 0) {
+      continue;
+    }
+
     result.materias.push(materia);
   }
   return result;

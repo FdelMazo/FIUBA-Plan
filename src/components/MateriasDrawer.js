@@ -1,4 +1,10 @@
-import { CalendarIcon, LinkIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
+import {
+  CalendarIcon,
+  DeleteIcon,
+  LinkIcon,
+  MoonIcon,
+  SunIcon,
+} from "@chakra-ui/icons";
 import {
   Alert,
   AlertIcon,
@@ -23,7 +29,6 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { DataContext } from "../DataContext";
-import ManualUploadModal from "./ManualUploadModal";
 import SelectCurso from "./SelectCurso";
 import SelectExtra from "./SelectExtra";
 import SelectMateria from "./SelectMateria";
@@ -41,6 +46,7 @@ const MateriasDrawer = (props) => {
     permalink,
     horariosSIU,
     getters,
+    removeHorariosSIU,
   } = React.useContext(DataContext);
   const { toggleColorMode } = useColorMode();
   const toast = useToast();
@@ -64,8 +70,21 @@ const MateriasDrawer = (props) => {
         <DrawerContent
           bg={useColorModeValue("drawerbgalpha", "drawerbgdarkalpha")}
         >
-          <Box pt={6} px={6}>
-            <ManualUploadModal />
+          <Box pt={4} px={4}>
+            <Button
+              w="100%"
+              rightIcon={<DeleteIcon />}
+              colorScheme="red"
+              onClick={() => {
+                removeHorariosSIU();
+                onClose();
+              }}
+            >
+              Dejar de usar horarios del SIU
+            </Button>
+          </Box>
+
+          <Box pt={4} px={6}>
             {!!materiasToShow.length && (
               <SelectMateria materiasToShow={materiasToShow} />
             )}

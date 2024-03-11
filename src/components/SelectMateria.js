@@ -12,7 +12,7 @@ import { DataContext } from "../DataContext";
 import { stateReducer } from "../utils";
 
 const SelectMateria = ({ materiasToShow }) => {
-  const { toggleMateria, selections } = React.useContext(DataContext);
+  const { toggleMateria, selectedMaterias } = React.useContext(DataContext);
   const [search, setSearch] = React.useState("");
 
   const inputItems = React.useMemo(() => {
@@ -85,7 +85,7 @@ const SelectMateria = ({ materiasToShow }) => {
                 borderRadius={5}
                 _hover={{ bg: "hovercolor" }}
                 color={
-                  selections.materias.includes(materia.codigo)
+                  selectedMaterias.includes(materia.codigo)
                     ? "primary.500"
                     : "gray.200"
                 }
@@ -100,7 +100,7 @@ const SelectMateria = ({ materiasToShow }) => {
                     index,
                   })}
                 >
-                  {selections.materias.includes(materia.codigo) ? (
+                  {selectedMaterias.includes(materia.codigo) ? (
                     <CheckIcon mr={2} />
                   ) : (
                     <ChevronRightIcon mr={2} />

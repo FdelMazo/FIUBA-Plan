@@ -50,9 +50,9 @@ const Data = () => {
     };
   }, [horariosSIU]);
 
-  // ESTADO 1: Las carreras y materias tickeadas por el usuario para verlas en el drawer
-  const [selections, setSelections] = useImmer(() =>
-    initialSelections(getters),
+  // ESTADO 1: Las materias tickeadas por el usuario para verlas en el drawer
+  const [selectedMaterias, setSelectedMaterias] = useImmer(() =>
+    initialSelectedMaterias(getters),
   );
 
   // ESTADO 2: Las tabs y el nombre que el usuario les puso
@@ -176,7 +176,7 @@ const Data = () => {
     }
 
     // Limpiamos todas las materias seleccionadas por el usuario
-    selections.materias.forEach((codigo) => {
+    selectedMaterias.forEach((codigo) => {
       toggleMateria(codigo);
     });
     setHorariosSIU(horarios);
@@ -184,7 +184,7 @@ const Data = () => {
 
   const removeHorariosSIU = () => {
     // Limpiamos todas las materias seleccionadas por el usuario
-    selections.materias.forEach((codigo) => {
+    selectedMaterias.forEach((codigo) => {
       toggleMateria(codigo);
     });
     setHorariosSIU(null);
@@ -193,14 +193,14 @@ const Data = () => {
   // El estado que se guarda y determina el permalink es el `savedata` del usuario
   const savedata = React.useMemo(() => {
     return {
-      selections,
+      selectedMaterias,
       tabEvents,
       tabs,
       extraEvents,
       horariosSIU,
     };
   }, [
-    JSON.stringify(selections),
+    JSON.stringify(selectedMaterias),
     JSON.stringify(tabEvents),
     JSON.stringify(tabs),
     JSON.stringify(extraEvents),
@@ -222,32 +222,18 @@ const Data = () => {
 
   // INTERFACES DE CADA ESTADO
 
-  // Tildar/destildar cursos, carreras y materias
-  const select = (type, item) => {
-    setSelections((draft) => {
-      const arr = draft[type];
-      if (arr.includes(item)) {
-        draft[type] = draft[type].filter((i) => i && i !== item);
-      } else {
-        arr.push(item);
-      }
-    });
-  };
-
-  const toggleCarrera = (nombre) => {
-    select("carreras", nombre);
-  };
-
+  // Tildar/destildar cursos y materias
   const toggleMateria = (codigo) => {
-    if (selections.materias.includes(codigo)) {
+    if (selectedMaterias.includes(codigo)) {
       // Si destildamos una materia, removemos todos sus eventos
       const ids = getters.getCursosMateria(codigo).map((c) => c.codigo);
       tabEventsDispatch({ type: "removeCursos", ids });
+      setSelectedMaterias((draft) => draft.filter((i) => i !== codigo));
     } else {
       // Si tildamos una materia, agregamos el primer curso
       toggleCurso(getters.getCursosMateria(codigo)[0].codigo);
+      setSelectedMaterias((draft) => [...draft, codigo]);
     }
-    select("materias", codigo);
   };
 
   const toggleCurso = (codigo) => {
@@ -388,14 +374,13 @@ const Data = () => {
   }, [activeTabId, extraEvents, JSON.stringify(tabEvents)]);
 
   return {
-    selections,
+    selectedMaterias,
     activeTabId,
     tabs,
     extraEvents,
     readOnly,
     setReadOnly,
     permalink,
-    toggleCarrera,
     toggleMateria,
     toggleCurso,
     addExtra,
@@ -417,31 +402,25 @@ const Data = () => {
   };
 };
 
-const getFromStorage = (key, group = undefined) => {
+const getFromStorage = (key) => {
   const json = JSON.parse(window.localStorage.getItem("fiubaplan"));
-
-  return group ? json?.[group]?.[key] : json?.[key];
+  return json?.[key];
 };
 
 // STATE INITIALIZERS: le pasamos una funcion a useState/useReducer/useImmer/useImmerReducer para evitar que se ejecuten en cada render
-const initialSelections = (getters) => {
-  return {
-    carreras:
-      permalinksavedata?.selections.carreras ||
-      getFromStorage("carreras", "selections") ||
-      [],
-    materias:
-      permalinksavedata?.selections.materias ||
-      getFromStorage("materias", "selections") ||
-      [],
-  };
+const initialSelectedMaterias = () => {
+  return (
+    permalinksavedata?.selectedMaterias ||
+    getFromStorage("selectedMaterias") ||
+    []
+  );
 };
 
 const initialTabs = (defvalue) => {
   return permalinksavedata?.tabs || getFromStorage("tabs") || defvalue;
 };
 
-const initialTabEvents = (defvalue, getters) => {
+const initialTabEvents = (defvalue) => {
   const tabEvents =
     permalinksavedata?.tabEvents || getFromStorage("tabEvents") || defvalue;
   return Object.fromEntries(

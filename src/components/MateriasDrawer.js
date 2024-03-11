@@ -33,7 +33,7 @@ const MateriasDrawer = (props) => {
   const { useAgenda, setUseAgenda, isOpen, onClose } = props;
   const {
     tabs,
-    selections,
+    selectedMaterias,
     limpiarTab,
     activeTabId,
     events,
@@ -78,7 +78,7 @@ const MateriasDrawer = (props) => {
             }}
             my={4}
           >
-            {selections.materias.map((m) => (
+            {selectedMaterias.map((m) => (
               <SelectCurso codigo={m} key={m} />
             ))}
             {!!extraEvents.length && <SelectExtra />}

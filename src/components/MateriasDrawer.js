@@ -1,4 +1,10 @@
-import { CalendarIcon, LinkIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
+import {
+  CalendarIcon,
+  DeleteIcon,
+  LinkIcon,
+  MoonIcon,
+  SunIcon,
+} from "@chakra-ui/icons";
 import {
   Alert,
   AlertIcon,
@@ -23,7 +29,6 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { DataContext } from "../DataContext";
-import ManualUploadModal from "./ManualUploadModal";
 import SelectCurso from "./SelectCurso";
 import SelectExtra from "./SelectExtra";
 import SelectMateria from "./SelectMateria";
@@ -41,6 +46,7 @@ const MateriasDrawer = (props) => {
     permalink,
     horariosSIU,
     getters,
+    removeHorariosSIU,
   } = React.useContext(DataContext);
   const { toggleColorMode } = useColorMode();
   const toast = useToast();
@@ -64,8 +70,21 @@ const MateriasDrawer = (props) => {
         <DrawerContent
           bg={useColorModeValue("drawerbgalpha", "drawerbgdarkalpha")}
         >
-          <Box pt={6} px={6}>
-            <ManualUploadModal />
+          <Box pt={4} px={4}>
+            <Button
+              w="100%"
+              rightIcon={<DeleteIcon />}
+              colorScheme="red"
+              onClick={() => {
+                removeHorariosSIU();
+                onClose();
+              }}
+            >
+              Dejar de usar horarios del SIU
+            </Button>
+          </Box>
+
+          <Box pt={4} px={6}>
             {!!materiasToShow.length && (
               <SelectMateria materiasToShow={materiasToShow} />
             )}
@@ -170,7 +189,7 @@ const MateriasDrawer = (props) => {
                   isExternal
                   href="https://fede.dm/FIUBA-Map/"
                 >
-                  <Icon boxSize={5} ml={2} viewBox="0 0 448 512">
+                  <Icon boxSize={4} ml={2} viewBox="0 0 448 512">
                     <path
                       fill="currentColor"
                       d="M384 320H256c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h128c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32zM192 32c0-17.67-14.33-32-32-32H32C14.33 0 0 14.33 0 32v128c0 17.67 14.33 32 32 32h95.72l73.16 128.04C211.98 300.98 232.4 288 256 288h.28L192 175.51V128h224V64H192V32zM608 0H480c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h128c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32z"
@@ -200,10 +219,25 @@ const MateriasDrawer = (props) => {
                   isExternal
                   href="https://cafecito.app/fdelmazo"
                 >
-                  <Icon boxSize={5} ml={2} viewBox="0 0 512 512">
+                  <Icon boxSize={4} ml={2} viewBox="0 0 512 512">
                     <path
                       fill="currentColor"
                       d="M127.1 146.5c1.3 7.7 8 13.5 16 13.5h16.5c9.8 0 17.6-8.5 16.3-18-3.8-28.2-16.4-54.2-36.6-74.7-14.4-14.7-23.6-33.3-26.4-53.5C111.8 5.9 105 0 96.8 0H80.4C70.6 0 63 8.5 64.1 18c3.9 31.9 18 61.3 40.6 84.4 12 12.2 19.7 27.5 22.4 44.1zm112 0c1.3 7.7 8 13.5 16 13.5h16.5c9.8 0 17.6-8.5 16.3-18-3.8-28.2-16.4-54.2-36.6-74.7-14.4-14.7-23.6-33.3-26.4-53.5C223.8 5.9 217 0 208.8 0h-16.4c-9.8 0-17.5 8.5-16.3 18 3.9 31.9 18 61.3 40.6 84.4 12 12.2 19.7 27.5 22.4 44.1zM400 192H32c-17.7 0-32 14.3-32 32v192c0 53 43 96 96 96h192c53 0 96-43 96-96h16c61.8 0 112-50.2 112-112s-50.2-112-112-112zm0 160h-16v-96h16c26.5 0 48 21.5 48 48s-21.5 48-48 48z"
+                    />
+                  </Icon>
+                </Link>
+              </Tooltip>
+
+              <Tooltip label="Calendario Académico" placement="top">
+                <Link
+                  color="primary.600"
+                  isExternal
+                  href="https://www.fi.uba.ar/estudiantes/calendario-academico"
+                >
+                  <Icon boxSize={5} ml={2} viewBox="0 0 512 512">
+                    <path
+                      fill="currentColor"
+                      d="M496 128v16a8 8 0 0 1-8 8h-24v12c0 6.627-5.373 12-12 12H60c-6.627 0-12-5.373-12-12v-12H24a8 8 0 0 1-8-8v-16a8 8 0 0 1 4.941-7.392l232-88a7.996 7.996 0 0 1 6.118 0l232 88A8 8 0 0 1 496 128zm-24 304H40c-13.255 0-24 10.745-24 24v16a8 8 0 0 0 8 8h464a8 8 0 0 0 8-8v-16c0-13.255-10.745-24-24-24zM96 192v192H60c-6.627 0-12 5.373-12 12v20h416v-20c0-6.627-5.373-12-12-12h-36V192h-64v192h-64V192h-64v192h-64V192H96z"
                     />
                   </Icon>
                 </Link>

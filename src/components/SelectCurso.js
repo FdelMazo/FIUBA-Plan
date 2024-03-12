@@ -17,9 +17,9 @@ import {
 } from "@chakra-ui/react";
 import { useSelect } from "downshift";
 import React from "react";
+import { useHotkeys } from "react-hotkeys-hook";
 import { DataContext } from "../DataContext";
-import { getColor } from "../utils";
-import { stateReducer } from "../utils";
+import { getColor, stateReducer } from "../utils";
 
 const INICIALES_SEMANA = ["D", "L", "M", "X", "J", "V", "S"];
 
@@ -58,11 +58,22 @@ const SelectCurso = ({ codigo }) => {
 
   const allItemsBlocked = items.every((item) => isBlocked(item.codigo));
 
-  const { isOpen, getItemProps, getToggleButtonProps, getMenuProps } =
-    useSelect({
-      stateReducer,
-      items,
-    });
+  const {
+    isOpen,
+    getItemProps,
+    getToggleButtonProps,
+    highlightedIndex,
+    getMenuProps,
+  } = useSelect({
+    stateReducer,
+    items,
+  });
+
+  useHotkeys("space, enter", () => {
+    if (highlightedIndex === -1) return;
+    const curso = items[highlightedIndex];
+    toggleCurso(curso.codigo);
+  });
 
   return (
     <>
@@ -165,7 +176,7 @@ const SelectCurso = ({ codigo }) => {
             >
               <Box
                 py={1}
-                _hover={{ bg: "hovercolor" }}
+                bg={highlightedIndex === index && "hovercolor"}
                 color={isActive ? color : "gray.200"}
                 cursor="pointer"
                 fontSize="xs"

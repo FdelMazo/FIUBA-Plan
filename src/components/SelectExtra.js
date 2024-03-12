@@ -15,12 +15,13 @@ import {
   Flex,
   IconButton,
   List,
-  Tooltip,
   Text,
+  Tooltip,
   useEditableControls,
 } from "@chakra-ui/react";
 import { useSelect } from "downshift";
 import React from "react";
+import { useHotkeys } from "react-hotkeys-hook";
 import { DataContext } from "../DataContext";
 import { getColor, stateReducer } from "../utils";
 
@@ -34,11 +35,22 @@ const SelectExtra = () => {
     removeAllExtra,
   } = React.useContext(DataContext);
 
-  const { isOpen, getItemProps, getToggleButtonProps, getMenuProps } =
-    useSelect({
-      stateReducer,
-      items: extraEvents,
-    });
+  const {
+    isOpen,
+    getItemProps,
+    getToggleButtonProps,
+    getMenuProps,
+    highlightedIndex,
+  } = useSelect({
+    stateReducer,
+    items: extraEvents,
+  });
+
+  useHotkeys("space, enter", () => {
+    if (highlightedIndex === -1) return;
+    const event = extraEvents[highlightedIndex];
+    toggleExtra(event.id);
+  });
 
   return (
     <>
@@ -99,7 +111,7 @@ const SelectExtra = () => {
           return (
             <Box
               py={1}
-              _hover={{ bg: "hovercolor" }}
+              bg={highlightedIndex === index && "hovercolor"}
               color={isActive ? color : "gray.200"}
               cursor="pointer"
               fontSize="xs"

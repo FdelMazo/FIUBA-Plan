@@ -12,18 +12,32 @@ import {
   Flex,
   IconButton,
   LightMode,
+  Popover,
+  PopoverArrow,
+  PopoverBody,
+  PopoverContent,
+  PopoverFooter,
+  PopoverTrigger,
   Tab,
   Tabs,
-  useToast,
+  Text,
   useTab,
+  useToast,
 } from "@chakra-ui/react";
 import "moment/locale/es";
 import React from "react";
 import { DataContext } from "../DataContext";
 
 const TabSystem = (props) => {
-  const { activeTabId, tabs, selectTab, addTab, readOnly, setReadOnly } =
-    React.useContext(DataContext);
+  const {
+    activeTabId,
+    tabs,
+    selectTab,
+    addTab,
+    readOnly,
+    setReadOnly,
+    horariosSIU,
+  } = React.useContext(DataContext);
   const toast = useToast();
   const inputref = React.useRef(null);
 

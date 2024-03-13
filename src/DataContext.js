@@ -163,23 +163,22 @@ const Data = () => {
     initialExtraEvents,
   );
 
-  const applyHorariosSIU = async (rawdata) => {
-    let horarios;
+  const getPeriodosSIU = (rawdata) => {
+    let periodos;
     try {
-      horarios = await parseSIU(rawdata);
-      if (!horarios.materias.length || !horarios.cursos.length) {
-        throw new Error("No se encontraron cursos en el archivo");
+      periodos = parseSIU(rawdata);
+      if (!periodos.length) {
+        throw new Error("No se encontraron horarios en el archivo");
       }
     } catch (e) {
       console.warn(e);
       throw new Error("Error al parsear los horarios del SIU");
     }
+    return periodos;
+  };
 
-    // Limpiamos todas las materias seleccionadas por el usuario
-    selectedMaterias.forEach((codigo) => {
-      toggleMateria(codigo);
-    });
-    setHorariosSIU(horarios);
+  const applyHorariosSIU = (periodo) => {
+    setHorariosSIU(periodo);
   };
 
   const removeHorariosSIU = async () => {
@@ -399,6 +398,7 @@ const Data = () => {
     applyHorariosSIU,
     removeHorariosSIU,
     getters,
+    getPeriodosSIU,
   };
 };
 

@@ -11,6 +11,7 @@ import {
   ModalHeader,
   ModalOverlay,
   OrderedList,
+  Select,
   Text,
   Textarea,
   useToast,
@@ -22,7 +23,9 @@ const ManualUploadModal = ({ isOpen, onClose }) => {
   const toast = useToast();
   const [error, setError] = React.useState("");
   const [siuData, setSiuData] = React.useState("");
-  const { applyHorariosSIU } = React.useContext(DataContext);
+  const [periodosOptions, setPeriodosOptions] = React.useState([]);
+  const [selectedPeriod, setSelectedPeriod] = React.useState(null);
+  const { applyHorariosSIU, getPeriodosSIU } = React.useContext(DataContext);
 
   return (
     <Modal isOpen={isOpen} onClose={onClose} size="lg">
@@ -66,21 +69,40 @@ const ManualUploadModal = ({ isOpen, onClose }) => {
             </ListItem>
           </OrderedList>
           <form
-            onSubmit={async (t) => {
-              t.preventDefault();
-              try {
-                await applyHorariosSIU(siuData);
-                onClose();
-                toast({
-                  title: "Horarios del SIU aplicados",
-                  status: "success",
-                  duration: 2000,
-                  isClosable: true,
-                });
-              } catch (e) {
-                setError(e.message);
-              }
-            }}
+            onSubmit={
+              periodosOptions.length > 0
+                ? (t) => {
+                    t.preventDefault();
+                    applyHorariosSIU(selectedPeriod);
+                    onClose();
+                    toast({
+                      title: "Horarios del SIU aplicados",
+                      status: "success",
+                      duration: 2000,
+                      isClosable: true,
+                    });
+                  }
+                : (t) => {
+                    t.preventDefault();
+                    try {
+                      const periodos = getPeriodosSIU(siuData);
+                      if (periodos.length > 1) {
+                        setPeriodosOptions(periodos);
+                      } else {
+                        applyHorariosSIU(periodos[0]);
+                        onClose();
+                        toast({
+                          title: "Horarios del SIU aplicados",
+                          status: "success",
+                          duration: 2000,
+                          isClosable: true,
+                        });
+                      }
+                    } catch (e) {
+                      setError(e.message);
+                    }
+                  }
+            }
           >
             <Textarea
               my={1}
@@ -89,13 +111,33 @@ const ManualUploadModal = ({ isOpen, onClose }) => {
               onChange={(e) => setSiuData(e.target.value)}
               value={siuData}
             />
+            {periodosOptions.length > 0 && (
+              <Select
+                borderColor="tomato"
+                borderWidth={2}
+                placeholder="Elegir período lectivo"
+                my={2}
+              >
+                {periodosOptions.map((p) => (
+                  <option
+                    key={p.periodo}
+                    value={p.periodo}
+                    onClick={() => setSelectedPeriod(p)}
+                  >
+                    {p.periodo} (Materias: {p.materias.length})
+                  </option>
+                ))}
+              </Select>
+            )}
             <Button
               w="100%"
               colorScheme="primary"
               type="submit"
-              isDisabled={!siuData}
+              isDisabled={
+                periodosOptions.length > 0 ? !selectedPeriod : !siuData
+              }
             >
-              Aplicar horarios
+              {periodosOptions.length > 0 ? "Aplicar" : "Cargar"} horarios
             </Button>
             {error && (
               <Text size="sm" color="tomato">

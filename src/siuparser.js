@@ -19,7 +19,7 @@ export function parseSIU(rawdata) {
   const periodoPattern =
     /Período lectivo: ([^\n]+)\n((?!Período lectivo:)[\s\S])*?(?=(Período lectivo:|$))/g;
   const materiaPattern =
-    /Actividad: ([^\n]+) \((\d+)\)\n((?!Actividad:)[\s\S])*?(?=(Actividad:|$))/g;
+    /Actividad: ([^\n]+) \((.+?)\)\n((?!Actividad:)[\s\S])*?(?=(Actividad:|$))/g;
   const cursosPattern =
     /Comisión: ([^\n]+)[\s\S]*?Docentes: ([^\n]+)[\s\S]*?Tipo de clase\s+Día\s+Horario\s+Aula([\s\S]*?)(?=(Comisión:|$))/g;
 

@@ -30,7 +30,7 @@ const ManualUploadModal = ({ isOpen, onClose }) => {
   return (
     <Modal isOpen={isOpen} onClose={onClose} size="lg">
       <ModalOverlay />
-      <ModalContent borderWidth="2px" borderColor="primary.500" color="black">
+      <ModalContent borderWidth="2px" borderColor="primary.500">
         <ModalHeader>Importar horarios del SIU</ModalHeader>
         <ModalCloseButton />
         <ModalBody>

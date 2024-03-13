@@ -75,8 +75,8 @@ const MateriasDrawer = (props) => {
               w="100%"
               rightIcon={<DeleteIcon />}
               colorScheme="red"
-              onClick={() => {
-                removeHorariosSIU();
+              onClick={async () => {
+                await removeHorariosSIU();
                 onClose();
               }}
             >

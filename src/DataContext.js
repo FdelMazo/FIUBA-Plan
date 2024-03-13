@@ -29,18 +29,18 @@ const Data = () => {
   // Getters que verifican contra el SIU del usuario
   const getters = React.useMemo(() => {
     const getMateria = (codigo) => {
-      return horariosSIU.materias.find((m) => m.codigo === codigo);
+      return horariosSIU?.materias.find((m) => m.codigo === codigo);
     };
 
     const getCurso = (codigo) => {
-      return horariosSIU.cursos.find((c) => c.codigo === codigo);
+      return horariosSIU?.cursos.find((c) => c.codigo === codigo);
     };
 
     const getCursosMateria = (codigoMateria) => {
-      const cursos = horariosSIU.materias.find(
+      const cursos = horariosSIU?.materias.find(
         (m) => m.codigo === codigoMateria,
       ).cursos;
-      return cursos.map(getCurso);
+      return cursos?.map(getCurso) || [];
     };
 
     return {
@@ -52,7 +52,7 @@ const Data = () => {
 
   // ESTADO 1: Las materias tickeadas por el usuario para verlas en el drawer
   const [selectedMaterias, setSelectedMaterias] = useImmer(() =>
-    initialSelectedMaterias(getters),
+    initialSelectedMaterias(),
   );
 
   // ESTADO 2: Las tabs y el nombre que el usuario les puso
@@ -133,7 +133,7 @@ const Data = () => {
   const [tabEvents, tabEventsDispatch] = useImmerReducer(
     tabEventsReducer,
     { 0: { cursos: [], extra: [] } },
-    (defvalue) => initialTabEvents(defvalue, getters),
+    (defvalue) => initialTabEvents(defvalue),
   );
 
   // ESTADO 4: Los horarios extracurriculares que agrega el usuario, y el nombre que les puso
@@ -163,26 +163,25 @@ const Data = () => {
     initialExtraEvents,
   );
 
-  const applyHorariosSIU = async (rawdata) => {
-    let horarios;
+  const getPeriodosSIU = (rawdata) => {
+    let periodos;
     try {
-      horarios = await parseSIU(rawdata);
-      if (!horarios.materias.length || !horarios.cursos.length) {
-        throw new Error("No se encontraron cursos en el archivo");
+      periodos = parseSIU(rawdata);
+      if (!periodos.length) {
+        throw new Error("No se encontraron horarios en el archivo");
       }
     } catch (e) {
       console.warn(e);
       throw new Error("Error al parsear los horarios del SIU");
     }
-
-    // Limpiamos todas las materias seleccionadas por el usuario
-    selectedMaterias.forEach((codigo) => {
-      toggleMateria(codigo);
-    });
-    setHorariosSIU(horarios);
+    return periodos;
   };
 
-  const removeHorariosSIU = () => {
+  const applyHorariosSIU = (periodo) => {
+    setHorariosSIU(periodo);
+  };
+
+  const removeHorariosSIU = async () => {
     // Limpiamos todas las materias seleccionadas por el usuario
     selectedMaterias.forEach((codigo) => {
       toggleMateria(codigo);
@@ -399,6 +398,7 @@ const Data = () => {
     applyHorariosSIU,
     removeHorariosSIU,
     getters,
+    getPeriodosSIU,
   };
 };
 

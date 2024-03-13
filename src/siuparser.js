@@ -27,6 +27,8 @@ export function parseSIU(rawdata) {
   for (const periodoMatch of rawdata.matchAll(periodoPattern)) {
     const periodoFullText = periodoMatch[0];
     const periodoNombre = periodoMatch[1];
+
+    console.debug(`Found periodo: ${periodoNombre}`)
     periodos.push({
       periodo: periodoNombre,
       raw: periodoFullText,
@@ -43,13 +45,16 @@ export function parseSIU(rawdata) {
         codigo: materiaMatch[2],
         cursos: [],
       };
+      console.debug(`- Found materia: ${materia.nombre} (${materia.codigo})`)
 
       for (const cursoMatch of materiaFullText.matchAll(cursosPattern)) {
         const cursoCodigo = `${materia.codigo}-${cursoMatch[1]}`;
         const cursoDocentes = cursoMatch[2].trim().replace(/\(.*?\)/g, "");
+        console.debug(`-- Found curso: ${cursoCodigo}`)
 
         const clases = [];
         for (let claseLine of cursoMatch[3].trim().split("\n")) {
+          console.debug(`--- Found clase: ${claseLine}`)
           if (claseLine.includes("Sin definir") || !claseLine.includes("\t")) {
             continue;
           }

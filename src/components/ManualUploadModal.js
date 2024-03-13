@@ -38,7 +38,7 @@ const ManualUploadModal = ({ isOpen, onClose }) => {
             Esta aplicación funciona utilizando la oferta horaria del SIU
             Guaraní de cada usuario.
             <br />
-            Para importarla hay seguí los siguientes pasos:
+            Para importarla seguí los siguientes pasos:
           </Text>
           <OrderedList my={2}>
             <ListItem>

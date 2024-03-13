@@ -145,6 +145,33 @@ const TabSystem = (props) => {
           )}
         </Flex>
       </Tabs>
+      {horariosSIU && (
+        <Box alignSelf="center" px={4}>
+          <Popover placement="bottom" trigger="hover">
+            <PopoverTrigger>
+              <Text textAlign="right">
+                <strong>Usando horarios del SIU</strong>
+                <br />
+                {horariosSIU.periodo}
+              </Text>
+            </PopoverTrigger>
+            <PopoverContent borderColor="primary.500" mr={2}>
+              <PopoverArrow bg="primary.500" />
+              <PopoverBody>
+                Acordate que el SIU también puede actualizar sus horarios sin
+                aviso previo. Si estás por inscribirte a materias, es
+                recomendable que re-cargues los horarios.
+              </PopoverBody>
+              <PopoverFooter fontSize="sm">
+                Horarios cargados el{" "}
+                <strong>
+                  {new Date(horariosSIU.timestamp).toLocaleString()}
+                </strong>
+              </PopoverFooter>
+            </PopoverContent>
+          </Popover>
+        </Box>
+      )}
     </Flex>
   );
 };

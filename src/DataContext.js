@@ -1,38 +1,24 @@
 /* https://github.com/facebook/react/issues/14476#issuecomment-471199055 */
 /* eslint-disable react-hooks/exhaustive-deps */
 
-import { Buffer } from "buffer";
-import pako from "pako";
 import React from "react";
 import { useImmer, useImmerReducer } from "use-immer";
-import jsonCarreras from "./data/carreras";
-import jsonData from "./data/horarios";
-import { parseSIU } from "./utils";
+import { parseSIU } from "./siuparser";
+import { base64tojson, jsontobase64 } from "./utils";
 
 // Si tengo un permalink, parseo su info y reseteo la URL
 let permalinksavedata = null;
 if (window.location.hash) {
-  // hash => b64 => pako => json
-  const savedataPako = Buffer.from(window.location.hash.slice(1), "base64");
-  const savedata = JSON.parse(pako.ungzip(savedataPako, { to: "string" }));
-
+  permalinksavedata = base64tojson(window.location.hash.slice(1));
   // eslint-disable-next-line no-restricted-globals
-  history.pushState(
-    "",
-    document.title,
-    window.location.pathname + window.location.search,
-  );
-
-  // Solo tomo el estado del permalink si estamos en el mismo cuatrimestre
-  if (savedata.cuatrimestre === jsonData.cuatrimestre) {
-    permalinksavedata = savedata;
-  }
+  history.pushState("", "", window.location.pathname + window.location.search);
 }
 
 export const DataContext = React.createContext();
 
 export const DataProvider = ({ children }) => {
   const data = Data();
+
   return <DataContext.Provider value={data}>{children}</DataContext.Provider>;
 };
 
@@ -40,53 +26,33 @@ const Data = () => {
   // ESTADO 0: el usuario cargo a manopla los horarios de su propio SIU
   const [horariosSIU, setHorariosSIU] = React.useState(initialHorariosSIU);
 
-  // Getters que deciden si verificar contra el json, o contra el SIU del usuario
+  // Getters que verifican contra el SIU del usuario
   const getters = React.useMemo(() => {
-    const source = horariosSIU || jsonData;
-    const ValidCurso = (codigo) => {
-      return !!source.cursos.find((c) => c.codigo === codigo)?.clases?.length;
-    };
-
-    const ValidMateria = (codigo) => {
-      const materia = source.materias.find(
-        (materia) => materia.codigo === codigo,
-      );
-      if (!materia) return false;
-      return !!materia.cursos.filter(ValidCurso).length;
-    };
-
     const getMateria = (codigo) => {
-      return source.materias.find((m) => m.codigo === codigo);
+      return horariosSIU?.materias.find((m) => m.codigo === codigo);
     };
 
     const getCurso = (codigo) => {
-      return source.cursos.find((c) => c.codigo === codigo);
-    };
-
-    const getCarrera = (nombre) => {
-      return jsonCarreras.find((c) => c.nombre === nombre);
+      return horariosSIU?.cursos.find((c) => c.codigo === codigo);
     };
 
     const getCursosMateria = (codigoMateria) => {
-      const cursos = source.materias.find(
+      const cursos = horariosSIU?.materias.find(
         (m) => m.codigo === codigoMateria,
       ).cursos;
-      return cursos.filter(ValidCurso).map(getCurso);
+      return cursos?.map(getCurso) || [];
     };
 
     return {
-      ValidCurso,
-      ValidMateria,
       getMateria,
       getCurso,
-      getCarrera,
       getCursosMateria,
     };
   }, [horariosSIU]);
 
-  // ESTADO 1: Las carreras y materias tickeadas por el usuario para verlas en el drawer
-  const [selections, setSelections] = useImmer(() =>
-    initialSelections(getters),
+  // ESTADO 1: Las materias tickeadas por el usuario para verlas en el drawer
+  const [selectedMaterias, setSelectedMaterias] = useImmer(() =>
+    initialSelectedMaterias(),
   );
 
   // ESTADO 2: Las tabs y el nombre que el usuario les puso
@@ -167,7 +133,7 @@ const Data = () => {
   const [tabEvents, tabEventsDispatch] = useImmerReducer(
     tabEventsReducer,
     { 0: { cursos: [], extra: [] } },
-    (defvalue) => initialTabEvents(defvalue, getters),
+    (defvalue) => initialTabEvents(defvalue),
   );
 
   // ESTADO 4: Los horarios extracurriculares que agrega el usuario, y el nombre que les puso
@@ -197,28 +163,27 @@ const Data = () => {
     initialExtraEvents,
   );
 
-  const applyHorariosSIU = async (rawdata) => {
-    let horarios;
+  const getPeriodosSIU = (rawdata) => {
+    let periodos;
     try {
-      horarios = await parseSIU(rawdata);
-      if (!horarios.materias.length || !horarios.cursos.length) {
-        throw new Error("No se encontraron cursos en el archivo");
+      periodos = parseSIU(rawdata);
+      if (!periodos.length) {
+        throw new Error("No se encontraron horarios en el archivo");
       }
     } catch (e) {
       console.warn(e);
       throw new Error("Error al parsear los horarios del SIU");
     }
-
-    // Limpiamos todas las materias seleccionadas por el usuario
-    selections.materias.forEach((codigo) => {
-      toggleMateria(codigo);
-    });
-    setHorariosSIU(horarios);
+    return periodos;
   };
 
-  const removeHorariosSIU = () => {
+  const applyHorariosSIU = (periodo) => {
+    setHorariosSIU(periodo);
+  };
+
+  const removeHorariosSIU = async () => {
     // Limpiamos todas las materias seleccionadas por el usuario
-    selections.materias.forEach((codigo) => {
+    selectedMaterias.forEach((codigo) => {
       toggleMateria(codigo);
     });
     setHorariosSIU(null);
@@ -227,15 +192,14 @@ const Data = () => {
   // El estado que se guarda y determina el permalink es el `savedata` del usuario
   const savedata = React.useMemo(() => {
     return {
-      cuatrimestre: jsonData.cuatrimestre,
-      selections,
+      selectedMaterias,
       tabEvents,
       tabs,
       extraEvents,
       horariosSIU,
     };
   }, [
-    JSON.stringify(selections),
+    JSON.stringify(selectedMaterias),
     JSON.stringify(tabEvents),
     JSON.stringify(tabs),
     JSON.stringify(extraEvents),
@@ -246,9 +210,7 @@ const Data = () => {
   const [readOnly, setReadOnly] = React.useState(!!permalinksavedata);
 
   const permalink = React.useMemo(() => {
-    // json => pako => b64 => hash
-    const savedataPako = pako.gzip(JSON.stringify(savedata), { to: "string" });
-    const savedatab64 = Buffer.from(savedataPako).toString("base64");
+    const savedatab64 = jsontobase64(savedata);
     return `https://fede.dm/FIUBA-Plan/#${savedatab64}`;
   }, [JSON.stringify(savedata)]);
 
@@ -259,32 +221,18 @@ const Data = () => {
 
   // INTERFACES DE CADA ESTADO
 
-  // Tildar/destildar cursos, carreras y materias
-  const select = (type, item) => {
-    setSelections((draft) => {
-      const arr = draft[type];
-      if (arr.includes(item)) {
-        draft[type] = draft[type].filter((i) => i && i !== item);
-      } else {
-        arr.push(item);
-      }
-    });
-  };
-
-  const toggleCarrera = (nombre) => {
-    select("carreras", nombre);
-  };
-
+  // Tildar/destildar cursos y materias
   const toggleMateria = (codigo) => {
-    if (selections.materias.includes(codigo)) {
+    if (selectedMaterias.includes(codigo)) {
       // Si destildamos una materia, removemos todos sus eventos
       const ids = getters.getCursosMateria(codigo).map((c) => c.codigo);
       tabEventsDispatch({ type: "removeCursos", ids });
+      setSelectedMaterias((draft) => draft.filter((i) => i !== codigo));
     } else {
       // Si tildamos una materia, agregamos el primer curso
       toggleCurso(getters.getCursosMateria(codigo)[0].codigo);
+      setSelectedMaterias((draft) => [...draft, codigo]);
     }
-    select("materias", codigo);
   };
 
   const toggleCurso = (codigo) => {
@@ -424,33 +372,14 @@ const Data = () => {
     return [...clases, ...extraevents];
   }, [activeTabId, extraEvents, JSON.stringify(tabEvents)]);
 
-  const materiasToShow = React.useMemo(() => {
-    let codigos = [];
-    if (horariosSIU) {
-      codigos = horariosSIU.materias.map((m) => m.codigo);
-    } else if (!selections.carreras.length) {
-      codigos = jsonData.materias.map((m) => m.codigo);
-    } else {
-      codigos = selections.carreras.flatMap((c) => {
-        return getters.getCarrera(c).materias;
-      });
-    }
-    const codigosUnicos = [...new Set(codigos)].sort();
-    const res = codigosUnicos
-      .filter(getters.ValidMateria)
-      .map(getters.getMateria);
-    return res;
-  }, [selections.carreras, horariosSIU]);
-
   return {
-    selections,
+    selectedMaterias,
     activeTabId,
     tabs,
     extraEvents,
     readOnly,
     setReadOnly,
     permalink,
-    toggleCarrera,
     toggleMateria,
     toggleCurso,
     addExtra,
@@ -468,42 +397,36 @@ const Data = () => {
     horariosSIU,
     applyHorariosSIU,
     removeHorariosSIU,
-    materiasToShow,
     getters,
+    getPeriodosSIU,
   };
 };
 
-const getFromStorage = (key, group = undefined) => {
+const getFromStorage = (key) => {
   const json = JSON.parse(window.localStorage.getItem("fiubaplan"));
-  if (json?.cuatrimestre !== jsonData.cuatrimestre) return null;
-  return group ? json?.[group]?.[key] : json?.[key];
+  return json?.[key];
 };
 
 // STATE INITIALIZERS: le pasamos una funcion a useState/useReducer/useImmer/useImmerReducer para evitar que se ejecuten en cada render
-const initialSelections = (getters) => {
-  return {
-    carreras:
-      permalinksavedata?.selections.carreras ||
-      getFromStorage("carreras", "selections") ||
-      [],
-    materias:
-      permalinksavedata?.selections.materias?.filter(getters.ValidMateria) ||
-      getFromStorage("materias", "selections")?.filter(getters.ValidMateria) ||
-      [],
-  };
+const initialSelectedMaterias = () => {
+  return (
+    permalinksavedata?.selectedMaterias ||
+    getFromStorage("selectedMaterias") ||
+    []
+  );
 };
 
 const initialTabs = (defvalue) => {
   return permalinksavedata?.tabs || getFromStorage("tabs") || defvalue;
 };
 
-const initialTabEvents = (defvalue, getters) => {
+const initialTabEvents = (defvalue) => {
   const tabEvents =
     permalinksavedata?.tabEvents || getFromStorage("tabEvents") || defvalue;
   return Object.fromEntries(
     Object.entries(tabEvents).map(([tabid, { cursos, extra }]) => [
       tabid,
-      { cursos: cursos.filter(getters.ValidCurso), extra },
+      { cursos: cursos, extra },
     ]),
   );
 };

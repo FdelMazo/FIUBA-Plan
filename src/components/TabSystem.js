@@ -1,4 +1,4 @@
-import { AddIcon, ExternalLinkIcon, SmallCloseIcon } from "@chakra-ui/icons";
+import { AddIcon, SmallCloseIcon } from "@chakra-ui/icons";
 import {
   Alert,
   AlertDescription,
@@ -12,14 +12,11 @@ import {
   Flex,
   IconButton,
   LightMode,
-  Link,
   Popover,
   PopoverArrow,
   PopoverBody,
-  PopoverCloseButton,
   PopoverContent,
   PopoverFooter,
-  PopoverHeader,
   PopoverTrigger,
   Tab,
   Tabs,
@@ -30,15 +27,6 @@ import {
 import "moment/locale/es";
 import React from "react";
 import { DataContext } from "../DataContext";
-import jsonData from "../data/horarios";
-
-const actualizacion = {
-  cuatrimestre: jsonData.cuatrimestre,
-  timestamp: jsonData.timestamp,
-};
-
-// Prender cuando FIUBA no actualiza ofertahoraria
-const malaonda = false;
 
 const TabSystem = (props) => {
   const {
@@ -157,48 +145,33 @@ const TabSystem = (props) => {
           )}
         </Flex>
       </Tabs>
-      <Box alignSelf="center" px={4}>
-        {horariosSIU ? (
-          <Text>Usando horarios cargados manualmente</Text>
-        ) : (
-          <Popover placement="bottom" trigger="hover" defaultIsOpen={malaonda}>
+      {horariosSIU && (
+        <Box alignSelf="center" px={4}>
+          <Popover placement="bottom" trigger="hover">
             <PopoverTrigger>
-              <Text>
-                Actualizado al <strong>{actualizacion.cuatrimestre}</strong>
+              <Text textAlign="right">
+                <strong>Usando horarios del SIU</strong>
+                <br />
+                {horariosSIU.periodo}
               </Text>
             </PopoverTrigger>
             <PopoverContent borderColor="primary.500" mr={2}>
-              <PopoverHeader fontSize="sm">
-                Última Actualización: <strong>{actualizacion.timestamp}</strong>
-              </PopoverHeader>
               <PopoverArrow bg="primary.500" />
-              <PopoverCloseButton color="primary.500" top={0} right={0} />
               <PopoverBody>
-                El <strong>FIUBA-Plan</strong> actualiza sus horarios desde{" "}
-                <Link
-                  isExternal
-                  _hover={{
-                    color: "primary.500",
-                  }}
-                  href="https://ofertahoraria.fi.uba.ar/"
-                >
-                  oferta horaria
-                  <ExternalLinkIcon color="primary.500" mx="2px" />
-                </Link>
-                , un servicio hecho por FIUBA que puede no estar siempre
-                actualizado frente a los horarios canónicos, que se ven en el
-                SIU.
+                Acordate que el SIU también puede actualizar sus horarios sin
+                aviso previo. Si estás por inscribirte a materias, es
+                recomendable que re-cargues los horarios.
               </PopoverBody>
-              <PopoverFooter>
-                Si ya se publicaron los horarios de un cuatrimestre nuevo en el
-                SIU y no están en el FIUBA-Plan, se puede mandar un mail a
-                secretaría académica pidiendo actualizar el sitio de
-                ofertahoraria.
+              <PopoverFooter fontSize="sm">
+                Horarios cargados el{" "}
+                <strong>
+                  {new Date(horariosSIU.timestamp).toLocaleString()}
+                </strong>
               </PopoverFooter>
             </PopoverContent>
           </Popover>
-        )}
-      </Box>
+        </Box>
+      )}
     </Flex>
   );
 };

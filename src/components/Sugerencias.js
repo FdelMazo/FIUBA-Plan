@@ -84,27 +84,9 @@ const Sugerencias = ({ onClose }) => {
                       Si ves algo que te gustó, o tenés alguna idea, también!
                     </Text>
                     <Text my={2}>
-                      Actualizar los horarios *no* depende de mí. Si falta algo
-                      o no están al día, el problema es que FIUBA no actualizó
-                      el sitio de{" "}
-                      <Link
-                        isExternal
-                        _hover={{
-                          color: "primary.500",
-                        }}
-                        href="https://ofertahoraria.fi.uba.ar/"
-                      >
-                        oferta horaria.
-                        <ExternalLinkIcon
-                          _light={{
-                            color: "primary.500",
-                          }}
-                          _dark={{
-                            color: "primary.400",
-                          }}
-                          mx="2px"
-                        />
-                      </Link>
+                      Si el parseo del SIU no esta funcionando como esperabas,
+                      describime el problema y pega el copypaste que usaste acá
+                      tambien.
                     </Text>
                     <Text>
                       Estas sugerencias son *anónimas*. Si querés que te

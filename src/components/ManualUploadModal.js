@@ -28,7 +28,17 @@ const ManualUploadModal = ({ isOpen, onClose }) => {
   const { applyHorariosSIU, getPeriodosSIU } = React.useContext(DataContext);
 
   return (
-    <Modal isOpen={isOpen} onClose={onClose} size="lg">
+    <Modal
+      isOpen={isOpen}
+      onClose={onClose}
+      size="lg"
+      onCloseComplete={() => {
+        setError("");
+        setSiuData("");
+        setPeriodosOptions([]);
+        setSelectedPeriod(null);
+      }}
+    >
       <ModalOverlay />
       <ModalContent borderWidth="2px" borderColor="primary.500">
         <ModalHeader>Importar horarios del SIU</ModalHeader>

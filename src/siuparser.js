@@ -17,11 +17,11 @@ export function parseSIU(rawdata) {
   const result = [];
 
   const periodoPattern =
-    /Período lectivo: ([^\n]+)\n((?!Período lectivo:)[\s\S])*?(?=(Período lectivo:|$))/g;
+    /Período lectivo: ([^\n]+)\n[\s\S]*?(?=Período lectivo:|$)/g;
   const materiaPattern =
-    /Actividad: ([^\n]+) \((.+?)\)\n((?!Actividad:)[\s\S])*?(?=(Actividad:|$))/g;
+    /Actividad: ([^\n]+) \((.+?)\)\n[\s\S]*?(?=Actividad:|$)/g;
   const cursosPattern =
-    /Comisión: ([^\n]+)[\s\S]*?Docentes: ([^\n]+)[\s\S]*?Tipo de clase\s+Día\s+Horario\s+Aula([\s\S]*?)(?=(Comisión:|$))/g;
+    /Comisión: ([^\n]+)[\s\S]*?Docentes: ([^\n]+)[\s\S]*?Tipo de clase\s+Día\s+Horario\s+Aula([\s\S]*?)(?=Comisión:|$)/g;
 
   const periodos = [];
   for (const periodoMatch of rawdata.matchAll(periodoPattern)) {

@@ -55,7 +55,7 @@ export function parseSIU(rawdata) {
         const clases = [];
         for (let claseLine of cursoMatch[3].trim().split("\n")) {
           console.debug(`--- Found clase: ${claseLine}`)
-          if (claseLine.includes("Sin definir") || !claseLine.includes("\t")) {
+          if (!SEMANA.some(day => claseLine.includes(day))) {
             continue;
           }
 

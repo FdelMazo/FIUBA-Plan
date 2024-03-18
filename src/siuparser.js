@@ -99,5 +99,6 @@ export function parseSIU(rawdata) {
       timestamp: Date.now(),
     });
   }
+  console.debug(result);
   return result;
 }

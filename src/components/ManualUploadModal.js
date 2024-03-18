@@ -68,12 +68,61 @@ const ManualUploadModal = ({ isOpen, onClose }) => {
               <Kbd>V</Kbd>).
             </ListItem>
           </OrderedList>
-          <form
-            onSubmit={
-              periodosOptions.length > 0
-                ? (t) => {
-                    t.preventDefault();
-                    applyHorariosSIU(selectedPeriod);
+          <Textarea
+            my={1}
+            size="sm"
+            name="siu"
+            onChange={(e) => setSiuData(e.target.value)}
+            value={siuData}
+          />
+          {periodosOptions.length > 0 && (
+            <Select
+              borderColor="tomato"
+              borderWidth={2}
+              placeholder="Elegir período lectivo"
+              my={2}
+              onChange={(e) => setSelectedPeriod(e.target.value)}
+            >
+              {periodosOptions.map((p) => (
+                <option key={p.periodo} value={p.periodo}>
+                  {p.periodo} (Materias: {p.materias.length})
+                </option>
+              ))}
+            </Select>
+          )}
+          {periodosOptions.length > 0 ? (
+            <Button
+              w="100%"
+              colorScheme="primary"
+              isDisabled={!selectedPeriod}
+              onClick={() => {
+                const periodo = periodosOptions.find(
+                  (p) => p.periodo === selectedPeriod
+                );
+                applyHorariosSIU(periodo);
+                onClose();
+                toast({
+                  title: "Horarios del SIU aplicados",
+                  status: "success",
+                  duration: 2000,
+                  isClosable: true,
+                });
+              }}
+            >
+              Aplicar horarios
+            </Button>
+          ) : (
+            <Button
+              w="100%"
+              colorScheme="primary"
+              isDisabled={!siuData}
+              onClick={() => {
+                try {
+                  const periodos = getPeriodosSIU(siuData);
+                  if (periodos.length > 1) {
+                    setPeriodosOptions(periodos);
+                  } else {
+                    applyHorariosSIU(periodos[0]);
                     onClose();
                     toast({
                       title: "Horarios del SIU aplicados",
@@ -82,69 +131,19 @@ const ManualUploadModal = ({ isOpen, onClose }) => {
                       isClosable: true,
                     });
                   }
-                : (t) => {
-                    t.preventDefault();
-                    try {
-                      const periodos = getPeriodosSIU(siuData);
-                      if (periodos.length > 1) {
-                        setPeriodosOptions(periodos);
-                      } else {
-                        applyHorariosSIU(periodos[0]);
-                        onClose();
-                        toast({
-                          title: "Horarios del SIU aplicados",
-                          status: "success",
-                          duration: 2000,
-                          isClosable: true,
-                        });
-                      }
-                    } catch (e) {
-                      setError(e.message);
-                    }
-                  }
-            }
-          >
-            <Textarea
-              my={1}
-              size="sm"
-              name="siu"
-              onChange={(e) => setSiuData(e.target.value)}
-              value={siuData}
-            />
-            {periodosOptions.length > 0 && (
-              <Select
-                borderColor="tomato"
-                borderWidth={2}
-                placeholder="Elegir período lectivo"
-                my={2}
-              >
-                {periodosOptions.map((p) => (
-                  <option
-                    key={p.periodo}
-                    value={p.periodo}
-                    onClick={() => setSelectedPeriod(p)}
-                  >
-                    {p.periodo} (Materias: {p.materias.length})
-                  </option>
-                ))}
-              </Select>
-            )}
-            <Button
-              w="100%"
-              colorScheme="primary"
-              type="submit"
-              isDisabled={
-                periodosOptions.length > 0 ? !selectedPeriod : !siuData
-              }
+                } catch (e) {
+                  setError(e.message);
+                }
+              }}
             >
-              {periodosOptions.length > 0 ? "Aplicar" : "Cargar"} horarios
+              Cargar horarios
             </Button>
-            {error && (
-              <Text size="sm" color="tomato">
-                {error}
-              </Text>
-            )}
-          </form>
+          )}
+          {error && (
+            <Text size="sm" color="tomato">
+              {error}
+            </Text>
+          )}
           <Text fontSize="sm" mt={2}>
             (Este feature es nuevo y experimental, si no funciona como esperás
             hacemelo saber!)

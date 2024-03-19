@@ -14,6 +14,13 @@ if (window.location.hash) {
   history.pushState("", "", window.location.pathname + window.location.search);
 }
 
+// Si el usuario tiene una sesión de cuando la aplicación tenía horarios estaticos
+// en vez de importados del SIU, le limpiamos la data
+const json = JSON.parse(window.localStorage.getItem("fiubaplan"));
+if (json["cuatrimestre"]) {
+  localStorage.setItem("fiubaplan", JSON.stringify({}));
+}
+
 export const DataContext = React.createContext();
 
 export const DataProvider = ({ children }) => {

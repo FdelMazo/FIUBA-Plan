@@ -1,4 +1,4 @@
-export const siuAxel = `
+export const siuAxelRaw = `
  0
  AXEL CARLOS LOPEZ 
 Propuesta: Ingeniería en Informática

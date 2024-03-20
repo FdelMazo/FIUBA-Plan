@@ -1,4 +1,4 @@
-export const siuExactas = `
+export const siuExactasRaw = `
  4
  0
  Nombre Falso

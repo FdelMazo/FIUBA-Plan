@@ -1,2524 +1,1270 @@
 [
-    {
-        "periodo": "2024 - 1er Cuatrimestre",
-        "materias": [
-            {
-                "nombre": "ÁLGEBRA LINEAL",
-                "codigo": "CB002",
-                "cursos": [
-                    "CB002-CURSO: 01A",
-                    "CB002-CURSO: 01B",
-                    "CB002-CURSO: 02A",
-                    "CB002-CURSO: 02B",
-                    "CB002-CURSO: 03",
-                    "CB002-CURSO: 04A",
-                    "CB002-CURSO: 04B",
-                    "CB002-CURSO: 05",
-                    "CB002-CURSO:06A",
-                    "CB002-CURSO:06B",
-                    "CB002-CURSO:07A",
-                    "CB002-CURSO:07B",
-                    "CB002-CURSO: 13A",
-                    "CB002-CURSO:13B",
-                    "CB002-CURSO:15",
-                    "CB002-CURSO:17",
-                    "CB002-CURSO:19",
-                    "CB002-CURSO:23A",
-                    "CB002-CURSO:23B"
-                ]
-            },
-            {
-                "nombre": "ALGORITMOS Y ESTRUCTURAS DE DATOS",
-                "codigo": "CB100",
-                "cursos": [
-                    "CB100-CURSO: 01-Schmidt A1",
-                    "CB100-CURSO: 02-Buchwald A1",
-                    "CB100-CURSO: 03-Juarez A1",
-                    "CB100-CURSO: 04-Mendez/Pandolfo A1",
-                    "CB100-CURSO: 05-Schmidt A1",
-                    "CB100-CURSO: 01-Schimidt A2",
-                    "CB100-CURSO: 02-Buchwald A2",
-                    "CB100-CURSO: 03-Juarez A2",
-                    "CB100-CURSO: 04-Mendez/Pandolfo A2",
-                    "CB100-CURSO: 05-Schmidt A2"
-                ]
-            },
-            {
-                "nombre": "ANÁLISIS MATEMÁTICO II",
-                "codigo": "CB001",
-                "cursos": [
-                    "CB001-CURSO: 01",
-                    "CB001-CURSO: 02A",
-                    "CB001-CURSO: 02B",
-                    "CB001-CURSO: 03",
-                    "CB001-CURSO: 04A",
-                    "CB001-CURSO: 04B",
-                    "CB001-CURSO: 05A",
-                    "CB001-CURSO: 05B",
-                    "CB001-CURSO: 06A",
-                    "CB001-CURSO: 06B",
-                    "CB001-CURSO: 07",
-                    "CB001-CURSO:11A",
-                    "CB001-CURSO:11B",
-                    "CB001-CURSO:12A",
-                    "CB001-CURSO:12B",
-                    "CB001-CURSO:14",
-                    "CB001-CURSO:10",
-                    "CB001-CURSO:20A",
-                    "CB001-CURSO:20B",
-                    "CB001-CURSO:22",
-                    "CB001-CURSO:23",
-                    "CB001-CURSO: 15",
-                    "CB001-CURSO: 09A",
-                    "CB001-CURSO: 09B"
-                ]
-            },
-            {
-                "nombre": "ANÁLISIS MATEMÁTICO III",
-                "codigo": "CB005",
-                "cursos": [
-                    "CB005-CURSO: 02",
-                    "CB005-CURSO: 03",
-                    "CB005-CURSO: 05"
-                ]
-            },
-            {
-                "nombre": "APRENDIZAJE AUTOMÁTICO",
-                "codigo": "TA061",
-                "cursos": [
-                    "TA061-CURSO: 01-Merlino"
-                ]
-            },
-            {
-                "nombre": "BASE DE DATOS",
-                "codigo": "TA044",
-                "cursos": [
-                    "TA044-CURSO: 01-Román",
-                    "TA044-CURSO: 02-Merlino"
-                ]
-            },
-            {
-                "nombre": "CIENCIA DE DATOS",
-                "codigo": "TA047",
-                "cursos": [
-                    "TA047-CURSO: 01-Martinelli",
-                    "TA047-CURSO: 02-Rodriguez"
-                ]
-            },
-            {
-                "nombre": "COMPUTACIÓN CUÁNTICA",
-                "codigo": "TB032",
-                "cursos": [
-                    "TB032-CURSO: Caram"
-                ]
-            },
-            {
-                "nombre": "EMPRESAS DE BASE TECNOLÓGICA I",
-                "codigo": "TC018",
-                "cursos": [
-                    "TC018-CURSO: 01-Di Mauro"
-                ]
-            },
-            {
-                "nombre": "EMPRESAS DE BASE TECNOLÓGICA II",
-                "codigo": "TC019",
-                "cursos": [
-                    "TC019-CURSO: 01-Di Mauro"
-                ]
-            },
-            {
-                "nombre": "FÍSICA PARA INFORMÁTICA",
-                "codigo": "CB024",
-                "cursos": [
-                    "CB024-Curso 01"
-                ]
-            },
-            {
-                "nombre": "FUNDAMENTOS DE PROGRAMACIÓN",
-                "codigo": "TB021",
-                "cursos": [
-                    "TB021-CURSO: 03-Essaya",
-                    "TB021-CURSO: 04-Mendez",
-                    "TB021-CURSO: 01-Guarna",
-                    "TB021-CURSO: 02-Azcurra",
-                    "TB021-CURSO: 05-Mendez"
-                ]
-            },
-            {
-                "nombre": "GESTIÓN DEL DESARROLLO DE SISTEMAS INFORMÁTICOS",
-                "codigo": "TC017",
-                "cursos": [
-                    "TC017-CURSO: 01-Fontela"
-                ]
-            },
-            {
-                "nombre": "INGENIERÍA DE SOFTWARE I",
-                "codigo": "TA046",
-                "cursos": [
-                    "TA046-CURSO:01- Leveroni",
-                    "TA046-CURSO: 02-Villagra",
-                    "TA046-CURSO: 03-Gonzalez"
-                ]
-            },
-            {
-                "nombre": "INGENIERÍA DE SOFTWARE II",
-                "codigo": "TA049",
-                "cursos": [
-                    "TA049-CURSO: 01-Montaldo",
-                    "TA049-CURSO: 02-Paez"
-                ]
-            },
-            {
-                "nombre": "INTRODUCCIÓN AL DESARROLLO DE SOFTWARE",
-                "codigo": "TB022",
-                "cursos": [
-                    "TB022-CURSO: 03-Camejo",
-                    "TB022-CURSO: 05-Lanzillotta"
-                ]
-            },
-            {
-                "nombre": "MODELACIÓN NUMÉRICA",
-                "codigo": "CB051",
-                "cursos": [
-                    "CB051-CURSO: 01-Re",
-                    "CB051-CURSO: 02-Tarela",
-                    "CB051-CURSO: 03-Griggio",
-                    "CB051-CURSO: 04-Schwarz",
-                    "CB051-CURSO: 05-Sassano",
-                    "CB051-CURSO: 06-Rodriguez",
-                    "CB051-CURSO: 07-Cavaliere Practica Martes 19 hs",
-                    "CB051-CURSO: 08-Cavaliere Práctica Martes 16 hs"
-                ]
-            },
-            {
-                "nombre": "ORGANIZACIÓN DEL COMPUTADOR",
-                "codigo": "TB023",
-                "cursos": [
-                    "TB023-CURSO: 01-Benitez",
-                    "TB023-CURSO: 02-Marchi",
-                    "TB023-CURSO: 03-Burin"
-                ]
-            },
-            {
-                "nombre": "PARADIGMAS DE PROGRAMACIÓN",
-                "codigo": "TB025",
-                "cursos": [
-                    "TB025-CURSO: 01-Suarez",
-                    "TB025-CURSO: 02-Cano",
-                    "TB025-CURSO: 03-Corsi"
-                ]
-            },
-            {
-                "nombre": "PROBABILIDAD Y ESTADÍSTICA",
-                "codigo": "CB003",
-                "cursos": [
-                    "CB003-CURSO: 21",
-                    "CB003-CURSO: 22",
-                    "CB003-CURSO: 25",
-                    "CB003-CURSO: 27",
-                    "CB003-CURSO: 28"
-                ]
-            },
-            {
-                "nombre": "PROGRAMACIÓN CONCURRENTE",
-                "codigo": "TB026",
-                "cursos": [
-                    "TB026-CURSO: 01-Deymonnaz"
-                ]
-            },
-            {
-                "nombre": "REDES",
-                "codigo": "TA048",
-                "cursos": [
-                    "TA048-CURSO:01-ALVAREZ HAMELIN",
-                    "TA048-CURSO: 02-Alvarez Hamelin"
-                ]
-            },
-            {
-                "nombre": "SIMULACIÓN",
-                "codigo": "TB028",
-                "cursos": [
-                    "TB028-CURSO: 01-Caiafa"
-                ]
-            },
-            {
-                "nombre": "SISTEMAS OPERATIVOS",
-                "codigo": "TA043",
-                "cursos": [
-                    "TA043-CURSO: 01-Mendez"
-                ]
-            },
-            {
-                "nombre": "TALLER DE PROGRAMACIÓN",
-                "codigo": "TA045",
-                "cursos": [
-                    "TA045-CURSO: 01-Veiga",
-                    "TA045-CURSO: 02-Deymonnaz"
-                ]
-            },
-            {
-                "nombre": "TEORÍA DE ALGORITMOS",
-                "codigo": "TB024",
-                "cursos": [
-                    "TB024-CURSO: 01-Podberezski",
-                    "TB024-CURSO: 02-Buchwald"
-                ]
-            }
-        ],
+  {
+    "periodo": "2024 - 1er Cuatrimestre",
+    "materias": [
+      {
+        "nombre": "ÁLGEBRA LINEAL",
+        "codigo": "CB002",
         "cursos": [
-            {
-                "materia": "CB002",
-                "codigo": "CB002-CURSO: 01A",
-                "docentes": "VARGAS GABRIELA , PALACIOS PATRICIA ELIZABE , SOSA MARINA ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 1,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB002",
-                "codigo": "CB002-CURSO: 01B",
-                "docentes": "VARGAS GABRIELA , CABANA ADRIANA ELENA , BOHORQUEZ GUTIERREZ RUBEN ANDRES ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 1,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB002",
-                "codigo": "CB002-CURSO: 02A",
-                "docentes": "SARRIS CLAUDIA MONICA , PRESENZA JUAN FRANCISCO , ROZENWASSER LAURA ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "14:00",
-                        "fin": "16:00"
-                    },
-                    {
-                        "dia": 2,
-                        "inicio": "16:00",
-                        "fin": "18:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "14:00",
-                        "fin": "16:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "16:00",
-                        "fin": "18:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB002",
-                "codigo": "CB002-CURSO: 02B",
-                "docentes": "SARRIS CLAUDIA MONICA , FAGES LUCIANO RODOLFO , VIBRENTIS FRANCISCO ANTONIO ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "14:00",
-                        "fin": "16:00"
-                    },
-                    {
-                        "dia": 2,
-                        "inicio": "16:00",
-                        "fin": "18:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "14:00",
-                        "fin": "16:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "16:00",
-                        "fin": "18:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB002",
-                "codigo": "CB002-CURSO: 03",
-                "docentes": "GIRIBET JUAN IGNACIO , PERALTA NORA BEATRIZ , GOMEZ CIAPPONI LAUTARO ",
-                "clases": [
-                    {
-                        "dia": 3,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB002",
-                "codigo": "CB002-CURSO: 04A",
-                "docentes": "LOPEZ CLAUDIA ANDREA , ORECCHIA MONICA INES , ALVAREZ PONTE LUCIA INES ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 2,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB002",
-                "codigo": "CB002-CURSO: 04B",
-                "docentes": "LOPEZ CLAUDIA ANDREA , ROZENWASSER LAURA , KLINGER MAGALI SILVINA ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 2,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB002",
-                "codigo": "CB002-CURSO: 05",
-                "docentes": "PALACIOS PATRICIA ELIZABE , VIBRENTIS FRANCISCO ANTONIO , NORES MANUEL ENRIQUE ",
-                "clases": [
-                    {
-                        "dia": 3,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB002",
-                "codigo": "CB002-CURSO:06A",
-                "docentes": "BOGGI SILVINA , VENTURIELLO VERONICA LAURA ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "00:09",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 1,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB002",
-                "codigo": "CB002-CURSO:06B",
-                "docentes": "BOGGI SILVINA , GARCIA SERRANO SILVINA AIDA , ROHDENBURG ERICA ELISABET ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 1,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB002",
-                "codigo": "CB002-CURSO:07A",
-                "docentes": "MARTINS MARCELA , ALVAREZ PONTE LUCIA INES ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 2,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB002",
-                "codigo": "CB002-CURSO:07B",
-                "docentes": "MARTINS MARCELA , VALDETTARO MARCELO ALEJAN , ROZENWASSER LAURA ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 2,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB002",
-                "codigo": "CB002-CURSO: 13A",
-                "docentes": "CABANA ADRIANA ELENA , PERALTA NORA BEATRIZ , HERRMANN GUILLERMO WALTER ",
-                "clases": [
-                    {
-                        "dia": 3,
-                        "inicio": "13:00",
-                        "fin": "15:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "15:00",
-                        "fin": "17:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "13:00",
-                        "fin": "15:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "15:00",
-                        "fin": "17:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB002",
-                "codigo": "CB002-CURSO:13B",
-                "docentes": "CABANA ADRIANA ELENA , RODRIGUEZ MARIA LAURA , PONCE DE LEON ROBLES FABIAN ARTURO ",
-                "clases": [
-                    {
-                        "dia": 3,
-                        "inicio": "13:00",
-                        "fin": "15:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "15:00",
-                        "fin": "17:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "13:00",
-                        "fin": "15:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "15:00",
-                        "fin": "17:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB002",
-                "codigo": "CB002-CURSO:15",
-                "docentes": "ALVAREZ JULIA JORGE , GRÖER MARIA GABRIELA , CATUOGNO EZEQUIEL PATRICIO , AGUERRE JUAN FRANCISCO ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "17:00",
-                        "fin": "19:00"
-                    },
-                    {
-                        "dia": 1,
-                        "inicio": "19:00",
-                        "fin": "21:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "17:00",
-                        "fin": "19:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "19:00",
-                        "fin": "21:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB002",
-                "codigo": "CB002-CURSO:17",
-                "docentes": "MARTINS MARCELA , ORECCHIA MONICA INES , MENDIETA JULIO ANTONIO , CENTENO HERNÁN DIEGO ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "07:00",
-                        "fin": "09:00"
-                    },
-                    {
-                        "dia": 2,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "07:00",
-                        "fin": "09:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB002",
-                "codigo": "CB002-CURSO:19",
-                "docentes": "PRELAT DANIEL , GALVAN MONICA BEATRIZ , SILVESTRE DAMIAN ISMAEL ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "13:00",
-                        "fin": "15:00"
-                    },
-                    {
-                        "dia": 1,
-                        "inicio": "15:00",
-                        "fin": "17:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "13:00",
-                        "fin": "15:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "15:00",
-                        "fin": "17:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB002",
-                "codigo": "CB002-CURSO:23A",
-                "docentes": "GRYNBERG SEBASTIAN PABLO , PALAU GABRIEL , CASSANI MARÍA VICTORIA ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "07:00",
-                        "fin": "09:00"
-                    },
-                    {
-                        "dia": 1,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "07:00",
-                        "fin": "09:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB002",
-                "codigo": "CB002-CURSO:23B",
-                "docentes": "GRYNBERG SEBASTIAN PABLO , GIACOBBE MARA GEORGINA , PONCE DE LEON ROBLES FABIAN ARTURO ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "07:00",
-                        "fin": "09:00"
-                    },
-                    {
-                        "dia": 1,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "07:00",
-                        "fin": "09:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB100",
-                "codigo": "CB100-CURSO: 01-Schmidt A1",
-                "docentes": "SIROTINSKY SERGIO , SCHMIDT GUSTAVO ADOLFO ",
-                "clases": [
-                    {
-                        "dia": 3,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB100",
-                "codigo": "CB100-CURSO: 02-Buchwald A1",
-                "docentes": "BUCHWALD MARTÍN EZEQUIEL , GENENDER PEÑA EZEQUIEL DAVID , BRASBURG FEDERICO ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "17:30",
-                        "fin": "20:30"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "17:30",
-                        "fin": "20:30"
-                    }
-                ]
-            },
-            {
-                "materia": "CB100",
-                "codigo": "CB100-CURSO: 03-Juarez A1",
-                "docentes": "JUAREZ ANDRÉS ALBERTO , CIARALLO CRISTIAN ADRIAN , FARETTA YANINA BELEN , MARIANETTI NICOLAS GABRIEL ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "18:00",
-                        "fin": "21:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "18:00",
-                        "fin": "21:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB100",
-                "codigo": "CB100-CURSO: 04-Mendez/Pandolfo A1",
-                "docentes": "MENDEZ MARIANO , SIBIKOWSKI NICOLAS IVAN , CORREA VALENTINA LAURA , DIAZ MIGUEZ ABRIL , PANDOLFO LUCAS HERNAN ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "18:00",
-                        "fin": "21:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "18:00",
-                        "fin": "21:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB100",
-                "codigo": "CB100-CURSO: 05-Schmidt A1",
-                "docentes": "SIROTINSKY SERGIO , SCHMIDT GUSTAVO ADOLFO ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB100",
-                "codigo": "CB100-CURSO: 01-Schimidt A2",
-                "docentes": "SIROTINSKY SERGIO , SCHMIDT GUSTAVO ADOLFO ",
-                "clases": [
-                    {
-                        "dia": 3,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB100",
-                "codigo": "CB100-CURSO: 02-Buchwald A2",
-                "docentes": "BUCHWALD MARTÍN EZEQUIEL , GENENDER PEÑA EZEQUIEL DAVID , BRASBURG FEDERICO ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "17:30",
-                        "fin": "20:30"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "17:30",
-                        "fin": "20:30"
-                    }
-                ]
-            },
-            {
-                "materia": "CB100",
-                "codigo": "CB100-CURSO: 03-Juarez A2",
-                "docentes": "JUAREZ ANDRÉS ALBERTO , CIARALLO CRISTIAN ADRIAN , FARETTA YANINA BELEN , MARIANETTI NICOLAS GABRIEL ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "18:00",
-                        "fin": "21:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "18:00",
-                        "fin": "21:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB100",
-                "codigo": "CB100-CURSO: 04-Mendez/Pandolfo A2",
-                "docentes": "MENDEZ MARIANO , SIBIKOWSKI NICOLAS IVAN , DIAZ MIGUEZ ABRIL , PANDOLFO LUCAS HERNAN ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "18:00",
-                        "fin": "21:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "18:00",
-                        "fin": "21:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB100",
-                "codigo": "CB100-CURSO: 05-Schmidt A2",
-                "docentes": "SIROTINSKY SERGIO , SCHMIDT GUSTAVO ADOLFO ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB001",
-                "codigo": "CB001-CURSO: 01",
-                "docentes": "ACERO FERNANDO RODOLFO , PEÑA NELLY HAYDEE , SMILOVICH DAMIAN NICOLAS ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 2,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB001",
-                "codigo": "CB001-CURSO: 02A",
-                "docentes": "ACERO FERNANDO RODOLFO , LOPEZ CLAUDIA ANDREA , ENDELLI JORGE RODOLFO ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "07:00",
-                        "fin": "09:00"
-                    },
-                    {
-                        "dia": 2,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "07:00",
-                        "fin": "09:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB001",
-                "codigo": "CB001-CURSO: 02B",
-                "docentes": "ACERO FERNANDO RODOLFO , GARCIA ADRIANA EVA , PORTOCARRERO MIRANDA MICHAEL ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "07:00",
-                        "fin": "09:00"
-                    },
-                    {
-                        "dia": 2,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "07:00",
-                        "fin": "09:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB001",
-                "codigo": "CB001-CURSO: 03",
-                "docentes": "GIGOLA SILVIA VIVIANA , DE ROSSI FERNANDO DANIEL , OLIVA CARLA MARIANA ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 1,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB001",
-                "codigo": "CB001-CURSO: 04A",
-                "docentes": "ZITTO MIGUEL EDUARDO , GOMEZ CIAPPONI LAUTARO , BIBILONI FERNANDO ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 2,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB001",
-                "codigo": "CB001-CURSO: 04B",
-                "docentes": "ZITTO MIGUEL EDUARDO , DURANTE FLAVIO ANIBAL , LA COLLA AUGUSTO ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 2,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB001",
-                "codigo": "CB001-CURSO: 05A",
-                "docentes": "MAULHARDT MARTIN ENRIQUE , PUEBLA MANUEL LEANDRO , RIZZO ELISABETH AMALIA , BLAZQUEZ ROCIO AZUL ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 2,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB001",
-                "codigo": "CB001-CURSO: 05B",
-                "docentes": "MAULHARDT MARTIN ENRIQUE , MONZON NELSON , BIBILONI FERNANDO ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 2,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB001",
-                "codigo": "CB001-CURSO: 06A",
-                "docentes": "SOLA MARCOS OSCAR , PIÑERA EDUARDO ERNESTO ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "13:00",
-                        "fin": "15:00"
-                    },
-                    {
-                        "dia": 1,
-                        "inicio": "15:00",
-                        "fin": "17:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "13:00",
-                        "fin": "15:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "15:00",
-                        "fin": "17:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB001",
-                "codigo": "CB001-CURSO: 06B",
-                "docentes": "SOLA MARCOS OSCAR , GUALTIERI SERGIO ALBERTO , OLIVA CARLA MARIANA ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "13:00",
-                        "fin": "15:00"
-                    },
-                    {
-                        "dia": 1,
-                        "inicio": "15:00",
-                        "fin": "17:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "13:00",
-                        "fin": "15:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "15:00",
-                        "fin": "17:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB001",
-                "codigo": "CB001-CURSO: 07",
-                "docentes": "A DESIGNAR A DESIGNAR , ENDELLI JORGE RODOLFO , KLINGER MAGALI SILVINA , PUEBLA MANUEL LEANDRO ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 1,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB001",
-                "codigo": "CB001-CURSO:11A",
-                "docentes": "MARTINS MARCELA , ROSSI PABLO DANIEL , ZHANG FAN ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "14:00",
-                        "fin": "16:00"
-                    },
-                    {
-                        "dia": 2,
-                        "inicio": "16:00",
-                        "fin": "18:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "14:00",
-                        "fin": "16:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "16:00",
-                        "fin": "18:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB001",
-                "codigo": "CB001-CURSO:11B",
-                "docentes": "DE ROSSI FERNANDO DANIEL , HERRMANN GUILLERMO WALTER ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "14:00",
-                        "fin": "16:00"
-                    },
-                    {
-                        "dia": 2,
-                        "inicio": "16:00",
-                        "fin": "18:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "14:00",
-                        "fin": "16:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "16:00",
-                        "fin": "18:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB001",
-                "codigo": "CB001-CURSO:12A",
-                "docentes": "LOPEZ CLAUDIA ANDREA , SILVESTRE DAMIAN ISMAEL , VOROBIOFF NICOLAS ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "14:00",
-                        "fin": "16:00"
-                    },
-                    {
-                        "dia": 2,
-                        "inicio": "16:00",
-                        "fin": "18:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "14:00",
-                        "fin": "16:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "16:00",
-                        "fin": "18:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB001",
-                "codigo": "CB001-CURSO:12B",
-                "docentes": "LOPEZ CLAUDIA ANDREA , VICEDO JUAN PABLO , ZHANG FAN ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "14:00",
-                        "fin": "16:00"
-                    },
-                    {
-                        "dia": 2,
-                        "inicio": "16:00",
-                        "fin": "18:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "14:00",
-                        "fin": "16:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "16:00",
-                        "fin": "18:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB001",
-                "codigo": "CB001-CURSO:14",
-                "docentes": "COMAS JORGE MIGUEL , CANEPA VICTOR MANUEL , MEDINA MANUELA ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "18:00",
-                        "fin": "20:00"
-                    },
-                    {
-                        "dia": 2,
-                        "inicio": "20:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "18:00",
-                        "fin": "20:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "20:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB001",
-                "codigo": "CB001-CURSO:10",
-                "docentes": "SASYK ROMAN , CHORNY FERNANDO , GUALTIERI SERGIO ALBERTO ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "13:00",
-                        "fin": "15:00"
-                    },
-                    {
-                        "dia": 1,
-                        "inicio": "15:00",
-                        "fin": "17:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "13:00",
-                        "fin": "15:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "15:00",
-                        "fin": "17:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB001",
-                "codigo": "CB001-CURSO:20A",
-                "docentes": "SEMINARA SILVIA ALEJANDRA , OLIVA CECILIA MARIEL , LUCUY SUAREZ FRED ALBERTO ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "17:00",
-                        "fin": "19:00"
-                    },
-                    {
-                        "dia": 1,
-                        "inicio": "19:00",
-                        "fin": "21:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "17:00",
-                        "fin": "19:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "19:00",
-                        "fin": "21:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB001",
-                "codigo": "CB001-CURSO:20B",
-                "docentes": "SEMINARA SILVIA ALEJANDRA , ESTRIN ANDRES ALEJANDRO , WILK BERNARDO ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "17:00",
-                        "fin": "19:00"
-                    },
-                    {
-                        "dia": 1,
-                        "inicio": "19:00",
-                        "fin": "21:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "17:00",
-                        "fin": "19:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "19:00",
-                        "fin": "21:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB001",
-                "codigo": "CB001-CURSO:22",
-                "docentes": "MANCILLA AGUILAR JOSE LUIS , CENTENO HERNÁN DIEGO , A DESIGNAR A DESIGNAR ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "00:09",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 2,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "00:09",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB001",
-                "codigo": "CB001-CURSO:23",
-                "docentes": "A DESIGNAR A DESIGNAR , AMOREO ANIBAL , PETROVICH JOSE LUIS ALEJANDRO ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "18:00",
-                        "fin": "20:00"
-                    },
-                    {
-                        "dia": 2,
-                        "inicio": "20:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "18:00",
-                        "fin": "20:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "20:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB001",
-                "codigo": "CB001-CURSO: 15",
-                "docentes": "SASSANO MIRYAM PATRICIA , RAMOS GALKER ELIANA MAITE , VENTURIELLO VERONICA LAURA ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "14:00",
-                        "fin": "16:00"
-                    },
-                    {
-                        "dia": 2,
-                        "inicio": "16:00",
-                        "fin": "18:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "14:00",
-                        "fin": "16:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "16:00",
-                        "fin": "18:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB001",
-                "codigo": "CB001-CURSO: 09A",
-                "docentes": "PASTOR VERONICA ESTELA , ROHDENBURG ERICA ELISABET , VENTURIELLO VERONICA LAURA ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 1,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB001",
-                "codigo": "CB001-CURSO: 09B",
-                "docentes": "PASTOR VERONICA ESTELA , BUCELLO PABLO AUGUSTO , SOSA MARINA ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 1,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB005",
-                "codigo": "CB005-CURSO: 02",
-                "docentes": "PRELAT DANIEL , DE ROSSI FERNANDO DANIEL ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 2,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "11:00",
-                        "fin": "13:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB005",
-                "codigo": "CB005-CURSO: 03",
-                "docentes": "MURMIS GUSTAVO MARCELO , BURMAN ARIEL , DEL RIO GARCIA FEDERICO MANUEL ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "18:00",
-                        "fin": "20:00"
-                    },
-                    {
-                        "dia": 1,
-                        "inicio": "20:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "18:00",
-                        "fin": "20:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "20:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB005",
-                "codigo": "CB005-CURSO: 05",
-                "docentes": "CACHILE MARIO ANDRES , PEÑA NELLY HAYDEE , A DESIGNAR A DESIGNAR , GOMEZ CIAPPONI LAUTARO , MONZON NELSON ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "14:00",
-                        "fin": "16:00"
-                    },
-                    {
-                        "dia": 2,
-                        "inicio": "16:00",
-                        "fin": "18:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "14:00",
-                        "fin": "16:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "16:00",
-                        "fin": "18:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TA061",
-                "codigo": "TA061-CURSO: 01-Merlino",
-                "docentes": "IERACHE JORGE SALVADOR , MERLINO HERNAN DANIEL ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "07:00",
-                        "fin": "10:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "07:00",
-                        "fin": "10:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TA044",
-                "codigo": "TA044-CURSO: 01-Román",
-                "docentes": "FASCE ALBERTO ARMANDO , ROMAN LUCAS ALEJANDRO ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TA044",
-                "codigo": "TA044-CURSO: 02-Merlino",
-                "docentes": "MERLINO HERNAN DANIEL ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "07:00",
-                        "fin": "09:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "07:00",
-                        "fin": "09:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "07:00",
-                        "fin": "09:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TA047",
-                "codigo": "TA047-CURSO: 01-Martinelli",
-                "docentes": "MARTINELLI DAMIAN ARIEL , GOLMAR NATALIA ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TA047",
-                "codigo": "TA047-CURSO: 02-Rodriguez",
-                "docentes": "RODRIGUEZ JUAN MANUEL , VILLANUEVA CECILIA AZUL ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TB032",
-                "codigo": "TB032-CURSO: Caram",
-                "docentes": "CARAM LEONIDAS FACUNDO , SARRIS CLAUDIA MONICA ",
-                "clases": [
-                    {
-                        "dia": 3,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TC018",
-                "codigo": "TC018-CURSO: 01-Di Mauro",
-                "docentes": "GODOY ANDRES ALEJANDRO ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "18:00",
-                        "fin": "21:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "18:00",
-                        "fin": "21:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TC019",
-                "codigo": "TC019-CURSO: 01-Di Mauro",
-                "docentes": "Sin docentes",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "18:00",
-                        "fin": "21:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "18:00",
-                        "fin": "21:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB024",
-                "codigo": "CB024-Curso 01",
-                "docentes": "MATTEO CLAUDIA LEDA ",
-                "clases": [
-                    {
-                        "dia": 3,
-                        "inicio": "14:00",
-                        "fin": "18:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TB021",
-                "codigo": "TB021-CURSO: 03-Essaya",
-                "docentes": "ESSAYA DIEGO NICOLAS , BRASBURG FEDERICO , ESTEBAN FEDERICO MARTÍN , DI SANTO JAVIER MARIANO , KRISTAL JUAN IGNACIO , SANTONI MAURO JAVIER , SPORTELLI CASTRO LUCIANO ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "17:30",
-                        "fin": "20:30"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "17:30",
-                        "fin": "20:30"
-                    }
-                ]
-            },
-            {
-                "materia": "TB021",
-                "codigo": "TB021-CURSO: 04-Mendez",
-                "docentes": "MENDEZ MARIANO , FRACCARO AGUSTINA , RODRIGUEZ DALA TOMAS ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "18:00",
-                        "fin": "21:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "18:00",
-                        "fin": "21:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TB021",
-                "codigo": "TB021-CURSO: 01-Guarna",
-                "docentes": "GUARNA PABLO FRANCISCO ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TB021",
-                "codigo": "TB021-CURSO: 02-Azcurra",
-                "docentes": "AZCURRA DIEGO ANDRES , SALVIA MARTIN MIGUEL , BIANCHI GUSTAVO OSCAR , OTERO MARCOS JULIAN ",
-                "clases": [
-                    {
-                        "dia": 3,
-                        "inicio": "16:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TB021",
-                "codigo": "TB021-CURSO: 05-Mendez",
-                "docentes": "MENDEZ MARIANO , LOPEZ JUAN JOSE , MARTOS PEDRO IGNACIO DOMINGO ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "18:00",
-                        "fin": "21:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "17:00",
-                        "fin": "20:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TC017",
-                "codigo": "TC017-CURSO: 01-Fontela",
-                "docentes": "FONTELA MOISES CARLOS ",
-                "clases": [
-                    {
-                        "dia": 3,
-                        "inicio": "16:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TA046",
-                "codigo": "TA046-CURSO:01- Leveroni",
-                "docentes": "LEVERONI LUCIANO , BURELLA JUAN MATIAS ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "18:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "17:00",
-                        "fin": "21:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TA046",
-                "codigo": "TA046-CURSO: 02-Villagra",
-                "docentes": "VILLAGRA SERGIO GUSTAVO ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "18:30",
-                        "fin": "21:30"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "18:30",
-                        "fin": "21:30"
-                    }
-                ]
-            },
-            {
-                "materia": "TA046",
-                "codigo": "TA046-CURSO: 03-Gonzalez",
-                "docentes": "GONZALEZ NORBERTO DANIEL , TURRI ALEJANDRO ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TA049",
-                "codigo": "TA049-CURSO: 01-Montaldo",
-                "docentes": "MONTALDO DIEGO FERNANDO , CUROTTO CARLOS EZEQUIEL , CARAMÉS AGUSTÍN EDUARDO ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TA049",
-                "codigo": "TA049-CURSO: 02-Paez",
-                "docentes": "PAEZ NICOLAS MARTIN , de la FUENTE HERNAN ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "08:00",
-                        "fin": "11:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "08:00",
-                        "fin": "11:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TB022",
-                "codigo": "TB022-CURSO: 03-Camejo",
-                "docentes": "CAMEJO MANUEL , BILBAO MANUEL IÑAKI , DIAZ REAL MARIA SOL , RIEDEL NICOLAS AGUSTIN ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TB022",
-                "codigo": "TB022-CURSO: 05-Lanzillotta",
-                "docentes": "LANZILLOTTA BRUNO , CAPRA FRANCO DANIEL , SOSA CRISTIAN MARTIN ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "18:00",
-                        "fin": "21:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "18:00",
-                        "fin": "21:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB051",
-                "codigo": "CB051-CURSO: 01-Re",
-                "docentes": "RE MARIANO , GARCIA PABLO EZEQUIEL , SARTI MARINA ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "16:00",
-                        "fin": "19:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "16:00",
-                        "fin": "19:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB051",
-                "codigo": "CB051-CURSO: 02-Tarela",
-                "docentes": "TARELA PABLO ADRIAN , EZCURRA DIEGO MARTIN , POLTARAK GUILLERMO RAUL CARLOS , DIAZ MARIA BELEN ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "18:00",
-                        "fin": "21:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB051",
-                "codigo": "CB051-CURSO: 03-Griggio",
-                "docentes": "GRIGGIO DANIEL ADALBERTO , NAVARRO FABIAN , CERRUTTI SILVANA VALERIA ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "18:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB051",
-                "codigo": "CB051-CURSO: 04-Schwarz",
-                "docentes": "SCHWARZ RODOLFO ALEJANDRO , SOSA GERMAN EZEQUIEL , CASTAÑO ENRIQUETA ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "16:00",
-                        "fin": "19:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "16:00",
-                        "fin": "19:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB051",
-                "codigo": "CB051-CURSO: 05-Sassano",
-                "docentes": "SASSANO MIRYAM PATRICIA , GARCIA EZEQUIEL , HUSAIN CERRUTI IGNACIO SANTIAGO , TURANO MARIA AGUSTINA ",
-                "clases": [
-                    {
-                        "dia": 3,
-                        "inicio": "16:00",
-                        "fin": "19:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "16:00",
-                        "fin": "19:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB051",
-                "codigo": "CB051-CURSO: 06-Rodriguez",
-                "docentes": "RODRIGUEZ DANIEL FABIAN , MACHIUNAS VALERIA ",
-                "clases": [
-                    {
-                        "dia": 3,
-                        "inicio": "16:00",
-                        "fin": "19:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "16:00",
-                        "fin": "19:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB051",
-                "codigo": "CB051-CURSO: 07-Cavaliere Practica Martes 19 hs",
-                "docentes": "CAVALIERE MIGUEL ANGEL , MASTROPIETRO GABRIEL MARCELO , EZCURRA DIEGO MARTIN , KOWAL ADRIAN MARCELO ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB051",
-                "codigo": "CB051-CURSO: 08-Cavaliere Práctica Martes 16 hs",
-                "docentes": "CAVALIERE MIGUEL ANGEL , BALZAROTTI FEDERICO , GARCIA PABLO EZEQUIEL , PORTOCARRERO MIRANDA MICHAEL ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "16:00",
-                        "fin": "19:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TB023",
-                "codigo": "TB023-CURSO: 01-Benitez",
-                "docentes": "BENITEZ CARLOS EDUARDO , MANSILLA MARIANO CLAUDIO , BERRUEZO RAMIRO NICOLÁS , MARTOS PEDRO IGNACIO DOMINGO , RADUCCI DARIO MARTIN ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "19:00",
-                        "fin": "23:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "19:00",
-                        "fin": "23:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TB023",
-                "codigo": "TB023-CURSO: 02-Marchi",
-                "docentes": "MARCHI EDGARDO JOSE , CERVETTO MARCOS ADRIAN ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "18:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "18:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TB023",
-                "codigo": "TB023-CURSO: 03-Burin",
-                "docentes": "BURIN ABRAHAM ALBERTO DA , NOVODVORETZ OSCAR DARIO , GUTIERREZ NESTOR SERGIO ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "15:00",
-                        "fin": "19:00"
-                    },
-                    {
-                        "dia": 2,
-                        "inicio": "19:00",
-                        "fin": "23:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TB025",
-                "codigo": "TB025-CURSO: 01-Suarez",
-                "docentes": "SANCHEZ DIEGO , SUAREZ JOSE PABLO , NAFTALI MAIA RAQUEL , RODRIGUEZ MASSUH PABLO MATIAS ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TB025",
-                "codigo": "TB025-CURSO: 02-Cano",
-                "docentes": "BRASBURG FEDERICO , CANO MATÍAS JOSÉ , RAIK IGNACIO MARTIN ",
-                "clases": [
-                    {
-                        "dia": 3,
-                        "inicio": "18:30",
-                        "fin": "21:30"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "17:30",
-                        "fin": "20:30"
-                    }
-                ]
-            },
-            {
-                "materia": "TB025",
-                "codigo": "TB025-CURSO: 03-Corsi",
-                "docentes": "CORSI DIEGO PABLO , ESSAYA DIEGO NICOLAS ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "14:00",
-                        "fin": "17:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "14:00",
-                        "fin": "17:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB003",
-                "codigo": "CB003-CURSO: 21",
-                "docentes": "VERA MATÍAS ALEJANDRO , PUEBLA MANUEL LEANDRO , MENDAÑA JOAQUÍN ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "15:00",
-                        "fin": "17:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "15:00",
-                        "fin": "19:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB003",
-                "codigo": "CB003-CURSO: 22",
-                "docentes": "BELLO IGNACIO ALBERTO , LEVITÁN DAVID ADRIÁN , BERTALOT FEDERICO MATIAS ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "19:00",
-                        "fin": "21:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "19:00",
-                        "fin": "23:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB003",
-                "codigo": "CB003-CURSO: 25",
-                "docentes": "COSATTO AMMANN PEDRO CAMILO , SOSA MARINA , EDWARDS MOLINA DIEGO JULIO ",
-                "clases": [
-                    {
-                        "dia": 3,
-                        "inicio": "09:00",
-                        "fin": "13:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB003",
-                "codigo": "CB003-CURSO: 27",
-                "docentes": "PÉREZ SILVIA NOEMÍ , ALVAREZ PONTE LUCIA INES , DE ANGELIS RIVA LUKAS NAHUEL ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "09:00",
-                        "fin": "13:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "09:00",
-                        "fin": "11:00"
-                    }
-                ]
-            },
-            {
-                "materia": "CB003",
-                "codigo": "CB003-CURSO: 28",
-                "docentes": "KORNBLIT FERNANDO , MENDIBURU MARIANA , ROBLES EZEQUIEL MILAGROS DE JESUS ",
-                "clases": [
-                    {
-                        "dia": 3,
-                        "inicio": "17:00",
-                        "fin": "19:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "17:00",
-                        "fin": "21:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TB026",
-                "codigo": "TB026-CURSO: 01-Deymonnaz",
-                "docentes": "DEYMONNAZ PABLO ANDRES , SCARPINELLI ARIEL ALEJANDRO ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TA048",
-                "codigo": "TA048-CURSO:01-ALVAREZ HAMELIN",
-                "docentes": "ALVAREZ HAMELIN JOSE IGNACIO ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TA048",
-                "codigo": "TA048-CURSO: 02-Alvarez Hamelin",
-                "docentes": "ALVAREZ HAMELIN JOSE IGNACIO ",
-                "clases": [
-                    {
-                        "dia": 4,
-                        "inicio": "18:00",
-                        "fin": "21:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TB028",
-                "codigo": "TB028-CURSO: 01-Caiafa",
-                "docentes": "CAIAFA CESAR FEDERICO , BENITEZ CARLOS MARCELO , VILLANUEVA CECILIA AZUL ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TA043",
-                "codigo": "TA043-CURSO: 01-Mendez",
-                "docentes": "MENDEZ MARIANO , MUCCIO ADRIAN , ESPINA EMMANUEL EDUARDO , IRIBARNE CATELLA PATRICIO ",
-                "clases": [
-                    {
-                        "dia": 3,
-                        "inicio": "18:00",
-                        "fin": "21:00"
-                    },
-                    {
-                        "dia": 5,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TA045",
-                "codigo": "TA045-CURSO: 01-Veiga",
-                "docentes": "VEIGA ANDRES ARTURO , DI PAOLA MARTIN PABLO , GOMEZ PETER FEDERICO MANUEL , WERNER EZEQUIEL MAXIMILIANO ",
-                "clases": [
-                    {
-                        "dia": 2,
-                        "inicio": "18:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "18:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TA045",
-                "codigo": "TA045-CURSO: 02-Deymonnaz",
-                "docentes": "DEYMONNAZ PABLO ANDRES , MILETTA CARLOS MARTIN , TOSCANO GONNELLA MAURO FABRICIO ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "18:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "18:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TB024",
-                "codigo": "TB024-CURSO: 01-Podberezski",
-                "docentes": "PODBEREZSKI VICTOR DANIEL ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 3,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    }
-                ]
-            },
-            {
-                "materia": "TB024",
-                "codigo": "TB024-CURSO: 02-Buchwald",
-                "docentes": "BUCHWALD MARTÍN EZEQUIEL , GENENDER PEÑA EZEQUIEL DAVID ",
-                "clases": [
-                    {
-                        "dia": 1,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    },
-                    {
-                        "dia": 4,
-                        "inicio": "19:00",
-                        "fin": "22:00"
-                    }
-                ]
-            }
-        ],
-        "timestamp": 1710965569507
-    }
+          "CB002-CURSO: 01A",
+          "CB002-CURSO: 01B",
+          "CB002-CURSO: 02A",
+          "CB002-CURSO: 02B",
+          "CB002-CURSO: 03",
+          "CB002-CURSO: 04A",
+          "CB002-CURSO: 04B",
+          "CB002-CURSO: 05",
+          "CB002-CURSO:06A",
+          "CB002-CURSO:06B",
+          "CB002-CURSO:07A",
+          "CB002-CURSO:07B",
+          "CB002-CURSO: 13A",
+          "CB002-CURSO:13B",
+          "CB002-CURSO:15",
+          "CB002-CURSO:17",
+          "CB002-CURSO:19",
+          "CB002-CURSO:23A",
+          "CB002-CURSO:23B"
+        ]
+      },
+      {
+        "nombre": "ALGORITMOS Y ESTRUCTURAS DE DATOS",
+        "codigo": "CB100",
+        "cursos": [
+          "CB100-CURSO: 01-Schmidt A1",
+          "CB100-CURSO: 02-Buchwald A1",
+          "CB100-CURSO: 03-Juarez A1",
+          "CB100-CURSO: 04-Mendez/Pandolfo A1",
+          "CB100-CURSO: 05-Schmidt A1",
+          "CB100-CURSO: 01-Schimidt A2",
+          "CB100-CURSO: 02-Buchwald A2",
+          "CB100-CURSO: 03-Juarez A2",
+          "CB100-CURSO: 04-Mendez/Pandolfo A2",
+          "CB100-CURSO: 05-Schmidt A2"
+        ]
+      },
+      {
+        "nombre": "ANÁLISIS MATEMÁTICO II",
+        "codigo": "CB001",
+        "cursos": [
+          "CB001-CURSO: 01",
+          "CB001-CURSO: 02A",
+          "CB001-CURSO: 02B",
+          "CB001-CURSO: 03",
+          "CB001-CURSO: 04A",
+          "CB001-CURSO: 04B",
+          "CB001-CURSO: 05A",
+          "CB001-CURSO: 05B",
+          "CB001-CURSO: 06A",
+          "CB001-CURSO: 06B",
+          "CB001-CURSO: 07",
+          "CB001-CURSO:11A",
+          "CB001-CURSO:11B",
+          "CB001-CURSO:12A",
+          "CB001-CURSO:12B",
+          "CB001-CURSO:14",
+          "CB001-CURSO:10",
+          "CB001-CURSO:20A",
+          "CB001-CURSO:20B",
+          "CB001-CURSO:22",
+          "CB001-CURSO:23",
+          "CB001-CURSO: 15",
+          "CB001-CURSO: 09A",
+          "CB001-CURSO: 09B"
+        ]
+      },
+      {
+        "nombre": "ANÁLISIS MATEMÁTICO III",
+        "codigo": "CB005",
+        "cursos": ["CB005-CURSO: 02", "CB005-CURSO: 03", "CB005-CURSO: 05"]
+      },
+      {
+        "nombre": "APRENDIZAJE AUTOMÁTICO",
+        "codigo": "TA061",
+        "cursos": ["TA061-CURSO: 01-Merlino"]
+      },
+      {
+        "nombre": "BASE DE DATOS",
+        "codigo": "TA044",
+        "cursos": ["TA044-CURSO: 01-Román", "TA044-CURSO: 02-Merlino"]
+      },
+      {
+        "nombre": "CIENCIA DE DATOS",
+        "codigo": "TA047",
+        "cursos": ["TA047-CURSO: 01-Martinelli", "TA047-CURSO: 02-Rodriguez"]
+      },
+      {
+        "nombre": "COMPUTACIÓN CUÁNTICA",
+        "codigo": "TB032",
+        "cursos": ["TB032-CURSO: Caram"]
+      },
+      {
+        "nombre": "EMPRESAS DE BASE TECNOLÓGICA I",
+        "codigo": "TC018",
+        "cursos": ["TC018-CURSO: 01-Di Mauro"]
+      },
+      {
+        "nombre": "EMPRESAS DE BASE TECNOLÓGICA II",
+        "codigo": "TC019",
+        "cursos": ["TC019-CURSO: 01-Di Mauro"]
+      },
+      {
+        "nombre": "FÍSICA PARA INFORMÁTICA",
+        "codigo": "CB024",
+        "cursos": ["CB024-Curso 01"]
+      },
+      {
+        "nombre": "FUNDAMENTOS DE PROGRAMACIÓN",
+        "codigo": "TB021",
+        "cursos": [
+          "TB021-CURSO: 03-Essaya",
+          "TB021-CURSO: 04-Mendez",
+          "TB021-CURSO: 01-Guarna",
+          "TB021-CURSO: 02-Azcurra",
+          "TB021-CURSO: 05-Mendez"
+        ]
+      },
+      {
+        "nombre": "GESTIÓN DEL DESARROLLO DE SISTEMAS INFORMÁTICOS",
+        "codigo": "TC017",
+        "cursos": ["TC017-CURSO: 01-Fontela"]
+      },
+      {
+        "nombre": "INGENIERÍA DE SOFTWARE I",
+        "codigo": "TA046",
+        "cursos": [
+          "TA046-CURSO:01- Leveroni",
+          "TA046-CURSO: 02-Villagra",
+          "TA046-CURSO: 03-Gonzalez"
+        ]
+      },
+      {
+        "nombre": "INGENIERÍA DE SOFTWARE II",
+        "codigo": "TA049",
+        "cursos": ["TA049-CURSO: 01-Montaldo", "TA049-CURSO: 02-Paez"]
+      },
+      {
+        "nombre": "INTRODUCCIÓN AL DESARROLLO DE SOFTWARE",
+        "codigo": "TB022",
+        "cursos": ["TB022-CURSO: 03-Camejo", "TB022-CURSO: 05-Lanzillotta"]
+      },
+      {
+        "nombre": "MODELACIÓN NUMÉRICA",
+        "codigo": "CB051",
+        "cursos": [
+          "CB051-CURSO: 01-Re",
+          "CB051-CURSO: 02-Tarela",
+          "CB051-CURSO: 03-Griggio",
+          "CB051-CURSO: 04-Schwarz",
+          "CB051-CURSO: 05-Sassano",
+          "CB051-CURSO: 06-Rodriguez",
+          "CB051-CURSO: 07-Cavaliere Practica Martes 19 hs",
+          "CB051-CURSO: 08-Cavaliere Práctica Martes 16 hs"
+        ]
+      },
+      {
+        "nombre": "ORGANIZACIÓN DEL COMPUTADOR",
+        "codigo": "TB023",
+        "cursos": [
+          "TB023-CURSO: 01-Benitez",
+          "TB023-CURSO: 02-Marchi",
+          "TB023-CURSO: 03-Burin"
+        ]
+      },
+      {
+        "nombre": "PARADIGMAS DE PROGRAMACIÓN",
+        "codigo": "TB025",
+        "cursos": [
+          "TB025-CURSO: 01-Suarez",
+          "TB025-CURSO: 02-Cano",
+          "TB025-CURSO: 03-Corsi"
+        ]
+      },
+      {
+        "nombre": "PROBABILIDAD Y ESTADÍSTICA",
+        "codigo": "CB003",
+        "cursos": [
+          "CB003-CURSO: 21",
+          "CB003-CURSO: 22",
+          "CB003-CURSO: 25",
+          "CB003-CURSO: 27",
+          "CB003-CURSO: 28"
+        ]
+      },
+      {
+        "nombre": "PROGRAMACIÓN CONCURRENTE",
+        "codigo": "TB026",
+        "cursos": ["TB026-CURSO: 01-Deymonnaz"]
+      },
+      {
+        "nombre": "REDES",
+        "codigo": "TA048",
+        "cursos": [
+          "TA048-CURSO:01-ALVAREZ HAMELIN",
+          "TA048-CURSO: 02-Alvarez Hamelin"
+        ]
+      },
+      {
+        "nombre": "SIMULACIÓN",
+        "codigo": "TB028",
+        "cursos": ["TB028-CURSO: 01-Caiafa"]
+      },
+      {
+        "nombre": "SISTEMAS OPERATIVOS",
+        "codigo": "TA043",
+        "cursos": ["TA043-CURSO: 01-Mendez"]
+      },
+      {
+        "nombre": "TALLER DE PROGRAMACIÓN",
+        "codigo": "TA045",
+        "cursos": ["TA045-CURSO: 01-Veiga", "TA045-CURSO: 02-Deymonnaz"]
+      },
+      {
+        "nombre": "TEORÍA DE ALGORITMOS",
+        "codigo": "TB024",
+        "cursos": ["TB024-CURSO: 01-Podberezski", "TB024-CURSO: 02-Buchwald"]
+      }
+    ],
+    "cursos": [
+      {
+        "materia": "CB002",
+        "codigo": "CB002-CURSO: 01A",
+        "docentes": "VARGAS GABRIELA , PALACIOS PATRICIA ELIZABE , SOSA MARINA ",
+        "clases": [
+          { "dia": 1, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 1, "inicio": "11:00", "fin": "13:00" },
+          { "dia": 3, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 3, "inicio": "11:00", "fin": "13:00" }
+        ]
+      },
+      {
+        "materia": "CB002",
+        "codigo": "CB002-CURSO: 01B",
+        "docentes": "VARGAS GABRIELA , CABANA ADRIANA ELENA , BOHORQUEZ GUTIERREZ RUBEN ANDRES ",
+        "clases": [
+          { "dia": 1, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 1, "inicio": "11:00", "fin": "13:00" },
+          { "dia": 3, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 3, "inicio": "11:00", "fin": "13:00" }
+        ]
+      },
+      {
+        "materia": "CB002",
+        "codigo": "CB002-CURSO: 02A",
+        "docentes": "SARRIS CLAUDIA MONICA , PRESENZA JUAN FRANCISCO , ROZENWASSER LAURA ",
+        "clases": [
+          { "dia": 2, "inicio": "14:00", "fin": "16:00" },
+          { "dia": 2, "inicio": "16:00", "fin": "18:00" },
+          { "dia": 4, "inicio": "14:00", "fin": "16:00" },
+          { "dia": 4, "inicio": "16:00", "fin": "18:00" }
+        ]
+      },
+      {
+        "materia": "CB002",
+        "codigo": "CB002-CURSO: 02B",
+        "docentes": "SARRIS CLAUDIA MONICA , FAGES LUCIANO RODOLFO , VIBRENTIS FRANCISCO ANTONIO ",
+        "clases": [
+          { "dia": 2, "inicio": "14:00", "fin": "16:00" },
+          { "dia": 2, "inicio": "16:00", "fin": "18:00" },
+          { "dia": 4, "inicio": "14:00", "fin": "16:00" },
+          { "dia": 4, "inicio": "16:00", "fin": "18:00" }
+        ]
+      },
+      {
+        "materia": "CB002",
+        "codigo": "CB002-CURSO: 03",
+        "docentes": "GIRIBET JUAN IGNACIO , PERALTA NORA BEATRIZ , GOMEZ CIAPPONI LAUTARO ",
+        "clases": [
+          { "dia": 3, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 3, "inicio": "11:00", "fin": "13:00" },
+          { "dia": 5, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 5, "inicio": "11:00", "fin": "13:00" }
+        ]
+      },
+      {
+        "materia": "CB002",
+        "codigo": "CB002-CURSO: 04A",
+        "docentes": "LOPEZ CLAUDIA ANDREA , ORECCHIA MONICA INES , ALVAREZ PONTE LUCIA INES ",
+        "clases": [
+          { "dia": 2, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 2, "inicio": "11:00", "fin": "13:00" },
+          { "dia": 4, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 4, "inicio": "11:00", "fin": "13:00" }
+        ]
+      },
+      {
+        "materia": "CB002",
+        "codigo": "CB002-CURSO: 04B",
+        "docentes": "LOPEZ CLAUDIA ANDREA , ROZENWASSER LAURA , KLINGER MAGALI SILVINA ",
+        "clases": [
+          { "dia": 2, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 2, "inicio": "11:00", "fin": "13:00" },
+          { "dia": 4, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 4, "inicio": "11:00", "fin": "13:00" }
+        ]
+      },
+      {
+        "materia": "CB002",
+        "codigo": "CB002-CURSO: 05",
+        "docentes": "PALACIOS PATRICIA ELIZABE , VIBRENTIS FRANCISCO ANTONIO , NORES MANUEL ENRIQUE ",
+        "clases": [
+          { "dia": 3, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 3, "inicio": "11:00", "fin": "13:00" },
+          { "dia": 5, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 5, "inicio": "11:00", "fin": "13:00" }
+        ]
+      },
+      {
+        "materia": "CB002",
+        "codigo": "CB002-CURSO:06A",
+        "docentes": "BOGGI SILVINA , VENTURIELLO VERONICA LAURA ",
+        "clases": [
+          { "dia": 1, "inicio": "00:09", "fin": "11:00" },
+          { "dia": 1, "inicio": "11:00", "fin": "13:00" },
+          { "dia": 3, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 3, "inicio": "11:00", "fin": "13:00" }
+        ]
+      },
+      {
+        "materia": "CB002",
+        "codigo": "CB002-CURSO:06B",
+        "docentes": "BOGGI SILVINA , GARCIA SERRANO SILVINA AIDA , ROHDENBURG ERICA ELISABET ",
+        "clases": [
+          { "dia": 1, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 1, "inicio": "11:00", "fin": "13:00" },
+          { "dia": 3, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 3, "inicio": "11:00", "fin": "13:00" }
+        ]
+      },
+      {
+        "materia": "CB002",
+        "codigo": "CB002-CURSO:07A",
+        "docentes": "MARTINS MARCELA , ALVAREZ PONTE LUCIA INES ",
+        "clases": [
+          { "dia": 2, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 2, "inicio": "11:00", "fin": "13:00" },
+          { "dia": 4, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 4, "inicio": "11:00", "fin": "13:00" }
+        ]
+      },
+      {
+        "materia": "CB002",
+        "codigo": "CB002-CURSO:07B",
+        "docentes": "MARTINS MARCELA , VALDETTARO MARCELO ALEJAN , ROZENWASSER LAURA ",
+        "clases": [
+          { "dia": 2, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 2, "inicio": "11:00", "fin": "13:00" },
+          { "dia": 4, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 4, "inicio": "11:00", "fin": "13:00" }
+        ]
+      },
+      {
+        "materia": "CB002",
+        "codigo": "CB002-CURSO: 13A",
+        "docentes": "CABANA ADRIANA ELENA , PERALTA NORA BEATRIZ , HERRMANN GUILLERMO WALTER ",
+        "clases": [
+          { "dia": 3, "inicio": "13:00", "fin": "15:00" },
+          { "dia": 3, "inicio": "15:00", "fin": "17:00" },
+          { "dia": 5, "inicio": "13:00", "fin": "15:00" },
+          { "dia": 5, "inicio": "15:00", "fin": "17:00" }
+        ]
+      },
+      {
+        "materia": "CB002",
+        "codigo": "CB002-CURSO:13B",
+        "docentes": "CABANA ADRIANA ELENA , RODRIGUEZ MARIA LAURA , PONCE DE LEON ROBLES FABIAN ARTURO ",
+        "clases": [
+          { "dia": 3, "inicio": "13:00", "fin": "15:00" },
+          { "dia": 3, "inicio": "15:00", "fin": "17:00" },
+          { "dia": 5, "inicio": "13:00", "fin": "15:00" },
+          { "dia": 5, "inicio": "15:00", "fin": "17:00" }
+        ]
+      },
+      {
+        "materia": "CB002",
+        "codigo": "CB002-CURSO:15",
+        "docentes": "ALVAREZ JULIA JORGE , GRÖER MARIA GABRIELA , CATUOGNO EZEQUIEL PATRICIO , AGUERRE JUAN FRANCISCO ",
+        "clases": [
+          { "dia": 1, "inicio": "17:00", "fin": "19:00" },
+          { "dia": 1, "inicio": "19:00", "fin": "21:00" },
+          { "dia": 3, "inicio": "17:00", "fin": "19:00" },
+          { "dia": 3, "inicio": "19:00", "fin": "21:00" }
+        ]
+      },
+      {
+        "materia": "CB002",
+        "codigo": "CB002-CURSO:17",
+        "docentes": "MARTINS MARCELA , ORECCHIA MONICA INES , MENDIETA JULIO ANTONIO , CENTENO HERNÁN DIEGO ",
+        "clases": [
+          { "dia": 2, "inicio": "07:00", "fin": "09:00" },
+          { "dia": 2, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 4, "inicio": "07:00", "fin": "09:00" },
+          { "dia": 4, "inicio": "09:00", "fin": "11:00" }
+        ]
+      },
+      {
+        "materia": "CB002",
+        "codigo": "CB002-CURSO:19",
+        "docentes": "PRELAT DANIEL , GALVAN MONICA BEATRIZ , SILVESTRE DAMIAN ISMAEL ",
+        "clases": [
+          { "dia": 1, "inicio": "13:00", "fin": "15:00" },
+          { "dia": 1, "inicio": "15:00", "fin": "17:00" },
+          { "dia": 3, "inicio": "13:00", "fin": "15:00" },
+          { "dia": 3, "inicio": "15:00", "fin": "17:00" }
+        ]
+      },
+      {
+        "materia": "CB002",
+        "codigo": "CB002-CURSO:23A",
+        "docentes": "GRYNBERG SEBASTIAN PABLO , PALAU GABRIEL , CASSANI MARÍA VICTORIA ",
+        "clases": [
+          { "dia": 1, "inicio": "07:00", "fin": "09:00" },
+          { "dia": 1, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 3, "inicio": "07:00", "fin": "09:00" },
+          { "dia": 3, "inicio": "09:00", "fin": "11:00" }
+        ]
+      },
+      {
+        "materia": "CB002",
+        "codigo": "CB002-CURSO:23B",
+        "docentes": "GRYNBERG SEBASTIAN PABLO , GIACOBBE MARA GEORGINA , PONCE DE LEON ROBLES FABIAN ARTURO ",
+        "clases": [
+          { "dia": 1, "inicio": "07:00", "fin": "09:00" },
+          { "dia": 1, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 3, "inicio": "07:00", "fin": "09:00" },
+          { "dia": 3, "inicio": "09:00", "fin": "11:00" }
+        ]
+      },
+      {
+        "materia": "CB100",
+        "codigo": "CB100-CURSO: 01-Schmidt A1",
+        "docentes": "SIROTINSKY SERGIO , SCHMIDT GUSTAVO ADOLFO ",
+        "clases": [
+          { "dia": 3, "inicio": "19:00", "fin": "22:00" },
+          { "dia": 5, "inicio": "19:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "CB100",
+        "codigo": "CB100-CURSO: 02-Buchwald A1",
+        "docentes": "BUCHWALD MARTÍN EZEQUIEL , GENENDER PEÑA EZEQUIEL DAVID , BRASBURG FEDERICO ",
+        "clases": [
+          { "dia": 1, "inicio": "17:30", "fin": "20:30" },
+          { "dia": 4, "inicio": "17:30", "fin": "20:30" }
+        ]
+      },
+      {
+        "materia": "CB100",
+        "codigo": "CB100-CURSO: 03-Juarez A1",
+        "docentes": "JUAREZ ANDRÉS ALBERTO , CIARALLO CRISTIAN ADRIAN , FARETTA YANINA BELEN , MARIANETTI NICOLAS GABRIEL ",
+        "clases": [
+          { "dia": 2, "inicio": "18:00", "fin": "21:00" },
+          { "dia": 4, "inicio": "18:00", "fin": "21:00" }
+        ]
+      },
+      {
+        "materia": "CB100",
+        "codigo": "CB100-CURSO: 04-Mendez/Pandolfo A1",
+        "docentes": "MENDEZ MARIANO , SIBIKOWSKI NICOLAS IVAN , CORREA VALENTINA LAURA , DIAZ MIGUEZ ABRIL , PANDOLFO LUCAS HERNAN ",
+        "clases": [
+          { "dia": 2, "inicio": "18:00", "fin": "21:00" },
+          { "dia": 4, "inicio": "18:00", "fin": "21:00" }
+        ]
+      },
+      {
+        "materia": "CB100",
+        "codigo": "CB100-CURSO: 05-Schmidt A1",
+        "docentes": "SIROTINSKY SERGIO , SCHMIDT GUSTAVO ADOLFO ",
+        "clases": [
+          { "dia": 1, "inicio": "19:00", "fin": "22:00" },
+          { "dia": 4, "inicio": "19:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "CB100",
+        "codigo": "CB100-CURSO: 01-Schimidt A2",
+        "docentes": "SIROTINSKY SERGIO , SCHMIDT GUSTAVO ADOLFO ",
+        "clases": [
+          { "dia": 3, "inicio": "19:00", "fin": "22:00" },
+          { "dia": 5, "inicio": "19:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "CB100",
+        "codigo": "CB100-CURSO: 02-Buchwald A2",
+        "docentes": "BUCHWALD MARTÍN EZEQUIEL , GENENDER PEÑA EZEQUIEL DAVID , BRASBURG FEDERICO ",
+        "clases": [
+          { "dia": 1, "inicio": "17:30", "fin": "20:30" },
+          { "dia": 4, "inicio": "17:30", "fin": "20:30" }
+        ]
+      },
+      {
+        "materia": "CB100",
+        "codigo": "CB100-CURSO: 03-Juarez A2",
+        "docentes": "JUAREZ ANDRÉS ALBERTO , CIARALLO CRISTIAN ADRIAN , FARETTA YANINA BELEN , MARIANETTI NICOLAS GABRIEL ",
+        "clases": [
+          { "dia": 2, "inicio": "18:00", "fin": "21:00" },
+          { "dia": 4, "inicio": "18:00", "fin": "21:00" }
+        ]
+      },
+      {
+        "materia": "CB100",
+        "codigo": "CB100-CURSO: 04-Mendez/Pandolfo A2",
+        "docentes": "MENDEZ MARIANO , SIBIKOWSKI NICOLAS IVAN , DIAZ MIGUEZ ABRIL , PANDOLFO LUCAS HERNAN ",
+        "clases": [
+          { "dia": 2, "inicio": "18:00", "fin": "21:00" },
+          { "dia": 4, "inicio": "18:00", "fin": "21:00" }
+        ]
+      },
+      {
+        "materia": "CB100",
+        "codigo": "CB100-CURSO: 05-Schmidt A2",
+        "docentes": "SIROTINSKY SERGIO , SCHMIDT GUSTAVO ADOLFO ",
+        "clases": [
+          { "dia": 1, "inicio": "19:00", "fin": "22:00" },
+          { "dia": 4, "inicio": "19:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "CB001",
+        "codigo": "CB001-CURSO: 01",
+        "docentes": "ACERO FERNANDO RODOLFO , PEÑA NELLY HAYDEE , SMILOVICH DAMIAN NICOLAS ",
+        "clases": [
+          { "dia": 2, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 2, "inicio": "11:00", "fin": "13:00" },
+          { "dia": 4, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 4, "inicio": "11:00", "fin": "13:00" }
+        ]
+      },
+      {
+        "materia": "CB001",
+        "codigo": "CB001-CURSO: 02A",
+        "docentes": "ACERO FERNANDO RODOLFO , LOPEZ CLAUDIA ANDREA , ENDELLI JORGE RODOLFO ",
+        "clases": [
+          { "dia": 2, "inicio": "07:00", "fin": "09:00" },
+          { "dia": 2, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 4, "inicio": "07:00", "fin": "09:00" },
+          { "dia": 4, "inicio": "09:00", "fin": "11:00" }
+        ]
+      },
+      {
+        "materia": "CB001",
+        "codigo": "CB001-CURSO: 02B",
+        "docentes": "ACERO FERNANDO RODOLFO , GARCIA ADRIANA EVA , PORTOCARRERO MIRANDA MICHAEL ",
+        "clases": [
+          { "dia": 2, "inicio": "07:00", "fin": "09:00" },
+          { "dia": 2, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 4, "inicio": "07:00", "fin": "09:00" },
+          { "dia": 4, "inicio": "09:00", "fin": "11:00" }
+        ]
+      },
+      {
+        "materia": "CB001",
+        "codigo": "CB001-CURSO: 03",
+        "docentes": "GIGOLA SILVIA VIVIANA , DE ROSSI FERNANDO DANIEL , OLIVA CARLA MARIANA ",
+        "clases": [
+          { "dia": 1, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 1, "inicio": "11:00", "fin": "13:00" },
+          { "dia": 3, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 3, "inicio": "11:00", "fin": "13:00" }
+        ]
+      },
+      {
+        "materia": "CB001",
+        "codigo": "CB001-CURSO: 04A",
+        "docentes": "ZITTO MIGUEL EDUARDO , GOMEZ CIAPPONI LAUTARO , BIBILONI FERNANDO ",
+        "clases": [
+          { "dia": 2, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 2, "inicio": "11:00", "fin": "13:00" },
+          { "dia": 5, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 5, "inicio": "11:00", "fin": "13:00" }
+        ]
+      },
+      {
+        "materia": "CB001",
+        "codigo": "CB001-CURSO: 04B",
+        "docentes": "ZITTO MIGUEL EDUARDO , DURANTE FLAVIO ANIBAL , LA COLLA AUGUSTO ",
+        "clases": [
+          { "dia": 2, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 2, "inicio": "11:00", "fin": "13:00" },
+          { "dia": 5, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 5, "inicio": "11:00", "fin": "13:00" }
+        ]
+      },
+      {
+        "materia": "CB001",
+        "codigo": "CB001-CURSO: 05A",
+        "docentes": "MAULHARDT MARTIN ENRIQUE , PUEBLA MANUEL LEANDRO , RIZZO ELISABETH AMALIA , BLAZQUEZ ROCIO AZUL ",
+        "clases": [
+          { "dia": 2, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 2, "inicio": "11:00", "fin": "13:00" },
+          { "dia": 5, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 5, "inicio": "11:00", "fin": "13:00" }
+        ]
+      },
+      {
+        "materia": "CB001",
+        "codigo": "CB001-CURSO: 05B",
+        "docentes": "MAULHARDT MARTIN ENRIQUE , MONZON NELSON , BIBILONI FERNANDO ",
+        "clases": [
+          { "dia": 2, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 2, "inicio": "11:00", "fin": "13:00" },
+          { "dia": 5, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 5, "inicio": "11:00", "fin": "13:00" }
+        ]
+      },
+      {
+        "materia": "CB001",
+        "codigo": "CB001-CURSO: 06A",
+        "docentes": "SOLA MARCOS OSCAR , PIÑERA EDUARDO ERNESTO ",
+        "clases": [
+          { "dia": 1, "inicio": "13:00", "fin": "15:00" },
+          { "dia": 1, "inicio": "15:00", "fin": "17:00" },
+          { "dia": 3, "inicio": "13:00", "fin": "15:00" },
+          { "dia": 3, "inicio": "15:00", "fin": "17:00" }
+        ]
+      },
+      {
+        "materia": "CB001",
+        "codigo": "CB001-CURSO: 06B",
+        "docentes": "SOLA MARCOS OSCAR , GUALTIERI SERGIO ALBERTO , OLIVA CARLA MARIANA ",
+        "clases": [
+          { "dia": 1, "inicio": "13:00", "fin": "15:00" },
+          { "dia": 1, "inicio": "15:00", "fin": "17:00" },
+          { "dia": 3, "inicio": "13:00", "fin": "15:00" },
+          { "dia": 3, "inicio": "15:00", "fin": "17:00" }
+        ]
+      },
+      {
+        "materia": "CB001",
+        "codigo": "CB001-CURSO: 07",
+        "docentes": "A DESIGNAR A DESIGNAR , ENDELLI JORGE RODOLFO , KLINGER MAGALI SILVINA , PUEBLA MANUEL LEANDRO ",
+        "clases": [
+          { "dia": 1, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 1, "inicio": "11:00", "fin": "13:00" },
+          { "dia": 4, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 4, "inicio": "11:00", "fin": "13:00" }
+        ]
+      },
+      {
+        "materia": "CB001",
+        "codigo": "CB001-CURSO:11A",
+        "docentes": "MARTINS MARCELA , ROSSI PABLO DANIEL , ZHANG FAN ",
+        "clases": [
+          { "dia": 2, "inicio": "14:00", "fin": "16:00" },
+          { "dia": 2, "inicio": "16:00", "fin": "18:00" },
+          { "dia": 4, "inicio": "14:00", "fin": "16:00" },
+          { "dia": 4, "inicio": "16:00", "fin": "18:00" }
+        ]
+      },
+      {
+        "materia": "CB001",
+        "codigo": "CB001-CURSO:11B",
+        "docentes": "DE ROSSI FERNANDO DANIEL , HERRMANN GUILLERMO WALTER ",
+        "clases": [
+          { "dia": 2, "inicio": "14:00", "fin": "16:00" },
+          { "dia": 2, "inicio": "16:00", "fin": "18:00" },
+          { "dia": 4, "inicio": "14:00", "fin": "16:00" },
+          { "dia": 4, "inicio": "16:00", "fin": "18:00" }
+        ]
+      },
+      {
+        "materia": "CB001",
+        "codigo": "CB001-CURSO:12A",
+        "docentes": "LOPEZ CLAUDIA ANDREA , SILVESTRE DAMIAN ISMAEL , VOROBIOFF NICOLAS ",
+        "clases": [
+          { "dia": 2, "inicio": "14:00", "fin": "16:00" },
+          { "dia": 2, "inicio": "16:00", "fin": "18:00" },
+          { "dia": 4, "inicio": "14:00", "fin": "16:00" },
+          { "dia": 4, "inicio": "16:00", "fin": "18:00" }
+        ]
+      },
+      {
+        "materia": "CB001",
+        "codigo": "CB001-CURSO:12B",
+        "docentes": "LOPEZ CLAUDIA ANDREA , VICEDO JUAN PABLO , ZHANG FAN ",
+        "clases": [
+          { "dia": 2, "inicio": "14:00", "fin": "16:00" },
+          { "dia": 2, "inicio": "16:00", "fin": "18:00" },
+          { "dia": 4, "inicio": "14:00", "fin": "16:00" },
+          { "dia": 4, "inicio": "16:00", "fin": "18:00" }
+        ]
+      },
+      {
+        "materia": "CB001",
+        "codigo": "CB001-CURSO:14",
+        "docentes": "COMAS JORGE MIGUEL , CANEPA VICTOR MANUEL , MEDINA MANUELA ",
+        "clases": [
+          { "dia": 2, "inicio": "18:00", "fin": "20:00" },
+          { "dia": 2, "inicio": "20:00", "fin": "22:00" },
+          { "dia": 5, "inicio": "18:00", "fin": "20:00" },
+          { "dia": 5, "inicio": "20:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "CB001",
+        "codigo": "CB001-CURSO:10",
+        "docentes": "SASYK ROMAN , CHORNY FERNANDO , GUALTIERI SERGIO ALBERTO ",
+        "clases": [
+          { "dia": 1, "inicio": "13:00", "fin": "15:00" },
+          { "dia": 1, "inicio": "15:00", "fin": "17:00" },
+          { "dia": 3, "inicio": "13:00", "fin": "15:00" },
+          { "dia": 3, "inicio": "15:00", "fin": "17:00" }
+        ]
+      },
+      {
+        "materia": "CB001",
+        "codigo": "CB001-CURSO:20A",
+        "docentes": "SEMINARA SILVIA ALEJANDRA , OLIVA CECILIA MARIEL , LUCUY SUAREZ FRED ALBERTO ",
+        "clases": [
+          { "dia": 1, "inicio": "17:00", "fin": "19:00" },
+          { "dia": 1, "inicio": "19:00", "fin": "21:00" },
+          { "dia": 3, "inicio": "17:00", "fin": "19:00" },
+          { "dia": 3, "inicio": "19:00", "fin": "21:00" }
+        ]
+      },
+      {
+        "materia": "CB001",
+        "codigo": "CB001-CURSO:20B",
+        "docentes": "SEMINARA SILVIA ALEJANDRA , ESTRIN ANDRES ALEJANDRO , WILK BERNARDO ",
+        "clases": [
+          { "dia": 1, "inicio": "17:00", "fin": "19:00" },
+          { "dia": 1, "inicio": "19:00", "fin": "21:00" },
+          { "dia": 3, "inicio": "17:00", "fin": "19:00" },
+          { "dia": 3, "inicio": "19:00", "fin": "21:00" }
+        ]
+      },
+      {
+        "materia": "CB001",
+        "codigo": "CB001-CURSO:22",
+        "docentes": "MANCILLA AGUILAR JOSE LUIS , CENTENO HERNÁN DIEGO , A DESIGNAR A DESIGNAR ",
+        "clases": [
+          { "dia": 2, "inicio": "00:09", "fin": "11:00" },
+          { "dia": 2, "inicio": "11:00", "fin": "13:00" },
+          { "dia": 4, "inicio": "00:09", "fin": "11:00" },
+          { "dia": 4, "inicio": "11:00", "fin": "13:00" }
+        ]
+      },
+      {
+        "materia": "CB001",
+        "codigo": "CB001-CURSO:23",
+        "docentes": "A DESIGNAR A DESIGNAR , AMOREO ANIBAL , PETROVICH JOSE LUIS ALEJANDRO ",
+        "clases": [
+          { "dia": 2, "inicio": "18:00", "fin": "20:00" },
+          { "dia": 2, "inicio": "20:00", "fin": "22:00" },
+          { "dia": 4, "inicio": "18:00", "fin": "20:00" },
+          { "dia": 4, "inicio": "20:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "CB001",
+        "codigo": "CB001-CURSO: 15",
+        "docentes": "SASSANO MIRYAM PATRICIA , RAMOS GALKER ELIANA MAITE , VENTURIELLO VERONICA LAURA ",
+        "clases": [
+          { "dia": 2, "inicio": "14:00", "fin": "16:00" },
+          { "dia": 2, "inicio": "16:00", "fin": "18:00" },
+          { "dia": 4, "inicio": "14:00", "fin": "16:00" },
+          { "dia": 4, "inicio": "16:00", "fin": "18:00" }
+        ]
+      },
+      {
+        "materia": "CB001",
+        "codigo": "CB001-CURSO: 09A",
+        "docentes": "PASTOR VERONICA ESTELA , ROHDENBURG ERICA ELISABET , VENTURIELLO VERONICA LAURA ",
+        "clases": [
+          { "dia": 1, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 1, "inicio": "11:00", "fin": "13:00" },
+          { "dia": 3, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 3, "inicio": "11:00", "fin": "13:00" }
+        ]
+      },
+      {
+        "materia": "CB001",
+        "codigo": "CB001-CURSO: 09B",
+        "docentes": "PASTOR VERONICA ESTELA , BUCELLO PABLO AUGUSTO , SOSA MARINA ",
+        "clases": [
+          { "dia": 1, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 1, "inicio": "11:00", "fin": "13:00" },
+          { "dia": 3, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 3, "inicio": "11:00", "fin": "13:00" }
+        ]
+      },
+      {
+        "materia": "CB005",
+        "codigo": "CB005-CURSO: 02",
+        "docentes": "PRELAT DANIEL , DE ROSSI FERNANDO DANIEL ",
+        "clases": [
+          { "dia": 2, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 2, "inicio": "11:00", "fin": "13:00" },
+          { "dia": 5, "inicio": "09:00", "fin": "11:00" },
+          { "dia": 5, "inicio": "11:00", "fin": "13:00" }
+        ]
+      },
+      {
+        "materia": "CB005",
+        "codigo": "CB005-CURSO: 03",
+        "docentes": "MURMIS GUSTAVO MARCELO , BURMAN ARIEL , DEL RIO GARCIA FEDERICO MANUEL ",
+        "clases": [
+          { "dia": 1, "inicio": "18:00", "fin": "20:00" },
+          { "dia": 1, "inicio": "20:00", "fin": "22:00" },
+          { "dia": 3, "inicio": "18:00", "fin": "20:00" },
+          { "dia": 3, "inicio": "20:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "CB005",
+        "codigo": "CB005-CURSO: 05",
+        "docentes": "CACHILE MARIO ANDRES , PEÑA NELLY HAYDEE , A DESIGNAR A DESIGNAR , GOMEZ CIAPPONI LAUTARO , MONZON NELSON ",
+        "clases": [
+          { "dia": 2, "inicio": "14:00", "fin": "16:00" },
+          { "dia": 2, "inicio": "16:00", "fin": "18:00" },
+          { "dia": 4, "inicio": "14:00", "fin": "16:00" },
+          { "dia": 4, "inicio": "16:00", "fin": "18:00" }
+        ]
+      },
+      {
+        "materia": "TA061",
+        "codigo": "TA061-CURSO: 01-Merlino",
+        "docentes": "IERACHE JORGE SALVADOR , MERLINO HERNAN DANIEL ",
+        "clases": [
+          { "dia": 2, "inicio": "07:00", "fin": "10:00" },
+          { "dia": 4, "inicio": "07:00", "fin": "10:00" }
+        ]
+      },
+      {
+        "materia": "TA044",
+        "codigo": "TA044-CURSO: 01-Román",
+        "docentes": "FASCE ALBERTO ARMANDO , ROMAN LUCAS ALEJANDRO ",
+        "clases": [
+          { "dia": 2, "inicio": "19:00", "fin": "22:00" },
+          { "dia": 3, "inicio": "19:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "TA044",
+        "codigo": "TA044-CURSO: 02-Merlino",
+        "docentes": "MERLINO HERNAN DANIEL ",
+        "clases": [
+          { "dia": 1, "inicio": "07:00", "fin": "09:00" },
+          { "dia": 3, "inicio": "07:00", "fin": "09:00" },
+          { "dia": 5, "inicio": "07:00", "fin": "09:00" }
+        ]
+      },
+      {
+        "materia": "TA047",
+        "codigo": "TA047-CURSO: 01-Martinelli",
+        "docentes": "MARTINELLI DAMIAN ARIEL , GOLMAR NATALIA ",
+        "clases": [
+          { "dia": 1, "inicio": "19:00", "fin": "22:00" },
+          { "dia": 4, "inicio": "19:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "TA047",
+        "codigo": "TA047-CURSO: 02-Rodriguez",
+        "docentes": "RODRIGUEZ JUAN MANUEL , VILLANUEVA CECILIA AZUL ",
+        "clases": [
+          { "dia": 2, "inicio": "19:00", "fin": "22:00" },
+          { "dia": 4, "inicio": "19:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "TB032",
+        "codigo": "TB032-CURSO: Caram",
+        "docentes": "CARAM LEONIDAS FACUNDO , SARRIS CLAUDIA MONICA ",
+        "clases": [
+          { "dia": 3, "inicio": "19:00", "fin": "22:00" },
+          { "dia": 4, "inicio": "19:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "TC018",
+        "codigo": "TC018-CURSO: 01-Di Mauro",
+        "docentes": "GODOY ANDRES ALEJANDRO ",
+        "clases": [
+          { "dia": 1, "inicio": "18:00", "fin": "21:00" },
+          { "dia": 5, "inicio": "18:00", "fin": "21:00" }
+        ]
+      },
+      {
+        "materia": "TC019",
+        "codigo": "TC019-CURSO: 01-Di Mauro",
+        "docentes": "Sin docentes",
+        "clases": [
+          { "dia": 2, "inicio": "18:00", "fin": "21:00" },
+          { "dia": 4, "inicio": "18:00", "fin": "21:00" }
+        ]
+      },
+      {
+        "materia": "CB024",
+        "codigo": "CB024-Curso 01",
+        "docentes": "MATTEO CLAUDIA LEDA ",
+        "clases": [{ "dia": 3, "inicio": "14:00", "fin": "18:00" }]
+      },
+      {
+        "materia": "TB021",
+        "codigo": "TB021-CURSO: 03-Essaya",
+        "docentes": "ESSAYA DIEGO NICOLAS , BRASBURG FEDERICO , ESTEBAN FEDERICO MARTÍN , DI SANTO JAVIER MARIANO , KRISTAL JUAN IGNACIO , SANTONI MAURO JAVIER , SPORTELLI CASTRO LUCIANO ",
+        "clases": [
+          { "dia": 1, "inicio": "17:30", "fin": "20:30" },
+          { "dia": 5, "inicio": "17:30", "fin": "20:30" }
+        ]
+      },
+      {
+        "materia": "TB021",
+        "codigo": "TB021-CURSO: 04-Mendez",
+        "docentes": "MENDEZ MARIANO , FRACCARO AGUSTINA , RODRIGUEZ DALA TOMAS ",
+        "clases": [
+          { "dia": 2, "inicio": "18:00", "fin": "21:00" },
+          { "dia": 4, "inicio": "18:00", "fin": "21:00" }
+        ]
+      },
+      {
+        "materia": "TB021",
+        "codigo": "TB021-CURSO: 01-Guarna",
+        "docentes": "GUARNA PABLO FRANCISCO ",
+        "clases": [
+          { "dia": 2, "inicio": "19:00", "fin": "22:00" },
+          { "dia": 4, "inicio": "19:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "TB021",
+        "codigo": "TB021-CURSO: 02-Azcurra",
+        "docentes": "AZCURRA DIEGO ANDRES , SALVIA MARTIN MIGUEL , BIANCHI GUSTAVO OSCAR , OTERO MARCOS JULIAN ",
+        "clases": [{ "dia": 3, "inicio": "16:00", "fin": "22:00" }]
+      },
+      {
+        "materia": "TB021",
+        "codigo": "TB021-CURSO: 05-Mendez",
+        "docentes": "MENDEZ MARIANO , LOPEZ JUAN JOSE , MARTOS PEDRO IGNACIO DOMINGO ",
+        "clases": [
+          { "dia": 2, "inicio": "18:00", "fin": "21:00" },
+          { "dia": 3, "inicio": "17:00", "fin": "20:00" }
+        ]
+      },
+      {
+        "materia": "TC017",
+        "codigo": "TC017-CURSO: 01-Fontela",
+        "docentes": "FONTELA MOISES CARLOS ",
+        "clases": [{ "dia": 3, "inicio": "16:00", "fin": "22:00" }]
+      },
+      {
+        "materia": "TA046",
+        "codigo": "TA046-CURSO:01- Leveroni",
+        "docentes": "LEVERONI LUCIANO , BURELLA JUAN MATIAS ",
+        "clases": [
+          { "dia": 2, "inicio": "18:00", "fin": "22:00" },
+          { "dia": 5, "inicio": "17:00", "fin": "21:00" }
+        ]
+      },
+      {
+        "materia": "TA046",
+        "codigo": "TA046-CURSO: 02-Villagra",
+        "docentes": "VILLAGRA SERGIO GUSTAVO ",
+        "clases": [
+          { "dia": 1, "inicio": "18:30", "fin": "21:30" },
+          { "dia": 4, "inicio": "18:30", "fin": "21:30" }
+        ]
+      },
+      {
+        "materia": "TA046",
+        "codigo": "TA046-CURSO: 03-Gonzalez",
+        "docentes": "GONZALEZ NORBERTO DANIEL , TURRI ALEJANDRO ",
+        "clases": [
+          { "dia": 1, "inicio": "19:00", "fin": "22:00" },
+          { "dia": 3, "inicio": "19:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "TA049",
+        "codigo": "TA049-CURSO: 01-Montaldo",
+        "docentes": "MONTALDO DIEGO FERNANDO , CUROTTO CARLOS EZEQUIEL , CARAMÉS AGUSTÍN EDUARDO ",
+        "clases": [
+          { "dia": 1, "inicio": "19:00", "fin": "22:00" },
+          { "dia": 4, "inicio": "19:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "TA049",
+        "codigo": "TA049-CURSO: 02-Paez",
+        "docentes": "PAEZ NICOLAS MARTIN , de la FUENTE HERNAN ",
+        "clases": [
+          { "dia": 1, "inicio": "08:00", "fin": "11:00" },
+          { "dia": 4, "inicio": "08:00", "fin": "11:00" }
+        ]
+      },
+      {
+        "materia": "TB022",
+        "codigo": "TB022-CURSO: 03-Camejo",
+        "docentes": "CAMEJO MANUEL , BILBAO MANUEL IÑAKI , DIAZ REAL MARIA SOL , RIEDEL NICOLAS AGUSTIN ",
+        "clases": [
+          { "dia": 1, "inicio": "19:00", "fin": "22:00" },
+          { "dia": 5, "inicio": "19:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "TB022",
+        "codigo": "TB022-CURSO: 05-Lanzillotta",
+        "docentes": "LANZILLOTTA BRUNO , CAPRA FRANCO DANIEL , SOSA CRISTIAN MARTIN ",
+        "clases": [
+          { "dia": 2, "inicio": "18:00", "fin": "21:00" },
+          { "dia": 4, "inicio": "18:00", "fin": "21:00" }
+        ]
+      },
+      {
+        "materia": "CB051",
+        "codigo": "CB051-CURSO: 01-Re",
+        "docentes": "RE MARIANO , GARCIA PABLO EZEQUIEL , SARTI MARINA ",
+        "clases": [
+          { "dia": 2, "inicio": "16:00", "fin": "19:00" },
+          { "dia": 4, "inicio": "16:00", "fin": "19:00" }
+        ]
+      },
+      {
+        "materia": "CB051",
+        "codigo": "CB051-CURSO: 02-Tarela",
+        "docentes": "TARELA PABLO ADRIAN , EZCURRA DIEGO MARTIN , POLTARAK GUILLERMO RAUL CARLOS , DIAZ MARIA BELEN ",
+        "clases": [
+          { "dia": 1, "inicio": "18:00", "fin": "21:00" },
+          { "dia": 3, "inicio": "19:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "CB051",
+        "codigo": "CB051-CURSO: 03-Griggio",
+        "docentes": "GRIGGIO DANIEL ADALBERTO , NAVARRO FABIAN , CERRUTTI SILVANA VALERIA ",
+        "clases": [
+          { "dia": 1, "inicio": "19:00", "fin": "22:00" },
+          { "dia": 3, "inicio": "18:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "CB051",
+        "codigo": "CB051-CURSO: 04-Schwarz",
+        "docentes": "SCHWARZ RODOLFO ALEJANDRO , SOSA GERMAN EZEQUIEL , CASTAÑO ENRIQUETA ",
+        "clases": [
+          { "dia": 1, "inicio": "16:00", "fin": "19:00" },
+          { "dia": 5, "inicio": "16:00", "fin": "19:00" }
+        ]
+      },
+      {
+        "materia": "CB051",
+        "codigo": "CB051-CURSO: 05-Sassano",
+        "docentes": "SASSANO MIRYAM PATRICIA , GARCIA EZEQUIEL , HUSAIN CERRUTI IGNACIO SANTIAGO , TURANO MARIA AGUSTINA ",
+        "clases": [
+          { "dia": 3, "inicio": "16:00", "fin": "19:00" },
+          { "dia": 4, "inicio": "16:00", "fin": "19:00" }
+        ]
+      },
+      {
+        "materia": "CB051",
+        "codigo": "CB051-CURSO: 06-Rodriguez",
+        "docentes": "RODRIGUEZ DANIEL FABIAN , MACHIUNAS VALERIA ",
+        "clases": [
+          { "dia": 3, "inicio": "16:00", "fin": "19:00" },
+          { "dia": 5, "inicio": "16:00", "fin": "19:00" }
+        ]
+      },
+      {
+        "materia": "CB051",
+        "codigo": "CB051-CURSO: 07-Cavaliere Practica Martes 19 hs",
+        "docentes": "CAVALIERE MIGUEL ANGEL , MASTROPIETRO GABRIEL MARCELO , EZCURRA DIEGO MARTIN , KOWAL ADRIAN MARCELO ",
+        "clases": [
+          { "dia": 2, "inicio": "19:00", "fin": "22:00" },
+          { "dia": 4, "inicio": "19:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "CB051",
+        "codigo": "CB051-CURSO: 08-Cavaliere Práctica Martes 16 hs",
+        "docentes": "CAVALIERE MIGUEL ANGEL , BALZAROTTI FEDERICO , GARCIA PABLO EZEQUIEL , PORTOCARRERO MIRANDA MICHAEL ",
+        "clases": [
+          { "dia": 2, "inicio": "16:00", "fin": "19:00" },
+          { "dia": 4, "inicio": "19:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "TB023",
+        "codigo": "TB023-CURSO: 01-Benitez",
+        "docentes": "BENITEZ CARLOS EDUARDO , MANSILLA MARIANO CLAUDIO , BERRUEZO RAMIRO NICOLÁS , MARTOS PEDRO IGNACIO DOMINGO , RADUCCI DARIO MARTIN ",
+        "clases": [
+          { "dia": 2, "inicio": "19:00", "fin": "23:00" },
+          { "dia": 3, "inicio": "19:00", "fin": "23:00" }
+        ]
+      },
+      {
+        "materia": "TB023",
+        "codigo": "TB023-CURSO: 02-Marchi",
+        "docentes": "MARCHI EDGARDO JOSE , CERVETTO MARCOS ADRIAN ",
+        "clases": [
+          { "dia": 1, "inicio": "18:00", "fin": "22:00" },
+          { "dia": 3, "inicio": "18:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "TB023",
+        "codigo": "TB023-CURSO: 03-Burin",
+        "docentes": "BURIN ABRAHAM ALBERTO DA , NOVODVORETZ OSCAR DARIO , GUTIERREZ NESTOR SERGIO ",
+        "clases": [
+          { "dia": 1, "inicio": "15:00", "fin": "19:00" },
+          { "dia": 2, "inicio": "19:00", "fin": "23:00" }
+        ]
+      },
+      {
+        "materia": "TB025",
+        "codigo": "TB025-CURSO: 01-Suarez",
+        "docentes": "SANCHEZ DIEGO , SUAREZ JOSE PABLO , NAFTALI MAIA RAQUEL , RODRIGUEZ MASSUH PABLO MATIAS ",
+        "clases": [
+          { "dia": 2, "inicio": "19:00", "fin": "22:00" },
+          { "dia": 4, "inicio": "19:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "TB025",
+        "codigo": "TB025-CURSO: 02-Cano",
+        "docentes": "BRASBURG FEDERICO , CANO MATÍAS JOSÉ , RAIK IGNACIO MARTIN ",
+        "clases": [
+          { "dia": 3, "inicio": "18:30", "fin": "21:30" },
+          { "dia": 5, "inicio": "17:30", "fin": "20:30" }
+        ]
+      },
+      {
+        "materia": "TB025",
+        "codigo": "TB025-CURSO: 03-Corsi",
+        "docentes": "CORSI DIEGO PABLO , ESSAYA DIEGO NICOLAS ",
+        "clases": [
+          { "dia": 1, "inicio": "14:00", "fin": "17:00" },
+          { "dia": 4, "inicio": "14:00", "fin": "17:00" }
+        ]
+      },
+      {
+        "materia": "CB003",
+        "codigo": "CB003-CURSO: 21",
+        "docentes": "VERA MATÍAS ALEJANDRO , PUEBLA MANUEL LEANDRO , MENDAÑA JOAQUÍN ",
+        "clases": [
+          { "dia": 1, "inicio": "15:00", "fin": "17:00" },
+          { "dia": 3, "inicio": "15:00", "fin": "19:00" }
+        ]
+      },
+      {
+        "materia": "CB003",
+        "codigo": "CB003-CURSO: 22",
+        "docentes": "BELLO IGNACIO ALBERTO , LEVITÁN DAVID ADRIÁN , BERTALOT FEDERICO MATIAS ",
+        "clases": [
+          { "dia": 1, "inicio": "19:00", "fin": "21:00" },
+          { "dia": 3, "inicio": "19:00", "fin": "23:00" }
+        ]
+      },
+      {
+        "materia": "CB003",
+        "codigo": "CB003-CURSO: 25",
+        "docentes": "COSATTO AMMANN PEDRO CAMILO , SOSA MARINA , EDWARDS MOLINA DIEGO JULIO ",
+        "clases": [
+          { "dia": 3, "inicio": "09:00", "fin": "13:00" },
+          { "dia": 5, "inicio": "09:00", "fin": "11:00" }
+        ]
+      },
+      {
+        "materia": "CB003",
+        "codigo": "CB003-CURSO: 27",
+        "docentes": "PÉREZ SILVIA NOEMÍ , ALVAREZ PONTE LUCIA INES , DE ANGELIS RIVA LUKAS NAHUEL ",
+        "clases": [
+          { "dia": 1, "inicio": "09:00", "fin": "13:00" },
+          { "dia": 3, "inicio": "09:00", "fin": "11:00" }
+        ]
+      },
+      {
+        "materia": "CB003",
+        "codigo": "CB003-CURSO: 28",
+        "docentes": "KORNBLIT FERNANDO , MENDIBURU MARIANA , ROBLES EZEQUIEL MILAGROS DE JESUS ",
+        "clases": [
+          { "dia": 3, "inicio": "17:00", "fin": "19:00" },
+          { "dia": 5, "inicio": "17:00", "fin": "21:00" }
+        ]
+      },
+      {
+        "materia": "TB026",
+        "codigo": "TB026-CURSO: 01-Deymonnaz",
+        "docentes": "DEYMONNAZ PABLO ANDRES , SCARPINELLI ARIEL ALEJANDRO ",
+        "clases": [
+          { "dia": 2, "inicio": "19:00", "fin": "22:00" },
+          { "dia": 3, "inicio": "19:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "TA048",
+        "codigo": "TA048-CURSO:01-ALVAREZ HAMELIN",
+        "docentes": "ALVAREZ HAMELIN JOSE IGNACIO ",
+        "clases": [
+          { "dia": 2, "inicio": "19:00", "fin": "22:00" },
+          { "dia": 5, "inicio": "19:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "TA048",
+        "codigo": "TA048-CURSO: 02-Alvarez Hamelin",
+        "docentes": "ALVAREZ HAMELIN JOSE IGNACIO ",
+        "clases": [
+          { "dia": 4, "inicio": "18:00", "fin": "21:00" },
+          { "dia": 5, "inicio": "19:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "TB028",
+        "codigo": "TB028-CURSO: 01-Caiafa",
+        "docentes": "CAIAFA CESAR FEDERICO , BENITEZ CARLOS MARCELO , VILLANUEVA CECILIA AZUL ",
+        "clases": [
+          { "dia": 1, "inicio": "19:00", "fin": "22:00" },
+          { "dia": 5, "inicio": "19:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "TA043",
+        "codigo": "TA043-CURSO: 01-Mendez",
+        "docentes": "MENDEZ MARIANO , MUCCIO ADRIAN , ESPINA EMMANUEL EDUARDO , IRIBARNE CATELLA PATRICIO ",
+        "clases": [
+          { "dia": 3, "inicio": "18:00", "fin": "21:00" },
+          { "dia": 5, "inicio": "19:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "TA045",
+        "codigo": "TA045-CURSO: 01-Veiga",
+        "docentes": "VEIGA ANDRES ARTURO , DI PAOLA MARTIN PABLO , GOMEZ PETER FEDERICO MANUEL , WERNER EZEQUIEL MAXIMILIANO ",
+        "clases": [
+          { "dia": 2, "inicio": "18:00", "fin": "22:00" },
+          { "dia": 4, "inicio": "18:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "TA045",
+        "codigo": "TA045-CURSO: 02-Deymonnaz",
+        "docentes": "DEYMONNAZ PABLO ANDRES , MILETTA CARLOS MARTIN , TOSCANO GONNELLA MAURO FABRICIO ",
+        "clases": [
+          { "dia": 1, "inicio": "18:00", "fin": "22:00" },
+          { "dia": 4, "inicio": "18:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "TB024",
+        "codigo": "TB024-CURSO: 01-Podberezski",
+        "docentes": "PODBEREZSKI VICTOR DANIEL ",
+        "clases": [
+          { "dia": 1, "inicio": "19:00", "fin": "22:00" },
+          { "dia": 3, "inicio": "19:00", "fin": "22:00" }
+        ]
+      },
+      {
+        "materia": "TB024",
+        "codigo": "TB024-CURSO: 02-Buchwald",
+        "docentes": "BUCHWALD MARTÍN EZEQUIEL , GENENDER PEÑA EZEQUIEL DAVID ",
+        "clases": [
+          { "dia": 1, "inicio": "19:00", "fin": "22:00" },
+          { "dia": 4, "inicio": "19:00", "fin": "22:00" }
+        ]
+      }
+    ],
+    "timestamp": 1710968529311
+  }
 ]

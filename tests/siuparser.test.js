@@ -1,21 +1,12 @@
+import { siuAxel, siuFede, siuExactas } from "./siu-files";
 import { parseSIU } from "../src/siuparser";
-import { siuAxelRaw } from "./siu-raw/siu-axel";
-import { siuFedeRaw } from "./siu-raw/siu-fede";
-import { siuExactasRaw } from "./siu-raw/siu-exactas-computacion-primer-cuatri";
-import siuAxelJSON from "./siu-json/siu-axel";
-import siuFedeJSON from "./siu-json/siu-fede";
-import siuExactasJSON from "./siu-json/siu-exactas-computacion-primer-cuatri";
 
-const sius = [
-  ["siuAxel", siuAxelRaw, siuAxelJSON],
-  ["siuFede", siuFedeRaw, siuFedeJSON], 
-  ["siuExactas", siuExactasRaw, siuExactasJSON]
-];
+const sius = [ siuAxel, siuFede, siuExactas ];
 
 describe.each(sius)("essential tests", (siuName, siuRawData, siuJSON) => {
   const parsedSIU = parseSIU(siuRawData);
 
-  test(`expect ${siuName} parsed siu hasn't changed`, () => {
+  test(`${siuName} parsed siu does not change`, () => {
     siuJSON.forEach((json, index) => {
       json.timestamp = parsedSIU[index].timestamp;
     });

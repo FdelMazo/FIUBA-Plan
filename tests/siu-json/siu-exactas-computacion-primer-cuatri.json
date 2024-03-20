@@ -1,0 +1,993 @@
+[
+    {
+        "periodo": "2024 - Verano",
+        "materias": [
+            {
+                "nombre": "Análisis I",
+                "codigo": "COMP230003",
+                "cursos": [
+                    "COMP230003-Análisis I"
+                ]
+            },
+            {
+                "nombre": "Álgebra I",
+                "codigo": "COMP930001",
+                "cursos": [
+                    "COMP930001-Algebra I"
+                ]
+            }
+        ],
+        "cursos": [
+            {
+                "materia": "COMP230003",
+                "codigo": "COMP230003-Análisis I",
+                "docentes": "Balderrama Rocío Celeste ",
+                "clases": [
+                    {
+                        "dia": 1,
+                        "inicio": "09:00",
+                        "fin": "11:15"
+                    },
+                    {
+                        "dia": 2,
+                        "inicio": "09:00",
+                        "fin": "11:15"
+                    },
+                    {
+                        "dia": 4,
+                        "inicio": "09:00",
+                        "fin": "11:15"
+                    },
+                    {
+                        "dia": 5,
+                        "inicio": "09:00",
+                        "fin": "11:15"
+                    },
+                    {
+                        "dia": 1,
+                        "inicio": "11:15",
+                        "fin": "14:30"
+                    },
+                    {
+                        "dia": 2,
+                        "inicio": "11:15",
+                        "fin": "14:30"
+                    },
+                    {
+                        "dia": 4,
+                        "inicio": "11:15",
+                        "fin": "14:30"
+                    },
+                    {
+                        "dia": 5,
+                        "inicio": "11:15",
+                        "fin": "14:30"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP930001",
+                "codigo": "COMP930001-Algebra I",
+                "docentes": "Cesaratto Eda ",
+                "clases": [
+                    {
+                        "dia": 1,
+                        "inicio": "09:00",
+                        "fin": "11:15"
+                    },
+                    {
+                        "dia": 2,
+                        "inicio": "09:00",
+                        "fin": "11:15"
+                    },
+                    {
+                        "dia": 4,
+                        "inicio": "09:00",
+                        "fin": "11:15"
+                    },
+                    {
+                        "dia": 5,
+                        "inicio": "09:00",
+                        "fin": "11:15"
+                    },
+                    {
+                        "dia": 1,
+                        "inicio": "11:15",
+                        "fin": "14:30"
+                    },
+                    {
+                        "dia": 2,
+                        "inicio": "11:15",
+                        "fin": "14:30"
+                    },
+                    {
+                        "dia": 4,
+                        "inicio": "11:15",
+                        "fin": "14:30"
+                    },
+                    {
+                        "dia": 5,
+                        "inicio": "11:15",
+                        "fin": "14:30"
+                    }
+                ]
+            }
+        ],
+        "timestamp": 1710965867223
+    },
+    {
+        "periodo": "2024 - 1er. Cuatrimestre",
+        "materias": [
+            {
+                "nombre": "Algoritmos y Estructuras de Datos",
+                "codigo": "COMP230001",
+                "cursos": [
+                    "COMP230001-AED Turno Mañana",
+                    "COMP230001-AED Turno Noche"
+                ]
+            },
+            {
+                "nombre": "Análisis I",
+                "codigo": "COMP230003",
+                "cursos": [
+                    "COMP230003-Análisis I"
+                ]
+            },
+            {
+                "nombre": "Aprendizaje Automático 2024",
+                "codigo": "COMP930656",
+                "cursos": [
+                    "COMP930656-A"
+                ]
+            },
+            {
+                "nombre": "Aprendizaje Automático en Grafos",
+                "codigo": "COMP930663",
+                "cursos": [
+                    "COMP930663-A"
+                ]
+            },
+            {
+                "nombre": "Fundamentos de Artificial General Intelligence Safety",
+                "codigo": "COMP930657",
+                "cursos": [
+                    "COMP930657-A"
+                ]
+            },
+            {
+                "nombre": "Introducción a la Programación",
+                "codigo": "COMP230008",
+                "cursos": [
+                    "COMP230008-A",
+                    "COMP230008-B",
+                    "COMP230008-C",
+                    "COMP230008-D"
+                ]
+            },
+            {
+                "nombre": "Modelado y Análisis de Sistemas Reactivos y Concurrentes",
+                "codigo": "COMP931252",
+                "cursos": [
+                    "COMP931252-A"
+                ]
+            },
+            {
+                "nombre": "Modelado y Simulación de Sistemas Complejos con Aplicaciones en Economía",
+                "codigo": "COMP930658",
+                "cursos": [
+                    "COMP930658-A"
+                ]
+            },
+            {
+                "nombre": "Paradigmas de Programación",
+                "codigo": "COMP930015",
+                "cursos": [
+                    "COMP930015-A"
+                ]
+            },
+            {
+                "nombre": "Procesamiento Avanzado de Señales 2024",
+                "codigo": "COMP930668",
+                "cursos": [
+                    "COMP930668-A"
+                ]
+            },
+            {
+                "nombre": "Procesamiento de Lenguaje Natural",
+                "codigo": "COMP930662",
+                "cursos": [
+                    "COMP930662-A"
+                ]
+            },
+            {
+                "nombre": "Redes, Sociedad y Economía",
+                "codigo": "COMP931538",
+                "cursos": [
+                    "COMP931538-A"
+                ]
+            },
+            {
+                "nombre": "Seguridad de la Información",
+                "codigo": "COMP931324",
+                "cursos": [
+                    "COMP931324-A"
+                ]
+            },
+            {
+                "nombre": "Sistemas Digitales",
+                "codigo": "COMP230014",
+                "cursos": [
+                    "COMP230014-Turno Mañana",
+                    "COMP230014-Turno Noche"
+                ]
+            },
+            {
+                "nombre": "Sistemas Operativos",
+                "codigo": "COMP930017",
+                "cursos": [
+                    "COMP930017-A"
+                ]
+            },
+            {
+                "nombre": "Taller de Tesis I",
+                "codigo": "COMP930660",
+                "cursos": [
+                    "COMP930660-A"
+                ]
+            },
+            {
+                "nombre": "Teoría de Juegos (DC) 2024",
+                "codigo": "COMP930666",
+                "cursos": [
+                    "COMP930666-A"
+                ]
+            },
+            {
+                "nombre": "Técnicas de Diseño de Algoritmos",
+                "codigo": "COMP230015",
+                "cursos": [
+                    "COMP230015-A"
+                ]
+            },
+            {
+                "nombre": "Álgebra I",
+                "codigo": "COMP930001",
+                "cursos": [
+                    "COMP930001-Algebra I"
+                ]
+            },
+            {
+                "nombre": "Álgebra Lineal Computacional",
+                "codigo": "LCDA210006",
+                "cursos": [
+                    "LCDA210006-Algebra lineal computacional"
+                ]
+            }
+        ],
+        "cursos": [
+            {
+                "materia": "COMP230001",
+                "codigo": "COMP230001-AED Turno Mañana",
+                "docentes": "Braberman Victor Adrian , Tcach Lufrano Alexis Guido , Bendersky Diego Ariel , Bianchi Bruno , González Mariano Martín , Dubinsky Manuel , Landfried Gustavo Andrés , Schitter Tomas Jose , Travi Fermin , Gonzalez Omahen Augusto Ezequiel , Ramirez Leandro Jesús , Semeria Camilo ",
+                "clases": [
+                    {
+                        "dia": 2,
+                        "inicio": "09:00",
+                        "fin": "14:00"
+                    },
+                    {
+                        "dia": 3,
+                        "inicio": "09:00",
+                        "fin": "14:00"
+                    },
+                    {
+                        "dia": 5,
+                        "inicio": "09:00",
+                        "fin": "14:00"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP230001",
+                "codigo": "COMP230001-AED Turno Noche",
+                "docentes": "Garbervetsky Diego David , Bianchi Bruno , Carreira Munich Tobias Agustin , Cerdeira Elías Nahuel , González Mariano Martín , Dandois Santiago José , Gastron Matias Ezequiel , Maqueda Ignacio , Capelo Gianluca , Gorojovsky Roman , Sawczuk Nicolás Iván ",
+                "clases": [
+                    {
+                        "dia": 2,
+                        "inicio": "17:00",
+                        "fin": "22:00"
+                    },
+                    {
+                        "dia": 3,
+                        "inicio": "17:00",
+                        "fin": "22:00"
+                    },
+                    {
+                        "dia": 5,
+                        "inicio": "17:00",
+                        "fin": "22:00"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP230003",
+                "codigo": "COMP230003-Análisis I",
+                "docentes": "Larotonda Gabriel Andrés ",
+                "clases": [
+                    {
+                        "dia": 1,
+                        "inicio": "09:00",
+                        "fin": "11:00"
+                    },
+                    {
+                        "dia": 4,
+                        "inicio": "09:00",
+                        "fin": "11:00"
+                    },
+                    {
+                        "dia": 1,
+                        "inicio": "09:00",
+                        "fin": "11:00"
+                    },
+                    {
+                        "dia": 4,
+                        "inicio": "09:00",
+                        "fin": "11:00"
+                    },
+                    {
+                        "dia": 1,
+                        "inicio": "11:00",
+                        "fin": "14:00"
+                    },
+                    {
+                        "dia": 4,
+                        "inicio": "11:00",
+                        "fin": "14:00"
+                    },
+                    {
+                        "dia": 1,
+                        "inicio": "11:00",
+                        "fin": "14:00"
+                    },
+                    {
+                        "dia": 4,
+                        "inicio": "11:00",
+                        "fin": "14:00"
+                    },
+                    {
+                        "dia": 1,
+                        "inicio": "14:00",
+                        "fin": "16:00"
+                    },
+                    {
+                        "dia": 4,
+                        "inicio": "14:00",
+                        "fin": "16:00"
+                    },
+                    {
+                        "dia": 1,
+                        "inicio": "16:00",
+                        "fin": "19:00"
+                    },
+                    {
+                        "dia": 4,
+                        "inicio": "16:00",
+                        "fin": "19:00"
+                    },
+                    {
+                        "dia": 1,
+                        "inicio": "17:00",
+                        "fin": "19:00"
+                    },
+                    {
+                        "dia": 4,
+                        "inicio": "17:00",
+                        "fin": "19:00"
+                    },
+                    {
+                        "dia": 1,
+                        "inicio": "19:00",
+                        "fin": "22:00"
+                    },
+                    {
+                        "dia": 4,
+                        "inicio": "19:00",
+                        "fin": "22:00"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP930656",
+                "codigo": "COMP930656-A",
+                "docentes": "Brusco Pablo ",
+                "clases": [
+                    {
+                        "dia": 2,
+                        "inicio": "17:00",
+                        "fin": "21:00"
+                    },
+                    {
+                        "dia": 4,
+                        "inicio": "17:00",
+                        "fin": "21:00"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP930663",
+                "codigo": "COMP930663-A",
+                "docentes": "Lombardi Leandro Ezequiel ",
+                "clases": [
+                    {
+                        "dia": 1,
+                        "inicio": "09:30",
+                        "fin": "12:30"
+                    },
+                    {
+                        "dia": 5,
+                        "inicio": "09:00",
+                        "fin": "11:00"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP930657",
+                "codigo": "COMP930657-A",
+                "docentes": "Abriola Sergio Alejandro ",
+                "clases": [
+                    {
+                        "dia": 5,
+                        "inicio": "17:00",
+                        "fin": "21:00"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP230008",
+                "codigo": "COMP230008-A",
+                "docentes": "De Cristoforis Pablo Esteban , Di Piazza Gabriela Melisa , Godoy Javier Ignacio , González Mariano Martín , Rubinstein Pablo Andres , Sansone Agustín , Tilli Dora Elena , Bekenstein Jonathan Ezequiel , Bustamante Luis Ricardo , Mamani Fernandez Jorge Ricardo , Perez Bianchi Paula ",
+                "clases": [
+                    {
+                        "dia": 1,
+                        "inicio": "09:00",
+                        "fin": "11:30"
+                    },
+                    {
+                        "dia": 3,
+                        "inicio": "09:00",
+                        "fin": "11:30"
+                    },
+                    {
+                        "dia": 4,
+                        "inicio": "09:00",
+                        "fin": "14:00"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP230008",
+                "codigo": "COMP230008-B",
+                "docentes": "De Cristoforis Pablo Esteban , Di Piazza Gabriela Melisa , Godoy Javier Ignacio , González Mariano Martín , Rubinstein Pablo Andres , Sansone Agustín , Tilli Dora Elena , Bekenstein Jonathan Ezequiel , Bustamante Luis Ricardo , Mamani Fernandez Jorge Ricardo , Perez Bianchi Paula ",
+                "clases": [
+                    {
+                        "dia": 1,
+                        "inicio": "11:30",
+                        "fin": "14:00"
+                    },
+                    {
+                        "dia": 3,
+                        "inicio": "11:30",
+                        "fin": "14:00"
+                    },
+                    {
+                        "dia": 4,
+                        "inicio": "09:00",
+                        "fin": "14:00"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP230008",
+                "codigo": "COMP230008-C",
+                "docentes": "Altauz Javier Hernán , Urtasun Martín , Brassesco Maria Virginia , Dengra Silvina , González Mariano Martín , Benedetti Juan Pablo , Romano Francisco , Vasulka Mariano , Vita Sebastian Alberto , Lew Deveali Simon , Ocampo Debora Daiana ",
+                "clases": [
+                    {
+                        "dia": 4,
+                        "inicio": "17:00",
+                        "fin": "22:00"
+                    },
+                    {
+                        "dia": 1,
+                        "inicio": "17:00",
+                        "fin": "19:30"
+                    },
+                    {
+                        "dia": 3,
+                        "inicio": "17:00",
+                        "fin": "19:30"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP230008",
+                "codigo": "COMP230008-D",
+                "docentes": "Altauz Javier Hernán , Urtasun Martín , Brassesco Maria Virginia , Dengra Silvina , González Mariano Martín , Benedetti Juan Pablo , Romano Francisco , Vasulka Mariano , Vita Sebastian Alberto , Lew Deveali Simon , Ocampo Debora Daiana ",
+                "clases": [
+                    {
+                        "dia": 1,
+                        "inicio": "19:30",
+                        "fin": "22:00"
+                    },
+                    {
+                        "dia": 3,
+                        "inicio": "19:30",
+                        "fin": "22:00"
+                    },
+                    {
+                        "dia": 4,
+                        "inicio": "17:00",
+                        "fin": "22:00"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP931252",
+                "codigo": "COMP931252-A",
+                "docentes": "Uchitel Sebastian ",
+                "clases": [
+                    {
+                        "dia": 2,
+                        "inicio": "09:00",
+                        "fin": "13:00"
+                    },
+                    {
+                        "dia": 4,
+                        "inicio": "10:00",
+                        "fin": "12:00"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP930658",
+                "codigo": "COMP930658-A",
+                "docentes": "Castro Rodrigo Daniel ",
+                "clases": [
+                    {
+                        "dia": 1,
+                        "inicio": "17:00",
+                        "fin": "19:00"
+                    },
+                    {
+                        "dia": 1,
+                        "inicio": "19:00",
+                        "fin": "21:00"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP930015",
+                "codigo": "COMP930015-A",
+                "docentes": "Barenbaum Pablo , Cossio Mercado Christian Gustavo , Marottoli Daniela , Steren Gabriela , Díaz Caro Alejandro ",
+                "clases": [
+                    {
+                        "dia": 2,
+                        "inicio": "17:00",
+                        "fin": "22:00"
+                    },
+                    {
+                        "dia": 5,
+                        "inicio": "17:00",
+                        "fin": "22:00"
+                    },
+                    {
+                        "dia": 2,
+                        "inicio": "17:00",
+                        "fin": "22:00"
+                    },
+                    {
+                        "dia": 5,
+                        "inicio": "17:00",
+                        "fin": "22:00"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP930668",
+                "codigo": "COMP930668-A",
+                "docentes": "Risk Marcelo Raul ",
+                "clases": [
+                    {
+                        "dia": 2,
+                        "inicio": "17:00",
+                        "fin": "18:00"
+                    },
+                    {
+                        "dia": 2,
+                        "inicio": "18:00",
+                        "fin": "20:00"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP930662",
+                "codigo": "COMP930662-A",
+                "docentes": "Del Corro Luciano Manuel ",
+                "clases": [
+                    {
+                        "dia": 2,
+                        "inicio": "09:00",
+                        "fin": "12:00"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP931538",
+                "codigo": "COMP931538-A",
+                "docentes": "Feuerstein Esteban Zindel ",
+                "clases": [
+                    {
+                        "dia": 2,
+                        "inicio": "17:15",
+                        "fin": "21:15"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP931324",
+                "codigo": "COMP931324-A",
+                "docentes": "Baader Rodolfo Pablo ",
+                "clases": [
+                    {
+                        "dia": 1,
+                        "inicio": "18:00",
+                        "fin": "20:30"
+                    },
+                    {
+                        "dia": 3,
+                        "inicio": "18:00",
+                        "fin": "20:30"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP230014",
+                "codigo": "COMP230014-Turno Mañana",
+                "docentes": "Buemi María Elena , Cerrutti Mariano Javier , Bekenstein Jonathan Ezequiel , Siciliani Andres , Sánchez Posadas Ramiro ",
+                "clases": [
+                    {
+                        "dia": 4,
+                        "inicio": "08:00",
+                        "fin": "10:00"
+                    },
+                    {
+                        "dia": 4,
+                        "inicio": "10:00",
+                        "fin": "13:00"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP230014",
+                "codigo": "COMP230014-Turno Noche",
+                "docentes": "Buemi María Elena , Zoppi Edgardo Julio , Raffo Diego Martín , Gonzalez Omahen Augusto Ezequiel , Romani Rafael ",
+                "clases": [
+                    {
+                        "dia": 4,
+                        "inicio": "17:00",
+                        "fin": "19:00"
+                    },
+                    {
+                        "dia": 4,
+                        "inicio": "19:00",
+                        "fin": "22:00"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP930017",
+                "codigo": "COMP930017-A",
+                "docentes": "Fernandez Slezak Diego , Sumoza Matos Rodolfo Leonardo ",
+                "clases": [
+                    {
+                        "dia": 2,
+                        "inicio": "17:00",
+                        "fin": "21:00"
+                    },
+                    {
+                        "dia": 4,
+                        "inicio": "17:00",
+                        "fin": "21:00"
+                    },
+                    {
+                        "dia": 2,
+                        "inicio": "17:00",
+                        "fin": "21:00"
+                    },
+                    {
+                        "dia": 4,
+                        "inicio": "17:00",
+                        "fin": "21:00"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP930660",
+                "codigo": "COMP930660-A",
+                "docentes": "Kamienkowski Juan Esteban ",
+                "clases": [
+                    {
+                        "dia": 1,
+                        "inicio": "17:00",
+                        "fin": "22:00"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP930666",
+                "codigo": "COMP930666-A",
+                "docentes": "Arbiser Ariel ",
+                "clases": [
+                    {
+                        "dia": 3,
+                        "inicio": "14:30",
+                        "fin": "19:00"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP230015",
+                "codigo": "COMP230015-A",
+                "docentes": "Bonomo Flavia , Soulignac Francisco Juan , Terlisky Pablo Ezequiel , Braier Julián , Amster Martín , Umfurer Alfredo Raul ",
+                "clases": [
+                    {
+                        "dia": 1,
+                        "inicio": "09:00",
+                        "fin": "13:00"
+                    },
+                    {
+                        "dia": 3,
+                        "inicio": "09:00",
+                        "fin": "13:00"
+                    },
+                    {
+                        "dia": 1,
+                        "inicio": "17:00",
+                        "fin": "21:00"
+                    },
+                    {
+                        "dia": 3,
+                        "inicio": "17:00",
+                        "fin": "21:00"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP930001",
+                "codigo": "COMP930001-Algebra I",
+                "docentes": "Zadunaisky Bustillos Pablo Mauricio , Merzbacher Diego Mariano , Antunes Percincula Carlos Santiago , Rufolo Franco Nicolás ",
+                "clases": [
+                    {
+                        "dia": 2,
+                        "inicio": "09:00",
+                        "fin": "14:00"
+                    },
+                    {
+                        "dia": 5,
+                        "inicio": "09:00",
+                        "fin": "14:00"
+                    },
+                    {
+                        "dia": 2,
+                        "inicio": "09:00",
+                        "fin": "14:00"
+                    },
+                    {
+                        "dia": 5,
+                        "inicio": "09:00",
+                        "fin": "14:00"
+                    },
+                    {
+                        "dia": 2,
+                        "inicio": "14:00",
+                        "fin": "19:00"
+                    },
+                    {
+                        "dia": 5,
+                        "inicio": "14:00",
+                        "fin": "19:00"
+                    },
+                    {
+                        "dia": 2,
+                        "inicio": "17:00",
+                        "fin": "22:00"
+                    },
+                    {
+                        "dia": 5,
+                        "inicio": "17:00",
+                        "fin": "22:00"
+                    }
+                ]
+            },
+            {
+                "materia": "LCDA210006",
+                "codigo": "LCDA210006-Algebra lineal computacional",
+                "docentes": "Martinez Sandra Rita ",
+                "clases": [
+                    {
+                        "dia": 2,
+                        "inicio": "09:00",
+                        "fin": "11:00"
+                    },
+                    {
+                        "dia": 4,
+                        "inicio": "09:00",
+                        "fin": "11:00"
+                    },
+                    {
+                        "dia": 2,
+                        "inicio": "11:00",
+                        "fin": "14:00"
+                    },
+                    {
+                        "dia": 4,
+                        "inicio": "11:00",
+                        "fin": "14:00"
+                    }
+                ]
+            }
+        ],
+        "timestamp": 1710965867566
+    },
+    {
+        "periodo": "2024 - 1er. Bimestre",
+        "materias": [
+            {
+                "nombre": "Aprendizaje Profundo - VISIT2024",
+                "codigo": "COMP930671",
+                "cursos": [
+                    "COMP930671-A"
+                ]
+            },
+            {
+                "nombre": "Criptografía Moderna - VISIT2024",
+                "codigo": "COMP930669",
+                "cursos": [
+                    "COMP930669-A"
+                ]
+            },
+            {
+                "nombre": "Introducción a las APIs - VISIT2024",
+                "codigo": "COMP930670",
+                "cursos": [
+                    "COMP930670-A"
+                ]
+            },
+            {
+                "nombre": "Modelado y Análisis de Sistemas Reactivos y Concurrentes",
+                "codigo": "COMP931252",
+                "cursos": [
+                    "COMP931252-A"
+                ]
+            },
+            {
+                "nombre": "Procesamiento de Imágenes Cerebrales a Gran Escala con Aplicaciones de Machine Learning - VISIT2024",
+                "codigo": "COMP930673",
+                "cursos": [
+                    "COMP930673-A"
+                ]
+            },
+            {
+                "nombre": "Seminario de Demostración Automática 2024",
+                "codigo": "COMP930664",
+                "cursos": [
+                    "COMP930664-A"
+                ]
+            }
+        ],
+        "cursos": [
+            {
+                "materia": "COMP930671",
+                "codigo": "COMP930671-A",
+                "docentes": "Ferrante Enzo , Rodriguez Ricardo Oscar ",
+                "clases": [
+                    {
+                        "dia": 2,
+                        "inicio": "09:00",
+                        "fin": "12:00"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP930669",
+                "codigo": "COMP930669-A",
+                "docentes": "Rodriguez Ricardo Oscar ",
+                "clases": [
+                    {
+                        "dia": 2,
+                        "inicio": "14:00",
+                        "fin": "17:00"
+                    },
+                    {
+                        "dia": 4,
+                        "inicio": "14:00",
+                        "fin": "17:00"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP930670",
+                "codigo": "COMP930670-A",
+                "docentes": "De Caso Guido ",
+                "clases": [
+                    {
+                        "dia": 3,
+                        "inicio": "17:00",
+                        "fin": "20:00"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP931252",
+                "codigo": "COMP931252-A",
+                "docentes": "Uchitel Sebastian ",
+                "clases": [
+                    {
+                        "dia": 2,
+                        "inicio": "09:00",
+                        "fin": "13:00"
+                    },
+                    {
+                        "dia": 4,
+                        "inicio": "10:00",
+                        "fin": "12:00"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP930673",
+                "codigo": "COMP930673-A",
+                "docentes": "Rodriguez Ricardo Oscar ",
+                "clases": [
+                    {
+                        "dia": 1,
+                        "inicio": "09:00",
+                        "fin": "13:00"
+                    },
+                    {
+                        "dia": 2,
+                        "inicio": "09:00",
+                        "fin": "13:00"
+                    },
+                    {
+                        "dia": 3,
+                        "inicio": "09:00",
+                        "fin": "13:00"
+                    },
+                    {
+                        "dia": 4,
+                        "inicio": "09:00",
+                        "fin": "13:00"
+                    },
+                    {
+                        "dia": 5,
+                        "inicio": "09:00",
+                        "fin": "13:00"
+                    }
+                ]
+            },
+            {
+                "materia": "COMP930664",
+                "codigo": "COMP930664-A",
+                "docentes": "Rodriguez Ricardo Oscar ",
+                "clases": [
+                    {
+                        "dia": 3,
+                        "inicio": "14:00",
+                        "fin": "17:00"
+                    }
+                ]
+            }
+        ],
+        "timestamp": 1710965867607
+    }
+]

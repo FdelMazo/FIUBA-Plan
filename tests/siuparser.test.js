@@ -1,7 +1,7 @@
-import { siuAxel } from "./siu-files/siu-axel";
-import { siuFede } from "./siu-files/siu-fede";
-import { siuExactas } from "./siu-files/siu-usuario-exactas-computacion-primer-cuatri";
 import { parseSIU } from "../src/siuparser";
+import { siuAxel } from "./siu-json/siu-axel";
+import { siuFede } from "./siu-json/siu-fede";
+import { siuExactas } from "./siu-json/siu-exactas-computacion-primer-cuatri";
 
 describe("siuAxel", () => {
   const parsedSIU = parseSIU(siuAxel)[0]; 

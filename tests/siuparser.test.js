@@ -6,78 +6,67 @@ import siuAxelJSON from "./siu-json/siu-axel";
 import siuFedeJSON from "./siu-json/siu-fede";
 import siuExactasJSON from "./siu-json/siu-exactas-computacion-primer-cuatri";
 
-describe("siuAxel", () => {
-  const parsedSIU = parseSIU(siuAxelRaw);
+const sius = [
+  ["siuAxel", siuAxelRaw, siuAxelJSON],
+  ["siuFede", siuFedeRaw, siuFedeJSON], 
+  ["siuExactas", siuExactasRaw, siuExactasJSON]
+];
 
-  test("expect parsedSIU hasn't changed", () => {
-    // Tendria que ver una mejor solucion no tan hardcode
-    siuAxelJSON[0].timestamp = parsedSIU[0].timestamp;
-    expect(parsedSIU).toEqual(siuAxelJSON);
+describe.each(sius)("essential tests", (siuName, siuRawData, siuJSON) => {
+  const parsedSIU = parseSIU(siuRawData);
+
+  test(`expect ${siuName} parsed siu hasn't changed`, () => {
+    siuJSON.forEach((json, index) => {
+      json.timestamp = parsedSIU[index].timestamp;
+    });
+    expect(parsedSIU).toEqual(siuJSON);
   });
 
-  test("periodo is a string", () => {
-    expect(typeof parsedSIU[0].periodo).toBe("string");
-  });
-
-  test("periodo matches expected string", () => {
-    expect(parsedSIU[0].periodo).toBe("2024 - 1er Cuatrimestre");
-  });
-
-  test("there are 26 materias", () => {
-    expect(parsedSIU[0].materias.length).toBe(26);
-  });
-
-  test("every materia has a codigo", () => {
-    parsedSIU[0].materias.forEach((materia) => {
-      expect(typeof materia.codigo).toBe("string");
-      expect(materia.codigo.length).toBeGreaterThan(0);
+  test(`${siuName} periodo is a string`, () => {
+    parsedSIU.forEach((periodo) => {
+      expect(typeof periodo.periodo).toBe("string");
     });
   });
 
-  test("every materia has a name", () => {
-    parsedSIU[0].materias.forEach((materia) => {
-      expect(typeof materia.nombre).toBe("string");
-      expect(materia.nombre.length).toBeGreaterThan(0);
-    });
-  });
-
-  test("every materia has cursos", () => {
-    parsedSIU[0].materias.forEach((materia) => {
-      expect(materia.cursos.length).not.toBe(0);
-
-      materia.cursos.forEach((curso) => {
-        expect(typeof curso).toBe("string");
-        expect(curso.length).toBeGreaterThan(0);
-        // chequear: algunos no tienen el :, otros no tienen el \s
-        expect(curso).toMatch(/\S+-CURSO:?\s?\S+/i);
+  test(`${siuName} every materia has a codigo`, () => {
+    parsedSIU.forEach((periodo) => {
+      periodo.materias.forEach((materia) => {
+        expect(typeof materia.codigo).toBe("string");
+        expect(materia.codigo.length).toBeGreaterThan(0);
       });
     });
   });
 
-  test("timestamp matches expected", () => {
-    expect(Number.isInteger(parsedSIU[0].timestamp)).toBeTruthy();
+  test(`${siuName} every materia has a name`, () => {
+    parsedSIU.forEach((periodo) => {
+      periodo.materias.forEach((materia) => {
+        expect(typeof materia.nombre).toBe("string");
+        expect(materia.nombre.length).toBeGreaterThan(0);
+      });
+    });
+  });
+
+  test(`${siuName} every materia has cursos`, () => {
+    parsedSIU.forEach((periodo) => {
+      periodo.materias.forEach((materia) => {
+        expect(materia.cursos.length).not.toBe(0);
+
+        materia.cursos.forEach((curso) => {
+          expect(typeof curso).toBe("string");
+          expect(curso.length).toBeGreaterThan(0);
+          // es necesario hacer este regex????? que probablemente 
+          // se rompa (y lo va a hacer) dependiendo de la facultad
+          // expect(curso).toMatch(/\S+-CURSO-?:?\s?\S+/i);
+        });
+      });
+    });
+  });
+
+  test(`${siuName} timestamp matches expected`, () => {
     // timestamp is greater than 18/01/2021
-    expect(parsedSIU[0].timestamp).toBeGreaterThan(1610950282);
-  });
-});
-
-describe("siuFede", () => {
-  const parsedSIU = parseSIU(siuFedeRaw);
-
-  test("expect parsedSIU hasn't changed", () => {
-    siuFedeJSON[0].timestamp = parsedSIU[0].timestamp;
-    siuFedeJSON[1].timestamp = parsedSIU[1].timestamp;
-    expect(parsedSIU).toEqual(siuFedeJSON);
-  });
-});
-
-describe("siuExactas", () => {
-  const parsedSIU = parseSIU(siuExactasRaw);
-
-  test("expect parsedSIU hasn't changed", () => {
-    siuExactasJSON[0].timestamp = parsedSIU[0].timestamp;
-    siuExactasJSON[1].timestamp = parsedSIU[1].timestamp;
-    siuExactasJSON[2].timestamp = parsedSIU[2].timestamp;
-    expect(parsedSIU).toEqual(siuExactasJSON);
+    parsedSIU.forEach((periodo) => {
+      expect(Number.isInteger(periodo.timestamp)).toBeTruthy();
+      expect(periodo.timestamp).toBeGreaterThan(1610950282);
+    });
   });
 });

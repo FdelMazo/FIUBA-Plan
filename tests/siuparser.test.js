@@ -4,6 +4,7 @@ import { parseSIU } from "../src/siuparser";
 const sius = [ siuAxel, siuFede, siuExactas ];
 
 describe.each(sius)("essential tests", (siuName, siuRawData, siuJSON) => {
+  console.debug = jest.fn(); // Deshabilitar el debugging que se usa en el browser
   const parsedSIU = parseSIU(siuRawData);
 
   test(`${siuName} parsed siu does not change`, () => {

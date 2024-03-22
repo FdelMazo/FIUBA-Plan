@@ -46,6 +46,9 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.24.3",
+    "@babel/preset-react": "^7.24.1",
+    "babel-jest": "^29.7.0",
     "jest": "^27.5.1",
     "prettier": "3.2.4"
   }

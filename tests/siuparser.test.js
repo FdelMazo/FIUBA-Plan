@@ -27,26 +27,79 @@ describe.each(sius)("essential tests", (siuName, siuRawData, siuJSON) => {
     expect(parsedSIU).toEqual(siuJSON);
   });
 
-  test(`${siuName} periodo is a string`, () => {
+  // test(`${siuName} parsed siu has not empty strings nor arrays`, () => {
+  //   const recursive = (obj) => {
+  //     for (const prop in obj) {
+  //       if (!obj.hasOwnProperty(prop)) {
+  //         continue;
+  //       } else if (typeof obj[prop] === "object" && obj[prop] !== null) {
+  //         recursive(obj);
+  //       } else if (typeof obj[prop] === "string") {
+  //         expect(obj[prop].length).toBeGreaterThan(0);
+  //       }
+  //     }
+  //   };
+  //   recursive(parsedSIU);
+  // });
+
+  test(`${siuName} periodo is a non-empty string`, () => {
     parsedSIU.forEach((periodo) => {
       expect(typeof periodo.periodo).toBe("string");
+      expect(periodo.periodo.length).toBeGreaterThan(0);
     });
   });
 
-  test(`${siuName} every materia has a codigo`, () => {
+  test(`${siuName} periodos materias and cursos is not empty`, () => {
+    parsedSIU.forEach((periodo) => {
+      expect(periodo.materias.length).toBeGreaterThan(0);
+      expect(periodo.cursos.length).toBeGreaterThan(0);
+    });
+  });
+
+  test.each([["materias"], ["cursos"]])(
+    `${siuName} periodos has not repeated %s codigos`, (prop) => {
+      parsedSIU.forEach((periodo) => {
+        const codigosArray = periodo[prop].map((m) => { return m.codigo });
+        const hasRepeatedCodigos = codigosArray.some((codigo, index, array) => {
+          return array.indexOf(codigo) !== index;
+        });
+        expect(hasRepeatedCodigos).toBeFalsy();
+      });
+    });
+
+  test.each([["codigo"], ["nombre"]])(
+    `${siuName} every materia has a %s`, (prop) => {
+      parsedSIU.forEach((periodo) => {
+        periodo.materias.forEach((materia) => {
+          expect(typeof materia[prop]).toBe("string");
+          expect(materia[prop].length).toBeGreaterThan(0);
+        });
+      });
+    }
+  )
+
+  test(`${siuName} every materia cursos exists in global cursos`, () => {
+    const globalCodigos = parsedSIU.map((periodo) => {
+      return periodo.cursos.map((curso) => curso.codigo);
+    }).flat(Infinity);
+
     parsedSIU.forEach((periodo) => {
       periodo.materias.forEach((materia) => {
-        expect(typeof materia.codigo).toBe("string");
-        expect(materia.codigo.length).toBeGreaterThan(0);
+        materia.cursos.forEach((codigoCurso) => {
+          expect(globalCodigos.includes(codigoCurso)).toBeTruthy();
+        });
       });
     });
   });
 
-  test(`${siuName} every materia has a name`, () => {
+  test(`${siuName} every global curso exists in a materia cursos`, () => {
+    const cursosCodigos = parsedSIU.map((periodo) => {
+      return periodo.materias.map((materia) => materia.cursos);
+    }).flat(Infinity);
+
     parsedSIU.forEach((periodo) => {
-      periodo.materias.forEach((materia) => {
-        expect(typeof materia.nombre).toBe("string");
-        expect(materia.nombre.length).toBeGreaterThan(0);
+      periodo.cursos.forEach((curso) => {
+        expect(cursosCodigos.includes(curso.materia));
       });
     });
   });
@@ -59,6 +112,30 @@ describe.each(sius)("essential tests", (siuName, siuRawData, siuJSON) => {
         materia.cursos.forEach((curso) => {
           expect(typeof curso).toBe("string");
           expect(curso.length).toBeGreaterThan(0);
+        });
+      });
+    });
+  });
+
+  test(`${siuName} every class allows expected weekdays`, () => {
+    parsedSIU.forEach((periodo) => {
+      periodo.cursos.forEach((curso) => {
+        curso.clases.forEach((clase) => {
+          expect(clase.dia).toBeGreaterThanOrEqual(1);
+          expect(clase.dia).toBeLessThanOrEqual(6);
+        });
+      });
+    });
+  });
+
+  test(`${siuName} every class allows expected horarios`, () => {
+    parsedSIU.forEach((periodo) => {
+      periodo.cursos.forEach((curso) => {
+        curso.clases.forEach((clase) => {
+          ["inicio", "fin"].forEach((prop) => {
+            expect(typeof clase[prop]).toBe("string");
+            expect(clase[prop]).toMatch(/[0-9]{1,2}:[0-9]{1,2}/);
+          });
         });
       });
     });

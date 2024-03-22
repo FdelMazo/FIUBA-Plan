@@ -24,23 +24,28 @@ describe.each(sius)("essential tests", (siuName, siuRawData, siuJSON) => {
     siuJSON.forEach((json, index) => {
       json.timestamp = parsedSIU[index].timestamp;
     });
+
     expect(parsedSIU).toEqual(siuJSON);
   });
 
-  // test(`${siuName} parsed siu has not empty strings nor arrays`, () => {
-  //   const recursive = (obj) => {
-  //     for (const prop in obj) {
-  //       if (!obj.hasOwnProperty(prop)) {
-  //         continue;
-  //       } else if (typeof obj[prop] === "object" && obj[prop] !== null) {
-  //         recursive(obj);
-  //       } else if (typeof obj[prop] === "string") {
-  //         expect(obj[prop].length).toBeGreaterThan(0);
-  //       }
-  //     }
-  //   };
-  //   recursive(parsedSIU);
-  // });
+  test(`${siuName} parsed siu has not empty strings nor arrays`, () => {
+    const recursiveTest = (obj) => {
+      for (const prop in obj) {
+        if (!obj.hasOwnProperty(prop))
+          continue;
+        if (typeof obj[prop] === "string")
+          expect(obj[prop].length).toBeGreaterThan(0);
+        else {
+          if (Array.isArray(obj[prop]))
+            expect(obj[prop].length).toBeGreaterThan(0);
+          if (typeof obj[prop] === "object" && typeof obj[prop] !== null)
+            recursiveTest(obj[prop]);
+        }
+      }
+    };
+
+    recursiveTest(parsedSIU);
+  });
 
   test(`${siuName} periodo is a non-empty string`, () => {
     parsedSIU.forEach((periodo) => {

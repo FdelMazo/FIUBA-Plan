@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Build & Deploy to Github Pages
     steps:
+      - id: node-to-gh
+        uses: fdelmazo/node-to-gh-action@v2
       - name: Run tests
         run: npm test
         shell: bash 
-      - id: node-to-gh
-        uses: fdelmazo/node-to-gh-action@v2

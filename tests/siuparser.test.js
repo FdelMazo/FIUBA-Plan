@@ -3,12 +3,12 @@ import fs from "node:fs";
 import { parseSIU } from "../src/siuparser";
 
 
-const directoryPath = path.join(path.dirname(__filename), "siu-files", "siu-json");
+const directoryPath = path.join(path.dirname(__filename), "siu-json");
 const siusNames = fs.readdirSync(directoryPath).map((f) => path.parse(f).name);
 
 const sius = siusNames.map((siuName) => {
-  const siuRawDataPath = path.join(path.dirname(__filename), "siu-files", "siu-raw", `${siuName}.js`);
-  const siuJSONPath = path.join(path.dirname(__filename), "siu-files", "siu-json", `${siuName}.json`);
+  const siuRawDataPath = path.join(path.dirname(__filename), "siu-raw", `${siuName}.js`);
+  const siuJSONPath = path.join(path.dirname(__filename), "siu-json", `${siuName}.json`);
 
   const siuRawData = fs.readFileSync(siuRawDataPath, "utf8");
   const siuJSONData = JSON.parse(fs.readFileSync(siuJSONPath, "utf8"));

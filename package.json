@@ -51,7 +51,6 @@
     "@babel/preset-react": "^7.24.1",
     "babel-jest": "^29.7.0",
     "jest": "^27.5.1",
-    "prettier": "3.2.4",
-    "react-test-renderer": "^18.2.0"
+    "prettier": "3.2.4"
   }
 }

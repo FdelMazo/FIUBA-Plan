@@ -100,6 +100,5 @@ export function parseSIU(rawdata) {
     });
   }
   console.debug(result);
-  console.debug(JSON.stringify(result));
   return result;
 }

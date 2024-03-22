@@ -1,4 +1,5 @@
-// En la linea 3292 escapo 'D`ONOFRIO' a 'D\`ONOFRIO'
+// En la linea 3292 se cambia 'D`ONOFRIO' a 'D'ONOFRIO' porque sino
+// se confunde con el template string
 export const siuFedeRaw = `
     0
     FEDERICO del MAZO
@@ -3289,7 +3290,7 @@ Práctica 	Lunes	19:30 a 22:30 	Aula a determinar
 Teórico Práctica Obligatoria 	Jueves	17:30 a 22:30 	Aula a determinar
 Actividad: INSTRUMENTOS Y MEDICIONES ELECTRONICAS (8669)
 Comisión: CURSO: 1
-	Turno: Sin definir Cupo / insc.: 16 / 8 	Instancias: Regularidad Ubicación: Sede Unica Docentes: BERTETTA ADOLFO ANTONIO (Profesor/a Adjunto/a), IUZZOLINO RICARDO JAVIER (Profesor/a Adjunto/a), D\`ONOFRIO ENRIQUE MARIO (Ayudante 1ro/a)
+	Turno: Sin definir Cupo / insc.: 16 / 8 	Instancias: Regularidad Ubicación: Sede Unica Docentes: BERTETTA ADOLFO ANTONIO (Profesor/a Adjunto/a), IUZZOLINO RICARDO JAVIER (Profesor/a Adjunto/a), D'ONOFRIO ENRIQUE MARIO (Ayudante 1ro/a)
 Tipo de clase	Día	Horario	Aula
 Teórico Práctica Obligatoria 	Martes	19:00 a 22:00 	L1
 Teórico Práctica Obligatoria 	Viernes	19:00 a 22:00 	Aula a determinar

@@ -1,7 +1,20 @@
-import { siuAxel, siuFede, siuExactas } from "./siu-files";
+import path from "node:path";
+import fs from "node:fs";
 import { parseSIU } from "../src/siuparser";
 
-const sius = [ siuAxel, siuFede, siuExactas ];
+
+const directoryPath = path.join(path.dirname(__filename), "siu-files", "siu-json");
+const siusNames = fs.readdirSync(directoryPath).map((f) => path.parse(f).name);
+
+const sius = siusNames.map((siuName) => {
+  const siuRawDataPath = path.join(path.dirname(__filename), "siu-files", "siu-raw", `${siuName}.js`);
+  const siuJSONPath = path.join(path.dirname(__filename), "siu-files", "siu-json", `${siuName}.json`);
+
+  const siuRawData = fs.readFileSync(siuRawDataPath, "utf8");
+  const siuJSONData = JSON.parse(fs.readFileSync(siuJSONPath, "utf8"));
+
+  return [siuName, siuRawData, siuJSONData];
+});
 
 describe.each(sius)("essential tests", (siuName, siuRawData, siuJSON) => {
   console.debug = jest.fn(); // Deshabilitar el debugging que se usa en el browser
@@ -46,9 +59,6 @@ describe.each(sius)("essential tests", (siuName, siuRawData, siuJSON) => {
         materia.cursos.forEach((curso) => {
           expect(typeof curso).toBe("string");
           expect(curso.length).toBeGreaterThan(0);
-          // es necesario hacer este regex????? que probablemente 
-          // se rompa (y lo va a hacer) dependiendo de la facultad
-          // expect(curso).toMatch(/\S+-CURSO-?:?\s?\S+/i);
         });
       });
     });

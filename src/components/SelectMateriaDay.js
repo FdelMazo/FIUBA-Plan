@@ -3,6 +3,8 @@ import {
   Button,
   Menu,
   MenuButton,
+  MenuOptionGroup,
+  MenuItemOption,
   MenuList,
   MenuItem
 } from "@chakra-ui/react";
@@ -31,31 +33,33 @@ const SelectMateriaDay = () => {
         borderRadius="md"
         as={Button}
       >
-        Seleccionar dias
+        Filtrar dias
       </MenuButton>
       <MenuList>
-        {days.map((day) => {
-          return (
-            <MenuItem
-              // color="primary.500"
-              // colorScheme="primary"
-              key={days.indexOf(day)}
-              value={days.indexOf(day) + 1}
-              onClick={() => {
-                const dayIndex = days.indexOf(day) + 1;
-
-                if (selectedDays.includes(dayIndex))
-                  setSelectedDays(selectedDays.filter((d) => {
-                    return d != dayIndex;
-                  }));
-                else
-                  setSelectedDays([...selectedDays, dayIndex]);
-              }}
-            >
-              {day}
-            </MenuItem>
-          );
-        })}
+        <MenuOptionGroup 
+          type="checkbox"
+          title="Filtrar materias por dia"
+          defaultValue="true"
+        >
+          {days.map((day, dayIdx) => {
+            return (
+              <MenuItemOption
+                key={dayIdx}
+                value={selectedDays.includes(dayIdx + 1)}
+                onClick={() => {
+                  if (selectedDays.includes(dayIdx + 1))
+                    setSelectedDays(selectedDays.filter((d) => {
+                      return d !== dayIdx + 1;
+                    }));
+                  else
+                    setSelectedDays([...selectedDays, dayIdx + 1]);
+                }}
+              >
+                {day}
+              </MenuItemOption>
+            );
+          })}
+        </MenuOptionGroup>
       </MenuList>
     </Menu>
   );

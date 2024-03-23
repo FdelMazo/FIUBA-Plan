@@ -109,7 +109,7 @@ const MateriasDrawer = (props) => {
             </Button>
           </Box>
 
-          <Box display="flex" gap={2} position="relative">
+          <Flex gap={2} position="relative">
             <Box pt={4} pl={4}>
               <SelectMateriaDay
                 selectedDays={selectedDays}
@@ -118,11 +118,9 @@ const MateriasDrawer = (props) => {
             </Box>
 
             <Box pr={4}>
-              {!!materiasToShow.length && (
-                <SelectMateria materiasToShow={materiasToShow} />
-              )}
+              {<SelectMateria materiasToShow={materiasToShow} />}
             </Box>
-          </Box>
+          </Flex>
 
           <DrawerBody
             style={{

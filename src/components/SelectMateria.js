@@ -80,6 +80,7 @@ const SelectMateria = ({ materiasToShow }) => {
         display={isOpen ? "block" : "none"}
         position="absolute"
         left={4}
+        right={0}
         p={1}
         mt={2}
         mb={2}

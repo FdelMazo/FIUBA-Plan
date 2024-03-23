@@ -32,6 +32,7 @@ import { DataContext } from "../DataContext";
 import SelectCurso from "./SelectCurso";
 import SelectExtra from "./SelectExtra";
 import SelectMateria from "./SelectMateria";
+import SelectMateriaDay from "./SelectMateriaDay";
 import Sugerencias from "./Sugerencias";
 
 const MateriasDrawer = (props) => {
@@ -85,6 +86,10 @@ const MateriasDrawer = (props) => {
           </Box>
 
           <Box pt={4} px={6}>
+            <SelectMateriaDay />
+          </Box>
+
+          <Box px={6}>
             {!!materiasToShow.length && (
               <SelectMateria materiasToShow={materiasToShow} />
             )}

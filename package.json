@@ -46,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "7.21.11",
     "jest": "^27.5.1",
     "prettier": "3.2.4"
   }

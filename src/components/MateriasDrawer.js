@@ -49,20 +49,44 @@ const MateriasDrawer = (props) => {
     getters,
     removeHorariosSIU,
   } = React.useContext(DataContext);
+  const [selectedDays, setSelectedDays] = React.useState([0, 1, 2, 3, 4, 5, 6]);
+  const [materiasToShow, setMateriasToShow] = React.useState([]);
+  const permalinkToast = React.useRef();
   const { toggleColorMode } = useColorMode();
   const toast = useToast();
-  const permalinkToast = React.useRef();
   const { onCopy } = useClipboard(permalink);
 
-  const materiasToShow = React.useMemo(() => {
-    if (!horariosSIU) return [];
+  const isMateriaSelectedByDay = (materia) => {
+    let isMateriaSelected = false;
 
-    const codigos = horariosSIU.materias.map((m) => m.codigo);
+    for (const curso of horariosSIU.cursos) {
+      if (curso.materia !== materia.codigo)
+        continue; 
+
+      for (const clase of curso.clases)
+        if (selectedDays.includes(clase.dia)) {
+          isMateriaSelected = true;
+          break;
+        }
+
+      if (isMateriaSelected)
+        break;
+    }
+
+    return isMateriaSelected;
+  };
+
+  React.useEffect(() => {
+    if (!horariosSIU) return;
+
+    const codigos = horariosSIU.materias
+      .filter(isMateriaSelectedByDay)
+      .map((materia) => materia.codigo);
     const codigosUnicos = [...new Set(codigos)].sort();
     const materias = codigosUnicos.map(getters.getMateria);
 
-    return materias;
-  }, [getters.getMateria, horariosSIU]);
+    setMateriasToShow(materias);
+  }, [getters.getMateria, horariosSIU, selectedDays]);
 
   return (
     <LightMode>
@@ -85,14 +109,19 @@ const MateriasDrawer = (props) => {
             </Button>
           </Box>
 
-          <Box pt={4} px={6}>
-            <SelectMateriaDay />
-          </Box>
+          <Box display="flex" gap={2} position="relative">
+            <Box pt={4} pl={4}>
+              <SelectMateriaDay
+                selectedDays={selectedDays}
+                setSelectedDays={setSelectedDays}
+              />
+            </Box>
 
-          <Box px={6}>
-            {!!materiasToShow.length && (
-              <SelectMateria materiasToShow={materiasToShow} />
-            )}
+            <Box pr={4}>
+              {!!materiasToShow.length && (
+                <SelectMateria materiasToShow={materiasToShow} />
+              )}
+            </Box>
           </Box>
 
           <DrawerBody

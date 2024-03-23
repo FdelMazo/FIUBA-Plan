@@ -78,9 +78,12 @@ const SelectMateria = ({ materiasToShow }) => {
       <List
         {...getMenuProps()}
         display={isOpen ? "block" : "none"}
+        position="absolute"
+        left={4}
         p={1}
-        mt={4}
+        mt={2}
         mb={2}
+        mr={4}
         borderWidth={1}
         borderRadius={5}
         borderColor="primary.500"

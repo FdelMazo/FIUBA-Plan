@@ -6,34 +6,31 @@ import {
   MenuOptionGroup,
   MenuItemOption,
   MenuList,
-  MenuItem
+  Text,
 } from "@chakra-ui/react";
 
-const SelectMateriaDay = () => {
-  const days = [
-    "Lunes",
-    "Martes",
-    "Miercoles",
-    "Jueves",
-    "Viernes",
-    "Sabado"
-  ];
-  const [selectedDays, setSelectedDays] = React.useState([1, 2, 3, 4, 5, 6]);
+const SEMANA = [
+  "Lunes",
+  "Martes",
+  "Miércoles",
+  "Jueves",
+  "Viernes",
+  "Sábado",
+];
 
-  React.useEffect(() => {
-    console.log(selectedDays);
-  }, [selectedDays]);
-
+const SelectMateriaDay = ({ selectedDays, setSelectedDays }) => {
   return (
     <Menu isLazy closeOnSelect={false}>
       <MenuButton
         colorScheme="primary"
-        color="primary.600"
+        fontWeight="300"
+        _hover={{ bg:"primary.100", color: "gray.800" }}
         variant="outline"
         borderRadius="md"
+        px={2}
         as={Button}
       >
-        Filtrar dias
+        Filtros
       </MenuButton>
       <MenuList>
         <MenuOptionGroup 
@@ -41,18 +38,18 @@ const SelectMateriaDay = () => {
           title="Filtrar materias por dia"
           defaultValue="true"
         >
-          {days.map((day, dayIdx) => {
+          {SEMANA.map((day, dayIndex) => {
             return (
               <MenuItemOption
-                key={dayIdx}
-                value={selectedDays.includes(dayIdx + 1)}
+                key={dayIndex + 1}
+                value={selectedDays.includes(dayIndex + 1)}
                 onClick={() => {
-                  if (selectedDays.includes(dayIdx + 1))
+                  if (selectedDays.includes(dayIndex + 1))
                     setSelectedDays(selectedDays.filter((d) => {
-                      return d !== dayIdx + 1;
+                      return d !== dayIndex + 1;
                     }));
                   else
-                    setSelectedDays([...selectedDays, dayIdx + 1]);
+                    setSelectedDays([...selectedDays, dayIndex + 1]);
                 }}
               >
                 {day}

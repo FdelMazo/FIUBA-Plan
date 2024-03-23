@@ -4,7 +4,7 @@ import { parseSIU } from "../src/siuparser";
 
 const directoryPath = path.dirname(__filename);
 const siusNames = fs
-  .readdirSync(path.join(directoryPath), "siu-json")
+  .readdirSync(path.join(directoryPath, "siu-json"))
   .map((f) => path.parse(f).name);
 
 const sius = siusNames.map((siuName) => {

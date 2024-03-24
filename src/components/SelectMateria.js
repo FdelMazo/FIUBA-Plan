@@ -27,11 +27,25 @@ const SelectMateria = ({ materiasToShow, drawerRef }) => {
   const { getters, toggleMateria, selectedMaterias } =
     React.useContext(DataContext);
   const [search, setSearch] = React.useState("");
-  const [filteredMaterias, setFilteredMaterias] =
-    React.useState(materiasToShow);
+  const [selectedDays, setSelectedDays] = React.useState([1, 2, 3, 4, 5, 6]);
+
+  const filterDays = React.useCallback(
+    (materia) => {
+      for (const curso of getters.getCursosMateria(materia.codigo)) {
+        for (const clase of curso.clases) {
+          if (selectedDays.includes(clase.dia)) {
+            return true;
+          }
+        }
+      }
+
+      return false;
+    },
+    [getters, selectedDays],
+  );
 
   const inputItems = React.useMemo(() => {
-    return filteredMaterias.filter(
+    return materiasToShow.filter(filterDays).filter(
       (item) =>
         item.nombre
           .toLowerCase()
@@ -39,7 +53,7 @@ const SelectMateria = ({ materiasToShow, drawerRef }) => {
           .replace(/[\u0300-\u036f]/g, "")
           .includes(search) || item.codigo.includes(search),
     );
-  }, [filteredMaterias, search]);
+  }, [filterDays, materiasToShow, search]);
 
   const {
     isOpen,
@@ -95,18 +109,20 @@ const SelectMateria = ({ materiasToShow, drawerRef }) => {
                 border="none"
                 as={Button}
                 rightIcon={
-                  <Tooltip placement="top" label="Filtrar materias">
+                  <Tooltip placement="top" label="Filtrar materias por día">
                     <Icon boxSize={5} mr={2} viewBox="0 0 24 24">
-                      <svg
-                        height="200px"
-                        width="200px"
-                        stroke="currentColor"
-                        fill="currentColor"
-                        strokeWidth="0"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path fill="none" d="M0 0h24v24H0z"></path>
-                        <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"></path>
+                      <svg fill="currentColor">
+                        {selectedDays.length < 6 ? (
+                          <>
+                            <path fill="none" d="M0 0h24m0 24H0" />
+                            <path d="M4.25 5.61C6.27 8.2 10 13 10 13v6c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-6s3.72-4.8 5.74-7.39A.998.998 0 0 0 18.95 4H5.04c-.83 0-1.3.95-.79 1.61z" />
+                          </>
+                        ) : (
+                          <>
+                            <path fill="none" d="M0 0h24v24H0V0z" />
+                            <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z" />
+                          </>
+                        )}
                       </svg>
                     </Icon>
                   </Tooltip>
@@ -115,33 +131,13 @@ const SelectMateria = ({ materiasToShow, drawerRef }) => {
               <Portal containerRef={drawerRef}>
                 <MenuList color="black">
                   <MenuOptionGroup
-                    defaultValue={[1, 2, 3, 4, 5, 6]}
                     type="checkbox"
-                    onChange={(selectedDays) => {
-                      setFilteredMaterias(
-                        materiasToShow.filter((materia) => {
-                          let isMateriaSelected = false;
-
-                          for (const curso of getters.getCursosMateria(
-                            materia.codigo,
-                          )) {
-                            for (const clase of curso.clases)
-                              if (selectedDays.includes(clase.dia)) {
-                                isMateriaSelected = true;
-                                break;
-                              }
-
-                            if (isMateriaSelected) break;
-                          }
-
-                          return isMateriaSelected;
-                        }),
-                      );
-                    }}
+                    value={selectedDays}
+                    onChange={setSelectedDays}
                   >
-                    {SEMANA.map((day, dayIndex) => {
+                    {SEMANA.map((day, index) => {
                       return (
-                        <MenuItemOption key={dayIndex + 1} value={dayIndex + 1}>
+                        <MenuItemOption key={index + 1} value={index + 1}>
                           {day}
                         </MenuItemOption>
                       );
@@ -158,7 +154,7 @@ const SelectMateria = ({ materiasToShow, drawerRef }) => {
         {...getMenuProps()}
         display={isOpen ? "block" : "none"}
         p={1}
-        mt={2}
+        mt={4}
         mb={2}
         borderWidth={1}
         borderRadius={5}
@@ -168,8 +164,8 @@ const SelectMateria = ({ materiasToShow, drawerRef }) => {
           overflowY: "scroll",
         }}
       >
-        {filteredMaterias.length ? (
-          filteredMaterias
+        {inputItems.length ? (
+          inputItems
             .sort((a, b) => a.codigo > b.codigo)
             .map((materia, index) => (
               <Box
@@ -184,7 +180,6 @@ const SelectMateria = ({ materiasToShow, drawerRef }) => {
                 cursor="pointer"
                 onClick={() => toggleMateria(materia.codigo)}
                 key={materia.codigo}
-                w="100%"
               >
                 <li
                   {...getItemProps({

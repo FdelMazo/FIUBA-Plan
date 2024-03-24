@@ -85,7 +85,7 @@ const MateriasDrawer = (props) => {
             </Button>
           </Box>
 
-          <Box pr={4} px={6}>
+          <Box px={6}>
             <SelectMateria
               materiasToShow={materiasToShow}
               drawerRef={drawerRef}

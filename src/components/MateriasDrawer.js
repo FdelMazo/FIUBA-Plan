@@ -32,7 +32,6 @@ import { DataContext } from "../DataContext";
 import SelectCurso from "./SelectCurso";
 import SelectExtra from "./SelectExtra";
 import SelectMateria from "./SelectMateria";
-import SelectMateriaDay from "./SelectMateriaDay";
 import Sugerencias from "./Sugerencias";
 
 const MateriasDrawer = (props) => {
@@ -49,44 +48,21 @@ const MateriasDrawer = (props) => {
     getters,
     removeHorariosSIU,
   } = React.useContext(DataContext);
-  const [selectedDays, setSelectedDays] = React.useState([0, 1, 2, 3, 4, 5, 6]);
-  const [materiasToShow, setMateriasToShow] = React.useState([]);
   const permalinkToast = React.useRef();
+  const drawerRef = React.useRef();
   const { toggleColorMode } = useColorMode();
   const toast = useToast();
   const { onCopy } = useClipboard(permalink);
 
-  const isMateriaSelectedByDay = (materia) => {
-    let isMateriaSelected = false;
+  const materiasToShow = React.useMemo(() => {
+    if (!horariosSIU) return [];
 
-    for (const curso of horariosSIU.cursos) {
-      if (curso.materia !== materia.codigo)
-        continue; 
-
-      for (const clase of curso.clases)
-        if (selectedDays.includes(clase.dia)) {
-          isMateriaSelected = true;
-          break;
-        }
-
-      if (isMateriaSelected)
-        break;
-    }
-
-    return isMateriaSelected;
-  };
-
-  React.useEffect(() => {
-    if (!horariosSIU) return;
-
-    const codigos = horariosSIU.materias
-      .filter(isMateriaSelectedByDay)
-      .map((materia) => materia.codigo);
+    const codigos = horariosSIU.materias.map((m) => m.codigo);
     const codigosUnicos = [...new Set(codigos)].sort();
     const materias = codigosUnicos.map(getters.getMateria);
 
-    setMateriasToShow(materias);
-  }, [getters.getMateria, horariosSIU, selectedDays]);
+    return materias;
+  }, [getters.getMateria, horariosSIU]);
 
   return (
     <LightMode>
@@ -109,25 +85,19 @@ const MateriasDrawer = (props) => {
             </Button>
           </Box>
 
-          <Flex gap={2} position="relative">
-            <Box pt={4} pl={4}>
-              <SelectMateriaDay
-                selectedDays={selectedDays}
-                setSelectedDays={setSelectedDays}
-              />
-            </Box>
-
-            <Box pr={4}>
-              {<SelectMateria materiasToShow={materiasToShow} />}
-            </Box>
-          </Flex>
+          <Box pr={4} px={6}>
+            <SelectMateria
+              materiasToShow={materiasToShow}
+              drawerRef={drawerRef}
+            />
+          </Box>
 
           <DrawerBody
             style={{
               overflowY: "auto",
               scrollbarWidth: "none",
             }}
-            my={4}
+            ref={drawerRef}
           >
             {selectedMaterias.map((m) => (
               <SelectCurso codigo={m} key={m} />

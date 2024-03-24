@@ -48,9 +48,10 @@ const MateriasDrawer = (props) => {
     getters,
     removeHorariosSIU,
   } = React.useContext(DataContext);
+  const permalinkToast = React.useRef();
+  const drawerRef = React.useRef();
   const { toggleColorMode } = useColorMode();
   const toast = useToast();
-  const permalinkToast = React.useRef();
   const { onCopy } = useClipboard(permalink);
 
   const materiasToShow = React.useMemo(() => {
@@ -84,10 +85,11 @@ const MateriasDrawer = (props) => {
             </Button>
           </Box>
 
-          <Box pt={4} px={6}>
-            {!!materiasToShow.length && (
-              <SelectMateria materiasToShow={materiasToShow} />
-            )}
+          <Box px={6}>
+            <SelectMateria
+              materiasToShow={materiasToShow}
+              drawerRef={drawerRef}
+            />
           </Box>
 
           <DrawerBody
@@ -95,7 +97,7 @@ const MateriasDrawer = (props) => {
               overflowY: "auto",
               scrollbarWidth: "none",
             }}
-            my={4}
+            ref={drawerRef}
           >
             {selectedMaterias.map((m) => (
               <SelectCurso codigo={m} key={m} />

@@ -45,10 +45,13 @@ const ManualUploadModal = ({ isOpen, onClose }) => {
         <ModalCloseButton />
         <ModalBody>
           <Text mb={3}>
-            Esta aplicación funciona utilizando la oferta horaria del SIU
-            Guaraní de cada usuario.
-            <br />
-            Para importarla seguí los siguientes pasos:
+            Lamentablemente, <strong>FIUBA</strong> ya no ofrece los horarios de
+            las materias, por lo que cada usuario tiene que importar manualmente
+            sus horarios desde el SIU.
+          </Text>
+
+          <Text mb={3}>
+            Para importar tu oferta horaria seguí estos pasos:
           </Text>
           <OrderedList my={2}>
             <ListItem>
@@ -155,8 +158,22 @@ const ManualUploadModal = ({ isOpen, onClose }) => {
             </Text>
           )}
           <Text fontSize="sm" mt={2}>
-            (Este feature es nuevo y experimental, si no funciona como esperás
-            hacemelo saber!)
+            (Este feature es nuevo y experimental, si no funciona como esperás{" "}
+            <Link
+              isExternal
+              _hover={{
+                _light: {
+                  color: "primary.500",
+                },
+                _dark: {
+                  color: "primary.400",
+                },
+              }}
+              href="https://github.com/FdelMazo/FIUBA-Map/issues/new"
+            >
+              hacemelo saber!
+            </Link>
+            )
           </Text>
         </ModalBody>
       </ModalContent>

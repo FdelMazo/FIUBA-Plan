@@ -46,7 +46,7 @@ const ManualUploadModal = ({ isOpen, onClose }) => {
         <ModalBody>
           <Text mb={3}>
             Lamentablemente, <strong>FIUBA</strong> ya no ofrece los horarios de
-            las materias, por lo que cada usuario tiene que importar manualmente
+            las materias públicamente, por lo que cada usuario tiene que importar manualmente
             sus horarios desde el SIU.
           </Text>
 

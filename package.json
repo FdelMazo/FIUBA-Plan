@@ -16,7 +16,7 @@
     "moment": "^2.29.4",
     "pako": "^2.1.0",
     "react": "^18.2.0",
-    "react-big-calendar": "^1.11.1",
+    "react-big-calendar": "^1.13.1",
     "react-dom": "^18.2.0",
     "react-hotkeys-hook": "^4.4.0",
     "react-scripts": "^5.0.1",

@@ -158,22 +158,10 @@ const ManualUploadModal = ({ isOpen, onClose }) => {
             </Text>
           )}
           <Text fontSize="sm" mt={2}>
-            (Este feature es nuevo y experimental, si no funciona como esperás{" "}
-            <Link
-              isExternal
-              _hover={{
-                _light: {
-                  color: "primary.500",
-                },
-                _dark: {
-                  color: "primary.400",
-                },
-              }}
-              href="https://github.com/FdelMazo/FIUBA-Map/issues/new"
-            >
-              hacemelo saber!
-            </Link>
-            )
+            Este feature es nuevo y experimental, si no funciona como esperás
+            hacemelo saber! Mandame un mensaje a{" "}
+            <Code fontSize="xs">fdelmazo at fi.uba.ar</Code> con el copy-paste
+            del SIU que intentaste importar.
           </Text>
         </ModalBody>
       </ModalContent>

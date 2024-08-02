@@ -158,7 +158,7 @@ const ManualUploadModal = ({ isOpen, onClose }) => {
             </Text>
           )}
           <Text fontSize="sm" mt={2}>
-            Este feature es nuevo y experimental, si no funciona como esperás
+            Este feature es nuevo y experimental; si no funciona como esperás
             hacemelo saber! Mandame un mensaje a{" "}
             <Code fontSize="xs">fdelmazo at fi.uba.ar</Code> con el copy-paste
             del SIU que intentaste importar.

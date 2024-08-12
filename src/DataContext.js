@@ -9,9 +9,11 @@ import { base64tojson, jsontobase64 } from "./utils";
 // Si tengo un permalink, parseo su info y reseteo la URL
 let permalinksavedata = null;
 if (window.location.hash) {
-  permalinksavedata = base64tojson(window.location.hash.slice(1));
-  // eslint-disable-next-line no-restricted-globals
-  history.pushState("", "", window.location.pathname + window.location.search);
+  try {
+    permalinksavedata = base64tojson(window.location.hash.slice(1));
+    // eslint-disable-next-line no-restricted-globals
+    history.pushState("", "", window.location.pathname + window.location.search);
+  } catch (error) {}
 }
 
 // Si el usuario tiene una sesión de cuando la aplicación tenía horarios estaticos
@@ -405,7 +407,7 @@ const Data = () => {
     applyHorariosSIU,
     removeHorariosSIU,
     getters,
-    getPeriodosSIU,
+    getPeriodosSIU
   };
 };
 

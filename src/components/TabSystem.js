@@ -2,6 +2,7 @@ import { AddIcon, SmallCloseIcon } from "@chakra-ui/icons";
 import {
   Alert,
   AlertDescription,
+  AlertIcon,
   AlertTitle,
   Box,
   Button,
@@ -22,7 +23,7 @@ import {
   Tabs,
   Text,
   useTab,
-  useToast,
+  useToast
 } from "@chakra-ui/react";
 import "moment/locale/es";
 import React from "react";
@@ -38,18 +39,19 @@ const TabSystem = (props) => {
     setReadOnly,
     horariosSIU,
   } = React.useContext(DataContext);
-  const toast = useToast();
+  const toastPermalink = useToast();
+  const toastError = useToast();  
   const inputref = React.useRef(null);
+  const [readOnlyToastClosed, setReadOnlyToastClosed] = React.useState(false);
 
-  const [readonlytoastclosed, setReadonlytoastclosed] = React.useState(false);
-  if (readOnly && !toast.isActive("readonly") && !readonlytoastclosed) {
-    toast({
+  if (readOnly && !toastPermalink.isActive("readonly") && !readOnlyToastClosed) {
+    toastPermalink({
       id: "readonly",
       duration: null,
       isClosable: false,
       position: "bottom-start",
       onCloseComplete: () => {
-        setReadonlytoastclosed(true);
+        setReadOnlyToastClosed(true);
       },
       render: () => (
         <LightMode>
@@ -65,7 +67,7 @@ const TabSystem = (props) => {
               color="gray.800"
               size="sm"
               onClick={() => {
-                toast.closeAll();
+                toastPermalink.closeAll();
               }}
               position="absolute"
               insetEnd={1}
@@ -87,13 +89,33 @@ const TabSystem = (props) => {
               variant="outline"
               onClick={() => {
                 setReadOnly(false);
-                toast.closeAll();
+                toastPermalink.closeAll();
               }}
             >
               Guardar este plan
             </Button>
           </Alert>
         </LightMode>
+      ),
+    });
+  }
+
+  if (window.location.hash.length && !toastError.isActive("errorToast")) {
+    // eslint-disable-next-line no-restricted-globals
+    history.pushState("", "", window.location.origin);
+
+    toastError({
+      id: "errorToast",
+      duration: null,
+      render: () => (
+        <Alert status="error" variant="solid">
+          <AlertIcon />
+          <Box >
+            <AlertTitle>El plan compartido con el permalink, no pudo ser cargado correctamente</AlertTitle>
+            <AlertDescription>Si estas desde un celular probalo con la compu!</AlertDescription>
+          </Box>
+          <CloseButton alignSelf="flex-start" onClick={() => toastError.closeAll("errorToast")} />
+        </Alert>
       ),
     });
   }

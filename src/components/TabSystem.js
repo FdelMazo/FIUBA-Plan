@@ -111,8 +111,8 @@ const TabSystem = (props) => {
         <Alert status="error" variant="solid">
           <AlertIcon />
           <Box >
-            <AlertTitle>El plan compartido con el permalink, no pudo ser cargado correctamente</AlertTitle>
-            <AlertDescription>Si estas desde un celular probalo con la compu!</AlertDescription>
+            <AlertTitle>El plan no se pudo cargar correctamente</AlertTitle>
+            <AlertDescription>Si estás desde un celular, probalo en la compu!</AlertDescription>
           </Box>
           <CloseButton alignSelf="flex-start" onClick={() => toastError.closeAll("errorToast")} />
         </Alert>

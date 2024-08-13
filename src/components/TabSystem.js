@@ -38,6 +38,8 @@ const TabSystem = (props) => {
     readOnly,
     setReadOnly,
     horariosSIU,
+    errorPermalink,
+    setErrorPermalink,
   } = React.useContext(DataContext);
   const toastPermalink = useToast();
   const toastError = useToast();  
@@ -100,16 +102,16 @@ const TabSystem = (props) => {
     });
   }
 
-  if (window.location.hash.length && !toastError.isActive("errorToast")) {
-    // eslint-disable-next-line no-restricted-globals
-    history.pushState("", "", window.location.origin);
-
+  if (errorPermalink && !toastError.isActive("errorToast")) {
     toastError({
       id: "errorToast",
-      position: "bottom-start"
-      duration: null,
+      position: "bottom-start",
+      duration: 5000,
+      onCloseComplete: () => {
+        setErrorPermalink(false);
+      },
       render: () => (
-        <Alert status="error" variant="solid">
+          <Alert status="error" variant="subtle">
           <AlertIcon />
           <Box >
             <AlertTitle>El plan no se pudo cargar correctamente</AlertTitle>

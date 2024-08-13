@@ -106,6 +106,7 @@ const TabSystem = (props) => {
 
     toastError({
       id: "errorToast",
+      position: "bottom-start"
       duration: null,
       render: () => (
         <Alert status="error" variant="solid">

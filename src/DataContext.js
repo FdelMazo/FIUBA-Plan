@@ -15,10 +15,16 @@ if (window.location.hash) {
 }
 
 // Si el usuario tiene una sesión de cuando la aplicación tenía horarios estaticos
-// en vez de importados del SIU, le limpiamos la data
-const json = JSON.parse(window.localStorage.getItem("fiubaplan"));
-if (json && json["cuatrimestre"]) {
-  localStorage.setItem("fiubaplan", JSON.stringify({}));
+// en vez de importados del SIU (la key `cuatrimestre`), le limpiamos la data
+let json = null;
+try {
+  json = JSON.parse(window.localStorage.getItem("fiubaplan"));
+} catch (e) {
+  console.warn("Error al parsear el JSON del localStorage", e);
+} finally {
+  if (!json || json["cuatrimestre"]) {
+    window.localStorage.setItem("fiubaplan", JSON.stringify({}));
+  }
 }
 
 export const DataContext = React.createContext();

@@ -8,13 +8,20 @@ import { DataProvider } from "./DataContext";
 import customTheme from "./theme";
 
 const App = () => {
+  // const {setErrorToast} = React.useContext(DataContext);
+
   return (
     <ErrorBoundary
-      fallbackRender={({ error }) => {
+      fallbackRender={({ error, resetErrorBoundary }) => {
         console.warn(
           "Hubo un error inesperado. Se limpian los datos guardados",
-          error,
+          error
         );
+        // Llamamos resetErrorBoundary() para resetear el error boundary y volver
+        // a intentar el render
+        resetErrorBoundary();
+      }}
+      onReset={() => {
         localStorage.setItem("fiubaplan", JSON.stringify({}));
       }}
     >
@@ -33,5 +40,5 @@ const root = ReactDOM.createRoot(container);
 root.render(
   <ChakraProvider theme={customTheme}>
     <App />
-  </ChakraProvider>,
+  </ChakraProvider>
 );

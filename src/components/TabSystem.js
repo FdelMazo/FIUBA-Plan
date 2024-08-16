@@ -111,7 +111,7 @@ const TabSystem = (props) => {
         setErrorPermalink(false);
       },
       render: () => (
-          <Alert status="error" variant="subtle">
+          <Alert status="error" variant="solid">
           <AlertIcon />
           <Box >
             <AlertTitle>El plan no se pudo cargar correctamente</AlertTitle>

@@ -8,8 +8,6 @@ import { DataProvider } from "./DataContext";
 import customTheme from "./theme";
 
 const App = () => {
-  // const {setErrorToast} = React.useContext(DataContext);
-
   return (
     <ErrorBoundary
       fallbackRender={({ error, resetErrorBoundary }) => {

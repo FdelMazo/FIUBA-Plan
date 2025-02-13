@@ -20,7 +20,7 @@ import {
 import React from "react";
 import { DataContext } from "../DataContext";
 
-const ManualUploadModal = ({ isOpen, onClose }) => {
+const ManualUploadModal = ({ isOpen, onClose, onSkip }) => {
   const toast = useToast();
   const [error, setError] = React.useState("");
   const [siuData, setSiuData] = React.useState("");
@@ -159,7 +159,10 @@ const ManualUploadModal = ({ isOpen, onClose }) => {
             <Button
               flex={1}
               variant="outline"
-              onClick={onClose}
+              onClick={() => {
+                onSkip();
+                onClose();
+              }}
             >
               Seguir sin importar
             </Button>

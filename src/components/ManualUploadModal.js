@@ -20,13 +20,24 @@ import {
 import React from "react";
 import { DataContext } from "../DataContext";
 
-const ManualUploadModal = ({ isOpen, onClose, onSkip }) => {
+const ManualUploadModal = ({ isOpen, onClose, onSkip, setSkipSIU }) => {
   const toast = useToast();
   const [error, setError] = React.useState("");
   const [siuData, setSiuData] = React.useState("");
   const [periodosOptions, setPeriodosOptions] = React.useState([]);
   const [selectedPeriod, setSelectedPeriod] = React.useState(null);
   const { applyHorariosSIU, getPeriodosSIU } = React.useContext(DataContext);
+
+  const handleSuccessfulUpload = () => {
+    setSkipSIU(false);
+    onClose();
+    toast({
+      title: "Horarios del SIU aplicados",
+      status: "success",
+      duration: 2000,
+      isClosable: true,
+    });
+  };
 
   return (
     <Modal
@@ -116,13 +127,7 @@ const ManualUploadModal = ({ isOpen, onClose, onSkip }) => {
                     (p) => p.periodo === selectedPeriod
                   );
                   applyHorariosSIU(periodo);
-                  onClose();
-                  toast({
-                    title: "Horarios del SIU aplicados",
-                    status: "success",
-                    duration: 2000,
-                    isClosable: true,
-                  });
+                  handleSuccessfulUpload();
                 }}
               >
                 Cargar horarios
@@ -139,13 +144,7 @@ const ManualUploadModal = ({ isOpen, onClose, onSkip }) => {
                       setPeriodosOptions(periodos);
                     } else {
                       applyHorariosSIU(periodos[0]);
-                      onClose();
-                      toast({
-                        title: "Horarios del SIU aplicados",
-                        status: "success",
-                        duration: 2000,
-                        isClosable: true,
-                      });
+                      handleSuccessfulUpload();
                     }
                   } catch (e) {
                     setError(e.message);

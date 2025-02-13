@@ -53,11 +53,14 @@ const Body = () => {
         onClose={onCloseDrawer}
         useAgenda={useAgenda}
         setUseAgenda={setUseAgenda}
+        skipSIU={skipSIU}
+        onOpenModal={onToggleModal}
       />
       <ManualUploadModal 
         isOpen={isOpenModal} 
         onClose={onCloseModal}
         onSkip={() => setSkipSIU(true)}
+        setSkipSIU={setSkipSIU}
       />
 
       {isChristmasTime && <Snowfall color="lavender" />}

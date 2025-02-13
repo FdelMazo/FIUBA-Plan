@@ -15,6 +15,7 @@ import {
   Text,
   Textarea,
   useToast,
+  Flex,
 } from "@chakra-ui/react";
 import React from "react";
 import { DataContext } from "../DataContext";
@@ -103,55 +104,67 @@ const ManualUploadModal = ({ isOpen, onClose }) => {
               ))}
             </Select>
           )}
-          {periodosOptions.length > 0 ? (
-            <Button
-              w="100%"
-              colorScheme="primary"
-              isDisabled={!selectedPeriod}
-              onClick={() => {
-                const periodo = periodosOptions.find(
-                  (p) => p.periodo === selectedPeriod
-                );
-                applyHorariosSIU(periodo);
-                onClose();
-                toast({
-                  title: "Horarios del SIU aplicados",
-                  status: "success",
-                  duration: 2000,
-                  isClosable: true,
-                });
-              }}
-            >
-              Aplicar horarios
-            </Button>
-          ) : (
-            <Button
-              w="100%"
-              colorScheme="primary"
-              isDisabled={!siuData}
-              onClick={() => {
-                try {
-                  const periodos = getPeriodosSIU(siuData);
-                  if (periodos.length > 1) {
-                    setPeriodosOptions(periodos);
-                  } else {
-                    applyHorariosSIU(periodos[0]);
-                    onClose();
-                    toast({
-                      title: "Horarios del SIU aplicados",
-                      status: "success",
-                      duration: 2000,
-                      isClosable: true,
-                    });
+
+          <Flex gap={4} my={4}>
+            {periodosOptions.length > 0 ? (
+              <Button
+                flex={1}
+                colorScheme="primary"
+                isDisabled={!selectedPeriod}
+                onClick={() => {
+                  const periodo = periodosOptions.find(
+                    (p) => p.periodo === selectedPeriod
+                  );
+                  applyHorariosSIU(periodo);
+                  onClose();
+                  toast({
+                    title: "Horarios del SIU aplicados",
+                    status: "success",
+                    duration: 2000,
+                    isClosable: true,
+                  });
+                }}
+              >
+                Cargar horarios
+              </Button>
+            ) : (
+              <Button
+                flex={1}
+                colorScheme="primary"
+                isDisabled={!siuData}
+                onClick={() => {
+                  try {
+                    const periodos = getPeriodosSIU(siuData);
+                    if (periodos.length > 1) {
+                      setPeriodosOptions(periodos);
+                    } else {
+                      applyHorariosSIU(periodos[0]);
+                      onClose();
+                      toast({
+                        title: "Horarios del SIU aplicados",
+                        status: "success",
+                        duration: 2000,
+                        isClosable: true,
+                      });
+                    }
+                  } catch (e) {
+                    setError(e.message);
                   }
-                } catch (e) {
-                  setError(e.message);
-                }
-              }}
+                }}
+              >
+                Cargar horarios
+              </Button>
+            )}
+
+            <Button
+              flex={1}
+              variant="outline"
+              onClick={onClose}
             >
-              Cargar horarios
+              Seguir sin importar
             </Button>
-          )}
+          </Flex>
+
           {error && (
             <Text size="sm" color="tomato">
               {error}

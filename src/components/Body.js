@@ -57,17 +57,27 @@ const Body = () => {
 
       {isChristmasTime && <Snowfall color="lavender" />}
       <Calendar events={events} useAgenda={useAgenda} />
-      
-      {/* Contenedor para los botones flotantes */}
-      <Box position="absolute" right={10} bottom={10} display="flex" flexDirection="column" gap={2}>
-        {/* Botón de Cargar SIU */}
-        <Tooltip label="Cargar horarios del SIU" hasArrow placement="left">
-          <IconButton
-            borderColor="drawerbg"
-            borderWidth={2}
-            icon={
+      <Tooltip
+        label={horariosSIU ? "Agregar Materias" : "Cargar horarios del SIU"}
+        hasArrow
+        placement="top"
+      >
+        <IconButton
+          position="absolute"
+          right={10}
+          bottom={10}
+          borderColor="drawerbg"
+          borderWidth={2}
+          icon={
+            horariosSIU ? (
+              <AddIcon fontWeight="bold" color="drawerbg" />
+            ) : (
               <Icon viewBox="0 0 268 268" boxSize={8}>
-                <g transform="translate(0,268) scale(0.100000,-0.100000)" fill="black" stroke="none">
+                <g
+                  transform="translate(0,268) scale(0.100000,-0.100000)"
+                  fill="black"
+                  stroke="none"
+                >
                   <path
                     d="M360 1976 c-87 -23 -166 -89 -211 -178 -33 -64 -38 -185 -10 -259 30
 -79 88 -141 168 -181 l65 -32 212 -5 c229 -7 242 -10 285 -70 51 -72 47 -161
@@ -89,25 +99,15 @@ c0 -142 5 -285 11 -318 39 -217 230 -384 458 -400 229 -17 444 128 511 343 19
                   <path d="M1240 1185 l0 -485 130 0 130 0 0 485 0 485 -130 0 -130 0 0 -485z" />
                 </g>
               </Icon>
-            }
-            onClick={onToggleModal}
-            colorScheme="primary"
-            aria-label="Cargar horarios del SIU"
-          />
-        </Tooltip>
-
-        {/* Botón de Agregar Materias */}
-        <Tooltip label="Agregar Materias" hasArrow placement="left">
-          <IconButton
-            borderColor="drawerbg"
-            borderWidth={2}
-            icon={<AddIcon fontWeight="bold" color="drawerbg" />}
-            onClick={onToggleDrawer}
-            colorScheme="primary"
-            aria-label="Agregar Materias"
-          />
-        </Tooltip>
-      </Box>
+            )
+          }
+          onClick={horariosSIU ? onToggleDrawer : onToggleModal}
+          colorScheme="primary"
+          aria-label={
+            horariosSIU ? "Agregar Materias" : "Cargar horarios del SIU"
+          }
+        />
+      </Tooltip>
     </Box>
   );
 };

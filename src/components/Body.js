@@ -38,7 +38,7 @@ const Body = () => {
     onClose: onCloseModal,
   } = useDisclosure();
 
-  useHotkeys("esc", horariosSIU ? onToggleDrawer : onToggleModal, {
+  useHotkeys("esc", horariosSIU || skipSIU ? onToggleDrawer : onToggleModal, {
     enableOnFormTags: true,
   });
 
@@ -67,7 +67,7 @@ const Body = () => {
       <Calendar events={events} useAgenda={useAgenda} />
       
       <Box position="absolute" right={10} bottom={10} display="flex" flexDirection="column" gap={2}>
-        {!horariosSIU && !skipSIU && (
+        {(!horariosSIU && !skipSIU) ? (
           <Tooltip label="Cargar horarios del SIU" hasArrow placement="left">
             <IconButton
               borderColor="drawerbg"
@@ -102,9 +102,7 @@ c0 -142 5 -285 11 -318 39 -217 230 -384 458 -400 229 -17 444 128 511 343 19
               aria-label="Cargar horarios del SIU"
             />
           </Tooltip>
-        )}
-
-        {(horariosSIU || skipSIU) && (
+        ) : (
           <Tooltip label="Agregar Materias" hasArrow placement="left">
             <IconButton
               borderColor="drawerbg"

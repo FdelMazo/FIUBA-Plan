@@ -75,7 +75,6 @@ const MateriasDrawer = (props) => {
             {skipSIU ? (
               <Button
                 w="100%"
-                rightIcon={<CalendarIcon />}
                 colorScheme="primary"
                 onClick={() => {
                   onClose();

@@ -116,7 +116,7 @@ const ManualUploadModal = ({ isOpen, onClose, onSkip, setSkipSIU }) => {
             </Select>
           )}
 
-          <Flex gap={4} my={4}>
+          <Flex gap={2} my={4}>
             {periodosOptions.length > 0 ? (
               <Button
                 flex={1}
@@ -130,7 +130,7 @@ const ManualUploadModal = ({ isOpen, onClose, onSkip, setSkipSIU }) => {
                   handleSuccessfulUpload();
                 }}
               >
-                Cargar horarios
+                Agregar horarios
               </Button>
             ) : (
               <Button

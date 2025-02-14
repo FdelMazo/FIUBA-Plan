@@ -44,7 +44,7 @@ const Body = () => {
     localStorage.setItem('skipSIU', JSON.stringify(skipSIU));
   }, [skipSIU]);
 
-  useHotkeys("esc", horariosSIU ? onToggleDrawer : onToggleModal, {
+  useHotkeys("esc", (horariosSIU || skipSIU) ? onToggleDrawer : onToggleModal, {
     enableOnFormTags: true,
   });
 

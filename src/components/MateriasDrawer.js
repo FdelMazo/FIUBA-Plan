@@ -35,7 +35,7 @@ import SelectMateria from "./SelectMateria";
 import Sugerencias from "./Sugerencias";
 
 const MateriasDrawer = (props) => {
-  const { useAgenda, setUseAgenda, isOpen, onClose } = props;
+  const { useAgenda, setUseAgenda, isOpen, onClose, skipSIU, onOpenModal } = props;
   const {
     tabs,
     selectedMaterias,
@@ -72,17 +72,32 @@ const MateriasDrawer = (props) => {
           bg={useColorModeValue("drawerbgalpha", "drawerbgdarkalpha")}
         >
           <Box pt={4} px={4}>
-            <Button
-              w="100%"
-              rightIcon={<DeleteIcon />}
-              colorScheme="red"
-              onClick={async () => {
-                await removeHorariosSIU();
-                onClose();
-              }}
-            >
-              Dejar de usar horarios del SIU
-            </Button>
+            {skipSIU ? (
+              <Button
+                w="100%"
+                colorScheme="primary"
+                onClick={() => {
+                  onClose();
+                  onOpenModal();
+                }}
+              >
+                Cargar horarios del SIU
+              </Button>
+            ) : (
+              horariosSIU && (
+                <Button
+                  w="100%"
+                  rightIcon={<DeleteIcon />}
+                  colorScheme="red"
+                  onClick={async () => {
+                    await removeHorariosSIU();
+                    onClose();
+                  }}
+                >
+                  Dejar de usar horarios del SIU
+                </Button>
+              )
+            )}
           </Box>
 
           <Box px={6}>

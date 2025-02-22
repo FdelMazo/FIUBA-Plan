@@ -100,12 +100,14 @@ const MateriasDrawer = (props) => {
             )}
           </Box>
 
-          <Box px={6}>
-            <SelectMateria
-              materiasToShow={materiasToShow}
-              drawerRef={drawerRef}
-            />
-          </Box>
+          {horariosSIU && (
+            <Box px={6}>
+              <SelectMateria
+                materiasToShow={materiasToShow}
+                drawerRef={drawerRef}
+              />
+            </Box>
+          )}
 
           <DrawerBody
             style={{

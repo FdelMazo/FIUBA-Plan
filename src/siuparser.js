@@ -21,7 +21,7 @@ export function parseSIU(rawdata) {
   const materiaPattern =
     /Actividad: ([^\n]+) \((.+?)\)\n[\s\S]*?(?=Actividad:|$)/g;
   const cursosPattern =
-    /Comisión: ([^\n]+)[\s\S]*?Docentes: ([^\n]+)[\s\S]*?Tipo de clase\s+Día\s+Horario\s+Aula([\s\S]*?)(?=Comisión:|$)/g;
+    /Comisión: ([^\n]+)[\s\S]*?Docentes: ([^\n]+)[\s\S]*?Tipo de clase\s+Día\s+Horario(?:\s+Aula)([\s\S]*?)(?=Comisión:|$)/g;
 
   const periodos = [];
   for (const periodoMatch of rawdata.matchAll(periodoPattern)) {
@@ -60,7 +60,7 @@ export function parseSIU(rawdata) {
           }
 
           // eslint-disable-next-line no-unused-vars
-          const [_tipo, dia, horario, _aula] = claseLine.split("\t");
+          const [_tipo, dia, horario, _aula = null] = claseLine.split("\t");
           const [inicio, fin] = horario.split(" a ");
           const clase = {
             dia: SEMANA.indexOf(dia),

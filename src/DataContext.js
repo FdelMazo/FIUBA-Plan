@@ -44,8 +44,9 @@ const Data = () => {
   // el permalink, y si lo hubo redireccionar a la home y mostrar un toast (en TabSystem.js)
   // informando al usuario que hubo un error
   const [errorPermalink, setErrorPermalink] = React.useState(permalinksavedata === "");
-  // ESTADO 0: el usuario cargo a manopla los horarios de su propio SIU
+  // ESTADO 0: el usuario cargo a manopla los horarios de su propio SIU, o decide no usarlos
   const [horariosSIU, setHorariosSIU] = React.useState(initialHorariosSIU);
+  const [skipSIU, setSkipSIU] = React.useState(getFromStorage("skipSIU") || false);
 
   // Getters que verifican contra el SIU del usuario
   const getters = React.useMemo(() => {
@@ -217,14 +218,16 @@ const Data = () => {
       tabEvents,
       tabs,
       extraEvents,
-      horariosSIU
+      horariosSIU,
+      skipSIU,
     };
   }, [
     JSON.stringify(selectedMaterias),
     JSON.stringify(tabEvents),
     JSON.stringify(tabs),
     JSON.stringify(extraEvents),
-    JSON.stringify(horariosSIU)
+    JSON.stringify(horariosSIU),
+    JSON.stringify(skipSIU),
   ]);
 
   // Si venimos de un permalink, estamos en una sesion de read - only hasta que el usuario quiera pisar los datos
@@ -421,7 +424,9 @@ const Data = () => {
     getters,
     getPeriodosSIU,
     errorPermalink,
-    setErrorPermalink
+    setErrorPermalink,
+    skipSIU,
+    setSkipSIU
   };
 };
 

@@ -23,11 +23,8 @@ const end = new Date(today.getFullYear() + 1, 0, 1);
 const isChristmasTime = today >= start && today <= end;
 
 const Body = () => {
-  const { events, horariosSIU } = React.useContext(DataContext);
+  const { events, horariosSIU, setSkipSIU, skipSIU } = React.useContext(DataContext);
   const [useAgenda, setUseAgenda] = React.useState(false);
-  const [skipSIU, setSkipSIU] = React.useState(() => 
-    JSON.parse(localStorage.getItem('skipSIU')) || false
-  );
   const { width } = useWindowSize();
   const {
     isOpen: isOpenDrawer,
@@ -39,10 +36,6 @@ const Body = () => {
     onToggle: onToggleModal,
     onClose: onCloseModal,
   } = useDisclosure();
-
-  React.useEffect(() => {
-    localStorage.setItem('skipSIU', JSON.stringify(skipSIU));
-  }, [skipSIU]);
 
   useHotkeys("esc", (horariosSIU || skipSIU) ? onToggleDrawer : onToggleModal, {
     enableOnFormTags: true,

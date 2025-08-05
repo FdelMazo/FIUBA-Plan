@@ -333,6 +333,7 @@ const Data = () => {
     }
     tabsDispatch({ type: "add", id });
     tabEventsDispatch({ type: "resetTab", tabId: id });
+    selectTab(id);
   };
 
   const renameTab = (id, title) => {

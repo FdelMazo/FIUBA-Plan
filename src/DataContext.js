@@ -341,9 +341,16 @@ const Data = () => {
   };
 
   const removeTab = (id) => {
-    selectTab(0);
     tabsDispatch({ type: "remove", id });
     tabEventsDispatch({ type: "removeTab", tabId: id });
+
+    // Select previous tab to the left.
+    const ids = tabs.map((t) => t.id);
+    let i = id - 1;
+    while (!ids.includes(i)) {
+      i -= 1;
+    }
+    selectTab(i);
   };
 
   // Los eventos a mostrar en el calendario son todos los cursos seleccionados por el usuario

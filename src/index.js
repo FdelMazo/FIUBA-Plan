@@ -24,7 +24,7 @@ const App = () => {
       }}
     >
       <DataProvider>
-        <Flex direction="columns" h="100vh">
+        <Flex direction="columns" h="100dvh">
           <Body />
         </Flex>
       </DataProvider>

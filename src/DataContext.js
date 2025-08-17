@@ -341,7 +341,7 @@ const Data = () => {
   };
 
   const removeTab = (id) => {
-    selectTab(0);
+    selectTab(tabs[tabs.map((t) => t.id).indexOf(id) - 1].id);
     tabsDispatch({ type: "remove", id });
     tabEventsDispatch({ type: "removeTab", tabId: id });
   };

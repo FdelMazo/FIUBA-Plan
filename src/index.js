@@ -7,7 +7,11 @@ import Body from "./components/Body";
 import { DataProvider } from "./DataContext";
 import customTheme from "./theme";
 
+import { useToast } from '@chakra-ui/react'
+
 const App = () => {
+  const toast = useToast();
+
   return (
     <ErrorBoundary
       fallbackRender={({ error, resetErrorBoundary }) => {
@@ -15,6 +19,15 @@ const App = () => {
           "Hubo un error inesperado. Se limpian los datos guardados",
           error
         );
+
+        toast({
+          title: "Ocurrió un error",
+          description: "Se limpiaron los datos guardados. Por favor vuelve a cargar tus horarios del SIU.",
+          status: "error",
+          duration: 9000,
+          isClosable: true,
+        })
+
         // Llamamos resetErrorBoundary() para resetear el error boundary y volver
         // a intentar el render
         resetErrorBoundary();
@@ -24,7 +37,7 @@ const App = () => {
       }}
     >
       <DataProvider>
-        <Flex direction="columns" h="100vh">
+        <Flex direction="columns" h="100dvh">
           <Body />
         </Flex>
       </DataProvider>

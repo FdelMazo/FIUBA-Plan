@@ -22,7 +22,7 @@ const App = () => {
 
         toast({
           title: "Ocurrió un error",
-          description: "Se limpiaron los datos guardados. Por favor vuelve a cargar tus horarios del SIU.",
+          description: "Se limpiaron los datos guardados.",
           status: "error",
           duration: 9000,
           isClosable: true,

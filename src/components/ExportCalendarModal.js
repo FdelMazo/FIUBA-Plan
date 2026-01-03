@@ -1,6 +1,7 @@
 import {
   Button,
   FormControl,
+  FormErrorMessage,
   FormLabel,
   Input,
   Modal,
@@ -103,42 +104,44 @@ const ExportCalendarModal = ({ isOpen, onClose }) => {
     }
   }, [isOpen, startDate]);
 
+  // Validaciones para los inputs
+  const startDateError = React.useMemo(() => {
+    if (!startDate) return null;
+    if (!endDate) return null;
+    const start = new Date(startDate);
+    const end = new Date(endDate);
+    if (start >= end) {
+      return "La fecha de inicio debe ser anterior a la fecha de fin";
+    }
+    return null;
+  }, [startDate, endDate]);
+
+  const endDateError = React.useMemo(() => {
+    if (!startDate || !endDate) return null;
+    const start = new Date(startDate);
+    const end = new Date(endDate);
+    if (start >= end) {
+      return "La fecha de fin debe ser posterior a la fecha de inicio";
+    }
+    return null;
+  }, [startDate, endDate]);
+
+  const hasNoEventsError = events.length === 0;
+
   // Validar si se pueden exportar los eventos
   const canExport = React.useMemo(() => {
     if (!startDate || !endDate) return false;
     if (events.length === 0) return false;
+    if (startDateError || endDateError) return false;
     
-    const start = new Date(startDate);
-    const end = new Date(endDate);
-    
-    return start < end;
-  }, [startDate, endDate, events.length]);
+    return true;
+  }, [startDate, endDate, events.length, startDateError, endDateError]);
 
   const generateICS = () => {
+    if (!canExport) return;
+
     const start = new Date(startDate);
     const end = new Date(endDate);
-
-    if (start >= end) {
-      toast({
-        title: "Error",
-        description: "La fecha de inicio debe ser anterior a la fecha de fin",
-        status: "error",
-        duration: 3000,
-        isClosable: true,
-      });
-      return;
-    }
-
-    if (events.length === 0) {
-      toast({
-        title: "Error",
-        description: "No hay eventos para exportar",
-        status: "error",
-        duration: 3000,
-        isClosable: true,
-      });
-      return;
-    }
 
     try {
       const icsEvents = [];
@@ -235,13 +238,8 @@ const ExportCalendarModal = ({ isOpen, onClose }) => {
       });
 
       if (icsEvents.length === 0) {
-        toast({
-          title: "Error",
-          description: "No se pudieron generar eventos",
-          status: "error",
-          duration: 3000,
-          isClosable: true,
-        });
+        // Esto no debería pasar si canExport es true, pero por seguridad lo dejamos
+        console.error("No se pudieron generar eventos");
         return;
       }
 
@@ -288,23 +286,37 @@ const ExportCalendarModal = ({ isOpen, onClose }) => {
         <ModalHeader>Exportar a Calendario</ModalHeader>
         <ModalCloseButton />
         <ModalBody pb={6}>
-          <FormControl>
+          <FormControl isInvalid={!!startDateError}>
             <FormLabel>Fecha de inicio del período académico</FormLabel>
             <Input
               type="date"
               value={startDate}
               onChange={(e) => setStartDate(e.target.value)}
             />
+            {startDateError && (
+              <FormErrorMessage>{startDateError}</FormErrorMessage>
+            )}
           </FormControl>
 
-          <FormControl mt={4}>
+          <FormControl mt={4} isInvalid={!!endDateError}>
             <FormLabel>Fecha de fin del período académico</FormLabel>
             <Input
               type="date"
               value={endDate}
               onChange={(e) => setEndDate(e.target.value)}
             />
+            {endDateError && (
+              <FormErrorMessage>{endDateError}</FormErrorMessage>
+            )}
           </FormControl>
+
+          {hasNoEventsError && (
+            <FormControl mt={4} isInvalid>
+              <FormErrorMessage>
+                No hay eventos para exportar. Agregá eventos al calendario primero.
+              </FormErrorMessage>
+            </FormControl>
+          )}
         </ModalBody>
 
         <ModalFooter>

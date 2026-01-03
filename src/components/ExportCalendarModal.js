@@ -103,18 +103,18 @@ const ExportCalendarModal = ({ isOpen, onClose }) => {
     }
   }, [isOpen, startDate]);
 
-  const generateICS = () => {
-    if (!startDate || !endDate) {
-      toast({
-        title: "Error",
-        description: "Por favor completa ambas fechas",
-        status: "error",
-        duration: 3000,
-        isClosable: true,
-      });
-      return;
-    }
+  // Validar si se pueden exportar los eventos
+  const canExport = React.useMemo(() => {
+    if (!startDate || !endDate) return false;
+    if (events.length === 0) return false;
+    
+    const start = new Date(startDate);
+    const end = new Date(endDate);
+    
+    return start < end;
+  }, [startDate, endDate, events.length]);
 
+  const generateICS = () => {
     const start = new Date(startDate);
     const end = new Date(endDate);
 
@@ -308,7 +308,12 @@ const ExportCalendarModal = ({ isOpen, onClose }) => {
         </ModalBody>
 
         <ModalFooter>
-          <Button colorScheme="purple" mr={3} onClick={generateICS}>
+          <Button 
+            colorScheme="purple" 
+            mr={3} 
+            onClick={generateICS}
+            isDisabled={!canExport}
+          >
             Exportar
           </Button>
           <Button onClick={onClose}>Cancelar</Button>

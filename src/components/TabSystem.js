@@ -1,4 +1,4 @@
-import { AddIcon, SmallCloseIcon } from "@chakra-ui/icons";
+import { AddIcon, SmallCloseIcon, DownloadIcon } from "@chakra-ui/icons";
 import {
   Alert,
   AlertDescription,
@@ -23,11 +23,13 @@ import {
   Tabs,
   Text,
   useTab,
-  useToast
+  useToast,
+  useDisclosure,
 } from "@chakra-ui/react";
 import "moment/locale/es";
 import React from "react";
 import { DataContext } from "../DataContext";
+import ExportCalendarModal from "./ExportCalendarModal";
 
 const TabSystem = (props) => {
   const {
@@ -40,11 +42,17 @@ const TabSystem = (props) => {
     horariosSIU,
     errorPermalink,
     setErrorPermalink,
+    events,
   } = React.useContext(DataContext);
   const toastPermalink = useToast();
   const toastError = useToast();  
   const inputref = React.useRef(null);
   const [readOnlyToastClosed, setReadOnlyToastClosed] = React.useState(false);
+  const {
+    isOpen: isExportModalOpen,
+    onOpen: onExportModalOpen,
+    onClose: onExportModalClose,
+  } = useDisclosure();
 
   if (readOnly && !toastPermalink.isActive("readonly") && !readOnlyToastClosed) {
     toastPermalink({
@@ -170,33 +178,46 @@ const TabSystem = (props) => {
           )}
         </Flex>
       </Tabs>
-      {horariosSIU && (
-        <Box alignSelf="center" px={4}>
-          <Popover placement="bottom" trigger="hover">
-            <PopoverTrigger>
-              <Text textAlign="right">
-                <strong>Usando horarios del SIU</strong>
-                <br />
-                {horariosSIU.periodo}
-              </Text>
-            </PopoverTrigger>
-            <PopoverContent borderColor="primary.500" mr={2}>
-              <PopoverArrow bg="primary.500" />
-              <PopoverBody>
-                Acordate que el SIU también puede actualizar sus horarios sin
-                aviso previo. Si estás por inscribirte a materias, es
-                recomendable que re-cargues los horarios.
-              </PopoverBody>
-              <PopoverFooter fontSize="sm">
-                Horarios cargados el{" "}
-                <strong>
-                  {new Date(horariosSIU.timestamp).toLocaleString()}
-                </strong>
-              </PopoverFooter>
-            </PopoverContent>
-          </Popover>
-        </Box>
-      )}
+      <Flex alignSelf="center" px={4} gap={2}>
+        {events.length > 0 && (
+          <IconButton
+            aria-label="Exportar a calendario"
+            icon={<DownloadIcon />}
+            colorScheme="purple"
+            variant="ghost"
+            size="sm"
+            onClick={onExportModalOpen}
+          />
+        )}
+        {horariosSIU && (
+          <Box>
+            <Popover placement="bottom" trigger="hover">
+              <PopoverTrigger>
+                <Text textAlign="right">
+                  <strong>Usando horarios del SIU</strong>
+                  <br />
+                  {horariosSIU.periodo}
+                </Text>
+              </PopoverTrigger>
+              <PopoverContent borderColor="primary.500" mr={2}>
+                <PopoverArrow bg="primary.500" />
+                <PopoverBody>
+                  Acordate que el SIU también puede actualizar sus horarios sin
+                  aviso previo. Si estás por inscribirte a materias, es
+                  recomendable que re-cargues los horarios.
+                </PopoverBody>
+                <PopoverFooter fontSize="sm">
+                  Horarios cargados el{" "}
+                  <strong>
+                    {new Date(horariosSIU.timestamp).toLocaleString()}
+                  </strong>
+                </PopoverFooter>
+              </PopoverContent>
+            </Popover>
+          </Box>
+        )}
+      </Flex>
+      <ExportCalendarModal isOpen={isExportModalOpen} onClose={onExportModalClose} />
     </Flex>
   );
 };

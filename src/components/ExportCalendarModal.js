@@ -104,24 +104,13 @@ const ExportCalendarModal = ({ isOpen, onClose }) => {
     }
   }, [isOpen, startDate]);
 
-  // Validaciones para los inputs
-  const startDateError = React.useMemo(() => {
-    if (!startDate) return null;
-    if (!endDate) return null;
-    const start = new Date(startDate);
-    const end = new Date(endDate);
-    if (start >= end) {
-      return "La fecha de inicio debe ser anterior a la fecha de fin";
-    }
-    return null;
-  }, [startDate, endDate]);
-
-  const endDateError = React.useMemo(() => {
+  // Validación de fechas
+  const datesError = React.useMemo(() => {
     if (!startDate || !endDate) return null;
     const start = new Date(startDate);
     const end = new Date(endDate);
     if (start >= end) {
-      return "La fecha de fin debe ser posterior a la fecha de inicio";
+      return "La fecha de inicio debe ser anterior a la fecha de fin";
     }
     return null;
   }, [startDate, endDate]);
@@ -132,10 +121,10 @@ const ExportCalendarModal = ({ isOpen, onClose }) => {
   const canExport = React.useMemo(() => {
     if (!startDate || !endDate) return false;
     if (events.length === 0) return false;
-    if (startDateError || endDateError) return false;
+    if (datesError) return false;
     
     return true;
-  }, [startDate, endDate, events.length, startDateError, endDateError]);
+  }, [startDate, endDate, events.length, datesError]);
 
   const generateICS = () => {
     if (!canExport) return;
@@ -286,34 +275,30 @@ const ExportCalendarModal = ({ isOpen, onClose }) => {
         <ModalHeader>Exportar a Calendario</ModalHeader>
         <ModalCloseButton />
         <ModalBody pb={6}>
-          <FormControl isInvalid={!!startDateError}>
+          <FormControl>
             <FormLabel>Fecha de inicio del período académico</FormLabel>
             <Input
               type="date"
               value={startDate}
               onChange={(e) => setStartDate(e.target.value)}
             />
-            {startDateError && (
-              <FormErrorMessage>{startDateError}</FormErrorMessage>
-            )}
           </FormControl>
 
-          <FormControl mt={4} isInvalid={!!endDateError}>
+          <FormControl mt={4}>
             <FormLabel>Fecha de fin del período académico</FormLabel>
             <Input
               type="date"
               value={endDate}
               onChange={(e) => setEndDate(e.target.value)}
             />
-            {endDateError && (
-              <FormErrorMessage>{endDateError}</FormErrorMessage>
-            )}
           </FormControl>
 
-          {hasNoEventsError && (
+          {(datesError || hasNoEventsError) && (
             <FormControl mt={4} isInvalid>
               <FormErrorMessage>
-                No hay eventos para exportar. Agregá eventos al calendario primero.
+                {hasNoEventsError 
+                  ? "No hay eventos para exportar. Agregá eventos al calendario primero."
+                  : datesError}
               </FormErrorMessage>
             </FormControl>
           )}

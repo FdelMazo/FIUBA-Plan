@@ -106,7 +106,9 @@ const ExportCalendarModal = ({ isOpen, onClose }) => {
 
   // Validación de fechas
   const datesError = React.useMemo(() => {
-    if (!startDate || !endDate) return null;
+    if (!startDate || !endDate) {
+      return "Completá ambas fechas para exportar";
+    }
     const start = new Date(startDate);
     const end = new Date(endDate);
     if (start >= end) {

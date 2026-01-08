@@ -11,6 +11,7 @@ import {
   ModalFooter,
   ModalHeader,
   ModalOverlay,
+  Text,
   useToast,
 } from "@chakra-ui/react";
 import React from "react";
@@ -116,6 +117,16 @@ const ExportCalendarModal = ({ isOpen, onClose }) => {
     }
     return null;
   }, [startDate, endDate]);
+
+  // Calcular semanas del período
+  const weeksCount = React.useMemo(() => {
+    if (!startDate || !endDate || datesError) return null;
+    const start = new Date(startDate);
+    const end = new Date(endDate);
+    const diffTime = Math.abs(end - start);
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    return Math.ceil(diffDays / 7);
+  }, [startDate, endDate, datesError]);
 
   const hasNoEventsError = events.length === 0;
 
@@ -274,7 +285,7 @@ const ExportCalendarModal = ({ isOpen, onClose }) => {
     <Modal isOpen={isOpen} onClose={onClose}>
       <ModalOverlay />
       <ModalContent>
-        <ModalHeader>Exportar a Calendario</ModalHeader>
+        <ModalHeader>Exportar a archivo .ics</ModalHeader>
         <ModalCloseButton />
         <ModalBody pb={6}>
           <FormControl>
@@ -294,6 +305,19 @@ const ExportCalendarModal = ({ isOpen, onClose }) => {
               onChange={(e) => setEndDate(e.target.value)}
             />
           </FormControl>
+
+          {weeksCount !== null && !datesError && (
+            <>
+              <Text mt={4} fontSize="sm" fontStyle="italic">
+                Período seleccionado: <strong>{weeksCount} semana{weeksCount !== 1 ? 's' : ''}</strong>
+              </Text>
+              {weeksCount > 20 && (
+                <Text fontSize="xs" color="orange.600" mt={1} fontStyle="italic">
+                  ⚠️ El período parece muy largo. Verificá que las fechas sean correctas.
+                </Text>
+              )}
+            </>
+          )}
 
           {(datesError || hasNoEventsError) && (
             <FormControl mt={4} isInvalid>

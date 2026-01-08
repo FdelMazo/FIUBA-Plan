@@ -178,16 +178,23 @@ const TabSystem = (props) => {
           )}
         </Flex>
       </Tabs>
-      <Flex alignSelf="center" px={4} gap={2}>
+      <Flex alignSelf="center" px={4} gap={3} alignItems="center">
         {events.length > 0 && (
-          <IconButton
+          <Button
             aria-label="Exportar a calendario"
-            icon={<DownloadIcon />}
+            leftIcon={<DownloadIcon boxSize={5} />}
             colorScheme="purple"
             variant="ghost"
-            size="sm"
+            height="auto"
+            minH="auto"
+            py={2.5}
+            px={3}
+            fontSize="md"
+            lineHeight="1.4"
             onClick={onExportModalOpen}
-          />
+          >
+            Exportar
+          </Button>
         )}
         {horariosSIU && (
           <Box>

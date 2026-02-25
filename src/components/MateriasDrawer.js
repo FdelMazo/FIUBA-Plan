@@ -194,7 +194,7 @@ const MateriasDrawer = (props) => {
 
             <Box textAlign="right">
               <Tooltip
-                label={`${useColorModeValue("Dark", "Light")} theme`}
+                label={`Tema ${useColorModeValue("oscuro", "claro")}`}
                 placement="top"
               >
                 <Link color="primary.600" onClick={toggleColorMode}>

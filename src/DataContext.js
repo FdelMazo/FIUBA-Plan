@@ -341,7 +341,12 @@ const Data = () => {
   };
 
   const removeTab = (id) => {
-    selectTab(tabs[tabs.map((t) => t.id).indexOf(id) - 1].id);
+    if (tabs.length === 1) {
+      addTab();
+    } else {
+      const index = tabs.map((t) => t.id).indexOf(id);
+      selectTab(tabs[index > 0 ? index - 1 : index + 1].id);
+    };
     tabsDispatch({ type: "remove", id });
     tabEventsDispatch({ type: "removeTab", tabId: id });
   };

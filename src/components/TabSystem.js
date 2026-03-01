@@ -257,7 +257,7 @@ const CustomTab = React.forwardRef((props, ref) => {
               boxShadow: "0 0 0 3px rgba(183,148,244, 0.6)",
             }}
           />
-          {props.tab.id !== 0 && isSelected && (
+          {isSelected && (
             <SmallCloseIcon
               _hover={{ color: "primary.900" }}
               boxSize="20px"

@@ -4,7 +4,7 @@
 import React from "react";
 import { useImmer, useImmerReducer } from "use-immer";
 import { parseSIU } from "./siuparser";
-import { base64tojson, jsontobase64 } from "./utils";
+import { getColor, base64tojson, jsontobase64 } from "./utils";
 
 // Si tengo un permalink, parseo su info y reseteo la URL
 let permalinksavedata = null;
@@ -211,7 +211,7 @@ const Data = () => {
     setHorariosSIU(null);
   };
 
-  // ESTADO 6: Colores configurados de las materias (globales para todas las tabs).
+  // ESTADO 5: Colores configurados de las materias (globales para todas las tabs).
   const [coloresMaterias, setColoresMaterias] = useImmer(() => initialMateriaColors());
 
   const setColorMateria = (codigoMateria, color) => {
@@ -399,7 +399,9 @@ const Data = () => {
             title,
             subtitle,
             tooltip,
-            curso: curso.codigo
+            curso: curso.codigo,
+            codigoMateria: materia.codigo,
+            color: coloresMaterias[materia.codigo] ?? getColor({ id: materia.codigo })
           };
         });
       });

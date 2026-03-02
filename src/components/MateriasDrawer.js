@@ -74,8 +74,8 @@ const MateriasDrawer = (props) => {
           bg={useColorModeValue("drawerbgalpha", "drawerbgdarkalpha")}
           w="min-content"
           sx={{
-            backdropFilter: "blur(32px)",
-            WebkitBackdropFilter: "blur(32px)",
+            backdropFilter: "blur(16px)",
+            WebkitBackdropFilter: "blur(16px)",
           }}
         >
           <DrawerCloseButton />

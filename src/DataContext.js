@@ -211,6 +211,15 @@ const Data = () => {
     setHorariosSIU(null);
   };
 
+  // ESTADO 6: Colores configurados de las materias (globales para todas las tabs).
+  const [coloresMaterias, setColoresMaterias] = useImmer(() => initialMateriaColors());
+
+  const setColorMateria = (codigoMateria, color) => {
+    setColoresMaterias((colores) => {
+      colores[codigoMateria] = color;
+    });
+  };
+
   // El estado que se guarda y determina el permalink es el `savedata` del usuario
   const savedata = React.useMemo(() => {
     return {
@@ -220,6 +229,7 @@ const Data = () => {
       extraEvents,
       horariosSIU,
       skipSIU,
+      coloresMaterias,
     };
   }, [
     JSON.stringify(selectedMaterias),
@@ -228,6 +238,7 @@ const Data = () => {
     JSON.stringify(extraEvents),
     JSON.stringify(horariosSIU),
     JSON.stringify(skipSIU),
+    JSON.stringify(coloresMaterias),
   ]);
 
   // Si venimos de un permalink, estamos en una sesion de read - only hasta que el usuario quiera pisar los datos
@@ -427,7 +438,9 @@ const Data = () => {
     errorPermalink,
     setErrorPermalink,
     skipSIU,
-    setSkipSIU
+    setSkipSIU,
+    coloresMaterias,
+    setColorMateria,
   };
 };
 
@@ -477,4 +490,8 @@ const initialHorariosSIU = () => {
   return (
     permalinksavedata?.horariosSIU || getFromStorage("horariosSIU") || null
   );
+};
+
+const initialMateriaColors = () => {
+  return permalinksavedata?.coloresMaterias || getFromStorage("coloresMaterias") || {};
 };

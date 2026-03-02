@@ -5,6 +5,7 @@ import {
   EditIcon,
   MinusIcon,
   SmallCloseIcon,
+  SettingsIcon,
 } from "@chakra-ui/icons";
 import {
   Box,
@@ -55,7 +56,16 @@ const SelectExtra = () => {
   return (
     <>
       <Flex direction="row" justify="flex-end">
+        <div
+          style={{
+            flexShrink: 0,
+            width: "16px",
+            height: "16px",
+            marginRight: "8px",
+          }}
+        />
         <Box
+          width="100%"
           {...getToggleButtonProps({
             onBlur: (event) => {
               event.preventDownshiftDefault = true;
@@ -63,6 +73,8 @@ const SelectExtra = () => {
           })}
         >
           <Button
+            width="100%"
+            justifyContent="space-between"
             my={2}
             px={2}
             colorScheme="primary"
@@ -87,6 +99,18 @@ const SelectExtra = () => {
             onClick={() => {
               removeAllExtra();
             }}
+          />
+        </Tooltip>
+
+        <Tooltip placement="top" label="Configurar extracurricular">
+          <IconButton
+            my={2}
+            ml={2}
+            colorScheme="primary"
+            variant="outline"
+            borderColor="primary"
+            color="primary.500"
+            icon={<SettingsIcon />}
           />
         </Tooltip>
       </Flex>

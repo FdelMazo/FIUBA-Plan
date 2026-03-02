@@ -4,6 +4,7 @@ import {
   ChevronUpIcon,
   MinusIcon,
   WarningTwoIcon,
+  SettingsIcon,
 } from "@chakra-ui/icons";
 import {
   Badge,
@@ -78,8 +79,9 @@ const SelectCurso = ({ codigo }) => {
   return (
     <>
       <Flex direction="row" justify="flex-end" alignItems="center">
-        {allItemsBlocked && (
+        {allItemsBlocked ? (
           <Tooltip
+            opacity={allItemsBlocked ? 1 : 0}
             placement="left"
             hasArrow
             label={
@@ -89,10 +91,19 @@ const SelectCurso = ({ codigo }) => {
               </>
             }
           >
-            <WarningTwoIcon color="primary.500" mr={2} />
+            <WarningTwoIcon size={14} color="primary.500" mr={2} />
           </Tooltip>
+        ) : (
+          <div
+            style={{
+              flexShrink: 0,
+              width: "16px",
+              height: "16px",
+              marginRight: "8px",
+            }}
+          />
         )}
-        <Box {...getToggleButtonProps()}>
+        <Box {...getToggleButtonProps()} width="100%">
           <Button
             justifyContent={"space-between"}
             my={2}
@@ -101,7 +112,7 @@ const SelectCurso = ({ codigo }) => {
             variant="outline"
             borderColor="primary"
             color="primary.500"
-            width="200px"
+            width="100%"
             _hover={{
               "&>p": { whiteSpace: "normal" },
               bg: "var(--chakra-colors-whiteAlpha-400)",
@@ -138,6 +149,18 @@ const SelectCurso = ({ codigo }) => {
             onClick={() => {
               toggleMateria(materia.codigo);
             }}
+          />
+        </Tooltip>
+
+        <Tooltip placement="top" label="Configurar materia">
+          <IconButton
+            my={2}
+            ml={2}
+            colorScheme="primary"
+            variant="outline"
+            borderColor="primary"
+            color="primary.500"
+            icon={<SettingsIcon />}
           />
         </Tooltip>
       </Flex>

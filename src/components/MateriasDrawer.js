@@ -14,6 +14,7 @@ import {
   Drawer,
   DrawerBody,
   DrawerContent,
+  DrawerCloseButton,
   DrawerFooter,
   DrawerOverlay,
   Flex,
@@ -35,7 +36,8 @@ import SelectMateria from "./SelectMateria";
 import Sugerencias from "./Sugerencias";
 
 const MateriasDrawer = (props) => {
-  const { useAgenda, setUseAgenda, isOpen, onClose, skipSIU, onOpenModal } = props;
+  const { useAgenda, setUseAgenda, isOpen, onClose, skipSIU, onOpenModal } =
+    props;
   const {
     tabs,
     selectedMaterias,
@@ -66,12 +68,19 @@ const MateriasDrawer = (props) => {
 
   return (
     <LightMode>
-      <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
+      <Drawer isOpen={isOpen} placement="right" onClose={onClose} size="sm">
         <DrawerOverlay bg="blackAlpha.300" />
         <DrawerContent
           bg={useColorModeValue("drawerbgalpha", "drawerbgdarkalpha")}
+          w="min-content"
+          sx={{
+            backdropFilter: "blur(32px)",
+            WebkitBackdropFilter: "blur(32px)",
+          }}
         >
-          <Box pt={4} px={4}>
+          <DrawerCloseButton />
+
+          <Box pt={14} px={4}>
             {skipSIU ? (
               <Button
                 w="100%"

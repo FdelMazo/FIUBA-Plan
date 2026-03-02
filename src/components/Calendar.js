@@ -70,7 +70,7 @@ const MyCalendar = (props) => {
 
   const eventPropsGetter = React.useCallback(
     (event) => {
-      let color = event.id ? getColor(event) : "inherit";
+      let color = event.color ?? (event.id ? getColor(event) : "inherit");
       const style = {
         borderWidth: "thin thin thin thick",
         borderRightColor: "#d2adf4", //primary.300

@@ -15,18 +15,32 @@ import {
   List,
   Text,
   Tooltip,
+  Popover,
+  PopoverTrigger,
+  PopoverArrow,
+  PopoverCloseButton,
+  PopoverHeader,
+  PopoverBody,
+  PopoverContent,
 } from "@chakra-ui/react";
 import { useSelect } from "downshift";
 import React from "react";
 import { useHotkeys } from "react-hotkeys-hook";
 import { DataContext } from "../DataContext";
 import { getColor, stateReducer } from "../utils";
+import { HexColorPicker } from "react-colorful";
 
 const INICIALES_SEMANA = ["D", "L", "M", "X", "J", "V", "S"];
 
 const SelectCurso = ({ codigo }) => {
-  const { toggleCurso, events, toggleMateria, getters } =
-    React.useContext(DataContext);
+  const {
+    coloresMaterias,
+    setColorMateria,
+    toggleCurso,
+    events,
+    toggleMateria,
+    getters,
+  } = React.useContext(DataContext);
   const materia = getters.getMateria(codigo);
   const items = getters.getCursosMateria(codigo);
 
@@ -75,6 +89,9 @@ const SelectCurso = ({ codigo }) => {
     const curso = items[highlightedIndex];
     toggleCurso(curso.codigo);
   });
+
+  const materiaColor =
+    coloresMaterias[codigo] ?? getColor({ id: materia.codigo });
 
   return (
     <>
@@ -152,17 +169,31 @@ const SelectCurso = ({ codigo }) => {
           />
         </Tooltip>
 
-        <Tooltip placement="top" label="Configurar materia">
-          <IconButton
-            my={2}
-            ml={2}
-            colorScheme="primary"
-            variant="outline"
-            borderColor="primary"
-            color="primary.500"
-            icon={<SettingsIcon />}
-          />
-        </Tooltip>
+        <Popover placement="top" label="Configurar materia">
+          <PopoverTrigger>
+            <IconButton
+              my={2}
+              ml={2}
+              colorScheme="primary"
+              variant="outline"
+              borderColor="primary"
+              color="primary.500"
+              icon={<SettingsIcon />}
+            />
+          </PopoverTrigger>
+
+          <PopoverContent>
+            <PopoverArrow />
+            <PopoverCloseButton />
+            <PopoverHeader>Confirmation!</PopoverHeader>
+            <PopoverBody>
+              <HexColorPicker
+                color={materiaColor}
+                onChange={(c) => setColorMateria(codigo, c)}
+              />
+            </PopoverBody>
+          </PopoverContent>
+        </Popover>
       </Flex>
 
       <List
@@ -180,7 +211,7 @@ const SelectCurso = ({ codigo }) => {
         {items.map((item, index) => {
           const event = events.find((i) => i.curso === item.codigo);
           const isActive = !!event;
-          const color = getColor(event);
+          const color = event?.color ?? materiaColor;
           const isItemBlocked = isBlocked(item.codigo);
           return (
             <Tooltip

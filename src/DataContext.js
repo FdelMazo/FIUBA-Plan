@@ -226,6 +226,24 @@ const Data = () => {
     });
   };
 
+  // ESTADO 6: Virtualidad configurada por curso y dia.
+  const [virtualidadCursos, setVirtualidadCursos] = useImmer(() =>
+    initialVirtualidadCursos(),
+  );
+
+  const setVirtualidadCursoDia = (codigoCurso, dia, esVirtual) => {
+    setVirtualidadCursos((virtualidad) => {
+      if (!virtualidad[codigoCurso]) {
+        virtualidad[codigoCurso] = {};
+      }
+      virtualidad[codigoCurso][String(dia)] = esVirtual;
+    });
+  };
+
+  const esVirtualCursoDia = (codigoCurso, dia) => {
+    return !!virtualidadCursos[codigoCurso]?.[String(dia)];
+  };
+
   // El estado que se guarda y determina el permalink es el `savedata` del usuario
   const savedata = React.useMemo(() => {
     return {
@@ -236,6 +254,7 @@ const Data = () => {
       horariosSIU,
       skipSIU,
       coloresMaterias,
+      virtualidadCursos,
     };
   }, [
     JSON.stringify(selectedMaterias),
@@ -245,6 +264,7 @@ const Data = () => {
     JSON.stringify(horariosSIU),
     JSON.stringify(skipSIU),
     JSON.stringify(coloresMaterias),
+    JSON.stringify(virtualidadCursos),
   ]);
 
   // Si venimos de un permalink, estamos en una sesion de read - only hasta que el usuario quiera pisar los datos
@@ -456,6 +476,9 @@ const Data = () => {
     setSkipSIU,
     coloresMaterias,
     setColorMateria,
+    virtualidadCursos,
+    setVirtualidadCursoDia,
+    esVirtualCursoDia,
   };
 };
 
@@ -511,6 +534,14 @@ const initialMateriaColors = () => {
   return (
     permalinksavedata?.coloresMaterias ||
     getFromStorage("coloresMaterias") ||
+    {}
+  );
+};
+
+const initialVirtualidadCursos = () => {
+  return (
+    permalinksavedata?.virtualidadCursos ||
+    getFromStorage("virtualidadCursos") ||
     {}
   );
 };

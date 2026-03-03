@@ -22,6 +22,7 @@ import {
   PopoverHeader,
   PopoverBody,
   PopoverContent,
+  DarkMode,
 } from "@chakra-ui/react";
 import { useSelect } from "downshift";
 import React from "react";
@@ -169,7 +170,7 @@ const SelectCurso = ({ codigo }) => {
           />
         </Tooltip>
 
-        <Popover placement="top" label="Configurar materia">
+        <Popover>
           <PopoverTrigger>
             <IconButton
               my={2}
@@ -182,17 +183,23 @@ const SelectCurso = ({ codigo }) => {
             />
           </PopoverTrigger>
 
-          <PopoverContent>
-            <PopoverArrow />
-            <PopoverCloseButton />
-            <PopoverHeader>Confirmation!</PopoverHeader>
-            <PopoverBody>
-              <HexColorPicker
-                color={materiaColor}
-                onChange={(c) => setColorMateria(codigo, c)}
-              />
-            </PopoverBody>
-          </PopoverContent>
+          <DarkMode>
+            <PopoverContent color="white">
+              <PopoverArrow />
+              <PopoverCloseButton />
+              <PopoverHeader>Configurar materia</PopoverHeader>
+              <PopoverBody>
+                <HexColorPicker
+                  style={{
+                    width: "100%",
+                    padding: "4px",
+                  }}
+                  color={materiaColor}
+                  onChange={(c) => setColorMateria(codigo, c)}
+                />
+              </PopoverBody>
+            </PopoverContent>
+          </DarkMode>
         </Popover>
       </Flex>
 

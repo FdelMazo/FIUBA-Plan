@@ -13,6 +13,7 @@ import {
   Flex,
   IconButton,
   List,
+  Switch,
   Text,
   Tooltip,
   Popover,
@@ -32,11 +33,22 @@ import { getColor, stateReducer } from "../utils";
 import { HexColorPicker } from "react-colorful";
 
 const INICIALES_SEMANA = ["D", "L", "M", "X", "J", "V", "S"];
+const COMPLETOS_SEMANA = [
+  "Domingo",
+  "Lunes",
+  "Martes",
+  "Miércoles",
+  "Jueves",
+  "Viernes",
+  "Sábado",
+];
 
 const SelectCurso = ({ codigo }) => {
   const {
     coloresMaterias,
     setColorMateria,
+    setVirtualidadCursoDia,
+    esVirtualCursoDia,
     toggleCurso,
     events,
     toggleMateria,
@@ -93,6 +105,14 @@ const SelectCurso = ({ codigo }) => {
 
   const materiaColor =
     coloresMaterias[codigo] ?? getColor({ id: materia.codigo });
+
+  const cursosActivos = React.useMemo(
+    () =>
+      items.filter((item) =>
+        events.some((event) => event.curso === item.codigo),
+      ),
+    [items, events],
+  );
 
   return (
     <>
@@ -187,16 +207,69 @@ const SelectCurso = ({ codigo }) => {
             <PopoverContent color="white">
               <PopoverArrow />
               <PopoverCloseButton />
-              <PopoverHeader>Configurar materia</PopoverHeader>
               <PopoverBody>
-                <HexColorPicker
-                  style={{
-                    width: "100%",
-                    padding: "4px",
-                  }}
-                  color={materiaColor}
-                  onChange={(c) => setColorMateria(codigo, c)}
-                />
+                <Box>
+                  <Text mb={2}>Color para materia</Text>
+                  <HexColorPicker
+                    style={{
+                      width: "100%",
+                      padding: "4px",
+                    }}
+                    color={materiaColor}
+                    onChange={(c) => setColorMateria(codigo, c)}
+                  />
+                </Box>
+
+                <Box mt={4}>
+                  <Text mb={2}>Clases virtuales por cátedra</Text>
+
+                  {!cursosActivos.length ? (
+                    <Text fontSize="xs" color="gray.400">
+                      No hay cátedras activas en este plan para esta materia.
+                    </Text>
+                  ) : (
+                    cursosActivos.map((curso, cursoIndex) => (
+                      <Box
+                        key={curso.codigo}
+                        mt={cursoIndex === 0 ? 0 : 3}
+                        pt={cursoIndex === 0 ? 0 : 3}
+                        borderTop={cursoIndex === 0 ? "none" : "1px solid"}
+                        borderColor="whiteAlpha.300"
+                      >
+                        <Text fontSize="xs" fontWeight="bold" mb={1}>
+                          {curso.docentes}
+                        </Text>
+
+                        {curso.clases
+                          .slice()
+                          .sort((a, b) => a.dia - b.dia)
+                          .map((clase) => (
+                            <Flex
+                              key={`${curso.codigo}-${clase.dia}`}
+                              alignItems="center"
+                              justifyContent="space-between"
+                              py={1}
+                            >
+                              <Text>{COMPLETOS_SEMANA[clase.dia]}</Text>
+                              <Switch
+                                isChecked={esVirtualCursoDia(
+                                  curso.codigo,
+                                  clase.dia,
+                                )}
+                                onChange={(e) =>
+                                  setVirtualidadCursoDia(
+                                    curso.codigo,
+                                    clase.dia,
+                                    e.target.checked,
+                                  )
+                                }
+                              />
+                            </Flex>
+                          ))}
+                      </Box>
+                    ))
+                  )}
+                </Box>
               </PopoverBody>
             </PopoverContent>
           </DarkMode>

@@ -66,11 +66,14 @@ const MateriaEventAgenda = (props) => {
 const MyCalendar = (props) => {
   const { events, useAgenda } = props;
   const { width } = useWindowSize();
-  const { addExtra } = React.useContext(DataContext);
+  const { addExtra, virtualidadCursos } = React.useContext(DataContext);
 
   const eventPropsGetter = React.useCallback(
     (event) => {
       let color = event.color ?? (event.id ? getColor(event) : "inherit");
+      const dia = event.start?.getDay?.();
+      const esVirtual =
+        !!event.curso && !!virtualidadCursos[event.curso]?.[String(dia)];
       const style = {
         borderWidth: "thin thin thin thick",
         borderRightColor: "#d2adf4", //primary.300
@@ -86,13 +89,21 @@ const MyCalendar = (props) => {
         borderRightColor: "#0000",
         borderBottomColor: "#0000",
         borderTopColor: "#0000",
-        boxShadow: "inset 0 0 0 1000px " + color + "44",
+        ...(esVirtual
+          ? {
+              // Stripes diagonales con un fondo negro con 10% de opacidad.
+              // Es mejor tener un fondo negro que del propio color de la materia en las stripes para mantener la visibilidad en todos los colores.
+              backgroundImage: `linear-gradient(${color}44, ${color}44), repeating-linear-gradient(45deg, #0000001A 0px, #0000001A 8px, transparent 8px, transparent 16px)`,
+            }
+          : {
+              boxShadow: "inset 0 0 0 1000px " + color + "44",
+            }),
       };
       return {
         style: useAgenda ? style : { ...style, ...calendarWeekStyle },
       };
     },
-    [useAgenda],
+    [useAgenda, virtualidadCursos],
   );
 
   const coveredDays = events.map((e) => e.start.getDay());

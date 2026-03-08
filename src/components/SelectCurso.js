@@ -132,7 +132,9 @@ const PopoverConfigCurso = ({
                           justifyContent="space-between"
                           py={1}
                         >
-                          <Text fontSize="sm">{COMPLETOS_SEMANA[clase.dia]}</Text>
+                          <Text fontSize="sm">
+                            {COMPLETOS_SEMANA[clase.dia]}
+                          </Text>
                           <Switch
                             isChecked={esVirtualCursoDia(
                               curso.codigo,

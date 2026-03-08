@@ -52,11 +52,20 @@ const MateriaEventAgenda = (props) => {
           flexDirection: "row",
         }}
       >
-        <Text noOfLines={[1, 2, 3]} className="rbc-agenda-event-cell" mb={2}>
+        <Text
+          noOfLines={[1, 2, 3]}
+          className="rbc-agenda-event-cell"
+          mb={2}
+          color="#1f1f1f"
+        >
           {props.event.title}
         </Text>
       </Box>
-      <Text noOfLines={[1, 3, 5]} className="rbc-agenda-event-cell-sub">
+      <Text
+        noOfLines={[1, 3, 5]}
+        className="rbc-agenda-event-cell-sub"
+        color="#1f1f1f"
+      >
         {props.event.subtitle}
       </Text>
     </Box>
@@ -71,11 +80,9 @@ const MyCalendar = (props) => {
   const eventPropsGetter = React.useCallback(
     (event) => {
       let color = event.color ?? (event.id ? getColor(event) : "inherit");
-      const dia = event.start?.getDay?.();
-      const esVirtual =
-        !!event.curso && !!virtualidadCursos[event.curso]?.[String(dia)];
       const style = {
-        borderWidth: "thin thin thin thick",
+        borderStyle: "solid",
+        borderWidth: "1px 1px 1px 6px",
         borderRightColor: "#d2adf4", //primary.300
         borderBottomColor: "#d2adf4", //primary.300
         borderTopColor: "#d2adf4", //primary.300
@@ -83,24 +90,43 @@ const MyCalendar = (props) => {
         color: "#1f1f1f",
         cursor: "default",
       };
+
+      if (useAgenda && event.isPlaceholder) {
+        return {
+          className: "rbc-agenda-placeholder-event",
+          style: {
+            ...style,
+            borderLeftColor: "#d2adf4",
+          },
+        };
+      }
+
+      const dia = event.start?.getDay?.();
+      const esVirtual =
+        !!event.curso && !!virtualidadCursos[event.curso]?.[String(dia)];
+
+      const eventFillStyle = esVirtual
+        ? {
+            // Stripes diagonales con un fondo negro con 10% de opacidad.
+            // Es mejor tener un fondo negro que del propio color de la materia en las stripes para mantener la visibilidad en todos los colores.
+            backgroundImage: `linear-gradient(${color}44, ${color}44), repeating-linear-gradient(45deg, #0000001A 0px, #0000001A 8px, transparent 8px, transparent 16px)`,
+            backgroundColor: "#FFF",
+          }
+        : {
+            boxShadow: "inset 0 0 0 1000px " + color + "44",
+            backgroundColor: "#FFF",
+          };
       const calendarWeekStyle = {
         textAlign: "right",
-        backgroundColor: "#FFF",
         borderRightColor: "#0000",
         borderBottomColor: "#0000",
         borderTopColor: "#0000",
-        ...(esVirtual
-          ? {
-              // Stripes diagonales con un fondo negro con 10% de opacidad.
-              // Es mejor tener un fondo negro que del propio color de la materia en las stripes para mantener la visibilidad en todos los colores.
-              backgroundImage: `linear-gradient(${color}44, ${color}44), repeating-linear-gradient(45deg, #0000001A 0px, #0000001A 8px, transparent 8px, transparent 16px)`,
-            }
-          : {
-              boxShadow: "inset 0 0 0 1000px " + color + "44",
-            }),
+        ...eventFillStyle,
       };
       return {
-        style: useAgenda ? style : { ...style, ...calendarWeekStyle },
+        style: useAgenda
+          ? { ...style, ...eventFillStyle }
+          : { ...style, ...calendarWeekStyle },
       };
     },
     [useAgenda, virtualidadCursos],
@@ -114,6 +140,8 @@ const MyCalendar = (props) => {
     start: new Date(2018, 0, i, 7),
     end: new Date(2018, 0, i, 23, 30),
     title: "",
+    subtitle: "",
+    isPlaceholder: true,
   }));
 
   const formats = {

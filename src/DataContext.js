@@ -172,12 +172,19 @@ const Data = () => {
           start: action.event.start,
           end: action.event.end,
           title: action.event.title,
+          color: getColor({ id: action.event.id }),
         });
       case "rename":
         return void (draft.find((t) => t.id === action.id).title =
           action.title);
       case "remove":
         return draft.filter((t) => t.id !== action.id);
+      case "setColor": {
+        const extra = draft.find((t) => t.id === action.id);
+        if (!extra) return;
+        extra.color = action.color || getColor({ id: action.id });
+        return;
+      }
       case "reset":
         return [];
     }
@@ -348,6 +355,10 @@ const Data = () => {
     });
   };
 
+  const setColorExtra = (id, color) => {
+    extraEventsDispatch({ type: "setColor", id, color });
+  };
+
   const removeAllExtra = () => {
     tabEventsDispatch({ type: "removeAllExtra" });
     extraEventsDispatch({ type: "reset" });
@@ -400,6 +411,7 @@ const Data = () => {
         subtitle,
         tooltip,
         curso: null,
+        color: event.color ?? getColor({ id: event.id }),
       };
     });
 
@@ -458,6 +470,7 @@ const Data = () => {
     removeExtra,
     removeExtraFromTab,
     renameExtra,
+    setColorExtra,
     removeAllExtra,
     limpiarTab,
     selectTab,

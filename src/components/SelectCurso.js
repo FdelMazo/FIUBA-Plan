@@ -19,7 +19,7 @@ import { useSelect } from "downshift";
 import React from "react";
 import { useHotkeys } from "react-hotkeys-hook";
 import { DataContext } from "../DataContext";
-import { getColor, stateReducer } from "../utils";
+import { stateReducer } from "../utils";
 import ConfigCurso from "./ConfigCurso";
 
 const INICIALES_SEMANA = ["D", "L", "M", "X", "J", "V", "S"];
@@ -28,8 +28,6 @@ const SelectCurso = ({ codigo }) => {
   const {
     coloresCursos,
     setColorCurso,
-    setVirtualidadCursoDia,
-    esVirtualCursoDia,
     toggleCurso,
     events,
     toggleMateria,
@@ -169,12 +167,8 @@ const SelectCurso = ({ codigo }) => {
         </Tooltip>
 
         <ConfigCurso
-          codigo={codigo}
+          setColorCurso={setColorCurso}
           cursosActivos={cursosActivos}
-          colorCurso={""}
-          setColorCurso={""}
-          esVirtualCursoDia={esVirtualCursoDia}
-          setVirtualidadCursoDia={setVirtualidadCursoDia}
         />
       </Flex>
 

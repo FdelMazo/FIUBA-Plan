@@ -28,8 +28,8 @@ const COMPLETOS_SEMANA = [
 
 const ConfigCurso = ({
   codigo,
-  materiaColor,
-  setColorMateria,
+  colorCurso,
+  setColorCurso,
   cursosActivos,
   esVirtualCursoDia,
   setVirtualidadCursoDia,
@@ -77,8 +77,6 @@ const ConfigCurso = ({
                 width: "100%",
                 padding: "4px",
               }}
-              color={materiaColor}
-              onChange={(c) => setColorMateria(codigo, c)}
             />
           </Box>
 

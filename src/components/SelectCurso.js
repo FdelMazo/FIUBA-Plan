@@ -26,8 +26,8 @@ const INICIALES_SEMANA = ["D", "L", "M", "X", "J", "V", "S"];
 
 const SelectCurso = ({ codigo }) => {
   const {
-    coloresMaterias,
-    setColorMateria,
+    coloresCursos,
+    setColorCurso,
     setVirtualidadCursoDia,
     esVirtualCursoDia,
     toggleCurso,
@@ -83,9 +83,6 @@ const SelectCurso = ({ codigo }) => {
     const curso = items[highlightedIndex];
     toggleCurso(curso.codigo);
   });
-
-  const materiaColor =
-    coloresMaterias[codigo] ?? getColor({ id: materia.codigo });
 
   const cursosActivos = React.useMemo(
     () =>
@@ -173,9 +170,9 @@ const SelectCurso = ({ codigo }) => {
 
         <ConfigCurso
           codigo={codigo}
-          materiaColor={materiaColor}
-          setColorMateria={setColorMateria}
           cursosActivos={cursosActivos}
+          colorCurso={""}
+          setColorCurso={""}
           esVirtualCursoDia={esVirtualCursoDia}
           setVirtualidadCursoDia={setVirtualidadCursoDia}
         />
@@ -196,7 +193,7 @@ const SelectCurso = ({ codigo }) => {
         {items.map((item, index) => {
           const event = events.find((i) => i.curso === item.codigo);
           const isActive = !!event;
-          const color = event?.color ?? materiaColor;
+          const color = event?.color ?? coloresCursos[item.codigo];
           const isItemBlocked = isBlocked(item.codigo);
           return (
             <Tooltip

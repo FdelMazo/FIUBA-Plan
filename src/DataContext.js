@@ -218,14 +218,14 @@ const Data = () => {
     setHorariosSIU(null);
   };
 
-  // ESTADO 5: Colores configurados de las materias (globales para todas las tabs).
-  const [coloresMaterias, setColoresMaterias] = useImmer(() =>
-    initialMateriaColors(),
+  // ESTADO 5: Colores configurados por curso (globales para todas las tabs).
+  const [coloresCursos, setColoresCursos] = useImmer(() =>
+    initialColoresCursos(),
   );
 
-  const setColorMateria = (codigoMateria, color) => {
-    setColoresMaterias((colores) => {
-      colores[codigoMateria] = color;
+  const setColorCurso = (codigoCurso, color) => {
+    setColoresCursos((colores) => {
+      colores[codigoCurso] = color;
     });
   };
 
@@ -256,7 +256,7 @@ const Data = () => {
       extraEvents,
       horariosSIU,
       skipSIU,
-      coloresMaterias,
+      coloresMaterias: coloresCursos,
       virtualidadCursos
     };
   }, [
@@ -266,7 +266,7 @@ const Data = () => {
     JSON.stringify(extraEvents),
     JSON.stringify(horariosSIU),
     JSON.stringify(skipSIU),
-    JSON.stringify(coloresMaterias),
+    JSON.stringify(coloresCursos),
     JSON.stringify(virtualidadCursos)
   ]);
 
@@ -426,18 +426,18 @@ const Data = () => {
           const subtitle = curso.docentes;
           const tooltip = `[${materia.codigo}] ${materia.nombre}\n${curso.docentes}`;
 
+          const id = curso.clases + curso.codigo + curso.docentes;
+
           return {
             start: inicio,
             end: fin,
-            id: curso.clases + curso.codigo + curso.docentes,
+            id,
             title,
             subtitle,
             tooltip,
             curso: curso.codigo,
             codigoMateria: materia.codigo,
-            color:
-              coloresMaterias[materia.codigo] ??
-              getColor({ id: materia.codigo })
+            color: coloresCursos[curso.codigo] ?? getColor({ id })
           };
         });
       });
@@ -448,7 +448,7 @@ const Data = () => {
     activeTabId,
     extraEvents,
     JSON.stringify(tabEvents),
-    JSON.stringify(coloresMaterias)
+    JSON.stringify(coloresCursos)
   ]);
 
   return {
@@ -483,8 +483,8 @@ const Data = () => {
     setErrorPermalink,
     skipSIU,
     setSkipSIU,
-    coloresMaterias,
-    setColorMateria,
+    coloresCursos,
+    setColorCurso,
     virtualidadCursos,
     setVirtualidadCursoDia,
     esVirtualCursoDia
@@ -539,7 +539,7 @@ const initialHorariosSIU = () => {
   );
 };
 
-const initialMateriaColors = () => {
+const initialColoresCursos = () => {
   return (
     permalinksavedata?.coloresMaterias ||
     getFromStorage("coloresMaterias") ||

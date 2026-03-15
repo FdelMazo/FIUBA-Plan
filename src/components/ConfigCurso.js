@@ -3,6 +3,7 @@ import {
   Box,
   Button,
   DarkMode,
+  Flex,
   IconButton,
   Menu,
   MenuButton,
@@ -14,6 +15,7 @@ import {
   PopoverCloseButton,
   PopoverContent,
   PopoverTrigger,
+  Switch,
   Text,
 } from "@chakra-ui/react";
 import React from "react";
@@ -21,11 +23,19 @@ import { HexColorPicker } from "react-colorful";
 import { DataContext } from "../DataContext";
 import { getColor } from "../utils";
 
+const DIAS_SEMANA = [
+  "Domingo",
+  "Lunes",
+  "Martes",
+  "Miércoles",
+  "Jueves",
+  "Viernes",
+  "Sábado",
+];
+
 const ConfigCurso = ({ setColorCurso, cursosActivos }) => {
-  const { coloresCursos } = React.useContext(DataContext);
-  const [selectedCursoCodigo, setSelectedCursoCodigo] = React.useState(
-    cursosActivos[0]?.codigo,
-  );
+  const { coloresCursos, toggleIgnorarCurso, isCursoIgnorado } = React.useContext(DataContext);
+  const [selectedCursoCodigo, setSelectedCursoCodigo] = React.useState(cursosActivos[0]?.codigo);
 
   React.useEffect(() => {
     if (!cursosActivos.length) {
@@ -33,9 +43,7 @@ const ConfigCurso = ({ setColorCurso, cursosActivos }) => {
       return;
     }
 
-    const cursoSigueExistiendo = cursosActivos.some(
-      (curso) => curso.codigo === selectedCursoCodigo,
-    );
+    const cursoSigueExistiendo = cursosActivos.some((c) => c.codigo === selectedCursoCodigo);
 
     if (!selectedCursoCodigo || !cursoSigueExistiendo) {
       setSelectedCursoCodigo(cursosActivos[0].codigo);
@@ -43,7 +51,7 @@ const ConfigCurso = ({ setColorCurso, cursosActivos }) => {
   }, [cursosActivos, selectedCursoCodigo]);
 
   const selectedCurso = React.useMemo(
-    () => cursosActivos.find((curso) => curso.codigo === selectedCursoCodigo),
+    () => cursosActivos.find((c) => c.codigo === selectedCursoCodigo),
     [cursosActivos, selectedCursoCodigo],
   );
 
@@ -57,6 +65,42 @@ const ConfigCurso = ({ setColorCurso, cursosActivos }) => {
     },
     [coloresCursos],
   );
+
+  const clasesPorDia = React.useMemo(() => {
+    if (!selectedCurso?.clases?.length) {
+      return [];
+    }
+
+    const porDia = selectedCurso.clases.reduce((acc, clase) => {
+      if (!acc[clase.dia]) {
+        acc[clase.dia] = [];
+      }
+      acc[clase.dia].push(clase);
+      return acc;
+    }, {});
+
+    return Object.entries(porDia)
+      .map(([dia, clases]) => ({
+        dia: Number(dia),
+        clases: clases.sort((a, b) => a.inicio.localeCompare(b.inicio)),
+      }))
+      .sort((a, b) => a.dia - b.dia);
+  }, [selectedCurso]);
+
+  const claseToDates = (dia, clase) => {
+    // 2026 solo se utiliza como una fecha ancla para obtener las horas en el formato correcto.
+    // Realmente de la fecha solo se utilizan la hora y los minutos.
+
+    const inicio = new Date(2026, 0, dia);
+    const [inicioHora, inicioMinutos] = clase.inicio.split(":");
+    inicio.setHours(inicioHora, inicioMinutos);
+
+    const fin = new Date(2026, 0, dia);
+    const [finHora, finMinutos] = clase.fin.split(":");
+    fin.setHours(finHora, finMinutos);
+
+    return { inicio, fin };
+  };
 
   return (
     <Popover
@@ -102,7 +146,7 @@ const ConfigCurso = ({ setColorCurso, cursosActivos }) => {
             minH="300px"
           >
             <Box>
-              <Text mb={2}>Curso a configurar</Text>
+              <Text mb={2}>Configurar curso</Text>
               <Menu matchWidth>
                 <MenuButton
                   as={Button}
@@ -168,16 +212,71 @@ const ConfigCurso = ({ setColorCurso, cursosActivos }) => {
                 </Box>
               ) : (
                 <>
-                  <HexColorPicker
-                    style={{
-                      width: "100%",
-                    }}
-                    color={getCursoColor(selectedCurso)}
-                    onChange={(color) => {
-                      if (!selectedCurso) return;
-                      setColorCurso(selectedCurso.codigo, color);
-                    }}
-                  />
+                  <Box>
+                    <Text mb={2}>
+                      Seleccionar color del curso
+                    </Text>
+
+                    <HexColorPicker
+                      style={{
+                        width: "100%",
+                      }}
+                      color={getCursoColor(selectedCurso)}
+                      onChange={(color) => {
+                        if (!selectedCurso) return;
+                        setColorCurso(selectedCurso.codigo, color);
+                      }}
+                    />
+                  </Box>
+
+                  <Box mt={4}>
+                    <Text mb={2}>
+                      Seleccionar clases ignoradas
+                    </Text>
+
+                    {clasesPorDia.map(({ dia, clases }) => (
+                      <Box key={dia} mb={3}>
+                        <Text fontSize="sm" color="whiteAlpha.800" mb={1}>
+                          {DIAS_SEMANA[dia] ?? `Día ${dia}`}
+                        </Text>
+
+                        {clases.map((clase) => {
+                          const { inicio, fin } = claseToDates(dia, clase);
+                          const checked = isCursoIgnorado(
+                            selectedCurso.codigo,
+                            dia,
+                            inicio,
+                            fin,
+                          );
+
+                          return (
+                            <Flex
+                              key={`${dia}-${clase.inicio}-${clase.fin}`}
+                              align="center"
+                              justify="space-between"
+                              py={1}
+                            >
+                              <Text fontSize="xs">
+                                {clase.inicio} - {clase.fin}
+                              </Text>
+                              <Switch
+                                isChecked={checked}
+                                onChange={() =>
+                                  toggleIgnorarCurso(
+                                    selectedCurso.codigo,
+                                    dia,
+                                    inicio,
+                                    fin,
+                                  )
+                                }
+                                colorScheme="primary"
+                              />
+                            </Flex>
+                          );
+                        })}
+                      </Box>
+                    ))}
+                  </Box>
                 </>
               )}
             </Box>

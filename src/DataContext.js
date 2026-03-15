@@ -46,7 +46,9 @@ const Data = () => {
   const [errorPermalink, setErrorPermalink] = React.useState(permalinksavedata === "");
   // ESTADO 0: el usuario cargo a manopla los horarios de su propio SIU, o decide no usarlos
   const [horariosSIU, setHorariosSIU] = React.useState(initialHorariosSIU);
-  const [skipSIU, setSkipSIU] = React.useState(getFromStorage("skipSIU") || false);
+  const [skipSIU, setSkipSIU] = React.useState(
+    getFromStorage("skipSIU") || false
+  );
 
   // Getters que verifican contra el SIU del usuario
   const getters = React.useMemo(() => {
@@ -229,22 +231,34 @@ const Data = () => {
     });
   };
 
-  // ESTADO 6: Virtualidad configurada por curso y dia.
-  const [virtualidadCursos, setVirtualidadCursos] = useImmer(() =>
-    initialVirtualidadCursos(),
+  // ESTADO 6: Cursos ignorados configurados por día y horario
+  const [cursosIgnorados, setCursosIgnorados] = useImmer(() =>
+    initialCursosIgnorados(),
   );
 
-  const setVirtualidadCursoDia = (codigoCurso, dia, esVirtual) => {
-    setVirtualidadCursos((virtualidad) => {
-      if (!virtualidad[codigoCurso]) {
-        virtualidad[codigoCurso] = {};
+  const formatHora = (hora) => {
+    const hh = String(hora.getHours()).padStart(2, "0");
+    const mm = String(hora.getMinutes()).padStart(2, "0");
+    return `${hh}:${mm}`;
+  };
+
+  const keyCursoIgnorado = (dia, inicio, fin) => {
+    return `${dia}-${formatHora(inicio)}-${formatHora(fin)}`;
+  };
+
+  const toggleIgnorarCurso = (codigoCurso, dia, inicio, fin) => {
+    setCursosIgnorados((ignorados) => {
+      const key = keyCursoIgnorado(dia, inicio, fin);
+      if (!ignorados[codigoCurso]) {
+        ignorados[codigoCurso] = { [key]: true };
+      } else {
+        ignorados[codigoCurso][key] = !ignorados[codigoCurso][key];
       }
-      virtualidad[codigoCurso][String(dia)] = esVirtual;
     });
   };
 
-  const esVirtualCursoDia = (codigoCurso, dia) => {
-    return !!virtualidadCursos[codigoCurso]?.[String(dia)];
+  const isCursoIgnorado = (codigoCurso, dia, inicio, fin) => {
+    return !!cursosIgnorados[codigoCurso]?.[keyCursoIgnorado(dia, inicio, fin)];
   };
 
   // El estado que se guarda y determina el permalink es el `savedata` del usuario
@@ -256,8 +270,8 @@ const Data = () => {
       extraEvents,
       horariosSIU,
       skipSIU,
-      coloresMaterias: coloresCursos,
-      virtualidadCursos
+      coloresCursos,
+      cursosIgnorados,
     };
   }, [
     JSON.stringify(selectedMaterias),
@@ -267,7 +281,7 @@ const Data = () => {
     JSON.stringify(horariosSIU),
     JSON.stringify(skipSIU),
     JSON.stringify(coloresCursos),
-    JSON.stringify(virtualidadCursos)
+    JSON.stringify(cursosIgnorados),
   ]);
 
   // Si venimos de un permalink, estamos en una sesion de read - only hasta que el usuario quiera pisar los datos
@@ -485,9 +499,9 @@ const Data = () => {
     setSkipSIU,
     coloresCursos,
     setColorCurso,
-    virtualidadCursos,
-    setVirtualidadCursoDia,
-    esVirtualCursoDia
+    cursosIgnorados,
+    toggleIgnorarCurso,
+    isCursoIgnorado,
   };
 };
 
@@ -541,16 +555,14 @@ const initialHorariosSIU = () => {
 
 const initialColoresCursos = () => {
   return (
-    permalinksavedata?.coloresMaterias ||
-    getFromStorage("coloresMaterias") ||
-    {}
+    permalinksavedata?.coloresCursos || getFromStorage("coloresCursos") || {}
   );
 };
 
-const initialVirtualidadCursos = () => {
+const initialCursosIgnorados = () => {
   return (
-    permalinksavedata?.virtualidadCursos ||
-    getFromStorage("virtualidadCursos") ||
+    permalinksavedata?.cursosIgnorados ||
+    getFromStorage("cursosIgnorados") ||
     {}
   );
 };

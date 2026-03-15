@@ -43,14 +43,10 @@ const Data = () => {
   // Utilizamos errorPermalink para handlear si hubo un error procesando
   // el permalink, y si lo hubo redireccionar a la home y mostrar un toast (en TabSystem.js)
   // informando al usuario que hubo un error
-  const [errorPermalink, setErrorPermalink] = React.useState(
-    permalinksavedata === "",
-  );
+  const [errorPermalink, setErrorPermalink] = React.useState(permalinksavedata === "");
   // ESTADO 0: el usuario cargo a manopla los horarios de su propio SIU, o decide no usarlos
   const [horariosSIU, setHorariosSIU] = React.useState(initialHorariosSIU);
-  const [skipSIU, setSkipSIU] = React.useState(
-    getFromStorage("skipSIU") || false,
-  );
+  const [skipSIU, setSkipSIU] = React.useState(getFromStorage("skipSIU") || false);
 
   // Getters que verifican contra el SIU del usuario
   const getters = React.useMemo(() => {
@@ -64,7 +60,7 @@ const Data = () => {
 
     const getCursosMateria = (codigoMateria) => {
       const cursos = horariosSIU?.materias.find(
-        (m) => m.codigo === codigoMateria,
+        (m) => m.codigo === codigoMateria
       ).cursos;
       return cursos?.map(getCurso) || [];
     };
@@ -72,13 +68,13 @@ const Data = () => {
     return {
       getMateria,
       getCurso,
-      getCursosMateria,
+      getCursosMateria
     };
   }, [horariosSIU]);
 
   // ESTADO 1: Las materias tickeadas por el usuario para verlas en el drawer
   const [selectedMaterias, setSelectedMaterias] = useImmer(() =>
-    initialSelectedMaterias(),
+    initialSelectedMaterias()
   );
 
   // ESTADO 2: Las tabs y el nombre que el usuario les puso
@@ -100,7 +96,7 @@ const Data = () => {
   const [tabs, tabsDispatch] = useImmerReducer(
     tabsReducer,
     [{ id: 0 }],
-    initialTabs,
+    initialTabs
   );
 
   // ESTADO 3, el mas importante: Todos los eventos que hay en cada tab
@@ -113,7 +109,7 @@ const Data = () => {
             draft[activeTabId].cursos.push(action.id);
           } else {
             draft[activeTabId].cursos = draft[activeTabId].cursos.filter(
-              (i) => i !== action.id,
+              (i) => i !== action.id
             );
           }
         } else {
@@ -121,7 +117,7 @@ const Data = () => {
             draft[activeTabId].extra.push(action.id);
           } else {
             draft[activeTabId].extra = draft[activeTabId].extra.filter(
-              (i) => i !== action.id,
+              (i) => i !== action.id
             );
           }
         }
@@ -136,22 +132,22 @@ const Data = () => {
         return Object.fromEntries(
           Object.entries(draft).map(([tabId, { cursos, extra }]) => [
             tabId,
-            { cursos, extra: extra.filter((i) => i !== action.id) },
-          ]),
+            { cursos, extra: extra.filter((i) => i !== action.id) }
+          ])
         );
       case "removeCursos":
         return Object.fromEntries(
           Object.entries(draft).map(([tabId, { cursos, extra }]) => [
             tabId,
-            { cursos: cursos.filter((i) => !action.ids.includes(i)), extra },
-          ]),
+            { cursos: cursos.filter((i) => !action.ids.includes(i)), extra }
+          ])
         );
       case "removeAllExtra":
         return Object.fromEntries(
           Object.entries(draft).map(([tabId, { cursos, _extra }]) => [
             tabId,
-            { cursos, extra: [] },
-          ]),
+            { cursos, extra: [] }
+          ])
         );
     }
   };
@@ -159,7 +155,7 @@ const Data = () => {
   const [tabEvents, tabEventsDispatch] = useImmerReducer(
     tabEventsReducer,
     { 0: { cursos: [], extra: [] } },
-    (defvalue) => initialTabEvents(defvalue),
+    (defvalue) => initialTabEvents(defvalue)
   );
 
   // ESTADO 4: Los horarios extracurriculares que agrega el usuario, y el nombre que les puso
@@ -172,7 +168,7 @@ const Data = () => {
           start: action.event.start,
           end: action.event.end,
           title: action.event.title,
-          color: getColor({ id: action.event.id }),
+          color: getColor({ id: action.event.id })
         });
       case "rename":
         return void (draft.find((t) => t.id === action.id).title =
@@ -193,7 +189,7 @@ const Data = () => {
   const [extraEvents, extraEventsDispatch] = useImmerReducer(
     extraEventsReducer,
     [],
-    initialExtraEvents,
+    initialExtraEvents
   );
 
   const getPeriodosSIU = (rawdata) => {
@@ -261,7 +257,7 @@ const Data = () => {
       horariosSIU,
       skipSIU,
       coloresMaterias,
-      virtualidadCursos,
+      virtualidadCursos
     };
   }, [
     JSON.stringify(selectedMaterias),
@@ -271,7 +267,7 @@ const Data = () => {
     JSON.stringify(horariosSIU),
     JSON.stringify(skipSIU),
     JSON.stringify(coloresMaterias),
-    JSON.stringify(virtualidadCursos),
+    JSON.stringify(virtualidadCursos)
   ]);
 
   // Si venimos de un permalink, estamos en una sesion de read - only hasta que el usuario quiera pisar los datos
@@ -316,7 +312,7 @@ const Data = () => {
 
     const id = start.getTime() + end.getTime() + Math.random() * 100;
     const randomLetter = String.fromCharCode(
-      65 + Math.floor(id % 23) + Math.floor(id % 3),
+      65 + Math.floor(id % 23) + Math.floor(id % 3)
     );
     const title = `ACTIVIDAD ${randomLetter}`;
 
@@ -338,7 +334,7 @@ const Data = () => {
 
   const removeExtraFromTab = (id) => {
     const tabs = Object.values(tabEvents).filter((tab) =>
-      tab.extra.includes(id),
+      tab.extra.includes(id)
     );
     if (tabs.length === 1) {
       removeExtra(id);
@@ -351,7 +347,7 @@ const Data = () => {
     extraEventsDispatch({
       type: "rename",
       id: id,
-      title: str.trim() || "EXTRA",
+      title: str.trim() || "EXTRA"
     });
   };
 
@@ -411,7 +407,7 @@ const Data = () => {
         subtitle,
         tooltip,
         curso: null,
-        color: event.color ?? getColor({ id: event.id }),
+        color: event.color ?? getColor({ id: event.id })
       };
     });
 
@@ -441,7 +437,7 @@ const Data = () => {
             codigoMateria: materia.codigo,
             color:
               coloresMaterias[materia.codigo] ??
-              getColor({ id: materia.codigo }),
+              getColor({ id: materia.codigo })
           };
         });
       });
@@ -452,7 +448,7 @@ const Data = () => {
     activeTabId,
     extraEvents,
     JSON.stringify(tabEvents),
-    JSON.stringify(coloresMaterias),
+    JSON.stringify(coloresMaterias)
   ]);
 
   return {
@@ -491,7 +487,7 @@ const Data = () => {
     setColorMateria,
     virtualidadCursos,
     setVirtualidadCursoDia,
-    esVirtualCursoDia,
+    esVirtualCursoDia
   };
 };
 
@@ -519,8 +515,8 @@ const initialTabEvents = (defvalue) => {
   return Object.fromEntries(
     Object.entries(tabEvents).map(([tabid, { cursos, extra }]) => [
       tabid,
-      { cursos: cursos, extra },
-    ]),
+      { cursos: cursos, extra }
+    ])
   );
 };
 
@@ -528,7 +524,7 @@ const initialExtraEvents = (defvalue) => {
   const coerceExtraEvent = (e) => ({
     ...e,
     start: new Date(e.start),
-    end: new Date(e.end),
+    end: new Date(e.end)
   });
   return (
     permalinksavedata?.extraEvents?.map(coerceExtraEvent) ||

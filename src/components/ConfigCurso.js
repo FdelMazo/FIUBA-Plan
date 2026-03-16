@@ -4,7 +4,10 @@ import {
   Button,
   DarkMode,
   Flex,
+  FormControl,
+  FormErrorMessage,
   IconButton,
+  Input,
   Menu,
   MenuButton,
   MenuItem,
@@ -19,9 +22,28 @@ import {
   Text,
 } from "@chakra-ui/react";
 import React from "react";
-import { HexColorPicker } from "react-colorful";
+import { BlockPicker } from "react-color";
 import { DataContext } from "../DataContext";
 import { getColor } from "../utils";
+
+const HEX_COLOR_REGEX = /^#(?:[0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})$/;
+
+const SUGGESTED_COLORS = [
+  "#FF3B30",
+  "#FF9500",
+  "#FFCC00",
+  "#34C759",
+  "#00C7BE",
+  "#32ADE6",
+  "#007AFF",
+  "#5856D6",
+  "#AF52DE",
+  "#FF2D55",
+  "#FF6B6B",
+  "#00E5FF",
+  "#76FF03",
+  "#FFD600",
+];
 
 const DIAS_SEMANA = [
   "Domingo",
@@ -34,8 +56,11 @@ const DIAS_SEMANA = [
 ];
 
 const ConfigCurso = ({ setColorCurso, cursosActivos }) => {
-  const { coloresCursos, toggleIgnorarCurso, isCursoIgnorado } = React.useContext(DataContext);
-  const [selectedCursoCodigo, setSelectedCursoCodigo] = React.useState(cursosActivos[0]?.codigo);
+  const { coloresCursos, toggleIgnorarCurso, isCursoIgnorado } =
+    React.useContext(DataContext);
+  const [selectedCursoCodigo, setSelectedCursoCodigo] = React.useState(
+    cursosActivos[0]?.codigo,
+  );
 
   React.useEffect(() => {
     if (!cursosActivos.length) {
@@ -43,7 +68,9 @@ const ConfigCurso = ({ setColorCurso, cursosActivos }) => {
       return;
     }
 
-    const cursoSigueExistiendo = cursosActivos.some((c) => c.codigo === selectedCursoCodigo);
+    const cursoSigueExistiendo = cursosActivos.some(
+      (c) => c.codigo === selectedCursoCodigo,
+    );
 
     if (!selectedCursoCodigo || !cursoSigueExistiendo) {
       setSelectedCursoCodigo(cursosActivos[0].codigo);
@@ -213,16 +240,11 @@ const ConfigCurso = ({ setColorCurso, cursosActivos }) => {
               ) : (
                 <>
                   <Box>
-                    <Text mb={2}>
-                      Seleccionar color del curso
-                    </Text>
+                    <Text mb={2}>Seleccionar color del curso</Text>
 
-                    <HexColorPicker
-                      style={{
-                        width: "100%",
-                      }}
+                    <CursoColorPicker
                       color={getCursoColor(selectedCurso)}
-                      onChange={(color) => {
+                      onColorChange={(color) => {
                         if (!selectedCurso) return;
                         setColorCurso(selectedCurso.codigo, color);
                       }}
@@ -230,9 +252,7 @@ const ConfigCurso = ({ setColorCurso, cursosActivos }) => {
                   </Box>
 
                   <Box mt={4}>
-                    <Text mb={2}>
-                      Seleccionar clases ignoradas
-                    </Text>
+                    <Text mb={2}>Seleccionar clases ignoradas</Text>
 
                     {clasesPorDia.map(({ dia, clases }) => (
                       <Box key={dia} mb={3}>
@@ -256,7 +276,7 @@ const ConfigCurso = ({ setColorCurso, cursosActivos }) => {
                               justify="space-between"
                               py={1}
                             >
-                              <Text fontSize="xs">
+                              <Text fontSize="sm">
                                 {clase.inicio} - {clase.fin}
                               </Text>
                               <Switch
@@ -284,6 +304,68 @@ const ConfigCurso = ({ setColorCurso, cursosActivos }) => {
         </PopoverContent>
       </DarkMode>
     </Popover>
+  );
+};
+
+const CursoColorPicker = ({ color, onColorChange }) => {
+  const [inputColor, setInputColor] = React.useState(color);
+
+  React.useEffect(() => {
+    setInputColor((color || "").toUpperCase());
+  }, [color]);
+
+  const isColorInvalid =
+    inputColor?.length > 0 && !HEX_COLOR_REGEX.test(inputColor);
+
+  return (
+    <>
+      <BlockPicker
+        width="100%"
+        triangle="hide"
+        colors={SUGGESTED_COLORS}
+        styles={{
+          default: {
+            body: {
+              padding: "10px 10px 0",
+            },
+            label: {
+              textTransform: "uppercase",
+            },
+            input: {
+              display: "none",
+            },
+          },
+        }}
+        color={HEX_COLOR_REGEX.test(color) ? color : "#FFFFFF"}
+        onChange={(nextColor) => {
+          const hexColor = nextColor.hex.toUpperCase();
+          setInputColor(hexColor);
+          onColorChange(hexColor);
+        }}
+      />
+
+      <FormControl mt={3} isInvalid={isColorInvalid}>
+        <Flex align="center" gap={2}>
+          <Text fontSize="sm" fontWeight="semibold">
+            HEX:
+          </Text>
+          <Input
+            value={inputColor}
+            placeholder="#AABBCC o #ABC"
+            textTransform="uppercase"
+            onChange={(event) => {
+              const nextColor = event.target.value.toUpperCase();
+              setInputColor(nextColor);
+
+              if (HEX_COLOR_REGEX.test(nextColor)) {
+                onColorChange(nextColor);
+              }
+            }}
+          />
+        </Flex>
+        <FormErrorMessage>Código de color inválido</FormErrorMessage>
+      </FormControl>
+    </>
   );
 };
 

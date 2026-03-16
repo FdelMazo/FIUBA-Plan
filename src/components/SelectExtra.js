@@ -5,149 +5,26 @@ import {
   EditIcon,
   MinusIcon,
   SmallCloseIcon,
-  SettingsIcon,
 } from "@chakra-ui/icons";
 import {
   Box,
   Button,
-  DarkMode,
   Editable,
   EditableInput,
   EditablePreview,
   Flex,
   IconButton,
   List,
-  Popover,
-  PopoverArrow,
-  PopoverBody,
-  PopoverCloseButton,
-  PopoverContent,
-  PopoverTrigger,
   Text,
   Tooltip,
   useEditableControls,
 } from "@chakra-ui/react";
 import { useSelect } from "downshift";
 import React from "react";
-import { HexColorPicker } from "react-colorful";
 import { useHotkeys } from "react-hotkeys-hook";
 import { DataContext } from "../DataContext";
 import { getColor, stateReducer } from "../utils";
-
-const PopoverConfigExtra = ({ extraEvents, setColorExtra }) => {
-  const [selectedExtraId, setSelectedExtraId] = React.useState(
-    extraEvents[0]?.id,
-  );
-
-  React.useEffect(() => {
-    if (!extraEvents.length) {
-      setSelectedExtraId(undefined);
-      return;
-    }
-
-    const stillExists = extraEvents.some(
-      (extra) => extra.id === selectedExtraId,
-    );
-    if (!stillExists) {
-      setSelectedExtraId(extraEvents[0].id);
-    }
-  }, [extraEvents, selectedExtraId]);
-
-  const selectedExtra = extraEvents.find(
-    (extra) => extra.id === selectedExtraId,
-  );
-
-  return (
-    <Popover
-      placement="auto"
-      gutter={8}
-      modifiers={[
-        {
-          name: "preventOverflow",
-          options: {
-            boundary: "viewport",
-            padding: 8,
-          },
-        },
-        {
-          name: "flip",
-          options: {
-            fallbackPlacements: ["top", "bottom"],
-          },
-        },
-      ]}
-    >
-      <PopoverTrigger>
-        <IconButton
-          my={2}
-          ml={2}
-          colorScheme="primary"
-          variant="outline"
-          borderColor="primary"
-          color="primary.500"
-          icon={<SettingsIcon />}
-        />
-      </PopoverTrigger>
-
-      <DarkMode>
-        <PopoverContent color="white" maxH="calc(100dvh - 16px)">
-          <PopoverArrow />
-          <PopoverCloseButton top={3} right={3} />
-          <PopoverBody px={4} py={4} overflowY="auto">
-            {!extraEvents.length ? (
-              <Text fontSize="sm" color="gray.400">
-                No hay actividades extracurriculares para configurar.
-              </Text>
-            ) : (
-              <>
-                <Text mb={2}>Actividad a configurar</Text>
-                <List maxH="120px" overflowY="auto" mb={4}>
-                  {extraEvents.map((extra) => {
-                    const isSelected = extra.id === selectedExtraId;
-                    return (
-                      <Box
-                        key={extra.id}
-                        py={1}
-                        px={2}
-                        borderRadius="md"
-                        cursor="pointer"
-                        bg={isSelected ? "whiteAlpha.300" : "transparent"}
-                        _hover={{ bg: "whiteAlpha.200" }}
-                        onClick={() => setSelectedExtraId(extra.id)}
-                      >
-                        <Text fontSize="xs" noOfLines={1}>
-                          {extra.title}
-                        </Text>
-                      </Box>
-                    );
-                  })}
-                </List>
-
-                <Box>
-                  <Text mb={2}>Color para actividades extracurriculares</Text>
-                  <HexColorPicker
-                    style={{
-                      width: "100%",
-                      padding: "4px",
-                    }}
-                    color={
-                      selectedExtra?.color ??
-                      (selectedExtra ? getColor(selectedExtra) : "#ffffff")
-                    }
-                    onChange={(color) => {
-                      if (!selectedExtra) return;
-                      setColorExtra(selectedExtra.id, color);
-                    }}
-                  />
-                </Box>
-              </>
-            )}
-          </PopoverBody>
-        </PopoverContent>
-      </DarkMode>
-    </Popover>
-  );
-};
+import ConfigExtra from "./ConfigExtra";
 
 const SelectExtra = () => {
   const {
@@ -176,6 +53,14 @@ const SelectExtra = () => {
     const event = extraEvents[highlightedIndex];
     toggleExtra(event.id);
   });
+
+  const extrasActivas = React.useMemo(
+    () =>
+      extraEvents.filter((extra) =>
+        events.some((event) => event.id === extra.id),
+      ),
+    [extraEvents, events],
+  );
 
   return (
     <>
@@ -226,8 +111,8 @@ const SelectExtra = () => {
           />
         </Tooltip>
 
-        <PopoverConfigExtra
-          extraEvents={extraEvents}
+        <ConfigExtra
+          extrasActivas={extrasActivas}
           setColorExtra={setColorExtra}
         />
       </Flex>

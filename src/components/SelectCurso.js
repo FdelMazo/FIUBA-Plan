@@ -22,7 +22,7 @@ import { DataContext } from "../DataContext";
 import { cursoToDates, stateReducer } from "../utils";
 import ConfigCurso from "./ConfigCurso";
 
-const INICIALES_SEMANA = ["D", "L", "M", "X", "J", "V", "S"];
+const WEEKDAYS_CHAR = ["D", "L", "M", "X", "J", "V", "S"];
 
 const SelectCurso = ({ codigo }) => {
   const {
@@ -238,7 +238,7 @@ const SelectCurso = ({ codigo }) => {
                   >
                     {[
                       ...new Set(
-                        item.clases.map((clase) => INICIALES_SEMANA[clase.dia]),
+                        item.clases.map((clase) => WEEKDAYS_CHAR[clase.dia]),
                       ),
                     ].join(" | ")}
                   </Badge>

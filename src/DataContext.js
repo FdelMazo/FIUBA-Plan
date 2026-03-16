@@ -46,9 +46,7 @@ const Data = () => {
   const [errorPermalink, setErrorPermalink] = React.useState(permalinksavedata === "");
   // ESTADO 0: el usuario cargo a manopla los horarios de su propio SIU, o decide no usarlos
   const [horariosSIU, setHorariosSIU] = React.useState(initialHorariosSIU);
-  const [skipSIU, setSkipSIU] = React.useState(
-    getFromStorage("skipSIU") || false
-  );
+  const [skipSIU, setSkipSIU] = React.useState(getFromStorage("skipSIU") || false);
 
   // Getters que verifican contra el SIU del usuario
   const getters = React.useMemo(() => {

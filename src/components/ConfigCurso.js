@@ -24,7 +24,7 @@ import {
 import React from "react";
 import { BlockPicker } from "react-color";
 import { DataContext } from "../DataContext";
-import { getColor } from "../utils";
+import { cursoToDates, getColor } from "../utils";
 
 const HEX_COLOR_REGEX = /^#(?:[0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})$/;
 
@@ -45,7 +45,7 @@ const SUGGESTED_COLORS = [
   "#FFD600",
 ];
 
-const DIAS_SEMANA = [
+const WEEKDAYS = [
   "Domingo",
   "Lunes",
   "Martes",
@@ -113,21 +113,6 @@ const ConfigCurso = ({ setColorCurso, cursosActivos }) => {
       }))
       .sort((a, b) => a.dia - b.dia);
   }, [selectedCurso]);
-
-  const claseToDates = (dia, clase) => {
-    // 2026 solo se utiliza como una fecha ancla para obtener las horas en el formato correcto.
-    // Realmente de la fecha solo se utilizan la hora y los minutos.
-
-    const inicio = new Date(2026, 0, dia);
-    const [inicioHora, inicioMinutos] = clase.inicio.split(":");
-    inicio.setHours(inicioHora, inicioMinutos);
-
-    const fin = new Date(2026, 0, dia);
-    const [finHora, finMinutos] = clase.fin.split(":");
-    fin.setHours(finHora, finMinutos);
-
-    return { inicio, fin };
-  };
 
   return (
     <Popover
@@ -245,8 +230,9 @@ const ConfigCurso = ({ setColorCurso, cursosActivos }) => {
                     <CursoColorPicker
                       color={getCursoColor(selectedCurso)}
                       onColorChange={(color) => {
-                        if (!selectedCurso) return;
-                        setColorCurso(selectedCurso.codigo, color);
+                        if (selectedCurso) {
+                          setColorCurso(selectedCurso.codigo, color);
+                        }
                       }}
                     />
                   </Box>
@@ -257,14 +243,14 @@ const ConfigCurso = ({ setColorCurso, cursosActivos }) => {
                     {clasesPorDia.map(({ dia, clases }) => (
                       <Box key={dia} mb={3}>
                         <Text fontSize="sm" color="whiteAlpha.800" mb={1}>
-                          {DIAS_SEMANA[dia] ?? `Día ${dia}`}
+                          {WEEKDAYS[dia]}
                         </Text>
 
                         {clases.map((clase) => {
-                          const { inicio, fin } = claseToDates(dia, clase);
+                          const { inicio, fin } = cursoToDates(clase);
                           const checked = isCursoIgnorado(
                             selectedCurso.codigo,
-                            dia,
+                            clase.dia,
                             inicio,
                             fin,
                           );
@@ -284,7 +270,7 @@ const ConfigCurso = ({ setColorCurso, cursosActivos }) => {
                                 onChange={() =>
                                   toggleIgnorarCurso(
                                     selectedCurso.codigo,
-                                    dia,
+                                    clase.dia,
                                     inicio,
                                     fin,
                                   )
@@ -326,6 +312,7 @@ const CursoColorPicker = ({ color, onColorChange }) => {
         styles={{
           default: {
             body: {
+              // Para compensar el offset que genera el input builtin de react-color
               padding: "10px 10px 0",
             },
             label: {
@@ -354,11 +341,11 @@ const CursoColorPicker = ({ color, onColorChange }) => {
             placeholder="#AABBCC o #ABC"
             textTransform="uppercase"
             onChange={(event) => {
-              const nextColor = event.target.value.toUpperCase();
-              setInputColor(nextColor);
+              const color = event.target.value.toUpperCase();
+              setInputColor(color);
 
-              if (HEX_COLOR_REGEX.test(nextColor)) {
-                onColorChange(nextColor);
+              if (HEX_COLOR_REGEX.test(color)) {
+                onColorChange(color);
               }
             }}
           />

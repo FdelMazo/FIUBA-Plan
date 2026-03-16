@@ -19,7 +19,7 @@ import { useSelect } from "downshift";
 import React from "react";
 import { useHotkeys } from "react-hotkeys-hook";
 import { DataContext } from "../DataContext";
-import { stateReducer } from "../utils";
+import { cursoToDates, stateReducer } from "../utils";
 import ConfigCurso from "./ConfigCurso";
 
 const INICIALES_SEMANA = ["D", "L", "M", "X", "J", "V", "S"];
@@ -32,6 +32,7 @@ const SelectCurso = ({ codigo }) => {
     events,
     toggleMateria,
     getters,
+    isCursoIgnorado,
   } = React.useContext(DataContext);
   const materia = getters.getMateria(codigo);
   const items = getters.getCursosMateria(codigo);
@@ -42,15 +43,17 @@ const SelectCurso = ({ codigo }) => {
       const eventos = events.filter((e) => {
         const anotherCurso = getters.getCurso(e.curso);
         if (!anotherCurso) return false;
-        return anotherCurso.materia !== curso.materia;
+        if (anotherCurso.materia === curso.materia) return false;
+
+        const dia = e.start?.getDay?.();
+        return !isCursoIgnorado(e.curso, dia, e.start, e.end);
       });
       for (const clase of curso.clases) {
-        const inicio = new Date(2018, 0, clase.dia);
-        const [inicioHora, inicioMinutos] = clase.inicio.split(":");
-        inicio.setHours(inicioHora, inicioMinutos);
-        const fin = new Date(2018, 0, clase.dia);
-        const [finHora, finMinutos] = clase.fin.split(":");
-        fin.setHours(finHora, finMinutos);
+        const { inicio, fin } = cursoToDates(clase);
+
+        if (isCursoIgnorado(codigo, clase.dia, inicio, fin)) {
+          continue;
+        }
 
         for (const evento of eventos) {
           if (inicio < evento.end && fin > evento.start) {
@@ -60,7 +63,7 @@ const SelectCurso = ({ codigo }) => {
       }
       return false;
     },
-    [events, getters],
+    [events, getters, isCursoIgnorado],
   );
 
   const allItemsBlocked = items.every((item) => isBlocked(item.codigo));

@@ -52,3 +52,17 @@ export function jsontobase64(jsondata) {
   const savedataPako = pako.gzip(JSON.stringify(jsondata), { to: "string" });
   return Buffer.from(savedataPako).toString("base64");
 }
+
+// Retorna las fechas de inicio y fin de una clase (que no es necesariamente un
+// evento del calendario todavía).
+export const cursoToDates = (clase) => {
+  const inicio = new Date(2018, 0, clase.dia);
+  const [inicioHora, inicioMinutos] = clase.inicio.split(":");
+  inicio.setHours(inicioHora, inicioMinutos);
+
+  const fin = new Date(2018, 0, clase.dia);
+  const [finHora, finMinutos] = clase.fin.split(":");
+  fin.setHours(finHora, finMinutos);
+
+  return { inicio, fin };
+};

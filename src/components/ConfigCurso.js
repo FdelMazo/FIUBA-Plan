@@ -4,7 +4,7 @@ import { DataContext } from "../DataContext";
 import { cursoToDates, getColor } from "../utils";
 import ConfigColorPopover from "./ConfigColorPopover";
 
-const WEEKDAYS = [
+const DIAS_SEMANA = [
   "Domingo",
   "Lunes",
   "Martes",
@@ -87,7 +87,7 @@ const IgnoredClassesConfig = ({
       {clasesPorDia.map(({ dia, clases }) => (
         <Box key={dia} mb={3}>
           <Text fontSize="sm" color="whiteAlpha.800" mb={1}>
-            {WEEKDAYS[dia]}
+            {DIAS_SEMANA[dia]}
           </Text>
 
           {clases.map((clase) => {

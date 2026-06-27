@@ -25,7 +25,7 @@ import { BlockPicker } from "react-color";
 
 const HEX_COLOR_REGEX = /^#(?:[0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})$/;
 
-const SUGGESTED_COLORS = [
+const COLORES_SUGERIDOS = [
   "#FF3B30",
   "#FF9500",
   "#FFCC00",
@@ -43,40 +43,41 @@ const SUGGESTED_COLORS = [
 ];
 
 const ConfigColorPopover = ({
-  items,
-  getItemId,
-  getItemLabel,
-  getItemColor,
-  onColorChange,
-  title,
-  emptyLabel,
-  emptyConfigLabel,
-  colorLabel,
-  minHeight = "220px",
+  configs,
+  getConfigId,
+  getConfigLabel,
+  getColorConfig,
+  alCambiarColor,
+  titulo,
+  labelVacia,
+  labelConfigVacia,
+  labelColor,
+  alturaMinima = "220px",
   children,
 }) => {
-  const [selectedItemId, setSelectedItemId] = React.useState(
-    getItemId(items[0]),
+  const [configSeleccionadaId, setConfigSeleccionadaId] = React.useState(
+    getConfigId(configs[0]),
   );
 
   React.useEffect(() => {
-    if (!items.length) {
-      setSelectedItemId(undefined);
+    if (!configs.length) {
+      setConfigSeleccionadaId(undefined);
       return;
     }
 
-    const selectedItemExists = items.some(
-      (item) => getItemId(item) === selectedItemId,
+    const existeConfigSeleccionada = configs.some(
+      (config) => getConfigId(config) === configSeleccionadaId,
     );
 
-    if (!selectedItemId || !selectedItemExists) {
-      setSelectedItemId(getItemId(items[0]));
+    if (!configSeleccionadaId || !existeConfigSeleccionada) {
+      setConfigSeleccionadaId(getConfigId(configs[0]));
     }
-  }, [getItemId, items, selectedItemId]);
+  }, [getConfigId, configs, configSeleccionadaId]);
 
-  const selectedItem = React.useMemo(
-    () => items.find((item) => getItemId(item) === selectedItemId),
-    [getItemId, items, selectedItemId],
+  const configSeleccionada = React.useMemo(
+    () =>
+      configs.find((config) => getConfigId(config) === configSeleccionadaId),
+    [getConfigId, configs, configSeleccionadaId],
   );
 
   return (
@@ -120,10 +121,10 @@ const ConfigColorPopover = ({
             py={4}
             display="flex"
             flexDirection="column"
-            minH={minHeight}
+            minH={alturaMinima}
           >
             <Box>
-              <Text mb={2}>{title}</Text>
+              <Text mb={2}>{titulo}</Text>
               <Menu matchWidth>
                 <MenuButton
                   as={Button}
@@ -134,11 +135,11 @@ const ConfigColorPopover = ({
                   variant="outline"
                   borderColor="primary"
                   color="primary.500"
-                  isDisabled={!items.length}
+                  isDisabled={!configs.length}
                   rightIcon={
                     <>
                       <Text alignSelf="center" fontSize="x-small">
-                        ({items.length})
+                        ({configs.length})
                       </Text>
                       <ChevronDownIcon />
                     </>
@@ -147,20 +148,28 @@ const ConfigColorPopover = ({
                   <Text
                     fontSize="xs"
                     isTruncated
-                    color={selectedItem ? getItemColor(selectedItem) : "primary.500"}
+                    color={
+                      configSeleccionada
+                        ? getColorConfig(configSeleccionada)
+                        : "primary.500"
+                    }
                   >
-                    {selectedItem ? getItemLabel(selectedItem) : emptyLabel}
+                    {configSeleccionada
+                      ? getConfigLabel(configSeleccionada)
+                      : labelVacia}
                   </Text>
                 </MenuButton>
                 <MenuList maxH="220px" overflowY="auto">
-                  {items.map((item) => (
+                  {configs.map((config) => (
                     <MenuItem
-                      key={getItemId(item)}
+                      key={getConfigId(config)}
                       fontSize="xs"
-                      color={getItemColor(item)}
-                      onClick={() => setSelectedItemId(getItemId(item))}
+                      color={getColorConfig(config)}
+                      onClick={() =>
+                        setConfigSeleccionadaId(getConfigId(config))
+                      }
                     >
-                      {getItemLabel(item)}
+                      {getConfigLabel(config)}
                     </MenuItem>
                   ))}
                 </MenuList>
@@ -168,7 +177,7 @@ const ConfigColorPopover = ({
             </Box>
 
             <Box mt={4} flex="1" display="flex" flexDirection="column">
-              {!selectedItem ? (
+              {!configSeleccionada ? (
                 <Box
                   flex="1"
                   width="100%"
@@ -180,21 +189,23 @@ const ConfigColorPopover = ({
                   justifyContent="center"
                 >
                   <Text fontSize="sm" color="whiteAlpha.500" textAlign="center">
-                    {emptyConfigLabel}
+                    {labelConfigVacia}
                   </Text>
                 </Box>
               ) : (
                 <>
                   <Box>
-                    <Text mb={2}>{colorLabel}</Text>
+                    <Text mb={2}>{labelColor}</Text>
 
                     <ColorPicker
-                      color={getItemColor(selectedItem)}
-                      onColorChange={(color) => onColorChange(selectedItem, color)}
+                      color={getColorConfig(configSeleccionada)}
+                      alCambiarColor={(color) =>
+                        alCambiarColor(configSeleccionada, color)
+                      }
                     />
                   </Box>
 
-                  {children?.(selectedItem)}
+                  {children?.(configSeleccionada)}
                 </>
               )}
             </Box>
@@ -205,22 +216,22 @@ const ConfigColorPopover = ({
   );
 };
 
-const ColorPicker = ({ color, onColorChange }) => {
-  const [inputColor, setInputColor] = React.useState(color);
+const ColorPicker = ({ color, alCambiarColor }) => {
+  const [colorIngresado, setColorIngresado] = React.useState(color);
 
   React.useEffect(() => {
-    setInputColor((color || "").toUpperCase());
+    setColorIngresado((color || "").toUpperCase());
   }, [color]);
 
-  const isColorInvalid =
-    inputColor?.length > 0 && !HEX_COLOR_REGEX.test(inputColor);
+  const colorInvalido =
+    colorIngresado?.length > 0 && !HEX_COLOR_REGEX.test(colorIngresado);
 
   return (
     <>
       <BlockPicker
         width="100%"
         triangle="hide"
-        colors={SUGGESTED_COLORS}
+        colors={COLORES_SUGERIDOS}
         styles={{
           default: {
             body: {
@@ -235,28 +246,28 @@ const ColorPicker = ({ color, onColorChange }) => {
           },
         }}
         color={HEX_COLOR_REGEX.test(color) ? color : "#FFFFFF"}
-        onChange={(nextColor) => {
-          const hexColor = nextColor.hex.toUpperCase();
-          setInputColor(hexColor);
-          onColorChange(hexColor);
+        onChange={(colorSiguiente) => {
+          const colorHex = colorSiguiente.hex.toUpperCase();
+          setColorIngresado(colorHex);
+          alCambiarColor(colorHex);
         }}
       />
 
-      <FormControl mt={3} isInvalid={isColorInvalid}>
+      <FormControl mt={3} isInvalid={colorInvalido}>
         <Flex align="center" gap={2}>
           <Text fontSize="sm" fontWeight="semibold">
             HEX:
           </Text>
           <Input
-            value={inputColor}
+            value={colorIngresado}
             placeholder="#AABBCC o #ABC"
             textTransform="uppercase"
             onChange={(event) => {
-              const nextColor = event.target.value.toUpperCase();
-              setInputColor(nextColor);
+              const colorSiguiente = event.target.value.toUpperCase();
+              setColorIngresado(colorSiguiente);
 
-              if (HEX_COLOR_REGEX.test(nextColor)) {
-                onColorChange(nextColor);
+              if (HEX_COLOR_REGEX.test(colorSiguiente)) {
+                alCambiarColor(colorSiguiente);
               }
             }}
           />

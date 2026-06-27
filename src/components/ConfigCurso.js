@@ -32,16 +32,16 @@ const ConfigCurso = ({ setColorCurso, cursosActivos }) => {
 
   return (
     <ConfigColorPopover
-      items={cursosActivos}
-      getItemId={(curso) => curso?.codigo}
-      getItemLabel={(curso) => curso.docentes}
-      getItemColor={getCursoColor}
-      onColorChange={(curso, color) => setColorCurso(curso.codigo, color)}
-      title="Configurar curso"
-      emptyLabel="Sin cursos activos"
-      emptyConfigLabel="No hay curso para configurar"
-      colorLabel="Seleccionar color del curso"
-      minHeight="300px"
+      configs={cursosActivos}
+      getConfigId={(curso) => curso?.codigo}
+      getConfigLabel={(curso) => curso.docentes}
+      getColorConfig={getCursoColor}
+      alCambiarColor={(curso, color) => setColorCurso(curso.codigo, color)}
+      titulo="Configurar curso"
+      labelVacia="Sin cursos activos"
+      labelConfigVacia="No hay curso para configurar"
+      labelColor="Seleccionar color del curso"
+      alturaMinima="300px"
     >
       {(selectedCurso) => (
         <IgnoredClassesConfig

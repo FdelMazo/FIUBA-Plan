@@ -13,15 +13,15 @@ const ConfigExtra = ({ extrasActivas, setColorExtra }) => {
 
   return (
     <ConfigColorPopover
-      items={extrasActivas}
-      getItemId={(extra) => extra?.id}
-      getItemLabel={(extra) => extra.title}
-      getItemColor={getExtraColor}
-      onColorChange={(extra, color) => setColorExtra(extra.id, color)}
-      title="Configurar actividad"
-      emptyLabel="Sin actividades activas"
-      emptyConfigLabel="No hay actividad para configurar"
-      colorLabel="Seleccionar color de la actividad"
+      configs={extrasActivas}
+      getConfigId={(extra) => extra?.id}
+      getConfigLabel={(extra) => extra.title}
+      getColorConfig={getExtraColor}
+      alCambiarColor={(extra, color) => setColorExtra(extra.id, color)}
+      titulo="Configurar actividad"
+      labelVacia="Sin actividades activas"
+      labelConfigVacia="No hay actividad para configurar"
+      labelColor="Seleccionar color de la actividad"
     />
   );
 };

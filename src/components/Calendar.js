@@ -66,13 +66,14 @@ const MateriaEventAgenda = (props) => {
 const MyCalendar = (props) => {
   const { events, useAgenda } = props;
   const { width } = useWindowSize();
-  const { addExtra } = React.useContext(DataContext);
+  const { addExtra, isCursoIgnorado } = React.useContext(DataContext);
 
   const eventPropsGetter = React.useCallback(
     (event) => {
-      let color = event.id ? getColor(event) : "inherit";
+      let color = event.color ?? (event.id ? getColor(event) : "inherit");
       const style = {
-        borderWidth: "thin thin thin thick",
+        borderStyle: "solid",
+        borderWidth: "1px 1px 1px 6px",
         borderRightColor: "#d2adf4", //primary.300
         borderBottomColor: "#d2adf4", //primary.300
         borderTopColor: "#d2adf4", //primary.300
@@ -80,19 +81,47 @@ const MyCalendar = (props) => {
         color: "#1f1f1f",
         cursor: "default",
       };
+
+      if (useAgenda && event.isPlaceholder) {
+        return {
+          className: "rbc-agenda-placeholder-event",
+          style: {
+            ...style,
+            borderLeftColor: "#d2adf4",
+          },
+        };
+      }
+
+      const day = event.start?.getDay?.();
+      const isIgnored =
+        !!event.curso &&
+        isCursoIgnorado(event.curso, day, event.start, event.end);
+
+      const eventFillStyle = isIgnored
+        ? {
+            // Stripes diagonales con un fondo negro con 10% de opacidad.
+            // Es mejor tener un fondo negro que del propio color de la materia en las stripes para mantener la visibilidad en todos los colores.
+            backgroundImage: `linear-gradient(${color}44, ${color}44), repeating-linear-gradient(45deg, #0000001A 0px, #0000001A 8px, transparent 8px, transparent 16px)`,
+            backgroundColor: "#FFF",
+          }
+        : {
+            boxShadow: "inset 0 0 0 1000px " + color + "44",
+            backgroundColor: "#FFF",
+          };
       const calendarWeekStyle = {
         textAlign: "right",
-        backgroundColor: "#FFF",
         borderRightColor: "#0000",
         borderBottomColor: "#0000",
         borderTopColor: "#0000",
-        boxShadow: "inset 0 0 0 1000px " + color + "44",
+        ...eventFillStyle
       };
       return {
-        style: useAgenda ? style : { ...style, ...calendarWeekStyle },
+        style: useAgenda
+          ? { ...style, ...eventFillStyle }
+          : { ...style, ...calendarWeekStyle },
       };
     },
-    [useAgenda],
+    [useAgenda, isCursoIgnorado],
   );
 
   const coveredDays = events.map((e) => e.start.getDay());
@@ -103,6 +132,8 @@ const MyCalendar = (props) => {
     start: new Date(2018, 0, i, 7),
     end: new Date(2018, 0, i, 23, 30),
     title: "",
+    subtitle: "",
+    isPlaceholder: true,
   }));
 
   const formats = {

@@ -24,6 +24,7 @@ import React from "react";
 import { useHotkeys } from "react-hotkeys-hook";
 import { DataContext } from "../DataContext";
 import { getColor, stateReducer } from "../utils";
+import ConfigExtra from "./ConfigExtra";
 
 const SelectExtra = () => {
   const {
@@ -33,6 +34,7 @@ const SelectExtra = () => {
     toggleExtra,
     removeExtra,
     removeAllExtra,
+    setColorExtra,
   } = React.useContext(DataContext);
 
   const {
@@ -52,10 +54,27 @@ const SelectExtra = () => {
     toggleExtra(event.id);
   });
 
+  const activeExtras = React.useMemo(
+    () =>
+      extraEvents.filter((extra) =>
+        events.some((event) => event.id === extra.id),
+      ),
+    [extraEvents, events],
+  );
+
   return (
     <>
       <Flex direction="row" justify="flex-end">
+        <div
+          style={{
+            flexShrink: 0,
+            width: "16px",
+            height: "16px",
+            marginRight: "8px",
+          }}
+        />
         <Box
+          width="100%"
           {...getToggleButtonProps({
             onBlur: (event) => {
               event.preventDownshiftDefault = true;
@@ -63,6 +82,8 @@ const SelectExtra = () => {
           })}
         >
           <Button
+            width="100%"
+            justifyContent="space-between"
             my={2}
             px={2}
             colorScheme="primary"
@@ -89,6 +110,11 @@ const SelectExtra = () => {
             }}
           />
         </Tooltip>
+
+        <ConfigExtra
+          activeExtras={activeExtras}
+          setColorExtra={setColorExtra}
+        />
       </Flex>
 
       <List
@@ -106,7 +132,7 @@ const SelectExtra = () => {
         {extraEvents.map((item, index) => {
           const event = events.find((i) => i.id === item.id);
           const isActive = !!event;
-          const color = getColor(event);
+          const color = item.color ?? getColor(item);
 
           return (
             <Box

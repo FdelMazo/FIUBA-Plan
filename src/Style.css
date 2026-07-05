@@ -140,9 +140,23 @@
   color: var(--chakra-colors-drawerbg);
 }
 
-#dark .rbc-agenda-table * {
+#dark .rbc-agenda-table .rbc-agenda-time-cell {
   background: var(--chakra-colors-agendabgdark);
   color: var(--chakra-colors-calendarbg);
+}
+
+.rbc-agenda-event-cell .rbc-agenda-event-cell,
+.rbc-agenda-event-cell .rbc-agenda-event-cell-sub {
+  background: transparent;
+  color: #1f1f1f;
+}
+
+.rbc-agenda-table .rbc-agenda-placeholder-event .rbc-agenda-event-cell {
+  background: #fff;
+}
+
+#dark .rbc-agenda-table .rbc-agenda-placeholder-event .rbc-agenda-event-cell {
+  background: var(--chakra-colors-agendabgdark);
 }
 
 #dark .rbc-agenda-table {

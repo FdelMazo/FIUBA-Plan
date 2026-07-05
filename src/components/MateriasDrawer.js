@@ -14,6 +14,7 @@ import {
   Drawer,
   DrawerBody,
   DrawerContent,
+  DrawerCloseButton,
   DrawerFooter,
   DrawerOverlay,
   Flex,
@@ -66,12 +67,19 @@ const MateriasDrawer = (props) => {
 
   return (
     <LightMode>
-      <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
+      <Drawer isOpen={isOpen} placement="right" onClose={onClose} size="sm">
         <DrawerOverlay bg="blackAlpha.300" />
         <DrawerContent
           bg={useColorModeValue("drawerbgalpha", "drawerbgdarkalpha")}
+          w="min-content"
+          sx={{
+            backdropFilter: "blur(16px)",
+            WebkitBackdropFilter: "blur(16px)",
+          }}
         >
-          <Box pt={4} px={4}>
+          <DrawerCloseButton />
+
+          <Box pt={14} px={4}>
             {skipSIU ? (
               <Button
                 w="100%"

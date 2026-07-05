@@ -4,7 +4,7 @@
 import React from "react";
 import { useImmer, useImmerReducer } from "use-immer";
 import { parseSIU } from "./siuparser";
-import { base64tojson, jsontobase64 } from "./utils";
+import { getColor, base64tojson, jsontobase64 } from "./utils";
 
 // Si tengo un permalink, parseo su info y reseteo la URL
 let permalinksavedata = null;
@@ -167,13 +167,20 @@ const Data = () => {
           id: action.event.id,
           start: action.event.start,
           end: action.event.end,
-          title: action.event.title
+          title: action.event.title,
+          color: getColor({ id: action.event.id })
         });
       case "rename":
         return void (draft.find((t) => t.id === action.id).title =
           action.title);
       case "remove":
         return draft.filter((t) => t.id !== action.id);
+      case "setColor": {
+        const extra = draft.find((t) => t.id === action.id);
+        if (!extra) return;
+        extra.color = action.color || getColor({ id: action.id });
+        return;
+      }
       case "reset":
         return [];
     }
@@ -211,6 +218,47 @@ const Data = () => {
     setHorariosSIU(null);
   };
 
+  // ESTADO 5: Colores configurados por curso (globales para todas las tabs).
+  const [coloresCursos, setColoresCursos] = useImmer(() =>
+    initialCursoColors()
+  );
+
+  const setColorCurso = (codigoCurso, color) => {
+    setColoresCursos((colores) => {
+      colores[codigoCurso] = color;
+    });
+  };
+
+  // ESTADO 6: Cursos ignorados configurados por día y horario
+  const [cursosIgnorados, setCursosIgnorados] = useImmer(() =>
+    initialCursosIgnorados()
+  );
+
+  const formatHora = (hora) => {
+    const hh = String(hora.getHours()).padStart(2, "0");
+    const mm = String(hora.getMinutes()).padStart(2, "0");
+    return `${hh}:${mm}`;
+  };
+
+  const keyCursoIgnorado = (dia, inicio, fin) => {
+    return `${dia}-${formatHora(inicio)}-${formatHora(fin)}`;
+  };
+
+  const toggleIgnorarCurso = (codigoCurso, dia, inicio, fin) => {
+    setCursosIgnorados((ignorados) => {
+      const key = keyCursoIgnorado(dia, inicio, fin);
+      if (!ignorados[codigoCurso]) {
+        ignorados[codigoCurso] = { [key]: true };
+      } else {
+        ignorados[codigoCurso][key] = !ignorados[codigoCurso][key];
+      }
+    });
+  };
+
+  const isCursoIgnorado = (codigoCurso, dia, inicio, fin) => {
+    return !!cursosIgnorados[codigoCurso]?.[keyCursoIgnorado(dia, inicio, fin)];
+  };
+
   // El estado que se guarda y determina el permalink es el `savedata` del usuario
   const savedata = React.useMemo(() => {
     return {
@@ -220,6 +268,8 @@ const Data = () => {
       extraEvents,
       horariosSIU,
       skipSIU,
+      coloresCursos,
+      cursosIgnorados
     };
   }, [
     JSON.stringify(selectedMaterias),
@@ -228,6 +278,8 @@ const Data = () => {
     JSON.stringify(extraEvents),
     JSON.stringify(horariosSIU),
     JSON.stringify(skipSIU),
+    JSON.stringify(coloresCursos),
+    JSON.stringify(cursosIgnorados)
   ]);
 
   // Si venimos de un permalink, estamos en una sesion de read - only hasta que el usuario quiera pisar los datos
@@ -311,6 +363,10 @@ const Data = () => {
     });
   };
 
+  const setColorExtra = (id, color) => {
+    extraEventsDispatch({ type: "setColor", id, color });
+  };
+
   const removeAllExtra = () => {
     tabEventsDispatch({ type: "removeAllExtra" });
     extraEventsDispatch({ type: "reset" });
@@ -368,7 +424,8 @@ const Data = () => {
         title,
         subtitle,
         tooltip,
-        curso: null
+        curso: null,
+        color: event.color ?? getColor({ id: event.id })
       };
     });
 
@@ -387,21 +444,30 @@ const Data = () => {
           const subtitle = curso.docentes;
           const tooltip = `[${materia.codigo}] ${materia.nombre}\n${curso.docentes}`;
 
+          const id = curso.clases + curso.codigo + curso.docentes;
+
           return {
             start: inicio,
             end: fin,
-            id: curso.clases + curso.codigo + curso.docentes,
+            id,
             title,
             subtitle,
             tooltip,
-            curso: curso.codigo
+            curso: curso.codigo,
+            codigoMateria: materia.codigo,
+            color: coloresCursos[curso.codigo] ?? getColor({ id })
           };
         });
       });
 
     if (extraEvents.length === 0) return clases;
     return [...clases, ...extraevents];
-  }, [activeTabId, extraEvents, JSON.stringify(tabEvents)]);
+  }, [
+    activeTabId,
+    extraEvents,
+    JSON.stringify(tabEvents),
+    JSON.stringify(coloresCursos)
+  ]);
 
   return {
     selectedMaterias,
@@ -418,6 +484,7 @@ const Data = () => {
     removeExtra,
     removeExtraFromTab,
     renameExtra,
+    setColorExtra,
     removeAllExtra,
     limpiarTab,
     selectTab,
@@ -433,7 +500,12 @@ const Data = () => {
     errorPermalink,
     setErrorPermalink,
     skipSIU,
-    setSkipSIU
+    setSkipSIU,
+    coloresCursos,
+    setColorCurso,
+    cursosIgnorados,
+    toggleIgnorarCurso,
+    isCursoIgnorado
   };
 };
 
@@ -482,5 +554,19 @@ const initialExtraEvents = (defvalue) => {
 const initialHorariosSIU = () => {
   return (
     permalinksavedata?.horariosSIU || getFromStorage("horariosSIU") || null
+  );
+};
+
+const initialCursoColors = () => {
+  return (
+    permalinksavedata?.coloresCursos || getFromStorage("coloresCursos") || {}
+  );
+};
+
+const initialCursosIgnorados = () => {
+  return (
+    permalinksavedata?.cursosIgnorados ||
+    getFromStorage("cursosIgnorados") ||
+    {}
   );
 };

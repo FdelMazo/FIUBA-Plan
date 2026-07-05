@@ -19,13 +19,21 @@ import { useSelect } from "downshift";
 import React from "react";
 import { useHotkeys } from "react-hotkeys-hook";
 import { DataContext } from "../DataContext";
-import { getColor, stateReducer } from "../utils";
+import { cursoToDates, stateReducer } from "../utils";
+import ConfigCurso from "./ConfigCurso";
 
 const INICIALES_SEMANA = ["D", "L", "M", "X", "J", "V", "S"];
 
 const SelectCurso = ({ codigo }) => {
-  const { toggleCurso, events, toggleMateria, getters } =
-    React.useContext(DataContext);
+  const {
+    coloresCursos,
+    setColorCurso,
+    toggleCurso,
+    events,
+    toggleMateria,
+    getters,
+    isCursoIgnorado,
+  } = React.useContext(DataContext);
   const materia = getters.getMateria(codigo);
   const items = getters.getCursosMateria(codigo);
 
@@ -35,25 +43,27 @@ const SelectCurso = ({ codigo }) => {
       const eventos = events.filter((e) => {
         const anotherCurso = getters.getCurso(e.curso);
         if (!anotherCurso) return false;
-        return anotherCurso.materia !== curso.materia;
+        if (anotherCurso.materia === curso.materia) return false;
+
+        const dia = e.start?.getDay?.();
+        return !isCursoIgnorado(e.curso, dia, e.start, e.end);
       });
       for (const clase of curso.clases) {
-        const inicio = new Date(2018, 0, clase.dia);
-        const [inicioHora, inicioMinutos] = clase.inicio.split(":");
-        inicio.setHours(inicioHora, inicioMinutos);
-        const fin = new Date(2018, 0, clase.dia);
-        const [finHora, finMinutos] = clase.fin.split(":");
-        fin.setHours(finHora, finMinutos);
+        const { startDate, endDate } = cursoToDates(clase);
+
+        if (isCursoIgnorado(codigo, clase.dia, startDate, endDate)) {
+          continue;
+        }
 
         for (const evento of eventos) {
-          if (inicio < evento.end && fin > evento.start) {
+          if (startDate < evento.end && endDate > evento.start) {
             return true;
           }
         }
       }
       return false;
     },
-    [events, getters],
+    [events, getters, isCursoIgnorado],
   );
 
   const allItemsBlocked = items.every((item) => isBlocked(item.codigo));
@@ -75,11 +85,20 @@ const SelectCurso = ({ codigo }) => {
     toggleCurso(curso.codigo);
   });
 
+  const cursosActivos = React.useMemo(
+    () =>
+      items.filter((item) =>
+        events.some((event) => event.curso === item.codigo),
+      ),
+    [items, events],
+  );
+
   return (
     <>
       <Flex direction="row" justify="flex-end" alignItems="center">
-        {allItemsBlocked && (
+        {allItemsBlocked ? (
           <Tooltip
+            opacity={allItemsBlocked ? 1 : 0}
             placement="left"
             hasArrow
             label={
@@ -89,10 +108,19 @@ const SelectCurso = ({ codigo }) => {
               </>
             }
           >
-            <WarningTwoIcon color="primary.500" mr={2} />
+            <WarningTwoIcon size={14} color="primary.500" mr={2} />
           </Tooltip>
+        ) : (
+          <div
+            style={{
+              flexShrink: 0,
+              width: "16px",
+              height: "16px",
+              marginRight: "8px",
+            }}
+          />
         )}
-        <Box {...getToggleButtonProps()}>
+        <Box {...getToggleButtonProps()} width="100%">
           <Button
             justifyContent={"space-between"}
             my={2}
@@ -101,7 +129,7 @@ const SelectCurso = ({ codigo }) => {
             variant="outline"
             borderColor="primary"
             color="primary.500"
-            width="200px"
+            width="100%"
             _hover={{
               "&>p": { whiteSpace: "normal" },
               bg: "var(--chakra-colors-whiteAlpha-400)",
@@ -140,6 +168,11 @@ const SelectCurso = ({ codigo }) => {
             }}
           />
         </Tooltip>
+
+        <ConfigCurso
+          setColorCurso={setColorCurso}
+          cursosActivos={cursosActivos}
+        />
       </Flex>
 
       <List
@@ -157,7 +190,7 @@ const SelectCurso = ({ codigo }) => {
         {items.map((item, index) => {
           const event = events.find((i) => i.curso === item.codigo);
           const isActive = !!event;
-          const color = getColor(event);
+          const color = event?.color ?? coloresCursos[item.codigo];
           const isItemBlocked = isBlocked(item.codigo);
           return (
             <Tooltip

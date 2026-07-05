@@ -217,10 +217,6 @@ const ConfigColorPopover = ({
 };
 
 const ColorPicker = ({ color, onColorChange }) => {
-  React.useEffect(() => {
-    setColorIngresado((color || "").toUpperCase());
-  }, [color]);
-
   return (
     <>
       <BlockPicker

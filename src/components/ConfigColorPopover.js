@@ -3,11 +3,7 @@ import {
   Box,
   Button,
   DarkMode,
-  Flex,
-  FormControl,
-  FormErrorMessage,
   IconButton,
-  Input,
   Menu,
   MenuButton,
   MenuItem,
@@ -23,7 +19,7 @@ import {
 import React from "react";
 import { BlockPicker } from "react-color";
 
-const COLORES_SUGERIDOS = [
+const SUGGESTED_COLORS = [
   "#FF3B30",
   "#FF9500",
   "#FFCC00",
@@ -48,36 +44,36 @@ const ConfigColorPopover = ({
   getConfigLabel,
   getColorConfig,
   onColorChange,
-  titulo,
-  labelVacia,
-  labelConfigVacia,
-  labelColor,
-  alturaMinima = "220px",
+  title,
+  emptyLabel,
+  emptyConfigLabel,
+  colorLabel,
+  minHeight = "220px",
   children,
 }) => {
-  const [configSeleccionadaId, setConfigSeleccionadaId] = React.useState(
+  const [selectedConfigId, setSelectedConfigId] = React.useState(
     getConfigId(configs[0]),
   );
 
   React.useEffect(() => {
     if (!configs.length) {
-      setConfigSeleccionadaId(undefined);
+      setSelectedConfigId(undefined);
       return;
     }
 
-    const existeConfigSeleccionada = configs.some(
-      (config) => getConfigId(config) === configSeleccionadaId,
+    const selectedConfigExists = configs.some(
+      (config) => getConfigId(config) === selectedConfigId,
     );
 
-    if (!configSeleccionadaId || !existeConfigSeleccionada) {
-      setConfigSeleccionadaId(getConfigId(configs[0]));
+    if (!selectedConfigId || !selectedConfigExists) {
+      setSelectedConfigId(getConfigId(configs[0]));
     }
-  }, [getConfigId, configs, configSeleccionadaId]);
+  }, [getConfigId, configs, selectedConfigId]);
 
-  const configSeleccionada = React.useMemo(
+  const selectedConfig = React.useMemo(
     () =>
-      configs.find((config) => getConfigId(config) === configSeleccionadaId),
-    [getConfigId, configs, configSeleccionadaId],
+      configs.find((config) => getConfigId(config) === selectedConfigId),
+    [getConfigId, configs, selectedConfigId],
   );
 
   return (
@@ -121,10 +117,10 @@ const ConfigColorPopover = ({
             py={4}
             display="flex"
             flexDirection="column"
-            minH={alturaMinima}
+            minH={minHeight}
           >
             <Box>
-              <Text mb={2}>{titulo}</Text>
+              <Text mb={2}>{title}</Text>
               <Menu matchWidth>
                 <MenuButton
                   as={Button}
@@ -149,14 +145,14 @@ const ConfigColorPopover = ({
                     fontSize="xs"
                     isTruncated
                     color={
-                      configSeleccionada
-                        ? getColorConfig(configSeleccionada)
+                      selectedConfig
+                        ? getColorConfig(selectedConfig)
                         : "primary.500"
                     }
                   >
-                    {configSeleccionada
-                      ? getConfigLabel(configSeleccionada)
-                      : labelVacia}
+                    {selectedConfig
+                      ? getConfigLabel(selectedConfig)
+                      : emptyLabel}
                   </Text>
                 </MenuButton>
                 <MenuList maxH="220px" overflowY="auto">
@@ -166,7 +162,7 @@ const ConfigColorPopover = ({
                       fontSize="xs"
                       color={getColorConfig(config)}
                       onClick={() =>
-                        setConfigSeleccionadaId(getConfigId(config))
+                        setSelectedConfigId(getConfigId(config))
                       }
                     >
                       {getConfigLabel(config)}
@@ -177,7 +173,7 @@ const ConfigColorPopover = ({
             </Box>
 
             <Box mt={4} flex="1" display="flex" flexDirection="column">
-              {!configSeleccionada ? (
+              {!selectedConfig ? (
                 <Box
                   flex="1"
                   width="100%"
@@ -189,23 +185,23 @@ const ConfigColorPopover = ({
                   justifyContent="center"
                 >
                   <Text fontSize="sm" color="whiteAlpha.500" textAlign="center">
-                    {labelConfigVacia}
+                    {emptyConfigLabel}
                   </Text>
                 </Box>
               ) : (
                   <>
                     <Box>
-                      <Text mb={2}>{labelColor}</Text>
+                      <Text mb={2}>{colorLabel}</Text>
 
                       <ColorPicker
-                        color={getColorConfig(configSeleccionada)}
+                        color={getColorConfig(selectedConfig)}
                         onColorChange={(color) =>
-                          onColorChange(configSeleccionada, color)
+                          onColorChange(selectedConfig, color)
                         }
                       />
                     </Box>
 
-                    {children?.(configSeleccionada)}
+                    {children?.(selectedConfig)}
                   </>
                 )}
             </Box>
@@ -222,7 +218,7 @@ const ColorPicker = ({ color, onColorChange }) => {
       <BlockPicker
         width="100%"
         triangle="hide"
-        colors={COLORES_SUGERIDOS}
+        colors={SUGGESTED_COLORS}
         styles={{
           default: {
             body: {
@@ -242,8 +238,8 @@ const ColorPicker = ({ color, onColorChange }) => {
           },
         }}
         color={color}
-        onChange={(colorSiguiente) => {
-          const colorHex = colorSiguiente.hex.toUpperCase();
+        onChange={(nextColor) => {
+          const colorHex = nextColor.hex.toUpperCase();
           onColorChange(colorHex);
         }}
       />

@@ -49,14 +49,14 @@ const SelectCurso = ({ codigo }) => {
         return !isCursoIgnorado(e.curso, dia, e.start, e.end);
       });
       for (const clase of curso.clases) {
-        const { inicio, fin } = cursoToDates(clase);
+        const { startDate, endDate } = cursoToDates(clase);
 
-        if (isCursoIgnorado(codigo, clase.dia, inicio, fin)) {
+        if (isCursoIgnorado(codigo, clase.dia, startDate, endDate)) {
           continue;
         }
 
         for (const evento of eventos) {
-          if (inicio < evento.end && fin > evento.start) {
+          if (startDate < evento.end && endDate > evento.start) {
             return true;
           }
         }

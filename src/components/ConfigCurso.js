@@ -4,7 +4,7 @@ import { DataContext } from "../DataContext";
 import { cursoToDates, getColor } from "../utils";
 import ConfigColorPopover from "./ConfigColorPopover";
 
-const DIAS_SEMANA = [
+const WEEKDAYS = [
   "Domingo",
   "Lunes",
   "Martes",
@@ -37,11 +37,11 @@ const ConfigCurso = ({ setColorCurso, cursosActivos }) => {
       getConfigLabel={(curso) => curso.docentes}
       getColorConfig={getCursoColor}
       onColorChange={(curso, color) => setColorCurso(curso.codigo, color)}
-      titulo="Configurar curso"
-      labelVacia="Sin cursos activos"
-      labelConfigVacia="No hay curso para configurar"
-      labelColor="Seleccionar color del curso"
-      alturaMinima="300px"
+      title="Configurar curso"
+      emptyLabel="Sin cursos activos"
+      emptyConfigLabel="No hay curso para configurar"
+      colorLabel="Seleccionar color del curso"
+      minHeight="300px"
     >
       {(selectedCurso) => (
         <IgnoredClassesConfig
@@ -59,12 +59,12 @@ const IgnoredClassesConfig = ({
   toggleIgnorarCurso,
   isCursoIgnorado,
 }) => {
-  const clasesPorDia = React.useMemo(() => {
+  const clasesByDay = React.useMemo(() => {
     if (!selectedCurso?.clases?.length) {
       return [];
     }
 
-    const porDia = selectedCurso.clases.reduce((acc, clase) => {
+    const byDay = selectedCurso.clases.reduce((acc, clase) => {
       if (!acc[clase.dia]) {
         acc[clase.dia] = [];
       }
@@ -72,7 +72,7 @@ const IgnoredClassesConfig = ({
       return acc;
     }, {});
 
-    return Object.entries(porDia)
+    return Object.entries(byDay)
       .map(([dia, clases]) => ({
         dia: Number(dia),
         clases: clases.sort((a, b) => a.inicio.localeCompare(b.inicio)),
@@ -84,19 +84,19 @@ const IgnoredClassesConfig = ({
     <Box mt={4}>
       <Text mb={2}>Ignorar clase en el solapamiento de cursos</Text>
 
-      {clasesPorDia.map(({ dia, clases }) => (
+      {clasesByDay.map(({ dia, clases }) => (
         <Box key={dia} mb={3}>
           <Text fontSize="sm" color="whiteAlpha.800" mb={1}>
-            {DIAS_SEMANA[dia]}
+            {WEEKDAYS[dia]}
           </Text>
 
           {clases.map((clase) => {
-            const { inicio, fin } = cursoToDates(clase);
+            const { startDate, endDate } = cursoToDates(clase);
             const checked = isCursoIgnorado(
               selectedCurso.codigo,
               clase.dia,
-              inicio,
-              fin,
+              startDate,
+              endDate,
             );
 
             return (
@@ -115,8 +115,8 @@ const IgnoredClassesConfig = ({
                     toggleIgnorarCurso(
                       selectedCurso.codigo,
                       clase.dia,
-                      inicio,
-                      fin,
+                      startDate,
+                      endDate,
                     )
                   }
                   colorScheme="primary"

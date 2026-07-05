@@ -56,13 +56,13 @@ export function jsontobase64(jsondata) {
 // Retorna las fechas de inicio y fin de una clase (que no es necesariamente un
 // evento del calendario todavía).
 export const cursoToDates = (clase) => {
-  const inicio = new Date(2018, 0, clase.dia);
+  const startDate = new Date(2018, 0, clase.dia);
   const [inicioHora, inicioMinutos] = clase.inicio.split(":");
-  inicio.setHours(inicioHora, inicioMinutos);
+  startDate.setHours(inicioHora, inicioMinutos);
 
-  const fin = new Date(2018, 0, clase.dia);
+  const endDate = new Date(2018, 0, clase.dia);
   const [finHora, finMinutos] = clase.fin.split(":");
-  fin.setHours(finHora, finMinutos);
+  endDate.setHours(finHora, finMinutos);
 
-  return { inicio, fin };
+  return { startDate, endDate };
 };

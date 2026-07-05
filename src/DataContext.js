@@ -220,7 +220,7 @@ const Data = () => {
 
   // ESTADO 5: Colores configurados por curso (globales para todas las tabs).
   const [coloresCursos, setColoresCursos] = useImmer(() =>
-    initialColoresCursos()
+    initialCursoColors()
   );
 
   const setColorCurso = (codigoCurso, color) => {
@@ -551,7 +551,7 @@ const initialHorariosSIU = () => {
   );
 };
 
-const initialColoresCursos = () => {
+const initialCursoColors = () => {
   return (
     permalinksavedata?.coloresCursos || getFromStorage("coloresCursos") || {}
   );

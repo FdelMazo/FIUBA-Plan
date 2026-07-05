@@ -2,7 +2,7 @@ import React from "react";
 import { getColor } from "../utils";
 import ConfigColorPopover from "./ConfigColorPopover";
 
-const ConfigExtra = ({ extrasActivas, setColorExtra }) => {
+const ConfigExtra = ({ activeExtras, setColorExtra }) => {
   const getExtraColor = React.useCallback((extra) => {
     if (!extra) {
       return "#ffffff";
@@ -13,15 +13,15 @@ const ConfigExtra = ({ extrasActivas, setColorExtra }) => {
 
   return (
     <ConfigColorPopover
-      configs={extrasActivas}
+      configs={activeExtras}
       getConfigId={(extra) => extra?.id}
       getConfigLabel={(extra) => extra.title}
       getColorConfig={getExtraColor}
       onColorChange={(extra, color) => setColorExtra(extra.id, color)}
-      titulo="Configurar actividad"
-      labelVacia="Sin actividades activas"
-      labelConfigVacia="No hay actividad para configurar"
-      labelColor="Seleccionar color de la actividad"
+      title="Configurar actividad"
+      emptyLabel="Sin actividades activas"
+      emptyConfigLabel="No hay actividad para configurar"
+      colorLabel="Seleccionar color de la actividad"
     />
   );
 };

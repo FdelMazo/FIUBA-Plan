@@ -54,7 +54,7 @@ const SelectExtra = () => {
     toggleExtra(event.id);
   });
 
-  const extrasActivas = React.useMemo(
+  const activeExtras = React.useMemo(
     () =>
       extraEvents.filter((extra) =>
         events.some((event) => event.id === extra.id),
@@ -112,7 +112,7 @@ const SelectExtra = () => {
         </Tooltip>
 
         <ConfigExtra
-          extrasActivas={extrasActivas}
+          activeExtras={activeExtras}
           setColorExtra={setColorExtra}
         />
       </Flex>

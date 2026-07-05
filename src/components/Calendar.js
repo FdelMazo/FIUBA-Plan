@@ -92,10 +92,10 @@ const MyCalendar = (props) => {
         };
       }
 
-      const dia = event.start?.getDay?.();
+      const day = event.start?.getDay?.();
       const isIgnored =
         !!event.curso &&
-        isCursoIgnorado(event.curso, dia, event.start, event.end);
+        isCursoIgnorado(event.curso, day, event.start, event.end);
 
       const eventFillStyle = isIgnored
         ? {

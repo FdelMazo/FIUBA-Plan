@@ -40,6 +40,8 @@ const COLORES_SUGERIDOS = [
   "#00E5FF",
   "#76FF03",
   "#FFD600",
+  "#A2845E",
+  "#8E8E93",
 ];
 
 const ConfigColorPopover = ({

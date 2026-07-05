@@ -36,7 +36,7 @@ const ConfigCurso = ({ setColorCurso, cursosActivos }) => {
       getConfigId={(curso) => curso?.codigo}
       getConfigLabel={(curso) => curso.docentes}
       getColorConfig={getCursoColor}
-      alCambiarColor={(curso, color) => setColorCurso(curso.codigo, color)}
+      onColorChange={(curso, color) => setColorCurso(curso.codigo, color)}
       titulo="Configurar curso"
       labelVacia="Sin cursos activos"
       labelConfigVacia="No hay curso para configurar"
@@ -82,7 +82,7 @@ const IgnoredClassesConfig = ({
 
   return (
     <Box mt={4}>
-      <Text mb={2}>Seleccionar clases ignoradas</Text>
+      <Text mb={2}>Ignorar clase en el solapamiento de cursos</Text>
 
       {clasesPorDia.map(({ dia, clases }) => (
         <Box key={dia} mb={3}>

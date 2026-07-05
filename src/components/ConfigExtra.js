@@ -17,7 +17,7 @@ const ConfigExtra = ({ extrasActivas, setColorExtra }) => {
       getConfigId={(extra) => extra?.id}
       getConfigLabel={(extra) => extra.title}
       getColorConfig={getExtraColor}
-      alCambiarColor={(extra, color) => setColorExtra(extra.id, color)}
+      onColorChange={(extra, color) => setColorExtra(extra.id, color)}
       titulo="Configurar actividad"
       labelVacia="Sin actividades activas"
       labelConfigVacia="No hay actividad para configurar"

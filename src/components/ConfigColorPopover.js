@@ -23,8 +23,6 @@ import {
 import React from "react";
 import { BlockPicker } from "react-color";
 
-const HEX_COLOR_REGEX = /^#(?:[0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})$/;
-
 const COLORES_SUGERIDOS = [
   "#FF3B30",
   "#FF9500",
@@ -49,7 +47,7 @@ const ConfigColorPopover = ({
   getConfigId,
   getConfigLabel,
   getColorConfig,
-  alCambiarColor,
+  onColorChange,
   titulo,
   labelVacia,
   labelConfigVacia,
@@ -195,21 +193,21 @@ const ConfigColorPopover = ({
                   </Text>
                 </Box>
               ) : (
-                <>
-                  <Box>
-                    <Text mb={2}>{labelColor}</Text>
+                  <>
+                    <Box>
+                      <Text mb={2}>{labelColor}</Text>
 
-                    <ColorPicker
-                      color={getColorConfig(configSeleccionada)}
-                      alCambiarColor={(color) =>
-                        alCambiarColor(configSeleccionada, color)
-                      }
-                    />
-                  </Box>
+                      <ColorPicker
+                        color={getColorConfig(configSeleccionada)}
+                        onColorChange={(color) =>
+                          onColorChange(configSeleccionada, color)
+                        }
+                      />
+                    </Box>
 
-                  {children?.(configSeleccionada)}
-                </>
-              )}
+                    {children?.(configSeleccionada)}
+                  </>
+                )}
             </Box>
           </PopoverBody>
         </PopoverContent>
@@ -218,15 +216,10 @@ const ConfigColorPopover = ({
   );
 };
 
-const ColorPicker = ({ color, alCambiarColor }) => {
-  const [colorIngresado, setColorIngresado] = React.useState(color);
-
+const ColorPicker = ({ color, onColorChange }) => {
   React.useEffect(() => {
     setColorIngresado((color || "").toUpperCase());
   }, [color]);
-
-  const colorInvalido =
-    colorIngresado?.length > 0 && !HEX_COLOR_REGEX.test(colorIngresado);
 
   return (
     <>
@@ -237,45 +230,27 @@ const ColorPicker = ({ color, alCambiarColor }) => {
         styles={{
           default: {
             body: {
-              padding: "10px 10px 0",
+              padding: "10px",
             },
             label: {
               textTransform: "uppercase",
             },
             input: {
-              display: "none",
+              height: "40px",
+              fontSize: "16px",
+              color: color,
+              borderRadius: "6px",
+              padding: "0 10px",
+              boxShadow: "none",
             },
           },
         }}
-        color={HEX_COLOR_REGEX.test(color) ? color : "#FFFFFF"}
+        color={color}
         onChange={(colorSiguiente) => {
           const colorHex = colorSiguiente.hex.toUpperCase();
-          setColorIngresado(colorHex);
-          alCambiarColor(colorHex);
+          onColorChange(colorHex);
         }}
       />
-
-      <FormControl mt={3} isInvalid={colorInvalido}>
-        <Flex align="center" gap={2}>
-          <Text fontSize="sm" fontWeight="semibold">
-            HEX:
-          </Text>
-          <Input
-            value={colorIngresado}
-            placeholder="#AABBCC o #ABC"
-            textTransform="uppercase"
-            onChange={(event) => {
-              const colorSiguiente = event.target.value.toUpperCase();
-              setColorIngresado(colorSiguiente);
-
-              if (HEX_COLOR_REGEX.test(colorSiguiente)) {
-                alCambiarColor(colorSiguiente);
-              }
-            }}
-          />
-        </Flex>
-        <FormErrorMessage>Código de color inválido</FormErrorMessage>
-      </FormControl>
     </>
   );
 };

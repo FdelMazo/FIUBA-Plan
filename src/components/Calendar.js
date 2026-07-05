@@ -52,18 +52,11 @@ const MateriaEventAgenda = (props) => {
           flexDirection: "row",
         }}
       >
-        <Text
-          noOfLines={[1, 2, 3]}
-          className="rbc-agenda-event-cell"
-          mb={2}
-        >
+        <Text noOfLines={[1, 2, 3]} className="rbc-agenda-event-cell" mb={2}>
           {props.event.title}
         </Text>
       </Box>
-      <Text
-        noOfLines={[1, 3, 5]}
-        className="rbc-agenda-event-cell-sub"
-      >
+      <Text noOfLines={[1, 3, 5]} className="rbc-agenda-event-cell-sub">
         {props.event.subtitle}
       </Text>
     </Box>
@@ -120,7 +113,7 @@ const MyCalendar = (props) => {
         borderRightColor: "#0000",
         borderBottomColor: "#0000",
         borderTopColor: "#0000",
-        ...eventFillStyle,
+        ...eventFillStyle
       };
       return {
         style: useAgenda

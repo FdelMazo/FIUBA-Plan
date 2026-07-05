@@ -36,8 +36,7 @@ import SelectMateria from "./SelectMateria";
 import Sugerencias from "./Sugerencias";
 
 const MateriasDrawer = (props) => {
-  const { useAgenda, setUseAgenda, isOpen, onClose, skipSIU, onOpenModal } =
-    props;
+  const { useAgenda, setUseAgenda, isOpen, onClose, skipSIU, onOpenModal } = props;
   const {
     tabs,
     selectedMaterias,

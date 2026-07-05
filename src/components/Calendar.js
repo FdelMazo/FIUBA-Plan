@@ -56,7 +56,6 @@ const MateriaEventAgenda = (props) => {
           noOfLines={[1, 2, 3]}
           className="rbc-agenda-event-cell"
           mb={2}
-          color="#1f1f1f"
         >
           {props.event.title}
         </Text>
@@ -64,7 +63,6 @@ const MateriaEventAgenda = (props) => {
       <Text
         noOfLines={[1, 3, 5]}
         className="rbc-agenda-event-cell-sub"
-        color="#1f1f1f"
       >
         {props.event.subtitle}
       </Text>

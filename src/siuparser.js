@@ -21,7 +21,7 @@ export function parseSIU(rawdata) {
   const materiaPattern =
     /Actividad: ([^\n]+) \((.+?)\)\n[\s\S]*?(?=Actividad:|$)/g;
   const cursosPattern =
-    /Comisión: ([^\n]+)[\s\S]*?Docentes: ([^\n]+)[\s\S]*?Tipo de clase\s+Día\s+Horario(?:\s+Aula)([\s\S]*?)(?=Comisión:|$)/g;
+    /Comisión: ([^\n]+)[\s\S]*?Docentes: ([^\n]+)[\s\S]*?Tipo de clase\s+Día\s+Horario(?:\s+Aula)?([\s\S]*?)(?=Comisión:|$)/g;
 
   const periodos = [];
   for (const periodoMatch of rawdata.matchAll(periodoPattern)) {

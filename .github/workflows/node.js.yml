@@ -2,7 +2,7 @@ name: Build & Deploy to Github Pages
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   node-to-gh:
@@ -13,4 +13,4 @@ jobs:
         uses: fdelmazo/node-to-gh-action@v2
       - name: Run tests
         run: npm test
-        shell: bash 
+        shell: bash

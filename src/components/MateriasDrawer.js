@@ -9,6 +9,7 @@ import {
   Alert,
   AlertIcon,
   AlertTitle,
+  Show,
   Box,
   Button,
   Drawer,
@@ -36,7 +37,8 @@ import SelectMateria from "./SelectMateria";
 import Sugerencias from "./Sugerencias";
 
 const MateriasDrawer = (props) => {
-  const { useAgenda, setUseAgenda, isOpen, onClose, skipSIU, onOpenModal } = props;
+  const { useAgenda, setUseAgenda, isOpen, onClose, skipSIU, onOpenModal } =
+    props;
   const {
     tabs,
     selectedMaterias,
@@ -77,7 +79,9 @@ const MateriasDrawer = (props) => {
             WebkitBackdropFilter: "blur(16px)",
           }}
         >
-          <DrawerCloseButton />
+          <Show below="sm">
+            <DrawerCloseButton />
+          </Show>
 
           <Box pt={14} px={4}>
             {skipSIU ? (

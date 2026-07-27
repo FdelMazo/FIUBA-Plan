@@ -24,17 +24,28 @@ export function parseSIU(rawdata) {
     /Comisión: ([^\n]+)[\s\S]*?Docentes: ([^\n]+)[\s\S]*?Tipo de clase\s+Día\s+Horario(?:\s+Aula)?([\s\S]*?)(?=Comisión:|$)/g;
 
   const periodos = [];
-  for (const periodoMatch of rawdata.matchAll(periodoPattern)) {
-    const periodoFullText = periodoMatch[0];
-    const periodoNombre = periodoMatch[1];
+  const periodoMatches = rawdata.matchAll(periodoPattern);
 
-    console.debug(`Found periodo: ${periodoNombre}`)
+  if (Array.from(periodoMatches).length === 0) {
     periodos.push({
-      periodo: periodoNombre,
-      raw: periodoFullText,
+      periodo: "",
+      raw: rawdata,
       materias: [],
       cursos: [],
     });
+  } else {
+    for (const periodoMatch of periodoMatches) {
+      const periodoFullText = periodoMatch[0];
+      const periodoNombre = periodoMatch[1];
+
+      console.debug(`Found periodo: ${periodoNombre}`);
+      periodos.push({
+        periodo: periodoNombre,
+        raw: periodoFullText,
+        materias: [],
+        cursos: [],
+      });
+    }
   }
 
   for (let periodo of periodos) {

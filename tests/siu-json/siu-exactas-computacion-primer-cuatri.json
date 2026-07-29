@@ -5,43 +5,121 @@
       {
         "nombre": "Análisis I",
         "codigo": "COMP230003",
-        "cursos": ["COMP230003-Análisis I"]
+        "cursos": ["COMP230003-Teórica", "COMP230003-Práctica"]
       },
       {
         "nombre": "Álgebra I",
         "codigo": "COMP930001",
-        "cursos": ["COMP930001-Algebra I"]
+        "cursos": ["COMP930001-Teórica", "COMP930001-Práctica"]
       }
     ],
     "cursos": [
       {
         "materia": "COMP230003",
-        "codigo": "COMP230003-Análisis I",
+        "codigo": "COMP230003-Teórica",
         "docentes": "Balderrama Rocío Celeste ",
         "clases": [
-          { "dia": 1, "inicio": "09:00", "fin": "11:15" },
-          { "dia": 2, "inicio": "09:00", "fin": "11:15" },
-          { "dia": 4, "inicio": "09:00", "fin": "11:15" },
-          { "dia": 5, "inicio": "09:00", "fin": "11:15" },
-          { "dia": 1, "inicio": "11:15", "fin": "14:30" },
-          { "dia": 2, "inicio": "11:15", "fin": "14:30" },
-          { "dia": 4, "inicio": "11:15", "fin": "14:30" },
-          { "dia": 5, "inicio": "11:15", "fin": "14:30" }
+          {
+            "dia": 1,
+            "inicio": "09:00",
+            "fin": "11:15"
+          },
+          {
+            "dia": 2,
+            "inicio": "09:00",
+            "fin": "11:15"
+          },
+          {
+            "dia": 4,
+            "inicio": "09:00",
+            "fin": "11:15"
+          },
+          {
+            "dia": 5,
+            "inicio": "09:00",
+            "fin": "11:15"
+          }
+        ]
+      },
+      {
+        "materia": "COMP230003",
+        "codigo": "COMP230003-Práctica",
+        "docentes": "Santillan Osvaldo Pablo , Choque Federico Tomás , Beck Fiorella Sol , Polasek Iván ",
+        "clases": [
+          {
+            "dia": 1,
+            "inicio": "11:15",
+            "fin": "14:30"
+          },
+          {
+            "dia": 2,
+            "inicio": "11:15",
+            "fin": "14:30"
+          },
+          {
+            "dia": 4,
+            "inicio": "11:15",
+            "fin": "14:30"
+          },
+          {
+            "dia": 5,
+            "inicio": "11:15",
+            "fin": "14:30"
+          }
         ]
       },
       {
         "materia": "COMP930001",
-        "codigo": "COMP930001-Algebra I",
+        "codigo": "COMP930001-Teórica",
         "docentes": "Cesaratto Eda ",
         "clases": [
-          { "dia": 1, "inicio": "09:00", "fin": "11:15" },
-          { "dia": 2, "inicio": "09:00", "fin": "11:15" },
-          { "dia": 4, "inicio": "09:00", "fin": "11:15" },
-          { "dia": 5, "inicio": "09:00", "fin": "11:15" },
-          { "dia": 1, "inicio": "11:15", "fin": "14:30" },
-          { "dia": 2, "inicio": "11:15", "fin": "14:30" },
-          { "dia": 4, "inicio": "11:15", "fin": "14:30" },
-          { "dia": 5, "inicio": "11:15", "fin": "14:30" }
+          {
+            "dia": 1,
+            "inicio": "09:00",
+            "fin": "11:15"
+          },
+          {
+            "dia": 2,
+            "inicio": "09:00",
+            "fin": "11:15"
+          },
+          {
+            "dia": 4,
+            "inicio": "09:00",
+            "fin": "11:15"
+          },
+          {
+            "dia": 5,
+            "inicio": "09:00",
+            "fin": "11:15"
+          }
+        ]
+      },
+      {
+        "materia": "COMP930001",
+        "codigo": "COMP930001-Práctica",
+        "docentes": "Busolini Lucía , Pin Baque Edwin , Duhau Cecilia Noemi , Nores Manuel Enrique ",
+        "clases": [
+          {
+            "dia": 1,
+            "inicio": "11:15",
+            "fin": "14:30"
+          },
+          {
+            "dia": 2,
+            "inicio": "11:15",
+            "fin": "14:30"
+          },
+          {
+            "dia": 4,
+            "inicio": "11:15",
+            "fin": "14:30"
+          },
+          {
+            "dia": 5,
+            "inicio": "11:15",
+            "fin": "14:30"
+          }
         ]
       }
     ],
@@ -53,356 +131,917 @@
       {
         "nombre": "Algoritmos y Estructuras de Datos",
         "codigo": "COMP230001",
-        "cursos": ["COMP230001-AED Turno Mañana", "COMP230001-AED Turno Noche"]
+        "cursos": [
+          "COMP230001-AED TM Teórico",
+          "COMP230001-AED TM Práctica",
+          "COMP230001-AEDI TM Laboratorio",
+          "COMP230001-AED TN Teórico",
+          "COMP230001-AED TN Práctica",
+          "COMP230001-AED TN Laboratorio"
+        ]
       },
       {
         "nombre": "Análisis I",
         "codigo": "COMP230003",
-        "cursos": ["COMP230003-Análisis I"]
+        "cursos": [
+          "COMP230003-Teórica 1 (A-K)",
+          "COMP230003-Teórica 2 (L-Z)",
+          "COMP230003-Práctica 1 (A-K)",
+          "COMP230003-Práctica 2 (L-Z)",
+          "COMP230003-Teórica 3",
+          "COMP230003-Práctica 3",
+          "COMP230003-Teórica 4",
+          "COMP230003-Práctica 4"
+        ]
       },
       {
         "nombre": "Aprendizaje Automático 2024",
         "codigo": "COMP930656",
-        "cursos": ["COMP930656-A"]
+        "cursos": ["COMP930656-AA 1C2024"]
       },
       {
         "nombre": "Aprendizaje Automático en Grafos",
         "codigo": "COMP930663",
-        "cursos": ["COMP930663-A"]
+        "cursos": [
+          "COMP930663-Teórico 1C2024",
+          "COMP930663-Práctica (virtual) 1C2024"
+        ]
       },
       {
         "nombre": "Fundamentos de Artificial General Intelligence Safety",
         "codigo": "COMP930657",
-        "cursos": ["COMP930657-A"]
+        "cursos": ["COMP930657-FAGIS 1C2024"]
       },
       {
         "nombre": "Introducción a la Programación",
         "codigo": "COMP230008",
         "cursos": [
-          "COMP230008-A",
-          "COMP230008-B",
-          "COMP230008-C",
-          "COMP230008-D"
+          "COMP230008-IP Comisión A Laboratorio",
+          "COMP230008-IP Comisión A Teórico",
+          "COMP230008-IP Comisión B Laboratorio",
+          "COMP230008-IP Comisión B Teórico",
+          "COMP230008-IP Comisión C Teórico",
+          "COMP230008-IP Comisión C Laboratorio",
+          "COMP230008-IP Comisión D Laboratorio",
+          "COMP230008-IP Comisión D Teórico"
         ]
       },
       {
         "nombre": "Modelado y Análisis de Sistemas Reactivos y Concurrentes",
         "codigo": "COMP931252",
-        "cursos": ["COMP931252-A"]
+        "cursos": ["COMP931252-Laboratorio 1C2024", "COMP931252-Teórico 1C2024"]
       },
       {
         "nombre": "Modelado y Simulación de Sistemas Complejos con Aplicaciones en Economía",
         "codigo": "COMP930658",
-        "cursos": ["COMP930658-A"]
+        "cursos": ["COMP930658-Teórico 1C2024", "COMP930658-Laboratorio 1C2024"]
       },
       {
         "nombre": "Paradigmas de Programación",
         "codigo": "COMP930015",
-        "cursos": ["COMP930015-A"]
+        "cursos": [
+          "COMP930015-PLP - Teórico-práctica",
+          "COMP930015-PLP - Laboratorio"
+        ]
       },
       {
         "nombre": "Procesamiento Avanzado de Señales 2024",
         "codigo": "COMP930668",
-        "cursos": ["COMP930668-A"]
+        "cursos": ["COMP930668-Teórico 1C2024", "COMP930668-Laboratorio 1C2024"]
       },
       {
         "nombre": "Procesamiento de Lenguaje Natural",
         "codigo": "COMP930662",
-        "cursos": ["COMP930662-A"]
+        "cursos": ["COMP930662-Laboratorio 1C2024"]
       },
       {
         "nombre": "Redes, Sociedad y Economía",
         "codigo": "COMP931538",
-        "cursos": ["COMP931538-A"]
+        "cursos": ["COMP931538-Redes, Sociedad y Economía 1C2023"]
       },
       {
         "nombre": "Seguridad de la Información",
         "codigo": "COMP931324",
-        "cursos": ["COMP931324-A"]
+        "cursos": ["COMP931324-Teórico-Práctica 1C2024"]
       },
       {
         "nombre": "Sistemas Digitales",
         "codigo": "COMP230014",
-        "cursos": ["COMP230014-Turno Mañana", "COMP230014-Turno Noche"]
+        "cursos": [
+          "COMP230014-Sistemas Digitales TM Teórico-práctica",
+          "COMP230014-Sistemas Digitales TM Laboratorio",
+          "COMP230014-Sistemas Digitales TN Teórico-práctica",
+          "COMP230014-Sistemas Digitales TN Laboratorio"
+        ]
       },
       {
         "nombre": "Sistemas Operativos",
         "codigo": "COMP930017",
-        "cursos": ["COMP930017-A"]
+        "cursos": [
+          "COMP930017-SO Teórico práctica",
+          "COMP930017-SO Laboratorio"
+        ]
       },
       {
         "nombre": "Taller de Tesis I",
         "codigo": "COMP930660",
-        "cursos": ["COMP930660-A"]
+        "cursos": ["COMP930660-Taller de Tesis I 1ºC2024"]
       },
       {
         "nombre": "Teoría de Juegos (DC) 2024",
         "codigo": "COMP930666",
-        "cursos": ["COMP930666-A"]
+        "cursos": ["COMP930666-Teórico-Práctica 1C2024"]
       },
       {
         "nombre": "Técnicas de Diseño de Algoritmos",
         "codigo": "COMP230015",
-        "cursos": ["COMP230015-A"]
+        "cursos": ["COMP230015-TDA Turno Mañana", "COMP230015-TDA Turno Noche"]
       },
       {
         "nombre": "Álgebra I",
         "codigo": "COMP930001",
-        "cursos": ["COMP930001-Algebra I"]
+        "cursos": [
+          "COMP930001-Teórico-práctica 1 (A-K)",
+          "COMP930001-Teórico-práctica 2 (L-Z)",
+          "COMP930001-Teórico-práctica 3",
+          "COMP930001-Teórico-práctica 4"
+        ]
       },
       {
         "nombre": "Álgebra Lineal Computacional",
         "codigo": "LCDA210006",
-        "cursos": ["LCDA210006-Algebra lineal computacional"]
+        "cursos": ["LCDA210006-Teórica", "LCDA210006-Práctica"]
       }
     ],
     "cursos": [
       {
         "materia": "COMP230001",
-        "codigo": "COMP230001-AED Turno Mañana",
+        "codigo": "COMP230001-AED TM Teórico",
         "docentes": "Braberman Victor Adrian , Tcach Lufrano Alexis Guido , Bendersky Diego Ariel , Bianchi Bruno , González Mariano Martín , Dubinsky Manuel , Landfried Gustavo Andrés , Schitter Tomas Jose , Travi Fermin , Gonzalez Omahen Augusto Ezequiel , Ramirez Leandro Jesús , Semeria Camilo ",
         "clases": [
-          { "dia": 2, "inicio": "09:00", "fin": "14:00" },
-          { "dia": 3, "inicio": "09:00", "fin": "14:00" },
-          { "dia": 5, "inicio": "09:00", "fin": "14:00" }
+          {
+            "dia": 2,
+            "inicio": "09:00",
+            "fin": "14:00"
+          }
         ]
       },
       {
         "materia": "COMP230001",
-        "codigo": "COMP230001-AED Turno Noche",
+        "codigo": "COMP230001-AED TM Práctica",
+        "docentes": "Braberman Victor Adrian , Tcach Lufrano Alexis Guido , Bendersky Diego Ariel , Bianchi Bruno , González Mariano Martín , Dubinsky Manuel , Landfried Gustavo Andrés , Schitter Tomas Jose , Travi Fermin , Gonzalez Omahen Augusto Ezequiel , Ramirez Leandro Jesús , Semeria Camilo ",
+        "clases": [
+          {
+            "dia": 3,
+            "inicio": "09:00",
+            "fin": "14:00"
+          }
+        ]
+      },
+      {
+        "materia": "COMP230001",
+        "codigo": "COMP230001-AEDI TM Laboratorio",
+        "docentes": "Braberman Victor Adrian , Tcach Lufrano Alexis Guido , Bendersky Diego Ariel , Bianchi Bruno , González Mariano Martín , Dubinsky Manuel , Landfried Gustavo Andrés , Schitter Tomas Jose , Travi Fermin , Gonzalez Omahen Augusto Ezequiel , Ramirez Leandro Jesús , Semeria Camilo ",
+        "clases": [
+          {
+            "dia": 5,
+            "inicio": "09:00",
+            "fin": "14:00"
+          }
+        ]
+      },
+      {
+        "materia": "COMP230001",
+        "codigo": "COMP230001-AED TN Teórico",
         "docentes": "Garbervetsky Diego David , Bianchi Bruno , Carreira Munich Tobias Agustin , Cerdeira Elías Nahuel , González Mariano Martín , Dandois Santiago José , Gastron Matias Ezequiel , Maqueda Ignacio , Capelo Gianluca , Gorojovsky Roman , Sawczuk Nicolás Iván ",
         "clases": [
-          { "dia": 2, "inicio": "17:00", "fin": "22:00" },
-          { "dia": 3, "inicio": "17:00", "fin": "22:00" },
-          { "dia": 5, "inicio": "17:00", "fin": "22:00" }
+          {
+            "dia": 2,
+            "inicio": "17:00",
+            "fin": "22:00"
+          }
+        ]
+      },
+      {
+        "materia": "COMP230001",
+        "codigo": "COMP230001-AED TN Práctica",
+        "docentes": "Garbervetsky Diego David , Bianchi Bruno , Carreira Munich Tobias Agustin , Cerdeira Elías Nahuel , González Mariano Martín , Dandois Santiago José , Gastron Matias Ezequiel , Maqueda Ignacio , Capelo Gianluca , Gorojovsky Roman , Sawczuk Nicolás Iván ",
+        "clases": [
+          {
+            "dia": 3,
+            "inicio": "17:00",
+            "fin": "22:00"
+          }
+        ]
+      },
+      {
+        "materia": "COMP230001",
+        "codigo": "COMP230001-AED TN Laboratorio",
+        "docentes": "Garbervetsky Diego David , Bianchi Bruno , Carreira Munich Tobias Agustin , Cerdeira Elías Nahuel , González Mariano Martín , Dandois Santiago José , Gastron Matias Ezequiel , Maqueda Ignacio , Capelo Gianluca , Gorojovsky Roman , Sawczuk Nicolás Iván ",
+        "clases": [
+          {
+            "dia": 5,
+            "inicio": "17:00",
+            "fin": "22:00"
+          }
         ]
       },
       {
         "materia": "COMP230003",
-        "codigo": "COMP230003-Análisis I",
+        "codigo": "COMP230003-Teórica 1 (A-K)",
         "docentes": "Larotonda Gabriel Andrés ",
         "clases": [
-          { "dia": 1, "inicio": "09:00", "fin": "11:00" },
-          { "dia": 4, "inicio": "09:00", "fin": "11:00" },
-          { "dia": 1, "inicio": "09:00", "fin": "11:00" },
-          { "dia": 4, "inicio": "09:00", "fin": "11:00" },
-          { "dia": 1, "inicio": "11:00", "fin": "14:00" },
-          { "dia": 4, "inicio": "11:00", "fin": "14:00" },
-          { "dia": 1, "inicio": "11:00", "fin": "14:00" },
-          { "dia": 4, "inicio": "11:00", "fin": "14:00" },
-          { "dia": 1, "inicio": "14:00", "fin": "16:00" },
-          { "dia": 4, "inicio": "14:00", "fin": "16:00" },
-          { "dia": 1, "inicio": "16:00", "fin": "19:00" },
-          { "dia": 4, "inicio": "16:00", "fin": "19:00" },
-          { "dia": 1, "inicio": "17:00", "fin": "19:00" },
-          { "dia": 4, "inicio": "17:00", "fin": "19:00" },
-          { "dia": 1, "inicio": "19:00", "fin": "22:00" },
-          { "dia": 4, "inicio": "19:00", "fin": "22:00" }
+          {
+            "dia": 1,
+            "inicio": "09:00",
+            "fin": "11:00"
+          },
+          {
+            "dia": 4,
+            "inicio": "09:00",
+            "fin": "11:00"
+          }
+        ]
+      },
+      {
+        "materia": "COMP230003",
+        "codigo": "COMP230003-Teórica 2 (L-Z)",
+        "docentes": "Kuna Mariel Paula ",
+        "clases": [
+          {
+            "dia": 1,
+            "inicio": "09:00",
+            "fin": "11:00"
+          },
+          {
+            "dia": 4,
+            "inicio": "09:00",
+            "fin": "11:00"
+          }
+        ]
+      },
+      {
+        "materia": "COMP230003",
+        "codigo": "COMP230003-Práctica 1 (A-K)",
+        "docentes": "Menconi Juan Manuel , Bianchi Hilde Lida , Zhang Fan , ALVAREZ Sergio ",
+        "clases": [
+          {
+            "dia": 1,
+            "inicio": "11:00",
+            "fin": "14:00"
+          },
+          {
+            "dia": 4,
+            "inicio": "11:00",
+            "fin": "14:00"
+          }
+        ]
+      },
+      {
+        "materia": "COMP230003",
+        "codigo": "COMP230003-Práctica 2 (L-Z)",
+        "docentes": "Arcodia Marcos Ramiro Alfredo , Singer Joaquín , Cañizares Solis Ana Mariela , Carraux Gonzalo Adrián , Mastropietro Bruno Federico ",
+        "clases": [
+          {
+            "dia": 1,
+            "inicio": "11:00",
+            "fin": "14:00"
+          },
+          {
+            "dia": 4,
+            "inicio": "11:00",
+            "fin": "14:00"
+          }
+        ]
+      },
+      {
+        "materia": "COMP230003",
+        "codigo": "COMP230003-Teórica 3",
+        "docentes": "Paternostro Victoria ",
+        "clases": [
+          {
+            "dia": 1,
+            "inicio": "14:00",
+            "fin": "16:00"
+          },
+          {
+            "dia": 4,
+            "inicio": "14:00",
+            "fin": "16:00"
+          }
+        ]
+      },
+      {
+        "materia": "COMP230003",
+        "codigo": "COMP230003-Práctica 3",
+        "docentes": "Villafañe Norberto Román , Carabajal Gonzalo , Peralta Dalia Soledad , Polo Tamara Carolina ",
+        "clases": [
+          {
+            "dia": 1,
+            "inicio": "16:00",
+            "fin": "19:00"
+          },
+          {
+            "dia": 4,
+            "inicio": "16:00",
+            "fin": "19:00"
+          }
+        ]
+      },
+      {
+        "materia": "COMP230003",
+        "codigo": "COMP230003-Teórica 4",
+        "docentes": "Quallbrunn Federico ",
+        "clases": [
+          {
+            "dia": 1,
+            "inicio": "17:00",
+            "fin": "19:00"
+          },
+          {
+            "dia": 4,
+            "inicio": "17:00",
+            "fin": "19:00"
+          }
+        ]
+      },
+      {
+        "materia": "COMP230003",
+        "codigo": "COMP230003-Práctica 4",
+        "docentes": "Honore Eduardo Misael , Luna Jose Alejandro , Belen Eugenia ",
+        "clases": [
+          {
+            "dia": 1,
+            "inicio": "19:00",
+            "fin": "22:00"
+          },
+          {
+            "dia": 4,
+            "inicio": "19:00",
+            "fin": "22:00"
+          }
         ]
       },
       {
         "materia": "COMP930656",
-        "codigo": "COMP930656-A",
+        "codigo": "COMP930656-AA 1C2024",
         "docentes": "Brusco Pablo ",
         "clases": [
-          { "dia": 2, "inicio": "17:00", "fin": "21:00" },
-          { "dia": 4, "inicio": "17:00", "fin": "21:00" }
+          {
+            "dia": 2,
+            "inicio": "17:00",
+            "fin": "21:00"
+          },
+          {
+            "dia": 4,
+            "inicio": "17:00",
+            "fin": "21:00"
+          }
         ]
       },
       {
         "materia": "COMP930663",
-        "codigo": "COMP930663-A",
+        "codigo": "COMP930663-Teórico 1C2024",
         "docentes": "Lombardi Leandro Ezequiel ",
         "clases": [
-          { "dia": 1, "inicio": "09:30", "fin": "12:30" },
-          { "dia": 5, "inicio": "09:00", "fin": "11:00" }
+          {
+            "dia": 1,
+            "inicio": "09:30",
+            "fin": "12:30"
+          }
+        ]
+      },
+      {
+        "materia": "COMP930663",
+        "codigo": "COMP930663-Práctica (virtual) 1C2024",
+        "docentes": "Lombardi Leandro Ezequiel ",
+        "clases": [
+          {
+            "dia": 5,
+            "inicio": "09:00",
+            "fin": "11:00"
+          }
         ]
       },
       {
         "materia": "COMP930657",
-        "codigo": "COMP930657-A",
+        "codigo": "COMP930657-FAGIS 1C2024",
         "docentes": "Abriola Sergio Alejandro ",
-        "clases": [{ "dia": 5, "inicio": "17:00", "fin": "21:00" }]
+        "clases": [
+          {
+            "dia": 5,
+            "inicio": "17:00",
+            "fin": "21:00"
+          }
+        ]
       },
       {
         "materia": "COMP230008",
-        "codigo": "COMP230008-A",
+        "codigo": "COMP230008-IP Comisión A Laboratorio",
         "docentes": "De Cristoforis Pablo Esteban , Di Piazza Gabriela Melisa , Godoy Javier Ignacio , González Mariano Martín , Rubinstein Pablo Andres , Sansone Agustín , Tilli Dora Elena , Bekenstein Jonathan Ezequiel , Bustamante Luis Ricardo , Mamani Fernandez Jorge Ricardo , Perez Bianchi Paula ",
         "clases": [
-          { "dia": 1, "inicio": "09:00", "fin": "11:30" },
-          { "dia": 3, "inicio": "09:00", "fin": "11:30" },
-          { "dia": 4, "inicio": "09:00", "fin": "14:00" }
+          {
+            "dia": 1,
+            "inicio": "09:00",
+            "fin": "11:30"
+          },
+          {
+            "dia": 3,
+            "inicio": "09:00",
+            "fin": "11:30"
+          }
         ]
       },
       {
         "materia": "COMP230008",
-        "codigo": "COMP230008-B",
+        "codigo": "COMP230008-IP Comisión A Teórico",
         "docentes": "De Cristoforis Pablo Esteban , Di Piazza Gabriela Melisa , Godoy Javier Ignacio , González Mariano Martín , Rubinstein Pablo Andres , Sansone Agustín , Tilli Dora Elena , Bekenstein Jonathan Ezequiel , Bustamante Luis Ricardo , Mamani Fernandez Jorge Ricardo , Perez Bianchi Paula ",
         "clases": [
-          { "dia": 1, "inicio": "11:30", "fin": "14:00" },
-          { "dia": 3, "inicio": "11:30", "fin": "14:00" },
-          { "dia": 4, "inicio": "09:00", "fin": "14:00" }
+          {
+            "dia": 4,
+            "inicio": "09:00",
+            "fin": "14:00"
+          }
         ]
       },
       {
         "materia": "COMP230008",
-        "codigo": "COMP230008-C",
-        "docentes": "Altauz Javier Hernán , Urtasun Martín , Brassesco Maria Virginia , Dengra Silvina , González Mariano Martín , Benedetti Juan Pablo , Romano Francisco , Vasulka Mariano , Vita Sebastian Alberto , Lew Deveali Simon , Ocampo Debora Daiana ",
+        "codigo": "COMP230008-IP Comisión B Laboratorio",
+        "docentes": "De Cristoforis Pablo Esteban , Di Piazza Gabriela Melisa , Godoy Javier Ignacio , González Mariano Martín , Rubinstein Pablo Andres , Sansone Agustín , Tilli Dora Elena , Bekenstein Jonathan Ezequiel , Bustamante Luis Ricardo , Mamani Fernandez Jorge Ricardo , Perez Bianchi Paula ",
         "clases": [
-          { "dia": 4, "inicio": "17:00", "fin": "22:00" },
-          { "dia": 1, "inicio": "17:00", "fin": "19:30" },
-          { "dia": 3, "inicio": "17:00", "fin": "19:30" }
+          {
+            "dia": 1,
+            "inicio": "11:30",
+            "fin": "14:00"
+          },
+          {
+            "dia": 3,
+            "inicio": "11:30",
+            "fin": "14:00"
+          }
         ]
       },
       {
         "materia": "COMP230008",
-        "codigo": "COMP230008-D",
+        "codigo": "COMP230008-IP Comisión B Teórico",
+        "docentes": "De Cristoforis Pablo Esteban , Di Piazza Gabriela Melisa , Godoy Javier Ignacio , González Mariano Martín , Rubinstein Pablo Andres , Sansone Agustín , Tilli Dora Elena , Bekenstein Jonathan Ezequiel , Bustamante Luis Ricardo , Mamani Fernandez Jorge Ricardo , Perez Bianchi Paula ",
+        "clases": [
+          {
+            "dia": 4,
+            "inicio": "09:00",
+            "fin": "14:00"
+          }
+        ]
+      },
+      {
+        "materia": "COMP230008",
+        "codigo": "COMP230008-IP Comisión C Teórico",
         "docentes": "Altauz Javier Hernán , Urtasun Martín , Brassesco Maria Virginia , Dengra Silvina , González Mariano Martín , Benedetti Juan Pablo , Romano Francisco , Vasulka Mariano , Vita Sebastian Alberto , Lew Deveali Simon , Ocampo Debora Daiana ",
         "clases": [
-          { "dia": 1, "inicio": "19:30", "fin": "22:00" },
-          { "dia": 3, "inicio": "19:30", "fin": "22:00" },
-          { "dia": 4, "inicio": "17:00", "fin": "22:00" }
+          {
+            "dia": 4,
+            "inicio": "17:00",
+            "fin": "22:00"
+          }
+        ]
+      },
+      {
+        "materia": "COMP230008",
+        "codigo": "COMP230008-IP Comisión C Laboratorio",
+        "docentes": "Altauz Javier Hernán , Urtasun Martín , Brassesco Maria Virginia , Dengra Silvina , González Mariano Martín , Benedetti Juan Pablo , Romano Francisco , Vasulka Mariano , Vita Sebastian Alberto , Lew Deveali Simon , Ocampo Debora Daiana ",
+        "clases": [
+          {
+            "dia": 1,
+            "inicio": "17:00",
+            "fin": "19:30"
+          },
+          {
+            "dia": 3,
+            "inicio": "17:00",
+            "fin": "19:30"
+          }
+        ]
+      },
+      {
+        "materia": "COMP230008",
+        "codigo": "COMP230008-IP Comisión D Laboratorio",
+        "docentes": "Altauz Javier Hernán , Urtasun Martín , Brassesco Maria Virginia , Dengra Silvina , González Mariano Martín , Benedetti Juan Pablo , Romano Francisco , Vasulka Mariano , Vita Sebastian Alberto , Lew Deveali Simon , Ocampo Debora Daiana ",
+        "clases": [
+          {
+            "dia": 1,
+            "inicio": "19:30",
+            "fin": "22:00"
+          },
+          {
+            "dia": 3,
+            "inicio": "19:30",
+            "fin": "22:00"
+          }
+        ]
+      },
+      {
+        "materia": "COMP230008",
+        "codigo": "COMP230008-IP Comisión D Teórico",
+        "docentes": "Altauz Javier Hernán , Urtasun Martín , Brassesco Maria Virginia , Dengra Silvina , González Mariano Martín , Benedetti Juan Pablo , Romano Francisco , Vasulka Mariano , Vita Sebastian Alberto , Lew Deveali Simon , Ocampo Debora Daiana ",
+        "clases": [
+          {
+            "dia": 4,
+            "inicio": "17:00",
+            "fin": "22:00"
+          }
         ]
       },
       {
         "materia": "COMP931252",
-        "codigo": "COMP931252-A",
+        "codigo": "COMP931252-Laboratorio 1C2024",
         "docentes": "Uchitel Sebastian ",
         "clases": [
-          { "dia": 2, "inicio": "09:00", "fin": "13:00" },
-          { "dia": 4, "inicio": "10:00", "fin": "12:00" }
+          {
+            "dia": 2,
+            "inicio": "09:00",
+            "fin": "13:00"
+          }
+        ]
+      },
+      {
+        "materia": "COMP931252",
+        "codigo": "COMP931252-Teórico 1C2024",
+        "docentes": "Uchitel Sebastian ",
+        "clases": [
+          {
+            "dia": 4,
+            "inicio": "10:00",
+            "fin": "12:00"
+          }
         ]
       },
       {
         "materia": "COMP930658",
-        "codigo": "COMP930658-A",
+        "codigo": "COMP930658-Teórico 1C2024",
         "docentes": "Castro Rodrigo Daniel ",
         "clases": [
-          { "dia": 1, "inicio": "17:00", "fin": "19:00" },
-          { "dia": 1, "inicio": "19:00", "fin": "21:00" }
+          {
+            "dia": 1,
+            "inicio": "17:00",
+            "fin": "19:00"
+          }
+        ]
+      },
+      {
+        "materia": "COMP930658",
+        "codigo": "COMP930658-Laboratorio 1C2024",
+        "docentes": "Castro Rodrigo Daniel ",
+        "clases": [
+          {
+            "dia": 1,
+            "inicio": "19:00",
+            "fin": "21:00"
+          }
         ]
       },
       {
         "materia": "COMP930015",
-        "codigo": "COMP930015-A",
+        "codigo": "COMP930015-PLP - Teórico-práctica",
         "docentes": "Barenbaum Pablo , Cossio Mercado Christian Gustavo , Marottoli Daniela , Steren Gabriela , Díaz Caro Alejandro ",
         "clases": [
-          { "dia": 2, "inicio": "17:00", "fin": "22:00" },
-          { "dia": 5, "inicio": "17:00", "fin": "22:00" },
-          { "dia": 2, "inicio": "17:00", "fin": "22:00" },
-          { "dia": 5, "inicio": "17:00", "fin": "22:00" }
+          {
+            "dia": 2,
+            "inicio": "17:00",
+            "fin": "22:00"
+          },
+          {
+            "dia": 5,
+            "inicio": "17:00",
+            "fin": "22:00"
+          }
+        ]
+      },
+      {
+        "materia": "COMP930015",
+        "codigo": "COMP930015-PLP - Laboratorio",
+        "docentes": "Barenbaum Pablo , Cossio Mercado Christian Gustavo , Marottoli Daniela , Steren Gabriela , Díaz Caro Alejandro ",
+        "clases": [
+          {
+            "dia": 2,
+            "inicio": "17:00",
+            "fin": "22:00"
+          },
+          {
+            "dia": 5,
+            "inicio": "17:00",
+            "fin": "22:00"
+          }
         ]
       },
       {
         "materia": "COMP930668",
-        "codigo": "COMP930668-A",
+        "codigo": "COMP930668-Teórico 1C2024",
         "docentes": "Risk Marcelo Raul ",
         "clases": [
-          { "dia": 2, "inicio": "17:00", "fin": "18:00" },
-          { "dia": 2, "inicio": "18:00", "fin": "20:00" }
+          {
+            "dia": 2,
+            "inicio": "17:00",
+            "fin": "18:00"
+          }
+        ]
+      },
+      {
+        "materia": "COMP930668",
+        "codigo": "COMP930668-Laboratorio 1C2024",
+        "docentes": "Risk Marcelo Raul ",
+        "clases": [
+          {
+            "dia": 2,
+            "inicio": "18:00",
+            "fin": "20:00"
+          }
         ]
       },
       {
         "materia": "COMP930662",
-        "codigo": "COMP930662-A",
+        "codigo": "COMP930662-Laboratorio 1C2024",
         "docentes": "Del Corro Luciano Manuel ",
-        "clases": [{ "dia": 2, "inicio": "09:00", "fin": "12:00" }]
+        "clases": [
+          {
+            "dia": 2,
+            "inicio": "09:00",
+            "fin": "12:00"
+          }
+        ]
       },
       {
         "materia": "COMP931538",
-        "codigo": "COMP931538-A",
+        "codigo": "COMP931538-Redes, Sociedad y Economía 1C2023",
         "docentes": "Feuerstein Esteban Zindel ",
-        "clases": [{ "dia": 2, "inicio": "17:15", "fin": "21:15" }]
+        "clases": [
+          {
+            "dia": 2,
+            "inicio": "17:15",
+            "fin": "21:15"
+          }
+        ]
       },
       {
         "materia": "COMP931324",
-        "codigo": "COMP931324-A",
+        "codigo": "COMP931324-Teórico-Práctica 1C2024",
         "docentes": "Baader Rodolfo Pablo ",
         "clases": [
-          { "dia": 1, "inicio": "18:00", "fin": "20:30" },
-          { "dia": 3, "inicio": "18:00", "fin": "20:30" }
+          {
+            "dia": 1,
+            "inicio": "18:00",
+            "fin": "20:30"
+          },
+          {
+            "dia": 3,
+            "inicio": "18:00",
+            "fin": "20:30"
+          }
         ]
       },
       {
         "materia": "COMP230014",
-        "codigo": "COMP230014-Turno Mañana",
+        "codigo": "COMP230014-Sistemas Digitales TM Teórico-práctica",
         "docentes": "Buemi María Elena , Cerrutti Mariano Javier , Bekenstein Jonathan Ezequiel , Siciliani Andres , Sánchez Posadas Ramiro ",
         "clases": [
-          { "dia": 4, "inicio": "08:00", "fin": "10:00" },
-          { "dia": 4, "inicio": "10:00", "fin": "13:00" }
+          {
+            "dia": 4,
+            "inicio": "08:00",
+            "fin": "10:00"
+          }
         ]
       },
       {
         "materia": "COMP230014",
-        "codigo": "COMP230014-Turno Noche",
+        "codigo": "COMP230014-Sistemas Digitales TM Laboratorio",
+        "docentes": "Buemi María Elena , Cerrutti Mariano Javier , Bekenstein Jonathan Ezequiel , Siciliani Andres , Sánchez Posadas Ramiro ",
+        "clases": [
+          {
+            "dia": 4,
+            "inicio": "10:00",
+            "fin": "13:00"
+          }
+        ]
+      },
+      {
+        "materia": "COMP230014",
+        "codigo": "COMP230014-Sistemas Digitales TN Teórico-práctica",
         "docentes": "Buemi María Elena , Zoppi Edgardo Julio , Raffo Diego Martín , Gonzalez Omahen Augusto Ezequiel , Romani Rafael ",
         "clases": [
-          { "dia": 4, "inicio": "17:00", "fin": "19:00" },
-          { "dia": 4, "inicio": "19:00", "fin": "22:00" }
+          {
+            "dia": 4,
+            "inicio": "17:00",
+            "fin": "19:00"
+          }
+        ]
+      },
+      {
+        "materia": "COMP230014",
+        "codigo": "COMP230014-Sistemas Digitales TN Laboratorio",
+        "docentes": "Buemi María Elena , Zoppi Edgardo Julio , Raffo Diego Martín , Gonzalez Omahen Augusto Ezequiel , Romani Rafael ",
+        "clases": [
+          {
+            "dia": 4,
+            "inicio": "19:00",
+            "fin": "22:00"
+          }
         ]
       },
       {
         "materia": "COMP930017",
-        "codigo": "COMP930017-A",
+        "codigo": "COMP930017-SO Teórico práctica",
         "docentes": "Fernandez Slezak Diego , Sumoza Matos Rodolfo Leonardo ",
         "clases": [
-          { "dia": 2, "inicio": "17:00", "fin": "21:00" },
-          { "dia": 4, "inicio": "17:00", "fin": "21:00" },
-          { "dia": 2, "inicio": "17:00", "fin": "21:00" },
-          { "dia": 4, "inicio": "17:00", "fin": "21:00" }
+          {
+            "dia": 2,
+            "inicio": "17:00",
+            "fin": "21:00"
+          },
+          {
+            "dia": 4,
+            "inicio": "17:00",
+            "fin": "21:00"
+          }
+        ]
+      },
+      {
+        "materia": "COMP930017",
+        "codigo": "COMP930017-SO Laboratorio",
+        "docentes": "Fernandez Slezak Diego , Sumoza Matos Rodolfo Leonardo ",
+        "clases": [
+          {
+            "dia": 2,
+            "inicio": "17:00",
+            "fin": "21:00"
+          },
+          {
+            "dia": 4,
+            "inicio": "17:00",
+            "fin": "21:00"
+          }
         ]
       },
       {
         "materia": "COMP930660",
-        "codigo": "COMP930660-A",
+        "codigo": "COMP930660-Taller de Tesis I 1ºC2024",
         "docentes": "Kamienkowski Juan Esteban ",
-        "clases": [{ "dia": 1, "inicio": "17:00", "fin": "22:00" }]
+        "clases": [
+          {
+            "dia": 1,
+            "inicio": "17:00",
+            "fin": "22:00"
+          }
+        ]
       },
       {
         "materia": "COMP930666",
-        "codigo": "COMP930666-A",
+        "codigo": "COMP930666-Teórico-Práctica 1C2024",
         "docentes": "Arbiser Ariel ",
-        "clases": [{ "dia": 3, "inicio": "14:30", "fin": "19:00" }]
+        "clases": [
+          {
+            "dia": 3,
+            "inicio": "14:30",
+            "fin": "19:00"
+          }
+        ]
       },
       {
         "materia": "COMP230015",
-        "codigo": "COMP230015-A",
+        "codigo": "COMP230015-TDA Turno Mañana",
         "docentes": "Bonomo Flavia , Soulignac Francisco Juan , Terlisky Pablo Ezequiel , Braier Julián , Amster Martín , Umfurer Alfredo Raul ",
         "clases": [
-          { "dia": 1, "inicio": "09:00", "fin": "13:00" },
-          { "dia": 3, "inicio": "09:00", "fin": "13:00" },
-          { "dia": 1, "inicio": "17:00", "fin": "21:00" },
-          { "dia": 3, "inicio": "17:00", "fin": "21:00" }
+          {
+            "dia": 1,
+            "inicio": "09:00",
+            "fin": "13:00"
+          },
+          {
+            "dia": 3,
+            "inicio": "09:00",
+            "fin": "13:00"
+          }
+        ]
+      },
+      {
+        "materia": "COMP230015",
+        "codigo": "COMP230015-TDA Turno Noche",
+        "docentes": "Lin Min Chih , Platzer Emilio , Iglesias Matias Nehuen , Brandwein Eric , Companeetz Ezequiel , Dinkel Ayelen , Nores Manuel , Raffo Leandro Javier , Umfurer Alfredo Raul ",
+        "clases": [
+          {
+            "dia": 1,
+            "inicio": "17:00",
+            "fin": "21:00"
+          },
+          {
+            "dia": 3,
+            "inicio": "17:00",
+            "fin": "21:00"
+          }
         ]
       },
       {
         "materia": "COMP930001",
-        "codigo": "COMP930001-Algebra I",
+        "codigo": "COMP930001-Teórico-práctica 1 (A-K)",
         "docentes": "Zadunaisky Bustillos Pablo Mauricio , Merzbacher Diego Mariano , Antunes Percincula Carlos Santiago , Rufolo Franco Nicolás ",
         "clases": [
-          { "dia": 2, "inicio": "09:00", "fin": "14:00" },
-          { "dia": 5, "inicio": "09:00", "fin": "14:00" },
-          { "dia": 2, "inicio": "09:00", "fin": "14:00" },
-          { "dia": 5, "inicio": "09:00", "fin": "14:00" },
-          { "dia": 2, "inicio": "14:00", "fin": "19:00" },
-          { "dia": 5, "inicio": "14:00", "fin": "19:00" },
-          { "dia": 2, "inicio": "17:00", "fin": "22:00" },
-          { "dia": 5, "inicio": "17:00", "fin": "22:00" }
+          {
+            "dia": 2,
+            "inicio": "09:00",
+            "fin": "14:00"
+          },
+          {
+            "dia": 5,
+            "inicio": "09:00",
+            "fin": "14:00"
+          }
+        ]
+      },
+      {
+        "materia": "COMP930001",
+        "codigo": "COMP930001-Teórico-práctica 2 (L-Z)",
+        "docentes": "Perrucci Daniel Roberto , Paredes Marcelo Exequiel , Sac Himelfarb Gabriel , Fraiman David ",
+        "clases": [
+          {
+            "dia": 2,
+            "inicio": "09:00",
+            "fin": "14:00"
+          },
+          {
+            "dia": 5,
+            "inicio": "09:00",
+            "fin": "14:00"
+          }
+        ]
+      },
+      {
+        "materia": "COMP930001",
+        "codigo": "COMP930001-Teórico-práctica 3",
+        "docentes": "Krick Teresa Elena Genoveva , Freyre Sebastián , Giacobbe Mara Georgina , Allo Gómez Nicolás , Lamas Jan ",
+        "clases": [
+          {
+            "dia": 2,
+            "inicio": "14:00",
+            "fin": "19:00"
+          },
+          {
+            "dia": 5,
+            "inicio": "14:00",
+            "fin": "19:00"
+          }
+        ]
+      },
+      {
+        "materia": "COMP930001",
+        "codigo": "COMP930001-Teórico-práctica 4",
+        "docentes": "Krick Teresa Elena Genoveva , Freyre Sebastián , Noceti Maria Florencia , Martínez Facundo Ezequiel ",
+        "clases": [
+          {
+            "dia": 2,
+            "inicio": "17:00",
+            "fin": "22:00"
+          },
+          {
+            "dia": 5,
+            "inicio": "17:00",
+            "fin": "22:00"
+          }
         ]
       },
       {
         "materia": "LCDA210006",
-        "codigo": "LCDA210006-Algebra lineal computacional",
+        "codigo": "LCDA210006-Teórica",
         "docentes": "Martinez Sandra Rita ",
         "clases": [
-          { "dia": 2, "inicio": "09:00", "fin": "11:00" },
-          { "dia": 4, "inicio": "09:00", "fin": "11:00" },
-          { "dia": 2, "inicio": "11:00", "fin": "14:00" },
-          { "dia": 4, "inicio": "11:00", "fin": "14:00" }
+          {
+            "dia": 2,
+            "inicio": "09:00",
+            "fin": "11:00"
+          },
+          {
+            "dia": 4,
+            "inicio": "09:00",
+            "fin": "11:00"
+          }
+        ]
+      },
+      {
+        "materia": "LCDA210006",
+        "codigo": "LCDA210006-Práctica",
+        "docentes": "Statti María Florencia , Carabajal Gonzalo ",
+        "clases": [
+          {
+            "dia": 2,
+            "inicio": "11:00",
+            "fin": "14:00"
+          },
+          {
+            "dia": 4,
+            "inicio": "11:00",
+            "fin": "14:00"
+          }
         ]
       }
     ],
-    "timestamp": 1710968375606
+    "timestamp": 1710968375477
   },
   {
     "periodo": "2024 - 1er. Bimestre",
@@ -410,84 +1049,147 @@
       {
         "nombre": "Aprendizaje Profundo - VISIT2024",
         "codigo": "COMP930671",
-        "cursos": ["COMP930671-A"]
+        "cursos": ["COMP930671-Teórico-Práctica 1B2024"]
       },
       {
         "nombre": "Criptografía Moderna - VISIT2024",
         "codigo": "COMP930669",
-        "cursos": ["COMP930669-A"]
+        "cursos": ["COMP930669-Teórico-Práctica 1B2024"]
       },
       {
         "nombre": "Introducción a las APIs - VISIT2024",
         "codigo": "COMP930670",
-        "cursos": ["COMP930670-A"]
+        "cursos": ["COMP930670-Teórico-Práctica 1B2024"]
       },
       {
         "nombre": "Modelado y Análisis de Sistemas Reactivos y Concurrentes",
         "codigo": "COMP931252",
-        "cursos": ["COMP931252-A"]
+        "cursos": ["COMP931252-Laboratorio 1C2024", "COMP931252-Teórico 1C2024"]
       },
       {
         "nombre": "Procesamiento de Imágenes Cerebrales a Gran Escala con Aplicaciones de Machine Learning - VISIT2024",
         "codigo": "COMP930673",
-        "cursos": ["COMP930673-A"]
+        "cursos": [
+          "COMP930673-Procesamiento de imágenes cerebrales a gran escala con aplicaciones de Machine Learning-1B2024"
+        ]
       },
       {
         "nombre": "Seminario de Demostración Automática 2024",
         "codigo": "COMP930664",
-        "cursos": ["COMP930664-A"]
+        "cursos": ["COMP930664-SDA 1C2024"]
       }
     ],
     "cursos": [
       {
         "materia": "COMP930671",
-        "codigo": "COMP930671-A",
+        "codigo": "COMP930671-Teórico-Práctica 1B2024",
         "docentes": "Ferrante Enzo , Rodriguez Ricardo Oscar ",
-        "clases": [{ "dia": 2, "inicio": "09:00", "fin": "12:00" }]
+        "clases": [
+          {
+            "dia": 2,
+            "inicio": "09:00",
+            "fin": "12:00"
+          }
+        ]
       },
       {
         "materia": "COMP930669",
-        "codigo": "COMP930669-A",
+        "codigo": "COMP930669-Teórico-Práctica 1B2024",
         "docentes": "Rodriguez Ricardo Oscar ",
         "clases": [
-          { "dia": 2, "inicio": "14:00", "fin": "17:00" },
-          { "dia": 4, "inicio": "14:00", "fin": "17:00" }
+          {
+            "dia": 2,
+            "inicio": "14:00",
+            "fin": "17:00"
+          },
+          {
+            "dia": 4,
+            "inicio": "14:00",
+            "fin": "17:00"
+          }
         ]
       },
       {
         "materia": "COMP930670",
-        "codigo": "COMP930670-A",
+        "codigo": "COMP930670-Teórico-Práctica 1B2024",
         "docentes": "De Caso Guido ",
-        "clases": [{ "dia": 3, "inicio": "17:00", "fin": "20:00" }]
+        "clases": [
+          {
+            "dia": 3,
+            "inicio": "17:00",
+            "fin": "20:00"
+          }
+        ]
       },
       {
         "materia": "COMP931252",
-        "codigo": "COMP931252-A",
+        "codigo": "COMP931252-Laboratorio 1C2024",
         "docentes": "Uchitel Sebastian ",
         "clases": [
-          { "dia": 2, "inicio": "09:00", "fin": "13:00" },
-          { "dia": 4, "inicio": "10:00", "fin": "12:00" }
+          {
+            "dia": 2,
+            "inicio": "09:00",
+            "fin": "13:00"
+          }
+        ]
+      },
+      {
+        "materia": "COMP931252",
+        "codigo": "COMP931252-Teórico 1C2024",
+        "docentes": "Uchitel Sebastian ",
+        "clases": [
+          {
+            "dia": 4,
+            "inicio": "10:00",
+            "fin": "12:00"
+          }
         ]
       },
       {
         "materia": "COMP930673",
-        "codigo": "COMP930673-A",
+        "codigo": "COMP930673-Procesamiento de imágenes cerebrales a gran escala con aplicaciones de Machine Learning-1B2024",
         "docentes": "Rodriguez Ricardo Oscar ",
         "clases": [
-          { "dia": 1, "inicio": "09:00", "fin": "13:00" },
-          { "dia": 2, "inicio": "09:00", "fin": "13:00" },
-          { "dia": 3, "inicio": "09:00", "fin": "13:00" },
-          { "dia": 4, "inicio": "09:00", "fin": "13:00" },
-          { "dia": 5, "inicio": "09:00", "fin": "13:00" }
+          {
+            "dia": 1,
+            "inicio": "09:00",
+            "fin": "13:00"
+          },
+          {
+            "dia": 2,
+            "inicio": "09:00",
+            "fin": "13:00"
+          },
+          {
+            "dia": 3,
+            "inicio": "09:00",
+            "fin": "13:00"
+          },
+          {
+            "dia": 4,
+            "inicio": "09:00",
+            "fin": "13:00"
+          },
+          {
+            "dia": 5,
+            "inicio": "09:00",
+            "fin": "13:00"
+          }
         ]
       },
       {
         "materia": "COMP930664",
-        "codigo": "COMP930664-A",
+        "codigo": "COMP930664-SDA 1C2024",
         "docentes": "Rodriguez Ricardo Oscar ",
-        "clases": [{ "dia": 3, "inicio": "14:00", "fin": "17:00" }]
+        "clases": [
+          {
+            "dia": 3,
+            "inicio": "14:00",
+            "fin": "17:00"
+          }
+        ]
       }
     ],
-    "timestamp": 1710968375647
+    "timestamp": 1710968375577
   }
 ]

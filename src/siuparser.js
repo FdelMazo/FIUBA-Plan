@@ -21,7 +21,9 @@ export function parseSIU(rawdata) {
   const materiaPattern =
     /Actividad: ([^\n]+) \((.+?)\)\n[\s\S]*?(?=Actividad:|$)/g;
   const cursosPattern =
-    /Comisión: ([^\n]+)[\s\S]*?Docentes: ([^\n]+)[\s\S]*?Tipo de clase\s+Día\s+Horario(?:\s+Aula)?([\s\S]*?)(?=Comisión:|$)/g;
+    /Comisión: ([^\n]+)[\s\S]*?Docentes: ([^\n]+)[\s\S]*?(?:Tipo de clase\s+Día\s+Horario(?:\s+Aula)?|Subcomisión:)([\s\S]*?)(?=Comisión:|$)/g;
+  const subcomisionPattern =
+    /Subcomisión: ([^\n]+)[\s\S]*?Docentes: ([^\n]+)[\s\S]*?Tipo de clase\s+Día\s+Horario(?:\s+Aula)?([\s\S]*?)(?=Subcomisión:|$)/g;
 
   const periodos = [];
 
@@ -58,39 +60,74 @@ export function parseSIU(rawdata) {
       console.debug(`- Found materia: ${materia.nombre} (${materia.codigo})`);
 
       for (const cursoMatch of materiaFullText.matchAll(cursosPattern)) {
-        const cursoCodigo = `${materia.codigo}-${cursoMatch[1]}`;
-        const cursoDocentes = cursoMatch[2].trim().replace(/\(.*?\)/g, "");
-        console.debug(`-- Found curso: ${cursoCodigo}`);
+        const subcomisiones = [...cursoMatch[0].matchAll(subcomisionPattern)];
 
-        const clases = [];
-        for (let claseLine of cursoMatch[3].trim().split("\n")) {
-          console.debug(`--- Found clase: ${claseLine}`);
-          if (!SEMANA.some((day) => claseLine.includes(day))) {
+        const cursos =
+          subcomisiones.length === 0
+            ? [
+                {
+                  codigo: cursoMatch[1],
+                  docentes: cursoMatch[2],
+                  clases: cursoMatch[3],
+                },
+              ]
+            : subcomisiones.map((m) => ({
+                codigo: m[1],
+                docentes: m[2],
+                clases: m[3],
+              }));
+
+        // If the last subcomisión shares its name with the comisión, it's a
+        // shared/common course whose classes apply to every other subcomisión.
+        if (cursos.length > 1 && cursos.at(-1).codigo.trim() === cursoMatch[1].trim()) {
+          const comunes = cursos.at(-1).clases;
+
+          for (let i = 0; i < cursos.length - 1; i++) {
+            cursos[i].clases += "\n" + comunes;
+          }
+
+          cursos.pop();
+        }
+
+        for (const curso of cursos) {
+          const cursoCodigo = `${materia.codigo}-${curso.codigo}`;
+          const cursoDocentes = curso.docentes.trim().replace(/\(.*?\)/g, "");
+
+          console.debug(`-- Found curso: ${cursoCodigo}`);
+
+          const clases = [];
+
+          for (let claseLine of curso.clases.trim().split("\n")) {
+            console.debug(`--- Found clase: ${claseLine}`);
+
+            if (!SEMANA.some((day) => claseLine.includes(day))) {
+              continue;
+            }
+
+            // eslint-disable-next-line no-unused-vars
+            const [_tipo, dia, horario, _aula = null] = claseLine.split("\t");
+            const [inicio, fin] = horario.split(" a ");
+
+            clases.push({
+              dia: SEMANA.indexOf(dia),
+              inicio,
+              fin,
+            });
+          }
+
+          if (clases.length === 0) {
             continue;
           }
 
-          // eslint-disable-next-line no-unused-vars
-          const [_tipo, dia, horario, _aula = null] = claseLine.split("\t");
-          const [inicio, fin] = horario.split(" a ");
-          const clase = {
-            dia: SEMANA.indexOf(dia),
-            inicio,
-            fin,
-          };
-          clases.push(clase);
-        }
+          periodo.cursos.push({
+            materia: materia.codigo,
+            codigo: cursoCodigo,
+            docentes: cursoDocentes,
+            clases,
+          });
 
-        if (clases.length === 0) {
-          continue;
+          materia.cursos.push(cursoCodigo);
         }
-
-        periodo.cursos.push({
-          materia: materia.codigo,
-          codigo: cursoCodigo,
-          docentes: cursoDocentes,
-          clases,
-        });
-        materia.cursos.push(cursoCodigo);
       }
 
       if (materia.cursos.length === 0) {

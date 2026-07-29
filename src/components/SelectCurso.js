@@ -208,6 +208,11 @@ const SelectCurso = ({ codigo }) => {
               key={item.codigo}
             >
               <Box
+                as="li"
+                {...getItemProps({
+                  item,
+                  index,
+                })}
                 py={1}
                 bg={highlightedIndex === index && "hovercolor"}
                 color={isActive ? color : "gray.200"}
@@ -221,12 +226,7 @@ const SelectCurso = ({ codigo }) => {
                 key={item.codigo}
                 position="relative"
               >
-                <li
-                  {...getItemProps({
-                    item,
-                    index,
-                  })}
-                >
+                <>
                   {isActive && <CheckIcon mr={1} />}
                   {isItemBlocked && <WarningTwoIcon mr={1} />}
                   {item.docentes}
@@ -242,7 +242,7 @@ const SelectCurso = ({ codigo }) => {
                       ),
                     ].join(" | ")}
                   </Badge>
-                </li>
+                </>
               </Box>
             </Tooltip>
           );

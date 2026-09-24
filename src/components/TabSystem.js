@@ -45,7 +45,7 @@ const TabSystem = (props) => {
     events,
   } = React.useContext(DataContext);
   const toastPermalink = useToast();
-  const toastError = useToast();  
+  const toastError = useToast();
   const inputref = React.useRef(null);
   const [readOnlyToastClosed, setReadOnlyToastClosed] = React.useState(false);
   const {
@@ -165,7 +165,7 @@ const TabSystem = (props) => {
             />
           ))}
 
-          {tabs.length < 5 && (
+          {tabs.length < 7 && (
             <IconButton
               alignSelf="center"
               variant="ghost"

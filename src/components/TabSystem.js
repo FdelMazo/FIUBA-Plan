@@ -263,6 +263,7 @@ const CustomTab = React.forwardRef((props, ref) => {
               boxSize="20px"
               ml="5px"
               color="primary.600"
+              alignSelf="center"
               onClick={() => {
                 removeTab(props.tab.id);
               }}
